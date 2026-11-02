@@ -1,0 +1,150 @@
+{
+ "subject": "fracoes",
+ "topic_title": "Soma e subtração de frações",
+ "topic_slug": "fracoes-soma-subtracao",
+ "lesson_title": "Somar frações com o mesmo denominador",
+ "lesson_slug": "somar-fracoes-mesmo-denominador",
+ "summary": "Aprende a somar frações cujas partes têm o mesmo tamanho.",
+ "minutes": 15,
+ "blocks": {
+  "introduction": "Imagina uma pizza cortada em 8 fatias iguais. Tu comes 3 fatias e o teu amigo come 2. Quantas fatias comeram os dois? Esta pergunta simples é exatamente a soma de frações com o mesmo denominador.",
+  "intuition": "O **denominador** diz em quantas partes iguais o todo foi dividido. O **numerador** diz quantas dessas partes estamos a contar. Se as fatias têm o mesmo tamanho (mesmo denominador), basta contá-las: 3 oitavos mais 2 oitavos dão 5 oitavos. O tamanho da fatia não muda, por isso o denominador fica igual.",
+  "definition": "Para somar frações com o mesmo denominador, **somam-se os numeradores** e **mantém-se o denominador**. Se for possível, simplifica-se o resultado dividindo o numerador e o denominador pelo mesmo número.",
+  "formulas": "$$\\frac{a}{c}+\\frac{b}{c}=\\frac{a+b}{c}$$\n\nPara simplificar, divide em cima e em baixo pelo mesmo número (por exemplo, $\\frac{6}{9}=\\frac{2}{3}$, porque dividimos por 3).",
+  "worked_example": "**Exemplo 1.** $\\frac{2}{9}+\\frac{4}{9}=\\frac{6}{9}=\\frac{2}{3}$ (dividimos por 3).\n\n**Exemplo 2.** $\\frac{3}{10}+\\frac{1}{10}=\\frac{4}{10}=\\frac{2}{5}$ (dividimos por 2).",
+  "guided_exercise": "Vamos fazer juntos $\\frac{1}{7}+\\frac{3}{7}$. Pergunta a ti próprio: 1) Os denominadores são iguais? Sim, são 7. 2) Soma os numeradores: 1+3=4. 3) Mantém o denominador: 7. Resultado: $\\frac{4}{7}$. Não dá para simplificar.",
+  "independent_exercise": "Resolve os exercícios abaixo sem ajuda e usa **Verificar** para ver se acertaste. Se errares, lê a resolução passo a passo e tenta outra vez.",
+  "challenge": "Consegues somar **três** frações de uma só vez? O método é o mesmo: somas os três numeradores e manténs o denominador. Experimenta o último exercício.",
+  "assessment": "Esta competência só fica **dominada** quando acertas de forma consistente em exercícios de dificuldades diferentes e passas na avaliação. Rapidez não conta: conta perceber."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "fracoes.soma_mesmo_denominador",
+   "statement": "Calcula $\\frac{3}{8}+\\frac{2}{8}$.",
+   "options": null,
+   "answer": {
+    "value": "5/8",
+    "accepted": [
+     "0,625"
+    ]
+   },
+   "tolerance": 0,
+   "explanation": "Os denominadores são iguais (8). Somam-se os numeradores: 3+2=5. O resultado é 5/8.",
+   "steps": [
+    "Os denominadores são iguais: 8.",
+    "Soma os numeradores: 3+2=5.",
+    "Mantém o denominador: $\\frac{5}{8}$."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "fracoes.soma_mesmo_denominador",
+   "statement": "Calcula $\\frac{5}{12}+\\frac{4}{12}$ e simplifica o resultado.",
+   "options": null,
+   "answer": {
+    "value": "3/4",
+    "accepted": [
+     "9/12",
+     "0,75"
+    ]
+   },
+   "tolerance": 0,
+   "explanation": "5+4=9, logo 9/12. Dividindo por 3, fica 3/4.",
+   "steps": [
+    "Soma os numeradores: 5+4=9, e fica $\\frac{9}{12}$.",
+    "O maior divisor comum de 9 e 12 é 3.",
+    "Divide por 3: $\\frac{9}{12}=\\frac{3}{4}$."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "fracoes.soma_mesmo_denominador",
+   "statement": "Quanto é $\\frac{2}{9}+\\frac{4}{9}$ na forma mais simples?",
+   "options": [
+    {
+     "id": "a",
+     "label": "$\\frac{6}{18}$"
+    },
+    {
+     "id": "b",
+     "label": "$\\frac{2}{3}$"
+    },
+    {
+     "id": "c",
+     "label": "$\\frac{8}{9}$"
+    },
+    {
+     "id": "d",
+     "label": "$\\frac{4}{9}$"
+    }
+   ],
+   "answer": {
+    "choice": "b"
+   },
+   "tolerance": 0,
+   "explanation": "2+4=6, logo 6/9. Dividindo por 3, fica 2/3. A opção 6/18 é o erro de somar também os denominadores.",
+   "steps": [
+    "Soma os numeradores: 2+4=6, e fica $\\frac{6}{9}$.",
+    "Simplifica dividindo por 3: $\\frac{2}{3}$."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "fracoes.soma_mesmo_denominador",
+   "statement": "Ao somar $\\frac{1}{5}+\\frac{2}{5}$ somam-se também os denominadores, e o resultado é $\\frac{3}{10}$.",
+   "options": null,
+   "answer": {
+    "boolean": false
+   },
+   "tolerance": 0,
+   "explanation": "Falso. O denominador mantém-se, porque o tamanho das partes não muda: 1/5+2/5=3/5.",
+   "steps": [
+    "Os denominadores não se somam.",
+    "$\\frac{1}{5}+\\frac{2}{5}=\\frac{3}{5}$."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "fracoes.soma_mesmo_denominador",
+   "statement": "A Ana comeu $\\frac{3}{10}$ de uma pizza e o Beto comeu $\\frac{4}{10}$. Que fração da pizza comeram juntos?",
+   "options": null,
+   "answer": {
+    "value": "7/10",
+    "accepted": [
+     "0,7"
+    ]
+   },
+   "tolerance": 0,
+   "explanation": "Somam-se as frações: 3/10+4/10=7/10 da pizza.",
+   "steps": [
+    "Soma: $\\frac{3}{10}+\\frac{4}{10}$.",
+    "3+4=7, mantém-se o 10: $\\frac{7}{10}$."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "fracoes.soma_mesmo_denominador",
+   "statement": "Desafio: calcula $\\frac{1}{6}+\\frac{2}{6}+\\frac{3}{6}$.",
+   "options": null,
+   "answer": {
+    "value": "1",
+    "accepted": [
+     "6/6"
+    ]
+   },
+   "tolerance": 0,
+   "explanation": "1+2+3=6, logo 6/6, que é igual a 1 (a pizza inteira).",
+   "steps": [
+    "Soma os três numeradores: 1+2+3=6.",
+    "Fica $\\frac{6}{6}$, que é 1 inteiro."
+   ]
+  }
+ ]
+}

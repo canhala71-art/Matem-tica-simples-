@@ -1,0 +1,150 @@
+{
+ "subject": "fracoes",
+ "topic_title": "Soma e subtração de frações",
+ "topic_slug": "fracoes-soma-subtracao",
+ "lesson_title": "Somar frações com denominadores diferentes",
+ "lesson_slug": "somar-fracoes-denominadores-diferentes",
+ "summary": "Usa o mínimo múltiplo comum para somar frações com partes de tamanhos diferentes.",
+ "minutes": 20,
+ "blocks": {
+  "introduction": "E se as fatias tiverem tamanhos diferentes? Não podemos somar metades com terços sem primeiro as pôr no mesmo tamanho. Nesta aula vais aprender a fazê-lo.",
+  "intuition": "Para contar juntas partes de tamanhos diferentes, cortamos tudo em partes mais pequenas e iguais. Uma metade pode ser vista como 3 sextos, e um terço como 2 sextos. Juntos, dão 5 sextos.",
+  "definition": "Para somar frações com denominadores diferentes: 1) encontra o **mínimo múltiplo comum (m.m.c.)** dos denominadores; 2) converte cada fração para esse denominador; 3) soma os numeradores; 4) simplifica, se der.",
+  "formulas": "$$\\frac{a}{b}+\\frac{c}{d}=\\frac{a\\cdot\\frac{m}{b}+c\\cdot\\frac{m}{d}}{m},\\qquad m=\\text{m.m.c.}(b,d)$$\n\nPara converter, multiplica o numerador e o denominador pelo mesmo número: $\\frac{1}{2}=\\frac{1\\times 3}{2\\times 3}=\\frac{3}{6}$.",
+  "worked_example": "**Exemplo 1.** $\\frac{1}{2}+\\frac{1}{3}$. O m.m.c. de 2 e 3 é 6. $\\frac{1}{2}=\\frac{3}{6}$ e $\\frac{1}{3}=\\frac{2}{6}$. Logo $\\frac{3}{6}+\\frac{2}{6}=\\frac{5}{6}$.\n\n**Exemplo 2.** $\\frac{3}{4}+\\frac{1}{6}$. O m.m.c. de 4 e 6 é 12. $\\frac{9}{12}+\\frac{2}{12}=\\frac{11}{12}$.",
+  "guided_exercise": "Vamos fazer juntos $\\frac{1}{4}+\\frac{1}{3}$. O m.m.c. de 4 e 3 é 12. $\\frac{1}{4}=\\frac{3}{12}$ e $\\frac{1}{3}=\\frac{4}{12}$. Soma: $\\frac{3}{12}+\\frac{4}{12}=\\frac{7}{12}$.",
+  "independent_exercise": "Resolve os exercícios abaixo sem ajuda e usa **Verificar** para ver se acertaste. Se errares, lê a resolução passo a passo e tenta outra vez.",
+  "challenge": "Quando a soma dá mais do que 1, a fração fica 'maior que o inteiro' (fração imprópria), por exemplo $\\frac{7}{6}$. Experimenta o último exercício.",
+  "assessment": "Esta competência só fica **dominada** quando acertas de forma consistente em exercícios de dificuldades diferentes e passas na avaliação. Rapidez não conta: conta perceber."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "fracoes.soma_denominadores_diferentes",
+   "statement": "Calcula $\\frac{1}{2}+\\frac{1}{3}$.",
+   "options": null,
+   "answer": {
+    "value": "5/6",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "O m.m.c. de 2 e 3 é 6. 1/2=3/6 e 1/3=2/6, logo a soma é 5/6.",
+   "steps": [
+    "O m.m.c. de 2 e 3 é 6.",
+    "Converte: $\\frac{1}{2}=\\frac{3}{6}$ e $\\frac{1}{3}=\\frac{2}{6}$.",
+    "Soma: $\\frac{3}{6}+\\frac{2}{6}=\\frac{5}{6}$"
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "fracoes.soma_denominadores_diferentes",
+   "statement": "Calcula $\\frac{3}{4}+\\frac{1}{6}$.",
+   "options": null,
+   "answer": {
+    "value": "11/12",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "O m.m.c. de 4 e 6 é 12. 3/4=9/12 e 1/6=2/12, logo a soma é 11/12.",
+   "steps": [
+    "O m.m.c. de 4 e 6 é 12.",
+    "Converte: $\\frac{3}{4}=\\frac{9}{12}$ e $\\frac{1}{6}=\\frac{2}{12}$.",
+    "Soma: $\\frac{9}{12}+\\frac{2}{12}=\\frac{11}{12}$"
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "fracoes.soma_denominadores_diferentes",
+   "statement": "Calcula $\\frac{2}{5}+\\frac{3}{10}$.",
+   "options": null,
+   "answer": {
+    "value": "7/10",
+    "accepted": [
+     "0,7"
+    ]
+   },
+   "tolerance": 0,
+   "explanation": "O m.m.c. de 5 e 10 é 10. 2/5=4/10, logo 4/10+3/10=7/10.",
+   "steps": [
+    "O m.m.c. de 5 e 10 é 10.",
+    "Converte: $\\frac{2}{5}=\\frac{4}{10}$ e $\\frac{3}{10}=\\frac{3}{10}$.",
+    "Soma: $\\frac{4}{10}+\\frac{3}{10}=\\frac{7}{10}$"
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "fracoes.soma_denominadores_diferentes",
+   "statement": "Qual é o mínimo múltiplo comum de 4 e 6?",
+   "options": [
+    {
+     "id": "a",
+     "label": "12"
+    },
+    {
+     "id": "b",
+     "label": "24"
+    },
+    {
+     "id": "c",
+     "label": "10"
+    },
+    {
+     "id": "d",
+     "label": "2"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "Os múltiplos de 4 são 4, 8, 12... e os de 6 são 6, 12... O primeiro comum é 12.",
+   "steps": [
+    "Múltiplos de 4: 4, 8, 12, 16...",
+    "Múltiplos de 6: 6, 12, 18...",
+    "O primeiro comum é 12."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "fracoes.soma_denominadores_diferentes",
+   "statement": "$\\frac{1}{2}+\\frac{1}{4}=\\frac{2}{6}$.",
+   "options": null,
+   "answer": {
+    "boolean": false
+   },
+   "tolerance": 0,
+   "explanation": "Falso. Somar numeradores com numeradores e denominadores com denominadores é um erro. 1/2=2/4, logo 2/4+1/4=3/4.",
+   "steps": [
+    "Os denominadores são diferentes (2 e 4).",
+    "$\\frac{1}{2}=\\frac{2}{4}$.",
+    "$\\frac{2}{4}+\\frac{1}{4}=\\frac{3}{4}$."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "fracoes.soma_denominadores_diferentes",
+   "statement": "Desafio: calcula $\\frac{5}{6}+\\frac{1}{3}$.",
+   "options": null,
+   "answer": {
+    "value": "7/6",
+    "accepted": [
+     "7/6",
+     "1,1666667"
+    ]
+   },
+   "tolerance": 0,
+   "explanation": "O m.m.c. de 6 e 3 é 6. 1/3=2/6, logo 5/6+2/6=7/6, que é 1 inteiro e 1/6.",
+   "steps": [
+    "O m.m.c. de 6 e 3 é 6.",
+    "Converte: $\\frac{5}{6}=\\frac{5}{6}$ e $\\frac{1}{3}=\\frac{2}{6}$.",
+    "Soma: $\\frac{5}{6}+\\frac{2}{6}=\\frac{7}{6}$"
+   ]
+  }
+ ]
+}

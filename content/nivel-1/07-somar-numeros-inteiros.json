@@ -1,0 +1,139 @@
+{
+ "subject": "numeros-inteiros",
+ "topic_title": "Operações com inteiros",
+ "topic_slug": "inteiros-operacoes",
+ "lesson_title": "Somar números inteiros",
+ "lesson_slug": "somar-numeros-inteiros",
+ "summary": "Soma números positivos e negativos usando a reta numérica.",
+ "minutes": 20,
+ "blocks": {
+  "introduction": "Temperaturas abaixo de zero, dívidas, saldos negativos: os números inteiros incluem positivos e negativos. Nesta aula aprendes a somá-los.",
+  "intuition": "Na reta numérica, somar um número positivo é andar para a **direita**, e somar um negativo é andar para a **esquerda**. Em $-5+8$, começas em −5 e andas 8 para a direita: chegas a 3.",
+  "definition": "**Sinais iguais:** somam-se os valores e mantém-se o sinal. **Sinais diferentes:** subtrai-se o valor menor do maior, e fica o sinal do número com maior valor (sem contar o sinal).",
+  "formulas": "$$(-a)+(-b)=-(a+b)$$\n$$(-a)+b=b-a\\quad\\text{(se }b>a\\text{)}$$",
+  "worked_example": "**Exemplo 1.** $-7+(-3)=-10$ (sinais iguais: 7+3=10, fica negativo).\n\n**Exemplo 2.** $4+(-9)=-5$ (sinais diferentes: 9−4=5, e o 9 é maior e negativo).",
+  "guided_exercise": "Vamos fazer $-2+6$. Os sinais são diferentes. 6−2=4. O 6 é maior e positivo, logo o resultado é $4$.",
+  "independent_exercise": "Resolve os exercícios abaixo sem ajuda e usa **Verificar** para ver se acertaste. Se errares, lê a resolução passo a passo e tenta outra vez.",
+  "challenge": "Numa manhã a temperatura é de −3 °C e sobe 9 graus. Qual é a nova temperatura? Vê o último exercício.",
+  "assessment": "Esta competência só fica **dominada** quando acertas de forma consistente em exercícios de dificuldades diferentes e passas na avaliação. Rapidez não conta: conta perceber."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "inteiros.soma",
+   "statement": "Calcula $-5+8$.",
+   "options": null,
+   "answer": {
+    "value": "3",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Começa em −5 e anda 8 para a direita: 3.",
+   "steps": [
+    "Sinais diferentes: 8−5=3.",
+    "O 8 é maior e positivo: 3."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "inteiros.soma",
+   "statement": "Calcula $4+(-9)$.",
+   "options": null,
+   "answer": {
+    "value": "-5",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Sinais diferentes: 9−4=5, e como o 9 é negativo o resultado é −5.",
+   "steps": [
+    "9−4=5.",
+    "O número de maior valor é −9, logo −5."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "inteiros.soma",
+   "statement": "Calcula $-7+(-3)$.",
+   "options": null,
+   "answer": {
+    "value": "-10",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Sinais iguais: 7+3=10, e mantém-se o sinal negativo: −10.",
+   "steps": [
+    "Sinais iguais: soma 7+3=10.",
+    "Mantém o sinal: −10."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "inteiros.soma",
+   "statement": "Quanto é $-3+10$?",
+   "options": [
+    {
+     "id": "a",
+     "label": "-7"
+    },
+    {
+     "id": "b",
+     "label": "7"
+    },
+    {
+     "id": "c",
+     "label": "13"
+    },
+    {
+     "id": "d",
+     "label": "-13"
+    }
+   ],
+   "answer": {
+    "choice": "b"
+   },
+   "tolerance": 0,
+   "explanation": "Sinais diferentes: 10−3=7, e o 10 é positivo, logo 7.",
+   "steps": [
+    "10−3=7.",
+    "O 10 é maior e positivo: 7."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "inteiros.soma",
+   "statement": "$-8$ é maior que $-2$.",
+   "options": null,
+   "answer": {
+    "boolean": false
+   },
+   "tolerance": 0,
+   "explanation": "Falso. Na reta numérica, −2 está à direita de −8, por isso −2 é maior.",
+   "steps": [
+    "Na reta, o que está mais à direita é maior.",
+    "−2 está à direita de −8."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "inteiros.soma",
+   "statement": "Desafio: a temperatura de −3 °C sobe 9 graus. Qual é a nova temperatura? (só o número)",
+   "options": null,
+   "answer": {
+    "value": "6",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "−3 + 9 = 6 °C.",
+   "steps": [
+    "Começa em −3 e anda 9 para a direita.",
+    "−3 + 9 = 6."
+   ]
+  }
+ ]
+}

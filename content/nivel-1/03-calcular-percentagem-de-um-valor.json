@@ -1,0 +1,157 @@
+{
+ "subject": "percentagens",
+ "topic_title": "Percentagem de um valor",
+ "topic_slug": "percentagens-de-um-valor",
+ "lesson_title": "Calcular a percentagem de um valor",
+ "lesson_slug": "calcular-percentagem-de-um-valor",
+ "summary": "Descobre quanto é 10%, 25% ou 50% de um valor e aplica-o a descontos.",
+ "minutes": 20,
+ "blocks": {
+  "introduction": "Descontos nas lojas, juros, notas de testes: as percentagens estão em todo o lado. A expressão 'por cento' quer dizer 'por cada cem'.",
+  "intuition": "50% significa 50 em cada 100, ou seja, **metade**. 25% é **um quarto**. 10% é a **décima parte**: basta dividir por 10. Com estes atalhos consegues calcular muitas percentagens de cabeça.",
+  "definition": "Uma percentagem $p\\%$ é a fração $\\frac{p}{100}$. Calcular $p\\%$ de um valor é multiplicar o valor por $\\frac{p}{100}$.",
+  "formulas": "$$p\\%\\text{ de }V=\\frac{p}{100}\\times V$$\n\nAtalhos: **10%** → divide por 10. **50%** → divide por 2. **25%** → divide por 4.",
+  "worked_example": "**Exemplo 1.** 10% de 250 = 250 ÷ 10 = 25.\n\n**Exemplo 2.** 20% de 60 = $\\frac{20}{100}\\times 60=12$.",
+  "guided_exercise": "Vamos calcular 30% de 70. 10% de 70 é 7. Como 30% é três vezes 10%, fica 3 × 7 = 21.",
+  "independent_exercise": "Resolve os exercícios abaixo sem ajuda e usa **Verificar** para ver se acertaste. Se errares, lê a resolução passo a passo e tenta outra vez.",
+  "challenge": "Um **aumento** de 10% também se calcula assim: calcula os 10% e soma ao valor inicial. Experimenta o último exercício.",
+  "assessment": "Esta competência só fica **dominada** quando acertas de forma consistente em exercícios de dificuldades diferentes e passas na avaliação. Rapidez não conta: conta perceber."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "percentagens.calcular_percentagem",
+   "statement": "Calcula 10% de 250.",
+   "options": null,
+   "answer": {
+    "value": "25",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "10% é a décima parte: 250 ÷ 10 = 25.",
+   "steps": [
+    "10% = dividir por 10.",
+    "250 ÷ 10 = 25."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "percentagens.calcular_percentagem",
+   "statement": "Calcula 25% de 80.",
+   "options": null,
+   "answer": {
+    "value": "20",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "25% é um quarto: 80 ÷ 4 = 20.",
+   "steps": [
+    "25% é um quarto.",
+    "80 ÷ 4 = 20."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "percentagens.calcular_percentagem",
+   "statement": "Calcula 15% de 200.",
+   "options": null,
+   "answer": {
+    "value": "30",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "10% de 200 é 20 e 5% é 10, logo 15% é 30.",
+   "steps": [
+    "10% de 200 = 20.",
+    "5% de 200 = 10.",
+    "20 + 10 = 30."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 1,
+   "competency": "percentagens.calcular_percentagem",
+   "statement": "Quanto é 50% de 90?",
+   "options": [
+    {
+     "id": "a",
+     "label": "45"
+    },
+    {
+     "id": "b",
+     "label": "50"
+    },
+    {
+     "id": "c",
+     "label": "40"
+    },
+    {
+     "id": "d",
+     "label": "140"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "50% é metade: 90 ÷ 2 = 45.",
+   "steps": [
+    "50% = metade.",
+    "90 ÷ 2 = 45."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "percentagens.calcular_percentagem",
+   "statement": "100% de um número é metade desse número.",
+   "options": null,
+   "answer": {
+    "boolean": false
+   },
+   "tolerance": 0,
+   "explanation": "Falso. 100% é o número todo. A metade é 50%.",
+   "steps": [
+    "100% = 100 em cada 100 = tudo.",
+    "A metade é 50%."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "percentagens.calcular_percentagem",
+   "statement": "Um telemóvel custa 5000 Kz e tem 20% de desconto. Quanto se paga? (responde só com o número)",
+   "options": null,
+   "answer": {
+    "value": "4000",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "20% de 5000 é 1000. O desconto tira 1000, e 5000−1000=4000 Kz.",
+   "steps": [
+    "20% de 5000: 5000 ÷ 5 = 1000.",
+    "Preço final: 5000 − 1000 = 4000."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "percentagens.calcular_percentagem",
+   "statement": "Desafio: um produto de 2500 Kz sobe 10%. Qual é o novo preço? (só o número)",
+   "options": null,
+   "answer": {
+    "value": "2750",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "10% de 2500 é 250. O novo preço é 2500+250=2750 Kz.",
+   "steps": [
+    "10% de 2500 = 250.",
+    "2500 + 250 = 2750."
+   ]
+  }
+ ]
+}

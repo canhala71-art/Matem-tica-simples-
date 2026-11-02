@@ -1,0 +1,157 @@
+{
+ "subject": "raizes",
+ "topic_title": "Raiz quadrada",
+ "topic_slug": "raiz-quadrada",
+ "lesson_title": "Raízes quadradas exatas",
+ "lesson_slug": "raizes-quadradas-exatas",
+ "summary": "Descobre o número que, multiplicado por si próprio, dá o valor da raiz.",
+ "minutes": 15,
+ "blocks": {
+  "introduction": "Se um quadrado tem 25 m² de área, quanto mede o lado? Procuramos o número que, multiplicado por si próprio, dá 25.",
+  "intuition": "A raiz quadrada desfaz o quadrado. Como $5^2=25$, a raiz quadrada de 25 é 5. É o caminho de volta.",
+  "definition": "$\\sqrt{a}$ é o número **não negativo** $b$ tal que $b^2=a$. Quando $a$ é um **quadrado perfeito** (1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144...), a raiz é um número inteiro.",
+  "formulas": "$$\\sqrt{a}=b\\iff b^2=a\\quad(b\\geq 0)$$\n\nDica: aprende de cor os quadrados de 1 a 12. Ajudam muito.",
+  "worked_example": "**Exemplo 1.** $\\sqrt{36}=6$, porque $6\\times6=36$.\n\n**Exemplo 2.** $\\sqrt{121}=11$, porque $11\\times11=121$.",
+  "guided_exercise": "Vamos calcular $\\sqrt{64}$. Pergunta: que número vezes ele próprio dá 64? Experimenta 7×7=49 (pouco) e 8×8=64 (certo). Logo $\\sqrt{64}=8$.",
+  "independent_exercise": "Resolve os exercícios abaixo sem ajuda e usa **Verificar** para ver se acertaste. Se errares, lê a resolução passo a passo e tenta outra vez.",
+  "challenge": "Números grandes também se resolvem por tentativas: $\\sqrt{2025}$ está entre 40 (1600) e 50 (2500). Experimenta o último exercício.",
+  "assessment": "Esta competência só fica **dominada** quando acertas de forma consistente em exercícios de dificuldades diferentes e passas na avaliação. Rapidez não conta: conta perceber."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "raizes.quadradas_exatas",
+   "statement": "Calcula $\\sqrt{49}$.",
+   "options": null,
+   "answer": {
+    "value": "7",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "7×7 = 49.",
+   "steps": [
+    "Procura um número que vezes ele próprio dê 49.",
+    "7×7=49."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "raizes.quadradas_exatas",
+   "statement": "Calcula $\\sqrt{144}$.",
+   "options": null,
+   "answer": {
+    "value": "12",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "12×12 = 144.",
+   "steps": [
+    "Experimenta 11×11=121 (pouco).",
+    "12×12=144."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "raizes.quadradas_exatas",
+   "statement": "Calcula $\\sqrt{225}$.",
+   "options": null,
+   "answer": {
+    "value": "15",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "15×15 = 225.",
+   "steps": [
+    "14×14=196 (pouco).",
+    "15×15=225."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 1,
+   "competency": "raizes.quadradas_exatas",
+   "statement": "Quanto é $\\sqrt{81}$?",
+   "options": [
+    {
+     "id": "a",
+     "label": "8"
+    },
+    {
+     "id": "b",
+     "label": "9"
+    },
+    {
+     "id": "c",
+     "label": "18"
+    },
+    {
+     "id": "d",
+     "label": "40,5"
+    }
+   ],
+   "answer": {
+    "choice": "b"
+   },
+   "tolerance": 0,
+   "explanation": "9×9 = 81. A opção 40,5 é o erro de dividir por 2.",
+   "steps": [
+    "Procura n com n×n=81.",
+    "9×9=81."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "raizes.quadradas_exatas",
+   "statement": "$\\sqrt{16}=8$.",
+   "options": null,
+   "answer": {
+    "boolean": false
+   },
+   "tolerance": 0,
+   "explanation": "Falso. √16 = 4, porque 4×4 = 16. O erro comum é dividir por 2.",
+   "steps": [
+    "4×4=16.",
+    "Logo $\\sqrt{16}=4$."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "raizes.quadradas_exatas",
+   "statement": "Um terreno quadrado tem 64 m² de área. Quanto mede cada lado, em metros? (só o número)",
+   "options": null,
+   "answer": {
+    "value": "8",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "O lado é √64 = 8 m.",
+   "steps": [
+    "Área = lado × lado = 64.",
+    "Lado = √64 = 8."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "raizes.quadradas_exatas",
+   "statement": "Desafio: calcula $\\sqrt{2025}$.",
+   "options": null,
+   "answer": {
+    "value": "45",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "45×45 = 2025.",
+   "steps": [
+    "Está entre 40 (1600) e 50 (2500).",
+    "44×44=1936 (pouco).",
+    "45×45=2025."
+   ]
+  }
+ ]
+}

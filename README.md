@@ -75,3 +75,7 @@ O HTTPS é automático. Faz push para `main` e o deploy repete-se sozinho.
 - Só o administrador publica conteúdo (política RLS + gatilho).
 - Menores: só se guarda "menor sim/não", sem data de nascimento.
 - Todo conteúdo é original e só chega aos alunos depois de revisto e publicado por um administrador.
+
+## Conteúdo do Nível 1 (rascunho)
+
+`content/nivel-1/` tem 7 aulas e 45 exercícios, escritos de raiz (não copiados de nenhuma plataforma). Todas as respostas são calculadas em `tools/build_level1.py` com aritmética exata e conferidas contra o validador do site (`tools/check_content.mts`). Estão na base de dados como **rascunho**: revê-as no painel Admin e publica-as.

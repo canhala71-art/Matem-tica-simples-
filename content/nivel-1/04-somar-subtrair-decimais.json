@@ -1,0 +1,144 @@
+{
+ "subject": "numeros-decimais",
+ "topic_title": "Operações com decimais",
+ "topic_slug": "decimais-operacoes",
+ "lesson_title": "Somar e subtrair números decimais",
+ "lesson_slug": "somar-subtrair-decimais",
+ "summary": "Soma e subtrai números com vírgula alinhando as casas decimais.",
+ "minutes": 15,
+ "blocks": {
+  "introduction": "Preços, medidas e notas usam números com vírgula. Somar decimais é como somar números inteiros, mas com um cuidado: alinhar as vírgulas.",
+  "intuition": "Cada casa depois da vírgula representa partes cada vez mais pequenas: décimas, centésimas, milésimas. Só podemos juntar unidades com unidades, décimas com décimas. Por isso alinhamos as vírgulas, para cada algarismo ficar na coluna certa.",
+  "definition": "Para somar ou subtrair decimais: 1) escreve os números com as vírgulas **alinhadas**; 2) completa com zeros à direita se faltarem casas; 3) calcula como se fossem inteiros; 4) coloca a vírgula na mesma coluna.",
+  "formulas": "$$2{,}50+1{,}75=4{,}25$$\n\nDica: $2{,}5$ e $2{,}50$ são o mesmo número. Acrescentar zeros à direita da parte decimal não muda o valor.",
+  "worked_example": "**Exemplo 1.** $2{,}50+1{,}75$: 250 + 175 = 425, e com a vírgula alinhada fica $4{,}25$.\n\n**Exemplo 2.** $5{,}00-1{,}35$: 500 − 135 = 365, ou seja, $3{,}65$.",
+  "guided_exercise": "Vamos fazer juntos $0{,}9+0{,}15$. Escreve $0{,}90+0{,}15$. Calcula 90 + 15 = 105, e fica $1{,}05$.",
+  "independent_exercise": "Resolve os exercícios abaixo sem ajuda e usa **Verificar** para ver se acertaste. Se errares, lê a resolução passo a passo e tenta outra vez.",
+  "challenge": "Comparar decimais também é importante: $0{,}5$ é maior que $0{,}45$, mesmo que 45 seja maior que 5. Vê o exercício de verdadeiro ou falso.",
+  "assessment": "Esta competência só fica **dominada** quando acertas de forma consistente em exercícios de dificuldades diferentes e passas na avaliação. Rapidez não conta: conta perceber."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "decimais.soma_subtracao",
+   "statement": "Calcula $2{,}5+1{,}75$.",
+   "options": null,
+   "answer": {
+    "value": "4.25",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Alinhando as vírgulas: 2,50 + 1,75 = 4,25.",
+   "steps": [
+    "Escreve 2,50 para ter duas casas decimais.",
+    "250 + 175 = 425.",
+    "Fica 4,25."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "decimais.soma_subtracao",
+   "statement": "Calcula $10-3{,}4$.",
+   "options": null,
+   "answer": {
+    "value": "6.6",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "10,0 − 3,4 = 6,6.",
+   "steps": [
+    "Escreve 10,0 − 3,4.",
+    "100 − 34 = 66.",
+    "Fica 6,6."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "decimais.soma_subtracao",
+   "statement": "Calcula $0{,}6+0{,}45$.",
+   "options": null,
+   "answer": {
+    "value": "1.05",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "0,60 + 0,45 = 1,05.",
+   "steps": [
+    "Escreve 0,60 + 0,45.",
+    "60 + 45 = 105.",
+    "Fica 1,05."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "decimais.soma_subtracao",
+   "statement": "Quanto é $3{,}2+0{,}08$?",
+   "options": [
+    {
+     "id": "a",
+     "label": "3,28"
+    },
+    {
+     "id": "b",
+     "label": "3,10"
+    },
+    {
+     "id": "c",
+     "label": "4"
+    },
+    {
+     "id": "d",
+     "label": "3,208"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "3,20 + 0,08 = 3,28.",
+   "steps": [
+    "Escreve 3,20 + 0,08.",
+    "320 + 8 = 328.",
+    "Fica 3,28."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "decimais.soma_subtracao",
+   "statement": "$0{,}5$ é maior que $0{,}45$.",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "Verdadeiro. 0,5 = 0,50, e 50 centésimas é mais que 45 centésimas.",
+   "steps": [
+    "Escreve 0,5 como 0,50.",
+    "50 centésimas > 45 centésimas."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "decimais.soma_subtracao",
+   "statement": "Uma tábua mede 2,4 m e outra 1,85 m. Quantos metros medem juntas? (só o número)",
+   "options": null,
+   "answer": {
+    "value": "4.25",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "2,40 + 1,85 = 4,25 m.",
+   "steps": [
+    "Alinha: 2,40 + 1,85.",
+    "240 + 185 = 425.",
+    "Fica 4,25 m."
+   ]
+  }
+ ]
+}

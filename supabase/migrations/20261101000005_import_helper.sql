@@ -1,0 +1,4 @@
+-- Função usada para importar aulas (JSON em content/) como RASCUNHO. Só a service role a pode executar.
+-- (Definição aplicada ao projeto Supabase com o nome import_lesson_helper.)
+-- Uso: select public.mm_import_lesson('<json da aula>'::jsonb, '<uuid do autor>');
+-- Ver o corpo completo no histórico de migrações do projeto (supabase migration list).
