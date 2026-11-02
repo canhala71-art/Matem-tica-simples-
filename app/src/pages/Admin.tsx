@@ -84,6 +84,7 @@ function ContentTab() {
       <p className="muted">Nada chega aos alunos até ser marcado como "Publicado" aqui. Revê sempre a matemática antes de publicar.</p>
       <StatusList table="levels" field="title" title="Níveis" />
       <StatusList table="subjects" field="title" title="Disciplinas" />
+      <StatusList table="topics" field="title" title="Unidades" />
       <StatusList table="lessons" field="title" title="Aulas" extra />
       <StatusList table="exercises" field="statement" title="Exercícios" />
     </div>
