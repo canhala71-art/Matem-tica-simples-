@@ -27,3 +27,30 @@ body { @apply bg-slate-50 text-slate-900 antialiased; font-family: var(--font-sa
 .dark .muted { @apply text-slate-400; }
 .badge { @apply inline-block rounded-full bg-violet-soft/20 px-2.5 py-0.5 text-xs font-medium text-violet-700; }
 .dark .badge { @apply text-violet-soft; }
+
+/* ---------- Animações (respeitam "reduzir movimento") ---------- */
+.btn, .btn-ghost { transition: transform .15s ease, box-shadow .15s ease, background-color .15s ease, border-color .15s ease; will-change: transform; }
+.btn:hover:not(:disabled), .btn-ghost:hover:not(:disabled) { transform: translateY(-1px); box-shadow: 0 6px 16px -6px rgb(47 107 255 / .45); }
+.btn:active:not(:disabled), .btn-ghost:active:not(:disabled) { transform: translateY(0) scale(.96); box-shadow: none; }
+.btn:focus-visible, .btn-ghost:focus-visible { outline: 2px solid var(--color-electric-400); outline-offset: 2px; }
+.card-hover { transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease; }
+.card-hover:hover { transform: translateY(-3px); box-shadow: 0 10px 24px -12px rgb(47 107 255 / .5); }
+
+@keyframes mm-pop { 0% { transform: scale(.92); opacity: 0 } 60% { transform: scale(1.04); opacity: 1 } 100% { transform: scale(1) } }
+@keyframes mm-shake { 0%,100% { transform: translateX(0) } 20%,60% { transform: translateX(-7px) } 40%,80% { transform: translateX(7px) } }
+@keyframes mm-fade-up { from { opacity: 0; transform: translateY(10px) } to { opacity: 1; transform: none } }
+@keyframes mm-slide-in { from { opacity: 0; transform: translateX(28px) } to { opacity: 1; transform: none } }
+@keyframes mm-glow { 0%,100% { box-shadow: 0 0 0 0 rgb(16 185 129 / .55) } 50% { box-shadow: 0 0 0 10px rgb(16 185 129 / 0) } }
+@keyframes mm-fall { 0% { transform: translateY(-10vh) rotate(0) } 100% { transform: translateY(110vh) rotate(720deg); opacity: .9 } }
+@keyframes mm-flame { 0%,100% { transform: scale(1) rotate(-3deg) } 50% { transform: scale(1.18) rotate(3deg) } }
+.anim-pop { animation: mm-pop .35s ease-out both; }
+.anim-shake { animation: mm-shake .4s ease both; }
+.anim-fade-up { animation: mm-fade-up .35s ease-out both; }
+.anim-slide-in { animation: mm-slide-in .3s ease-out both; }
+.anim-glow { animation: mm-glow 1s ease-out 1; }
+.anim-flame { animation: mm-flame .9s ease-in-out infinite; display: inline-block; }
+.confetti-piece { position: fixed; top: 0; width: 9px; height: 14px; border-radius: 2px; pointer-events: none; z-index: 60; animation: mm-fall linear forwards; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+  .btn:hover, .btn-ghost:hover, .card-hover:hover { transform: none !important; }
+}

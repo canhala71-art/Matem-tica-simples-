@@ -91,7 +91,7 @@ export function Dashboard() {
         <h2 className="font-semibold">Por onde queres começar?</h2>
         <div className="grid grid-cols-2 gap-2 sm:grid-cols-5">
           {CATEGORIES.map(([k, l]) => (
-            <Link key={k} to={`/quiz?categoria=${k}`} className="card !p-3 text-center text-sm font-medium hover:border-electric-500">{l}</Link>
+            <Link key={k} to={`/quiz?categoria=${k}`} className="card card-hover !p-3 text-center text-sm font-medium hover:border-electric-500">{l}</Link>
           ))}
         </div>
         <p className="muted">Ou vai direto às <Link className="text-electric-500" to="/academia">aulas da Academia</Link>.</p>

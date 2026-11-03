@@ -1,5 +1,5 @@
 import { useEffect, useState, type ReactNode } from 'react';
-import { Link, NavLink, Navigate, Outlet } from 'react-router-dom';
+import { Link, NavLink, Navigate, Outlet, useLocation } from 'react-router-dom';
 import { BookOpen, Bot, CreditCard, FlaskConical, LayoutDashboard, LogOut, Moon, Shield, Sparkles, Sun, Trophy, WifiOff } from 'lucide-react';
 import { useAuth } from '../lib/auth';
 import { flushQueue } from '../lib/offline';
@@ -42,6 +42,7 @@ export function RequireAdmin() {
 
 export function Layout({ children }: { children?: ReactNode }) {
   const { profile, isAdmin, signOut } = useAuth();
+  const loc = useLocation();
   const [online, setOnline] = useState(navigator.onLine);
   const [dark, setDark] = useState(document.documentElement.classList.contains('dark'));
 
@@ -86,7 +87,7 @@ export function Layout({ children }: { children?: ReactNode }) {
           </p>
         )}
       </header>
-      <main className="mx-auto max-w-5xl px-4 py-6">
+      <main key={loc.pathname} className="anim-fade-up mx-auto max-w-5xl px-4 py-6">
         {profile?.suspended ? (
           <div className="card mx-auto max-w-md space-y-3 text-center">
             <p className="font-semibold">A tua conta está suspensa.</p>

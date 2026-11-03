@@ -1,10 +1,11 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
-import { CheckCircle2, Clock, Trophy, XCircle } from 'lucide-react';
+import { CheckCircle2, Clock, Flame, Trophy, Volume2, VolumeX, XCircle } from 'lucide-react';
 import { supabase } from '../lib/supabase';
 import { useAuth } from '../lib/auth';
 import { humanError, loadSettings, useAccess } from '../lib/billing';
 import { RichText } from '../components/RichText';
+import { Confetti, ProgressRing, buzz, playTone, useCountUp } from '../components/Fx';
 import {
   CATEGORIES, DIFFICULTIES, catName, diffName, encourage, grade, mmss,
   type AnswerResult, type QuizQuestion, type QuizSummary,
@@ -35,6 +36,10 @@ export function QuizPage() {
   const [elapsed, setElapsed] = useState(0);
   const [summary, setSummary] = useState<QuizSummary | null>(null);
   const [review, setReview] = useState(false);
+  const [streak, setStreak] = useState(0);
+  const [bestStreak, setBestStreak] = useState(0);
+  const [score, setScore] = useState(0);
+  const [sound, setSound] = useState(false);
   const t0 = useRef(0);
 
   useEffect(() => {
@@ -50,6 +55,18 @@ export function QuizPage() {
     return () => clearInterval(t);
   }, [view]);
 
+  useEffect(() => {
+    if (view !== 'play') return;
+    const onKey = (e: KeyboardEvent) => {
+      const k = e.key.toLowerCase();
+      const i = '1234'.includes(k) && k ? Number(k) - 1 : 'abcd'.indexOf(k);
+      if (k.length === 1 && i >= 0 && i < 4 && !feedback) { e.preventDefault(); void answer(i); }
+      else if (e.key === 'Enter' && feedback) { e.preventDefault(); void next(); }
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  });
+
   const isFree = access?.tier === 'free';
   const locked = (d: string) => isFree && !freeDiffs.includes(d);
 
@@ -62,7 +79,7 @@ export function QuizPage() {
     if (err) { setError(humanError(err)); return; }
     const r = data as { session_id: string; questions: QuizQuestion[] };
     setSid(r.session_id); setQuestions(r.questions); setIdx(0); setChosen(null); setFeedback(null);
-    setSummary(null); setReview(false); setElapsed(0); t0.current = Date.now(); setView('play');
+    setSummary(null); setReview(false); setElapsed(0); setStreak(0); setBestStreak(0); setScore(0); t0.current = Date.now(); setView('play');
   }
 
   async function answer(i: number) {
@@ -71,7 +88,18 @@ export function QuizPage() {
     const { data, error: err } = await supabase.rpc('quiz_answer', { _session: sid, _question: questions[idx].id, _chosen: i });
     setBusy(false);
     if (err) { setError(humanError(err)); setChosen(null); return; }
-    setFeedback(data as AnswerResult);
+    const fb = data as AnswerResult;
+    setFeedback(fb);
+    if (fb.is_correct) {
+      setStreak((x) => { const n = x + 1; setBestStreak((b) => Math.max(b, n)); return n; });
+      setScore((x) => x + 10);
+      buzz(25);
+      if (sound) playTone('ok');
+    } else {
+      setStreak(0);
+      buzz(120);
+      if (sound) playTone('bad');
+    }
   }
 
   async function next() {
@@ -126,15 +154,22 @@ export function QuizPage() {
       )}
 
       {view === 'play' && questions[idx] && (
-        <section className="card space-y-4" aria-live="polite">
+        <section key={idx} className="card anim-slide-in space-y-4" aria-live="polite">
           <div className="flex items-center justify-between text-sm">
             <span>Pergunta {idx + 1} de {questions.length}</span>
-            <span className="flex items-center gap-1 muted"><Clock size={14} />{mmss(elapsed)}</span>
+            <span className="flex items-center gap-3">
+              {streak >= 2 && <span key={streak} className="anim-pop flex items-center gap-1 font-semibold text-orange-500"><Flame size={16} className="anim-flame" />{streak} seguidas</span>}
+              <span className="font-semibold">{score} pts</span>
+              <span className="flex items-center gap-1 muted"><Clock size={14} />{mmss(elapsed)}</span>
+              <button className="btn-ghost !px-2 !py-1" aria-label={sound ? 'Desligar som' : 'Ligar som'} onClick={() => setSound(!sound)}>
+                {sound ? <Volume2 size={14} /> : <VolumeX size={14} />}
+              </button>
+            </span>
           </div>
           <div className="h-2 overflow-hidden rounded bg-slate-200 dark:bg-navy-800" role="progressbar" aria-valuenow={idx + 1} aria-valuemax={questions.length}>
             <div className="h-full bg-electric-500 transition-all" style={{ width: `${((idx + (feedback ? 1 : 0)) / questions.length) * 100}%` }} />
           </div>
-          <p className="muted">{catName(questions[idx].category)} · {diffName(questions[idx].difficulty)}</p>
+          <p className="muted">{catName(questions[idx].category)} · {diffName(questions[idx].difficulty)} · <span className="hidden sm:inline">atalhos: A–D ou 1–4, Enter para avançar</span></p>
           <RichText text={questions[idx].statement} className="text-lg font-medium" />
           <div className="grid gap-2">
             {questions[idx].options.map((o, i) => {
@@ -142,14 +177,16 @@ export function QuizPage() {
               const wrong = feedback && chosen === i && !feedback.is_correct;
               return (
                 <button key={i} disabled={Boolean(feedback) || busy} onClick={() => void answer(i)}
-                  className={`btn-ghost !justify-start text-left ${right ? '!border-emerald-500 !bg-emerald-500/10' : ''} ${wrong ? '!border-red-500 !bg-red-500/10' : ''}`}>
-                  <span className="badge">{String.fromCharCode(65 + i)}</span> {o}
+                  className={`btn-ghost !justify-start text-left ${chosen === i && !feedback ? 'anim-pop !border-electric-500' : ''} ${right ? 'anim-glow !border-emerald-500 !bg-emerald-500/10' : ''} ${wrong ? 'anim-shake !border-red-500 !bg-red-500/10' : ''}`}>
+                  <span className="badge">{String.fromCharCode(65 + i)}</span> <span className="flex-1">{o}</span>
+                  {right && <CheckCircle2 size={18} className="anim-pop text-emerald-500" />}
+                  {wrong && <XCircle size={18} className="anim-pop text-red-500" />}
                 </button>
               );
             })}
           </div>
           {feedback && (
-            <div className={`rounded-xl p-3 text-sm ${feedback.is_correct ? 'bg-emerald-500/10' : 'bg-amber-500/10'}`}>
+            <div className={`anim-fade-up rounded-xl p-3 text-sm ${feedback.is_correct ? 'bg-emerald-500/10' : 'bg-amber-500/10'}`}>
               <p className="mb-1 flex items-center gap-2 font-semibold">
                 {feedback.is_correct ? <><CheckCircle2 className="text-emerald-500" size={18} />Certo! Boa.</> : <><XCircle className="text-red-500" size={18} />Quase. Vamos ver porquê:</>}
               </p>
@@ -162,17 +199,19 @@ export function QuizPage() {
 
       {view === 'result' && summary && (
         <section className="space-y-4">
-          <div className="card space-y-3 text-center">
-            <Trophy className="mx-auto text-electric-500" size={36} />
-            <p className="text-3xl font-bold">{summary.percent}%</p>
+          <div className="card anim-pop space-y-3 text-center">
+            {summary.percent >= 75 && <Confetti pieces={summary.percent === 100 ? 90 : 50} />}
+            <Trophy className="mx-auto text-electric-500" size={30} />
+            <ProgressRing percent={summary.percent} />
             <p className="font-semibold">{grade(summary.percent)}</p>
             <p className="muted">{encourage(summary.percent)}</p>
             <div className="grid grid-cols-2 gap-2 text-sm sm:grid-cols-4">
-              <Mini label="Pontos" value={String(summary.points)} />
+              <PointsMini points={summary.points} />
               <Mini label="Certas" value={String(summary.correct)} />
               <Mini label="Erradas" value={String(summary.wrong)} />
               <Mini label="Tempo" value={mmss(summary.seconds)} />
             </div>
+            {bestStreak >= 3 && <p className="text-sm font-semibold text-orange-500"><Flame className="anim-flame mr-1 inline" size={16} />Melhor sequência: {bestStreak} certas seguidas!</p>}
             <div className="flex flex-wrap justify-center gap-2">
               <button className="btn" onClick={() => void start()}>Jogar novamente</button>
               <button className="btn-ghost" onClick={() => setReview(!review)}>{review ? 'Esconder respostas' : 'Rever respostas'}</button>
@@ -195,6 +234,11 @@ export function QuizPage() {
       {view === 'ranking' && <Ranking />}
     </div>
   );
+}
+
+function PointsMini({ points }: { points: number }) {
+  const v = useCountUp(points);
+  return <Mini label="Pontos" value={String(v)} />;
 }
 
 function Mini({ label, value }: { label: string; value: string }) {

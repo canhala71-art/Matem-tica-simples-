@@ -33,7 +33,7 @@ export function Landing() {
           <h2 className="text-xl font-bold">O que queres estudar hoje?</h2>
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-5">
             {CATEGORIES.map(([k, l]) => (
-              <Link key={k} to="/entrar?criar=1" className="card text-center text-sm font-medium hover:border-electric-500">{l}</Link>
+              <Link key={k} to="/entrar?criar=1" className="card card-hover text-center text-sm font-medium hover:border-electric-500">{l}</Link>
             ))}
           </div>
         </section>
