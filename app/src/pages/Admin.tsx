@@ -1,8 +1,9 @@
 import { useCallback, useEffect, useState, type FormEvent } from 'react';
 import { supabase } from '../lib/supabase';
 import { useAuth } from '../lib/auth';
+import { AuditTab, CodesTab, OverviewTab, PaymentsTab, PlansAdminTab, QuizAdminTab, SettingsTab } from './AdminBilling';
 
-type Tab = 'conteudo' | 'aula' | 'exercicio' | 'utilizadores';
+type Tab = 'visao' | 'pagamentos' | 'codigos' | 'planos' | 'config' | 'quizzes' | 'conteudo' | 'aula' | 'exercicio' | 'utilizadores' | 'auditoria';
 const STATUS = [['draft', 'Rascunho'], ['review', 'Em revisão'], ['published', 'Publicado']] as const;
 const BLOCKS = [
   ['introduction', 'Introdução'], ['intuition', 'Explicação intuitiva'], ['definition', 'Definição matemática'],
@@ -18,8 +19,8 @@ function Notice({ n }: { n: { ok: boolean; text: string } | null }) {
 }
 
 export function AdminPage() {
-  const [tab, setTab] = useState<Tab>('conteudo');
-  const tabs: [Tab, string][] = [['conteudo', 'Conteúdo'], ['aula', 'Nova aula'], ['exercicio', 'Novo exercício'], ['utilizadores', 'Utilizadores']];
+  const [tab, setTab] = useState<Tab>('visao');
+  const tabs: [Tab, string][] = [['visao', 'Visão geral'], ['pagamentos', 'Pagamentos'], ['codigos', 'Códigos'], ['planos', 'Planos'], ['config', 'Configurações'], ['quizzes', 'Quizzes'], ['conteudo', 'Conteúdo'], ['aula', 'Nova aula'], ['exercicio', 'Novo exercício'], ['utilizadores', 'Utilizadores'], ['auditoria', 'Auditoria']];
   return (
     <div className="space-y-4">
       <h1 className="text-2xl font-bold">Painel administrativo</h1>
@@ -28,6 +29,13 @@ export function AdminPage() {
           <button key={k} onClick={() => setTab(k)} className={tab === k ? 'btn' : 'btn-ghost'}>{l}</button>
         ))}
       </div>
+      {tab === 'visao' && <OverviewTab />}
+      {tab === 'pagamentos' && <PaymentsTab />}
+      {tab === 'codigos' && <CodesTab />}
+      {tab === 'planos' && <PlansAdminTab />}
+      {tab === 'config' && <SettingsTab />}
+      {tab === 'quizzes' && <QuizAdminTab />}
+      {tab === 'auditoria' && <AuditTab />}
       {tab === 'conteudo' && <ContentTab />}
       {tab === 'aula' && <LessonForm />}
       {tab === 'exercicio' && <ExerciseForm />}
@@ -282,7 +290,7 @@ function ExerciseForm() {
 }
 
 // ---------- Utilizadores ----------
-interface UserRow { id: string; display_name: string; roles: string[] }
+interface UserRow { id: string; display_name: string; roles: string[]; suspended: boolean }
 
 function UsersTab() {
   const { session } = useAuth();
@@ -291,11 +299,11 @@ function UsersTab() {
 
   const load = useCallback(async () => {
     const [p, r] = await Promise.all([
-      supabase.from('profiles').select('id, display_name').order('created_at', { ascending: false }).limit(200),
+      supabase.from('profiles').select('id, display_name, suspended').order('created_at', { ascending: false }).limit(200),
       supabase.from('user_roles').select('user_id, role'),
     ]);
     const roles = (r.data ?? []) as { user_id: string; role: string }[];
-    setRows(((p.data ?? []) as { id: string; display_name: string }[]).map((u) => ({ ...u, roles: roles.filter((x) => x.user_id === u.id).map((x) => x.role) })));
+    setRows(((p.data ?? []) as { id: string; display_name: string; suspended: boolean }[]).map((u) => ({ ...u, roles: roles.filter((x) => x.user_id === u.id).map((x) => x.role) })));
   }, []);
   useEffect(() => { void load(); }, [load]);
 
@@ -308,6 +316,13 @@ function UsersTab() {
     await load();
   }
 
+  async function toggleSuspend(u: UserRow) {
+    if (!window.confirm(u.suspended ? `Reativar a conta de ${u.display_name}?` : `Suspender a conta de ${u.display_name}?`)) return;
+    const { error } = await supabase.rpc('admin_set_suspended', { _user: u.id, _value: !u.suspended });
+    setNote(error ? { ok: false, text: error.message } : { ok: true, text: u.suspended ? 'Conta reativada.' : 'Conta suspensa.' });
+    await load();
+  }
+
   return (
     <section className="card space-y-2">
       <h2 className="font-semibold">Utilizadores</h2>
@@ -316,11 +331,14 @@ function UsersTab() {
       <ul className="divide-y divide-slate-200 dark:divide-navy-800">
         {rows?.map((u) => (
           <li key={u.id} className="flex items-center justify-between gap-3 py-2 text-sm">
-            <span className="min-w-0 flex-1 truncate">{u.display_name} <span className="muted">· {u.roles.join(', ') || 'sem papel'}</span></span>
+            <span className="min-w-0 flex-1 truncate">{u.display_name} <span className="muted">· {u.roles.join(', ') || 'sem papel'}{u.suspended ? ' · suspensa' : ''}</span></span>
             {u.id !== session?.user.id && !u.roles.includes('admin') && (
-              <button className="btn-ghost !py-1.5" onClick={() => void toggleTeacher(u)}>
-                {u.roles.includes('teacher') ? 'Remover professor' : 'Tornar professor'}
-              </button>
+              <span className="flex gap-2">
+                <button className="btn-ghost !py-1.5" onClick={() => void toggleTeacher(u)}>
+                  {u.roles.includes('teacher') ? 'Remover professor' : 'Tornar professor'}
+                </button>
+                <button className="btn-ghost !py-1.5" onClick={() => void toggleSuspend(u)}>{u.suspended ? 'Reativar' : 'Suspender'}</button>
+              </span>
             )}
           </li>
         ))}

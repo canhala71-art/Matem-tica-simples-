@@ -1,5 +1,5 @@
 import { useState, type FormEvent } from 'react';
-import { Link, Navigate, useNavigate } from 'react-router-dom';
+import { Link, Navigate, useNavigate, useSearchParams } from 'react-router-dom';
 import { supabase, configured } from '../lib/supabase';
 import { useAuth } from '../lib/auth';
 import { Logo } from '../components/Layout';
@@ -9,7 +9,8 @@ type Mode = 'login' | 'register' | 'forgot';
 export function AuthPage() {
   const { session, loading } = useAuth();
   const nav = useNavigate();
-  const [mode, setMode] = useState<Mode>('login');
+  const [params] = useSearchParams();
+  const [mode, setMode] = useState<Mode>(params.get('criar') ? 'register' : 'login');
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');

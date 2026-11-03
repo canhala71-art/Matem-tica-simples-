@@ -1,7 +1,13 @@
 import { Component, type ReactNode } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { AuthProvider } from './lib/auth';
-import { RequireAdmin, RequireAuth } from './components/Layout';
+import { Layout, RequireAdmin, RequireAuth } from './components/Layout';
+import { useAuth } from './lib/auth';
+import { Landing } from './pages/Landing';
+import { PlansPage } from './pages/Plans';
+import { ActivatePage } from './pages/Activate';
+import { SubscriptionPage } from './pages/Subscription';
+import { QuizPage } from './pages/Quiz';
 import { AuthPage, ResetPasswordPage } from './pages/Auth';
 import { Dashboard } from './pages/Dashboard';
 import { Academy, LevelPage, SubjectPage } from './pages/Academy';
@@ -26,6 +32,12 @@ class ErrorBoundary extends Component<{ children: ReactNode }, { failed: boolean
   }
 }
 
+function Home() {
+  const { session, loading } = useAuth();
+  if (loading) return <p className="p-8 text-center muted">A carregar…</p>;
+  return session ? <Layout><Dashboard /></Layout> : <Landing />;
+}
+
 export default function App() {
   return (
     <ErrorBoundary>
@@ -34,8 +46,12 @@ export default function App() {
           <Routes>
             <Route path="/entrar" element={<AuthPage />} />
             <Route path="/redefinir" element={<ResetPasswordPage />} />
+            <Route index element={<Home />} />
             <Route element={<RequireAuth />}>
-              <Route index element={<Dashboard />} />
+              <Route path="/quiz" element={<QuizPage />} />
+              <Route path="/planos" element={<PlansPage />} />
+              <Route path="/ativar" element={<ActivatePage />} />
+              <Route path="/assinatura" element={<SubscriptionPage />} />
               <Route path="/academia" element={<Academy />} />
               <Route path="/academia/:levelSlug" element={<LevelPage />} />
               <Route path="/academia/:levelSlug/:subjectSlug" element={<SubjectPage />} />

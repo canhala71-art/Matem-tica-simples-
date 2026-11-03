@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, type ReactNode } from 'react';
 import { Link, NavLink, Navigate, Outlet } from 'react-router-dom';
-import { BookOpen, Bot, FlaskConical, LayoutDashboard, LogOut, Moon, Shield, Sun, WifiOff } from 'lucide-react';
+import { BookOpen, Bot, CreditCard, FlaskConical, LayoutDashboard, LogOut, Moon, Shield, Sparkles, Sun, Trophy, WifiOff } from 'lucide-react';
 import { useAuth } from '../lib/auth';
 import { flushQueue } from '../lib/offline';
 
@@ -40,7 +40,7 @@ export function RequireAdmin() {
   return <Outlet />;
 }
 
-function Layout() {
+export function Layout({ children }: { children?: ReactNode }) {
   const { profile, isAdmin, signOut } = useAuth();
   const [online, setOnline] = useState(navigator.onLine);
   const [dark, setDark] = useState(document.documentElement.classList.contains('dark'));
@@ -65,8 +65,11 @@ function Layout() {
           <nav className="flex flex-1 gap-1 overflow-x-auto" aria-label="Principal">
             <NavLink to="/" end className={link}><LayoutDashboard size={16} />Painel</NavLink>
             <NavLink to="/academia" className={link}><BookOpen size={16} />Academia</NavLink>
+            <NavLink to="/quiz" className={link}><Trophy size={16} />Quiz</NavLink>
             <NavLink to="/professor" className={link}><Bot size={16} />Professor IA</NavLink>
             <NavLink to="/laboratorio" className={link}><FlaskConical size={16} />Laboratório</NavLink>
+            <NavLink to="/planos" className={link}><Sparkles size={16} />Planos</NavLink>
+            <NavLink to="/assinatura" className={link}><CreditCard size={16} />Assinatura</NavLink>
             {isAdmin && <NavLink to="/admin" className={link}><Shield size={16} />Admin</NavLink>}
           </nav>
           <button className="btn-ghost !px-2.5" aria-label="Alternar tema claro/escuro"
@@ -83,7 +86,14 @@ function Layout() {
           </p>
         )}
       </header>
-      <main className="mx-auto max-w-5xl px-4 py-6"><Outlet /></main>
+      <main className="mx-auto max-w-5xl px-4 py-6">
+        {profile?.suspended ? (
+          <div className="card mx-auto max-w-md space-y-3 text-center">
+            <p className="font-semibold">A tua conta está suspensa.</p>
+            <p className="muted">Se achas que é um engano, fala connosco pelo WhatsApp de suporte.</p>
+          </div>
+        ) : (children ?? <Outlet />)}
+      </main>
     </div>
   );
 }

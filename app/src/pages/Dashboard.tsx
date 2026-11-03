@@ -3,14 +3,29 @@ import { Link } from 'react-router-dom';
 import { supabase } from '../lib/supabase';
 import { useAuth } from '../lib/auth';
 import { listSavedLessons, queueSize } from '../lib/offline';
+import { DailyChallenge } from '../components/DailyChallenge';
+import { CATEGORIES } from '../lib/quiz';
+import { SUB_PT, TIER_PT, useAccess } from '../lib/billing';
 
 interface AttemptRow { is_correct: boolean; time_spent_seconds: number | null; created_at: string }
 interface MasteryRow { competency: string; attempts_count: number; correct_count: number; mastered: boolean }
+
+function greeting(): string {
+  const h = new Date().getHours();
+  return h < 12 ? 'Bom dia' : h < 19 ? 'Boa tarde' : 'Boa noite';
+}
+function nudge(total: number, rate: number): string {
+  if (total === 0) return 'Vamos começar? O primeiro exercício é sempre o mais importante.';
+  if (rate >= 80) return 'Estás a ir muito bem. Que tal subir a fasquia com um quiz avançado?';
+  if (rate >= 50) return 'Bom ritmo! Cada exercício te deixa mais perto de dominar a matéria.';
+  return 'Está tudo bem errar: é assim que o cérebro aprende. Continua, vais notar a diferença.';
+}
 
 const LEVELS = ['Fundamentos', 'Matemática Básica', 'Ensino Secundário', 'Preparação Académica', 'Universidade', 'Especialização'];
 
 export function Dashboard() {
   const { profile, session, refresh } = useAuth();
+  const { access } = useAccess();
   const [attempts, setAttempts] = useState<AttemptRow[] | null>(null);
   const [mastery, setMastery] = useState<MasteryRow[]>([]);
   const [error, setError] = useState<string | null>(null);
@@ -58,10 +73,29 @@ export function Dashboard() {
 
   return (
     <div className="space-y-6">
-      <div>
-        <h1 className="text-2xl font-bold">Olá, {profile?.display_name ?? 'estudante'}</h1>
-        <p className="muted">O teu progresso, com dados reais das tuas tentativas.</p>
+      <div className="space-y-1">
+        <h1 className="text-2xl font-bold">{greeting()}, {(profile?.display_name ?? 'estudante').split(' ')[0]}!</h1>
+        <p className="muted">{attempts ? nudge(total, total ? Math.round((correct / total) * 100) : 0) : 'A preparar o teu painel…'}</p>
+        {access && (
+          <p className="text-xs text-slate-500">
+            Plano: <strong>{TIER_PT[access.tier]}</strong> ({SUB_PT[access.status]}
+            {access.days_left > 0 ? `, ${access.days_left} dias` : ''}) ·{' '}
+            <Link className="text-electric-500" to={access.tier === 'free' ? '/planos' : '/assinatura'}>{access.tier === 'free' ? 'Ver planos' : 'Minha assinatura'}</Link>
+          </p>
+        )}
       </div>
+
+      <DailyChallenge />
+
+      <section className="space-y-2">
+        <h2 className="font-semibold">Por onde queres começar?</h2>
+        <div className="grid grid-cols-2 gap-2 sm:grid-cols-5">
+          {CATEGORIES.map(([k, l]) => (
+            <Link key={k} to={`/quiz?categoria=${k}`} className="card !p-3 text-center text-sm font-medium hover:border-electric-500">{l}</Link>
+          ))}
+        </div>
+        <p className="muted">Ou vai direto às <Link className="text-electric-500" to="/academia">aulas da Academia</Link>.</p>
+      </section>
 
       {profile && profile.academic_level === null && (
         <div className="card space-y-3">
@@ -96,14 +130,14 @@ export function Dashboard() {
             </div>
           ))}
         </div>
-        {attempts && total === 0 && <p className="muted mt-3">Ainda não fizeste exercícios. Começa pela Academia.</p>}
+        {attempts && total === 0 && <p className="muted mt-3">Ainda não fizeste exercícios, e está tudo bem. Abre uma aula na Academia e resolve o primeiro.</p>}
       </section>
 
       <div className="grid gap-4 sm:grid-cols-2">
         <section className="card">
           <h2 className="mb-2 font-semibold">Dificuldades identificadas</h2>
           {difficulties.length === 0
-            ? <p className="muted">Nenhuma por agora (precisamos de pelo menos 3 tentativas por competência).</p>
+            ? <p className="muted">Nenhuma por agora. Quando houver temas em que tropeces, aparecem aqui para os trabalhares com calma.</p>
             : <ul className="space-y-1 text-sm">{difficulties.map((d) => <li key={d.competency}>{d.competency} — {d.correct_count}/{d.attempts_count} certas</li>)}</ul>}
         </section>
         <section className="card">

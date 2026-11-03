@@ -8,6 +8,7 @@ export interface Profile {
   academic_level: number | null;
   is_minor: boolean;
   locale: string;
+  suspended?: boolean;
 }
 export type Role = 'student' | 'teacher' | 'admin';
 
@@ -37,7 +38,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       return;
     }
     const [p, r] = await Promise.all([
-      supabase.from('profiles').select('id, display_name, academic_level, is_minor, locale').eq('id', s.user.id).maybeSingle(),
+      supabase.from('profiles').select('id, display_name, academic_level, is_minor, locale, suspended').eq('id', s.user.id).maybeSingle(),
       supabase.from('user_roles').select('role').eq('user_id', s.user.id),
     ]);
     setProfile((p.data as Profile | null) ?? null);
