@@ -30,6 +30,7 @@ export function AdminPage() {
         ))}
       </div>
       {tab === 'visao' && <OverviewTab />}
+      {(tab === 'pagamentos' || tab === 'codigos') && <h2 className="text-lg font-bold">Gestão de Pagamentos e Códigos</h2>}
       {tab === 'pagamentos' && <PaymentsTab />}
       {tab === 'codigos' && <CodesTab />}
       {tab === 'planos' && <PlansAdminTab />}

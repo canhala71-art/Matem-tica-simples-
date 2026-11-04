@@ -1,0 +1,211 @@
+{
+ "subject": "razao-e-proporcao",
+ "topic_title": "Razão e proporção",
+ "topic_slug": "razao-e-proporcao",
+ "lesson_title": "Razão, proporção e escalas",
+ "lesson_slug": "razao-proporcao-escalas",
+ "summary": "Compara quantidades com razões, resolve proporções e lê escalas de mapas.",
+ "minutes": 25,
+ "blocks": {
+  "introduction": "Para fazer um bom sumo de maracujá, a Dona Rosa mistura sempre 2 copos de polpa por 1 de água, quer faça um jarro pequeno, quer faça um balde para a festa. Está a manter uma **razão**. Quando o mapa diz que 1 cm representa 5 km, está a usar uma **escala**, que também é uma razão. Mestres de obras, cozinheiros, engenheiros e até quem lê o Google Maps usam estas ideias sem reparar.\n\nNesta aula vais aprender a comparar quantidades, a completar proporções e a ler escalas para descobrir distâncias reais.",
+  "intuition": "Uma **razão** compara duas quantidades dividindo uma pela outra. Numa turma com 12 raparigas e 18 rapazes, a razão raparigas : rapazes é 12 : 18, que se simplifica para 2 : 3. Lê-se: \"por cada 2 raparigas há 3 rapazes\". Simplificar uma razão é como simplificar uma fração: divide-se os dois termos pelo mesmo número.\n\nUma **proporção** é a igualdade de duas razões, por exemplo $\\frac{3}{4}=\\frac{15}{20}$. Há uma regra prática poderosa: **o produto dos meios é igual ao produto dos extremos** (3·20 = 4·15 = 60). É por ela que descobrimos o termo em falta numa proporção.\n\nNas **escalas**, 1 : 500 000 significa que 1 cm no mapa corresponde a 500 000 cm na realidade, ou seja, 5 km.\n\n**Erros comuns:** (1) inverter a ordem da razão (raparigas : rapazes não é igual a rapazes : raparigas); (2) misturar unidades (cm com km) sem converter; (3) esquecer de simplificar no fim.",
+  "definition": "A **razão** entre dois números a e b (b ≠ 0) é o quociente $\\frac{a}{b}$ (ou a : b). Uma **proporção** é uma igualdade entre duas razões: $\\frac{a}{b}=\\frac{c}{d}$. Nela, a e d são os **extremos** e b e c os **meios**. Propriedade fundamental: $a\\cdot d=b\\cdot c$. A **escala** de um mapa é a razão entre a distância no desenho e a distância real, expressas na mesma unidade.",
+  "formulas": "$$\\frac{a}{b}=\\frac{c}{d}\\;\\Longleftrightarrow\\; a\\cdot d=b\\cdot c$$\n\n$$x=\\frac{b\\cdot c}{a}\\ \\text{ em }\\ \\frac{a}{b}=\\frac{x}{c}\\ \\ (\\text{ou seja, multiplica em cruz e divide})$$\n\nEscala 1 : E, distância real = distância no mapa × E.\n\nDivisão em partes proporcionais (razão m : n, total T): cada parte vale $\\dfrac{T}{m+n}$.",
+  "worked_example": "**Exemplo 1.** Simplifica a razão 12 : 18.\n\nm.d.c.(12, 18) = 6, logo 12 : 18 = 2 : 3.\n\n**Exemplo 2.** Calcula x em $\\frac{3}{4}=\\frac{x}{20}$.\n\nMultiplica em cruz: $4x=3\\cdot 20=60$, logo $x=15$.\n\n**Exemplo 3 (escala).** No mapa, a distância Luanda–Catete mede 6 cm e a escala é 1 : 500 000. Distância real: 6 × 500 000 = 3 000 000 cm = 30 km (porque 100 000 cm = 1 km).\n\n**Exemplo 4 (partilha).** Dividir 840 Kz entre dois irmãos na razão 3 : 4.\n\nTotal de partes: 3 + 4 = 7. Cada parte vale 840 ÷ 7 = 120 Kz. Um recebe 3 × 120 = 360 Kz e o outro 4 × 120 = 480 Kz. Confirma: 360 + 480 = 840 ✓.",
+  "guided_exercise": "Vamos juntos: **num mapa de escala 1 : 200 000, duas cidades estão a 9 cm. Qual é a distância real?**\n\n1) O que significa 1 : 200 000? Cada 1 cm no mapa são 200 000 cm no terreno.\n\n2) Multiplica: 9 × 200 000 = 1 800 000 cm.\n\n3) Converte para km: 1 km = 100 000 cm, logo 1 800 000 ÷ 100 000 = 18 km.\n\n4) Resposta: 18 km. Para ti: como ficaria se a escala fosse 1 : 100 000?",
+  "independent_exercise": "Chegou a tua vez. Resolve os exercícios sem pressa e usa **Verificar** para confirmar. Se errares, não faz mal: lê a resolução passo a passo, percebe onde o raciocínio escorregou e tenta outra vez. É assim que se aprende de verdade.",
+  "challenge": "**Desafio da tinta.** Uma tinta cinzenta faz-se misturando tinta branca e preta na razão 5 : 2. Para obter 14 litros de tinta cinzenta, quantos litros de cada cor são necessários? E se quiseres que a mistura fique mais escura, a razão branca : preta deve aumentar ou diminuir?\n\nPista: quantas partes tem a mistura toda?",
+  "assessment": "Consideras a competência dominada quando consegues: (1) simplificar razões; (2) completar proporções com o produto em cruz; (3) usar a escala de um mapa nos dois sentidos (do mapa para a realidade e vice-versa); (4) dividir uma quantidade em partes proporcionais. Mostra-o com acertos em níveis de dificuldade diferentes."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "razao_proporcao.base",
+   "statement": "Numa turma há 12 raparigas e 18 rapazes. Qual é a razão entre raparigas e rapazes, na forma de fração irredutível?",
+   "options": null,
+   "answer": {
+    "value": "2/3",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "12/18 simplifica-se dividindo por 6: 2/3.",
+   "steps": [
+    "Escreve 12/18.",
+    "m.d.c.(12, 18) = 6.",
+    "12÷6 = 2 e 18÷6 = 3, logo 2/3."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "razao_proporcao.base",
+   "statement": "Calcula x na proporção $\\frac{3}{4}=\\frac{x}{20}$.",
+   "options": null,
+   "answer": {
+    "value": "15",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Produto dos meios = produto dos extremos: 4x = 3·20 = 60, logo x = 15.",
+   "steps": [
+    "4·x = 3·20.",
+    "x = 60 ÷ 4 = 15."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "razao_proporcao.base",
+   "statement": "Calcula x na proporção $\\frac{5}{x}=\\frac{15}{27}$.",
+   "options": null,
+   "answer": {
+    "value": "9",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "15x = 5·27 = 135, logo x = 9.",
+   "steps": [
+    "15·x = 5·27 = 135.",
+    "x = 135 ÷ 15 = 9."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "razao_proporcao.base",
+   "statement": "Um mapa tem escala 1 : 500 000. Dois lugares estão a 4 cm no mapa. A que distância real estão, em km?",
+   "options": null,
+   "answer": {
+    "value": "20",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "4 cm × 500 000 = 2 000 000 cm = 20 km (100 000 cm = 1 km).",
+   "steps": [
+    "Distância real em cm: 4 × 500000 = 2000000.",
+    "1 km = 100000 cm, logo 2000000 ÷ 100000 = 20 km."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "razao_proporcao.base",
+   "statement": "Num mapa de escala 1 : 200 000, a distância entre duas cidades mede 9 cm. Quantos km são na realidade?",
+   "options": null,
+   "answer": {
+    "value": "18",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "9 × 200 000 = 1 800 000 cm = 18 km.",
+   "steps": [
+    "9 × 200000 = 1800000 cm.",
+    "÷ 100000 = 18 km."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "razao_proporcao.base",
+   "statement": "Para fazer 3 litros de sumo usam-se 2 litros de polpa e 1 litro de água. A razão polpa : água é 2 : 1. Quantos litros de polpa são precisos para 12 litros de sumo (mesma razão)?",
+   "options": null,
+   "answer": {
+    "value": "8",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Cada 3 litros de sumo levam 2 de polpa: 12 ÷ 3 = 4 grupos; 4 × 2 = 8 litros.",
+   "steps": [
+    "12 ÷ 3 = 4 grupos.",
+    "4 × 2 = 8 litros."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "razao_proporcao.base",
+   "statement": "Dividir 840 Kz entre dois irmãos na razão 3 : 4. Quanto recebe o irmão que recebe a parte maior?",
+   "options": null,
+   "answer": {
+    "value": "480",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "3 + 4 = 7 partes; cada parte vale 840 ÷ 7 = 120 Kz; a parte maior são 4 × 120 = 480 Kz.",
+   "steps": [
+    "Total de partes: 3 + 4 = 7.",
+    "1 parte = 840 ÷ 7 = 120.",
+    "Parte maior: 4 × 120 = 480 Kz."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "razao_proporcao.base",
+   "statement": "A idade de um pai está para a do filho como 7 está para 2. Se o filho tem 10 anos, que idade tem o pai?",
+   "options": null,
+   "answer": {
+    "value": "35",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Proporção 7/2 = x/10: 2x = 70 e x = 35 anos.",
+   "steps": [
+    "7/2 = x/10.",
+    "2x = 70.",
+    "x = 35."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "razao_proporcao.base",
+   "statement": "Qual destas razões é equivalente a 6 : 9?",
+   "options": [
+    {
+     "id": "a",
+     "label": "2 : 3"
+    },
+    {
+     "id": "b",
+     "label": "3 : 2"
+    },
+    {
+     "id": "c",
+     "label": "6 : 3"
+    },
+    {
+     "id": "d",
+     "label": "9 : 6"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "Divide os dois termos por 3: 6:9 = 2:3.",
+   "steps": [
+    "m.d.c.(6, 9) = 3.",
+    "6÷3 = 2 e 9÷3 = 3."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 1,
+   "competency": "razao_proporcao.base",
+   "statement": "As frações $\\frac{4}{6}$ e $\\frac{10}{15}$ formam uma proporção.",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "Ambas valem 2/3 (ou: 4·15 = 6·10 = 60).",
+   "steps": [
+    "Simplifica: 4/6 = 2/3.",
+    "10/15 = 2/3.",
+    "São iguais, logo formam proporção."
+   ]
+  }
+ ]
+}

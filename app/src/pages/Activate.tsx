@@ -35,12 +35,12 @@ export function ActivatePage() {
 
   return (
     <form onSubmit={(e) => void submit(e)} className="card mx-auto max-w-md space-y-4">
-      <div className="flex items-center gap-2"><KeyRound className="text-electric-500" /><h1 className="text-xl font-bold">Ativar Premium</h1></div>
+      <div className="flex items-center gap-2"><KeyRound className="text-electric-500" /><h1 className="text-xl font-bold">Activar o meu Premium</h1></div>
       <p className="muted">Introduz o código que recebeste no WhatsApp depois de confirmarmos o teu pagamento. O código só funciona na tua conta e só uma vez.</p>
       <input className="input font-mono uppercase tracking-wider" placeholder="MM-XXXXX-XXXXX-XXXXX-XXXXX" value={code}
-        autoComplete="off" onChange={(e) => setCode(e.target.value)} aria-label="Código de ativação" />
+        autoComplete="off" onChange={(e) => setCode(e.target.value)} aria-label="Código de activação" />
       {error && <p role="alert" className="text-sm text-red-600">{error}</p>}
-      <button className="btn w-full" disabled={busy || !code.trim()}>{busy ? 'A verificar…' : 'Ativar plano'}</button>
+      <button className="btn w-full" disabled={busy || !code.trim()}>{busy ? 'A verificar…' : 'Activar plano'}</button>
       <p className="muted">Ainda não pagaste? Vê os <Link className="text-electric-500" to="/planos">planos</Link>.</p>
     </form>
   );

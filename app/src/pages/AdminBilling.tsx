@@ -46,6 +46,7 @@ export function PaymentsTab() {
   const [note, setNote] = useState<Note>(null);
   const [issued, setIssued] = useState<{ code: string; who: string } | null>(null);
   const [admNote, setAdmNote] = useState<Record<string, string>>({});
+  const [refs, setRefs] = useState<Record<string, string>>({});
   const [open, setOpen] = useState<string | null>(null);
   const [withCode, setWithCode] = useState<Set<string>>(new Set());
 
@@ -69,8 +70,16 @@ export function PaymentsTab() {
   async function decide(p: PayView, decision: PaymentRow['status']) {
     if (decision === 'CONFIRMED' && !window.confirm(
       `Confirmas que o dinheiro (${kz(p.amount_kz)}) já entrou mesmo na conta ${METHOD_PT[p.method]}? Uma captura de ecrã não chega.`)) return;
+    if (decision === 'REJECTED' && (admNote[p.id] ?? '').trim().length < 3) {
+      setNote({ ok: false, text: 'Escreve o motivo da rejeição no campo de nota antes de rejeitar.' }); return;
+    }
     const { error } = await supabase.rpc('admin_decide_payment', { _id: p.id, _decision: decision, _note: admNote[p.id] ?? '' });
     setNote(error ? { ok: false, text: humanError(error) } : { ok: true, text: `Pedido marcado como ${STATUS_PT[decision].toLowerCase()}.` });
+    await load();
+  }
+  async function saveRef(p: PayView) {
+    const { error } = await supabase.rpc('admin_set_reference', { _id: p.id, _reference: refs[p.id] ?? '' });
+    setNote(error ? { ok: false, text: humanError(error) } : { ok: true, text: 'Referência da transação registada.' });
     await load();
   }
   async function issue(p: PayView) {
@@ -83,7 +92,7 @@ export function PaymentsTab() {
 
   const shown = (rows ?? []).filter((r) => filter === 'ALL' || r.status === filter);
   const msgText = issued
-    ? `Olá ${issued.who}! O teu pagamento foi confirmado. 🎉\nO teu código de ativação é:\n${issued.code}\nEntra no MenteMat, abre "Ativar Premium" e introduz o código. Só funciona na tua conta e uma única vez.`
+    ? `Olá ${issued.who}! O teu pagamento foi confirmado. 🎉\nO teu código de ativação é:\n${issued.code}\nEntra no MenteMat, abre "Activar o meu Premium" e introduz o código. Só funciona na tua conta e uma única vez.`
     : '';
 
   return (
@@ -122,8 +131,13 @@ export function PaymentsTab() {
               {p.decided_at && <p className="muted">Decidido em {fmtDateTime(p.decided_at)}</p>}
             </div>
           )}
-          <input className="input" placeholder="Nota interna (opcional)" value={admNote[p.id] ?? ''}
+          <input className="input" placeholder="Nota interna (obrigatória ao rejeitar: indica o motivo)" value={admNote[p.id] ?? ''}
             onChange={(e) => setAdmNote({ ...admNote, [p.id]: e.target.value })} />
+          <div className="flex gap-2">
+            <input className="input" placeholder="Referência da transação (do extrato)" value={refs[p.id] ?? p.reference ?? ''}
+              onChange={(e) => setRefs({ ...refs, [p.id]: e.target.value })} />
+            <button className="btn-ghost shrink-0 !py-1.5" onClick={() => void saveRef(p)}>Registar</button>
+          </div>
           <div className="flex flex-wrap gap-2">
             <button className="btn-ghost !py-1.5" onClick={() => setOpen(open === p.id ? null : p.id)}>{open === p.id ? 'Fechar detalhes' : 'Detalhes'}</button>
             {p.status !== 'CONFIRMED' && <button className="btn !py-1.5" onClick={() => void decide(p, 'CONFIRMED')}>Confirmar pagamento</button>}

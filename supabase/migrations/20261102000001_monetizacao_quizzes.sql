@@ -589,3 +589,16 @@ begin
     insert into public.quiz_answers(question_id, correct_index) values (qid, r.correct);
   end loop;
 end $$;
+
+-- Ajustes finais (pedido de 04/11): motivo obrigatório ao rejeitar e registo de referência pelo admin.
+-- (já aplicados na base via execute_sql; admin_decide_payment passa a exigir motivo com REJECTED)
+create or replace function public.admin_set_reference(_id uuid, _reference text)
+returns void language plpgsql security definer set search_path = '' as $$
+begin
+  if not public.is_admin() then raise exception 'Sem permissão.'; end if;
+  update public.payment_requests set reference = left(btrim(_reference), 80) where id = _id;
+  if not found then raise exception 'Pedido não encontrado.'; end if;
+  perform public.audit('referencia_registada', 'payment_requests', _id::text, jsonb_build_object('referencia', left(btrim(_reference), 80)));
+end $$;
+revoke execute on function public.admin_set_reference(uuid, text) from public, anon;
+grant execute on function public.admin_set_reference(uuid, text) to authenticated;

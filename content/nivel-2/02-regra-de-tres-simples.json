@@ -1,0 +1,225 @@
+{
+ "subject": "regra-de-tres",
+ "topic_title": "Regra de três simples",
+ "topic_slug": "regra-de-tres-simples",
+ "lesson_title": "Regra de três simples: direta e inversa",
+ "lesson_slug": "regra-de-tres-simples",
+ "summary": "Resolve problemas de proporcionalidade, quer as grandezas subam juntas, quer uma suba e a outra desça.",
+ "minutes": 25,
+ "blocks": {
+  "introduction": "No mercado, 5 kg de arroz custam 4 500 Kz. E se precisares de 8 kg, quanto vais pagar? Ou: seis pedreiros acabam um muro em 10 dias; se chamares mais nove pedreiros, em quantos dias ficará pronto? Estas perguntas aparecem todos os dias, em compras, obras, viagens e cozinha.\n\nA **regra de três simples** é a ferramenta para as resolver: conhecendo três valores, descobre-se o quarto. No fim desta aula vais saber decidir se o problema é de proporcionalidade **direta** ou **inversa** e resolvê-lo com segurança.",
+  "intuition": "O segredo está numa pergunta que deves fazer sempre antes de contar: **se uma grandeza aumenta, a outra aumenta ou diminui?**\n\nSe aumentam juntas (mais arroz, mais dinheiro), a relação é **direta**. Uma maneira fácil de pensar é voltar à unidade: 4 500 ÷ 5 = 900 Kz por quilo; para 8 quilos, 8 × 900 = 7 200 Kz.\n\nSe uma sobe e a outra desce (mais pedreiros, menos dias), a relação é **inversa**. Aqui o que fica fixo é o trabalho total: 6 pedreiros × 10 dias = 60 \"dias de pedreiro\". Com 15 pedreiros, 60 ÷ 15 = 4 dias.\n\n**Erros comuns:** (1) aplicar sempre a regra direta sem pensar; (2) trocar a ordem dos valores na tabela; (3) esquecer-se de escrever a unidade na resposta. Antes de fechar, faz um teste de bom senso: com mais pedreiros o muro ficou pronto mais depressa? Então 4 dias faz sentido.",
+  "definition": "Duas grandezas são **diretamente proporcionais** quando, ao multiplicar uma por um número, a outra fica multiplicada pelo mesmo número (o quociente entre elas é constante). São **inversamente proporcionais** quando, ao multiplicar uma por um número, a outra fica dividida por esse número (o produto entre elas é constante). A **regra de três simples** resolve problemas com duas grandezas proporcionais, em que três valores são conhecidos.",
+  "formulas": "**Direta** (a ↔ b, c ↔ x):  $$\\frac{a}{c}=\\frac{b}{x}\\;\\Longrightarrow\\; x=\\frac{b\\cdot c}{a}$$\n\n**Inversa** (a ↔ b, c ↔ x):  $$a\\cdot b=c\\cdot x\\;\\Longrightarrow\\; x=\\frac{a\\cdot b}{c}$$\n\nTruque da unidade: na direta, descobre o valor de **1**; na inversa, descobre o **total** (produto) e divide.",
+  "worked_example": "**Exemplo 1 (direta).** 5 kg de arroz custam 4 500 Kz. Quanto custam 8 kg?\n\n**Passo 1.** Mais quilos, mais dinheiro: direta.\n\n**Passo 2.** Cálculo: $x=\\dfrac{4500\\cdot 8}{5}=7200$ Kz.\n\n**Exemplo 2 (direta).** Um carro faz 45 km com 3 litros. Com 7 litros faz $\\dfrac{45\\cdot 7}{3}=105$ km.\n\n**Exemplo 3 (inversa).** 6 pedreiros fazem o muro em 10 dias. Com 15 pedreiros: mais pessoas, menos dias, inversa. $x=\\dfrac{6\\cdot 10}{15}=4$ dias.\n\n**Exemplo 4 (inversa, com armadilha).** A 60 km/h uma viagem demora 4 h. A 80 km/h? Maior velocidade, menor tempo: $x=\\dfrac{60\\cdot 4}{80}=3$ h. Se tivesses usado a regra direta, terias obtido 5,33 h, um tempo maior com mais velocidade, que não faz sentido.",
+  "guided_exercise": "Resolve connosco: **uma receita para 4 pessoas leva 600 g de farinha. Quanta farinha para 10 pessoas?**\n\n1) Mais pessoas, mais farinha ou menos? Mais. Logo, é direta.\n\n2) Quanto vai cada pessoa? 600 ÷ 4 = 150 g.\n\n3) Para 10 pessoas? 10 × 150 = 1 500 g.\n\n4) Teste de bom senso: 10 pessoas é mais do dobro de 4, e 1 500 g é mais do dobro de 600 g. Faz sentido.",
+  "independent_exercise": "Chegou a tua vez. Resolve os exercícios sem pressa e usa **Verificar** para confirmar. Se errares, não faz mal: lê a resolução passo a passo, percebe onde o raciocínio escorregou e tenta outra vez. É assim que se aprende de verdade.",
+  "challenge": "**Desafio da obra.** 8 trabalhadores fazem uma obra em 15 dias, mas ao fim de 5 dias saem 4 trabalhadores. Em quantos dias, no total, ficará concluída a obra?\n\nPista: depois de 5 dias, que parte do trabalho já foi feita? Quantos \"dias de trabalhador\" faltam, e com quantos trabalhadores?",
+  "assessment": "Estarás pronto quando conseguires: (1) decidir corretamente entre proporcionalidade direta e inversa e justificar com uma frase; (2) montar a regra de três sem trocar valores; (3) calcular com números inteiros e com problemas em Kz; (4) fazer o teste de bom senso ao resultado."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "regra_de_tres.simples",
+   "statement": "2 pães custam 600 Kz. Quanto custam 5 pães (ao mesmo preço)?",
+   "options": null,
+   "answer": {
+    "value": "1500",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "É diretamente proporcional: preço de 1 pão = 600 ÷ 2 = 300 Kz; 5 pães = 1500 Kz.",
+   "steps": [
+    "Preço de 1 pão: 600 ÷ 2 = 300.",
+    "5 pães: 5 × 300 = 1500 Kz."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "regra_de_tres.simples",
+   "statement": "4 pães custam 1000 Kz. Quanto custam 10 pães (ao mesmo preço)?",
+   "options": null,
+   "answer": {
+    "value": "2500",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "É diretamente proporcional: preço de 1 pão = 1000 ÷ 4 = 250 Kz; 10 pães = 2500 Kz.",
+   "steps": [
+    "Preço de 1 pão: 1000 ÷ 4 = 250.",
+    "10 pães: 10 × 250 = 2500 Kz."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "regra_de_tres.simples",
+   "statement": "5 kg de arroz custam 4 500 Kz. Quanto custam 8 kg?",
+   "options": null,
+   "answer": {
+    "value": "7200",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Quantidade e preço aumentam juntos (diretamente proporcionais): 4500 ÷ 5 = 900 por kg; 900 × 8 = 7 200.",
+   "steps": [
+    "Monta a tabela: 5 kg → 4500; 8 kg → x.",
+    "Multiplica em cruz: 5·x = 8·4500.",
+    "x = 36000 ÷ 5 = 7200 Kz."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "regra_de_tres.simples",
+   "statement": "Um carro gasta 3 litros de gasolina em 45 km. Quantos quilómetros faz com 7 litros?",
+   "options": null,
+   "answer": {
+    "value": "105",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Quanto mais litros, mais quilómetros: 45 ÷ 3 = 15 km por litro; 15 × 7 = 105 km.",
+   "steps": [
+    "15 km por litro.",
+    "7 × 15 = 105 km."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "regra_de_tres.simples",
+   "statement": "6 pedreiros constroem um muro em 10 dias. Quantos dias demorariam 15 pedreiros, ao mesmo ritmo?",
+   "options": null,
+   "answer": {
+    "value": "4",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Mais pedreiros, menos dias (grandezas inversamente proporcionais): 6 × 10 = 60 \"pedreiros-dia\"; 60 ÷ 15 = 4 dias.",
+   "steps": [
+    "O trabalho total é fixo: 6 × 10 = 60.",
+    "Com 15 pedreiros: 60 ÷ 15 = 4 dias."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "regra_de_tres.simples",
+   "statement": "A 60 km/h uma viagem demora 4 horas. A 80 km/h, quantas horas demora?",
+   "options": null,
+   "answer": {
+    "value": "3",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Velocidade e tempo são inversamente proporcionais: 60 × 4 = 240 km; 240 ÷ 80 = 3 horas.",
+   "steps": [
+    "Distância = 60 × 4 = 240 km.",
+    "Tempo = 240 ÷ 80 = 3 h."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "regra_de_tres.simples",
+   "statement": "4 torneiras iguais enchem um tanque em 12 horas. Em quantas horas o encheriam 6 torneiras?",
+   "options": null,
+   "answer": {
+    "value": "8",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Mais torneiras, menos tempo: 4 × 12 = 48; 48 ÷ 6 = 8 horas.",
+   "steps": [
+    "Produto constante: 48.",
+    "48 ÷ 6 = 8 h."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "regra_de_tres.simples",
+   "statement": "12 cadernos custam 18 000 Kz. Qual o preço de 20 cadernos?",
+   "options": null,
+   "answer": {
+    "value": "30000",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "18 000 ÷ 12 = 1 500 por caderno; 1 500 × 20 = 30 000 Kz.",
+   "steps": [
+    "Preço de 1 caderno: 1500 Kz.",
+    "20 × 1500 = 30000 Kz."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "regra_de_tres.simples",
+   "statement": "Em qual destas situações usas regra de três INVERSA?",
+   "options": [
+    {
+     "id": "a",
+     "label": "Mais camiões a descarregar, menos horas para acabar"
+    },
+    {
+     "id": "b",
+     "label": "Mais kg de peixe, mais Kz a pagar"
+    },
+    {
+     "id": "c",
+     "label": "Mais litros de água, mais tempo a encher"
+    },
+    {
+     "id": "d",
+     "label": "Mais metros de tecido, mais preço"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "Quando uma grandeza aumenta e a outra diminui (mantendo o trabalho/total fixo), é inversa.",
+   "steps": [
+    "Pergunta-te: se uma sobe, a outra sobe ou desce?",
+    "Aqui, mais camiões → menos horas → inversa."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 1,
+   "competency": "regra_de_tres.simples",
+   "statement": "Se 3 laranjas custam 150 Kz, então 6 laranjas custam 300 Kz.",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "6 é o dobro de 3, logo o preço também dobra: 300 Kz.",
+   "steps": [
+    "6 = 2 × 3.",
+    "2 × 150 = 300."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "regra_de_tres.simples",
+   "statement": "Uma receita para 4 pessoas leva 600 g de farinha. Quantos gramas são precisos para 10 pessoas?",
+   "options": null,
+   "answer": {
+    "value": "1500",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "600 ÷ 4 = 150 g por pessoa; 150 × 10 = 1 500 g.",
+   "steps": [
+    "150 g por pessoa.",
+    "10 × 150 = 1500 g."
+   ]
+  }
+ ]
+}

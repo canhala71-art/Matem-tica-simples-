@@ -1,0 +1,246 @@
+{
+ "subject": "equacoes",
+ "topic_title": "Equações do 1.º grau",
+ "topic_slug": "equacoes-primeiro-grau",
+ "lesson_title": "Equações do 1.º grau: descobrir o valor escondido",
+ "lesson_slug": "equacoes-primeiro-grau",
+ "summary": "Resolve equações com uma incógnita usando a ideia da balança e as operações inversas.",
+ "minutes": 25,
+ "blocks": {
+  "introduction": "Na praça, a Dona Ana comprou 3 caixas de tomate iguais e ainda pagou 500 Kz de transporte. No fim, gastou 3 500 Kz. Quanto custou cada caixa? Repara: não sabemos o preço da caixa, mas sabemos como tudo se liga. Esse valor escondido chama-se **incógnita** e costumamos chamar-lhe x.\n\nNesta aula vais aprender a transformar uma história como esta numa equação e a resolvê-la em poucos passos. No fim, vais conseguir resolver equações do 1.º grau, mesmo com x dos dois lados, e confirmar sozinho se a resposta está certa.",
+  "intuition": "Imagina uma balança de dois pratos em equilíbrio. Num prato está \"3x + 500\" e no outro \"3 500\". A regra de ouro: **tudo o que fazes a um prato tens de fazer ao outro**, senão a balança desequilibra. Se tiras 500 de um lado, tiras 500 do outro. Se dividires um prato em 3 partes iguais, tens de dividir o outro também.\n\nResolver uma equação é isto: ir desfazendo, pela ordem contrária, as operações que foram feitas ao x, até ele ficar sozinho. A \"operação inversa\" de somar é subtrair, a de multiplicar é dividir (e vice-versa). Em 3x + 500 = 3 500 primeiro desfazemos o +500 (subtraímos 500 aos dois lados) e depois o ×3 (dividimos por 3).\n\nQuando há x dos dois lados, por exemplo 5x + 2 = 2x + 17, o objetivo é o mesmo: juntar os x num prato e os números no outro.\n\n**Erros comuns:** (1) fazer a operação só de um lado da igualdade; (2) trocar o sinal ao \"passar\" um termo (se está a somar 500, ao passar fica −500); (3) dividir só o termo do x e esquecer o outro lado. Defesa simples: no fim, **substitui o valor encontrado na equação original**; se os dois lados derem o mesmo número, acertaste.",
+  "definition": "Uma **equação do 1.º grau com uma incógnita** é uma igualdade que pode ser escrita na forma $ax+b=c$ (ou $ax+b=cx+d$), em que a incógnita x aparece com expoente 1. A **solução** é o número que, colocado no lugar de x, torna a igualdade verdadeira. Duas equações são **equivalentes** quando têm a mesma solução; somar, subtrair, multiplicar ou dividir os dois lados pelo mesmo número (diferente de zero) dá sempre uma equação equivalente.",
+  "formulas": "$$ax+b=c \\;\\Longrightarrow\\; x=\\frac{c-b}{a}\\quad (a\\neq 0)$$\n\n$$ax+b=cx+d \\;\\Longrightarrow\\; (a-c)\\,x=d-b \\;\\Longrightarrow\\; x=\\frac{d-b}{a-c}$$\n\nMnemónica: **\"termos com x para um lado, números para o outro, depois divide\"**. Prova real: substitui o resultado na equação inicial.",
+  "worked_example": "**Exemplo 1.** Resolve $x+7=15$.\n\nO x está a somar 7. Desfazemos subtraindo 7 aos dois lados: $x=15-7=8$. Prova: 8 + 7 = 15 ✓.\n\n**Exemplo 2.** Resolve $3x-4=11$.\n\n**Passo 1.** Soma 4 aos dois lados: $3x=15$.\n\n**Passo 2.** Divide por 3: $x=5$. Prova: 3·5 − 4 = 11 ✓.\n\n**Exemplo 3.** Resolve $5x+2=2x+17$.\n\n**Passo 1.** Subtrai 2x aos dois lados: $3x+2=17$.\n\n**Passo 2.** Subtrai 2: $3x=15$.\n\n**Passo 3.** Divide por 3: $x=5$. Prova: 5·5 + 2 = 27 e 2·5 + 17 = 27 ✓.\n\n**Exemplo 4 (problema).** Um táxi cobra 400 Kz de bandeirada mais 150 Kz por quilómetro. Uma corrida custou 1 600 Kz. Quantos quilómetros foram?\n\nEquação: $400+150x=1600$. Subtrai 400: $150x=1200$. Divide por 150: $x=8$. Foram 8 km.",
+  "guided_exercise": "Vamos resolver juntos: **o Paulo tem 2 000 Kz e poupa 750 Kz por semana. Quando terá 6 500 Kz?**\n\n1) Qual é a incógnita? O número de semanas, s.\n\n2) Que equação traduz a história? $2000+750s=6500$.\n\n3) Que operação desfazemos primeiro? O +2000: subtrai 2000 aos dois lados e fica $750s=4500$.\n\n4) E depois? Divide por 750: $s=6$.\n\n5) Prova: 2000 + 750·6 = 2000 + 4500 = 6500 ✓. Resposta: ao fim de 6 semanas.",
+  "independent_exercise": "Chegou a tua vez. Resolve os exercícios sem pressa e usa **Verificar** para confirmar. Se errares, não faz mal: lê a resolução passo a passo, percebe onde o raciocínio escorregou e tenta outra vez. É assim que se aprende de verdade.",
+  "challenge": "**Adivinha o número.** Pensei num número, multipliquei-o por 4 e subtraí 6. O resultado é igual ao dobro do número somado com 8. Qual é o número?\n\nPista: se o número é x, o dobro do número somado com 8 escreve-se $2(x+4)$ ou $2x+8$. Constrói a equação e resolve-a. Confirma depois com a prova real!",
+  "assessment": "Consideras esta competência dominada quando consegues: (1) resolver $ax+b=c$ sem errar sinais; (2) resolver equações com x dos dois lados; (3) traduzir um problema simples numa equação e interpretar o resultado com a unidade certa; (4) fazer a prova real. Acertar de forma consistente em exercícios fáceis, médios e difíceis é o que conta, e não a rapidez."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "equacoes.primeiro_grau",
+   "statement": "Resolve a equação $x+9=21$.",
+   "options": null,
+   "answer": {
+    "value": "12",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Passa o 9 para o outro lado com a operação inversa: x = 21 - 9 = 12.",
+   "steps": [
+    "Operação inversa de somar 9: subtrair 9 aos dois lados.",
+    "x = 12."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "equacoes.primeiro_grau",
+   "statement": "Resolve a equação $x-7=13$.",
+   "options": null,
+   "answer": {
+    "value": "20",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Passa o -7 para o outro lado com a operação inversa: x = 13 + 7 = 20.",
+   "steps": [
+    "Operação inversa de subtrair 7: somar 7 aos dois lados.",
+    "x = 20."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "equacoes.primeiro_grau",
+   "statement": "Resolve $4x=36$.",
+   "options": null,
+   "answer": {
+    "value": "9",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Divide os dois lados por 4: x = 36 ÷ 4 = 9.",
+   "steps": [
+    "Para desfazer \"×4\", divide por 4.",
+    "x = 9."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "equacoes.primeiro_grau",
+   "statement": "Resolve $3x+5=26$.",
+   "options": null,
+   "answer": {
+    "value": "7",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Primeiro subtrai 5 aos dois lados e depois divide por 3: x = 7.",
+   "steps": [
+    "3x = 26 - 5 = 21",
+    "x = 21 ÷ 3 = 7"
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "equacoes.primeiro_grau",
+   "statement": "Resolve $5x-8=17$.",
+   "options": null,
+   "answer": {
+    "value": "5",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Primeiro soma 8 aos dois lados e depois divide por 5: x = 5.",
+   "steps": [
+    "5x = 17 + 8 = 25",
+    "x = 25 ÷ 5 = 5"
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "equacoes.primeiro_grau",
+   "statement": "Resolve $2x+7=x+15$.",
+   "options": null,
+   "answer": {
+    "value": "8",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Junta os x do mesmo lado: 2x − x = 15 − 7, logo x = 8.",
+   "steps": [
+    "Passa x para a esquerda (subtrai x aos dois lados): x + 7 = 15.",
+    "Subtrai 7: x = 8."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "equacoes.primeiro_grau",
+   "statement": "Resolve $7x-4=3x+20$.",
+   "options": null,
+   "answer": {
+    "value": "6",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "7x − 3x = 20 + 4, ou seja, 4x = 24 e x = 6.",
+   "steps": [
+    "Agrupa os termos com x à esquerda e os números à direita: 7x − 3x = 20 + 4.",
+    "4x = 24.",
+    "x = 24 ÷ 4 = 6."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "equacoes.primeiro_grau",
+   "statement": "Resolve $3(x-2)=2x+5$.",
+   "options": null,
+   "answer": {
+    "value": "11",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Aplica a propriedade distributiva: 3x − 6 = 2x + 5, logo x = 11.",
+   "steps": [
+    "Distribui o 3: 3x − 6 = 2x + 5.",
+    "3x − 2x = 5 + 6.",
+    "x = 11."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "equacoes.primeiro_grau",
+   "statement": "A Dona Ana pagou 3 caixas de tomate iguais e mais 500 Kz de transporte. Gastou 3 500 Kz no total. Quanto custa cada caixa, em Kz?",
+   "options": null,
+   "answer": {
+    "value": "1000",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "3x + 500 = 3 500, então 3x = 3 000 e x = 1 000.",
+   "steps": [
+    "Escolhe a incógnita: x = preço de uma caixa.",
+    "Equação: 3x + 500 = 3500.",
+    "3x = 3000, logo x = 1000 Kz."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "equacoes.primeiro_grau",
+   "statement": "O Paulo tem 2 000 Kz e poupa 750 Kz por semana. Ao fim de quantas semanas terá 6 500 Kz?",
+   "options": null,
+   "answer": {
+    "value": "6",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "2000 + 750s = 6500, logo 750s = 4500 e s = 6.",
+   "steps": [
+    "Equação: 2000 + 750·s = 6500.",
+    "750·s = 4500.",
+    "s = 4500 ÷ 750 = 6 semanas."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 1,
+   "competency": "equacoes.primeiro_grau",
+   "statement": "A solução de $2x+3=11$ é $x=4$.",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "Substituindo: 2·4 + 3 = 11. Está certo.",
+   "steps": [
+    "Substitui x por 4.",
+    "2·4 + 3 = 11 ✓."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "equacoes.primeiro_grau",
+   "statement": "Na resolução de $5x-10=20$, um aluno escreveu $5x=10$. Qual foi o erro?",
+   "options": [
+    {
+     "id": "a",
+     "label": "Subtraiu 10 em vez de somar 10 aos dois lados"
+    },
+    {
+     "id": "b",
+     "label": "Dividiu por 5 cedo demais"
+    },
+    {
+     "id": "c",
+     "label": "Trocou o sinal do 20"
+    },
+    {
+     "id": "d",
+     "label": "Não houve erro"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "Para desfazer \"−10\" soma-se 10 aos dois lados: 5x = 30 e x = 6.",
+   "steps": [
+    "A operação inversa de −10 é +10.",
+    "5x = 20 + 10 = 30.",
+    "x = 6."
+   ]
+  }
+ ]
+}

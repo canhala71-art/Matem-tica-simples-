@@ -175,7 +175,7 @@ export function PlansPage() {
           <a className="btn" target="_blank" rel="noreferrer" href={whatsappLink(whatsapp, waText(created))}>
             <MessageCircle size={16} /> Enviar comprovativo no WhatsApp
           </a>
-          <p className="muted">Acompanha o estado em <Link className="text-electric-500" to="/assinatura">Minha assinatura</Link>. Quando tiveres o código, ativa-o em <Link className="text-electric-500" to="/ativar">Ativar Premium</Link>.</p>
+          <p className="muted">Acompanha o estado em <Link className="text-electric-500" to="/assinatura">Minha assinatura</Link>. Quando tiveres o código, ativa-o em <Link className="text-electric-500" to="/ativar">Activar o meu Premium</Link>.</p>
         </section>
       )}
       {!chosen && msg && <p role="status" className={msg.ok ? 'text-emerald-600' : 'text-red-600'}>{msg.text}</p>}
