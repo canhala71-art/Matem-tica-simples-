@@ -1,0 +1,266 @@
+{
+ "subject": "sistemas-de-equacoes",
+ "topic_title": "Sistemas de equações do 1.º grau",
+ "topic_slug": "sistemas-lineares-2x2",
+ "lesson_title": "Sistemas de duas equações: substituição e adição",
+ "lesson_slug": "sistemas-lineares-substituicao-adicao",
+ "summary": "Resolve sistemas de duas equações com duas incógnitas por substituição e por adição, e usa-os em problemas do dia a dia.",
+ "minutes": 30,
+ "blocks": {
+  "introduction": "No cinema, dois adultos e três crianças pagam 1 200 Kz; um adulto e três crianças pagam 900 Kz. Quanto custa cada bilhete? Aqui há **duas coisas que não sabes** (o preço do adulto e o da criança) e **duas informações** que as ligam. Com uma só informação não dava para descobrir; com duas, dá.\n\nIsso é um **sistema de equações**. Aparece nas compras, nas idades, nas misturas, nas notas de dinheiro de uma carteira, na quantidade de galinhas e coelhos de um quintal. Nesta aula vais aprender dois métodos simples, substituição e adição, e a perceber quando um sistema não tem solução ou tem infinitas.",
+  "intuition": "Cada equação como $x+y=10$ é uma reta: todos os pares (x, y) que a verificam. Resolver o sistema é encontrar o ponto onde as duas retas se **cruzam**, o único par que satisfaz as duas ao mesmo tempo.\n\nHá dois caminhos principais. Na **substituição** tiras uma incógnita de uma equação (por exemplo, y = 4x − 10) e substituis na outra, ficando com uma equação só com x. Na **adição** (ou eliminação) somas ou subtrais as equações de modo a que uma incógnita desapareça: em x + y = 10 e x − y = 4, somando fica 2x = 14.\n\nSe as retas forem **paralelas** (x + y = 3 e x + y = 5) não há solução: o sistema é **impossível**. Se forem a **mesma reta**, há infinitas soluções: **possível e indeterminado**. O caso normal, com um só ponto, é o **possível e determinado**.\n\n**Erros comuns:** (1) achar só o valor de x e esquecer o y; (2) errar o sinal ao subtrair equações (subtrai todos os termos, não só um); (3) não fazer a prova: substitui o par nas duas equações originais, não só numa.",
+  "definition": "Um **sistema de duas equações lineares com duas incógnitas** é um conjunto de duas equações da forma $ax+by=c$. Uma **solução** é um par (x, y) que verifica as duas equações. O sistema diz-se **possível e determinado** se tem exatamente uma solução, **possível e indeterminado** se tem infinitas, e **impossível** se não tem nenhuma. Dois sistemas são **equivalentes** se têm as mesmas soluções; multiplicar uma equação por um número diferente de zero, ou somar uma equação à outra, dá um sistema equivalente.",
+  "formulas": "$$\\begin{cases}a_1x+b_1y=c_1\\\\ a_2x+b_2y=c_2\\end{cases}\\;\\Rightarrow\\; x=\\frac{c_1b_2-c_2b_1}{a_1b_2-a_2b_1},\\quad y=\\frac{a_1c_2-a_2c_1}{a_1b_2-a_2b_1}$$\n\nO denominador $a_1b_2-a_2b_1$ é o **determinante**. Se for zero, o sistema é impossível ou indeterminado.\n\nNa prática, usa a **substituição** quando uma incógnita já está sozinha (ou com coeficiente 1) e a **adição** quando os coeficientes de uma incógnita são iguais ou simétricos. Mnemónica: **\"elimina uma, acha a outra, volta atrás e prova\"**.",
+  "worked_example": "**Exemplo 1 (adição).** $x+y=10$ e $x-y=4$.\n\nSomando: 2x = 14, logo x = 7. Depois y = 10 − 7 = 3. Prova: 7 + 3 = 10 e 7 − 3 = 4 ✓.\n\n**Exemplo 2 (substituição).** $y=2x$ e $x+y=12$.\n\nSubstitui y: x + 2x = 12, logo x = 4 e y = 8. Prova: 4 + 8 = 12 ✓.\n\n**Exemplo 3 (multiplicar antes).** $2x+3y=13$ e $x+y=5$.\n\nMultiplica a segunda por 2: 2x + 2y = 10. Subtrai da primeira: y = 3. Então x = 2. Prova: 4 + 9 = 13 ✓.\n\n**Exemplo 4 (problema).** Numa banca, 3 pães e 2 sumos custam 1 100 Kz e 2 pães e 1 sumo custam 650 Kz. Preço de cada?\n\n3p + 2s = 1100 e 2p + s = 650. Da segunda, s = 650 − 2p. Substituindo: 3p + 1300 − 4p = 1100, logo p = 200 Kz e s = 250 Kz. Prova: 600 + 500 = 1100 ✓.",
+  "guided_exercise": "Resolve connosco: **numa carteira há 12 notas, umas de 500 Kz e outras de 1 000 Kz, num total de 8 000 Kz. Quantas são de cada?**\n\n1) Define as incógnitas: a = notas de 500 e b = notas de 1 000.\n\n2) Primeira equação (número de notas): a + b = 12.\n\n3) Segunda equação (valor): 500a + 1000b = 8000, que dividida por 500 dá a + 2b = 16.\n\n4) Subtrai a primeira da segunda: b = 4.\n\n5) Então a = 8. Prova: 8·500 + 4·1000 = 4000 + 4000 = 8000 ✓. Resposta: 8 notas de 500 Kz e 4 de 1 000 Kz.",
+  "independent_exercise": "Chegou a tua vez. Resolve os exercícios sem pressa e usa **Verificar** para confirmar. Se errares, não faz mal: lê a resolução passo a passo, percebe onde o raciocínio escorregou e tenta outra vez. É assim que se aprende de verdade.",
+  "challenge": "**O número misterioso.** Um número de dois algarismos tem soma dos algarismos igual a 11. Se trocares a ordem dos algarismos, o número aumenta 27 unidades. Qual é o número?\n\nPista: se as dezenas são d e as unidades u, o número é 10d + u e o invertido é 10u + d. Escreve as duas equações e resolve o sistema.",
+  "assessment": "Consideras a competência dominada quando consegues: (1) resolver sistemas pelos dois métodos, escolhendo o mais cómodo; (2) fazer sempre a prova nas duas equações; (3) reconhecer um sistema impossível ou indeterminado; (4) traduzir um problema com duas incógnitas (preços, idades, notas, animais) num sistema e interpretar a solução com unidades."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "sistemas.lineares",
+   "statement": "Resolve o sistema $x+y=10$ e $x-y=4$. Qual é o valor de x?",
+   "options": null,
+   "answer": {
+    "value": "7",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Soma as duas equações: 2x = 14, logo x = 7 (e y = 3).",
+   "steps": [
+    "Soma membro a membro: 2x = 14.",
+    "x = 7.",
+    "Depois y = 10 − 7 = 3."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "sistemas.lineares",
+   "statement": "Resolve o sistema $2x+y=11$ e $x+y=7$. Qual é o valor de y?",
+   "options": null,
+   "answer": {
+    "value": "3",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Subtrai as equações: x = 4; depois y = 7 − 4 = 3.",
+   "steps": [
+    "(2x + y) − (x + y) = 11 − 7 dá x = 4.",
+    "y = 7 − 4 = 3."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "sistemas.lineares",
+   "statement": "Resolve $3x+2y=16$ e $x-y=2$. Qual é o valor de x?",
+   "options": null,
+   "answer": {
+    "value": "4",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "De x − y = 2 tira-se x = y + 2. Substituindo: 3(y + 2) + 2y = 16, logo 5y = 10, y = 2 e x = 4.",
+   "steps": [
+    "x = y + 2.",
+    "3(y + 2) + 2y = 16 → 5y + 6 = 16.",
+    "y = 2 e x = 4."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "sistemas.lineares",
+   "statement": "Resolve $5x+2y=19$ e $x-2y=-1$. Qual é o valor de x?",
+   "options": null,
+   "answer": {
+    "value": "3",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Somando as equações o termo em y desaparece: 6x = 18, logo x = 3 (e y = 2).",
+   "steps": [
+    "Soma: 6x = 18.",
+    "x = 3.",
+    "5·3 + 2y = 19 dá y = 2."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "sistemas.lineares",
+   "statement": "Resolve $2x+3y=12$ e $4x-y=10$. Qual é o valor de x?",
+   "options": null,
+   "answer": {
+    "value": "3",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Da segunda, y = 4x − 10. Na primeira: 2x + 12x − 30 = 12, logo 14x = 42 e x = 3 (y = 2).",
+   "steps": [
+    "y = 4x − 10.",
+    "2x + 3(4x − 10) = 12 → 14x = 42.",
+    "x = 3."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "sistemas.lineares",
+   "statement": "Num cinema, 2 bilhetes de adulto e 3 de criança custam 1 200 Kz, e 1 bilhete de adulto e 3 de criança custam 900 Kz. Quanto custa um bilhete de criança, em Kz?",
+   "options": null,
+   "answer": {
+    "value": "200",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Subtrai as equações: um adulto custa 300 Kz. Depois 300 + 3c = 900 dá c = 200.",
+   "steps": [
+    "Subtrai: (2a + 3c) − (a + 3c) = 1200 − 900, logo a = 300.",
+    "300 + 3c = 900.",
+    "c = 200 Kz."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "sistemas.lineares",
+   "statement": "A soma das idades de um pai e do filho é 50 anos e o pai tem o quádruplo da idade do filho. Que idade tem o filho?",
+   "options": null,
+   "answer": {
+    "value": "10",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "p + f = 50 e p = 4f dão 5f = 50, logo f = 10 (o pai tem 40).",
+   "steps": [
+    "p = 4f.",
+    "4f + f = 50.",
+    "f = 10."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "sistemas.lineares",
+   "statement": "Num quintal há galinhas e coelhos: 20 cabeças e 56 patas no total. Quantos coelhos há?",
+   "options": null,
+   "answer": {
+    "value": "8",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Seja c o número de coelhos e g o de galinhas: c + g = 20 e 4c + 2g = 56. Multiplicando a primeira por 2: 2c + 2g = 40; subtraindo, 2c = 16 e c = 8.",
+   "steps": [
+    "c + g = 20 e 4c + 2g = 56.",
+    "Subtrai 2·(c + g) = 40: 2c = 16.",
+    "c = 8."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "sistemas.lineares",
+   "statement": "Uma pessoa tem 14 notas, umas de 500 Kz e outras de 1 000 Kz, no valor total de 9 500 Kz. Quantas notas de 1 000 Kz tem?",
+   "options": null,
+   "answer": {
+    "value": "5",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "a + b = 14 e 500a + 1000b = 9500, ou seja, a + 2b = 19. Subtraindo a primeira: b = 5 (e a = 9).",
+   "steps": [
+    "a + b = 14.",
+    "500a + 1000b = 9500 → a + 2b = 19.",
+    "Subtrai: b = 5."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 1,
+   "competency": "sistemas.lineares",
+   "statement": "O par $(2,3)$ é solução do sistema $x+y=5$ e $2x-y=1$.",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "Substituindo: 2 + 3 = 5 ✓ e 2·2 − 3 = 1 ✓. Satisfaz as duas equações.",
+   "steps": [
+    "1.ª: 2 + 3 = 5.",
+    "2.ª: 4 − 3 = 1.",
+    "Ambas verificam-se."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "sistemas.lineares",
+   "statement": "O sistema $x+y=3$ e $x+y=5$ é…",
+   "options": [
+    {
+     "id": "a",
+     "label": "Impossível (sem solução)"
+    },
+    {
+     "id": "b",
+     "label": "Possível e determinado (uma solução)"
+    },
+    {
+     "id": "c",
+     "label": "Possível e indeterminado (infinitas soluções)"
+    },
+    {
+     "id": "d",
+     "label": "Tem a solução (1, 2)"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "A mesma soma x + y não pode valer 3 e 5 ao mesmo tempo, por isso não há solução. As retas são paralelas.",
+   "steps": [
+    "Subtrai as equações: 0 = −2.",
+    "É impossível, logo o sistema não tem solução."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 3,
+   "competency": "sistemas.lineares",
+   "statement": "Resolveste um sistema e chegaste a $0=0$. O que concluis?",
+   "options": [
+    {
+     "id": "a",
+     "label": "O sistema tem infinitas soluções"
+    },
+    {
+     "id": "b",
+     "label": "O sistema não tem solução"
+    },
+    {
+     "id": "c",
+     "label": "O sistema tem solução única x = 0"
+    },
+    {
+     "id": "d",
+     "label": "Erraste: deve dar sempre um número"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "Chegar a uma igualdade sempre verdadeira (0 = 0) significa que as duas equações dizem o mesmo: as retas coincidem e há infinitas soluções.",
+   "steps": [
+    "0 = 0 é verdadeiro para qualquer x.",
+    "As equações são equivalentes: infinitas soluções."
+   ]
+  }
+ ]
+}

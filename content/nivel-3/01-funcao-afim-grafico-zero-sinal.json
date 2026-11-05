@@ -1,0 +1,282 @@
+{
+ "subject": "funcoes",
+ "topic_title": "Função afim",
+ "topic_slug": "funcao-afim",
+ "lesson_title": "Função afim: o gráfico que é uma reta",
+ "lesson_slug": "funcao-afim-grafico-zero-sinal",
+ "summary": "Percebe a função f(x) = ax + b, o significado dos dois coeficientes, o zero e o crescimento.",
+ "minutes": 30,
+ "blocks": {
+  "introduction": "Quando apanhas um táxi em Luanda, pagas uma quantia fixa de partida (a bandeirada) e depois um valor por cada quilómetro. Se a bandeirada é 400 Kz e cada quilómetro custa 150 Kz, o preço da corrida depende da distância de uma forma muito regular: cada km a mais soma sempre os mesmos 150 Kz. Esta regularidade tem nome: **função afim**.\n\nFunções afins aparecem nas recargas de dados, no salário com comissão, na poupança semanal, na renda de uma casa. Nesta aula vais aprender a escrever uma função afim, a ler o que cada número dela significa, a calcular o seu zero e a decidir se ela cresce ou desce, tudo sem precisar de decorar nada às cegas.",
+  "intuition": "Uma função afim escreve-se $f(x)=ax+b$. Pensa no táxi: **b é o que pagas antes de andar um metro** (400 Kz) e **a é o que pagas por cada unidade de x** (150 Kz por km). Por isso b chama-se **ordenada na origem** (o valor de f quando x = 0) e a chama-se **declive** (quanto f muda quando x aumenta uma unidade).\n\nO gráfico é sempre uma **reta**. O declive diz a inclinação: se a > 0 a reta sobe da esquerda para a direita (função crescente); se a < 0 desce (decrescente); se a = 0 fica horizontal (função constante). A ordenada na origem diz onde a reta corta o eixo vertical.\n\nO **zero** da função é o valor de x onde a reta corta o eixo horizontal, isto é, onde f(x) = 0. Para o encontrar resolves a equação ax + b = 0, que dá $x=-b/a$.\n\n**Erros comuns:** (1) confundir declive com ordenada na origem (a é o número que multiplica o x, b é o que está sozinho); (2) esquecer que o sinal de a manda no crescimento, e não o sinal de b; (3) no zero, trocar o sinal: em 3x + 12 = 0 o zero é −4, não 4. Defesa simples: substitui o x encontrado na função e confirma que dá 0.",
+  "definition": "Chama-se **função afim** a toda a função $f:\\mathbb{R}\\to\\mathbb{R}$ definida por $f(x)=ax+b$, com a e b números reais. O número a é o **declive** (ou coeficiente angular) e b a **ordenada na origem**. Se b = 0, a função diz-se **linear** e o seu gráfico passa na origem; se a = 0, é **constante**. O gráfico de uma função afim é uma reta. A função é **crescente** se a > 0, **decrescente** se a < 0. O **zero** da função, quando a ≠ 0, é o único número x tal que f(x) = 0.",
+  "formulas": "$$f(x)=ax+b$$\n\n$$\\text{zero: } x=-\\frac{b}{a}\\quad (a\\neq 0)$$\n\n$$\\text{declive por dois pontos: } a=\\frac{y_2-y_1}{x_2-x_1}$$\n\nSinal: se a > 0, f(x) > 0 para x à direita do zero e f(x) < 0 à esquerda; se a < 0 é o contrário. Mnemónica: **\"a manda no crescimento, b manda na altura inicial\"**.",
+  "worked_example": "**Exemplo 1.** Sendo $f(x)=3x-5$, calcula f(4) e o zero.\n\nf(4) = 3·4 − 5 = 7. Para o zero: 3x − 5 = 0, logo x = 5/3.\n\n**Exemplo 2.** Descobre a função afim cujo gráfico passa por (1, 5) e (4, 11).\n\n**Passo 1.** Declive: (11 − 5) ÷ (4 − 1) = 2.\n\n**Passo 2.** Usa um ponto para achar b: 5 = 2·1 + b, logo b = 3. Então f(x) = 2x + 3. Confirma com o outro ponto: 2·4 + 3 = 11 ✓.\n\n**Exemplo 3 (sinal).** Para que valores de x é $f(x)=-2x+6$ positiva?\n\nZero: −2x + 6 = 0 dá x = 3. Como a = −2 é negativo, a função é decrescente: é positiva à esquerda do zero, isto é, para x < 3.\n\n**Exemplo 4 (problema).** Uma operadora cobra 1 000 Kz de mensalidade mais 20 Kz por cada minuto de chamada. Se o cliente pagou 2 600 Kz, quantos minutos falou?\n\nC(m) = 20m + 1000 = 2600, logo 20m = 1600 e m = 80 minutos.",
+  "guided_exercise": "Resolve connosco: **a Marta poupa 500 Kz por semana e já tinha 3 000 Kz. A partir de quando terá mais de 10 000 Kz?**\n\n1) Qual é a função? S(t) = 500t + 3000, em que t é o número de semanas.\n\n2) Qual é o declive e o que significa? 500: o que ela junta por semana.\n\n3) Que inequação queremos? 500t + 3000 > 10000.\n\n4) Resolve: 500t > 7000, logo t > 14.\n\n5) Resposta: a partir da 15.ª semana. Prova: com t = 14 tem exatamente 10 000 Kz (ainda não é mais), com t = 15 tem 10 500 Kz.",
+  "independent_exercise": "Chegou a tua vez. Resolve os exercícios sem pressa e usa **Verificar** para confirmar. Se errares, não faz mal: lê a resolução passo a passo, percebe onde o raciocínio escorregou e tenta outra vez. É assim que se aprende de verdade.",
+  "challenge": "**Dois planos de internet.** O plano A custa 2 000 Kz fixos mais 100 Kz por GB. O plano B custa 500 Kz fixos mais 200 Kz por GB. A partir de quantos GB o plano A fica mais barato?\n\nPista: escreve as duas funções, iguala-as para descobrir onde os gráficos se cruzam e pensa qual das retas é mais inclinada. Que plano compensa para quem usa poucos dados?",
+  "assessment": "Consideras a competência dominada quando consegues: (1) calcular f(x) para vários valores; (2) ler o declive e a ordenada na origem numa expressão e no contexto de um problema; (3) calcular o zero e dizer se a função cresce ou desce; (4) encontrar a expressão de uma função afim a partir de dois pontos; (5) resolver uma inequação simples ax + b > 0. A consistência em exercícios fáceis, médios e difíceis conta mais do que a rapidez."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "funcoes.afim",
+   "statement": "Sendo $f(x)=3x+2$, calcula $f(4)$.",
+   "options": null,
+   "answer": {
+    "value": "14",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Substitui x por 4: 3·4 + 2 = 14.",
+   "steps": [
+    "f(4) = 3·4 + 2.",
+    "= 12 + 2 = 14."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "funcoes.afim",
+   "statement": "Sendo $f(x)=-2x+7$, calcula $f(5)$.",
+   "options": null,
+   "answer": {
+    "value": "-3",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Substitui x por 5: −2·5 + 7 = −3.",
+   "steps": [
+    "f(5) = −2·5 + 7.",
+    "= −10 + 7 = −3."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "funcoes.afim",
+   "statement": "Qual é a ordenada na origem (o valor de $f(0)$) da função $f(x)=5x-3$?",
+   "options": null,
+   "answer": {
+    "value": "-3",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Em f(0) o termo com x desaparece e sobra o termo independente: −3.",
+   "steps": [
+    "f(0) = 5·0 − 3.",
+    "= −3."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "funcoes.afim",
+   "statement": "Calcula o zero da função $f(x)=2x-10$ (o valor de x para o qual $f(x)=0$).",
+   "options": null,
+   "answer": {
+    "value": "5",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Resolve 2x − 10 = 0: 2x = 10, logo x = 5.",
+   "steps": [
+    "Faz f(x) = 0: 2x − 10 = 0.",
+    "2x = 10.",
+    "x = 5."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "funcoes.afim",
+   "statement": "Calcula o zero da função $f(x)=3x+12$.",
+   "options": null,
+   "answer": {
+    "value": "-4",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "3x + 12 = 0 dá 3x = −12, logo x = −4.",
+   "steps": [
+    "3x + 12 = 0.",
+    "3x = −12.",
+    "x = −4."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "funcoes.afim",
+   "statement": "O gráfico de uma função afim passa pelos pontos $(1,3)$ e $(3,7)$. Qual é o declive (coeficiente de x)?",
+   "options": null,
+   "answer": {
+    "value": "2",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "O declive é a variação de y a dividir pela variação de x: (7 − 3) ÷ (3 − 1) = 2.",
+   "steps": [
+    "Variação de y: 7 − 3 = 4.",
+    "Variação de x: 3 − 1 = 2.",
+    "Declive = 4 ÷ 2 = 2."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "funcoes.afim",
+   "statement": "Uma função afim verifica $f(2)=7$ e $f(5)=16$. Calcula $f(10)$.",
+   "options": null,
+   "answer": {
+    "value": "31",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "O declive é (16 − 7) ÷ (5 − 2) = 3. De f(2) = 7 sai b = 7 − 6 = 1, logo f(x) = 3x + 1 e f(10) = 31.",
+   "steps": [
+    "Declive: (16 − 7) ÷ (5 − 2) = 3.",
+    "3·2 + b = 7, logo b = 1.",
+    "f(10) = 3·10 + 1 = 31."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "funcoes.afim",
+   "statement": "Um táxi cobra 400 Kz de bandeirada mais 150 Kz por quilómetro. Quanto custa uma corrida de 12 km, em Kz?",
+   "options": null,
+   "answer": {
+    "value": "2200",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Custo = 150·x + 400 com x = 12: 1800 + 400 = 2200.",
+   "steps": [
+    "Função: C(x) = 150x + 400.",
+    "C(12) = 150·12 + 400 = 1800 + 400 = 2200 Kz."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "funcoes.afim",
+   "statement": "Qual é o menor número inteiro x para o qual $2x-6>0$?",
+   "options": null,
+   "answer": {
+    "value": "4",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "2x − 6 > 0 equivale a x > 3, e o menor inteiro maior que 3 é 4.",
+   "steps": [
+    "2x > 6.",
+    "x > 3.",
+    "O menor inteiro maior que 3 é 4."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "funcoes.afim",
+   "statement": "Os gráficos de $f(x)=2x+1$ e $g(x)=x+5$ cruzam-se num ponto. Qual é o valor de x desse ponto?",
+   "options": null,
+   "answer": {
+    "value": "4",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Iguala as funções: 2x + 1 = x + 5, logo x = 4 (e y = 9).",
+   "steps": [
+    "2x + 1 = x + 5.",
+    "2x − x = 5 − 1.",
+    "x = 4."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 1,
+   "competency": "funcoes.afim",
+   "statement": "A função $f(x)=-4x+1$ é decrescente.",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "O declive é −4, que é negativo: quando x aumenta, f(x) diminui.",
+   "steps": [
+    "Olha para o coeficiente de x: −4.",
+    "Declive negativo, função decrescente."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "funcoes.afim",
+   "statement": "Qual destas funções afins é crescente?",
+   "options": [
+    {
+     "id": "a",
+     "label": "$f(x)=-x+5$"
+    },
+    {
+     "id": "b",
+     "label": "$f(x)=2x-3$"
+    },
+    {
+     "id": "c",
+     "label": "$f(x)=5-2x$"
+    },
+    {
+     "id": "d",
+     "label": "$f(x)=-3x$"
+    }
+   ],
+   "answer": {
+    "choice": "b"
+   },
+   "tolerance": 0,
+   "explanation": "Uma função afim é crescente quando o declive é positivo. Só 2x − 3 tem declive positivo (2).",
+   "steps": [
+    "Identifica o coeficiente de x em cada uma.",
+    "−1, 2, −2 e −3.",
+    "Só o 2 é positivo."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "funcoes.afim",
+   "statement": "O gráfico de $f(x)=2x+3$ corta o eixo vertical (eixo dos yy) em que ponto?",
+   "options": [
+    {
+     "id": "a",
+     "label": "$(0,3)$"
+    },
+    {
+     "id": "b",
+     "label": "$(3,0)$"
+    },
+    {
+     "id": "c",
+     "label": "$(0,2)$"
+    },
+    {
+     "id": "d",
+     "label": "$(-3/2,0)$"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "O eixo vertical corresponde a x = 0 e f(0) = 3, logo o ponto é (0, 3). O ponto (−3/2, 0) é onde corta o eixo horizontal.",
+   "steps": [
+    "Faz x = 0.",
+    "f(0) = 3.",
+    "Ponto (0, 3)."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,243 @@
+{
+ "subject": "funcoes",
+ "topic_title": "Função quadrática",
+ "topic_slug": "funcao-quadratica",
+ "lesson_title": "Função quadrática: parábola, zeros e vértice",
+ "lesson_slug": "funcao-quadratica-parabola-vertice",
+ "summary": "Compreende a parábola f(x) = ax² + bx + c, calcula zeros com o discriminante e encontra o máximo ou mínimo no vértice.",
+ "minutes": 35,
+ "blocks": {
+  "introduction": "Quando um jogador chuta uma bola ao ar, ela sobe, para um instante e volta a descer. O caminho que desenha é uma **parábola**. O mesmo acontece com um jato de água numa fonte, a ponte em arco, a antena parabólica e até com a conta do lucro de uma loja: vender muito barato dá prejuízo, vender muito caro afasta clientes, e há um preço no meio em que o lucro é o maior possível.\n\nTodas estas situações são descritas por **funções quadráticas**. Nesta aula vais aprender a calcular os zeros (onde a parábola corta o eixo horizontal), a encontrar o vértice (o ponto mais alto ou mais baixo) e a usar isso para resolver problemas de máximos e mínimos.",
+  "intuition": "Uma função quadrática escreve-se $f(x)=ax^2+bx+c$, com a ≠ 0. O gráfico é uma parábola. O sinal de a decide a forma: se a > 0 a parábola abre para cima (como um sorriso) e tem um **mínimo**; se a < 0 abre para baixo e tem um **máximo**.\n\nA parábola é simétrica em torno de uma reta vertical, o **eixo de simetria**, que passa pelo **vértice**. A abcissa do vértice é $x_v=-b/(2a)$, e o valor máximo (ou mínimo) é $f(x_v)$. É por isso que, nos problemas de \"qual é o maior valor\", não é preciso testar números ao acaso: vais direto ao vértice.\n\nOs **zeros** são os x onde f(x) = 0. Calculam-se com a fórmula resolvente. O número $\\Delta=b^2-4ac$ (discriminante) diz quantos zeros existem: Δ > 0 dá dois, Δ = 0 dá um, Δ < 0 não dá nenhum real (a parábola não toca o eixo).\n\n**Erros comuns:** (1) esquecer o sinal de b na fórmula (o numerador começa por −b); (2) dizer que o vértice está em x = b/(2a) sem o sinal menos; (3) calcular o máximo como se fosse o valor de x, quando o máximo é o valor de f. Defesa simples: o vértice fica no meio dos dois zeros, quando existem.",
+  "definition": "Chama-se **função quadrática** (ou função polinomial do 2.º grau) a toda a função $f:\\mathbb{R}\\to\\mathbb{R}$ dada por $f(x)=ax^2+bx+c$, com a, b, c reais e a ≠ 0. O gráfico é uma **parábola** de eixo vertical. O **vértice** é o ponto $V\\left(-\\frac{b}{2a},\\,-\\frac{\\Delta}{4a}\\right)$. Os **zeros** são as soluções reais de ax² + bx + c = 0, que existem se e só se Δ ≥ 0. Se a > 0 a função tem um mínimo absoluto no vértice; se a < 0 tem um máximo absoluto.",
+  "formulas": "$$x=\\frac{-b\\pm\\sqrt{\\Delta}}{2a},\\qquad \\Delta=b^2-4ac$$\n\n$$x_v=-\\frac{b}{2a},\\qquad y_v=f(x_v)=-\\frac{\\Delta}{4a}$$\n\n$$\\text{soma dos zeros}=-\\frac{b}{a},\\qquad \\text{produto dos zeros}=\\frac{c}{a}$$\n\nMnemónica: **\"Δ conta os zeros, o vértice guarda o máximo ou o mínimo\"**.",
+  "worked_example": "**Exemplo 1.** Calcula os zeros de $x^2-7x+10$.\n\nΔ = 49 − 40 = 9. x = (7 ± 3) ÷ 2, logo x = 2 ou x = 5. Prova: 2 + 5 = 7 e 2·5 = 10 ✓.\n\n**Exemplo 2.** Encontra o vértice de $f(x)=x^2-4x+1$ e diz se é máximo ou mínimo.\n\nx_v = 4 ÷ 2 = 2. f(2) = 4 − 8 + 1 = −3. Como a = 1 > 0 é um **mínimo**: V(2, −3).\n\n**Exemplo 3 (sem zeros).** $x^2+2x+5$: Δ = 4 − 20 = −16 < 0. Não há zeros reais. Como a > 0, a parábola está sempre acima do eixo, e f(x) > 0 para todo o x.\n\n**Exemplo 4 (problema).** Uma loja vende x telemóveis por dia e o lucro (em milhares de Kz) é L(x) = −2x² + 24x. Quantos deve vender para o lucro ser máximo?\n\nx_v = −24 ÷ (2·(−2)) = 6. O lucro máximo é L(6) = −72 + 144 = 72 mil Kz.",
+  "guided_exercise": "Resolve connosco: **um agricultor tem 60 m de rede para vedar uma horta retangular encostada a um muro (só precisa de vedar três lados). Qual a maior área possível?**\n\n1) Sejam x os dois lados perpendiculares ao muro. Quanto sobra para o lado paralelo? 60 − 2x.\n\n2) Qual é a área? A(x) = x(60 − 2x) = −2x² + 60x.\n\n3) A parábola abre para cima ou para baixo? Para baixo, porque a = −2: tem máximo.\n\n4) Vértice: x = −60 ÷ (2·(−2)) = 15.\n\n5) Área máxima: A(15) = 15·30 = 450 m². Lados: 15 m, 15 m e 30 m.",
+  "independent_exercise": "Chegou a tua vez. Resolve os exercícios sem pressa e usa **Verificar** para confirmar. Se errares, não faz mal: lê a resolução passo a passo, percebe onde o raciocínio escorregou e tenta outra vez. É assim que se aprende de verdade.",
+  "challenge": "**Um preço para o lucro máximo.** Uma papelaria vende cadernos a p Kz cada e vende (400 − p) cadernos por dia. Cada caderno custou 100 Kz à papelaria. Que preço dá o maior lucro diário?\n\nPista: o lucro é (p − 100)(400 − p). Desenvolve e procura o vértice, ou lembra-te que o vértice fica no meio dos dois zeros: o lucro é zero quando p = 100 e quando p = 400.",
+  "assessment": "Consideras a competência dominada quando consegues: (1) dizer, só pelo sinal de a, se há máximo ou mínimo; (2) calcular Δ e interpretar o número de zeros; (3) resolver ax² + bx + c = 0 com a fórmula resolvente; (4) encontrar o vértice e o valor máximo ou mínimo; (5) traduzir um problema de máximo ou mínimo (área, altura, lucro) numa função quadrática e resolvê-lo."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "funcoes.quadratica",
+   "statement": "Calcula $f(0)$ para $f(x)=x^2-3x+7$.",
+   "options": null,
+   "answer": {
+    "value": "7",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Em f(0) só resta o termo independente c = 7.",
+   "steps": [
+    "f(0) = 0 − 0 + 7.",
+    "= 7."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "funcoes.quadratica",
+   "statement": "Calcula o discriminante $\\Delta=b^2-4ac$ da equação $x^2+2x-8=0$.",
+   "options": null,
+   "answer": {
+    "value": "36",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Δ = 2² − 4·1·(−8) = 4 + 32 = 36.",
+   "steps": [
+    "a = 1, b = 2, c = −8.",
+    "Δ = 4 − 4·1·(−8) = 4 + 32 = 36."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "funcoes.quadratica",
+   "statement": "Calcula o maior zero da função $f(x)=x^2-5x+6$.",
+   "options": null,
+   "answer": {
+    "value": "3",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Δ = 25 − 24 = 1; x = (5 ± 1) ÷ 2, logo os zeros são 2 e 3, e o maior é 3.",
+   "steps": [
+    "Δ = (−5)² − 4·1·6 = 1.",
+    "x = (5 ± 1) ÷ 2.",
+    "Zeros: 2 e 3; o maior é 3."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "funcoes.quadratica",
+   "statement": "Calcula a abcissa do vértice da parábola $y=x^2-6x+5$.",
+   "options": null,
+   "answer": {
+    "value": "3",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "A abcissa do vértice é −b ÷ (2a) = 6 ÷ 2 = 3.",
+   "steps": [
+    "a = 1, b = −6.",
+    "x_v = −b/(2a) = 6/2 = 3."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "funcoes.quadratica",
+   "statement": "Qual é o valor mínimo da função $f(x)=x^2-6x+5$?",
+   "options": null,
+   "answer": {
+    "value": "-4",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "O mínimo ocorre no vértice, x = 3: f(3) = 9 − 18 + 5 = −4.",
+   "steps": [
+    "Vértice em x = 3.",
+    "f(3) = 9 − 18 + 5 = −4."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "funcoes.quadratica",
+   "statement": "Quantos zeros reais tem a função $f(x)=x^2+4x+4$?",
+   "options": null,
+   "answer": {
+    "value": "1",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Δ = 16 − 16 = 0, logo existe um único zero (x = −2).",
+   "steps": [
+    "Δ = 4² − 4·1·4 = 0.",
+    "Δ = 0: um só zero, x = −2."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "funcoes.quadratica",
+   "statement": "Calcula o valor máximo de $f(x)=-x^2+4x$.",
+   "options": null,
+   "answer": {
+    "value": "4",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "O vértice está em x = −4 ÷ (2·(−1)) = 2 e f(2) = −4 + 8 = 4.",
+   "steps": [
+    "x_v = −b/(2a) = −4/(−2) = 2.",
+    "f(2) = −4 + 8 = 4."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "funcoes.quadratica",
+   "statement": "Sem resolver a equação, calcula a soma dos zeros de $2x^2-10x+8=0$.",
+   "options": null,
+   "answer": {
+    "value": "5",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "A soma dos zeros é −b ÷ a = 10 ÷ 2 = 5 (confirma: os zeros são 1 e 4).",
+   "steps": [
+    "Soma = −b/a.",
+    "−(−10)/2 = 5."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "funcoes.quadratica",
+   "statement": "Uma bola é atirada ao ar e a sua altura (em metros) é $h(t)=-5t^2+20t$, com t em segundos. Qual é a altura máxima atingida, em metros?",
+   "options": null,
+   "answer": {
+    "value": "20",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "O máximo está no vértice, t = 20 ÷ 10 = 2 s, e h(2) = −20 + 40 = 20 m.",
+   "steps": [
+    "t_v = −b/(2a) = −20/(−10) = 2.",
+    "h(2) = −5·4 + 20·2 = 20 m."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "funcoes.quadratica",
+   "statement": "Um retângulo tem perímetro de 40 m. Qual é a maior área, em m², que ele pode ter?",
+   "options": null,
+   "answer": {
+    "value": "100",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Se um lado mede x, o outro mede 20 − x e A = x(20 − x) = −x² + 20x. O vértice está em x = 10, e A = 10·10 = 100.",
+   "steps": [
+    "Lados x e 20 − x.",
+    "A(x) = −x² + 20x.",
+    "Máximo em x = 10: A = 100 m² (um quadrado)."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 1,
+   "competency": "funcoes.quadratica",
+   "statement": "A parábola de $y=3x^2-2$ tem a concavidade voltada para cima.",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "O coeficiente de x² é 3, positivo, por isso a concavidade está para cima.",
+   "steps": [
+    "Olha para o sinal de a.",
+    "a = 3 > 0: concavidade para cima."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "funcoes.quadratica",
+   "statement": "Quantos zeros reais tem a função $f(x)=x^2+x+1$?",
+   "options": [
+    {
+     "id": "a",
+     "label": "Nenhum"
+    },
+    {
+     "id": "b",
+     "label": "Um"
+    },
+    {
+     "id": "c",
+     "label": "Dois"
+    },
+    {
+     "id": "d",
+     "label": "Três"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "Δ = 1 − 4 = −3 < 0, por isso a equação não tem soluções reais.",
+   "steps": [
+    "Δ = 1² − 4·1·1 = −3.",
+    "Δ < 0: sem zeros reais."
+   ]
+  }
+ ]
+}
