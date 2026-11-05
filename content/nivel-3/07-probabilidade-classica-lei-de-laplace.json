@@ -1,0 +1,243 @@
+{
+ "subject": "probabilidade",
+ "topic_title": "Probabilidade",
+ "topic_slug": "probabilidade-classica",
+ "lesson_title": "Probabilidade: medir a sorte com frações",
+ "lesson_slug": "probabilidade-classica-lei-de-laplace",
+ "summary": "Calcula probabilidades com casos favoráveis e possíveis, usa o acontecimento complementar e o produto em extrações sucessivas.",
+ "minutes": 25,
+ "blocks": {
+  "introduction": "Vais ao mercado e o vendedor diz: \"há 30% de hipótese de chover hoje\". Num jogo, tens de adivinhar se o dado sai par. Numa rifa de 100 bilhetes, tens 2 bilhetes: que hipótese tens de ganhar? A **probabilidade** é o número que mede o quão provável é um acontecimento.\n\nNesta aula vais aprender a calcular probabilidades contando casos, a usar o complementar (\"a probabilidade de não acontecer\") e a tratar duas extrações seguidas. É a base de seguros, jogos, previsões e estatística.",
+  "intuition": "Quando todos os resultados são igualmente possíveis, a probabilidade é **casos favoráveis ÷ casos possíveis**. No dado, o número par tem 3 casos favoráveis (2, 4, 6) em 6 possíveis: 3/6 = 1/2.\n\nA probabilidade é sempre um número entre 0 (impossível) e 1 (certo). A soma da probabilidade de um acontecimento com a do seu contrário é 1, por isso P(não A) = 1 − P(A). Isso poupa muito trabalho: \"pelo menos um 6 em 3 lançamentos\" é mais fácil de calcular como 1 − P(nenhum 6).\n\nEm duas extrações **sem reposição**, a segunda probabilidade muda, porque o saco ficou com menos bolas: multiplicas as probabilidades de cada passo.\n\n**Erros comuns:** (1) contar resultados não igualmente possíveis (com dois dados, (1,6) e (6,1) são dois casos diferentes); (2) pensar que a moeda \"tem memória\" depois de várias caras; (3) esquecer de atualizar o total quando não há reposição.",
+  "definition": "Numa **experiência aleatória** com um número finito de resultados igualmente possíveis, a **probabilidade** de um acontecimento A é $P(A)=\\dfrac{\\text{número de casos favoráveis}}{\\text{número de casos possíveis}}$ (Lei de Laplace). Verifica-se $0\\le P(A)\\le 1$, $P(\\text{impossível})=0$, $P(\\text{certo})=1$ e $P(\\bar A)=1-P(A)$. Em extrações sucessivas, a probabilidade de uma sequência é o produto das probabilidades de cada etapa, condicionada ao que já aconteceu.",
+  "formulas": "$$P(A)=\\frac{n(A)}{n(\\Omega)}$$\n\n$$P(\\bar A)=1-P(A)$$\n\n$$P(A\\text{ e depois }B)=P(A)\\times P(B\\mid A)$$\n\nMnemónica: **\"favoráveis sobre possíveis, e quando for difícil, vai pelo contrário\"**.",
+  "worked_example": "**Exemplo 1.** Dado: P(maior que 4) = 2/6 = 1/3 (resultados 5 e 6).\n\n**Exemplo 2.** Duas moedas: resultados CC, CK, KC, KK. P(uma cara e uma coroa) = 2/4 = 1/2.\n\n**Exemplo 3 (complementar).** P(pelo menos uma cara em 2 lançamentos) = 1 − P(duas coroas) = 1 − 1/4 = 3/4.\n\n**Exemplo 4 (sem reposição).** Saco com 3 vermelhas e 2 azuis; tiram-se duas bolas. P(duas vermelhas) = 3/5 · 2/4 = 6/20 = 3/10.",
+  "guided_exercise": "Resolve connosco: **numa rifa há 50 bilhetes e tens 5. Qual é a probabilidade de ganhares o 1.º prémio? E de não ganhares?**\n\n1) Casos possíveis: 50.\n\n2) Casos favoráveis: 5.\n\n3) P(ganhar) = 5/50 = 1/10.\n\n4) P(não ganhar) = 1 − 1/10 = 9/10.\n\n5) Interpretação: em média, ganharias 1 vez em 10 rifas.",
+  "independent_exercise": "Chegou a tua vez. Resolve os exercícios sem pressa e usa **Verificar** para confirmar. Se errares, não faz mal: lê a resolução passo a passo, percebe onde o raciocínio escorregou e tenta outra vez. É assim que se aprende de verdade.",
+  "challenge": "**Os dois dados do Natal.** Lançam-se dois dados. Qual é a soma mais provável? Constrói a tabela 6×6 e conta quantas vezes aparece cada soma.\n\nPista: a soma 2 só aparece em (1,1), mas a soma 7 aparece em seis pares diferentes.",
+  "assessment": "Consideras a competência dominada quando consegues: (1) listar os casos possíveis e contar os favoráveis; (2) calcular probabilidades como frações irredutíveis; (3) usar o complementar; (4) calcular extrações sucessivas sem reposição; (5) explicar porque é que a moeda não tem memória."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "probabilidade.classica",
+   "statement": "Lança-se um dado equilibrado de 6 faces. Qual é a probabilidade de sair um número par? (fração)",
+   "options": null,
+   "answer": {
+    "value": "1/2",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Há 3 casos favoráveis (2, 4, 6) em 6 possíveis: 3/6 = 1/2.",
+   "steps": [
+    "Favoráveis: 2, 4, 6.",
+    "3/6 = 1/2."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "probabilidade.classica",
+   "statement": "Lança-se um dado. Qual é a probabilidade de sair 5? (fração)",
+   "options": null,
+   "answer": {
+    "value": "1/6",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "1 caso favorável em 6 possíveis.",
+   "steps": [
+    "1 favorável.",
+    "6 possíveis: 1/6."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "probabilidade.classica",
+   "statement": "Num saco há 3 bolas vermelhas e 7 azuis. Qual é a probabilidade de tirar uma vermelha? (fração)",
+   "options": null,
+   "answer": {
+    "value": "3/10",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "3 favoráveis em 10 possíveis: 3/10.",
+   "steps": [
+    "Total: 10.",
+    "Favoráveis: 3."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "probabilidade.classica",
+   "statement": "Lançam-se duas moedas. Qual é a probabilidade de saírem duas caras? (fração)",
+   "options": null,
+   "answer": {
+    "value": "1/4",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Há 4 resultados igualmente possíveis (CC, CK, KC, KK) e só 1 é CC: 1/4.",
+   "steps": [
+    "Lista os 4 resultados.",
+    "1 favorável: 1/4."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "probabilidade.classica",
+   "statement": "Lançam-se dois dados. Qual é a probabilidade de a soma ser 7? (fração)",
+   "options": null,
+   "answer": {
+    "value": "1/6",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Há 36 pares possíveis e 6 somam 7 ((1,6), (2,5), (3,4), (4,3), (5,2), (6,1)): 6/36 = 1/6.",
+   "steps": [
+    "Total: 6·6 = 36.",
+    "Favoráveis: 6.",
+    "6/36 = 1/6."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "probabilidade.classica",
+   "statement": "Lançam-se dois dados. Qual é a probabilidade de a soma ser pelo menos 10? (fração)",
+   "options": null,
+   "answer": {
+    "value": "1/6",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Somas 10, 11 e 12: 3 + 2 + 1 = 6 casos em 36, ou seja, 1/6.",
+   "steps": [
+    "Soma 10: (4,6), (5,5), (6,4).",
+    "Soma 11: 2 casos. Soma 12: 1 caso.",
+    "6/36 = 1/6."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "probabilidade.classica",
+   "statement": "A probabilidade de chover amanhã é $\\frac{2}{5}$. Qual é a probabilidade de NÃO chover? (fração)",
+   "options": null,
+   "answer": {
+    "value": "3/5",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Acontecimentos complementares: 1 − 2/5 = 3/5.",
+   "steps": [
+    "P(não chover) = 1 − P(chover).",
+    "1 − 2/5 = 3/5."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "probabilidade.classica",
+   "statement": "Numa caixa há 4 bolas vermelhas e 6 azuis. Tiram-se duas bolas, uma a seguir à outra, sem repor. Qual é a probabilidade de ambas serem vermelhas? (fração)",
+   "options": null,
+   "answer": {
+    "value": "2/15",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Primeira: 4/10. Segunda (restam 3 vermelhas em 9): 3/9. Produto: 12/90 = 2/15.",
+   "steps": [
+    "P(1.ª vermelha) = 4/10.",
+    "P(2.ª vermelha | 1.ª vermelha) = 3/9.",
+    "4/10 · 3/9 = 2/15."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "probabilidade.classica",
+   "statement": "Numa turma há 12 rapazes e 18 raparigas. Escolhe-se um aluno ao acaso. Qual é a probabilidade de ser uma rapariga? (fração irredutível)",
+   "options": null,
+   "answer": {
+    "value": "3/5",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "18 favoráveis em 30: 18/30 = 3/5.",
+   "steps": [
+    "Total: 30.",
+    "18/30 = 3/5."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 1,
+   "competency": "probabilidade.classica",
+   "statement": "A probabilidade de um acontecimento impossível é 0.",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "Se nunca pode acontecer, não há casos favoráveis: 0/n = 0.",
+   "steps": [
+    "Impossível: 0 casos favoráveis.",
+    "Probabilidade 0."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "probabilidade.classica",
+   "statement": "Uma probabilidade pode ser igual a 1,5.",
+   "options": null,
+   "answer": {
+    "boolean": false
+   },
+   "tolerance": 0,
+   "explanation": "Uma probabilidade está sempre entre 0 e 1 (ou 0% e 100%).",
+   "steps": [
+    "Favoráveis ≤ possíveis.",
+    "Logo P ≤ 1."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "probabilidade.classica",
+   "statement": "Uma moeda equilibrada saiu cara 5 vezes seguidas. Qual é a probabilidade de sair cara no 6.º lançamento?",
+   "options": [
+    {
+     "id": "a",
+     "label": "1/2"
+    },
+    {
+     "id": "b",
+     "label": "Menor que 1/2"
+    },
+    {
+     "id": "c",
+     "label": "Maior que 1/2"
+    },
+    {
+     "id": "d",
+     "label": "0"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "Os lançamentos são independentes: a moeda não tem memória, por isso é sempre 1/2.",
+   "steps": [
+    "Lançamentos independentes.",
+    "A probabilidade mantém-se 1/2."
+   ]
+  }
+ ]
+}

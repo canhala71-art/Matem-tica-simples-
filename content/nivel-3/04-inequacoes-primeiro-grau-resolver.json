@@ -1,0 +1,262 @@
+{
+ "subject": "algebra",
+ "topic_title": "Inequações do 1.º grau",
+ "topic_slug": "inequacoes-primeiro-grau",
+ "lesson_title": "Inequações do 1.º grau: resolver desigualdades",
+ "lesson_slug": "inequacoes-primeiro-grau-resolver",
+ "summary": "Resolve desigualdades com uma incógnita, interpreta o conjunto solução e usa-as em problemas de orçamento.",
+ "minutes": 25,
+ "blocks": {
+  "introduction": "Tens 6 000 Kz e queres comprar cadernos de 450 Kz e uma caneta de 300 Kz. Quantos cadernos podes levar sem ultrapassar o dinheiro? Aqui não procuras um valor exato, mas **todos os valores possíveis**: uma **inequação**. Orçamentos, limites de dados, pesos máximos num transporte, notas mínimas para passar, tudo isto são desigualdades.\n\nNesta aula vais resolver inequações do 1.º grau com o mesmo método das equações, aprender a única regra nova (o que fazer com números negativos) e interpretar o resultado como um conjunto de valores.",
+  "intuition": "Uma inequação é uma equação com ≤, <, ≥ ou > no lugar do =. A balança continua a valer: **o que fazes a um lado fazes ao outro**. Somar ou subtrair o mesmo número não muda o sentido. Multiplicar ou dividir por um número **positivo** também não.\n\nA regra nova é esta: ao multiplicar ou dividir por um número **negativo**, o sentido **inverte-se**. Prova com números: 2 < 5 é verdade; multiplicando por −1 ficam −2 e −5, e agora −2 > −5. Os números trocaram de ordem na reta.\n\nA solução não é um número, é um conjunto, por exemplo x > 3, que inclui 3,1, 4, 100 e infinitos outros. O sinal ≥ ou ≤ inclui o extremo; < ou > não inclui.\n\n**Erros comuns:** (1) esquecer de inverter o sentido ao dividir por negativo; (2) incluir o extremo quando o sinal é estrito (com x > 5, o 5 não serve); (3) responder só com um valor quando se pede todos. Defesa: testa um número da solução e outro fora dela na inequação original.",
+  "definition": "Uma **inequação do 1.º grau** com uma incógnita é uma desigualdade que se pode escrever na forma ax + b > c (ou <, ≥, ≤), com a ≠ 0. A **solução** é o conjunto dos números que a tornam verdadeira. Duas inequações são **equivalentes** se têm o mesmo conjunto solução. Princípios de equivalência: somar ou subtrair o mesmo número aos dois lados mantém o sentido; multiplicar ou dividir por um número positivo mantém o sentido; multiplicar ou dividir por um número negativo inverte o sentido.",
+  "formulas": "$$ax+b>c\\;\\Longrightarrow\\; x>\\frac{c-b}{a}\\quad(a>0)$$\n\n$$ax+b>c\\;\\Longrightarrow\\; x<\\frac{c-b}{a}\\quad(a<0)$$\n\nMnemónica: **\"negativo a dividir, sinal a virar\"**. Resposta em intervalo: x > 3 escreve-se $]3,+\\infty[$; x ≤ 2 escreve-se $]-\\infty,2]$.",
+  "worked_example": "**Exemplo 1.** Resolve $x+5>9$. Subtrai 5: x > 4.\n\n**Exemplo 2.** Resolve $3x-2\\le 10$. Soma 2: 3x ≤ 12. Divide por 3: x ≤ 4.\n\n**Exemplo 3 (negativo).** Resolve $-2x+1<7$. Subtrai 1: −2x < 6. Divide por −2 e inverte: x > −3. Teste: x = 0 dá 1 < 7 ✓; x = −5 dá 11 < 7 ✗.\n\n**Exemplo 4 (problema).** Com 6 000 Kz, cada caderno custa 450 Kz e há uma caneta de 300 Kz. 450c + 300 ≤ 6000 dá 450c ≤ 5700 e c ≤ 12,67. No máximo 12 cadernos.",
+  "guided_exercise": "Resolve connosco: **uma turma precisa de média mínima 10 para passar. Já tem 8 e 12 em dois testes. Que nota mínima precisa no 3.º teste?**\n\n1) A média é (8 + 12 + n) ÷ 3.\n\n2) Quer-se ≥ 10: (20 + n) ÷ 3 ≥ 10.\n\n3) Multiplica por 3 (positivo, sentido mantém): 20 + n ≥ 30.\n\n4) n ≥ 10.\n\n5) Resposta: pelo menos 10. Prova: (8 + 12 + 10) ÷ 3 = 10 ✓.",
+  "independent_exercise": "Chegou a tua vez. Resolve os exercícios sem pressa e usa **Verificar** para confirmar. Se errares, não faz mal: lê a resolução passo a passo, percebe onde o raciocínio escorregou e tenta outra vez. É assim que se aprende de verdade.",
+  "challenge": "**Qual é o maior preço?** Tens 5 000 Kz e queres comprar 4 camisolas iguais e ainda pagar 800 Kz de transporte. Qual é o preço máximo de cada camisola? E se os preços só puderem ser múltiplos de 50 Kz?\n\nPista: 4p + 800 ≤ 5000.",
+  "assessment": "Estarás pronto quando conseguires: (1) resolver ax + b > c com a positivo e negativo; (2) inverter o sentido quando necessário; (3) escrever a solução como x > k ou em intervalo; (4) traduzir um problema de limite (orçamento, nota mínima, dados) numa inequação; (5) testar a resposta com um valor dentro e outro fora da solução."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "inequacoes.primeiro_grau",
+   "statement": "Qual é o menor inteiro x que verifica $x+4>9$?",
+   "options": null,
+   "answer": {
+    "value": "6",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "x + 4 > 9 dá x > 5, e o menor inteiro maior que 5 é 6.",
+   "steps": [
+    "Subtrai 4: x > 5.",
+    "O menor inteiro é 6."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "inequacoes.primeiro_grau",
+   "statement": "Qual é o maior inteiro x que verifica $x-3<2$?",
+   "options": null,
+   "answer": {
+    "value": "4",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "x − 3 < 2 dá x < 5, e o maior inteiro menor que 5 é 4.",
+   "steps": [
+    "Soma 3: x < 5.",
+    "O maior inteiro é 4."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "inequacoes.primeiro_grau",
+   "statement": "Qual é o menor inteiro x que verifica $3x-5>10$?",
+   "options": null,
+   "answer": {
+    "value": "6",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "3x > 15 dá x > 5, logo o menor inteiro é 6 (com x = 5 dá exatamente 10, que não é maior).",
+   "steps": [
+    "3x > 15.",
+    "x > 5.",
+    "Menor inteiro: 6."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "inequacoes.primeiro_grau",
+   "statement": "Qual é o maior inteiro x que verifica $2x+7<20$?",
+   "options": null,
+   "answer": {
+    "value": "6",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "2x < 13 dá x < 6,5, logo o maior inteiro é 6.",
+   "steps": [
+    "2x < 13.",
+    "x < 6,5.",
+    "Maior inteiro: 6."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "inequacoes.primeiro_grau",
+   "statement": "Qual é o maior inteiro x que verifica $-2x+8>2$?",
+   "options": null,
+   "answer": {
+    "value": "2",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "−2x > −6. Ao dividir por −2 o sinal da desigualdade inverte-se: x < 3. O maior inteiro é 2.",
+   "steps": [
+    "−2x > 2 − 8 = −6.",
+    "Dividir por número negativo inverte: x < 3.",
+    "Maior inteiro: 2."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "inequacoes.primeiro_grau",
+   "statement": "Quantos inteiros positivos verificam $4x-3\\le 21$?",
+   "options": null,
+   "answer": {
+    "value": "6",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "4x ≤ 24 dá x ≤ 6; os inteiros positivos são 1, 2, 3, 4, 5 e 6.",
+   "steps": [
+    "4x ≤ 24.",
+    "x ≤ 6.",
+    "Inteiros positivos: 1 a 6, ou seja, 6 valores."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "inequacoes.primeiro_grau",
+   "statement": "O João tem 1 500 Kz e poupa 250 Kz por dia. Ao fim de quantos dias, no mínimo, terá pelo menos 6 000 Kz?",
+   "options": null,
+   "answer": {
+    "value": "18",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "1500 + 250d ≥ 6000 dá 250d ≥ 4500 e d ≥ 18.",
+   "steps": [
+    "1500 + 250d ≥ 6000.",
+    "250d ≥ 4500.",
+    "d ≥ 18: no mínimo 18 dias."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "inequacoes.primeiro_grau",
+   "statement": "Um plano de dados cobra 50 Kz de taxa mais 20 Kz por GB. Com 700 Kz, quantos GB inteiros, no máximo, se podem comprar?",
+   "options": null,
+   "answer": {
+    "value": "32",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "50 + 20g ≤ 700 dá 20g ≤ 650 e g ≤ 32,5. O máximo inteiro é 32.",
+   "steps": [
+    "50 + 20g ≤ 700.",
+    "20g ≤ 650.",
+    "g ≤ 32,5: no máximo 32 GB."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 1,
+   "competency": "inequacoes.primeiro_grau",
+   "statement": "Se $x>3$, então $x=4$ é uma solução.",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "4 é maior que 3, por isso verifica a desigualdade.",
+   "steps": [
+    "Compara 4 com 3.",
+    "4 > 3."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "inequacoes.primeiro_grau",
+   "statement": "Ao multiplicar os dois lados de uma desigualdade por −1, o sentido mantém-se.",
+   "options": null,
+   "answer": {
+    "boolean": false
+   },
+   "tolerance": 0,
+   "explanation": "Multiplicar (ou dividir) por um número negativo inverte o sentido: 2 < 5 mas −2 > −5.",
+   "steps": [
+    "Testa com 2 < 5.",
+    "Multiplicando por −1: −2 > −5. O sentido inverteu."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "inequacoes.primeiro_grau",
+   "statement": "Qual é o conjunto solução de $2x-1\\ge 7$?",
+   "options": [
+    {
+     "id": "a",
+     "label": "$x\\ge 4$"
+    },
+    {
+     "id": "b",
+     "label": "$x\\le 4$"
+    },
+    {
+     "id": "c",
+     "label": "$x\\ge 3$"
+    },
+    {
+     "id": "d",
+     "label": "$x> 4$"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "2x ≥ 8 dá x ≥ 4 (o 4 está incluído porque o sinal é ≥).",
+   "steps": [
+    "2x ≥ 8.",
+    "x ≥ 4."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 3,
+   "competency": "inequacoes.primeiro_grau",
+   "statement": "Resolveste $-3x<12$ e escreveste $x<-4$. O que está errado?",
+   "options": [
+    {
+     "id": "a",
+     "label": "Não se inverteu o sentido ao dividir por −3: o correto é x > −4"
+    },
+    {
+     "id": "b",
+     "label": "Nada, está certo"
+    },
+    {
+     "id": "c",
+     "label": "Devia ser x < 4"
+    },
+    {
+     "id": "d",
+     "label": "Devia ser x > 4"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "Dividindo por −3 inverte-se: x > −4.",
+   "steps": [
+    "−3x < 12.",
+    "Divide por −3 e inverte: x > −4."
+   ]
+  }
+ ]
+}

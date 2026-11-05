@@ -1,0 +1,242 @@
+{
+ "subject": "geometria-analitica",
+ "topic_title": "Geometria analítica",
+ "topic_slug": "geometria-analitica-reta",
+ "lesson_title": "Geometria analítica: distância, ponto médio e equação da reta",
+ "lesson_slug": "geometria-analitica-distancia-reta",
+ "summary": "Calcula distâncias, pontos médios e declives no plano cartesiano e escreve a equação reduzida da reta.",
+ "minutes": 30,
+ "blocks": {
+  "introduction": "Quando abres o mapa no telemóvel, a tua posição é um ponto com duas coordenadas. A distância até casa, o ponto a meio caminho entre dois lugares, a inclinação de uma rua, tudo se pode calcular com números. Isto é a **geometria analítica**: descrever figuras com coordenadas e resolvê-las com álgebra.\n\nNesta aula vais usar o plano cartesiano para calcular a distância entre dois pontos, o ponto médio e o declive, e escrever a equação de uma reta.",
+  "intuition": "No plano cartesiano, cada ponto tem uma abcissa (x) e uma ordenada (y). Para a **distância** entre dois pontos, desenha um triângulo retângulo cujos catetos são as diferenças das coordenadas: Δx e Δy. A distância é a hipotenusa, e basta usar Pitágoras: $d=\\sqrt{(\\Delta x)^2+(\\Delta y)^2}$.\n\nO **ponto médio** fica a meio caminho: a abcissa é a média das abcissas e a ordenada é a média das ordenadas.\n\nO **declive** de uma reta mede a inclinação: quanto y sobe por cada unidade que x anda. A equação reduzida é y = mx + b, onde m é o declive e b a ordenada na origem. Retas **paralelas** têm o mesmo declive.\n\n**Erros comuns:** (1) esquecer de fazer a raiz quadrada na distância; (2) trocar a ordem das coordenadas (em (x, y) vem primeiro x); (3) dividir Δx por Δy no declive em vez de Δy por Δx.",
+  "definition": "Dados $A(x_1,y_1)$ e $B(x_2,y_2)$, a **distância** é $d(A,B)=\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}$ e o **ponto médio** é $M\\left(\\frac{x_1+x_2}{2},\\frac{y_1+y_2}{2}\\right)$. O **declive** da reta AB (com x₁ ≠ x₂) é $m=\\frac{y_2-y_1}{x_2-x_1}$. A **equação reduzida** de uma reta não vertical é y = mx + b.",
+  "formulas": "$$d=\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}$$\n\n$$M=\\left(\\frac{x_1+x_2}{2},\\frac{y_1+y_2}{2}\\right)$$\n\n$$m=\\frac{y_2-y_1}{x_2-x_1},\\qquad y-y_1=m(x-x_1)$$\n\nParalelas: mesmo declive. Perpendiculares: $m_1\\cdot m_2=-1$.",
+  "worked_example": "**Exemplo 1.** A(0, 0) e B(6, 8): d = √(36 + 64) = 10. Ponto médio: (3, 4).\n\n**Exemplo 2.** Reta por (1, 3) e (3, 7): m = 4 ÷ 2 = 2. Então y = 2x + b e 3 = 2 + b, logo b = 1: y = 2x + 1.\n\n**Exemplo 3.** A reta y = −x + 4 corta o eixo dos xx quando y = 0, isto é, x = 4. Corta o eixo dos yy em y = 4.\n\n**Exemplo 4 (perpendicular).** A reta y = 2x + 1 tem declive 2; uma perpendicular tem declive −1/2.",
+  "guided_exercise": "Resolve connosco: **dois bairros estão nos pontos A(2, 3) e B(10, 9) de um mapa em km. Qual é a distância entre eles e onde fica o ponto médio?**\n\n1) Δx = 10 − 2 = 8 e Δy = 9 − 3 = 6.\n\n2) d = √(64 + 36) = √100 = 10 km.\n\n3) Ponto médio: x = (2 + 10) ÷ 2 = 6 e y = (3 + 9) ÷ 2 = 6.\n\n4) Resposta: 10 km, ponto médio (6, 6).",
+  "independent_exercise": "Chegou a tua vez. Resolve os exercícios sem pressa e usa **Verificar** para confirmar. Se errares, não faz mal: lê a resolução passo a passo, percebe onde o raciocínio escorregou e tenta outra vez. É assim que se aprende de verdade.",
+  "challenge": "**O triângulo isósceles.** Os pontos A(0, 0), B(4, 0) e C(2, 5) formam um triângulo. Mostra que AC e BC têm o mesmo comprimento. Que tipo de triângulo é?\n\nPista: calcula as duas distâncias com a fórmula.",
+  "assessment": "Consideras a competência dominada quando consegues: (1) calcular a distância entre dois pontos; (2) calcular o ponto médio; (3) calcular o declive por dois pontos; (4) escrever e interpretar y = mx + b; (5) reconhecer retas paralelas e perpendiculares pelo declive."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "geometria_analitica.reta",
+   "statement": "Qual é a distância entre $A(1,2)$ e $B(4,6)$?",
+   "options": null,
+   "answer": {
+    "value": "5",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "d = √((4 − 1)² + (6 − 2)²) = √(9 + 16) = 5.",
+   "steps": [
+    "Δx = 3, Δy = 4.",
+    "√25 = 5."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "geometria_analitica.reta",
+   "statement": "Qual é a abcissa do ponto médio entre $A(2,3)$ e $B(8,7)$?",
+   "options": null,
+   "answer": {
+    "value": "5",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "xm = (2 + 8) ÷ 2 = 5.",
+   "steps": [
+    "(2 + 8)/2 = 5."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "geometria_analitica.reta",
+   "statement": "Qual é a ordenada do ponto médio entre $A(2,3)$ e $B(8,7)$?",
+   "options": null,
+   "answer": {
+    "value": "5",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "ym = (3 + 7) ÷ 2 = 5.",
+   "steps": [
+    "(3 + 7)/2 = 5."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "geometria_analitica.reta",
+   "statement": "Qual é o declive da reta que passa por $A(1,2)$ e $B(3,8)$?",
+   "options": null,
+   "answer": {
+    "value": "3",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "m = (8 − 2) ÷ (3 − 1) = 3.",
+   "steps": [
+    "Δy = 6.",
+    "Δx = 2.",
+    "m = 3."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "geometria_analitica.reta",
+   "statement": "A reta $y=2x+3$ passa pelo ponto $(4,k)$. Qual é o valor de k?",
+   "options": null,
+   "answer": {
+    "value": "11",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Substitui x = 4: y = 2·4 + 3 = 11.",
+   "steps": [
+    "k = 2·4 + 3.",
+    "k = 11."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "geometria_analitica.reta",
+   "statement": "Qual é a distância entre $A(-2,1)$ e $B(4,9)$?",
+   "options": null,
+   "answer": {
+    "value": "10",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "d = √(6² + 8²) = √100 = 10.",
+   "steps": [
+    "Δx = 6, Δy = 8.",
+    "√(36 + 64) = 10."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "geometria_analitica.reta",
+   "statement": "Uma reta passa por $(1,5)$ e $(4,11)$. Em que ponto corta o eixo dos yy? (indica a ordenada)",
+   "options": null,
+   "answer": {
+    "value": "3",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Declive: (11 − 5) ÷ (4 − 1) = 2. A reta é y = 2x + b com 5 = 2 + b, logo b = 3.",
+   "steps": [
+    "Declive 2.",
+    "5 = 2·1 + b.",
+    "b = 3."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "geometria_analitica.reta",
+   "statement": "O ponto médio de $AB$ é $M(5,2)$ e $A=(1,1)$. Qual é a abcissa de B?",
+   "options": null,
+   "answer": {
+    "value": "9",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "(1 + xB) ÷ 2 = 5 dá xB = 9.",
+   "steps": [
+    "(1 + xB)/2 = 5.",
+    "xB = 10 − 1 = 9."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "geometria_analitica.reta",
+   "statement": "Uma reta é paralela a $y=3x+1$ e passa pelo ponto $(0,5)$. Qual é a ordenada do seu ponto com abcissa 2?",
+   "options": null,
+   "answer": {
+    "value": "11",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Retas paralelas têm o mesmo declive: y = 3x + 5, e para x = 2 vem y = 11.",
+   "steps": [
+    "Declive 3.",
+    "y = 3x + 5.",
+    "x = 2 dá 11."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "geometria_analitica.reta",
+   "statement": "Qual é o declive da reta $4x+2y=10$?",
+   "options": null,
+   "answer": {
+    "value": "-2",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Isola y: 2y = −4x + 10, logo y = −2x + 5 e o declive é −2.",
+   "steps": [
+    "2y = −4x + 10.",
+    "y = −2x + 5."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 1,
+   "competency": "geometria_analitica.reta",
+   "statement": "A reta horizontal $y=4$ tem declive 0.",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "Em y = 4, y não varia quando x varia: declive 0.",
+   "steps": [
+    "Δy = 0.",
+    "Declive 0."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "geometria_analitica.reta",
+   "statement": "Duas retas com o mesmo declive e ordenadas na origem diferentes são…",
+   "options": [
+    {
+     "id": "a",
+     "label": "Paralelas"
+    },
+    {
+     "id": "b",
+     "label": "Perpendiculares"
+    },
+    {
+     "id": "c",
+     "label": "Coincidentes"
+    },
+    {
+     "id": "d",
+     "label": "Concorrentes num só ponto"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "O mesmo declive significa a mesma inclinação, e ordenadas diferentes significam que não coincidem: são paralelas.",
+   "steps": [
+    "Mesmo declive: mesma inclinação.",
+    "Não coincidem, logo paralelas."
+   ]
+  }
+ ]
+}

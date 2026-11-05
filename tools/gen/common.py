@@ -35,3 +35,8 @@ def write(level, idx, doc):
 
 INDEP = ("Chegou a tua vez. Resolve os exercícios sem pressa e usa **Verificar** para confirmar. Se errares, não faz mal: lê a resolução passo a passo, "
          "percebe onde o raciocínio escorregou e tenta outra vez. É assim que se aprende de verdade.")
+
+def lesson(subject, topic_title, topic_slug, title, slug, summary, minutes, intro, intuition, definition, formulas, worked, guided, challenge, assessment, exercises):
+    return dict(subject=subject, topic_title=topic_title, topic_slug=topic_slug, lesson_title=title, lesson_slug=slug, summary=summary, minutes=minutes,
+        blocks=dict(introduction=intro, intuition=intuition, definition=definition, formulas=formulas, worked_example=worked, guided_exercise=guided,
+                    independent_exercise=INDEP, challenge=challenge, assessment=assessment), exercises=exercises)

@@ -1,0 +1,243 @@
+{
+ "subject": "trigonometria",
+ "topic_title": "Trigonometria",
+ "topic_slug": "trigonometria-triangulo-retangulo",
+ "lesson_title": "Trigonometria no triângulo retângulo: seno, cosseno e tangente",
+ "lesson_slug": "trigonometria-seno-cosseno-tangente",
+ "summary": "Usa seno, cosseno, tangente e o teorema de Pitágoras para calcular lados e alturas em triângulos retângulos.",
+ "minutes": 30,
+ "blocks": {
+  "introduction": "Como é que um topógrafo mede a altura de um prédio sem lá subir? Mede a distância à base e o ângulo até ao topo, e a **trigonometria** faz o resto. É assim que se calculam rampas, telhados, torres de telecomunicações, a inclinação de uma estrada ou a altura de uma árvore pela sombra.\n\nNesta aula vais aprender o teorema de Pitágoras e as razões trigonométricas seno, cosseno e tangente, e usá-los para resolver problemas com triângulos retângulos.",
+  "intuition": "Num triângulo retângulo, escolhe um ângulo agudo α. O lado maior, oposto ao ângulo reto, é a **hipotenusa**. Em relação a α, o **cateto oposto** é o que está \"à frente\" do ângulo e o **cateto adjacente** é o que lhe está encostado.\n\nA ideia genial é que, para o mesmo ângulo, a razão entre dois lados **não depende do tamanho do triângulo**: um triângulo pequeno e outro grande, ambos com 30°, têm sempre a mesma razão oposto ÷ hipotenusa. Essa razão chama-se **seno**. O **cosseno** é adjacente ÷ hipotenusa e a **tangente** é oposto ÷ adjacente.\n\nAssim, se souberes o ângulo e um lado, calculas os outros. Mnemónica útil: **SOH-CAH-TOA** (Seno = Oposto/Hipotenusa, Cosseno = Adjacente/Hipotenusa, Tangente = Oposto/Adjacente).\n\n**Erros comuns:** (1) trocar oposto com adjacente (depende do ângulo escolhido); (2) usar seno quando precisavas de tangente; (3) esquecer que a calculadora tem de estar em graus.",
+  "definition": "Num triângulo retângulo, para um ângulo agudo α: $\\sin\\alpha=\\dfrac{\\text{cateto oposto}}{\\text{hipotenusa}}$, $\\cos\\alpha=\\dfrac{\\text{cateto adjacente}}{\\text{hipotenusa}}$, $\\tan\\alpha=\\dfrac{\\text{cateto oposto}}{\\text{cateto adjacente}}$. O **teorema de Pitágoras** afirma que a soma dos quadrados dos catetos é igual ao quadrado da hipotenusa. Os valores das razões dependem apenas do ângulo.",
+  "formulas": "$$a^2+b^2=c^2$$\n\n$$\\sin\\alpha=\\frac{o}{h},\\quad\\cos\\alpha=\\frac{a}{h},\\quad\\tan\\alpha=\\frac{o}{a}$$\n\n$$\\sin^2\\alpha+\\cos^2\\alpha=1,\\qquad \\tan\\alpha=\\frac{\\sin\\alpha}{\\cos\\alpha}$$\n\nÂngulos notáveis: sen 30° = 1/2, cos 60° = 1/2, tg 45° = 1.\n\nMnemónica: **SOH-CAH-TOA**.",
+  "worked_example": "**Exemplo 1.** Catetos 6 e 8: hipotenusa = √(36 + 64) = 10. Para o ângulo oposto ao cateto 6: sen = 6/10 = 3/5, cos = 4/5, tg = 3/4.\n\n**Exemplo 2.** Triângulo com hipotenusa 10 e ângulo de 30°. O cateto oposto vale 10 · sen 30° = 5.\n\n**Exemplo 3 (altura).** A 20 m de um prédio, vês o topo com ângulo de 45°. tg 45° = 1 = altura ÷ 20, logo a altura é 20 m.\n\n**Exemplo 4 (escada).** Uma escada de 5 m, com a base a 3 m da parede, chega a √(25 − 9) = 4 m de altura.",
+  "guided_exercise": "Resolve connosco: **uma rampa tem 10 m de comprimento e sobe 5 m. Qual é o seno do ângulo de inclinação?**\n\n1) A rampa é a hipotenusa: 10 m.\n\n2) A subida é o cateto oposto ao ângulo de inclinação: 5 m.\n\n3) sen α = 5/10 = 1/2.\n\n4) Que ângulo tem seno 1/2? 30°.\n\n5) Verifica: uma rampa que sobe metade do seu comprimento faz 30° com o chão.",
+  "independent_exercise": "Chegou a tua vez. Resolve os exercícios sem pressa e usa **Verificar** para confirmar. Se errares, não faz mal: lê a resolução passo a passo, percebe onde o raciocínio escorregou e tenta outra vez. É assim que se aprende de verdade.",
+  "challenge": "**A altura da torre.** Estás a 30 m da base de uma torre e vês o topo com um ângulo de 45°. Os teus olhos estão a 1,5 m do chão. Qual é a altura da torre?\n\nPista: o triângulo dá a altura acima dos teus olhos; depois soma a altura dos olhos.",
+  "assessment": "Estarás pronto quando conseguires: (1) usar Pitágoras para achar o terceiro lado; (2) identificar oposto, adjacente e hipotenusa em relação a um ângulo; (3) calcular sen, cos e tg como frações; (4) usar os ângulos notáveis para achar lados; (5) resolver problemas de alturas, rampas e escadas."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "trigonometria.triangulo_retangulo",
+   "statement": "Num triângulo retângulo os catetos medem 3 e 4 e a hipotenusa mede 5. Qual é o seno do ângulo oposto ao cateto de medida 3? (fração)",
+   "options": null,
+   "answer": {
+    "value": "3/5",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "seno = cateto oposto ÷ hipotenusa = 3/5.",
+   "steps": [
+    "Oposto: 3.",
+    "Hipotenusa: 5.",
+    "3/5."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "trigonometria.triangulo_retangulo",
+   "statement": "No mesmo triângulo (3, 4, 5), qual é o cosseno do ângulo oposto ao cateto de medida 3? (fração)",
+   "options": null,
+   "answer": {
+    "value": "4/5",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "cosseno = cateto adjacente ÷ hipotenusa = 4/5.",
+   "steps": [
+    "Adjacente: 4.",
+    "Hipotenusa: 5.",
+    "4/5."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "trigonometria.triangulo_retangulo",
+   "statement": "No mesmo triângulo, qual é a tangente do ângulo oposto ao cateto 3? (fração)",
+   "options": null,
+   "answer": {
+    "value": "3/4",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "tangente = oposto ÷ adjacente = 3/4.",
+   "steps": [
+    "Oposto: 3.",
+    "Adjacente: 4.",
+    "3/4."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "trigonometria.triangulo_retangulo",
+   "statement": "Um triângulo retângulo tem catetos 5 e 12. Quanto mede a hipotenusa?",
+   "options": null,
+   "answer": {
+    "value": "13",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Teorema de Pitágoras: 5² + 12² = 25 + 144 = 169, logo h = 13.",
+   "steps": [
+    "h² = 25 + 144 = 169.",
+    "h = 13."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "trigonometria.triangulo_retangulo",
+   "statement": "Num triângulo retângulo a hipotenusa mede 13 e um cateto mede 5. Qual é o seno do ângulo oposto a esse cateto? (fração)",
+   "options": null,
+   "answer": {
+    "value": "5/13",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "sen = oposto ÷ hipotenusa = 5/13.",
+   "steps": [
+    "Oposto 5, hipotenusa 13.",
+    "5/13."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "trigonometria.triangulo_retangulo",
+   "statement": "Uma escada de 15 m encosta a uma parede e a base está a 9 m da parede. A que altura da parede chega a escada, em metros?",
+   "options": null,
+   "answer": {
+    "value": "12",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Pitágoras: altura² = 15² − 9² = 225 − 81 = 144, logo a altura é 12 m.",
+   "steps": [
+    "h² + 9² = 15².",
+    "h² = 144.",
+    "h = 12 m."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "trigonometria.triangulo_retangulo",
+   "statement": "Num triângulo retângulo com um ângulo de 30°, a hipotenusa mede 20 m. Quanto mede o cateto oposto a esse ângulo? (sen 30° = 1/2)",
+   "options": null,
+   "answer": {
+    "value": "10",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "oposto = hipotenusa × sen 30° = 20 · 1/2 = 10 m.",
+   "steps": [
+    "sen = oposto/hipotenusa.",
+    "oposto = 20 · 1/2 = 10."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "trigonometria.triangulo_retangulo",
+   "statement": "A sombra de um poste mede 8 m quando os raios do sol formam 45° com o chão (tg 45° = 1). Qual é a altura do poste, em metros?",
+   "options": null,
+   "answer": {
+    "value": "8",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "altura = sombra × tg 45° = 8 · 1 = 8 m.",
+   "steps": [
+    "tg = altura/sombra.",
+    "altura = 8 · 1 = 8 m."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "trigonometria.triangulo_retangulo",
+   "statement": "Uma rampa de 18 m de comprimento faz 60° com o chão. Qual é o comprimento da sua projeção horizontal, em metros? (cos 60° = 1/2)",
+   "options": null,
+   "answer": {
+    "value": "9",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "adjacente = hipotenusa × cos 60° = 18 · 1/2 = 9 m.",
+   "steps": [
+    "cos = adjacente/hipotenusa.",
+    "adjacente = 18 · 1/2 = 9 m."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "trigonometria.triangulo_retangulo",
+   "statement": "Num triângulo retângulo, a hipotenusa é o maior lado.",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "É o lado oposto ao ângulo reto, e é sempre maior que cada cateto (Pitágoras: h² = a² + b²).",
+   "steps": [
+    "h² = a² + b² > a² e > b².",
+    "Logo h é o maior lado."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "trigonometria.triangulo_retangulo",
+   "statement": "O seno de um ângulo agudo pode ser maior que 1.",
+   "options": null,
+   "answer": {
+    "boolean": false
+   },
+   "tolerance": 0,
+   "explanation": "sen = oposto ÷ hipotenusa e o cateto é menor que a hipotenusa, por isso o seno está entre 0 e 1.",
+   "steps": [
+    "Cateto < hipotenusa.",
+    "Razão menor que 1."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "trigonometria.triangulo_retangulo",
+   "statement": "Qual é a relação correta?",
+   "options": [
+    {
+     "id": "a",
+     "label": "$\\sin^2\\alpha+\\cos^2\\alpha=1$"
+    },
+    {
+     "id": "b",
+     "label": "$\\sin\\alpha+\\cos\\alpha=1$"
+    },
+    {
+     "id": "c",
+     "label": "$\\tan\\alpha=\\cos\\alpha/\\sin\\alpha$"
+    },
+    {
+     "id": "d",
+     "label": "$\\sin\\alpha=\\cos\\alpha$ para todo α"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "É a relação fundamental da trigonometria, consequência do teorema de Pitágoras. A tangente é sen ÷ cos.",
+   "steps": [
+    "(oposto/h)² + (adjacente/h)² = (o² + a²)/h² = 1."
+   ]
+  }
+ ]
+}

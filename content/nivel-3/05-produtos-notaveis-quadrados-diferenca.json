@@ -1,0 +1,243 @@
+{
+ "subject": "polinomios",
+ "topic_title": "Produtos notáveis",
+ "topic_slug": "produtos-notaveis",
+ "lesson_title": "Produtos notáveis: quadrados e diferença de quadrados",
+ "lesson_slug": "produtos-notaveis-quadrados-diferenca",
+ "summary": "Desenvolve e fatoriza expressões com os três produtos notáveis e usa-os para calcular de cabeça.",
+ "minutes": 25,
+ "blocks": {
+  "introduction": "Quanto é 103 vezes 103? Sem calculadora parece custoso, mas se pensares 103 = 100 + 3, a conta fica fácil. E 51 vezes 49? É quase 50 vezes 50. Há uns atalhos algébricos que os matemáticos descobriram há séculos e que poupam muito trabalho: os **produtos notáveis**.\n\nNesta aula vais aprender três fórmulas (quadrado da soma, quadrado da diferença e diferença de quadrados), perceber de onde vêm e usá-las para calcular depressa e para fatorizar expressões nos exames.",
+  "intuition": "Porque é que (a + b)² não é a² + b²? Desenha um quadrado de lado a + b. Divide-o: um quadrado de área a², outro de área b² e **dois retângulos** de área ab cada. A área total é a² + 2ab + b². O termo do meio 2ab são esses dois retângulos que muita gente esquece.\n\nPara (a − b)² a ideia é a mesma, mas o termo do meio é negativo: a² − 2ab + b².\n\nA diferença de quadrados vem de (a + b)(a − b): multiplicando, +ab e −ab cancelam-se e sobra a² − b². Por isso 51·49 = (50 + 1)(50 − 1) = 2500 − 1.\n\n**Erros comuns:** (1) escrever (a + b)² = a² + b²; (2) esquecer o 2 no termo do meio; (3) em (a − b)² pôr o sinal do último termo negativo (b² é sempre positivo). Defesa: testa com números pequenos, a = 1 e b = 2.",
+  "definition": "Os **produtos notáveis** são igualdades algébricas que se verificam para quaisquer números reais a e b: (a + b)² = a² + 2ab + b² (quadrado da soma), (a − b)² = a² − 2ab + b² (quadrado da diferença) e (a + b)(a − b) = a² − b² (diferença de quadrados). Lidas da direita para a esquerda, servem para **fatorizar**: um trinómio quadrado perfeito a² ± 2ab + b² escreve-se (a ± b)² e a² − b² escreve-se (a + b)(a − b).",
+  "formulas": "$$(a+b)^2=a^2+2ab+b^2$$\n\n$$(a-b)^2=a^2-2ab+b^2$$\n\n$$(a+b)(a-b)=a^2-b^2$$\n\nMnemónica: **\"quadrado do primeiro, duas vezes o primeiro pelo segundo, quadrado do segundo\"**.",
+  "worked_example": "**Exemplo 1.** Desenvolve $(x+4)^2$: x² + 8x + 16.\n\n**Exemplo 2.** Fatoriza $x^2-10x+25$: é (x − 5)², porque 2·5 = 10 e 5² = 25.\n\n**Exemplo 3.** Fatoriza $9x^2-16$: é (3x)² − 4², logo (3x + 4)(3x − 4).\n\n**Exemplo 4 (cálculo mental).** 98² = (100 − 2)² = 10000 − 400 + 4 = 9604. E 47·53 = (50 − 3)(50 + 3) = 2500 − 9 = 2491.",
+  "guided_exercise": "Resolve connosco: **calcula 202² sem calculadora.**\n\n1) Como escrever 202 de forma fácil? 200 + 2.\n\n2) Qual é a fórmula? (a + b)² = a² + 2ab + b².\n\n3) a² = 200² = 40 000.\n\n4) 2ab = 2·200·2 = 800.\n\n5) b² = 4.\n\n6) Soma: 40 000 + 800 + 4 = 40 804.",
+  "independent_exercise": "Chegou a tua vez. Resolve os exercícios sem pressa e usa **Verificar** para confirmar. Se errares, não faz mal: lê a resolução passo a passo, percebe onde o raciocínio escorregou e tenta outra vez. É assim que se aprende de verdade.",
+  "challenge": "**O quadrado perfeito escondido.** Para que valor de k a expressão $x^2+12x+k$ é o quadrado de uma soma? E se fosse $x^2-12x+k$?\n\nPista: compara com a² + 2ab + b² e descobre b a partir de 2b = 12.",
+  "assessment": "Consideras a competência dominada quando consegues: (1) desenvolver os três produtos notáveis sem erro no termo do meio; (2) reconhecer um quadrado perfeito e fatorizá-lo; (3) fatorizar uma diferença de quadrados; (4) usar os produtos notáveis para calcular de cabeça; (5) usar x + y e xy para calcular x² + y²."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "algebra.produtos_notaveis",
+   "statement": "Calcula $(x+3)^2$ para $x=5$ usando o quadrado da soma. Qual é o resultado?",
+   "options": null,
+   "answer": {
+    "value": "64",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "(x + 3)² = x² + 6x + 9 = 25 + 30 + 9 = 64, que é igual a 8².",
+   "steps": [
+    "x² + 6x + 9 com x = 5.",
+    "25 + 30 + 9 = 64."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "algebra.produtos_notaveis",
+   "statement": "Calcula $103^2$ pensando em $(100+3)^2$.",
+   "options": null,
+   "answer": {
+    "value": "10609",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "(100 + 3)² = 10000 + 600 + 9 = 10609.",
+   "steps": [
+    "100² = 10000.",
+    "2·100·3 = 600.",
+    "3² = 9. Soma: 10609."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "algebra.produtos_notaveis",
+   "statement": "Calcula $99^2$ pensando em $(100-1)^2$.",
+   "options": null,
+   "answer": {
+    "value": "9801",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "(100 − 1)² = 10000 − 200 + 1 = 9801.",
+   "steps": [
+    "10000 − 200 + 1 = 9801."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "algebra.produtos_notaveis",
+   "statement": "Calcula $51\\times 49$ pensando em $(50+1)(50-1)$.",
+   "options": null,
+   "answer": {
+    "value": "2499",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "A diferença de quadrados dá 50² − 1² = 2500 − 1 = 2499.",
+   "steps": [
+    "(a + b)(a − b) = a² − b².",
+    "2500 − 1 = 2499."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "algebra.produtos_notaveis",
+   "statement": "Desenvolve $(2x+5)^2$. Qual é o coeficiente do termo em x?",
+   "options": null,
+   "answer": {
+    "value": "20",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "(2x + 5)² = 4x² + 20x + 25. O termo do meio é 2·2x·5 = 20x.",
+   "steps": [
+    "a = 2x, b = 5.",
+    "2ab = 2·2x·5 = 20x."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "algebra.produtos_notaveis",
+   "statement": "Calcula $x^2-8x+16$ para $x=10$ (repara que é $(x-4)^2$).",
+   "options": null,
+   "answer": {
+    "value": "36",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "x² − 8x + 16 = (x − 4)² = 6² = 36. Confirma: 100 − 80 + 16 = 36.",
+   "steps": [
+    "Reconhece o quadrado da diferença.",
+    "(10 − 4)² = 36."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "algebra.produtos_notaveis",
+   "statement": "Calcula $x^2-49$ para $x=10$, fatorizando como $(x-7)(x+7)$.",
+   "options": null,
+   "answer": {
+    "value": "51",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "(10 − 7)(10 + 7) = 3·17 = 51.",
+   "steps": [
+    "x² − 49 = (x − 7)(x + 7).",
+    "3·17 = 51."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "algebra.produtos_notaveis",
+   "statement": "Se $x+y=10$ e $xy=21$, quanto vale $x^2+y^2$?",
+   "options": null,
+   "answer": {
+    "value": "58",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "(x + y)² = x² + 2xy + y², logo x² + y² = 100 − 42 = 58.",
+   "steps": [
+    "(x + y)² = 100.",
+    "2xy = 42.",
+    "x² + y² = 100 − 42 = 58."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "algebra.produtos_notaveis",
+   "statement": "Sabendo que $a-b=3$ e $a+b=11$, calcula $a^2-b^2$.",
+   "options": null,
+   "answer": {
+    "value": "33",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "a² − b² = (a − b)(a + b) = 3·11 = 33.",
+   "steps": [
+    "Usa a diferença de quadrados.",
+    "3·11 = 33."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "algebra.produtos_notaveis",
+   "statement": "Calcula $1001^2-999^2$ sem calculadora.",
+   "options": null,
+   "answer": {
+    "value": "4000",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "(1001 − 999)(1001 + 999) = 2·2000 = 4000.",
+   "steps": [
+    "Diferença de quadrados.",
+    "2·2000 = 4000."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 1,
+   "competency": "algebra.produtos_notaveis",
+   "statement": "$(a+b)^2=a^2+b^2$.",
+   "options": null,
+   "answer": {
+    "boolean": false
+   },
+   "tolerance": 0,
+   "explanation": "Falta o termo do meio 2ab. Exemplo: (1 + 2)² = 9, mas 1² + 2² = 5.",
+   "steps": [
+    "Testa com a = 1, b = 2.",
+    "9 ≠ 5."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "algebra.produtos_notaveis",
+   "statement": "Qual é o desenvolvimento correto de $(x-3)^2$?",
+   "options": [
+    {
+     "id": "a",
+     "label": "$x^2-6x+9$"
+    },
+    {
+     "id": "b",
+     "label": "$x^2-9$"
+    },
+    {
+     "id": "c",
+     "label": "$x^2+9$"
+    },
+    {
+     "id": "d",
+     "label": "$x^2-6x-9$"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "(a − b)² = a² − 2ab + b², com a = x e b = 3: x² − 6x + 9.",
+   "steps": [
+    "a² = x².",
+    "−2ab = −6x.",
+    "b² = 9."
+   ]
+  }
+ ]
+}
