@@ -1,5 +1,6 @@
 import { Component, type ReactNode } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { AuthProvider } from './lib/auth';
 import { Layout, RequireAdmin, RequireAuth } from './components/Layout';
 import { useAuth } from './lib/auth';
@@ -66,6 +67,7 @@ export default function App() {
           </Routes>
         </AuthProvider>
       </BrowserRouter>
+      <SpeedInsights />
     </ErrorBoundary>
   );
 }
