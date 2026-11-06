@@ -1,0 +1,242 @@
+{
+ "subject": "problemas-de-raciocinio",
+ "topic_title": "Sucessões e padrões",
+ "topic_slug": "sucessoes-e-padroes",
+ "lesson_title": "Sucessões, progressões aritméticas e geométricas",
+ "lesson_slug": "sucessoes-progressoes-aritmeticas-geometricas",
+ "summary": "Descobre padrões, usa o termo geral e calcula somas em progressões aritméticas e geométricas.",
+ "minutes": 30,
+ "blocks": {
+  "introduction": "Poupar 500 Kz no primeiro mês e mais 200 Kz em cada mês seguinte; uma colónia de bactérias que duplica de hora a hora; os lugares numa bancada de estádio, que aumentam fila a fila. Todas estas situações têm um padrão. Nos exames pedem muitas vezes: \"qual é o próximo termo?\" ou \"quanto soma tudo?\".\n\nNesta aula vais aprender a distinguir progressões **aritméticas** (soma-se sempre o mesmo) de **geométricas** (multiplica-se sempre pelo mesmo), a escrever o termo geral e a calcular somas sem somar termo a termo.",
+  "intuition": "Numa progressão aritmética, a diferença entre termos consecutivos é constante, a **razão** r: 3, 7, 11, 15 tem r = 4. Para chegar ao 10.º termo dás 9 saltos de 4 a partir do primeiro: a₁₀ = 3 + 9·4. Daí o termo geral aₙ = a₁ + (n − 1)r: o \"n − 1\" são os saltos.\n\nNuma progressão geométrica o que é constante é o **quociente**: 2, 6, 18, 54 tem q = 3, e aₙ = a₁ · qⁿ⁻¹. O crescimento é muito mais rápido, por isso as bactérias e os juros compostos são geométricos.\n\nA soma 1 + 2 + … + 100 tem um truque célebre: emparelha o primeiro com o último (1 + 100), o segundo com o penúltimo (2 + 99)… Há 50 pares, todos com soma 101: 5050. Esse é o argumento da fórmula S = n(a₁ + aₙ) ÷ 2.\n\n**Erros comuns:** (1) usar n em vez de n − 1 no termo geral; (2) confundir aritmética com geométrica (testa diferenças e razões); (3) na soma, esquecer de dividir por 2.",
+  "definition": "Uma **progressão aritmética** (PA) é uma sucessão em que cada termo, a partir do segundo, se obtém do anterior somando uma constante r (a **razão**). O termo geral é $a_n=a_1+(n-1)r$ e a soma dos n primeiros termos é $S_n=\\frac{n(a_1+a_n)}{2}$. Uma **progressão geométrica** (PG) é uma sucessão em que cada termo se obtém do anterior multiplicando por uma constante q (a **razão**). O termo geral é $a_n=a_1q^{n-1}$ e, se q ≠ 1, $S_n=a_1\\frac{q^n-1}{q-1}$.",
+  "formulas": "$$a_n=a_1+(n-1)r,\\qquad S_n=\\frac{n(a_1+a_n)}{2}\\quad(\\text{PA})$$\n\n$$a_n=a_1q^{n-1},\\qquad S_n=a_1\\,\\frac{q^n-1}{q-1}\\quad(\\text{PG})$$\n\nTeste: PA se as **diferenças** são iguais; PG se os **quocientes** são iguais.",
+  "worked_example": "**Exemplo 1 (PA).** 4, 9, 14, …: r = 5. a₂₀ = 4 + 19·5 = 99.\n\n**Exemplo 2 (soma PA).** Soma dos 20 primeiros termos: 20·(4 + 99) ÷ 2 = 1030.\n\n**Exemplo 3 (PG).** 3, 6, 12, …: q = 2. a₇ = 3·2⁶ = 192. Soma dos 7 primeiros: 3·(2⁷ − 1) ÷ (2 − 1) = 381.\n\n**Exemplo 4 (problema).** Num auditório, a 1.ª fila tem 12 lugares e cada fila seguinte tem mais 2. Com 15 filas: a₁₅ = 12 + 14·2 = 40 lugares na última. Total: 15·(12 + 40) ÷ 2 = 390 lugares.",
+  "guided_exercise": "Resolve connosco: **um taxista faz 20 corridas no 1.º dia e, por dia, mais 3 do que no dia anterior. Quantas corridas faz em 10 dias?**\n\n1) É PA com a₁ = 20 e r = 3.\n\n2) Corridas no 10.º dia: 20 + 9·3 = 47.\n\n3) Total: S₁₀ = 10·(20 + 47) ÷ 2 = 335.\n\n4) Resposta: 335 corridas. Verifica a ordem de grandeza: média entre 20 e 47 é 33,5, vezes 10 dá 335 ✓.",
+  "independent_exercise": "Chegou a tua vez. Resolve os exercícios sem pressa e usa **Verificar** para confirmar. Se errares, não faz mal: lê a resolução passo a passo, percebe onde o raciocínio escorregou e tenta outra vez. É assim que se aprende de verdade.",
+  "challenge": "**Dobrar o arroz.** Uma lenda conta que um sábio pediu 1 grão na 1.ª casa de um tabuleiro de xadrez, 2 na 2.ª, 4 na 3.ª, e assim sucessivamente a duplicar. Quantos grãos pediu na 10.ª casa? E no total das 10 primeiras casas?\n\nPista: é PG com q = 2; usa a fórmula da soma e vê a diferença para a 64.ª casa.",
+  "assessment": "Estarás pronto quando conseguires: (1) classificar uma sucessão como PA ou PG; (2) escrever o termo geral; (3) calcular termos de ordem qualquer; (4) calcular somas sem somar tudo; (5) modelar poupanças, crescimentos e filas de lugares com progressões."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "raciocinio.sucessoes",
+   "statement": "Qual é o próximo termo da sucessão $3, 7, 11, 15, \\dots$?",
+   "options": null,
+   "answer": {
+    "value": "19",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "A diferença entre termos consecutivos é 4: 15 + 4 = 19.",
+   "steps": [
+    "Diferença: 7 − 3 = 4.",
+    "15 + 4 = 19."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "raciocinio.sucessoes",
+   "statement": "Qual é o próximo termo de $2, 6, 18, 54, \\dots$?",
+   "options": null,
+   "answer": {
+    "value": "162",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Cada termo é o triplo do anterior: 54 · 3 = 162.",
+   "steps": [
+    "Razão: 6 ÷ 2 = 3.",
+    "54 · 3 = 162."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "raciocinio.sucessoes",
+   "statement": "Numa progressão aritmética com primeiro termo 5 e razão 3, qual é o termo de ordem 10?",
+   "options": null,
+   "answer": {
+    "value": "32",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "a₁₀ = 5 + 9·3 = 32.",
+   "steps": [
+    "a_n = a₁ + (n − 1)r.",
+    "5 + 9·3 = 32."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "raciocinio.sucessoes",
+   "statement": "Numa progressão geométrica com primeiro termo 2 e razão 2, qual é o termo de ordem 8?",
+   "options": null,
+   "answer": {
+    "value": "256",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "a₈ = 2 · 2⁷ = 256.",
+   "steps": [
+    "a_n = a₁ · q^(n−1).",
+    "2 · 128 = 256."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "raciocinio.sucessoes",
+   "statement": "Calcula a soma $1+2+3+\\dots+100$.",
+   "options": null,
+   "answer": {
+    "value": "5050",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "S = n(a₁ + aₙ) ÷ 2 = 100·101 ÷ 2 = 5050.",
+   "steps": [
+    "n = 100, a₁ = 1, a₁₀₀ = 100.",
+    "100·101/2 = 5050."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "raciocinio.sucessoes",
+   "statement": "Quantos termos tem a progressão aritmética $7, 12, 17, \\dots, 112$?",
+   "options": null,
+   "answer": {
+    "value": "22",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "112 = 7 + (n − 1)·5 dá n − 1 = 21 e n = 22.",
+   "steps": [
+    "112 − 7 = 105.",
+    "105 ÷ 5 = 21.",
+    "n = 22."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "raciocinio.sucessoes",
+   "statement": "Calcula a soma dos termos de $7, 12, 17, \\dots, 112$.",
+   "options": null,
+   "answer": {
+    "value": "1309",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "S = 22·(7 + 112) ÷ 2 = 22·119 ÷ 2 = 1309.",
+   "steps": [
+    "22 termos.",
+    "S = 22·119/2 = 1309."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "raciocinio.sucessoes",
+   "statement": "A Ana poupa 500 Kz no 1.º mês e, em cada mês seguinte, mais 200 Kz do que no anterior. Quanto terá poupado ao fim de 12 meses, em Kz?",
+   "options": null,
+   "answer": {
+    "value": "19200",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "No mês 12 poupa 500 + 11·200 = 2700. S = 12·(500 + 2700) ÷ 2 = 19200.",
+   "steps": [
+    "a₁₂ = 500 + 11·200 = 2700.",
+    "S = 12·3200/2 = 19200."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "raciocinio.sucessoes",
+   "statement": "Uma colónia tem 5 bactérias e o número duplica a cada hora. Quantas há ao fim de 6 horas?",
+   "options": null,
+   "answer": {
+    "value": "320",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "5 · 2⁶ = 5 · 64 = 320.",
+   "steps": [
+    "Duplicar 6 vezes: × 2⁶.",
+    "5 · 64 = 320."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "raciocinio.sucessoes",
+   "statement": "Qual é o próximo termo de $1, 1, 2, 3, 5, 8, \\dots$ (cada termo é a soma dos dois anteriores)?",
+   "options": null,
+   "answer": {
+    "value": "13",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "5 + 8 = 13.",
+   "steps": [
+    "É a sucessão de Fibonacci.",
+    "5 + 8 = 13."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "raciocinio.sucessoes",
+   "statement": "A sucessão $2, 4, 8, 16, \\dots$ é uma progressão aritmética.",
+   "options": null,
+   "answer": {
+    "boolean": false
+   },
+   "tolerance": 0,
+   "explanation": "A diferença não é constante (2, 4, 8). É geométrica, com razão 2.",
+   "steps": [
+    "Diferenças: 2, 4, 8.",
+    "Razões: 2, 2, 2: geométrica."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "raciocinio.sucessoes",
+   "statement": "Qual é o termo geral da sucessão $5, 8, 11, 14, \\dots$?",
+   "options": [
+    {
+     "id": "a",
+     "label": "$3n+2$"
+    },
+    {
+     "id": "b",
+     "label": "$3n+5$"
+    },
+    {
+     "id": "c",
+     "label": "$5n+3$"
+    },
+    {
+     "id": "d",
+     "label": "$n+4$"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "É aritmética com a₁ = 5 e r = 3: aₙ = 5 + (n − 1)·3 = 3n + 2.",
+   "steps": [
+    "a_n = 5 + 3(n − 1).",
+    "= 3n + 2. Teste: n = 1 dá 5."
+   ]
+  }
+ ]
+}

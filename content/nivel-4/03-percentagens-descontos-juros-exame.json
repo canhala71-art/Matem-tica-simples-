@@ -1,0 +1,242 @@
+{
+ "subject": "exames-de-admissao",
+ "topic_title": "Percentagens de exame",
+ "topic_slug": "percentagens-descontos-juros",
+ "lesson_title": "Percentagens, descontos e juros nos exames",
+ "lesson_slug": "percentagens-descontos-juros-exame",
+ "summary": "Resolve percentagens, aumentos e descontos sucessivos, lucro e juros simples e compostos.",
+ "minutes": 30,
+ "blocks": {
+  "introduction": "Numa loja anunciam \"30% de desconto\". No banco, falam de juros de 5% ao ano. Na fatura aparece o imposto. As **percentagens** estão em todo o lado e são das matérias que mais caem nos exames de admissão, porque medem se sabes raciocinar com números do dia a dia.\n\nNesta aula vais aprender o método dos **fatores** (1 + p), que resolve aumentos, descontos, sucessivos, lucros e juros com a mesma ideia.",
+  "intuition": "Dizer \"25%\" é dizer \"25 em cada 100\", ou seja, 0,25. Para saber quanto é 25% de 800 multiplicas 800 por 0,25. Para **aumentar** 25% multiplicas por 1,25 (o 1 é o preço original e 0,25 o aumento). Para **descontar** 25% multiplicas por 0,75.\n\nO fator torna tudo mecânico. Dois aumentos sucessivos de 10% não dão 20%, dão 1,1 · 1,1 = 1,21, ou seja, 21%, porque o segundo aumento incide sobre um preço já maior. Um aumento de 50% seguido de um desconto de 50% dá 1,5 · 0,5 = 0,75: perdes 25%.\n\nPara descobrir o valor **antes** de um aumento, divide pelo fator: se depois de +25% o preço é 50 000, o inicial é 50 000 ÷ 1,25 = 40 000.\n\n**Erros comuns:** (1) somar percentagens sucessivas; (2) calcular a variação sobre o valor errado (a percentagem é sempre sobre o valor inicial); (3) confundir lucro sobre o custo com lucro sobre o preço de venda.",
+  "definition": "A **percentagem** p% é a razão p/100. Aplicar um **aumento** de p% a um valor V dá $V\\left(1+\\frac p{100}\\right)$; um **desconto** de p% dá $V\\left(1-\\frac p{100}\\right)$. A **variação percentual** é $\\frac{V_f-V_i}{V_i}\\times100\\%$. Em **juros simples**, o juro é $J=C\\,i\\,t$. Em **juros compostos**, o montante é $M=C(1+i)^t$, porque cada período rende sobre o capital já acrescido de juros.",
+  "formulas": "$$V_f=V_i(1\\pm p)\\qquad \\text{variação}=\\frac{V_f-V_i}{V_i}$$\n\n$$J=C\\cdot i\\cdot t\\qquad M=C(1+i)^t$$\n\n$$\\text{sucessivos: } F=F_1\\cdot F_2\\cdots$$\n\nMnemónica: **\"aumenta com 1 mais p, desconta com 1 menos p, e multiplica os fatores\"**.",
+  "worked_example": "**Exemplo 1.** 18% de 3 500 = 0,18 · 3500 = 630.\n\n**Exemplo 2.** Um preço de 12 000 Kz sobe 15%: 12000 · 1,15 = 13 800 Kz.\n\n**Exemplo 3 (sucessivos).** Desconto de 10% e depois mais 10%: 0,9 · 0,9 = 0,81, ou seja, 19% de desconto total.\n\n**Exemplo 4 (juros).** 20 000 Kz a 4% ao ano durante 2 anos. Simples: 20000 · 0,04 · 2 = 1 600. Compostos: 20000 · 1,04² = 21 632, ou seja, 1 632 de juro.",
+  "guided_exercise": "Resolve connosco: **uma loja compra um frigorífico por 60 000 Kz e quer um lucro de 30% sobre o custo, mais 5% de imposto no preço final. Qual é o preço de venda?**\n\n1) Preço com lucro: 60 000 · 1,30 = 78 000.\n\n2) Com imposto: 78 000 · 1,05 = 81 900.\n\n3) Resposta: 81 900 Kz.\n\n4) Verifica: o aumento total é 1,30 · 1,05 = 1,365, ou seja, 36,5%, e não 35%.",
+  "independent_exercise": "Chegou a tua vez. Resolve os exercícios sem pressa e usa **Verificar** para confirmar. Se errares, não faz mal: lê a resolução passo a passo, percebe onde o raciocínio escorregou e tenta outra vez. É assim que se aprende de verdade.",
+  "challenge": "**O desconto que engana.** Uma loja anuncia \"50% + 20% de desconto\". Será 70% de desconto? Calcula o desconto único e conta a diferença em kwanzas num artigo de 10 000 Kz.\n\nPista: fatores 0,5 e 0,8.",
+  "assessment": "Estarás pronto quando conseguires: (1) converter percentagens em fatores; (2) calcular aumentos, descontos e variações; (3) encadear percentagens sucessivas; (4) recuperar o valor inicial; (5) distinguir juros simples de compostos e calcular o lucro."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "exames.percentagens",
+   "statement": "Calcula 15% de 2 000 Kz.",
+   "options": null,
+   "answer": {
+    "value": "300",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "0,15 · 2000 = 300.",
+   "steps": [
+    "15% = 0,15.",
+    "0,15 · 2000 = 300."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "exames.percentagens",
+   "statement": "Um artigo de 5 000 Kz tem 20% de desconto. Quanto se paga, em Kz?",
+   "options": null,
+   "answer": {
+    "value": "4000",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Paga-se 80% do preço: 0,8 · 5000 = 4000.",
+   "steps": [
+    "100% − 20% = 80%.",
+    "0,8 · 5000 = 4000."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "exames.percentagens",
+   "statement": "Depois de um aumento de 25%, um salário passou a ser 50 000 Kz. Qual era o salário antes, em Kz?",
+   "options": null,
+   "answer": {
+    "value": "40000",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "novo = antigo · 1,25, logo antigo = 50000 ÷ 1,25 = 40000.",
+   "steps": [
+    "50000 = x · 1,25.",
+    "x = 40000."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "exames.percentagens",
+   "statement": "Um preço passou de 8 000 para 9 200 Kz. De quantos por cento foi o aumento?",
+   "options": null,
+   "answer": {
+    "value": "15",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Aumento: 1200. 1200 ÷ 8000 = 0,15, ou seja, 15%.",
+   "steps": [
+    "Aumento = 9200 − 8000 = 1200.",
+    "1200/8000 = 0,15 → 15%."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "exames.percentagens",
+   "statement": "Em juros simples, qual é o juro de 10 000 Kz a 5% ao ano durante 3 anos, em Kz?",
+   "options": null,
+   "answer": {
+    "value": "1500",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "J = C · i · t = 10000 · 0,05 · 3 = 1500.",
+   "steps": [
+    "J = C·i·t.",
+    "10000 · 0,05 · 3 = 1500."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "exames.percentagens",
+   "statement": "Em juros compostos, qual é o montante de 10 000 Kz a 10% ao ano ao fim de 2 anos, em Kz?",
+   "options": null,
+   "answer": {
+    "value": "12100",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "M = C(1 + i)ⁿ = 10000 · 1,1² = 12100.",
+   "steps": [
+    "1,1² = 1,21.",
+    "10000 · 1,21 = 12100."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "exames.percentagens",
+   "statement": "Dois descontos sucessivos de 20% e de 10% equivalem a um desconto único de quantos por cento?",
+   "options": null,
+   "answer": {
+    "value": "28",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "0,8 · 0,9 = 0,72, logo paga-se 72% e o desconto único é 28%.",
+   "steps": [
+    "Fatores: 0,8 e 0,9.",
+    "0,72 → desconto de 28%."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "exames.percentagens",
+   "statement": "Uma pessoa comprou um produto por 6 000 Kz e vendeu-o por 7 500 Kz. De quantos por cento foi o lucro sobre o custo?",
+   "options": null,
+   "answer": {
+    "value": "25",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Lucro: 1500. 1500 ÷ 6000 = 0,25, isto é, 25%.",
+   "steps": [
+    "Lucro = 7500 − 6000 = 1500.",
+    "1500/6000 = 25%."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "exames.percentagens",
+   "statement": "Numa turma de 40 alunos, 60% são raparigas. Se 4 raparigas saírem da turma, que fração (irredutível) da turma passam a ser raparigas?",
+   "options": null,
+   "answer": {
+    "value": "5/9",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Raparigas: 24. Depois: 20 em 36 alunos = 5/9.",
+   "steps": [
+    "0,6 · 40 = 24.",
+    "24 − 4 = 20 raparigas; 40 − 4 = 36 alunos.",
+    "20/36 = 5/9."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "exames.percentagens",
+   "statement": "Quanto é 50% de 40% de 600?",
+   "options": null,
+   "answer": {
+    "value": "120",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "0,5 · 0,4 · 600 = 120.",
+   "steps": [
+    "0,4 · 600 = 240.",
+    "0,5 · 240 = 120."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "exames.percentagens",
+   "statement": "Um aumento de 50% seguido de uma descida de 50% devolve o preço inicial.",
+   "options": null,
+   "answer": {
+    "boolean": false
+   },
+   "tolerance": 0,
+   "explanation": "1,5 · 0,5 = 0,75: o preço final é 75% do inicial.",
+   "steps": [
+    "Fatores: 1,5 e 0,5.",
+    "Produto: 0,75."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "exames.percentagens",
+   "statement": "Um produto custa 1 000 Kz e sobe 30%. O novo preço é…",
+   "options": [
+    {
+     "id": "a",
+     "label": "1 300 Kz"
+    },
+    {
+     "id": "b",
+     "label": "1 030 Kz"
+    },
+    {
+     "id": "c",
+     "label": "1 130 Kz"
+    },
+    {
+     "id": "d",
+     "label": "1 003 Kz"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "1000 · 1,30 = 1300 Kz.",
+   "steps": [
+    "30% de 1000 = 300.",
+    "1000 + 300 = 1300."
+   ]
+  }
+ ]
+}

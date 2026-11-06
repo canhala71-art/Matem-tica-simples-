@@ -1,0 +1,230 @@
+{
+ "subject": "problemas-de-raciocinio",
+ "topic_title": "Problemas de raciocínio",
+ "topic_slug": "problemas-idades-trabalho-misturas",
+ "lesson_title": "Problemas clássicos: idades, trabalho, misturas e velocidades",
+ "lesson_slug": "problemas-idades-trabalho-misturas-velocidades",
+ "summary": "Resolve os problemas típicos de exame com um método único: escolher a incógnita, traduzir em equação e verificar.",
+ "minutes": 30,
+ "blocks": {
+  "introduction": "Há problemas que aparecem em todos os exames: idades de pais e filhos, duas torneiras a encher um tanque, dois carros que se cruzam, misturas de soluções. À primeira vista parecem todos diferentes, mas todos se resolvem com o mesmo método: **escolher a incógnita, traduzir o texto em equação, resolver e verificar**.\n\nNesta aula vais treinar os cinco tipos mais comuns, com os truques que poupam tempo, como pensar em \"quanto faz por hora\" nos problemas de trabalho.",
+  "intuition": "O grande segredo é traduzir. Cada frase do problema vira uma igualdade: \"o triplo da idade\" é 3f; \"daqui a 6 anos\" soma 6 a **todas** as idades; \"misturam-se\" significa que a quantidade total de soluto antes e depois é a mesma.\n\nNos problemas de **trabalho**, pensa em ritmos: se o Pedro faz a parede em 6 h, faz 1/6 por hora; o Paulo faz 1/12. Juntos fazem 1/6 + 1/12 = 1/4 por hora, logo demoram 4 horas. Soma-se o que fazem **por hora**, nunca os tempos.\n\nNos de **velocidades**, quando dois corpos se aproximam as velocidades somam-se; quando um persegue outro, subtraem-se. E a velocidade média de ida e volta com velocidades diferentes **não** é a média das velocidades: é a distância total a dividir pelo tempo total.\n\n**Erros comuns:** (1) somar tempos em vez de ritmos; (2) esquecer de somar os anos a todas as idades; (3) calcular percentagens sucessivas somando-as (+20% e −20% não dá zero).",
+  "definition": "Um **problema de equações** resolve-se em quatro passos: 1) definir a incógnita com unidade; 2) traduzir as condições do texto em equações; 3) resolver; 4) verificar no enunciado e responder com a unidade. Num problema de **trabalho**, se uma tarefa leva t horas a um agente, o seu ritmo é 1/t por hora e os ritmos somam-se. Numa **mistura**, a quantidade de substância pura conserva-se: soma das partes = parte do todo. Em **percentagens sucessivas**, multiplicam-se os fatores (1 + p).",
+  "formulas": "$$\\text{trabalho em conjunto: } \\frac1T=\\frac1{t_1}+\\frac1{t_2}$$\n\n$$\\text{velocidade média}=\\frac{\\text{distância total}}{\\text{tempo total}}$$\n\n$$\\text{mistura: } c_1V_1+c_2V_2=c_f(V_1+V_2)$$\n\n$$\\text{percentagens sucessivas: } P_f=P_i(1+p_1)(1+p_2)$$",
+  "worked_example": "**Exemplo 1 (idades).** A Rita tem 4 anos mais do que a irmã e juntas somam 30. Se a irmã tem x, a Rita tem x + 4 e 2x + 4 = 30, logo x = 13 (a Rita tem 17).\n\n**Exemplo 2 (trabalho).** Duas máquinas imprimem um lote em 3 h e 6 h. Juntas: 1/3 + 1/6 = 1/2 por hora, logo 2 horas.\n\n**Exemplo 3 (velocidade).** Dois ciclistas partem do mesmo sítio em sentidos opostos a 12 e 18 km/h. Após 2 h estão a (12 + 18)·2 = 60 km.\n\n**Exemplo 4 (percentagens).** Um preço sobe 10% e depois mais 10%: 1,1 · 1,1 = 1,21, ou seja, sobe 21%, não 20%.",
+  "guided_exercise": "Resolve connosco: **a mãe tem hoje 36 anos e o filho 6. Daqui a quantos anos a idade da mãe será o triplo da do filho?**\n\n1) Seja x o número de anos. Mãe: 36 + x; filho: 6 + x.\n\n2) Condição: 36 + x = 3(6 + x).\n\n3) Desenvolve: 36 + x = 18 + 3x.\n\n4) 18 = 2x, logo x = 9.\n\n5) Verifica: mãe 45, filho 15, e 45 = 3 · 15 ✓.",
+  "independent_exercise": "Chegou a tua vez. Resolve os exercícios sem pressa e usa **Verificar** para confirmar. Se errares, não faz mal: lê a resolução passo a passo, percebe onde o raciocínio escorregou e tenta outra vez. É assim que se aprende de verdade.",
+  "challenge": "**Duas torneiras e um ralo.** Uma torneira enche um depósito em 4 horas, outra em 6 horas, e um ralo esvazia-o em 12 horas. Com tudo aberto, quanto tempo leva a encher o depósito vazio?\n\nPista: 1/4 + 1/6 − 1/12 por hora.",
+  "assessment": "Consideras a competência dominada quando consegues: (1) traduzir frases em equações; (2) resolver problemas de idades, trabalho, velocidades e misturas; (3) somar ritmos em vez de tempos; (4) calcular velocidades médias e percentagens sucessivas corretamente; (5) verificar sempre a resposta no enunciado."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "raciocinio.problemas",
+   "statement": "Hoje o pai tem o triplo da idade do filho. Daqui a 6 anos terá o dobro. Que idade tem o filho hoje?",
+   "options": null,
+   "answer": {
+    "value": "6",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Seja f a idade do filho: 3f + 6 = 2(f + 6), logo f = 6.",
+   "steps": [
+    "Pai hoje: 3f; daqui a 6 anos: 3f + 6 e f + 6.",
+    "3f + 6 = 2f + 12.",
+    "f = 6."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "raciocinio.problemas",
+   "statement": "O Pedro pinta uma parede em 6 horas e o Paulo pinta a mesma em 12 horas. Quanto tempo demoram juntos, em horas?",
+   "options": null,
+   "answer": {
+    "value": "4",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Em 1 hora fazem 1/6 + 1/12 = 3/12 = 1/4 da parede; logo demoram 4 horas.",
+   "steps": [
+    "Ritmos: 1/6 e 1/12 por hora.",
+    "Juntos: 1/4 por hora.",
+    "Tempo: 4 horas."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "raciocinio.problemas",
+   "statement": "Misturam-se 20 litros de uma solução a 30% de sal com x litros de outra a 60%, para obter uma mistura a 40%. Quanto vale x, em litros?",
+   "options": null,
+   "answer": {
+    "value": "10",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Sal: 0,3·20 + 0,6x = 0,4(20 + x), isto é, 6 + 0,6x = 8 + 0,4x, logo x = 10.",
+   "steps": [
+    "Quantidade de sal antes = depois.",
+    "6 + 0,6x = 8 + 0,4x.",
+    "0,2x = 2, x = 10."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "raciocinio.problemas",
+   "statement": "Dois carros partem ao mesmo tempo de duas cidades a 300 km de distância, um contra o outro, a 60 km/h e 90 km/h. Ao fim de quantas horas se cruzam?",
+   "options": null,
+   "answer": {
+    "value": "2",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "A distância diminui 60 + 90 = 150 km por hora: 300 ÷ 150 = 2 horas.",
+   "steps": [
+    "Velocidade de aproximação: 150 km/h.",
+    "300 ÷ 150 = 2."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "raciocinio.problemas",
+   "statement": "Um autocarro vai de A a B a 60 km/h e volta a 40 km/h. Qual é a velocidade média de todo o percurso, em km/h?",
+   "options": null,
+   "answer": {
+    "value": "48",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Com d km em cada sentido: tempo total d/60 + d/40 = d/24; distância 2d; média 2d ÷ (d/24) = 48 km/h (não é 50).",
+   "steps": [
+    "Escolhe d = 120 km: ida 2 h, volta 3 h.",
+    "Total 240 km em 5 h.",
+    "240 ÷ 5 = 48 km/h."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "raciocinio.problemas",
+   "statement": "Um telemóvel custa 8 000 Kz. Faz-se um desconto de 10% e depois acrescentam-se 5% de imposto sobre o novo preço. Quanto se paga, em Kz?",
+   "options": null,
+   "answer": {
+    "value": "7560",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Desconto: 8000 · 0,9 = 7200. Imposto: 7200 · 1,05 = 7560.",
+   "steps": [
+    "8000 · 0,90 = 7200.",
+    "7200 · 1,05 = 7560."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "raciocinio.problemas",
+   "statement": "Uma torneira enche um tanque em 6 horas e um ralo esvazia-o em 12 horas. Com ambos abertos, em quantas horas se enche o tanque vazio?",
+   "options": null,
+   "answer": {
+    "value": "12",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Por hora, enche 1/6 e esvazia 1/12: sobra 1/12 por hora, logo 12 horas.",
+   "steps": [
+    "1/6 − 1/12 = 1/12.",
+    "Tempo: 12 horas."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "raciocinio.problemas",
+   "statement": "Três irmãos dividem 1 200 Kz na razão 1 : 2 : 3. Quanto recebe o que fica com a maior parte?",
+   "options": null,
+   "answer": {
+    "value": "600",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Total de partes: 6; cada parte é 200 Kz; a maior é 3 · 200 = 600 Kz.",
+   "steps": [
+    "1 + 2 + 3 = 6 partes.",
+    "1200 ÷ 6 = 200.",
+    "3 · 200 = 600."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "raciocinio.problemas",
+   "statement": "A soma de três números inteiros consecutivos é 78. Qual é o menor?",
+   "options": null,
+   "answer": {
+    "value": "25",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "n + (n + 1) + (n + 2) = 78 dá 3n + 3 = 78, n = 25.",
+   "steps": [
+    "3n + 3 = 78.",
+    "n = 25."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "raciocinio.problemas",
+   "statement": "Se uma torneira enche um tanque em 3 h e outra, igual, também em 3 h, juntas enchem-no em 6 h.",
+   "options": null,
+   "answer": {
+    "boolean": false
+   },
+   "tolerance": 0,
+   "explanation": "Juntas fazem o dobro do trabalho por hora, por isso demoram metade do tempo: 1,5 h.",
+   "steps": [
+    "Ritmo de cada uma: 1/3 por hora.",
+    "Juntas: 2/3 por hora, ou seja, 1,5 h."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 3,
+   "competency": "raciocinio.problemas",
+   "statement": "Um preço sobe 20% e depois desce 20%. O preço final, comparado com o inicial, é…",
+   "options": [
+    {
+     "id": "a",
+     "label": "5% menor"
+    },
+    {
+     "id": "b",
+     "label": "igual"
+    },
+    {
+     "id": "c",
+     "label": "4% menor"
+    },
+    {
+     "id": "d",
+     "label": "4% maior"
+    }
+   ],
+   "answer": {
+    "choice": "c"
+   },
+   "tolerance": 0,
+   "explanation": "Fica 1,2 × 0,8 = 0,96 do preço inicial: 4% menor.",
+   "steps": [
+    "Sobe: × 1,2.",
+    "Desce: × 0,8.",
+    "1,2 · 0,8 = 0,96."
+   ]
+  }
+ ]
+}
