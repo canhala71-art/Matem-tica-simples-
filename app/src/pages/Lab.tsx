@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { evaluate, parse, variables, type Ast } from '@shared/math-validator';
 
 const PRESETS = ['a*x^2 + b*x + c', 'a*sin(b*x + c)', 'a*x + b', 'sqrt(x) * a', 'a/x + b'];
@@ -76,6 +77,7 @@ export function LabPage() {
   return (
     <div className="space-y-4">
       <h1 className="text-2xl font-bold">Laboratório matemático</h1>
+      <Link to="/ferramentas" className="card block border-electric-500 hover:bg-electric-500/5">Ferramentas do Nível 1: reta numérica, calculadoras, treino de tabuada e mais →</Link>
       <p className="muted">Escreve uma função de x e mexe nos parâmetros a, b e c para ver o gráfico mudar.</p>
       <div className="card space-y-3">
         <label className="block text-sm font-medium">f(x) =

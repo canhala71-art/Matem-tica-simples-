@@ -15,6 +15,7 @@ import { LessonPage } from './pages/Lesson';
 import { TestPage } from './pages/TestPage';
 import { TeacherPage } from './pages/Teacher';
 import { LabPage } from './pages/Lab';
+import { ToolsPage } from './pages/Tools';
 import { AdminPage } from './pages/Admin';
 import { NotFound } from './pages/NotFound';
 
@@ -60,6 +61,7 @@ export default function App() {
               <Route path="/teste/:scope" element={<TestPage />} />
               <Route path="/professor" element={<TeacherPage />} />
               <Route path="/laboratorio" element={<LabPage />} />
+              <Route path="/ferramentas" element={<ToolsPage />} />
               <Route element={<RequireAdmin />}>
                 <Route path="/admin" element={<AdminPage />} />
               </Route>

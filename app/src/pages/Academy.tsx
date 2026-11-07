@@ -6,6 +6,7 @@ import { supabase } from '../lib/supabase';
 interface Level { id: string; slug: string; number: number; title: string; description: string | null; status: string }
 interface Subject { id: string; slug: string; title: string; status: string }
 interface TestRow { id: string; kind: string; score: number; correct: number; total: number; created_at: string }
+const TOOL_FOR: Record<string, string> = { 'numeros-naturais': 'reta', 'numeros-inteiros': 'reta', 'operacoes-basicas': 'operacoes', tabuada: 'tabuada', fracoes: 'fracoes', 'numeros-decimais': 'decimais', percentagens: 'percentagens', potencias: 'potencias', raizes: 'raizes' };
 const KIND_PT: Record<string, string> = { diagnostic: 'Diagnóstico', consolidation: 'Consolidação', final: 'Avaliação final' };
 interface LessonRow { id: string; slug: string; title: string; summary: string | null; estimated_minutes: number | null; status: string }
 
@@ -124,6 +125,7 @@ export function SubjectPage() {
             <Link className="btn-ghost" to={`/teste/${subjectSlug}?tipo=diagnostic`}>Diagnóstico</Link>
             <Link className="btn-ghost" to={`/teste/${subjectSlug}?tipo=consolidation`}>Consolidação</Link>
             <Link className="btn" to={`/teste/${subjectSlug}?tipo=final`}>Avaliação final</Link>
+            {TOOL_FOR[subjectSlug ?? ''] && <Link className="btn-ghost" to={`/ferramentas?f=${TOOL_FOR[subjectSlug ?? '']}`}>Ferramenta de apoio</Link>}
           </div>
           {tests.length > 0 && (
             <ul className="space-y-1 text-sm">
