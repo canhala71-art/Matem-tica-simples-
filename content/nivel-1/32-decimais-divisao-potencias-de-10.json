@@ -1,0 +1,301 @@
+{
+ "subject": "numeros-decimais",
+ "topic_title": "Operações com decimais",
+ "topic_slug": "operacoes-decimais",
+ "lesson_title": "Divisão de decimais e divisão por 10, 100 e 1 000",
+ "lesson_slug": "decimais-divisao-potencias-de-10",
+ "summary": "Divide números decimais igualando casas decimais e divide por 10, 100 e 1 000 deslocando a vírgula.",
+ "minutes": 25,
+ "blocks": {
+  "introduction": "**Objetivos:** dividir decimais por naturais e por decimais, dividir por 10, 100 e 1 000. **Pré-requisitos:** divisão de naturais e multiplicação de decimais.\n\nRepartir 7,5 kg de arroz por 6 sacos, cortar uma corda de 12,6 m em pedaços de 0,9 m: são divisões com decimais, muito comuns no dia a dia.",
+  "intuition": "**Decimal ÷ natural:** divide como nos naturais e, ao baixar a primeira casa decimal, põe a vírgula no quociente. $7{,}5\\div6=1{,}25$.\n\n**Divisor decimal:** multiplica o dividendo e o divisor pela **mesma potência de 10** até o divisor ficar inteiro (o quociente não muda). $12{,}6\\div0{,}9=126\\div9=14$.\n\n**Por 10, 100, 1 000:** desloca a vírgula 1, 2 ou 3 casas **para a esquerda**: $347\\div100=3{,}47$; $8\\div1\\,000=0{,}008$.\n\nDividir por um número menor que 1 **aumenta** o resultado: $4\\div0{,}5=8$ (em 4 inteiros cabem 8 metades). Dividir por 0,1 equivale a multiplicar por 10.\n\nAlgumas divisões **não são exatas** e produzem dízimas periódicas ($1\\div3=0{,}333\\ldots$) ou têm de ser arredondadas.\n\n**Erros comuns:** esquecer a vírgula no quociente; deslocar a vírgula para o lado errado; achar que dividir sempre diminui.",
+  "definition": "A **divisão** $a\\div b$ de decimais com $b\\neq0$ é o número $q$ tal que $b\\times q=a$. Dividir por $10^k$ desloca a vírgula $k$ casas para a esquerda. Multiplicar dividendo e divisor pela mesma potência de 10 não altera o quociente.",
+  "formulas": "$$\\frac{a}{b}=\\frac{a\\times10^k}{b\\times10^k}\\qquad a\\div10^k:\\ \\text{vírgula }k\\text{ casas para a esquerda}$$\n\n$$a\\div0{,}1=a\\times10\\qquad a\\div0{,}5=a\\times2$$",
+  "worked_example": "**Exemplo 1.** $8{,}4\\div4=2{,}1$.\n\n**Exemplo 2.** $7{,}2\\div0{,}6=72\\div6=12$.\n\n**Exemplo 3.** $9\\div2=4{,}5$.\n\n**Exemplo 4 (por 100).** $25\\div100=0{,}25$.\n\n**Exemplo 5 (por 1 000).** $8\\div1\\,000=0{,}008$.\n\n**Aplicação.** 7,5 kg de arroz repartidos por 6 sacos: $7{,}5\\div6=1{,}25$ kg em cada.",
+  "guided_exercise": "Resolve connosco: **calcula $4{,}5\\div0{,}15$.**\n\n1) Para tornar o divisor inteiro, multiplica ambos por 100: $450\\div15$.\n\n2) $450\\div15=30$.\n\n3) Prova: $0{,}15\\times30=4{,}5$ ✓.",
+  "independent_exercise": "Chegou a tua vez. Resolve os exercícios sem pressa e usa **Verificar** para confirmar. Se errares, não faz mal: lê a resolução passo a passo, percebe onde o raciocínio escorregou e tenta outra vez. É assim que se aprende de verdade.",
+  "challenge": "**Desafio.** Calcula $1\\div0{,}1$, $1\\div0{,}01$ e $1\\div0{,}001$. Que padrão aparece? Quantas moedas de 0,05 € cabem em 1 €?",
+  "assessment": "Consideras a competência dominada quando consegues: (1) dividir decimal por natural e por decimal; (2) dividir por 10, 100 e 1 000; (3) perceber que dividir por números menores que 1 aumenta; (4) resolver problemas de repartição."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "decimais.dividir",
+   "statement": "Calcula $8{,}4$$\\div$ $4$.",
+   "options": null,
+   "answer": {
+    "value": "2.1",
+    "accepted": [
+     "2,1"
+    ]
+   },
+   "tolerance": 0,
+   "explanation": "8,4 ÷ 4 = 2,1.",
+   "steps": [
+    "Iguala as casas ou desloca as vírgulas.",
+    "Divide como inteiros."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "decimais.dividir",
+   "statement": "Calcula $1{,}35$$\\div$ $5$.",
+   "options": null,
+   "answer": {
+    "value": "0.27",
+    "accepted": [
+     "0,27"
+    ]
+   },
+   "tolerance": 0,
+   "explanation": "1,35 ÷ 5 = 0,27.",
+   "steps": [
+    "Iguala as casas ou desloca as vírgulas.",
+    "Divide como inteiros."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "decimais.dividir",
+   "statement": "Calcula $7{,}2$$\\div$ $0{,}6$.",
+   "options": null,
+   "answer": {
+    "value": "12",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "7,2 ÷ 0,6 = 12.",
+   "steps": [
+    "Iguala as casas ou desloca as vírgulas.",
+    "Divide como inteiros."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "decimais.dividir",
+   "statement": "Calcula $0{,}45$$\\div$ $0{,}15$.",
+   "options": null,
+   "answer": {
+    "value": "3",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "0,45 ÷ 0,15 = 3.",
+   "steps": [
+    "Iguala as casas ou desloca as vírgulas.",
+    "Divide como inteiros."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "decimais.dividir",
+   "statement": "Calcula $9$$\\div$ $2$.",
+   "options": null,
+   "answer": {
+    "value": "4.5",
+    "accepted": [
+     "4,5"
+    ]
+   },
+   "tolerance": 0,
+   "explanation": "9 ÷ 2 = 4,5.",
+   "steps": [
+    "Iguala as casas ou desloca as vírgulas.",
+    "Divide como inteiros."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "decimais.dividir",
+   "statement": "Calcula $1$$\\div$ $8$.",
+   "options": null,
+   "answer": {
+    "value": "0.125",
+    "accepted": [
+     "0,125"
+    ]
+   },
+   "tolerance": 0,
+   "explanation": "1 ÷ 8 = 0,125.",
+   "steps": [
+    "Iguala as casas ou desloca as vírgulas.",
+    "Divide como inteiros."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "decimais.dividir",
+   "statement": "Calcula $34{,}7$$\\div10$.",
+   "options": null,
+   "answer": {
+    "value": "3.47",
+    "accepted": [
+     "3,47"
+    ]
+   },
+   "tolerance": 0,
+   "explanation": "Dividir por 10 desloca a vírgula 1 casa(s) para a esquerda: 3,47.",
+   "steps": [
+    "Vírgula para a esquerda."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "decimais.dividir",
+   "statement": "Calcula $25$$\\div100$.",
+   "options": null,
+   "answer": {
+    "value": "0.25",
+    "accepted": [
+     "0,25"
+    ]
+   },
+   "tolerance": 0,
+   "explanation": "Dividir por 100 desloca a vírgula 2 casa(s) para a esquerda: 0,25.",
+   "steps": [
+    "Vírgula para a esquerda."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "decimais.dividir",
+   "statement": "Calcula $8$$\\div1000$.",
+   "options": null,
+   "answer": {
+    "value": "0.008",
+    "accepted": [
+     "0,008"
+    ]
+   },
+   "tolerance": 0,
+   "explanation": "Dividir por 1000 desloca a vírgula 3 casa(s) para a esquerda: 0,008.",
+   "steps": [
+    "Vírgula para a esquerda."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "decimais.dividir",
+   "statement": "Calcula $123{,}4$$\\div100$.",
+   "options": null,
+   "answer": {
+    "value": "1.234",
+    "accepted": [
+     "1,234"
+    ]
+   },
+   "tolerance": 0,
+   "explanation": "Dividir por 100 desloca a vírgula 2 casa(s) para a esquerda: 1,234.",
+   "steps": [
+    "Vírgula para a esquerda."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "decimais.dividir",
+   "statement": "Repartem-se 7,5 kg de arroz por 6 sacos iguais. Quantos kg tem cada saco?",
+   "options": null,
+   "answer": {
+    "value": "1.25",
+    "accepted": [
+     "1,25"
+    ]
+   },
+   "tolerance": 0,
+   "explanation": "7,5 ÷ 6 = 1,25 kg.",
+   "steps": [
+    "75 ÷ 6 = 12,5.",
+    "Divide por 10: 1,25."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "decimais.dividir",
+   "statement": "Uma corda de 12,6 m é cortada em pedaços de 0,9 m. Quantos pedaços saem?",
+   "options": null,
+   "answer": {
+    "value": "14",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "12,6 ÷ 0,9 = 126 ÷ 9 = 14.",
+   "steps": [
+    "Multiplica por 10 os dois."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "decimais.dividir",
+   "statement": "Dividir por 0,5 é o mesmo que multiplicar por 2.",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "0,5 = 1/2 e dividir por 1/2 é multiplicar por 2.",
+   "steps": [
+    "Quantas metades cabem."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "decimais.dividir",
+   "statement": "Dividir um número positivo por 0,1 dá um resultado menor.",
+   "options": null,
+   "answer": {
+    "boolean": false
+   },
+   "tolerance": 0,
+   "explanation": "Dividir por 0,1 equivale a multiplicar por 10: o resultado é maior.",
+   "steps": [
+    "÷ 0,1 = × 10."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "decimais.dividir",
+   "statement": "Qual é o resultado de 4,8 ÷ 0,6?",
+   "options": [
+    {
+     "id": "a",
+     "label": "8"
+    },
+    {
+     "id": "b",
+     "label": "0,8"
+    },
+    {
+     "id": "c",
+     "label": "80"
+    },
+    {
+     "id": "d",
+     "label": "2,88"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "4,8 ÷ 0,6 = 48 ÷ 6 = 8.",
+   "steps": [
+    "Multiplica por 10 os dois números."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,296 @@
+{
+ "subject": "numeros-decimais",
+ "topic_title": "Operações com decimais",
+ "topic_slug": "operacoes-decimais",
+ "lesson_title": "Multiplicação de decimais e multiplicação por 10, 100 e 1 000",
+ "lesson_slug": "decimais-multiplicacao-potencias-de-10",
+ "summary": "Multiplica números decimais contando as casas decimais e multiplica por 10, 100 e 1 000 deslocando a vírgula.",
+ "minutes": 25,
+ "blocks": {
+  "introduction": "**Objetivos:** multiplicar decimais por naturais e entre si, multiplicar por 10, 100 e 1 000. **Pré-requisitos:** multiplicação de naturais e ordens decimais.\n\nSe um metro de fio custa 2,75 €, quanto custam 8 metros? É uma multiplicação de decimal por natural. Se um sumo tem 0,3 L e comes 0,5 da garrafa... 0,5 de 0,3 L é uma multiplicação de decimais.",
+  "intuition": "**Regra:** multiplica como se não houvesse vírgulas; depois coloca a vírgula no resultado de modo que ele tenha tantas casas decimais **como a soma** das casas dos fatores. $1{,}25\\times0{,}4$: $125\\times4=500$; $2+1=3$ casas → $0{,}500=0{,}5$.\n\nPorquê? $1{,}25=\\frac{125}{100}$ e $0{,}4=\\frac{4}{10}$, logo o produto é $\\frac{500}{1000}$: três casas.\n\n**Por 10, 100, 1 000:** desloca a vírgula 1, 2 ou 3 casas **para a direita** (acrescenta zeros se faltar): $3{,}47\\times100=347$; $0{,}8\\times1\\,000=800$. O valor torna-se 10, 100, 1 000 vezes maior.\n\nEstimativa: arredonda para verificar a ordem de grandeza. $2{,}75\\times8$ ronda $3\\times8=24$, e o resultado 22 é razoável.\n\n**Erros comuns:** alinhar a vírgula como na soma (não é preciso na multiplicação); esquecer-se de contar casas de **ambos** os fatores; achar que multiplicar sempre aumenta (0,2 × 0,3 = 0,06 é menor).",
+  "definition": "O **produto** de dois decimais com $m$ e $n$ casas decimais obtém-se multiplicando os números sem vírgula e colocando a vírgula de modo a ter $m+n$ casas. Multiplicar por $10^k$ desloca a vírgula $k$ casas para a direita.",
+  "formulas": "$$a\\times10^k:\\ \\text{vírgula }k\\text{ casas para a direita}$$\n\n$$\\text{casas}(a\\times b)=\\text{casas}(a)+\\text{casas}(b)$$\n\nExemplos: $0{,}2\\times0{,}3=0{,}06$; $4{,}5\\times0{,}1=0{,}45$ (×0,1 equivale a ÷10).",
+  "worked_example": "**Exemplo 1.** $3{,}2\\times5=16$ ($32\\times5=160$; 1 casa → 16,0).\n\n**Exemplo 2.** $1{,}5\\times1{,}2=1{,}8$ ($15\\times12=180$; 2 casas → 1,80).\n\n**Exemplo 3.** $0{,}6\\times0{,}07=0{,}042$ ($6\\times7=42$; 3 casas → 0,042).\n\n**Exemplo 4 (por 100).** $12{,}34\\times100=1\\,234$.\n\n**Exemplo 5 (por 1 000).** $0{,}8\\times1\\,000=800$.\n\n**Aplicação.** 40 L de gasóleo a 1,35 € o litro custam $1{,}35\\times40=54$ €.",
+  "guided_exercise": "Resolve connosco: **calcula $2{,}04\\times2{,}5$.**\n\n1) Sem vírgulas: $204\\times25=5\\,100$.\n\n2) Casas decimais: $2+1=3$.\n\n3) Coloca a vírgula: $5{,}100=5{,}1$.\n\n4) Estimativa: $2\\times2{,}5=5$ ✓.",
+  "independent_exercise": "Chegou a tua vez. Resolve os exercícios sem pressa e usa **Verificar** para confirmar. Se errares, não faz mal: lê a resolução passo a passo, percebe onde o raciocínio escorregou e tenta outra vez. É assim que se aprende de verdade.",
+  "challenge": "**Desafio.** Calcula $0{,}1\\times0{,}1$, $0{,}01\\times0{,}1$ e $0{,}1\\times0{,}1\\times0{,}1$. Que padrão observas nas casas decimais e nos zeros? E para $0{,}1^{6}$?",
+  "assessment": "Consideras a competência dominada quando consegues: (1) multiplicar decimais contando as casas; (2) multiplicar por 10, 100 e 1 000; (3) estimar o resultado; (4) resolver problemas com preços e medidas."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "decimais.multiplicar",
+   "statement": "Calcula $3{,}2$$\\times$ $5$.",
+   "options": null,
+   "answer": {
+    "value": "16",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Multiplica como inteiros e conta as casas decimais: 3,2 × 5 = 16.",
+   "steps": [
+    "Ignora as vírgulas.",
+    "Soma o número de casas decimais."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "decimais.multiplicar",
+   "statement": "Calcula $1{,}25$$\\times$ $4$.",
+   "options": null,
+   "answer": {
+    "value": "5",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Multiplica como inteiros e conta as casas decimais: 1,25 × 4 = 5.",
+   "steps": [
+    "Ignora as vírgulas.",
+    "Soma o número de casas decimais."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "decimais.multiplicar",
+   "statement": "Calcula $1{,}5$$\\times$ $1{,}2$.",
+   "options": null,
+   "answer": {
+    "value": "1.8",
+    "accepted": [
+     "1,8"
+    ]
+   },
+   "tolerance": 0,
+   "explanation": "Multiplica como inteiros e conta as casas decimais: 1,5 × 1,2 = 1,8.",
+   "steps": [
+    "Ignora as vírgulas.",
+    "Soma o número de casas decimais."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "decimais.multiplicar",
+   "statement": "Calcula $0{,}25$$\\times$ $0{,}8$.",
+   "options": null,
+   "answer": {
+    "value": "0.2",
+    "accepted": [
+     "0,2"
+    ]
+   },
+   "tolerance": 0,
+   "explanation": "Multiplica como inteiros e conta as casas decimais: 0,25 × 0,8 = 0,2.",
+   "steps": [
+    "Ignora as vírgulas.",
+    "Soma o número de casas decimais."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "decimais.multiplicar",
+   "statement": "Calcula $0{,}6$$\\times$ $0{,}07$.",
+   "options": null,
+   "answer": {
+    "value": "0.042",
+    "accepted": [
+     "0,042"
+    ]
+   },
+   "tolerance": 0,
+   "explanation": "Multiplica como inteiros e conta as casas decimais: 0,6 × 0,07 = 0,042.",
+   "steps": [
+    "Ignora as vírgulas.",
+    "Soma o número de casas decimais."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "decimais.multiplicar",
+   "statement": "Calcula $2{,}04$$\\times$ $2{,}5$.",
+   "options": null,
+   "answer": {
+    "value": "5.1",
+    "accepted": [
+     "5,1"
+    ]
+   },
+   "tolerance": 0,
+   "explanation": "Multiplica como inteiros e conta as casas decimais: 2,04 × 2,5 = 5,1.",
+   "steps": [
+    "Ignora as vírgulas.",
+    "Soma o número de casas decimais."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "decimais.multiplicar",
+   "statement": "Calcula $3{,}47$$\\times10$.",
+   "options": null,
+   "answer": {
+    "value": "34.7",
+    "accepted": [
+     "34,7"
+    ]
+   },
+   "tolerance": 0,
+   "explanation": "Multiplicar por 10 desloca a vírgula 1 casa(s) para a direita: 34,7.",
+   "steps": [
+    "Desloca a vírgula para a direita."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "decimais.multiplicar",
+   "statement": "Calcula $0{,}025$$\\times100$.",
+   "options": null,
+   "answer": {
+    "value": "2.5",
+    "accepted": [
+     "2,5"
+    ]
+   },
+   "tolerance": 0,
+   "explanation": "Multiplicar por 100 desloca a vírgula 2 casa(s) para a direita: 2,5.",
+   "steps": [
+    "Desloca a vírgula para a direita."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "decimais.multiplicar",
+   "statement": "Calcula $0{,}8$$\\times1000$.",
+   "options": null,
+   "answer": {
+    "value": "800",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Multiplicar por 1000 desloca a vírgula 3 casa(s) para a direita: 800.",
+   "steps": [
+    "Desloca a vírgula para a direita."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "decimais.multiplicar",
+   "statement": "Calcula $12{,}34$$\\times100$.",
+   "options": null,
+   "answer": {
+    "value": "1234",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Multiplicar por 100 desloca a vírgula 2 casa(s) para a direita: 1234.",
+   "steps": [
+    "Desloca a vírgula para a direita."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "decimais.multiplicar",
+   "statement": "Uma bobina de fio custa 2,75 € por metro. Quanto custam 8 metros?",
+   "options": null,
+   "answer": {
+    "value": "22",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "2,75 × 8 = 22.",
+   "steps": [
+    "275 × 8 = 2 200.",
+    "Duas casas: 22,00."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "decimais.multiplicar",
+   "statement": "Um litro de gasóleo custa 1,35 €. Quanto custam 40 litros?",
+   "options": null,
+   "answer": {
+    "value": "54",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "1,35 × 40 = 54.",
+   "steps": [
+    "135 × 4 = 540.",
+    "× 10 → 54,00."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "decimais.multiplicar",
+   "statement": "0,2 × 0,3 = 0,6.",
+   "options": null,
+   "answer": {
+    "boolean": false
+   },
+   "tolerance": 0,
+   "explanation": "2 × 3 = 6 e há duas casas decimais: 0,06.",
+   "steps": [
+    "Conta as casas."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "decimais.multiplicar",
+   "statement": "Multiplicar um decimal por 100 desloca a vírgula duas casas para a direita.",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "Ex.: 3,47 × 100 = 347.",
+   "steps": [
+    "2 zeros = 2 casas."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "decimais.multiplicar",
+   "statement": "Quantas casas decimais tem o produto de 1,25 por 0,4?",
+   "options": [
+    {
+     "id": "a",
+     "label": "3"
+    },
+    {
+     "id": "b",
+     "label": "2"
+    },
+    {
+     "id": "c",
+     "label": "1"
+    },
+    {
+     "id": "d",
+     "label": "5"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "2 casas + 1 casa = 3 casas (1,25 × 0,4 = 0,500).",
+   "steps": [
+    "Soma as casas."
+   ]
+  }
+ ]
+}

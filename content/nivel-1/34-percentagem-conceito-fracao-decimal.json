@@ -1,0 +1,346 @@
+{
+ "subject": "percentagens",
+ "topic_title": "Conceito de percentagem",
+ "topic_slug": "conceito-percentagem",
+ "lesson_title": "Percentagem: símbolo, relação com fração e decimal, conversões",
+ "lesson_slug": "percentagem-conceito-fracao-decimal",
+ "summary": "Compreende a percentagem como fração de denominador 100 e converte entre percentagem, fração e decimal.",
+ "minutes": 25,
+ "blocks": {
+  "introduction": "**Objetivos:** compreender o símbolo %, relacionar percentagem, fração e decimal e converter entre as três formas. **Pré-requisitos:** frações, decimais e divisão por 100.\n\n«Desconto de 30%», «a bateria está a 15%», «aumento de 5% no preço do pão»: a percentagem está em todo o lado. Dá-nos uma maneira comum de comparar partes de quantidades diferentes.",
+  "intuition": "**Percentagem** quer dizer «por cada cem». $25\\%$ são 25 em cada 100, ou seja, $\\frac{25}{100}=\\frac{1}{4}=0{,}25$. O símbolo % é uma forma abreviada de escrever «/100».\n\nAs três formas descrevem o mesmo número: **percentagem** $35\\%$, **fração** $\\frac{35}{100}=\\frac{7}{20}$ e **decimal** $0{,}35$.\n\n**Percentagem → decimal:** divide por 100 (desloca a vírgula duas casas para a esquerda): $8\\%=0{,}08$, $120\\%=1{,}2$, $0{,}5\\%=0{,}005$.\n\n**Decimal → percentagem:** multiplica por 100: $0{,}6=60\\%$.\n\n**Fração → percentagem:** passa a decimal e multiplica por 100: $\\frac{3}{5}=0{,}6=60\\%$; ou usa denominador 100: $\\frac{7}{25}=\\frac{28}{100}=28\\%$.\n\nValores de referência: 100% = o todo (1); 50% = metade; 25% = um quarto; 75% = três quartos; 10% = um décimo; 200% = o dobro. Pode haver percentagens maiores que 100% (quando é mais que o todo).\n\n**Erros comuns:** escrever $5\\%=0{,}5$ (é 0,05); achar que 50% é um quinto; esquecer o 100 no denominador.",
+  "definition": "A **percentagem** $p\\%$ é a fração $\\frac{p}{100}$. Para um número $x$, $x$ «em percentagem» é $(x\\times100)\\%$. O todo corresponde a $100\\%$.",
+  "formulas": "$$p\\%=\\frac{p}{100}=p\\div100\\qquad x=(x\\times100)\\%$$\n\nReferências: $1\\%=0{,}01$; $10\\%=\\frac{1}{10}$; $20\\%=\\frac{1}{5}$; $25\\%=\\frac{1}{4}$; $50\\%=\\frac{1}{2}$; $75\\%=\\frac{3}{4}$; $100\\%=1$.",
+  "worked_example": "**Exemplo 1.** $50\\%=\\frac{50}{100}=\\frac{1}{2}$.\n\n**Exemplo 2.** $35\\%=0{,}35$ e $8\\%=0{,}08$.\n\n**Exemplo 3 (decimal).** $0{,}6=60\\%$ e $1{,}25=125\\%$.\n\n**Exemplo 4 (fração).** $\\frac{3}{5}=\\frac{60}{100}=60\\%$.\n\n**Exemplo 5 (parte de um todo).** Numa turma de 25 alunos faltaram 7: $\\frac{7}{25}=\\frac{28}{100}=28\\%$.\n\n**Aplicação.** Se 40% dos 60 alunos de uma escola vão a pé: $0{,}4\\times60=24$ alunos.",
+  "guided_exercise": "Resolve connosco: **num teste de 40 perguntas, a Maria acertou 34. Que percentagem acertou?**\n\n1) Fração: $\\frac{34}{40}$.\n\n2) Decimal: $34\\div40=0{,}85$.\n\n3) Percentagem: $0{,}85\\times100=85\\%$.\n\n4) Verifica: 85% de 40 = $0{,}85\\times40=34$ ✓.",
+  "independent_exercise": "Chegou a tua vez. Resolve os exercícios sem pressa e usa **Verificar** para confirmar. Se errares, não faz mal: lê a resolução passo a passo, percebe onde o raciocínio escorregou e tenta outra vez. É assim que se aprende de verdade.",
+  "challenge": "**Desafio.** Explica o que significa «120% do preço» e «0,5% de juros». Dá um exemplo de cada, com valores em Kwanzas.",
+  "assessment": "Consideras a competência dominada quando consegues: (1) ler % como «por cada cem»; (2) passar entre %, fração e decimal; (3) reconhecer as referências 50%, 25%, 10%; (4) interpretar percentagens superiores a 100%."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "percentagens.conversao",
+   "statement": "Escreve 50% como fração irredutível (a/b).",
+   "options": null,
+   "answer": {
+    "value": "1/2",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "50% = 50/100 = 1/2.",
+   "steps": [
+    "50/100.",
+    "Simplifica."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "percentagens.conversao",
+   "statement": "Escreve 25% como fração irredutível (a/b).",
+   "options": null,
+   "answer": {
+    "value": "1/4",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "25% = 25/100 = 1/4.",
+   "steps": [
+    "25/100.",
+    "Simplifica."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "percentagens.conversao",
+   "statement": "Escreve 20% como fração irredutível (a/b).",
+   "options": null,
+   "answer": {
+    "value": "1/5",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "20% = 20/100 = 1/5.",
+   "steps": [
+    "20/100.",
+    "Simplifica."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "percentagens.conversao",
+   "statement": "Escreve 75% como fração irredutível (a/b).",
+   "options": null,
+   "answer": {
+    "value": "3/4",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "75% = 75/100 = 3/4.",
+   "steps": [
+    "75/100.",
+    "Simplifica."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "percentagens.conversao",
+   "statement": "Escreve 5% como fração irredutível (a/b).",
+   "options": null,
+   "answer": {
+    "value": "1/20",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "5% = 5/100 = 1/20.",
+   "steps": [
+    "5/100.",
+    "Simplifica."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "percentagens.conversao",
+   "statement": "Escreve 40% como fração irredutível (a/b).",
+   "options": null,
+   "answer": {
+    "value": "2/5",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "40% = 40/100 = 2/5.",
+   "steps": [
+    "40/100.",
+    "Simplifica."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "percentagens.conversao",
+   "statement": "Escreve 35% em número decimal.",
+   "options": null,
+   "answer": {
+    "value": "0.35",
+    "accepted": [
+     "0,35"
+    ]
+   },
+   "tolerance": 0,
+   "explanation": "35% = 35 ÷ 100 = 0,35.",
+   "steps": [
+    "Divide por 100.",
+    "Vírgula 2 casas à esquerda."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "percentagens.conversao",
+   "statement": "Escreve 8% em número decimal.",
+   "options": null,
+   "answer": {
+    "value": "0.08",
+    "accepted": [
+     "0,08"
+    ]
+   },
+   "tolerance": 0,
+   "explanation": "8% = 8 ÷ 100 = 0,08.",
+   "steps": [
+    "Divide por 100.",
+    "Vírgula 2 casas à esquerda."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "percentagens.conversao",
+   "statement": "Escreve 120% em número decimal.",
+   "options": null,
+   "answer": {
+    "value": "1.2",
+    "accepted": [
+     "1,2"
+    ]
+   },
+   "tolerance": 0,
+   "explanation": "120% = 120 ÷ 100 = 1,2.",
+   "steps": [
+    "Divide por 100.",
+    "Vírgula 2 casas à esquerda."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "percentagens.conversao",
+   "statement": "Escreve 0,5% em número decimal.",
+   "options": null,
+   "answer": {
+    "value": "0.005",
+    "accepted": [
+     "0,005"
+    ]
+   },
+   "tolerance": 0,
+   "explanation": "0,5% = 0,5 ÷ 100 = 0,005.",
+   "steps": [
+    "Divide por 100.",
+    "Vírgula 2 casas à esquerda."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "percentagens.conversao",
+   "statement": "Escreve $\\frac{3}{5}$ em percentagem (só o número, sem %).",
+   "options": null,
+   "answer": {
+    "value": "60",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "3/5 = 0,6 = 60%.",
+   "steps": [
+    "Passa a decimal.",
+    "× 100."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "percentagens.conversao",
+   "statement": "Escreve $\\frac{7}{20}$ em percentagem (só o número, sem %).",
+   "options": null,
+   "answer": {
+    "value": "35",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "7/20 = 0,35 = 35%.",
+   "steps": [
+    "Passa a decimal.",
+    "× 100."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "percentagens.conversao",
+   "statement": "Escreve $\\frac{9}{4}$ em percentagem (só o número, sem %).",
+   "options": null,
+   "answer": {
+    "value": "225",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "9/4 = 2,25 = 225%.",
+   "steps": [
+    "Passa a decimal.",
+    "× 100."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "percentagens.conversao",
+   "statement": "Escreve $\\frac{1}{8}$ em percentagem (só o número, sem %).",
+   "options": null,
+   "answer": {
+    "value": "25/2",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "1/8 = 0,125 = 12,5%.",
+   "steps": [
+    "Passa a decimal.",
+    "× 100."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "percentagens.conversao",
+   "statement": "Numa turma de 25 alunos, 7 faltaram. Que percentagem faltou?",
+   "options": null,
+   "answer": {
+    "value": "28",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "7/25 = 28/100 = 28%.",
+   "steps": [
+    "Escreve com denominador 100."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 1,
+   "competency": "percentagens.conversao",
+   "statement": "100% de um valor é o valor todo.",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "100% = 100/100 = 1.",
+   "steps": [
+    "100/100 = 1."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "percentagens.conversao",
+   "statement": "50% é o mesmo que 1/5.",
+   "options": null,
+   "answer": {
+    "boolean": false
+   },
+   "tolerance": 0,
+   "explanation": "50% = 1/2; 1/5 é 20%.",
+   "steps": [
+    "50/100 = 1/2."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "percentagens.conversao",
+   "statement": "Qual é a relação correta?",
+   "options": [
+    {
+     "id": "a",
+     "label": "25% = 0,25 = 1/4"
+    },
+    {
+     "id": "b",
+     "label": "25% = 2,5 = 1/4"
+    },
+    {
+     "id": "c",
+     "label": "25% = 0,025 = 1/25"
+    },
+    {
+     "id": "d",
+     "label": "25% = 0,25 = 1/2"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "25% = 25/100 = 0,25 = 1/4.",
+   "steps": [
+    "Divide por 100."
+   ]
+  }
+ ]
+}

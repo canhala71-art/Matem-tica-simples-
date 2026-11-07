@@ -1,0 +1,287 @@
+{
+ "subject": "percentagens",
+ "topic_title": "Variações percentuais",
+ "topic_slug": "variacoes-percentuais",
+ "lesson_title": "Aumentos, descontos, variação percentual e percentagens sucessivas",
+ "lesson_slug": "percentagens-aumentos-descontos-sucessivas",
+ "summary": "Calcula aumentos, descontos e variações percentuais e compreende percentagens sucessivas com fatores multiplicativos.",
+ "minutes": 30,
+ "blocks": {
+  "introduction": "**Objetivos:** calcular aumentos e descontos, achar a variação percentual entre dois valores e perceber porque as percentagens sucessivas não se somam. **Pré-requisitos:** percentagem de um valor e conversões.\n\nOs preços sobem e descem, os salários são aumentados, as lojas fazem promoções. Para saber exatamente quanto custa um artigo depois de «30% de desconto» ou quanto vale um salário depois de «8% de aumento», usa-se a percentagem como **fator multiplicativo**.",
+  "intuition": "**Desconto de $p\\%$:** o novo valor é $V\\times\\left(1-\\frac{p}{100}\\right)$. Ex.: 30% de desconto → multiplica por $0{,}7$. **Aumento de $p\\%$:** $V\\times\\left(1+\\frac{p}{100}\\right)$. Ex.: 12% de aumento → multiplica por $1{,}12$. Estes números chamam-se **fatores multiplicativos**.\n\n**Variação percentual:** $\\dfrac{\\text{valor novo}-\\text{valor inicial}}{\\text{valor inicial}}\\times100\\%$. Se o resultado é positivo, é aumento; se é negativo, é diminuição. De 80 para 100: $\\frac{20}{80}=25\\%$ de aumento.\n\n**Percentagens sucessivas:** multiplicam-se os fatores, **não** se somam as percentagens. Subir 20% e depois descer 20% dá $1{,}2\\times0{,}8=0{,}96$, ou seja, **menos 4%**. Dois descontos de 10% dão $0{,}9\\times0{,}9=0{,}81$: desconto total de 19%, não de 20%.\n\nO que faz diferença é sobre **que valor** se calcula a percentagem: a segunda percentagem incide sobre o valor já alterado.\n\n**Erros comuns:** somar percentagens sucessivas; calcular a variação percentual dividindo pelo valor novo em vez do inicial; esquecer de subtrair o desconto.",
+  "definition": "Um **fator multiplicativo** é o número pelo qual se multiplica o valor inicial para obter o final. A **variação percentual** entre $V_i$ e $V_f$ é $\\dfrac{V_f-V_i}{V_i}\\times100\\%$. **Percentagens sucessivas** são variações aplicadas uma depois da outra.",
+  "formulas": "$$V_f=V_i\\times(1\\pm\\tfrac{p}{100})\\qquad\\Delta\\%=\\frac{V_f-V_i}{V_i}\\times100$$\n\nSucessivas: $V_f=V_i\\times f_1\\times f_2\\times\\cdots$",
+  "worked_example": "**Exemplo 1 (desconto).** Um artigo de 8 000 Kz com 30% de desconto: $8\\,000\\times0{,}7=5\\,600$ Kz.\n\n**Exemplo 2 (aumento).** Salário de 20 000 Kz com 10% de aumento: $20\\,000\\times1{,}1=22\\,000$ Kz.\n\n**Exemplo 3 (variação).** De 80 Kz para 100 Kz: $\\frac{100-80}{80}\\times100=25\\%$ de aumento.\n\n**Exemplo 4 (sucessivas).** 1 000 Kz sobem 20% e descem 20%: $1\\,000\\times1{,}2\\times0{,}8=960$ Kz.\n\n**Exemplo 5 (dois descontos).** Dois descontos de 10% sobre 5 000 Kz: $5\\,000\\times0{,}9\\times0{,}9=4\\,050$ Kz.\n\n**Aplicação.** O preço do pão passou de 200 para 250 Kz: variação $\\frac{50}{200}=25\\%$.",
+  "guided_exercise": "Resolve connosco: **um telemóvel custava 60 000 Kz. Subiu 10% e depois baixou 10%. Quanto custa agora? Qual foi a variação total?**\n\n1) Depois da subida: $60\\,000\\times1{,}1=66\\,000$.\n\n2) Depois da descida: $66\\,000\\times0{,}9=59\\,400$.\n\n3) Variação: $\\frac{59\\,400-60\\,000}{60\\,000}=-0{,}01=-1\\%$.\n\n4) Custa menos 1% do que no início.",
+  "independent_exercise": "Chegou a tua vez. Resolve os exercícios sem pressa e usa **Verificar** para confirmar. Se errares, não faz mal: lê a resolução passo a passo, percebe onde o raciocínio escorregou e tenta outra vez. É assim que se aprende de verdade.",
+  "challenge": "**Desafio.** Um artigo desce 50% e depois sobe 100%. Volta ao preço inicial? E se subir 100% e depois descer 50%? Calcula os fatores e explica as diferenças.",
+  "assessment": "Consideras a competência dominada quando consegues: (1) calcular aumentos e descontos com fatores; (2) achar a variação percentual; (3) compor percentagens sucessivas multiplicando; (4) evitar o erro de somar percentagens."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "percentagens.variacao",
+   "statement": "Um artigo custa 8000 Kz e tem 30% de desconto. Quanto custa agora, em Kz?",
+   "options": null,
+   "answer": {
+    "value": "5600",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Desconto: 30% de 8000 = 2400. Preço final: 8000 − 2400 = 5600 Kz.",
+   "steps": [
+    "Calcula o desconto.",
+    "Subtrai."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "percentagens.variacao",
+   "statement": "Um artigo custa 45000 Kz e tem 15% de desconto. Quanto custa agora, em Kz?",
+   "options": null,
+   "answer": {
+    "value": "38250",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Desconto: 15% de 45000 = 6750. Preço final: 45000 − 6750 = 38250 Kz.",
+   "steps": [
+    "Calcula o desconto.",
+    "Subtrai."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "percentagens.variacao",
+   "statement": "Um artigo custa 12000 Kz e tem 25% de desconto. Quanto custa agora, em Kz?",
+   "options": null,
+   "answer": {
+    "value": "9000",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Desconto: 25% de 12000 = 3000. Preço final: 12000 − 3000 = 9000 Kz.",
+   "steps": [
+    "Calcula o desconto.",
+    "Subtrai."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "percentagens.variacao",
+   "statement": "Um artigo custa 250 Kz e tem 12% de desconto. Quanto custa agora, em Kz?",
+   "options": null,
+   "answer": {
+    "value": "220",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Desconto: 12% de 250 = 30. Preço final: 250 − 30 = 220 Kz.",
+   "steps": [
+    "Calcula o desconto.",
+    "Subtrai."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "percentagens.variacao",
+   "statement": "Um salário de 20000 Kz sobe 10%. Qual é o novo valor, em Kz?",
+   "options": null,
+   "answer": {
+    "value": "22000",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Aumento: 2000. Novo valor: 22000 Kz.",
+   "steps": [
+    "Calcula o aumento.",
+    "Soma."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "percentagens.variacao",
+   "statement": "Um salário de 350 Kz sobe 20%. Qual é o novo valor, em Kz?",
+   "options": null,
+   "answer": {
+    "value": "420",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Aumento: 70. Novo valor: 420 Kz.",
+   "steps": [
+    "Calcula o aumento.",
+    "Soma."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "percentagens.variacao",
+   "statement": "Um salário de 15000 Kz sobe 8%. Qual é o novo valor, em Kz?",
+   "options": null,
+   "answer": {
+    "value": "16200",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Aumento: 1200. Novo valor: 16200 Kz.",
+   "steps": [
+    "Calcula o aumento.",
+    "Soma."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "percentagens.variacao",
+   "statement": "O preço passou de 80 Kz para 100 Kz. Qual foi a variação percentual (só o número, sem %)?",
+   "options": null,
+   "answer": {
+    "value": "25",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Variação = (novo − antigo) ÷ antigo × 100 = (100 − 80) ÷ 80 × 100 = 25%.",
+   "steps": [
+    "Diferença ÷ valor inicial.",
+    "× 100."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "percentagens.variacao",
+   "statement": "O preço passou de 50 Kz para 40 Kz. Qual foi a variação percentual (só o número, sem %)?",
+   "options": null,
+   "answer": {
+    "value": "-20",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Variação = (novo − antigo) ÷ antigo × 100 = (40 − 50) ÷ 50 × 100 = -20%.",
+   "steps": [
+    "Diferença ÷ valor inicial.",
+    "× 100."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "percentagens.variacao",
+   "statement": "O preço passou de 200 Kz para 250 Kz. Qual foi a variação percentual (só o número, sem %)?",
+   "options": null,
+   "answer": {
+    "value": "25",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Variação = (novo − antigo) ÷ antigo × 100 = (250 − 200) ÷ 200 × 100 = 25%.",
+   "steps": [
+    "Diferença ÷ valor inicial.",
+    "× 100."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "percentagens.variacao",
+   "statement": "Um artigo de 1 000 Kz sobe 20% e depois desce 20% sobre o novo preço. Quanto custa no fim, em Kz?",
+   "options": null,
+   "answer": {
+    "value": "960",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "1 000 × 1,2 = 1 200; 1 200 × 0,8 = 960 Kz.",
+   "steps": [
+    "Fator 1,2.",
+    "Fator 0,8."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "percentagens.variacao",
+   "statement": "Dois descontos sucessivos de 10% sobre 5 000 Kz. Qual é o preço final, em Kz?",
+   "options": null,
+   "answer": {
+    "value": "4050",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "5 000 × 0,9 = 4 500; 4 500 × 0,9 = 4 050 Kz (não é 20% de desconto: seria 4 000).",
+   "steps": [
+    "Fator 0,9 duas vezes."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "percentagens.variacao",
+   "statement": "Um desconto de 50% seguido de um aumento de 50% volta ao preço inicial.",
+   "options": null,
+   "answer": {
+    "boolean": false
+   },
+   "tolerance": 0,
+   "explanation": "100 → 50 → 75. O aumento incide sobre o novo valor, que é menor.",
+   "steps": [
+    "50 × 1,5 = 75."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "percentagens.variacao",
+   "statement": "Um aumento de 10% equivale a multiplicar por 1,1.",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "100% + 10% = 110% = 1,1.",
+   "steps": [
+    "Fator de aumento."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "percentagens.variacao",
+   "statement": "Qual é o fator multiplicativo de um desconto de 25%?",
+   "options": [
+    {
+     "id": "a",
+     "label": "0,75"
+    },
+    {
+     "id": "b",
+     "label": "0,25"
+    },
+    {
+     "id": "c",
+     "label": "1,25"
+    },
+    {
+     "id": "d",
+     "label": "0,025"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "100% − 25% = 75% = 0,75.",
+   "steps": [
+    "1 − 0,25."
+   ]
+  }
+ ]
+}

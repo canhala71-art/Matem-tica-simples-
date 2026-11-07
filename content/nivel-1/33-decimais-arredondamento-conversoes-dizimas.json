@@ -1,0 +1,294 @@
+{
+ "subject": "numeros-decimais",
+ "topic_title": "Arredondamento e conversões",
+ "topic_slug": "arredondamento-conversoes-decimais",
+ "lesson_title": "Arredondamento, fração e decimal, dízimas periódicas, dinheiro e medidas",
+ "lesson_slug": "decimais-arredondamento-conversoes-dizimas",
+ "summary": "Arredonda decimais, converte entre fração e decimal, reconhece dízimas periódicas e aplica a dinheiro e medidas.",
+ "minutes": 30,
+ "blocks": {
+  "introduction": "**Objetivos:** arredondar decimais, converter fração em decimal e vice-versa, reconhecer dízimas periódicas e resolver problemas com dinheiro e medidas. **Pré-requisitos:** frações, divisão e ordens decimais.\n\nNo supermercado, os preços aparecem com duas casas decimais. Numa divisão que não termina, é preciso parar numa certa casa. É o **arredondamento**, usado constantemente para falar de dinheiro, distâncias e médias.",
+  "intuition": "**Arredondamento:** para arredondar a certa casa, olha para a casa seguinte. Se for 5 ou mais, **sobe** uma unidade; se for 4 ou menos, **fica**. $3{,}768\\approx3{,}8$ (às décimas) e $\\approx3{,}77$ (às centésimas). $4{,}25\\approx4{,}3$.\n\n**Fração → decimal:** divide numerador por denominador. $\\frac{7}{8}=0{,}875$. Se a divisão termina, o decimal é **exato**; se não termina e os algarismos se repetem, é uma **dízima periódica**: $\\frac{1}{3}=0{,}333\\ldots=0{,}(3)$ e $\\frac{3}{11}=0{,}(27)$.\n\n**Decimal exato → fração:** escreve sobre 10, 100, 1 000 e simplifica: $0{,}375=\\frac{375}{1000}=\\frac{3}{8}$.\n\nUma fração irredutível dá decimal exato apenas se o denominador só tiver os fatores 2 e 5.\n\n**Dinheiro e medidas:** 1 m = 100 cm = 1 000 mm; 1 kg = 1 000 g; 1 L = 1 000 mL. Converter é multiplicar ou dividir por potências de 10: $1{,}68\\text{ m}=168\\text{ cm}$.\n\n**Erros comuns:** arredondar olhando duas casas à frente; achar que 0,333… termina; esquecer de simplificar a fração obtida.",
+  "definition": "O **arredondamento** de um decimal a uma ordem é o número mais próximo com essa precisão. Uma **dízima periódica** é um decimal infinito em que, a partir de certa casa, se repete um grupo de algarismos (o **período**). Um decimal **exato** tem um número finito de casas.",
+  "formulas": "$$x\\approx\\text{arredondado a }10^{-k}:\\ \\text{observa a casa }k+1$$\n\n$$\\frac{a}{b}\\text{ é decimal exato}\\iff b\\text{ (irredutível) só tem fatores }2\\text{ e }5$$\n\n$$0{,}\\overline{3}=\\frac{1}{3}\\qquad0{,}\\overline{9}=1$$",
+  "worked_example": "**Exemplo 1.** $3{,}768$ às décimas: 3,8 (a casa seguinte é 6).\n\n**Exemplo 2.** $2{,}345$ às centésimas: 2,35 (a casa seguinte é 5).\n\n**Exemplo 3 (fração).** $\\frac{3}{20}=\\frac{15}{100}=0{,}15$.\n\n**Exemplo 4 (decimal → fração).** $1{,}25=\\frac{125}{100}=\\frac{5}{4}$.\n\n**Exemplo 5 (dízima).** $\\frac{2}{3}=0{,}666\\ldots=0{,}(6)$.\n\n**Aplicação.** O metro de tecido custa 3,45 €. Para 2,5 m: $3{,}45\\times2{,}5=8{,}625\\approx8{,}63$ €. A Maria tem 1,68 m, ou seja, 168 cm.",
+  "guided_exercise": "Resolve connosco: **converte $\\frac{5}{6}$ em decimal e arredonda às centésimas.**\n\n1) $5\\div6=0{,}8333\\ldots$ (o 3 repete-se).\n\n2) Às centésimas: a casa seguinte é 3 (< 5), fica 0,83.\n\n3) É uma dízima periódica: $0{,}8(3)$.\n\n4) Verifica: $0{,}83\\times6=4{,}98\\approx5$ ✓.",
+  "independent_exercise": "Chegou a tua vez. Resolve os exercícios sem pressa e usa **Verificar** para confirmar. Se errares, não faz mal: lê a resolução passo a passo, percebe onde o raciocínio escorregou e tenta outra vez. É assim que se aprende de verdade.",
+  "challenge": "**Desafio.** Mostra que $0{,}999\\ldots=1$: seja $x=0{,}999\\ldots$; calcula $10x-x$. Em que passo o raciocínio usa a repetição infinita?",
+  "assessment": "Consideras a competência dominada quando consegues: (1) arredondar às décimas, centésimas e milésimas; (2) converter fração em decimal e o inverso; (3) reconhecer dízimas periódicas; (4) converter unidades de medida e usar dinheiro."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "decimais.arredondar_converter",
+   "statement": "Arredonda $3{,}768$ às décimas.",
+   "options": null,
+   "answer": {
+    "value": "3.8",
+    "accepted": [
+     "3,8"
+    ]
+   },
+   "tolerance": 0,
+   "explanation": "Olha para a casa seguinte: arredonda para 3,8.",
+   "steps": [
+    "Se a casa seguinte for ≥ 5, sobe.",
+    "Se < 5, fica."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "decimais.arredondar_converter",
+   "statement": "Arredonda $2{,}345$ às centésimas.",
+   "options": null,
+   "answer": {
+    "value": "2.35",
+    "accepted": [
+     "2,35"
+    ]
+   },
+   "tolerance": 0,
+   "explanation": "Olha para a casa seguinte: arredonda para 2,35.",
+   "steps": [
+    "Se a casa seguinte for ≥ 5, sobe.",
+    "Se < 5, fica."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "decimais.arredondar_converter",
+   "statement": "Arredonda $9{,}996$ às centésimas.",
+   "options": null,
+   "answer": {
+    "value": "10",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Olha para a casa seguinte: arredonda para 10.",
+   "steps": [
+    "Se a casa seguinte for ≥ 5, sobe.",
+    "Se < 5, fica."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "decimais.arredondar_converter",
+   "statement": "Arredonda $5{,}049$ às décimas.",
+   "options": null,
+   "answer": {
+    "value": "5",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Olha para a casa seguinte: arredonda para 5.",
+   "steps": [
+    "Se a casa seguinte for ≥ 5, sobe.",
+    "Se < 5, fica."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "decimais.arredondar_converter",
+   "statement": "Arredonda $1{,}255$ às centésimas.",
+   "options": null,
+   "answer": {
+    "value": "1.26",
+    "accepted": [
+     "1,26"
+    ]
+   },
+   "tolerance": 0,
+   "explanation": "Olha para a casa seguinte: arredonda para 1,26.",
+   "steps": [
+    "Se a casa seguinte for ≥ 5, sobe.",
+    "Se < 5, fica."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "decimais.arredondar_converter",
+   "statement": "Converte 7/8 em decimal.",
+   "options": null,
+   "answer": {
+    "value": "0.875",
+    "accepted": [
+     "0,875"
+    ]
+   },
+   "tolerance": 0,
+   "explanation": "7 ÷ 8 = 0,875.",
+   "steps": [
+    "Divide 7 por 8."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "decimais.arredondar_converter",
+   "statement": "Converte 3/20 em decimal.",
+   "options": null,
+   "answer": {
+    "value": "0.15",
+    "accepted": [
+     "0,15"
+    ]
+   },
+   "tolerance": 0,
+   "explanation": "3/20 = 15/100 = 0,15.",
+   "steps": [
+    "Multiplica por 5."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "decimais.arredondar_converter",
+   "statement": "Escreve 0,375 como fração irredutível (a/b).",
+   "options": null,
+   "answer": {
+    "value": "3/8",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "375/1000 = 3/8.",
+   "steps": [
+    "m.d.c. = 125."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "decimais.arredondar_converter",
+   "statement": "Escreve 1,25 como fração irredutível (a/b).",
+   "options": null,
+   "answer": {
+    "value": "5/4",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "125/100 = 5/4.",
+   "steps": [
+    "m.d.c. = 25."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "decimais.arredondar_converter",
+   "statement": "Qual é o período da dízima 0,(27)? Quantos algarismos tem o período?",
+   "options": null,
+   "answer": {
+    "value": "2",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "O período é 27, com dois algarismos.",
+   "steps": [
+    "27 repete-se."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "decimais.arredondar_converter",
+   "statement": "Um tecido custa 3,45 € por metro. Quanto custam 2,5 metros?",
+   "options": null,
+   "answer": {
+    "value": "8.625",
+    "accepted": [
+     "8,625"
+    ]
+   },
+   "tolerance": 0,
+   "explanation": "3,45 × 2,5 = 8,625 € (valor exato; a pagar seria 8,63 € arredondado às centésimas).",
+   "steps": [
+    "345 × 25 = 8 625.",
+    "3 casas: 8,625."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "decimais.arredondar_converter",
+   "statement": "Uma pessoa tem 1,68 m. Quantos centímetros são?",
+   "options": null,
+   "answer": {
+    "value": "168",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "1 m = 100 cm: 1,68 × 100 = 168 cm.",
+   "steps": [
+    "× 100."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "decimais.arredondar_converter",
+   "statement": "$\\frac{1}{3}$ é uma dízima periódica.",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "1 ÷ 3 = 0,333…, o 3 repete-se.",
+   "steps": [
+    "Divisão que não termina."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "decimais.arredondar_converter",
+   "statement": "Arredondar 4,25 às décimas dá 4,3.",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "A casa seguinte é 5, por isso arredonda-se para cima: 4,3.",
+   "steps": [
+    "5 sobe."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "decimais.arredondar_converter",
+   "statement": "Qual das frações dá uma dízima periódica?",
+   "options": [
+    {
+     "id": "a",
+     "label": "$\\frac{2}{3}$"
+    },
+    {
+     "id": "b",
+     "label": "$\\frac{3}{4}$"
+    },
+    {
+     "id": "c",
+     "label": "$\\frac{1}{8}$"
+    },
+    {
+     "id": "d",
+     "label": "$\\frac{7}{20}$"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "Os denominadores 4, 8 e 20 só têm os fatores 2 e 5; o 3 não.",
+   "steps": [
+    "Fatores 2 e 5 só."
+   ]
+  }
+ ]
+}
