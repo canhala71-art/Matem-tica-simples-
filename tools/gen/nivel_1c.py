@@ -157,7 +157,7 @@ A = lesson('numeros-inteiros', 'Conceito de número inteiro', 'conceito-numero-i
  "Resolve connosco: **ordena por ordem decrescente −4, 6, −11, 0, −1 e indica o módulo do maior dos negativos.**\n\n1) Decrescente: do mais à direita para a esquerda: 6, 0, −1, −4, −11.\n\n2) O maior dos negativos é o mais perto do zero: −1.\n\n3) Módulo: $|-1|=1$.\n\n4) Confere na reta: −1 está à direita de −4 e de −11 ✓.",
  "**Desafio.** Quantos números inteiros têm módulo menor que 5? Lista-os. E quantos inteiros $x$ satisfazem $-3\\le x<4$? Desenha a reta para confirmares.",
  "Consideras a competência dominada quando consegues: (1) explicar o que é $\\mathbb{Z}$ e a posição de positivos, negativos e zero; (2) achar o oposto e o módulo; (3) comparar e ordenar inteiros pela reta; (4) interpretar sinais em contextos (temperatura, saldos, altitudes).", ex)
-write(2, 15, A)
+write(1, 15, A)
 
 # ===== 16. Subtração; multiplicação e divisão de inteiros; regras de sinais =====
 C = 'inteiros.sinais'; ex = []
@@ -183,7 +183,7 @@ A = lesson('numeros-inteiros', 'Operações com inteiros', 'operacoes-com-inteir
  "Resolve connosco: **calcula $(-3)\\times(-5)-12\\div(-4)$.**\n\n1) Primeiro as multiplicações e divisões. $(-3)\\times(-5)=15$ (sinais iguais).\n\n2) $12\\div(-4)=-3$ (sinais diferentes).\n\n3) Fica $15-(-3)=15+3=18$.\n\n4) Confere: o sinal de menos antes de −3 transforma-se em +3 ✓.",
  "**Desafio.** Sem calcular tudo, indica o sinal de $(-1)^{2025}\\times(-2)^{10}\\times(-3)^{7}$ e depois calcula $(-1)^{2025}$ e $(-1)^{2024}$. Que regra deduzes sobre potências de −1?",
  "Consideras a competência dominada quando consegues: (1) transformar subtrações em somas do oposto; (2) aplicar a regra de sinais à multiplicação e à divisão; (3) contar fatores negativos; (4) lembrar que não se divide por zero.", ex)
-write(2, 16, A)
+write(1, 16, A)
 
 # ===== 17. Expressões com inteiros, propriedades, problemas =====
 C = 'inteiros.expressoes'; ex = []
@@ -202,11 +202,11 @@ A = lesson('numeros-inteiros', 'Operações com inteiros', 'operacoes-com-inteir
  'Resolve expressões com inteiros respeitando a ordem das operações, usa as propriedades e resolve problemas.', 25,
  "**Objetivos:** calcular expressões numéricas com inteiros, aplicar as propriedades das operações e resolver problemas contextualizados. **Pré-requisitos:** soma, subtração, multiplicação e divisão de inteiros, ordem das operações.\n\nUm comerciante registou lucros e prejuízos ao longo do mês. Para saber o resultado final, soma tudo com sinais. Uma expressão numérica é uma «frase» de números e operações que se lê e calcula por uma ordem precisa.",
  "**Ordem das operações:** (1) parênteses (e depois colchetes e chavetas); (2) potências; (3) multiplicações e divisões, da esquerda para a direita; (4) somas e subtrações, da esquerda para a direita.\n\n**Propriedades** que ajudam: a soma e o produto são **comutativos** ($a+b=b+a$, $ab=ba$) e **associativos**; o **elemento neutro** da soma é 0 e o do produto é 1; $a\\times0=0$ (absorvente); o produto distribui-se sobre a soma, $a(b+c)=ab+ac$, e sobre a diferença; o oposto de um número é $(-1)\\times a$.\n\nA propriedade distributiva facilita contas: $(-4)\\times13=(-4)\\times10+(-4)\\times3=-40-12=-52$.\n\nNos problemas, traduz cada ganho como positivo e cada perda como negativo, soma, e interpreta o sinal do resultado (positivo = lucro/subida; negativo = prejuízo/descida).\n\n**Erros comuns:** somar antes de multiplicar; esquecer o sinal quando se retira um parêntese precedido de menos ($-(3-5)=-3+5$); trocar a ordem da subtração (que não é comutativa).",
- "Uma **expressão numérica** é uma sequência de números ligados por operações e possivelmente agrupados por **parênteses** $(\;)$, **colchetes** $[\;]$ e **chavetas** $\\{\;\\}$. A subtração e a divisão **não** são comutativas nem associativas. A multiplicação é **distributiva** em relação à adição.",
+ "Uma **expressão numérica** é uma sequência de números ligados por operações e possivelmente agrupados por **parênteses** $(\\,)$, **colchetes** $[\\,]$ e **chavetas** $\\{\\,\\}$. A subtração e a divisão **não** são comutativas nem associativas. A multiplicação é **distributiva** em relação à adição.",
  "$$a(b+c)=ab+ac\\qquad -(a+b)=-a-b\\qquad -(a-b)=-a+b$$\n\nOrdem: parênteses → potências → $\\times,\\div$ → $+,-$.\n\nElementos especiais: $a+0=a$, $a\\times1=a$, $a\\times0=0$, $a+(-a)=0$.",
  "**Exemplo 1.** $-3+5\\times(-2)=-3+(-10)=-13$.\n\n**Exemplo 2 (parênteses).** $(-4+9)\\times(-3)=5\\times(-3)=-15$.\n\n**Exemplo 3 (divisão e soma).** $-12\\div(-3)+(-6)=4-6=-2$.\n\n**Exemplo 4 (retirar parênteses).** $10-(3-8)=10-3+8=15$.\n\n**Exemplo 5 (distributiva).** $(-4)\\times13=(-4)\\times10+(-4)\\times3=-40-12=-52$.\n\n**Aplicação.** Um comerciante registou em 4 semanas +25 000, −8 000, −12 000 e +4 000 Kz. Resultado: $25\\,000-8\\,000-12\\,000+4\\,000=+9\\,000$ Kz de lucro.",
  "Resolve connosco: **calcula $-2\\times[\\,5-(3-8)\\,]+6$.**\n\n1) Parênteses curvos: $3-8=-5$.\n\n2) Dentro do colchete: $5-(-5)=5+5=10$.\n\n3) Multiplica: $-2\\times10=-20$.\n\n4) Soma: $-20+6=-14$.\n\n5) Verifica cada passo: o sinal da subtração duplo virou soma ✓.",
  "**Desafio.** Coloca parênteses na expressão $-2+3\\times4-5$ de três maneiras diferentes e calcula o valor de cada uma. Quantos resultados distintos obténs? O que concluis sobre a importância dos parênteses?",
  "Consideras a competência dominada quando consegues: (1) seguir a ordem das operações com inteiros; (2) retirar parênteses precedidos de sinal; (3) usar as propriedades comutativa, associativa e distributiva; (4) traduzir e resolver problemas com ganhos e perdas.", ex)
-write(2, 17, A)
+write(1, 17, A)
 print('Z ok')
