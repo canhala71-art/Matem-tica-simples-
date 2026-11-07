@@ -1,0 +1,2 @@
+-- Resultados guardados das ferramentas do Nível 1 (aplicado ao projeto via SQL).
+-- Tabela tool_runs (RLS: ler/apagar só os próprios) e função record_tool_run (security definer, limite 1000 por utilizador).

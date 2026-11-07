@@ -1,6 +1,9 @@
-import { useMemo, useState, type ReactNode } from 'react';
+import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import * as T from '../lib/tools';
+import { deleteRun, listRuns, saveRun, type ToolRun } from '../lib/toolRuns';
+
+const ToolCtx = createContext<{ id: string; refresh: () => void }>({ id: 'reta', refresh: () => {} });
 
 const fmt = (n: number) => String(Math.round(n * 1e6) / 1e6).replace('.', ',');
 const num = (s: string) => Number(s.trim().replace(',', '.'));
@@ -19,8 +22,27 @@ export const TOOLS: { id: string; title: string }[] = [
   { id: 'raizes', title: 'Raízes' },
 ];
 
-function Out({ children }: { children: ReactNode }) {
-  return <div className="rounded-xl bg-electric-500/10 p-3 text-sm" aria-live="polite">{children}</div>;
+function Out({ children, save }: { children: ReactNode; save?: string }) {
+  const ctx = useContext(ToolCtx);
+  const [msg, setMsg] = useState<string | null>(null);
+  useEffect(() => { setMsg(null); }, [save]);
+  async function doSave() {
+    if (!save) return;
+    const err = await saveRun(ctx.id, save);
+    setMsg(err ?? 'Guardado.');
+    if (!err) ctx.refresh();
+  }
+  return (
+    <div className="space-y-2 rounded-xl bg-electric-500/10 p-3 text-sm" aria-live="polite">
+      <div>{children}</div>
+      {save && (
+        <div className="flex items-center gap-3">
+          <button className="btn-ghost !py-1 text-xs" onClick={() => void doSave()}>Guardar resultado</button>
+          {msg && <span className="text-xs">{msg}</span>}
+        </div>
+      )}
+    </div>
+  );
 }
 function Err({ msg }: { msg: string }) { return <p role="alert" className="text-sm text-red-600">{msg}</p>; }
 function Field({ label, value, set, ph }: { label: string; value: string; set: (v: string) => void; ph?: string }) {
@@ -70,7 +92,7 @@ function NumberLine() {
                 <g key={i}><circle cx={x(v, lo, hi)} cy={60} r={6} fill="#2f6bff" /><text x={x(v, lo, hi)} y={40} textAnchor="middle" fontSize={12} fontWeight={700} fill="#2f6bff">{fmt(v)}</text></g>
               ))}
             </svg>
-            {sorted.length > 1 && <Out>Por ordem crescente: {sorted.map(fmt).join(' < ')}</Out>}
+            {sorted.length > 1 && <Out save={`Ordem crescente: ${sorted.map(fmt).join(' < ')}`}>Por ordem crescente: {sorted.map(fmt).join(' < ')}</Out>}
             {values.some((v) => v < lo || v > hi) && <p className="muted">Há pontos fora do intervalo escolhido; não aparecem no desenho.</p>}
           </>
         );
@@ -106,7 +128,7 @@ function Operations() {
           </select></label>
         <Field label="Segundo número" value={b} set={setB} />
       </div>
-      {r.err ? <Err msg={r.err} /> : <Out>{r.ok}</Out>}
+      {r.err ? <Err msg={r.err} /> : <Out save={r.ok ?? undefined}>{r.ok}</Out>}
     </div>
   );
 }
@@ -120,6 +142,11 @@ function TimesTable() {
   const [wrong, setWrong] = useState<string[]>([]);
   const [t0, setT0] = useState(0);
   const [secs, setSecs] = useState<number | null>(null);
+  const [hist, setHist] = useState<ToolRun[]>([]);
+  const [saveMsg, setSaveMsg] = useState<string | null>(null);
+  const ctx = useContext(ToolCtx);
+  const loadHist = useCallback(() => { void listRuns('tabuada', 8).then(setHist); }, []);
+  useEffect(() => { loadHist(); }, [loadHist]);
   const active = qs.length > 0 && i < qs.length;
   function start() {
     const list = Array.from({ length: 10 }, () => ({ a: table, b: 1 + Math.floor(Math.random() * 12) }));
@@ -129,9 +156,17 @@ function TimesTable() {
     if (!active || ans.trim() === '') return;
     const q = qs[i];
     const ok = Number(ans) === q.a * q.b;
+    const finalScore = score + (ok ? 1 : 0);
     if (ok) setScore((s) => s + 1); else setWrong((w) => [...w, `${q.a} × ${q.b} = ${q.a * q.b} (respondeste ${ans})`]);
     setAns('');
-    if (i + 1 === qs.length) setSecs(Math.round((Date.now() - t0) / 1000));
+    if (i + 1 === qs.length) {
+      const took = Math.round((Date.now() - t0) / 1000);
+      setSecs(took);
+      void saveRun('tabuada', `Tabuada do ${table}`, finalScore, qs.length, took).then((err) => {
+        setSaveMsg(err ?? 'Resultado guardado.');
+        if (!err) { loadHist(); ctx.refresh(); }
+      });
+    }
     setI(i + 1);
   }
   return (
@@ -151,9 +186,18 @@ function TimesTable() {
           <button className="btn" disabled={ans.trim() === ''} onClick={send}>Responder</button>
         </div>
       )}
+      {hist.length > 0 && (
+        <div className="space-y-1 text-sm">
+          <p className="font-semibold">Os teus treinos (melhor: {Math.max(...hist.map((h) => h.score ?? 0))}/10)</p>
+          <ul className="space-y-0.5">
+            {hist.map((h) => <li key={h.id} className="flex justify-between"><span>{h.label} · {new Date(h.created_at).toLocaleDateString('pt-PT')}</span><span>{h.score}/{h.total}{h.seconds ? ` · ${h.seconds}s` : ''}</span></li>)}
+          </ul>
+        </div>
+      )}
       {qs.length > 0 && !active && (
         <Out>
           <p className="font-semibold">{score} de {qs.length} certas{secs !== null && ` em ${secs} s`}.</p>
+          {saveMsg && <p className="muted">{saveMsg}</p>}
           {wrong.length > 0 ? <ul className="mt-1 list-disc pl-5">{wrong.map((w) => <li key={w}>{w}</li>)}</ul> : <p>Sem erros. Tenta outra tabuada!</p>}
         </Out>
       )}
@@ -177,7 +221,7 @@ function GcdLcm() {
     <div className="space-y-3">
       <Field label="Números (separados por ; )" value={txt} set={setTxt} ph="12; 18; 30" />
       {r.err ? <Err msg={r.err} /> : r.ok && (
-        <Out>
+        <Out save={`MDC(${r.ok.ns.join('; ')}) = ${r.ok.g}; MMC = ${r.ok.l}`}>
           <p><strong>MDC = {r.ok.g}</strong> · <strong>MMC = {r.ok.l}</strong></p>
           <ul className="mt-1 list-disc pl-5">{r.ok.ns.map((n) => <li key={n}>{n} = {n === 1 ? '1' : pf(n)}</li>)}</ul>
           {r.ok.ns.length === 2 && T.euclidSteps(r.ok.ns[0], r.ok.ns[1]).length > 0 && (
@@ -216,7 +260,7 @@ function Fractions() {
         </select>
         {box('bn', 'bd')}
       </div>
-      {r.err ? <Err msg={r.err} /> : r.ok && <Out>Resultado (simplificado): <strong>{showFrac(r.ok.res)}</strong>{r.ok.res.d !== 1 && Math.abs(r.ok.res.n) > r.ok.res.d && <> = {T.mixed(r.ok.res)}</>} · decimal: {r.ok.dec}</Out>}
+      {r.err ? <Err msg={r.err} /> : r.ok && <Out save={`${f.an}/${f.ad} ${op === '*' ? '×' : op === '/' ? '÷' : op === '-' ? '−' : '+'} ${f.bn}/${f.bd} = ${showFrac(r.ok.res)}`}>Resultado (simplificado): <strong>{showFrac(r.ok.res)}</strong>{r.ok.res.d !== 1 && Math.abs(r.ok.res.n) > r.ok.res.d && <> = {T.mixed(r.ok.res)}</>} · decimal: {r.ok.dec}</Out>}
     </div>
   );
 }
@@ -235,10 +279,10 @@ function DecFrac() {
     <div className="grid gap-4 sm:grid-cols-2">
       <div className="space-y-2"><h3 className="font-semibold">Decimal → fração</h3>
         <Field label="Número decimal" value={dec} set={setDec} />
-        {a.err ? <Err msg={a.err} /> : a.ok && <Out>{dec.trim()} = <strong>{showFrac(a.ok)}</strong></Out>}</div>
+        {a.err ? <Err msg={a.err} /> : a.ok && <Out save={`${dec.trim()} = ${showFrac(a.ok)}`}>{dec.trim()} = <strong>{showFrac(a.ok)}</strong></Out>}</div>
       <div className="space-y-2"><h3 className="font-semibold">Fração → decimal</h3>
         <div className="grid grid-cols-2 gap-2"><Field label="Numerador" value={n} set={setN} /><Field label="Denominador" value={d} set={setD} /></div>
-        {b.err ? <Err msg={b.err} /> : b.ok && <Out>{n}/{d} = <strong>{b.ok.text}</strong>{b.ok.periodic && <span className="muted"> (o que está entre parênteses repete-se)</span>}</Out>}</div>
+        {b.err ? <Err msg={b.err} /> : b.ok && <Out save={`${n}/${d} = ${b.ok.text}`}>{n}/{d} = <strong>{b.ok.text}</strong>{b.ok.periodic && <span className="muted"> (o que está entre parênteses repete-se)</span>}</Out>}</div>
     </div>
   );
 }
@@ -263,25 +307,32 @@ function Percent() {
           <option value="up">Aumentar um valor em p%</option><option value="down">Diminuir um valor em p%</option>
         </select></label>
       <div className="grid grid-cols-2 gap-2"><Field label={lab[0]} value={x} set={setX} /><Field label={lab[1]} value={y} set={setY} /></div>
-      {r.err ? <Err msg={r.err} /> : <Out>{r.ok}</Out>}
+      {r.err ? <Err msg={r.err} /> : <Out save={r.ok ?? undefined}>{r.ok}</Out>}
     </div>
   );
 }
 
 function Powers() {
-  const [b, setB] = useState('2');
-  const [e, setE] = useState('10');
+  const [b, setB] = useState('0,5');
+  const [e, setE] = useState('3');
   const r = run(() => {
-    if (!isInt(b) || !isInt(e)) throw new Error('Usa números inteiros.');
-    const bb = Number(b), ee = Number(e);
-    const p = T.power(bb, ee);
-    const expand = ee >= 1 && ee <= 6 ? `${Array(ee).fill(bb < 0 ? `(${bb})` : bb).join(' × ')} = ` : '';
-    return `${bb < 0 ? `(${bb})` : bb}^${ee} = ${expand}${p.text}${ee < 0 ? ` (porque a⁻ⁿ = 1/aⁿ)` : ee === 0 ? ' (todo o número não nulo elevado a 0 é 1)' : ''}`;
+    const res = T.powerRational(b, e);
+    const base = T.parseRational(b);
+    const bt = base.d === 1n ? String(base.n) : `${base.n}/${base.d}`;
+    const bs = base.n < 0n || base.d !== 1n ? `(${bt})` : bt;
+    const head = `${bs}^${e.trim().replace('.', ',')} = `;
+    if (res.exact) {
+      const ex = res.exact;
+      const frac = ex.d === 1n ? String(ex.n) : `${ex.n}/${ex.d}`;
+      const dec = ex.d === 1n ? '' : ` = ${T.bigFractionToDecimal(ex)}`;
+      return { text: `${head}${frac}${dec}`, note: res.note };
+    }
+    return { text: `${head}≈ ${fmt(res.approx ?? NaN)}`, note: res.note };
   });
   return (
     <div className="space-y-3">
-      <div className="grid grid-cols-2 gap-2"><Field label="Base" value={b} set={setB} /><Field label="Expoente" value={e} set={setE} /></div>
-      {r.err ? <Err msg={r.err} /> : <Out>{r.ok}</Out>}
+      <div className="grid grid-cols-2 gap-2"><Field label="Base (inteiro, decimal ou fração)" value={b} set={setB} ph="0,5  ou  2/3" /><Field label="Expoente (inteiro, decimal ou fração)" value={e} set={setE} ph="3  ou  1/2" /></div>
+      {r.err ? <Err msg={r.err} /> : r.ok && <Out save={r.ok.text}><p>{r.ok.text}</p>{r.ok.note && <p className="muted">{r.ok.note}</p>}</Out>}
     </div>
   );
 }
@@ -301,7 +352,7 @@ function Roots() {
           <select className="input mt-1" value={idx} onChange={(e) => setIdx(Number(e.target.value) as 2 | 3)}><option value={2}>Quadrada √</option><option value={3}>Cúbica ∛</option></select></label>
       </div>
       {r.err ? <Err msg={r.err} /> : r.ok && (
-        <Out>
+        <Out save={r.ok.exact !== null ? `${idx === 2 ? '√' : '∛'}${n.trim()} = ${r.ok.exact}` : `${idx === 2 ? '√' : '∛'}${n.trim()} = ${r.ok.simplified} ≈ ${fmt(r.ok.approx)}`}>
           {r.ok.exact !== null ? <>É uma raiz <strong>exata</strong>: {idx === 2 ? '√' : '∛'}{n.trim()} = <strong>{r.ok.exact}</strong></> :
             <>{idx === 2 ? '√' : '∛'}{n.trim()} = <strong>{r.ok.simplified}</strong> ≈ {fmt(r.ok.approx)} (não é exata)</>}
         </Out>
@@ -318,7 +369,13 @@ const BODY: Record<string, () => ReactNode> = {
 export function ToolsPage() {
   const [sp, setSp] = useSearchParams();
   const id = useMemo(() => (TOOLS.some((t) => t.id === sp.get('f')) ? (sp.get('f') as string) : 'reta'), [sp]);
+  const [saved, setSaved] = useState<ToolRun[]>([]);
+  const refresh = useCallback(() => { void listRuns(undefined, 30).then((r) => setSaved(r.filter((x) => x.tool !== 'tabuada').slice(0, 15))); }, []);
+  useEffect(() => { refresh(); }, [refresh]);
+  const ctxValue = useMemo(() => ({ id, refresh }), [id, refresh]);
+  const title = (t: string) => TOOLS.find((x) => x.id === t)?.title ?? t;
   return (
+    <ToolCtx.Provider value={ctxValue}>
     <div className="space-y-4">
       <Link to="/laboratorio" className="muted">← Laboratório</Link>
       <h1 className="text-2xl font-bold">Ferramentas do Nível 1</h1>
@@ -330,6 +387,20 @@ export function ToolsPage() {
         ))}
       </div>
       <div className="card" key={id}>{BODY[id]()}</div>
+      <section className="card space-y-2">
+        <h2 className="font-semibold">Resultados guardados</h2>
+        {saved.length === 0 ? <p className="muted">Ainda não guardaste nenhum. Faz um cálculo e carrega em "Guardar resultado".</p> : (
+          <ul className="space-y-1 text-sm">
+            {saved.map((r) => (
+              <li key={r.id} className="flex items-start justify-between gap-2">
+                <span><span className="badge mr-2">{title(r.tool)}</span>{r.label}</span>
+                <button className="muted underline" onClick={() => void deleteRun(r.id).then(refresh)}>apagar</button>
+              </li>
+            ))}
+          </ul>
+        )}
+      </section>
     </div>
+    </ToolCtx.Provider>
   );
 }
