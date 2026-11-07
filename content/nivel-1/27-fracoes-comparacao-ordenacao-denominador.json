@@ -1,0 +1,263 @@
+{
+ "subject": "fracoes",
+ "topic_title": "Comparação de frações",
+ "topic_slug": "comparacao-fracoes",
+ "lesson_title": "Comparação e ordenação de frações; redução ao mesmo denominador",
+ "lesson_slug": "fracoes-comparacao-ordenacao-denominador",
+ "summary": "Compara e ordena frações reduzindo-as ao mesmo denominador com o m.m.c.",
+ "minutes": 25,
+ "blocks": {
+  "introduction": "**Objetivos:** comparar e ordenar frações, reduzindo-as ao mesmo denominador com o m.m.c. **Pré-requisitos:** frações equivalentes e m.m.c.\n\nQual é maior, $\\frac{3}{4}$ de uma pizza ou $\\frac{5}{8}$ de outra igual? Para saber, comparamos frações: é uma competência essencial em receitas, medidas e descontos.",
+  "intuition": "Três casos: (1) **mesmo denominador**: é maior a de maior numerador ($\\frac{5}{7}>\\frac{3}{7}$); (2) **mesmo numerador**: é maior a de **menor** denominador ($\\frac{1}{3}>\\frac{1}{5}$, as partes são maiores); (3) **denominadores diferentes**: reduz ao mesmo denominador com o **m.m.c.** e compara os numeradores.\n\nPara reduzir ao mesmo denominador: acha o m.m.c. dos denominadores; multiplica numerador e denominador de cada fração pelo número que leva o denominador ao m.m.c. Ex.: $\\frac{2}{3}$ e $\\frac{3}{4}$: m.m.c. = 12; $\\frac{8}{12}<\\frac{9}{12}$, logo $\\frac{2}{3}<\\frac{3}{4}$.\n\nAtalho da **referência**: compara com $\\frac{1}{2}$ ou com 1. Por exemplo, $\\frac{3}{7}<\\frac{1}{2}<\\frac{4}{7}$. Ou vê quanto falta para 1: $\\frac{9}{10}$ falta $\\frac{1}{10}$, $\\frac{7}{8}$ falta $\\frac{1}{8}$, e $\\frac{1}{10}<\\frac{1}{8}$, portanto $\\frac{9}{10}>\\frac{7}{8}$.\n\nPara **ordenar** várias frações, reduz todas ao mesmo denominador.\n\n**Erros comuns:** achar que o denominador maior dá fração maior; comparar só os numeradores quando os denominadores são diferentes.",
+  "definition": "**Reduzir ao mesmo denominador** é substituir cada fração por uma equivalente cujo denominador é um múltiplo comum dos denominadores (usa-se o m.m.c.). Dadas $\\frac{a}{b}$ e $\\frac{c}{d}$, $\\frac{a}{b}<\\frac{c}{d}\\iff ad<bc$ (com $b,d>0$).",
+  "formulas": "$$\\frac{a}{b}<\\frac{c}{d}\\iff a\\times d<b\\times c\\quad(b,d>0)$$\n\nMesmo denominador: compara numeradores. Mesmo numerador: o menor denominador dá a maior fração. Denominador comum: m.m.c.$(b,d)$.",
+  "worked_example": "**Exemplo 1.** $\\frac{5}{7}>\\frac{3}{7}$ (mesmo denominador).\n\n**Exemplo 2.** $\\frac{1}{3}>\\frac{1}{5}$ (mesmo numerador, menor denominador).\n\n**Exemplo 3.** $\\frac{2}{3}$ e $\\frac{3}{4}$: m.m.c. = 12; $\\frac{8}{12}<\\frac{9}{12}$.\n\n**Exemplo 4 (ordenar).** $\\frac{3}{4},\\frac{2}{3},\\frac{5}{6}$: em doze avos, $\\frac{9}{12},\\frac{8}{12},\\frac{10}{12}$. Ordem crescente: $\\frac{2}{3}<\\frac{3}{4}<\\frac{5}{6}$.\n\n**Exemplo 5 (referência).** $\\frac{3}{7}<\\frac{1}{2}$ porque $\\frac{6}{14}<\\frac{7}{14}$.\n\n**Aplicação.** Em duas receitas pedem $\\frac{3}{4}$ e $\\frac{5}{8}$ de litro de leite. Em oitavos, $\\frac{6}{8}>\\frac{5}{8}$: a primeira leva mais.",
+  "guided_exercise": "Resolve connosco: **ordena do menor para o maior $\\frac{7}{9}$, $\\frac{3}{4}$ e $\\frac{11}{12}$.**\n\n1) m.m.c.(9, 4, 12) = 36.\n\n2) $\\frac{7}{9}=\\frac{28}{36}$, $\\frac{3}{4}=\\frac{27}{36}$, $\\frac{11}{12}=\\frac{33}{36}$.\n\n3) $27<28<33$.\n\n4) Ordem: $\\frac{3}{4}<\\frac{7}{9}<\\frac{11}{12}$.",
+  "independent_exercise": "Chegou a tua vez. Resolve os exercícios sem pressa e usa **Verificar** para confirmar. Se errares, não faz mal: lê a resolução passo a passo, percebe onde o raciocínio escorregou e tenta outra vez. É assim que se aprende de verdade.",
+  "challenge": "**Desafio.** Encontra uma fração que esteja estritamente entre $\\frac{1}{3}$ e $\\frac{1}{2}$ e outra entre $\\frac{2}{5}$ e $\\frac{3}{7}$. Quantas frações pode haver entre duas frações diferentes?",
+  "assessment": "Consideras a competência dominada quando consegues: (1) comparar frações com igual denominador ou igual numerador; (2) reduzir ao mesmo denominador com o m.m.c.; (3) ordenar várias frações; (4) usar referências como 1/2 e 1."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "fracoes.comparar",
+   "statement": "Qual é o maior: $\\frac{3}{5}$ ou $\\frac{4}{5}$? Escreve o maior em forma de fração a/b.",
+   "options": null,
+   "answer": {
+    "value": "4/5",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Com denominador comum 5: $\\frac{3}{5}$ e $\\frac{4}{5}$. O maior é $\\frac{4}{5}$.",
+   "steps": [
+    "m.m.c.(5, 5) = 5.",
+    "Compara numeradores."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "fracoes.comparar",
+   "statement": "Qual é o maior: $\\frac{2}{3}$ ou $\\frac{3}{4}$? Escreve o maior em forma de fração a/b.",
+   "options": null,
+   "answer": {
+    "value": "3/4",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Com denominador comum 12: $\\frac{8}{12}$ e $\\frac{9}{12}$. O maior é $\\frac{3}{4}$.",
+   "steps": [
+    "m.m.c.(3, 4) = 12.",
+    "Compara numeradores."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "fracoes.comparar",
+   "statement": "Qual é o maior: $\\frac{5}{8}$ ou $\\frac{7}{12}$? Escreve o maior em forma de fração a/b.",
+   "options": null,
+   "answer": {
+    "value": "5/8",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Com denominador comum 24: $\\frac{15}{24}$ e $\\frac{14}{24}$. O maior é $\\frac{5}{8}$.",
+   "steps": [
+    "m.m.c.(8, 12) = 24.",
+    "Compara numeradores."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "fracoes.comparar",
+   "statement": "Qual é o maior: $\\frac{1}{6}$ ou $\\frac{1}{8}$? Escreve o maior em forma de fração a/b.",
+   "options": null,
+   "answer": {
+    "value": "1/6",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Com denominador comum 24: $\\frac{4}{24}$ e $\\frac{3}{24}$. O maior é $\\frac{1}{6}$.",
+   "steps": [
+    "m.m.c.(6, 8) = 24.",
+    "Compara numeradores."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "fracoes.comparar",
+   "statement": "Reduz $\\frac{1}{3}$ e $\\frac{1}{4}$ ao mesmo denominador: qual é o m.m.c. dos denominadores?",
+   "options": null,
+   "answer": {
+    "value": "12",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "m.m.c.(3, 4) = 12.",
+   "steps": [
+    "Múltiplos de 3 e de 4."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "fracoes.comparar",
+   "statement": "Reduz $\\frac{2}{5}$ ao denominador 20: qual é o numerador?",
+   "options": null,
+   "answer": {
+    "value": "8",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "20 ÷ 5 = 4 e 2 × 4 = 8.",
+   "steps": [
+    "Multiplica por 4."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "fracoes.comparar",
+   "statement": "Qual é a fração do meio, por ordem crescente, entre $\\frac{3}{4}$, $\\frac{2}{3}$ e $\\frac{5}{6}$? (a/b)",
+   "options": null,
+   "answer": {
+    "value": "3/4",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Denominador 12: 9/12, 8/12, 10/12. Ordem: 8/12 < 9/12 < 10/12; a do meio é 3/4.",
+   "steps": [
+    "Denominador comum 12."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "fracoes.comparar",
+   "statement": "Qual é a maior fração: $\\frac{7}{9}$, $\\frac{3}{4}$ ou $\\frac{11}{12}$? (a/b)",
+   "options": null,
+   "answer": {
+    "value": "11/12",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Denominador 36: 28/36, 27/36, 33/36. O maior é 11/12.",
+   "steps": [
+    "m.m.c. = 36."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 1,
+   "competency": "fracoes.comparar",
+   "statement": "Com o mesmo denominador, é maior a fração de maior numerador.",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "Mais partes iguais → mais quantidade.",
+   "steps": [
+    "Mesmo denominador."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "fracoes.comparar",
+   "statement": "Com o mesmo numerador, é maior a fração de maior denominador.",
+   "options": null,
+   "answer": {
+    "boolean": false
+   },
+   "tolerance": 0,
+   "explanation": "Quanto maior o denominador, menores as partes: $\\frac{1}{8}<\\frac{1}{4}$.",
+   "steps": [
+    "Partes mais pequenas."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "fracoes.comparar",
+   "statement": "$\\frac{3}{7}<\\frac{1}{2}$.",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "6/14 < 7/14.",
+   "steps": [
+    "Denominador 14."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "fracoes.comparar",
+   "statement": "Qual é a ordem crescente de $\\frac{1}{2}$, $\\frac{1}{3}$, $\\frac{1}{4}$?",
+   "options": [
+    {
+     "id": "a",
+     "label": "1/4 < 1/3 < 1/2"
+    },
+    {
+     "id": "b",
+     "label": "1/2 < 1/3 < 1/4"
+    },
+    {
+     "id": "c",
+     "label": "1/3 < 1/4 < 1/2"
+    },
+    {
+     "id": "d",
+     "label": "1/4 < 1/2 < 1/3"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "Mesmo numerador: quanto maior o denominador, menor a fração.",
+   "steps": [
+    "Partes menores."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 3,
+   "competency": "fracoes.comparar",
+   "statement": "Qual das frações está mais perto de 1?",
+   "options": [
+    {
+     "id": "a",
+     "label": "$\\frac{9}{10}$"
+    },
+    {
+     "id": "b",
+     "label": "$\\frac{7}{8}$"
+    },
+    {
+     "id": "c",
+     "label": "$\\frac{5}{6}$"
+    },
+    {
+     "id": "d",
+     "label": "$\\frac{3}{4}$"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "Falta $\\frac{1}{10}$, $\\frac{1}{8}$, $\\frac{1}{6}$ e $\\frac{1}{4}$: a que falta menos é 9/10.",
+   "steps": [
+    "O que falta para 1."
+   ]
+  }
+ ]
+}

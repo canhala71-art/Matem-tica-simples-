@@ -1,0 +1,253 @@
+{
+ "subject": "fracoes",
+ "topic_title": "Multiplicação e divisão de frações",
+ "topic_slug": "multiplicacao-divisao-fracoes",
+ "lesson_title": "Multiplicação e divisão de frações",
+ "lesson_slug": "fracoes-multiplicacao-divisao",
+ "summary": "Multiplica frações, calcula fração de fração e divide frações multiplicando pelo inverso.",
+ "minutes": 25,
+ "blocks": {
+  "introduction": "**Objetivos:** multiplicar e dividir frações, simplificar antes de multiplicar e resolver problemas de fração de fração. **Pré-requisitos:** simplificação e multiplicação de naturais.\n\nSe tens $\\frac{3}{4}$ de uma garrafa e bebes $\\frac{2}{3}$ do que tens, quanto bebeste? É uma **fração de uma fração**, que se calcula multiplicando.",
+  "intuition": "**Multiplicação:** multiplica os numeradores entre si e os denominadores entre si: $\\frac{2}{3}\\times\\frac{3}{4}=\\frac{6}{12}=\\frac{1}{2}$. Simplificar **antes** facilita: o 3 do numerador corta com o 3 do denominador. Um número inteiro é uma fração com denominador 1: $6\\times\\frac{3}{4}=\\frac{18}{4}=\\frac{9}{2}$.\n\n**Divisão:** dividir por uma fração é multiplicar pelo seu **inverso**. O inverso de $\\frac{a}{b}$ é $\\frac{b}{a}$ (o produto dá 1). Assim, $\\frac{1}{2}\\div\\frac{1}{4}=\\frac{1}{2}\\times4=2$: em meio inteiro cabem 2 quartos.\n\nA intuição: multiplicar por uma fração própria **diminui** (é tomar uma parte) e dividir por uma fração própria **aumenta** (quantas vezes cabe a parte).\n\nPara números mistos, converte primeiro em frações impróprias.\n\n**Erros comuns:** achar que se multiplica em cruz como na soma (aqui multiplica-se em linha); esquecer de inverter só a segunda fração na divisão; inverter as duas.",
+  "definition": "O **produto** de $\\frac{a}{b}$ e $\\frac{c}{d}$ é $\\frac{a\\times c}{b\\times d}$. O **inverso** (ou recíproco) de $\\frac{a}{b}$ ($a\\neq0$) é $\\frac{b}{a}$. O **quociente** $\\frac{a}{b}\\div\\frac{c}{d}$ é $\\frac{a}{b}\\times\\frac{d}{c}$ ($c\\neq0$).",
+  "formulas": "$$\\frac{a}{b}\\times\\frac{c}{d}=\\frac{ac}{bd}\\qquad\\frac{a}{b}\\div\\frac{c}{d}=\\frac{a}{b}\\times\\frac{d}{c}=\\frac{ad}{bc}$$\n\n$$\\frac{a}{b}\\times\\frac{b}{a}=1\\qquad n=\\frac{n}{1}$$",
+  "worked_example": "**Exemplo 1.** $\\frac{2}{3}\\times\\frac{3}{4}=\\frac{6}{12}=\\frac{1}{2}$.\n\n**Exemplo 2 (simplificar antes).** $\\frac{5}{6}\\times\\frac{3}{10}=\\frac{5\\times3}{6\\times10}=\\frac{15}{60}=\\frac{1}{4}$.\n\n**Exemplo 3 (fração de fração).** $\\frac{3}{4}$ de $\\frac{2}{3}$ é $\\frac{3}{4}\\times\\frac{2}{3}=\\frac{1}{2}$.\n\n**Exemplo 4 (divisão).** $\\frac{1}{2}\\div\\frac{1}{4}=\\frac{1}{2}\\times\\frac{4}{1}=2$.\n\n**Exemplo 5 (inteiro ÷ fração).** $6\\div\\frac{3}{4}=6\\times\\frac{4}{3}=8$.\n\n**Aplicação.** Uma fita de 6 m cortada em pedaços de $\\frac{3}{4}$ m dá $6\\div\\frac{3}{4}=8$ pedaços.",
+  "guided_exercise": "Resolve connosco: **calcula $\\frac{5}{6}\\div\\frac{10}{3}$.**\n\n1) Inverte a segunda: $\\frac{10}{3}\\to\\frac{3}{10}$.\n\n2) Multiplica: $\\frac{5}{6}\\times\\frac{3}{10}=\\frac{15}{60}$.\n\n3) Simplifica por 15: $\\frac{1}{4}$.\n\n4) Prova: $\\frac{1}{4}\\times\\frac{10}{3}=\\frac{10}{12}=\\frac{5}{6}$ ✓.",
+  "independent_exercise": "Chegou a tua vez. Resolve os exercícios sem pressa e usa **Verificar** para confirmar. Se errares, não faz mal: lê a resolução passo a passo, percebe onde o raciocínio escorregou e tenta outra vez. É assim que se aprende de verdade.",
+  "challenge": "**Desafio.** Um tanque tem $\\frac{3}{5}$ de água. Gastas $\\frac{1}{3}$ dessa água. Que fração do tanque inteiro gastaste? E que fração do tanque resta? Faz um desenho para confirmares.",
+  "assessment": "Consideras a competência dominada quando consegues: (1) multiplicar frações e simplificar; (2) calcular fração de fração; (3) dividir por uma fração usando o inverso; (4) resolver problemas de partição."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "fracoes.multiplicar_dividir",
+   "statement": "Calcula $\\frac{2}{3}\\times\\frac{3}{4}$ (forma mais simples, a/b).",
+   "options": null,
+   "answer": {
+    "value": "1/2",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Multiplica numeradores e denominadores: $\\frac{6}{12}=\\frac{1}{2}$.",
+   "steps": [
+    "Simplifica antes ou depois.",
+    "= \\frac{1}{2}."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "fracoes.multiplicar_dividir",
+   "statement": "Calcula $\\frac{5}{6}\\times\\frac{3}{10}$ (forma mais simples, a/b).",
+   "options": null,
+   "answer": {
+    "value": "1/4",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Multiplica numeradores e denominadores: $\\frac{15}{60}=\\frac{1}{4}$.",
+   "steps": [
+    "Simplifica antes ou depois.",
+    "= \\frac{1}{4}."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "fracoes.multiplicar_dividir",
+   "statement": "Calcula $\\frac{4}{9}\\times\\frac{3}{8}$ (forma mais simples, a/b).",
+   "options": null,
+   "answer": {
+    "value": "1/6",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Multiplica numeradores e denominadores: $\\frac{12}{72}=\\frac{1}{6}$.",
+   "steps": [
+    "Simplifica antes ou depois.",
+    "= \\frac{1}{6}."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "fracoes.multiplicar_dividir",
+   "statement": "Calcula $\\frac{7}{5}\\times\\frac{10}{21}$ (forma mais simples, a/b).",
+   "options": null,
+   "answer": {
+    "value": "2/3",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Multiplica numeradores e denominadores: $\\frac{70}{105}=\\frac{2}{3}$.",
+   "steps": [
+    "Simplifica antes ou depois.",
+    "= \\frac{2}{3}."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "fracoes.multiplicar_dividir",
+   "statement": "Calcula $\\frac{1}{2}\\div\\frac{1}{4}$ (forma mais simples, a/b).",
+   "options": null,
+   "answer": {
+    "value": "2",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Multiplica pelo inverso: $\\frac{1}{2}\\times\\frac{4}{1}=2$.",
+   "steps": [
+    "Inverte a segunda.",
+    "Multiplica e simplifica."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "fracoes.multiplicar_dividir",
+   "statement": "Calcula $\\frac{3}{4}\\div\\frac{9}{16}$ (forma mais simples, a/b).",
+   "options": null,
+   "answer": {
+    "value": "4/3",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Multiplica pelo inverso: $\\frac{3}{4}\\times\\frac{16}{9}=\\frac{4}{3}$.",
+   "steps": [
+    "Inverte a segunda.",
+    "Multiplica e simplifica."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "fracoes.multiplicar_dividir",
+   "statement": "Calcula $\\frac{5}{6}\\div\\frac{10}{3}$ (forma mais simples, a/b).",
+   "options": null,
+   "answer": {
+    "value": "1/4",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Multiplica pelo inverso: $\\frac{5}{6}\\times\\frac{3}{10}=\\frac{1}{4}$.",
+   "steps": [
+    "Inverte a segunda.",
+    "Multiplica e simplifica."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "fracoes.multiplicar_dividir",
+   "statement": "Calcula $\\frac{2}{3}\\div\\frac{4}{9}$ (forma mais simples, a/b).",
+   "options": null,
+   "answer": {
+    "value": "3/2",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Multiplica pelo inverso: $\\frac{2}{3}\\times\\frac{9}{4}=\\frac{3}{2}$.",
+   "steps": [
+    "Inverte a segunda.",
+    "Multiplica e simplifica."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "fracoes.multiplicar_dividir",
+   "statement": "Calcula $\\frac{3}{4}$ de $\\frac{2}{3}$ de 24.",
+   "options": null,
+   "answer": {
+    "value": "12",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "$\\frac{3}{4}\\times\\frac{2}{3}=\\frac{1}{2}$ e $\\frac{1}{2}$ de 24 = 12.",
+   "steps": [
+    "Multiplica as frações.",
+    "Depois por 24."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "fracoes.multiplicar_dividir",
+   "statement": "Uma fita de 6 m é cortada em pedaços de $\\frac{3}{4}$ m. Quantos pedaços saem?",
+   "options": null,
+   "answer": {
+    "value": "8",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "$6\\div\\frac{3}{4}=6\\times\\frac{4}{3}=8$.",
+   "steps": [
+    "Divisão por fração = × inverso."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "fracoes.multiplicar_dividir",
+   "statement": "O inverso de $\\frac{3}{5}$ é $\\frac{5}{3}$.",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "O inverso troca numerador com denominador: o produto é 1.",
+   "steps": [
+    "3/5 × 5/3 = 1."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "fracoes.multiplicar_dividir",
+   "statement": "Multiplicar um número por uma fração própria dá um resultado maior que o número.",
+   "options": null,
+   "answer": {
+    "boolean": false
+   },
+   "tolerance": 0,
+   "explanation": "Por exemplo $\\frac{1}{2}\\times10=5<10$.",
+   "steps": [
+    "Fração própria < 1."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "fracoes.multiplicar_dividir",
+   "statement": "Qual é o resultado de $\\frac{2}{5}\\div\\frac{4}{15}$?",
+   "options": [
+    {
+     "id": "a",
+     "label": "$\\frac{3}{2}$"
+    },
+    {
+     "id": "b",
+     "label": "$\\frac{8}{75}$"
+    },
+    {
+     "id": "c",
+     "label": "$\\frac{2}{3}$"
+    },
+    {
+     "id": "d",
+     "label": "$\\frac{6}{20}$"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "$\\frac{2}{5}\\times\\frac{15}{4}=\\frac{30}{20}=\\frac{3}{2}$.",
+   "steps": [
+    "Inverte e multiplica."
+   ]
+  }
+ ]
+}

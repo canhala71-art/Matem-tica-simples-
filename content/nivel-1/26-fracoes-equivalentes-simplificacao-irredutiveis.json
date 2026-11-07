@@ -1,0 +1,284 @@
+{
+ "subject": "fracoes",
+ "topic_title": "Frações equivalentes e simplificação",
+ "topic_slug": "fracoes-equivalentes-simplificacao",
+ "lesson_title": "Frações equivalentes, simplificação e frações irredutíveis",
+ "lesson_slug": "fracoes-equivalentes-simplificacao-irredutiveis",
+ "summary": "Gera frações equivalentes, simplifica até à fração irredutível e reconhece quando duas frações são iguais.",
+ "minutes": 25,
+ "blocks": {
+  "introduction": "**Objetivos:** reconhecer frações equivalentes, gerá-las, simplificar e obter a fração irredutível. **Pré-requisitos:** conceito de fração, divisores e m.d.c.\n\nMeia pizza é o mesmo que 2 quartos ou 4 oitavos. Parecem frações diferentes, mas representam a **mesma quantidade**. Saber isto é a chave para somar, comparar e simplificar frações.",
+  "intuition": "Se multiplicas (ou divides) o numerador e o denominador pelo **mesmo** número diferente de zero, obténs uma fração **equivalente**: $\\frac{1}{2}=\\frac{2}{4}=\\frac{3}{6}=\\frac{4}{8}$. O valor não muda, só o número de partes em que dividimos o inteiro.\n\n**Simplificar** é dividir numerador e denominador pelo mesmo divisor comum. Fica-se com uma fração mais curta mas igual. Se dividires pelo **m.d.c.**, obténs a **fração irredutível** (já não se pode simplificar mais). Ex.: $\\frac{30}{45}$, m.d.c. = 15, dá $\\frac{2}{3}$.\n\nDuas frações $\\frac{a}{b}$ e $\\frac{c}{d}$ são equivalentes se $a\\times d=b\\times c$ (produtos cruzados). Por exemplo $\\frac{3}{4}$ e $\\frac{9}{12}$: $3\\times12=36=4\\times9$ ✓.\n\n**Erros comuns:** somar o mesmo número ao numerador e ao denominador (muda o valor!); simplificar só uma vez e parar antes da irredutível; multiplicar só o numerador.",
+  "definition": "Duas frações são **equivalentes** se representam o mesmo número: $\\frac{a}{b}=\\frac{c}{d}\\iff ad=bc$. **Simplificar** é substituir $\\frac{a}{b}$ por $\\frac{a\\div k}{b\\div k}$ com $k$ divisor comum. Uma fração é **irredutível** quando $\\text{m.d.c.}(a,b)=1$.",
+  "formulas": "$$\\frac{a}{b}=\\frac{a\\times k}{b\\times k}=\\frac{a\\div k}{b\\div k}\\ (k\\ne0)$$\n\nIrredutível: $\\dfrac{a}{b}=\\dfrac{a\\div g}{b\\div g}$ com $g=\\text{m.d.c.}(a,b)$.\n\nTeste de equivalência: $\\dfrac{a}{b}=\\dfrac{c}{d}\\iff a\\times d=b\\times c$.",
+  "worked_example": "**Exemplo 1.** $\\frac{1}{2}=\\frac{1\\times4}{2\\times4}=\\frac{4}{8}$.\n\n**Exemplo 2.** $\\frac{12}{18}$: m.d.c. = 6, logo $\\frac{12\\div6}{18\\div6}=\\frac{2}{3}$.\n\n**Exemplo 3 (várias etapas).** $\\frac{36}{60}=\\frac{18}{30}=\\frac{6}{10}=\\frac{3}{5}$ (dividindo por 2, 3, 2... ou direto por 12).\n\n**Exemplo 4 (teste cruzado).** $\\frac{3}{4}$ e $\\frac{9}{12}$: $3\\times12=36$ e $4\\times9=36$, são equivalentes.\n\n**Exemplo 5 (não equivalentes).** $\\frac{2}{3}$ e $\\frac{3}{4}$: $2\\times4=8\\neq9=3\\times3$.\n\n**Aplicação.** Num grupo de 30 alunos, 18 gostam de futebol: $\\frac{18}{30}=\\frac{3}{5}$ dos alunos.",
+  "guided_exercise": "Resolve connosco: **simplifica $\\frac{84}{126}$ até à fração irredutível.**\n\n1) Decompõe: $84=2^2\\times3\\times7$ e $126=2\\times3^2\\times7$.\n\n2) m.d.c. = $2\\times3\\times7=42$.\n\n3) $\\frac{84\\div42}{126\\div42}=\\frac{2}{3}$.\n\n4) Prova cruzada: $84\\times3=252=126\\times2$ ✓.",
+  "independent_exercise": "Chegou a tua vez. Resolve os exercícios sem pressa e usa **Verificar** para confirmar. Se errares, não faz mal: lê a resolução passo a passo, percebe onde o raciocínio escorregou e tenta outra vez. É assim que se aprende de verdade.",
+  "challenge": "**Desafio.** Quantas frações equivalentes a $\\frac{3}{4}$ têm o denominador entre 10 e 40? Lista-as e verifica uma pelo teste cruzado.",
+  "assessment": "Consideras a competência dominada quando consegues: (1) gerar frações equivalentes; (2) simplificar usando o m.d.c.; (3) reconhecer a irredutível; (4) testar equivalência por produtos cruzados."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "fracoes.equivalentes",
+   "statement": "Completa: $\\frac{1}{2}=\\frac{☐}{8}$. Qual é o numerador?",
+   "options": null,
+   "answer": {
+    "value": "4",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Multiplica numerador e denominador por 4: $\\frac{4}{8}$.",
+   "steps": [
+    "2 × 4 = 8.",
+    "1 × 4 = 4."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "fracoes.equivalentes",
+   "statement": "Completa: $\\frac{3}{5}=\\frac{☐}{30}$. Qual é o numerador?",
+   "options": null,
+   "answer": {
+    "value": "18",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Multiplica numerador e denominador por 6: $\\frac{18}{30}$.",
+   "steps": [
+    "5 × 6 = 30.",
+    "3 × 6 = 18."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "fracoes.equivalentes",
+   "statement": "Completa: $\\frac{2}{7}=\\frac{☐}{21}$. Qual é o numerador?",
+   "options": null,
+   "answer": {
+    "value": "6",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Multiplica numerador e denominador por 3: $\\frac{6}{21}$.",
+   "steps": [
+    "7 × 3 = 21.",
+    "2 × 3 = 6."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "fracoes.equivalentes",
+   "statement": "Completa: $\\frac{5}{8}=\\frac{☐}{40}$. Qual é o numerador?",
+   "options": null,
+   "answer": {
+    "value": "25",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Multiplica numerador e denominador por 5: $\\frac{25}{40}$.",
+   "steps": [
+    "8 × 5 = 40.",
+    "5 × 5 = 25."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "fracoes.equivalentes",
+   "statement": "Simplifica $\\frac{12}{18}$ até à fração irredutível.",
+   "options": null,
+   "answer": {
+    "value": "2/3",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "m.d.c.(12, 18) = 6. Dividindo: $\\frac{2}{3}$.",
+   "steps": [
+    "m.d.c. = 6.",
+    "Divide numerador e denominador."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "fracoes.equivalentes",
+   "statement": "Simplifica $\\frac{30}{45}$ até à fração irredutível.",
+   "options": null,
+   "answer": {
+    "value": "2/3",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "m.d.c.(30, 45) = 15. Dividindo: $\\frac{2}{3}$.",
+   "steps": [
+    "m.d.c. = 15.",
+    "Divide numerador e denominador."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "fracoes.equivalentes",
+   "statement": "Simplifica $\\frac{28}{42}$ até à fração irredutível.",
+   "options": null,
+   "answer": {
+    "value": "2/3",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "m.d.c.(28, 42) = 14. Dividindo: $\\frac{2}{3}$.",
+   "steps": [
+    "m.d.c. = 14.",
+    "Divide numerador e denominador."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "fracoes.equivalentes",
+   "statement": "Simplifica $\\frac{36}{60}$ até à fração irredutível.",
+   "options": null,
+   "answer": {
+    "value": "3/5",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "m.d.c.(36, 60) = 12. Dividindo: $\\frac{3}{5}$.",
+   "steps": [
+    "m.d.c. = 12.",
+    "Divide numerador e denominador."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "fracoes.equivalentes",
+   "statement": "Qual é o m.d.c. de 24 e 40?",
+   "options": null,
+   "answer": {
+    "value": "8",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "24 = 2³·3 e 40 = 2³·5, comuns 2³ = 8.",
+   "steps": [
+    "Fatores comuns."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "fracoes.equivalentes",
+   "statement": "Quantas frações equivalentes a $\\frac{2}{3}$ têm denominador menor que 20 (incluindo $\\frac{2}{3}$)?",
+   "options": null,
+   "answer": {
+    "value": "6",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Denominadores múltiplos de 3 menores que 20: 3, 6, 9, 12, 15, 18 → 6 frações.",
+   "steps": [
+    "Múltiplos de 3 menores que 20."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 1,
+   "competency": "fracoes.equivalentes",
+   "statement": "$\\frac{2}{4}=\\frac{1}{2}$.",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "Divide numerador e denominador por 2.",
+   "steps": [
+    "÷ 2."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "fracoes.equivalentes",
+   "statement": "$\\frac{3}{5}=\\frac{6}{12}$.",
+   "options": null,
+   "answer": {
+    "boolean": false
+   },
+   "tolerance": 0,
+   "explanation": "$\\frac{3}{5}=\\frac{6}{10}$. Multiplicou-se o numerador por 2 mas o denominador não por 2.",
+   "steps": [
+    "Multiplica os dois pelo mesmo número."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "fracoes.equivalentes",
+   "statement": "Qual das frações é irredutível?",
+   "options": [
+    {
+     "id": "a",
+     "label": "$\\frac{7}{12}$"
+    },
+    {
+     "id": "b",
+     "label": "$\\frac{6}{9}$"
+    },
+    {
+     "id": "c",
+     "label": "$\\frac{10}{15}$"
+    },
+    {
+     "id": "d",
+     "label": "$\\frac{8}{20}$"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "7 e 12 não têm divisores comuns além de 1.",
+   "steps": [
+    "m.d.c. = 1."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "fracoes.equivalentes",
+   "statement": "Qual é o resultado de simplificar $\\frac{45}{60}$?",
+   "options": [
+    {
+     "id": "a",
+     "label": "$\\frac{3}{4}$"
+    },
+    {
+     "id": "b",
+     "label": "$\\frac{9}{12}$"
+    },
+    {
+     "id": "c",
+     "label": "$\\frac{5}{6}$"
+    },
+    {
+     "id": "d",
+     "label": "$\\frac{15}{20}$"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "m.d.c.(45, 60) = 15: $\\frac{3}{4}$. As outras ainda simplificam.",
+   "steps": [
+    "Divide por 15."
+   ]
+  }
+ ]
+}
