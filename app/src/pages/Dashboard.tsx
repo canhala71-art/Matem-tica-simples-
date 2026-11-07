@@ -8,6 +8,8 @@ import { CATEGORIES } from '../lib/quiz';
 import { SUB_PT, TIER_PT, useAccess } from '../lib/billing';
 
 interface AttemptRow { is_correct: boolean; time_spent_seconds: number | null; created_at: string }
+interface LastLesson { slug: string; title: string; completed: boolean }
+interface TestRow { id: string; kind: string; score: number; created_at: string }
 interface MasteryRow { competency: string; attempts_count: number; correct_count: number; mastered: boolean }
 
 function greeting(): string {
@@ -29,6 +31,10 @@ export function Dashboard() {
   const [attempts, setAttempts] = useState<AttemptRow[] | null>(null);
   const [mastery, setMastery] = useState<MasteryRow[]>([]);
   const [error, setError] = useState<string | null>(null);
+  const [last, setLast] = useState<LastLesson | null>(null);
+  const [doneLessons, setDoneLessons] = useState(0);
+  const [studySecs, setStudySecs] = useState(0);
+  const [tests, setTests] = useState<TestRow[]>([]);
 
   useEffect(() => {
     if (!session) return;
@@ -40,6 +46,16 @@ export function Dashboard() {
         supabase.from('mastery').select('competency, attempts_count, correct_count, mastered').eq('user_id', uid),
       ]);
       if (a.error || m.error) { setError('Não foi possível carregar o progresso.'); return; }
+      const [lp, tt] = await Promise.all([
+        supabase.from('lesson_progress').select('completed, seconds, last_seen_at, lessons(slug, title)')
+          .order('last_seen_at', { ascending: false }).limit(200),
+        supabase.from('subject_tests').select('id, kind, score, created_at').order('created_at', { ascending: false }).limit(5),
+      ]);
+      const rows = (lp.data ?? []) as unknown as { completed: boolean; seconds: number; lessons: { slug: string; title: string } | null }[];
+      setDoneLessons(rows.filter((r) => r.completed).length);
+      setStudySecs(rows.reduce((n, r) => n + r.seconds, 0));
+      if (rows[0]?.lessons) setLast({ ...rows[0].lessons, completed: rows[0].completed });
+      setTests((tt.data ?? []) as TestRow[]);
       setAttempts((a.data ?? []) as AttemptRow[]);
       setMastery((m.data ?? []) as MasteryRow[]);
     })();
@@ -85,6 +101,13 @@ export function Dashboard() {
         )}
       </div>
 
+      {last && (
+        <Link to={`/aula/${last.slug}`} className="card flex items-center justify-between border-electric-500 hover:bg-electric-500/5">
+          <span><span className="muted block">{last.completed ? 'Última aula concluída' : 'Continuar de onde paraste'}</span><span className="font-semibold">{last.title}</span></span>
+          <span className="btn">{last.completed ? 'Rever' : 'Continuar'}</span>
+        </Link>
+      )}
+
       <DailyChallenge />
 
       <section className="space-y-2">
@@ -116,9 +139,23 @@ export function Dashboard() {
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
         <Stat label="Exercícios feitos" value={attempts ? String(total) : '…'} />
         <Stat label="Taxa de acertos" value={attempts ? (total ? `${Math.round((correct / total) * 100)}%` : '—') : '…'} />
-        <Stat label="Tempo de estudo" value={attempts ? `${minutes} min` : '…'} />
+        <Stat label="Tempo de estudo" value={attempts ? `${Math.max(minutes, Math.round(studySecs / 60))} min` : '…'} />
         <Stat label="Competências dominadas" value={attempts ? String(mastered.length) : '…'} />
       </div>
+
+      {attempts && (doneLessons > 0 || tests.length > 0) && (
+        <section className="card space-y-2">
+          <h2 className="font-semibold">O teu percurso</h2>
+          <p className="muted">Aulas concluídas: <strong>{doneLessons}</strong></p>
+          {tests.length > 0 && (
+            <ul className="space-y-1 text-sm">
+              {tests.map((t) => (
+                <li key={t.id} className="flex justify-between"><span>{({ diagnostic: 'Diagnóstico', consolidation: 'Consolidação', final: 'Avaliação final', exam: 'Exame final' } as Record<string, string>)[t.kind]} · {new Date(t.created_at).toLocaleDateString('pt-PT')}</span><strong>{Number(t.score).toFixed(1).replace('.', ',')}/20</strong></li>
+              ))}
+            </ul>
+          )}
+        </section>
+      )}
 
       <section className="card">
         <h2 className="mb-3 font-semibold">Evolução desta semana (tentativas por dia)</h2>

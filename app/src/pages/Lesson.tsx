@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { Download, Trash2 } from 'lucide-react';
+import { CheckCircle2, Download, Trash2 } from 'lucide-react';
 import { supabase } from '../lib/supabase';
 import { RichText } from '../components/RichText';
 import { ExercisePlayer, type ExerciseView } from '../components/ExercisePlayer';
@@ -31,6 +31,31 @@ export function LessonPage() {
   const [fromCache, setFromCache] = useState(false);
   const [saved, setSaved] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [completed, setCompleted] = useState(false);
+  const opened = useRef(Date.now());
+
+  // Regista a visita e o tempo de estudo (só com ligação; falha em silêncio).
+  useEffect(() => {
+    if (!data || fromCache) return undefined;
+    opened.current = Date.now();
+    void supabase.rpc('mark_lesson', { _slug: slug, _seconds: 0, _completed: false });
+    void supabase.from('lesson_progress').select('completed').eq('lesson_id', data.lesson.id).maybeSingle()
+      .then(({ data: r }) => setCompleted(!!(r as { completed: boolean } | null)?.completed));
+    const flush = () => {
+      const secs = Math.round((Date.now() - opened.current) / 1000);
+      opened.current = Date.now();
+      if (secs >= 5) void supabase.rpc('mark_lesson', { _slug: slug, _seconds: secs, _completed: false });
+    };
+    const t = window.setInterval(flush, 60000);
+    return () => { window.clearInterval(t); flush(); };
+  }, [data, fromCache, slug]);
+
+  async function finishLesson() {
+    const secs = Math.round((Date.now() - opened.current) / 1000);
+    opened.current = Date.now();
+    const { error: e } = await supabase.rpc('mark_lesson', { _slug: slug, _seconds: secs, _completed: true });
+    if (!e) setCompleted(true);
+  }
 
   useEffect(() => {
     setData(null);
@@ -86,6 +111,14 @@ export function LessonPage() {
           <h2 className="text-lg font-semibold">Exercícios</h2>
           {data.exercises.map((e) => <ExercisePlayer key={e.id} exercise={e} />)}
         </section>
+      )}
+      {!fromCache && (
+        <div className="card flex items-center justify-between gap-3">
+          <p className="text-sm">{completed ? 'Aula concluída. Bom trabalho!' : 'Terminaste de estudar esta aula?'}</p>
+          {completed
+            ? <span className="badge flex items-center gap-1"><CheckCircle2 size={14} />Concluída</span>
+            : <button className="btn" onClick={() => void finishLesson()}>Marcar como concluída</button>}
+        </div>
       )}
       {data.blocks.length === 0 && data.exercises.length === 0 && <p className="card muted">Esta aula ainda não tem conteúdo.</p>}
     </article>
