@@ -1,0 +1,262 @@
+{
+ "subject": "operacoes-basicas",
+ "topic_title": "Divisão e expressões numéricas",
+ "topic_slug": "divisao-resto-ordem-operacoes",
+ "lesson_title": "Divisão com resto e ordem das operações",
+ "lesson_slug": "divisao-com-resto-ordem-operacoes",
+ "summary": "Domina dividendo, divisor, quociente e resto, a prova real, e a ordem correta das operações com parênteses.",
+ "minutes": 30,
+ "blocks": {
+  "introduction": "**Objetivos:** dividir com resto, usar a relação D = d × q + r, fazer a prova real e calcular expressões numéricas pela ordem certa. **Pré-requisitos:** tabuada e multiplicação.\n\nTens 150 laranjas e caixas de 12. Quantas caixas ficam cheias e quantas laranjas sobram? Numa turma de 38 alunos com mesas de 4 lugares, quantas mesas fazem falta? Estas situações são divisões que **não dão exato**: sobra um resto. Saber lidar com o resto é uma das competências mais usadas no dia a dia, e nos exames.",
+  "intuition": "Dividir é **partilhar em partes iguais** ou **ver quantas vezes cabe**. 47 ÷ 5: quantas vezes cabe o 5 dentro do 47? Cabe 9 vezes (5 × 9 = 45) e sobram 2. Esses nomes são: 47 é o **dividendo**, 5 o **divisor**, 9 o **quociente** e 2 o **resto**.\n\nA relação que liga tudo é D = d × q + r, a **prova real**: 5 × 9 + 2 = 47. O resto é sempre **menor** que o divisor, porque, se fosse igual ou maior, ainda cabia mais uma vez.\n\nQuando o resto é zero, a divisão é **exata** (o divisor é um divisor do dividendo).\n\nNas expressões, a ordem importa: primeiro o que está dentro de **parênteses** (depois colchetes e chavetas, de dentro para fora), depois **multiplicações e divisões** (da esquerda para a direita), por fim **somas e subtrações**.\n\n**Erros comuns:** (1) resto maior ou igual ao divisor; (2) somar antes de multiplicar (6 + 4 × 5 é 26, não 50); (3) esquecer a prova real; (4) em problemas, esquecer-se de que o resto pode obrigar a mais uma unidade (alunos que sobram precisam de mesa).",
+  "definition": "Dados dois números naturais D (**dividendo**) e d (**divisor**, d ≠ 0), existem únicos q (**quociente**) e r (**resto**) tais que $D=d\\times q+r$ com $0\\le r<d$. A divisão é **exata** se r = 0. A **ordem das operações** é: 1.º parênteses, colchetes e chavetas; 2.º multiplicação e divisão, da esquerda para a direita; 3.º adição e subtração, da esquerda para a direita.",
+  "formulas": "$$D=d\\times q+r,\\qquad 0\\le r<d$$\n\nQuociente: $q=\\lfloor D/d\\rfloor$ (a parte inteira da divisão). Resto: $r=D-d\\times q$.\n\nPropriedades úteis: a multiplicação e a adição são comutativas e associativas; a multiplicação distribui-se sobre a soma, $a(b+c)=ab+ac$. O 0 é neutro da soma e o 1 é neutro da multiplicação.",
+  "worked_example": "**Exemplo 1.** 47 ÷ 5: 5 × 9 = 45; resto 2. Prova: 5 × 9 + 2 = 47 ✓.\n\n**Exemplo 2.** 125 ÷ 8: 8 × 15 = 120; resto 5. Prova: 120 + 5 = 125 ✓.\n\n**Exemplo 3 (dividendo).** Se d = 7, q = 12 e r = 5, então D = 7 × 12 + 5 = 89.\n\n**Exemplo 4 (expressão).** 6 + 4 × 5 − 8 ÷ 2 = 6 + 20 − 4 = 22.\n\n**Exemplo 5 (parênteses).** 3 + 2 × (8 − 5) = 3 + 2 × 3 = 9.\n\n**Aplicação.** 38 alunos em mesas de 4: 38 = 4 × 9 + 2. Há 9 mesas cheias e 2 alunos por colocar, por isso são precisas 10 mesas.",
+  "guided_exercise": "Resolve connosco: **um autocarro leva 52 passageiros. Quantos autocarros são precisos para 400 pessoas, e quantos lugares ficam vazios?**\n\n1) Divide: 400 ÷ 52. 52 × 7 = 364 e 52 × 8 = 416.\n\n2) O quociente é 7 e o resto é 400 − 364 = 36.\n\n3) Com 7 autocarros sobram 36 pessoas, portanto precisas de um 8.º autocarro.\n\n4) Lugares vazios: 416 − 400 = 16.\n\n5) Resposta: 8 autocarros e 16 lugares vazios.",
+  "independent_exercise": "Chegou a tua vez. Resolve os exercícios sem pressa e usa **Verificar** para confirmar. Se errares, não faz mal: lê a resolução passo a passo, percebe onde o raciocínio escorregou e tenta outra vez. É assim que se aprende de verdade.",
+  "challenge": "**Que dia da semana?** Hoje é quarta-feira. Que dia da semana será daqui a 100 dias?\n\nPista: a semana tem 7 dias, por isso interessa o resto da divisão de 100 por 7.",
+  "assessment": "Consideras a competência dominada quando consegues: (1) identificar dividendo, divisor, quociente e resto; (2) dividir com resto e fazer a prova real; (3) calcular o dividendo a partir de d, q e r; (4) resolver problemas em que o resto obriga a mais uma unidade; (5) calcular expressões com parênteses respeitando a ordem das operações."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "operacoes.divisao",
+   "statement": "Na divisão de 47 por 5, qual é o quociente?",
+   "options": null,
+   "answer": {
+    "value": "9",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "47 = 5 × 9 + 2, logo o quociente é 9.",
+   "steps": [
+    "5 × 9 = 45, e 5 × 10 = 50 passa de 47.",
+    "Quociente 9."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "operacoes.divisao",
+   "statement": "Na divisão de 47 por 5, qual é o resto?",
+   "options": null,
+   "answer": {
+    "value": "2",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "47 − 45 = 2.",
+   "steps": [
+    "47 = 5 × 9 + 2.",
+    "Resto 2."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "operacoes.divisao",
+   "statement": "Na divisão de 125 por 8, qual é o quociente?",
+   "options": null,
+   "answer": {
+    "value": "15",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "8 × 15 = 120 e 8 × 16 = 128 passa de 125, logo o quociente é 15 (resto 5).",
+   "steps": [
+    "8 × 15 = 120.",
+    "125 − 120 = 5 < 8.",
+    "Quociente 15."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "operacoes.divisao",
+   "statement": "Numa divisão, o divisor é 7, o quociente é 12 e o resto é 5. Qual é o dividendo?",
+   "options": null,
+   "answer": {
+    "value": "89",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Dividendo = divisor × quociente + resto = 7 × 12 + 5 = 89.",
+   "steps": [
+    "D = d × q + r.",
+    "7 × 12 = 84.",
+    "84 + 5 = 89."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "operacoes.divisao",
+   "statement": "Ao dividir um número por 9, qual é o maior resto possível?",
+   "options": null,
+   "answer": {
+    "value": "8",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "O resto tem de ser menor que o divisor, por isso o maior é 9 − 1 = 8.",
+   "steps": [
+    "Resto < divisor.",
+    "Maior resto: 8."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "operacoes.divisao",
+   "statement": "Qual é o resto da divisão de 245 por 12?",
+   "options": null,
+   "answer": {
+    "value": "5",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "12 × 20 = 240 e 245 − 240 = 5.",
+   "steps": [
+    "12 × 20 = 240.",
+    "245 − 240 = 5."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "operacoes.divisao",
+   "statement": "Há 150 laranjas para encaixotar em caixas de 12. Quantas laranjas sobram depois de encher o máximo de caixas?",
+   "options": null,
+   "answer": {
+    "value": "6",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "150 = 12 × 12 + 6, enchem-se 12 caixas e sobram 6 laranjas.",
+   "steps": [
+    "12 × 12 = 144.",
+    "150 − 144 = 6."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "operacoes.divisao",
+   "statement": "Uma turma de 38 alunos senta-se em mesas de 4 lugares. Quantas mesas são precisas, no mínimo?",
+   "options": null,
+   "answer": {
+    "value": "10",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "38 ÷ 4 dá 9 mesas cheias e sobram 2 alunos, que precisam de mais uma mesa: 10 mesas.",
+   "steps": [
+    "38 = 4 × 9 + 2.",
+    "Os 2 que sobram precisam de uma mesa extra.",
+    "9 + 1 = 10."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "operacoes.divisao",
+   "statement": "Dividindo um número por 13 obtém-se quociente 7 e resto 4. Que número é?",
+   "options": null,
+   "answer": {
+    "value": "95",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "13 × 7 + 4 = 91 + 4 = 95.",
+   "steps": [
+    "D = 13 × 7 + 4.",
+    "= 95."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "operacoes.divisao",
+   "statement": "Calcula $6+4\\times5-8\\div2$ respeitando a ordem das operações.",
+   "options": null,
+   "answer": {
+    "value": "22",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Primeiro as multiplicações e divisões: 4 × 5 = 20 e 8 ÷ 2 = 4. Depois somas e subtrações: 6 + 20 − 4 = 22.",
+   "steps": [
+    "4 × 5 = 20 e 8 ÷ 2 = 4.",
+    "6 + 20 − 4 = 22."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "operacoes.divisao",
+   "statement": "Calcula $3+2\\times(8-5)$.",
+   "options": null,
+   "answer": {
+    "value": "9",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Primeiro o parêntese: 8 − 5 = 3. Depois 2 × 3 = 6 e 3 + 6 = 9.",
+   "steps": [
+    "Parêntese: 3.",
+    "2 × 3 = 6.",
+    "3 + 6 = 9."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "operacoes.divisao",
+   "statement": "Numa divisão, o resto pode ser igual ao divisor.",
+   "options": null,
+   "answer": {
+    "boolean": false
+   },
+   "tolerance": 0,
+   "explanation": "Se o resto fosse igual ao divisor, ainda se podia dividir mais uma vez. O resto é sempre menor que o divisor.",
+   "steps": [
+    "Exemplo: 20 ÷ 5 dá resto 0, e não 5.",
+    "Resto < divisor."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "operacoes.divisao",
+   "statement": "Qual destas igualdades descreve corretamente a divisão de 29 por 4?",
+   "options": [
+    {
+     "id": "a",
+     "label": "$29=4\\times7+1$"
+    },
+    {
+     "id": "b",
+     "label": "$29=4\\times6+5$"
+    },
+    {
+     "id": "c",
+     "label": "$29=7\\times4+4$"
+    },
+    {
+     "id": "d",
+     "label": "$29=4\\times7+2$"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "Na divisão com resto, D = d × q + r com r < d. 29 = 4 × 7 + 1 cumpre. 29 = 4 × 6 + 5 tem resto 5, maior que 4.",
+   "steps": [
+    "Testa r < 4.",
+    "4 × 7 = 28; 29 − 28 = 1."
+   ]
+  }
+ ]
+}

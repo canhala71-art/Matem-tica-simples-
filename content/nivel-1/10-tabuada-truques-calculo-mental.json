@@ -1,0 +1,275 @@
+{
+ "subject": "tabuada",
+ "topic_title": "Tabuada e cálculo mental",
+ "topic_slug": "tabuada-e-calculo-mental",
+ "lesson_title": "Tabuada do 1 ao 12 e truques de cálculo mental",
+ "lesson_slug": "tabuada-truques-calculo-mental",
+ "summary": "Memoriza a tabuada com padrões e usa truques para multiplicar e dividir de cabeça.",
+ "minutes": 25,
+ "blocks": {
+  "introduction": "**Objetivos:** saber a tabuada do 1 ao 12 sem hesitar, perceber os padrões que a tornam fácil e usar truques para multiplicar e dividir de cabeça. **Pré-requisitos:** somar e subtrair bem.\n\nNo mercado, quem calcula depressa o troco e o total não se engana nem é enganado. Na escola, a tabuada é a base de tudo: frações, divisões, percentagens e até álgebra. A boa notícia é que a tabuada **não é para decorar às cegas**: tem padrões, atalhos e simetrias que a tornam muito mais curta do que parece.",
+  "intuition": "Primeiro, a multiplicação é **comutativa**: 7 × 8 = 8 × 7. Por isso, em vez de 144 produtos (12 × 12), só tens de aprender cerca de metade.\n\nSegundo, há tabuadas fáceis que ajudam as difíceis. A do 10 acrescenta um zero. A do 5 acaba sempre em 0 ou 5. A do 2 é o dobro. A do 4 é o dobro do dobro. A do 9 tem um truque: 9 × n = 10 × n − n, e além disso a soma dos algarismos do resultado dá sempre 9 (18, 27, 36, 45…). A do 11 até 9 repete o algarismo (11, 22, 33…). A do 6 pode obter-se da do 5 somando mais uma vez o número.\n\nTerceiro, **decompõe**: 12 × 7 = 10 × 7 + 2 × 7 = 70 + 14 = 84. E a divisão é a tabuada ao contrário: se sabes 8 × 7 = 56, então 56 ÷ 8 = 7.\n\n**Erros comuns:** (1) confundir produtos parecidos (8 × 7 = 56, 9 × 6 = 54); (2) esquecer o zero na do 10; (3) não usar a divisão como verificação.",
+  "definition": "A **multiplicação** de dois números naturais é a soma repetida: $a\\times b$ é a soma de b parcelas iguais a a. **Propriedades:** comutativa ($a\\times b=b\\times a$), associativa ($(a\\times b)\\times c=a\\times(b\\times c)$), distributiva ($a\\times(b+c)=a\\times b+a\\times c$), elemento neutro (1) e elemento absorvente (0). A **divisão** é a operação inversa da multiplicação: se $a\\times b=c$ então $c\\div a=b$.",
+  "formulas": "Truques: $9\\times n=10n-n$; $5\\times n=\\dfrac{10n}{2}$; $11\\times n=10n+n$ (até 9n); $99\\times n=100n-n$; $12\\times n=10n+2n$; $15\\times n=10n+5n$.\n\nQuadrados que convém saber: 1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144.\n\nMnemónica: **\"decompõe em 10 + resto\"** resolve quase tudo.",
+  "worked_example": "**Exemplo 1.** 7 × 8: sabes 7 × 7 = 49; mais um 7 dá 56.\n\n**Exemplo 2.** 9 × 7 = 70 − 7 = 63. Confirma: 6 + 3 = 9 ✓.\n\n**Exemplo 3.** 12 × 14 = 12 × 10 + 12 × 4 = 120 + 48 = 168.\n\n**Exemplo 4.** 5 × 48 = 480 ÷ 2 = 240.\n\n**Exemplo 5 (divisão).** 132 ÷ 12: 12 × 11 = 132, logo 11.\n\n**Aplicação.** Uma caixa com 12 garrafas custa 3 600 Kz. Cada garrafa custa 3 600 ÷ 12 = 300 Kz. E 8 caixas têm 8 × 12 = 96 garrafas.",
+  "guided_exercise": "Resolve connosco: **uma loja vende cadernos a 250 Kz. Quanto pagas por 12 cadernos, de cabeça?**\n\n1) Decompõe 12 = 10 + 2.\n\n2) 10 × 250 = 2 500.\n\n3) 2 × 250 = 500.\n\n4) Soma: 2 500 + 500 = 3 000 Kz.\n\n5) Verifica por estimativa: 12 cadernos a cerca de 250 é um pouco mais de 10 × 250 = 2 500 ✓.",
+  "independent_exercise": "Chegou a tua vez. Resolve os exercícios sem pressa e usa **Verificar** para confirmar. Se errares, não faz mal: lê a resolução passo a passo, percebe onde o raciocínio escorregou e tenta outra vez. É assim que se aprende de verdade.",
+  "challenge": "**Cronómetro.** Quantas das 12 contas seguintes consegues fazer em 60 segundos, de cabeça? 6×7, 8×9, 12×6, 7×7, 9×9, 11×8, 4×12, 8×6, 7×9, 12×12, 6×9, 8×8. Escreve o tempo e tenta bater o recorde na próxima tentativa.\n\nPista: usa os truques do 9, do 11 e a decomposição em 10 + resto.",
+  "assessment": "Consideras a competência dominada quando consegues: (1) responder à tabuada do 1 ao 12 sem demora; (2) usar a propriedade comutativa e a decomposição; (3) aplicar os truques do 5, 9, 11 e 99; (4) usar a divisão como inverso da multiplicação; (5) resolver problemas de dinheiro e quantidades de cabeça."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "tabuada.calculo_mental",
+   "statement": "Quanto é $7\\times8$?",
+   "options": null,
+   "answer": {
+    "value": "56",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "7 × 8 = 56.",
+   "steps": [
+    "7 × 8 = 56."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "tabuada.calculo_mental",
+   "statement": "Quanto é $9\\times6$?",
+   "options": null,
+   "answer": {
+    "value": "54",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "9 × 6 = 54.",
+   "steps": [
+    "9 × 6 = 54."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "tabuada.calculo_mental",
+   "statement": "Quanto é $6\\times7$?",
+   "options": null,
+   "answer": {
+    "value": "42",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "6 × 7 = 42.",
+   "steps": [
+    "6 × 7 = 42."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "tabuada.calculo_mental",
+   "statement": "Quanto é $12\\times12$?",
+   "options": null,
+   "answer": {
+    "value": "144",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "12 × 12 = 144 (12 × 10 = 120 e 12 × 2 = 24).",
+   "steps": [
+    "12 × 10 = 120.",
+    "12 × 2 = 24.",
+    "120 + 24 = 144."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "tabuada.calculo_mental",
+   "statement": "Quanto é $56\\div8$?",
+   "options": null,
+   "answer": {
+    "value": "7",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Pensa na tabuada do 8: 8 × 7 = 56.",
+   "steps": [
+    "8 × 7 = 56.",
+    "Logo 56 ÷ 8 = 7."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "tabuada.calculo_mental",
+   "statement": "Calcula $11\\times14$ de cabeça.",
+   "options": null,
+   "answer": {
+    "value": "154",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "11 × 14 = 14 × 10 + 14 = 154.",
+   "steps": [
+    "Multiplicar por 11 é multiplicar por 10 e somar o número.",
+    "140 + 14 = 154."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "tabuada.calculo_mental",
+   "statement": "Calcula $5\\times48$ de cabeça.",
+   "options": null,
+   "answer": {
+    "value": "240",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Multiplicar por 5 é multiplicar por 10 e dividir por 2: 480 ÷ 2 = 240.",
+   "steps": [
+    "48 × 10 = 480.",
+    "480 ÷ 2 = 240."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "tabuada.calculo_mental",
+   "statement": "Calcula $15\\times12$ de cabeça.",
+   "options": null,
+   "answer": {
+    "value": "180",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "15 × 12 = 15 × 10 + 15 × 2 = 150 + 30 = 180.",
+   "steps": [
+    "15 × 10 = 150.",
+    "15 × 2 = 30.",
+    "150 + 30 = 180."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "tabuada.calculo_mental",
+   "statement": "Calcula $99\\times6$ usando o truque de 100.",
+   "options": null,
+   "answer": {
+    "value": "594",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "99 × 6 = 100 × 6 − 6 = 600 − 6 = 594.",
+   "steps": [
+    "100 × 6 = 600.",
+    "Tira um 6: 594."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "tabuada.calculo_mental",
+   "statement": "Uma caixa tem 12 garrafas. Quantas garrafas há em 8 caixas?",
+   "options": null,
+   "answer": {
+    "value": "96",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "8 × 12 = 96.",
+   "steps": [
+    "8 × 12 = 8 × 10 + 8 × 2.",
+    "80 + 16 = 96."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "tabuada.calculo_mental",
+   "statement": "Há 144 ovos para colocar em embalagens de 12. Quantas embalagens ficam cheias?",
+   "options": null,
+   "answer": {
+    "value": "12",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "144 ÷ 12 = 12 embalagens.",
+   "steps": [
+    "12 × 12 = 144.",
+    "Logo 12 embalagens."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "tabuada.calculo_mental",
+   "statement": "Quantas horas há em 7 dias?",
+   "options": null,
+   "answer": {
+    "value": "168",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "7 × 24 = 168 horas.",
+   "steps": [
+    "7 × 20 = 140.",
+    "7 × 4 = 28.",
+    "140 + 28 = 168."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 1,
+   "competency": "tabuada.calculo_mental",
+   "statement": "$8\\times7=54$.",
+   "options": null,
+   "answer": {
+    "boolean": false
+   },
+   "tolerance": 0,
+   "explanation": "8 × 7 = 56. Um erro comum é confundir com 54, que é 9 × 6.",
+   "steps": [
+    "8 × 7 = 56.",
+    "54 = 9 × 6."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "tabuada.calculo_mental",
+   "statement": "Qual é o truque para multiplicar um número por 9?",
+   "options": [
+    {
+     "id": "a",
+     "label": "Multiplicar por 10 e subtrair o número"
+    },
+    {
+     "id": "b",
+     "label": "Multiplicar por 10 e somar o número"
+    },
+    {
+     "id": "c",
+     "label": "Multiplicar por 8 e somar 1"
+    },
+    {
+     "id": "d",
+     "label": "Dividir por 9"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "9 × n = 10 × n − n. Por exemplo, 9 × 7 = 70 − 7 = 63.",
+   "steps": [
+    "9 = 10 − 1.",
+    "9 × 7 = 70 − 7 = 63."
+   ]
+  }
+ ]
+}
