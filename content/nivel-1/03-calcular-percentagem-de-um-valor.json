@@ -7,15 +7,15 @@
  "summary": "Descobre quanto é 10%, 25% ou 50% de um valor e aplica-o a descontos.",
  "minutes": 20,
  "blocks": {
-  "introduction": "Descontos nas lojas, juros, notas de testes: as percentagens estão em todo o lado. A expressão 'por cento' quer dizer 'por cada cem'.",
-  "intuition": "50% significa 50 em cada 100, ou seja, **metade**. 25% é **um quarto**. 10% é a **décima parte**: basta dividir por 10. Com estes atalhos consegues calcular muitas percentagens de cabeça.",
-  "definition": "Uma percentagem $p\\%$ é a fração $\\frac{p}{100}$. Calcular $p\\%$ de um valor é multiplicar o valor por $\\frac{p}{100}$.",
-  "formulas": "$$p\\%\\text{ de }V=\\frac{p}{100}\\times V$$\n\nAtalhos: **10%** → divide por 10. **50%** → divide por 2. **25%** → divide por 4.",
-  "worked_example": "**Exemplo 1.** 10% de 250 = 250 ÷ 10 = 25.\n\n**Exemplo 2.** 20% de 60 = $\\frac{20}{100}\\times 60=12$.",
-  "guided_exercise": "Vamos calcular 30% de 70. 10% de 70 é 7. Como 30% é três vezes 10%, fica 3 × 7 = 21.",
+  "introduction": "**Objetivos:** perceber o que significa «por cento», calcular a percentagem de um valor de cabeça e por escrito, e usá-la em descontos, aumentos e comissões. **Pré-requisitos:** multiplicar e dividir, noção de fração e de decimal.\n\n«Por cento» está em todo o lado: descontos de 20% nas lojas, 5% de comissão numa venda, 15% de gorjeta, a bateria do telemóvel a 30%. Saber calcular percentagens de cabeça poupa dinheiro e evita enganos.",
+  "intuition": "**Percentagem** quer dizer «por cada cem». 25% significa 25 em cada 100, ou seja, $\\frac{25}{100}=\\frac{1}{4}$. Tirar 25% de um valor é tirar um quarto.\n\nAtalhos que valem ouro: 50% é metade; 25% é um quarto (divide por 4); 10% é dividir por 10; 1% é dividir por 100; 20% é 10% a dobrar; 5% é metade de 10%; 15% é 10% mais 5%.\n\nPara qualquer percentagem: **escreve como fração de 100 e multiplica**: $p\\%$ de $V$ é $\\frac{p}{100}\\times V$.\n\n**Erros comuns:** (1) confundir 10% de 250 com 250 ÷ 10 por esquecer que é «por cem» (aqui coincide, mas 15% não é 250 ÷ 15); (2) esquecer de subtrair o desconto do preço original; (3) pensar que 100% é metade (100% é o todo).",
+  "definition": "A **percentagem** $p\\%$ é a fração $\\frac{p}{100}$. A **percentagem de um valor** $V$ é o produto $\\frac{p}{100}\\times V$. O **valor final** depois de um desconto de $p\\%$ é $V-\\frac{p}{100}V$, e depois de um aumento de $p\\%$ é $V+\\frac{p}{100}V$.",
+  "formulas": "$$p\\%\\text{ de }V=\\frac{p}{100}\\times V=p\\times\\frac{V}{100}$$\n\nDesconto: $V_{\\text{final}}=V\\times\\left(1-\\dfrac{p}{100}\\right)$. Aumento: $V_{\\text{final}}=V\\times\\left(1+\\dfrac{p}{100}\\right)$.\n\nCorrespondências úteis: 50% = ½, 25% = ¼, 75% = ¾, 10% = 1/10, 20% = 1/5, 5% = 1/20.",
+  "worked_example": "**Exemplo 1.** 10% de 250 = 250 ÷ 10 = 25.\n\n**Exemplo 2.** 20% de 60 = $\\frac{20}{100}\\times 60=12$.\n\n**Exemplo 3 (25%).** 25% de 180 = 180 ÷ 4 = 45.\n\n**Exemplo 4 (15% = 10% + 5%).** 15% de 300: 10% = 30, 5% = 15, juntos 45.\n\n**Exemplo 5 (desconto).** Uns sapatos custam 8 000 Kz e têm 30% de desconto. 30% de 8 000 = 2 400. Pagas 8 000 − 2 400 = 5 600 Kz.\n\n**Aplicação.** Um vendedor ganha 8% de comissão sobre uma venda de 50 000 Kz: 8% de 50 000 = 8 × 500 = 4 000 Kz.",
+  "guided_exercise": "Resolve connosco: **um telemóvel custa 40 000 Kz e tem 15% de desconto. Quanto pagas?**\n\n1) Calcula 10% de 40 000: divide por 10, dá 4 000.\n\n2) Calcula 5%, que é metade de 10%: 2 000.\n\n3) 15% = 4 000 + 2 000 = 6 000 Kz de desconto.\n\n4) Preço final: 40 000 − 6 000 = 34 000 Kz.\n\n5) Verifica: 85% de 40 000 = 0,85 × 40 000 = 34 000 ✓.",
   "independent_exercise": "Resolve os exercícios abaixo sem ajuda e usa **Verificar** para ver se acertaste. Se errares, lê a resolução passo a passo e tenta outra vez.",
-  "challenge": "Um **aumento** de 10% também se calcula assim: calcula os 10% e soma ao valor inicial. Experimenta o último exercício.",
-  "assessment": "Esta competência só fica **dominada** quando acertas de forma consistente em exercícios de dificuldades diferentes e passas na avaliação. Rapidez não conta: conta perceber."
+  "challenge": "**Desafio.** Uma loja sobe o preço de um artigo em 20% e, na semana seguinte, faz um desconto de 20% sobre o novo preço. O artigo volta ao preço inicial? Experimenta com 1 000 Kz antes de responderes.",
+  "assessment": "Consideras a competência dominada quando consegues: (1) explicar o que é «por cento»; (2) calcular 10%, 25%, 50%, 5% e 1% de cabeça; (3) calcular qualquer percentagem de um valor; (4) resolver problemas de desconto, aumento e comissão."
  },
  "exercises": [
   {
@@ -151,6 +151,486 @@
    "steps": [
     "10% de 2500 = 250.",
     "2500 + 250 = 2750."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "percentagens.de_um_valor",
+   "statement": "Calcula 30% de 900.",
+   "options": null,
+   "answer": {
+    "value": "270",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "30% de 900 = 30/100 × 900 = 270.",
+   "steps": [
+    "30 × 900 = 27000.",
+    "Divide por 100.",
+    "= 270."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "percentagens.de_um_valor",
+   "statement": "Calcula 75% de 240.",
+   "options": null,
+   "answer": {
+    "value": "180",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "75% de 240 = 75/100 × 240 = 180.",
+   "steps": [
+    "75 × 240 = 18000.",
+    "Divide por 100.",
+    "= 180."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "percentagens.de_um_valor",
+   "statement": "Calcula 5% de 1400.",
+   "options": null,
+   "answer": {
+    "value": "70",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "5% de 1400 = 5/100 × 1400 = 70.",
+   "steps": [
+    "5 × 1400 = 7000.",
+    "Divide por 100.",
+    "= 70."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "percentagens.de_um_valor",
+   "statement": "Calcula 12% de 500.",
+   "options": null,
+   "answer": {
+    "value": "60",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "12% de 500 = 12/100 × 500 = 60.",
+   "steps": [
+    "12 × 500 = 6000.",
+    "Divide por 100.",
+    "= 60."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "percentagens.de_um_valor",
+   "statement": "Calcula 40% de 350.",
+   "options": null,
+   "answer": {
+    "value": "140",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "40% de 350 = 40/100 × 350 = 140.",
+   "steps": [
+    "40 × 350 = 14000.",
+    "Divide por 100.",
+    "= 140."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "percentagens.de_um_valor",
+   "statement": "Calcula 60% de 1500.",
+   "options": null,
+   "answer": {
+    "value": "900",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "60% de 1500 = 60/100 × 1500 = 900.",
+   "steps": [
+    "60 × 1500 = 90000.",
+    "Divide por 100.",
+    "= 900."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "percentagens.desconto",
+   "statement": "Um artigo custa 40000 Kz e tem 15% de desconto. Quanto pagas, em Kz?",
+   "options": null,
+   "answer": {
+    "value": "34000",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Desconto: 15% de 40000 = 6000. Preço final: 40000 − 6000 = 34000 Kz.",
+   "steps": [
+    "Calcula o desconto.",
+    "Subtrai ao preço."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "percentagens.desconto",
+   "statement": "Um artigo custa 12500 Kz e tem 20% de desconto. Quanto pagas, em Kz?",
+   "options": null,
+   "answer": {
+    "value": "10000",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Desconto: 20% de 12500 = 2500. Preço final: 12500 − 2500 = 10000 Kz.",
+   "steps": [
+    "Calcula o desconto.",
+    "Subtrai ao preço."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "percentagens.sucessivas",
+   "statement": "Um artigo de 1 000 Kz sobe 20% e depois desce 20% sobre o novo preço. Quanto custa no fim, em Kz?",
+   "options": null,
+   "answer": {
+    "value": "960",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Depois da subida: 1 200 Kz. 20% de 1 200 = 240. No fim: 1 200 − 240 = 960 Kz, ou seja, menos que o inicial.",
+   "steps": [
+    "1 000 × 1,2 = 1 200.",
+    "1 200 × 0,8 = 960."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "percentagens.de_um_valor",
+   "statement": "Um vendedor ganha 8% de comissão sobre uma venda de 50 000 Kz. Quanto recebe de comissão, em Kz?",
+   "options": null,
+   "answer": {
+    "value": "4000",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "8% de 50 000 = 8 × 500 = 4 000 Kz.",
+   "steps": [
+    "1% = 500.",
+    "8 × 500 = 4 000."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "percentagens.de_um_valor",
+   "statement": "25% de um valor é o mesmo que a quarta parte desse valor.",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "25/100 = 1/4.",
+   "steps": [
+    "25% = 1/4."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "percentagens.de_um_valor",
+   "statement": "Um desconto de 50% seguido de outro desconto de 50% faz o artigo ficar de graça.",
+   "options": null,
+   "answer": {
+    "boolean": false
+   },
+   "tolerance": 0,
+   "explanation": "Depois do primeiro desconto fica metade; o segundo tira metade dessa metade, restando um quarto do preço.",
+   "steps": [
+    "100 → 50 → 25."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "percentagens.de_um_valor",
+   "statement": "Quanto é 15% de 300?",
+   "options": [
+    {
+     "id": "a",
+     "label": "45"
+    },
+    {
+     "id": "b",
+     "label": "30"
+    },
+    {
+     "id": "c",
+     "label": "15"
+    },
+    {
+     "id": "d",
+     "label": "20"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "10% = 30 e 5% = 15; 30 + 15 = 45.",
+   "steps": [
+    "10% de 300 = 30.",
+    "5% de 300 = 15.",
+    "Soma: 45."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "percentagens.de_um_valor",
+   "statement": "Calcula 30% de 900.",
+   "options": null,
+   "answer": {
+    "value": "270",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "30% de 900 = 30/100 × 900 = 270.",
+   "steps": [
+    "30 × 900 = 27000.",
+    "Divide por 100.",
+    "= 270."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "percentagens.de_um_valor",
+   "statement": "Calcula 75% de 240.",
+   "options": null,
+   "answer": {
+    "value": "180",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "75% de 240 = 75/100 × 240 = 180.",
+   "steps": [
+    "75 × 240 = 18000.",
+    "Divide por 100.",
+    "= 180."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "percentagens.de_um_valor",
+   "statement": "Calcula 5% de 1400.",
+   "options": null,
+   "answer": {
+    "value": "70",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "5% de 1400 = 5/100 × 1400 = 70.",
+   "steps": [
+    "5 × 1400 = 7000.",
+    "Divide por 100.",
+    "= 70."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "percentagens.de_um_valor",
+   "statement": "Calcula 12% de 500.",
+   "options": null,
+   "answer": {
+    "value": "60",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "12% de 500 = 12/100 × 500 = 60.",
+   "steps": [
+    "12 × 500 = 6000.",
+    "Divide por 100.",
+    "= 60."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "percentagens.de_um_valor",
+   "statement": "Calcula 40% de 350.",
+   "options": null,
+   "answer": {
+    "value": "140",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "40% de 350 = 40/100 × 350 = 140.",
+   "steps": [
+    "40 × 350 = 14000.",
+    "Divide por 100.",
+    "= 140."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "percentagens.de_um_valor",
+   "statement": "Calcula 60% de 1500.",
+   "options": null,
+   "answer": {
+    "value": "900",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "60% de 1500 = 60/100 × 1500 = 900.",
+   "steps": [
+    "60 × 1500 = 90000.",
+    "Divide por 100.",
+    "= 900."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "percentagens.desconto",
+   "statement": "Um artigo custa 40000 Kz e tem 15% de desconto. Quanto pagas, em Kz?",
+   "options": null,
+   "answer": {
+    "value": "34000",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Desconto: 15% de 40000 = 6000. Preço final: 40000 − 6000 = 34000 Kz.",
+   "steps": [
+    "Calcula o desconto.",
+    "Subtrai ao preço."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "percentagens.desconto",
+   "statement": "Um artigo custa 12500 Kz e tem 20% de desconto. Quanto pagas, em Kz?",
+   "options": null,
+   "answer": {
+    "value": "10000",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Desconto: 20% de 12500 = 2500. Preço final: 12500 − 2500 = 10000 Kz.",
+   "steps": [
+    "Calcula o desconto.",
+    "Subtrai ao preço."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "percentagens.sucessivas",
+   "statement": "Um artigo de 1 000 Kz sobe 20% e depois desce 20% sobre o novo preço. Quanto custa no fim, em Kz?",
+   "options": null,
+   "answer": {
+    "value": "960",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Depois da subida: 1 200 Kz. 20% de 1 200 = 240. No fim: 1 200 − 240 = 960 Kz, ou seja, menos que o inicial.",
+   "steps": [
+    "1 000 × 1,2 = 1 200.",
+    "1 200 × 0,8 = 960."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "percentagens.de_um_valor",
+   "statement": "Um vendedor ganha 8% de comissão sobre uma venda de 50 000 Kz. Quanto recebe de comissão, em Kz?",
+   "options": null,
+   "answer": {
+    "value": "4000",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "8% de 50 000 = 8 × 500 = 4 000 Kz.",
+   "steps": [
+    "1% = 500.",
+    "8 × 500 = 4 000."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "percentagens.de_um_valor",
+   "statement": "25% de um valor é o mesmo que a quarta parte desse valor.",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "25/100 = 1/4.",
+   "steps": [
+    "25% = 1/4."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "percentagens.de_um_valor",
+   "statement": "Um desconto de 50% seguido de outro desconto de 50% faz o artigo ficar de graça.",
+   "options": null,
+   "answer": {
+    "boolean": false
+   },
+   "tolerance": 0,
+   "explanation": "Depois do primeiro desconto fica metade; o segundo tira metade dessa metade, restando um quarto do preço.",
+   "steps": [
+    "100 → 50 → 25."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "percentagens.de_um_valor",
+   "statement": "Quanto é 15% de 300?",
+   "options": [
+    {
+     "id": "a",
+     "label": "45"
+    },
+    {
+     "id": "b",
+     "label": "30"
+    },
+    {
+     "id": "c",
+     "label": "15"
+    },
+    {
+     "id": "d",
+     "label": "20"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "10% = 30 e 5% = 15; 30 + 15 = 45.",
+   "steps": [
+    "10% de 300 = 30.",
+    "5% de 300 = 15.",
+    "Soma: 45."
    ]
   }
  ]

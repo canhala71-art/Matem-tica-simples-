@@ -7,15 +7,15 @@
  "summary": "Descobre o número que, multiplicado por si próprio, dá o valor da raiz.",
  "minutes": 15,
  "blocks": {
-  "introduction": "Se um quadrado tem 25 m² de área, quanto mede o lado? Procuramos o número que, multiplicado por si próprio, dá 25.",
-  "intuition": "A raiz quadrada desfaz o quadrado. Como $5^2=25$, a raiz quadrada de 25 é 5. É o caminho de volta.",
-  "definition": "$\\sqrt{a}$ é o número **não negativo** $b$ tal que $b^2=a$. Quando $a$ é um **quadrado perfeito** (1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144...), a raiz é um número inteiro.",
-  "formulas": "$$\\sqrt{a}=b\\iff b^2=a\\quad(b\\geq 0)$$\n\nDica: aprende de cor os quadrados de 1 a 12. Ajudam muito.",
-  "worked_example": "**Exemplo 1.** $\\sqrt{36}=6$, porque $6\\times6=36$.\n\n**Exemplo 2.** $\\sqrt{121}=11$, porque $11\\times11=121$.",
-  "guided_exercise": "Vamos calcular $\\sqrt{64}$. Pergunta: que número vezes ele próprio dá 64? Experimenta 7×7=49 (pouco) e 8×8=64 (certo). Logo $\\sqrt{64}=8$.",
+  "introduction": "**Objetivos:** perceber o que é uma raiz quadrada, conhecer os quadrados perfeitos até 20² e calcular raízes exatas, usando-as em problemas de área e lado. **Pré-requisitos:** tabuada e potências ao quadrado.\n\nUm terreno quadrado tem 64 m² de área. Quanto mede cada lado? Procuras um número que multiplicado por si próprio dê 64: é o 8. Esse caminho inverso chama-se **raiz quadrada**.",
+  "intuition": "Elevar ao quadrado e tirar a raiz quadrada são operações **inversas**, como somar e subtrair. Se $6^2=36$, então $\\sqrt{36}=6$.\n\nA raiz quadrada de um número é o lado de um quadrado com aquela área. Os números que têm raiz inteira chamam-se **quadrados perfeitos**: 1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225…\n\nComo calcular de cabeça: usa a tabuada ao contrário. Para $\\sqrt{196}$ vê que $14\\times14=196$. Se o número termina em 5, a raiz termina em 5 ($\\sqrt{225}=15$). Para números grandes, decompõe: $\\sqrt{2025}$: $45\\times45=2025$.\n\n**Erros comuns:** confundir $\\sqrt{16}$ com 16 ÷ 2 = 8 (a raiz de 16 é 4); dizer que $\\sqrt{a+b}=\\sqrt a+\\sqrt b$ (por exemplo, $\\sqrt{9+16}=5$, não $3+4=7$); pensar que se pode tirar raiz quadrada de um número negativo nos reais.",
+  "definition": "A **raiz quadrada** de um número $a\\ge0$, escrita $\\sqrt{a}$, é o número **não negativo** $b$ tal que $b^2=a$. Um **quadrado perfeito** é um número natural cuja raiz quadrada é natural.",
+  "formulas": "$$\\sqrt{a}=b\\iff b^2=a\\ (b\\ge0)$$\n\nQuadrados perfeitos: $1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225$.\n\nPropriedades: $\\sqrt{a\\times b}=\\sqrt a\\times\\sqrt b$ e $\\sqrt{\\dfrac ab}=\\dfrac{\\sqrt a}{\\sqrt b}$ (para $a,b\\ge0$, $b\\ne0$). Não vale para a soma.",
+  "worked_example": "**Exemplo 1.** $\\sqrt{36}=6$, porque $6\\times6=36$.\n\n**Exemplo 2.** $\\sqrt{121}=11$, porque $11\\times11=121$.\n\n**Exemplo 3 (termina em 5).** $\\sqrt{225}=15$, porque $15\\times15=225$.\n\n**Exemplo 4 (fração).** $\\sqrt{\\dfrac{9}{25}}=\\dfrac{3}{5}$.\n\n**Exemplo 5 (produto).** $\\sqrt{4\\times9}=\\sqrt{36}=6$, e também $\\sqrt4\\times\\sqrt9=2\\times3=6$.\n\n**Aplicação.** Um terreno quadrado tem 64 m² de área. O lado mede $\\sqrt{64}=8$ m, e o perímetro é $4\\times8=32$ m.",
+  "guided_exercise": "Resolve connosco: **um quadrado tem 169 cm² de área. Quanto mede o lado e qual é o perímetro?**\n\n1) O lado é $\\sqrt{169}$.\n\n2) Procura na tabuada: $13\\times13=169$.\n\n3) Lado = 13 cm.\n\n4) Perímetro = $4\\times13=52$ cm.\n\n5) Verifica: $13^2=169$ ✓.",
   "independent_exercise": "Resolve os exercícios abaixo sem ajuda e usa **Verificar** para ver se acertaste. Se errares, lê a resolução passo a passo e tenta outra vez.",
-  "challenge": "Números grandes também se resolvem por tentativas: $\\sqrt{2025}$ está entre 40 (1600) e 50 (2500). Experimenta o último exercício.",
-  "assessment": "Esta competência só fica **dominada** quando acertas de forma consistente em exercícios de dificuldades diferentes e passas na avaliação. Rapidez não conta: conta perceber."
+  "challenge": "**Desafio.** Entre que dois números inteiros consecutivos está $\\sqrt{50}$? Sabendo que $7^2=49$ e $8^2=64$, o que concluis? Experimenta o mesmo com $\\sqrt{90}$.",
+  "assessment": "Consideras a competência dominada quando consegues: (1) dizer de cabeça os quadrados perfeitos até 15²; (2) calcular raízes quadradas exatas; (3) usar a raiz inversa do quadrado em problemas de área; (4) evitar o erro de somar raízes."
  },
  "exercises": [
   {
@@ -151,6 +151,460 @@
     "Está entre 40 (1600) e 50 (2500).",
     "44×44=1936 (pouco).",
     "45×45=2025."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "raizes.quadradas_exatas",
+   "statement": "Calcula $\\sqrt{25}$.",
+   "options": null,
+   "answer": {
+    "value": "5",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "$5\\times5=25$, logo $\\sqrt{25}=5$.",
+   "steps": [
+    "5 × 5 = 25."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "raizes.quadradas_exatas",
+   "statement": "Calcula $\\sqrt{100}$.",
+   "options": null,
+   "answer": {
+    "value": "10",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "$10\\times10=100$, logo $\\sqrt{100}=10$.",
+   "steps": [
+    "10 × 10 = 100."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "raizes.quadradas_exatas",
+   "statement": "Calcula $\\sqrt{169}$.",
+   "options": null,
+   "answer": {
+    "value": "13",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "$13\\times13=169$, logo $\\sqrt{169}=13$.",
+   "steps": [
+    "13 × 13 = 169."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "raizes.quadradas_exatas",
+   "statement": "Calcula $\\sqrt{196}$.",
+   "options": null,
+   "answer": {
+    "value": "14",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "$14\\times14=196$, logo $\\sqrt{196}=14$.",
+   "steps": [
+    "14 × 14 = 196."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "raizes.quadradas_exatas",
+   "statement": "Calcula $\\sqrt{400}$.",
+   "options": null,
+   "answer": {
+    "value": "20",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "$20\\times20=400$, logo $\\sqrt{400}=20$.",
+   "steps": [
+    "20 × 20 = 400."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "raizes.quadradas_exatas",
+   "statement": "Calcula $\\sqrt{900}$.",
+   "options": null,
+   "answer": {
+    "value": "30",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "$30\\times30=900$, logo $\\sqrt{900}=30$.",
+   "steps": [
+    "30 × 30 = 900."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "raizes.quadradas_exatas",
+   "statement": "Calcula $\\sqrt{\\dfrac{49}{100}}$ como fração.",
+   "options": null,
+   "answer": {
+    "value": "7/10",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "$\\sqrt{49}=7$ e $\\sqrt{100}=10$, logo $\\frac{7}{10}$.",
+   "steps": [
+    "Raiz do numerador: 7.",
+    "Raiz do denominador: 10."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "raizes.quadradas_exatas",
+   "statement": "Calcula $\\sqrt{9+16}$.",
+   "options": null,
+   "answer": {
+    "value": "5",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Soma primeiro: 9 + 16 = 25, e $\\sqrt{25}=5$. Não é $3+4$.",
+   "steps": [
+    "9 + 16 = 25.",
+    "√25 = 5."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "raizes.quadradas_exatas",
+   "statement": "Um quadrado tem 169 cm² de área. Qual é o seu perímetro, em cm?",
+   "options": null,
+   "answer": {
+    "value": "52",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Lado $\\sqrt{169}=13$, perímetro $4\\times13=52$.",
+   "steps": [
+    "Lado = 13.",
+    "4 × 13 = 52."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "raizes.quadradas_exatas",
+   "statement": "Um terreno quadrado tem 2 500 m² de área. Quantos metros de rede são precisos para o vedar à volta?",
+   "options": null,
+   "answer": {
+    "value": "200",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Lado $\\sqrt{2500}=50$ m. Perímetro $4\\times50=200$ m.",
+   "steps": [
+    "√2500 = 50.",
+    "4 × 50 = 200."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "raizes.quadradas_exatas",
+   "statement": "$\\sqrt{16}=8$.",
+   "options": null,
+   "answer": {
+    "boolean": false
+   },
+   "tolerance": 0,
+   "explanation": "A raiz quadrada de 16 é 4, porque $4\\times4=16$. Dividir por 2 é outra operação.",
+   "steps": [
+    "4 × 4 = 16."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "raizes.quadradas_exatas",
+   "statement": "$\\sqrt{25}+\\sqrt{144}=\\sqrt{169}$.",
+   "options": null,
+   "answer": {
+    "boolean": false
+   },
+   "tolerance": 0,
+   "explanation": "5 + 12 = 17, mas $\\sqrt{169}=13$. A raiz não se distribui pela soma.",
+   "steps": [
+    "5 + 12 = 17.",
+    "√169 = 13."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "raizes.quadradas_exatas",
+   "statement": "Entre que dois inteiros consecutivos está $\\sqrt{50}$?",
+   "options": [
+    {
+     "id": "a",
+     "label": "7 e 8"
+    },
+    {
+     "id": "b",
+     "label": "6 e 7"
+    },
+    {
+     "id": "c",
+     "label": "8 e 9"
+    },
+    {
+     "id": "d",
+     "label": "5 e 6"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "$7^2=49<50<64=8^2$.",
+   "steps": [
+    "49 < 50 < 64."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "raizes.quadradas_exatas",
+   "statement": "Calcula $\\sqrt{25}$.",
+   "options": null,
+   "answer": {
+    "value": "5",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "$5\\times5=25$, logo $\\sqrt{25}=5$.",
+   "steps": [
+    "5 × 5 = 25."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "raizes.quadradas_exatas",
+   "statement": "Calcula $\\sqrt{100}$.",
+   "options": null,
+   "answer": {
+    "value": "10",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "$10\\times10=100$, logo $\\sqrt{100}=10$.",
+   "steps": [
+    "10 × 10 = 100."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "raizes.quadradas_exatas",
+   "statement": "Calcula $\\sqrt{169}$.",
+   "options": null,
+   "answer": {
+    "value": "13",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "$13\\times13=169$, logo $\\sqrt{169}=13$.",
+   "steps": [
+    "13 × 13 = 169."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "raizes.quadradas_exatas",
+   "statement": "Calcula $\\sqrt{196}$.",
+   "options": null,
+   "answer": {
+    "value": "14",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "$14\\times14=196$, logo $\\sqrt{196}=14$.",
+   "steps": [
+    "14 × 14 = 196."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "raizes.quadradas_exatas",
+   "statement": "Calcula $\\sqrt{400}$.",
+   "options": null,
+   "answer": {
+    "value": "20",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "$20\\times20=400$, logo $\\sqrt{400}=20$.",
+   "steps": [
+    "20 × 20 = 400."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "raizes.quadradas_exatas",
+   "statement": "Calcula $\\sqrt{900}$.",
+   "options": null,
+   "answer": {
+    "value": "30",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "$30\\times30=900$, logo $\\sqrt{900}=30$.",
+   "steps": [
+    "30 × 30 = 900."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "raizes.quadradas_exatas",
+   "statement": "Calcula $\\sqrt{\\dfrac{49}{100}}$ como fração.",
+   "options": null,
+   "answer": {
+    "value": "7/10",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "$\\sqrt{49}=7$ e $\\sqrt{100}=10$, logo $\\frac{7}{10}$.",
+   "steps": [
+    "Raiz do numerador: 7.",
+    "Raiz do denominador: 10."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "raizes.quadradas_exatas",
+   "statement": "Calcula $\\sqrt{9+16}$.",
+   "options": null,
+   "answer": {
+    "value": "5",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Soma primeiro: 9 + 16 = 25, e $\\sqrt{25}=5$. Não é $3+4$.",
+   "steps": [
+    "9 + 16 = 25.",
+    "√25 = 5."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "raizes.quadradas_exatas",
+   "statement": "Um quadrado tem 169 cm² de área. Qual é o seu perímetro, em cm?",
+   "options": null,
+   "answer": {
+    "value": "52",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Lado $\\sqrt{169}=13$, perímetro $4\\times13=52$.",
+   "steps": [
+    "Lado = 13.",
+    "4 × 13 = 52."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "raizes.quadradas_exatas",
+   "statement": "Um terreno quadrado tem 2 500 m² de área. Quantos metros de rede são precisos para o vedar à volta?",
+   "options": null,
+   "answer": {
+    "value": "200",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Lado $\\sqrt{2500}=50$ m. Perímetro $4\\times50=200$ m.",
+   "steps": [
+    "√2500 = 50.",
+    "4 × 50 = 200."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "raizes.quadradas_exatas",
+   "statement": "$\\sqrt{16}=8$.",
+   "options": null,
+   "answer": {
+    "boolean": false
+   },
+   "tolerance": 0,
+   "explanation": "A raiz quadrada de 16 é 4, porque $4\\times4=16$. Dividir por 2 é outra operação.",
+   "steps": [
+    "4 × 4 = 16."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "raizes.quadradas_exatas",
+   "statement": "$\\sqrt{25}+\\sqrt{144}=\\sqrt{169}$.",
+   "options": null,
+   "answer": {
+    "boolean": false
+   },
+   "tolerance": 0,
+   "explanation": "5 + 12 = 17, mas $\\sqrt{169}=13$. A raiz não se distribui pela soma.",
+   "steps": [
+    "5 + 12 = 17.",
+    "√169 = 13."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "raizes.quadradas_exatas",
+   "statement": "Entre que dois inteiros consecutivos está $\\sqrt{50}$?",
+   "options": [
+    {
+     "id": "a",
+     "label": "7 e 8"
+    },
+    {
+     "id": "b",
+     "label": "6 e 7"
+    },
+    {
+     "id": "c",
+     "label": "8 e 9"
+    },
+    {
+     "id": "d",
+     "label": "5 e 6"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "$7^2=49<50<64=8^2$.",
+   "steps": [
+    "49 < 50 < 64."
    ]
   }
  ]

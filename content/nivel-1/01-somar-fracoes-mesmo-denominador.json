@@ -7,15 +7,15 @@
  "summary": "Aprende a somar frações cujas partes têm o mesmo tamanho.",
  "minutes": 15,
  "blocks": {
-  "introduction": "Imagina uma pizza cortada em 8 fatias iguais. Tu comes 3 fatias e o teu amigo come 2. Quantas fatias comeram os dois? Esta pergunta simples é exatamente a soma de frações com o mesmo denominador.",
-  "intuition": "O **denominador** diz em quantas partes iguais o todo foi dividido. O **numerador** diz quantas dessas partes estamos a contar. Se as fatias têm o mesmo tamanho (mesmo denominador), basta contá-las: 3 oitavos mais 2 oitavos dão 5 oitavos. O tamanho da fatia não muda, por isso o denominador fica igual.",
-  "definition": "Para somar frações com o mesmo denominador, **somam-se os numeradores** e **mantém-se o denominador**. Se for possível, simplifica-se o resultado dividindo o numerador e o denominador pelo mesmo número.",
-  "formulas": "$$\\frac{a}{c}+\\frac{b}{c}=\\frac{a+b}{c}$$\n\nPara simplificar, divide em cima e em baixo pelo mesmo número (por exemplo, $\\frac{6}{9}=\\frac{2}{3}$, porque dividimos por 3).",
-  "worked_example": "**Exemplo 1.** $\\frac{2}{9}+\\frac{4}{9}=\\frac{6}{9}=\\frac{2}{3}$ (dividimos por 3).\n\n**Exemplo 2.** $\\frac{3}{10}+\\frac{1}{10}=\\frac{4}{10}=\\frac{2}{5}$ (dividimos por 2).",
-  "guided_exercise": "Vamos fazer juntos $\\frac{1}{7}+\\frac{3}{7}$. Pergunta a ti próprio: 1) Os denominadores são iguais? Sim, são 7. 2) Soma os numeradores: 1+3=4. 3) Mantém o denominador: 7. Resultado: $\\frac{4}{7}$. Não dá para simplificar.",
+  "introduction": "**Objetivos:** somar e subtrair frações com o mesmo denominador, simplificar o resultado e reconhecer quando dá mais do que um inteiro. **Pré-requisitos:** saber o que é uma fração (numerador e denominador) e a tabuada.\n\nNa vida real aparecem frações a toda a hora: um terço de um bolo, três quartos de um depósito, dois quintos de um terreno. Quando as partes são do **mesmo tamanho**, somá-las é tão natural como contar: três fatias mais duas fatias dão cinco fatias.",
+  "intuition": "Imagina uma pizza cortada em 8 fatias iguais. Cada fatia é $\\frac{1}{8}$ da pizza. Se comes 3 fatias e depois 2, comeste 5 fatias, ou seja $\\frac{5}{8}$.\n\nO que contámos? **Fatias.** O tamanho da fatia (o denominador 8) não mudou, só mudou o número de fatias (o numerador). É por isso que somamos os numeradores e **mantemos** o denominador.\n\nSe a soma der um número de fatias maior que o total da pizza, passaste de um inteiro: $\\frac{12}{8}$ é uma pizza e mais meia. Depois, simplificas dividindo numerador e denominador pelo mesmo número.\n\n**Erros comuns:** (1) somar também os denominadores ($\\frac{1}{5}+\\frac{2}{5}=\\frac{3}{10}$ está errado); (2) esquecer de simplificar; (3) trocar a subtração, fazendo o menor menos o maior sem reparar no sinal.",
+  "definition": "Duas frações têm o **mesmo denominador** quando as partes em que o inteiro foi dividido são iguais. Nesse caso, a **soma** e a **diferença** fazem-se só com os numeradores. Uma fração é **irredutível** (ou simplificada) quando o numerador e o denominador não têm divisores comuns além de 1. Uma fração é **imprópria** quando o numerador é maior ou igual ao denominador (vale 1 ou mais).",
+  "formulas": "$$\\frac{a}{c}+\\frac{b}{c}=\\frac{a+b}{c}\\qquad\\frac{a}{c}-\\frac{b}{c}=\\frac{a-b}{c}\\qquad(c\\neq0)$$\n\nSimplificar: divide numerador e denominador pelo seu máximo divisor comum (m.d.c.).\n\nFração imprópria para número misto: $\\dfrac{12}{8}=1+\\dfrac{4}{8}=1\\dfrac{1}{2}$.",
+  "worked_example": "**Exemplo 1.** $\\frac{2}{9}+\\frac{4}{9}=\\frac{6}{9}=\\frac{2}{3}$ (dividimos por 3).\n\n**Exemplo 2.** $\\frac{3}{10}+\\frac{1}{10}=\\frac{4}{10}=\\frac{2}{5}$ (dividimos por 2).\n\n**Exemplo 3 (subtração).** $\\frac{7}{12}-\\frac{5}{12}=\\frac{2}{12}=\\frac{1}{6}$.\n\n**Exemplo 4 (passa de um inteiro).** $\\frac{5}{8}+\\frac{7}{8}=\\frac{12}{8}=\\frac{3}{2}=1\\frac{1}{2}$.\n\n**Exemplo 5 (três parcelas).** $\\frac{1}{6}+\\frac{2}{6}+\\frac{3}{6}=\\frac{6}{6}=1$.\n\n**Aplicação.** Num depósito de água, na segunda-feira gastaram-se $\\frac{3}{20}$ e na terça $\\frac{5}{20}$. No total gastaram $\\frac{8}{20}=\\frac{2}{5}$ do depósito, e sobram $\\frac{3}{5}$.",
+  "guided_exercise": "Resolve connosco: **o Beto leu $\\frac{3}{14}$ de um livro no sábado e $\\frac{4}{14}$ no domingo. Que fração do livro já leu?**\n\n1) Os denominadores são iguais (14), por isso somam-se os numeradores: 3 + 4 = 7.\n\n2) Fica $\\frac{7}{14}$.\n\n3) Simplifica: 7 e 14 dividem-se por 7, dá $\\frac{1}{2}$.\n\n4) Verifica: leu metade do livro, o que faz sentido porque 7 é metade de 14 ✓.",
   "independent_exercise": "Resolve os exercícios abaixo sem ajuda e usa **Verificar** para ver se acertaste. Se errares, lê a resolução passo a passo e tenta outra vez.",
-  "challenge": "Consegues somar **três** frações de uma só vez? O método é o mesmo: somas os três numeradores e manténs o denominador. Experimenta o último exercício.",
-  "assessment": "Esta competência só fica **dominada** quando acertas de forma consistente em exercícios de dificuldades diferentes e passas na avaliação. Rapidez não conta: conta perceber."
+  "challenge": "**Desafio.** Uma receita pede $\\frac{3}{8}$ de litro de leite e outra $\\frac{7}{8}$. Se juntares as duas, chega 1 litro? E quanto sobra ou falta? Escreve o resultado como número misto e explica porquê, com um desenho de garrafas se ajudar.",
+  "assessment": "Consideras a competência dominada quando consegues: (1) somar e subtrair frações de igual denominador sem somar os denominadores; (2) simplificar sempre o resultado; (3) reconhecer e converter frações impróprias em números mistos; (4) resolver problemas com frações de uma quantidade total."
  },
  "exercises": [
   {
@@ -144,6 +144,554 @@
    "steps": [
     "Soma os três numeradores: 1+2+3=6.",
     "Fica $\\frac{6}{6}$, que é 1 inteiro."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "fracoes.soma_mesmo_denominador",
+   "statement": "Calcula $\\frac{1}{5}+\\frac{2}{5}$ e simplifica o resultado.",
+   "options": null,
+   "answer": {
+    "value": "3/5",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Mantém o denominador 5 e soma os numeradores: 1 + 2 = 3, dando $\\frac{3}{5}$.",
+   "steps": [
+    "Denominador comum: 5.",
+    "1 + 2 = 3.",
+    "Simplifica se for possível."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "fracoes.soma_mesmo_denominador",
+   "statement": "Calcula $\\frac{2}{7}+\\frac{3}{7}$ e simplifica o resultado.",
+   "options": null,
+   "answer": {
+    "value": "5/7",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Mantém o denominador 7 e soma os numeradores: 2 + 3 = 5, dando $\\frac{5}{7}$.",
+   "steps": [
+    "Denominador comum: 7.",
+    "2 + 3 = 5.",
+    "Simplifica se for possível."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "fracoes.soma_mesmo_denominador",
+   "statement": "Calcula $\\frac{5}{9}+\\frac{2}{9}$ e simplifica o resultado.",
+   "options": null,
+   "answer": {
+    "value": "7/9",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Mantém o denominador 9 e soma os numeradores: 5 + 2 = 7, dando $\\frac{7}{9}$.",
+   "steps": [
+    "Denominador comum: 9.",
+    "5 + 2 = 7.",
+    "Simplifica se for possível."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "fracoes.soma_mesmo_denominador",
+   "statement": "Calcula $\\frac{4}{15}+\\frac{6}{15}$ e simplifica o resultado.",
+   "options": null,
+   "answer": {
+    "value": "2/3",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Mantém o denominador 15 e soma os numeradores: 4 + 6 = 10, dando $\\frac{10}{15}$, que simplifica para $\\frac{2}{3}$.",
+   "steps": [
+    "Denominador comum: 15.",
+    "4 + 6 = 10.",
+    "Simplifica se for possível."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "fracoes.soma_mesmo_denominador",
+   "statement": "Calcula $\\frac{7}{20}+\\frac{9}{20}$ e simplifica o resultado.",
+   "options": null,
+   "answer": {
+    "value": "4/5",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Mantém o denominador 20 e soma os numeradores: 7 + 9 = 16, dando $\\frac{16}{20}$, que simplifica para $\\frac{4}{5}$.",
+   "steps": [
+    "Denominador comum: 20.",
+    "7 + 9 = 16.",
+    "Simplifica se for possível."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "fracoes.soma_mesmo_denominador",
+   "statement": "Calcula $\\frac{3}{11}+\\frac{5}{11}$ e simplifica o resultado.",
+   "options": null,
+   "answer": {
+    "value": "8/11",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Mantém o denominador 11 e soma os numeradores: 3 + 5 = 8, dando $\\frac{8}{11}$.",
+   "steps": [
+    "Denominador comum: 11.",
+    "3 + 5 = 8.",
+    "Simplifica se for possível."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "fracoes.subtracao_mesmo_denominador",
+   "statement": "Calcula $\\frac{9}{13}-\\frac{4}{13}$ na forma mais simples.",
+   "options": null,
+   "answer": {
+    "value": "5/13",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Subtraem-se os numeradores: 9 − 4 = 5. Fica $\\frac{5}{13}$.",
+   "steps": [
+    "9 − 4 = 5.",
+    "Mantém o denominador e simplifica."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "fracoes.subtracao_mesmo_denominador",
+   "statement": "Calcula $\\frac{11}{16}-\\frac{5}{16}$ na forma mais simples.",
+   "options": null,
+   "answer": {
+    "value": "3/8",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Subtraem-se os numeradores: 11 − 5 = 6. Fica $\\frac{6}{16}$ = $\\frac{3}{8}$.",
+   "steps": [
+    "11 − 5 = 6.",
+    "Mantém o denominador e simplifica."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "fracoes.subtracao_mesmo_denominador",
+   "statement": "Calcula $\\frac{7}{9}-\\frac{2}{9}$ na forma mais simples.",
+   "options": null,
+   "answer": {
+    "value": "5/9",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Subtraem-se os numeradores: 7 − 2 = 5. Fica $\\frac{5}{9}$.",
+   "steps": [
+    "7 − 2 = 5.",
+    "Mantém o denominador e simplifica."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "fracoes.soma_mesmo_denominador",
+   "statement": "Calcula $\\frac{7}{10}+\\frac{8}{10}$ e escreve o resultado como fração simplificada.",
+   "options": null,
+   "answer": {
+    "value": "3/2",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "7 + 8 = 15, logo $\\frac{15}{10}=\\frac{3}{2}$ (dividindo por 5). É maior que 1, é uma fração imprópria.",
+   "steps": [
+    "15/10.",
+    "Divide por 5: 3/2."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "fracoes.soma_mesmo_denominador",
+   "statement": "$\\frac{4}{9}+\\frac{2}{9}=\\frac{6}{18}$.",
+   "options": null,
+   "answer": {
+    "boolean": false
+   },
+   "tolerance": 0,
+   "explanation": "Só se somam os numeradores; o denominador mantém-se: $\\frac{6}{9}=\\frac{2}{3}$.",
+   "steps": [
+    "4 + 2 = 6.",
+    "Denominador continua 9."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "fracoes.soma_mesmo_denominador",
+   "statement": "$\\frac{3}{5}-\\frac{1}{5}=\\frac{2}{5}$.",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "3 − 1 = 2 e o denominador mantém-se: $\\frac{2}{5}$.",
+   "steps": [
+    "3 − 1 = 2."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "fracoes.soma_mesmo_denominador",
+   "statement": "Qual é a fração irredutível de $\\frac{5}{12}+\\frac{1}{12}$?",
+   "options": [
+    {
+     "id": "a",
+     "label": "$\\frac{1}{2}$"
+    },
+    {
+     "id": "b",
+     "label": "$\\frac{6}{24}$"
+    },
+    {
+     "id": "c",
+     "label": "$\\frac{5}{12}$"
+    },
+    {
+     "id": "d",
+     "label": "$\\frac{1}{3}$"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "5 + 1 = 6, logo $\\frac{6}{12}=\\frac{1}{2}$.",
+   "steps": [
+    "6/12.",
+    "Divide por 6: 1/2."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "fracoes.soma_mesmo_denominador",
+   "statement": "Num depósito gastaram-se $\\frac{3}{20}$ na segunda e $\\frac{5}{20}$ na terça. Que fração do depósito foi gasta? (forma mais simples)",
+   "options": null,
+   "answer": {
+    "value": "2/5",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "3 + 5 = 8, logo $\\frac{8}{20}=\\frac{2}{5}$.",
+   "steps": [
+    "8/20.",
+    "Divide por 4: 2/5."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "fracoes.soma_mesmo_denominador",
+   "statement": "No mesmo depósito, que fração sobra depois de gastar $\\frac{3}{20}$ e $\\frac{5}{20}$? (forma mais simples)",
+   "options": null,
+   "answer": {
+    "value": "3/5",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Tudo é $\\frac{20}{20}$. 20 − 3 − 5 = 12, logo $\\frac{12}{20}=\\frac{3}{5}$.",
+   "steps": [
+    "20/20 − 8/20 = 12/20.",
+    "Simplifica por 4: 3/5."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "fracoes.soma_mesmo_denominador",
+   "statement": "Calcula $\\frac{1}{5}+\\frac{2}{5}$ e simplifica o resultado.",
+   "options": null,
+   "answer": {
+    "value": "3/5",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Mantém o denominador 5 e soma os numeradores: 1 + 2 = 3, dando $\\frac{3}{5}$.",
+   "steps": [
+    "Denominador comum: 5.",
+    "1 + 2 = 3.",
+    "Simplifica se for possível."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "fracoes.soma_mesmo_denominador",
+   "statement": "Calcula $\\frac{2}{7}+\\frac{3}{7}$ e simplifica o resultado.",
+   "options": null,
+   "answer": {
+    "value": "5/7",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Mantém o denominador 7 e soma os numeradores: 2 + 3 = 5, dando $\\frac{5}{7}$.",
+   "steps": [
+    "Denominador comum: 7.",
+    "2 + 3 = 5.",
+    "Simplifica se for possível."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "fracoes.soma_mesmo_denominador",
+   "statement": "Calcula $\\frac{5}{9}+\\frac{2}{9}$ e simplifica o resultado.",
+   "options": null,
+   "answer": {
+    "value": "7/9",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Mantém o denominador 9 e soma os numeradores: 5 + 2 = 7, dando $\\frac{7}{9}$.",
+   "steps": [
+    "Denominador comum: 9.",
+    "5 + 2 = 7.",
+    "Simplifica se for possível."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "fracoes.soma_mesmo_denominador",
+   "statement": "Calcula $\\frac{4}{15}+\\frac{6}{15}$ e simplifica o resultado.",
+   "options": null,
+   "answer": {
+    "value": "2/3",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Mantém o denominador 15 e soma os numeradores: 4 + 6 = 10, dando $\\frac{10}{15}$, que simplifica para $\\frac{2}{3}$.",
+   "steps": [
+    "Denominador comum: 15.",
+    "4 + 6 = 10.",
+    "Simplifica se for possível."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "fracoes.soma_mesmo_denominador",
+   "statement": "Calcula $\\frac{7}{20}+\\frac{9}{20}$ e simplifica o resultado.",
+   "options": null,
+   "answer": {
+    "value": "4/5",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Mantém o denominador 20 e soma os numeradores: 7 + 9 = 16, dando $\\frac{16}{20}$, que simplifica para $\\frac{4}{5}$.",
+   "steps": [
+    "Denominador comum: 20.",
+    "7 + 9 = 16.",
+    "Simplifica se for possível."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "fracoes.soma_mesmo_denominador",
+   "statement": "Calcula $\\frac{3}{11}+\\frac{5}{11}$ e simplifica o resultado.",
+   "options": null,
+   "answer": {
+    "value": "8/11",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Mantém o denominador 11 e soma os numeradores: 3 + 5 = 8, dando $\\frac{8}{11}$.",
+   "steps": [
+    "Denominador comum: 11.",
+    "3 + 5 = 8.",
+    "Simplifica se for possível."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "fracoes.subtracao_mesmo_denominador",
+   "statement": "Calcula $\\frac{9}{13}-\\frac{4}{13}$ na forma mais simples.",
+   "options": null,
+   "answer": {
+    "value": "5/13",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Subtraem-se os numeradores: 9 − 4 = 5. Fica $\\frac{5}{13}$.",
+   "steps": [
+    "9 − 4 = 5.",
+    "Mantém o denominador e simplifica."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "fracoes.subtracao_mesmo_denominador",
+   "statement": "Calcula $\\frac{11}{16}-\\frac{5}{16}$ na forma mais simples.",
+   "options": null,
+   "answer": {
+    "value": "3/8",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Subtraem-se os numeradores: 11 − 5 = 6. Fica $\\frac{6}{16}$ = $\\frac{3}{8}$.",
+   "steps": [
+    "11 − 5 = 6.",
+    "Mantém o denominador e simplifica."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "fracoes.subtracao_mesmo_denominador",
+   "statement": "Calcula $\\frac{7}{9}-\\frac{2}{9}$ na forma mais simples.",
+   "options": null,
+   "answer": {
+    "value": "5/9",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Subtraem-se os numeradores: 7 − 2 = 5. Fica $\\frac{5}{9}$.",
+   "steps": [
+    "7 − 2 = 5.",
+    "Mantém o denominador e simplifica."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "fracoes.soma_mesmo_denominador",
+   "statement": "Calcula $\\frac{7}{10}+\\frac{8}{10}$ e escreve o resultado como fração simplificada.",
+   "options": null,
+   "answer": {
+    "value": "3/2",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "7 + 8 = 15, logo $\\frac{15}{10}=\\frac{3}{2}$ (dividindo por 5). É maior que 1, é uma fração imprópria.",
+   "steps": [
+    "15/10.",
+    "Divide por 5: 3/2."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "fracoes.soma_mesmo_denominador",
+   "statement": "$\\frac{4}{9}+\\frac{2}{9}=\\frac{6}{18}$.",
+   "options": null,
+   "answer": {
+    "boolean": false
+   },
+   "tolerance": 0,
+   "explanation": "Só se somam os numeradores; o denominador mantém-se: $\\frac{6}{9}=\\frac{2}{3}$.",
+   "steps": [
+    "4 + 2 = 6.",
+    "Denominador continua 9."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "fracoes.soma_mesmo_denominador",
+   "statement": "$\\frac{3}{5}-\\frac{1}{5}=\\frac{2}{5}$.",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "3 − 1 = 2 e o denominador mantém-se: $\\frac{2}{5}$.",
+   "steps": [
+    "3 − 1 = 2."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "fracoes.soma_mesmo_denominador",
+   "statement": "Qual é a fração irredutível de $\\frac{5}{12}+\\frac{1}{12}$?",
+   "options": [
+    {
+     "id": "a",
+     "label": "$\\frac{1}{2}$"
+    },
+    {
+     "id": "b",
+     "label": "$\\frac{6}{24}$"
+    },
+    {
+     "id": "c",
+     "label": "$\\frac{5}{12}$"
+    },
+    {
+     "id": "d",
+     "label": "$\\frac{1}{3}$"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "5 + 1 = 6, logo $\\frac{6}{12}=\\frac{1}{2}$.",
+   "steps": [
+    "6/12.",
+    "Divide por 6: 1/2."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "fracoes.soma_mesmo_denominador",
+   "statement": "Num depósito gastaram-se $\\frac{3}{20}$ na segunda e $\\frac{5}{20}$ na terça. Que fração do depósito foi gasta? (forma mais simples)",
+   "options": null,
+   "answer": {
+    "value": "2/5",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "3 + 5 = 8, logo $\\frac{8}{20}=\\frac{2}{5}$.",
+   "steps": [
+    "8/20.",
+    "Divide por 4: 2/5."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "fracoes.soma_mesmo_denominador",
+   "statement": "No mesmo depósito, que fração sobra depois de gastar $\\frac{3}{20}$ e $\\frac{5}{20}$? (forma mais simples)",
+   "options": null,
+   "answer": {
+    "value": "3/5",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Tudo é $\\frac{20}{20}$. 20 − 3 − 5 = 12, logo $\\frac{12}{20}=\\frac{3}{5}$.",
+   "steps": [
+    "20/20 − 8/20 = 12/20.",
+    "Simplifica por 4: 3/5."
    ]
   }
  ]

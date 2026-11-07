@@ -7,15 +7,15 @@
  "summary": "Usa o mínimo múltiplo comum para somar frações com partes de tamanhos diferentes.",
  "minutes": 20,
  "blocks": {
-  "introduction": "E se as fatias tiverem tamanhos diferentes? Não podemos somar metades com terços sem primeiro as pôr no mesmo tamanho. Nesta aula vais aprender a fazê-lo.",
-  "intuition": "Para contar juntas partes de tamanhos diferentes, cortamos tudo em partes mais pequenas e iguais. Uma metade pode ser vista como 3 sextos, e um terço como 2 sextos. Juntos, dão 5 sextos.",
-  "definition": "Para somar frações com denominadores diferentes: 1) encontra o **mínimo múltiplo comum (m.m.c.)** dos denominadores; 2) converte cada fração para esse denominador; 3) soma os numeradores; 4) simplifica, se der.",
-  "formulas": "$$\\frac{a}{b}+\\frac{c}{d}=\\frac{a\\cdot\\frac{m}{b}+c\\cdot\\frac{m}{d}}{m},\\qquad m=\\text{m.m.c.}(b,d)$$\n\nPara converter, multiplica o numerador e o denominador pelo mesmo número: $\\frac{1}{2}=\\frac{1\\times 3}{2\\times 3}=\\frac{3}{6}$.",
-  "worked_example": "**Exemplo 1.** $\\frac{1}{2}+\\frac{1}{3}$. O m.m.c. de 2 e 3 é 6. $\\frac{1}{2}=\\frac{3}{6}$ e $\\frac{1}{3}=\\frac{2}{6}$. Logo $\\frac{3}{6}+\\frac{2}{6}=\\frac{5}{6}$.\n\n**Exemplo 2.** $\\frac{3}{4}+\\frac{1}{6}$. O m.m.c. de 4 e 6 é 12. $\\frac{9}{12}+\\frac{2}{12}=\\frac{11}{12}$.",
-  "guided_exercise": "Vamos fazer juntos $\\frac{1}{4}+\\frac{1}{3}$. O m.m.c. de 4 e 3 é 12. $\\frac{1}{4}=\\frac{3}{12}$ e $\\frac{1}{3}=\\frac{4}{12}$. Soma: $\\frac{3}{12}+\\frac{4}{12}=\\frac{7}{12}$.",
+  "introduction": "**Objetivos:** somar e subtrair frações com denominadores diferentes usando o m.m.c., e perceber porque é preciso um denominador comum. **Pré-requisitos:** múltiplos, m.m.c., frações equivalentes e soma de frações com o mesmo denominador.\n\nSe tens $\\frac{1}{2}$ de uma barra de chocolate e a tua irmã tem $\\frac{1}{3}$ de outra barra igual, quanto chocolate há ao todo? Não podes somar logo 1 + 1, porque as fatias são de tamanhos diferentes. Primeiro é preciso cortar tudo em fatias iguais.",
+  "intuition": "Só se somam coisas do mesmo tipo: maçãs com maçãs. Frações com denominadores diferentes são como fatias de tamanhos diferentes. Para as somar, **trocamos as fatias por outras do mesmo tamanho**, o que se faz com frações equivalentes.\n\nO melhor tamanho comum é o menor que serve a ambas: o **mínimo múltiplo comum** (m.m.c.) dos denominadores. Para 2 e 3 é 6: metade são 3 sextos e um terço são 2 sextos; juntos, 5 sextos.\n\nPassos: (1) acha o m.m.c. dos denominadores; (2) converte cada fração para esse denominador (multiplica numerador e denominador pelo mesmo número); (3) soma os numeradores; (4) simplifica.\n\n**Erros comuns:** somar numeradores e denominadores ($\\frac{1}{2}+\\frac{1}{3}=\\frac{2}{5}$ está errado); mudar só o denominador e esquecer de mudar o numerador; usar um denominador comum que não é múltiplo de ambos.",
+  "definition": "O **mínimo múltiplo comum** de dois números é o menor número positivo que é múltiplo de ambos. **Frações equivalentes** representam o mesmo valor: $\\frac{a}{b}=\\frac{a\\times k}{b\\times k}$ para $k\\neq0$. Reduzir ao **mesmo denominador** é substituir cada fração por uma equivalente cujo denominador é o m.m.c. dos denominadores.",
+  "formulas": "$$\\frac{a}{b}+\\frac{c}{d}=\\frac{a\\times\\frac{m}{b}+c\\times\\frac{m}{d}}{m},\\quad m=\\text{m.m.c.}(b,d)$$\n\nAtalho (sempre funciona, mas pode dar números maiores): $\\dfrac{a}{b}+\\dfrac{c}{d}=\\dfrac{ad+bc}{bd}$, e depois simplifica.\n\nSe $b$ é divisor de $d$, o m.m.c. é simplesmente $d$.",
+  "worked_example": "**Exemplo 1.** $\\frac{1}{2}+\\frac{1}{3}$. O m.m.c. de 2 e 3 é 6. $\\frac{1}{2}=\\frac{3}{6}$ e $\\frac{1}{3}=\\frac{2}{6}$. Logo $\\frac{3}{6}+\\frac{2}{6}=\\frac{5}{6}$.\n\n**Exemplo 2.** $\\frac{3}{4}+\\frac{1}{6}$. O m.m.c. de 4 e 6 é 12. $\\frac{9}{12}+\\frac{2}{12}=\\frac{11}{12}$.\n\n**Exemplo 3 (um denominador divide o outro).** $\\frac{2}{5}+\\frac{3}{10}$. Como 5 divide 10, o m.m.c. é 10: $\\frac{4}{10}+\\frac{3}{10}=\\frac{7}{10}$.\n\n**Exemplo 4 (subtração).** $\\frac{5}{6}-\\frac{3}{8}$. m.m.c.(6, 8) = 24: $\\frac{20}{24}-\\frac{9}{24}=\\frac{11}{24}$.\n\n**Exemplo 5 (resultado simplifica).** $\\frac{1}{6}+\\frac{1}{3}$. m.m.c. = 6: $\\frac{1}{6}+\\frac{2}{6}=\\frac{3}{6}=\\frac{1}{2}$.\n\n**Aplicação.** Uma costureira usou $\\frac{3}{4}$ de metro de fita azul e $\\frac{2}{3}$ de metro de fita vermelha. Ao todo: $\\frac{9}{12}+\\frac{8}{12}=\\frac{17}{12}$ m, ou seja, 1 m e $\\frac{5}{12}$.",
+  "guided_exercise": "Resolve connosco: **calcula $\\frac{2}{3}+\\frac{1}{4}$.**\n\n1) Denominadores 3 e 4. Múltiplos de 3: 3, 6, 9, 12. Múltiplos de 4: 4, 8, 12. O m.m.c. é 12.\n\n2) $\\frac{2}{3}=\\frac{2\\times4}{3\\times4}=\\frac{8}{12}$ e $\\frac{1}{4}=\\frac{1\\times3}{4\\times3}=\\frac{3}{12}$.\n\n3) Soma: $\\frac{8}{12}+\\frac{3}{12}=\\frac{11}{12}$.\n\n4) Já está simplificada (11 é primo e não divide 12). Confere: 8/12 é cerca de 0,67 e 3/12 é 0,25; a soma 0,92 ≈ 11/12 ✓.",
   "independent_exercise": "Resolve os exercícios abaixo sem ajuda e usa **Verificar** para ver se acertaste. Se errares, lê a resolução passo a passo e tenta outra vez.",
-  "challenge": "Quando a soma dá mais do que 1, a fração fica 'maior que o inteiro' (fração imprópria), por exemplo $\\frac{7}{6}$. Experimenta o último exercício.",
-  "assessment": "Esta competência só fica **dominada** quando acertas de forma consistente em exercícios de dificuldades diferentes e passas na avaliação. Rapidez não conta: conta perceber."
+  "challenge": "**Desafio.** Uma torneira enche $\\frac{1}{4}$ de um tanque por hora e outra enche $\\frac{1}{6}$ por hora. Juntas, que fração do tanque enchem numa hora? E em quantas horas encheriam o tanque todo? (Dica: soma as frações e depois pensa no inverso.)",
+  "assessment": "Consideras a competência dominada quando consegues: (1) calcular o m.m.c. de dois denominadores; (2) escrever frações equivalentes com o denominador comum; (3) somar e subtrair e simplificar o resultado; (4) resolver problemas com comprimentos, líquidos e partes de um todo."
  },
  "exercises": [
   {
@@ -144,6 +144,524 @@
     "O m.m.c. de 6 e 3 é 6.",
     "Converte: $\\frac{5}{6}=\\frac{5}{6}$ e $\\frac{1}{3}=\\frac{2}{6}$.",
     "Soma: $\\frac{5}{6}+\\frac{2}{6}=\\frac{7}{6}$"
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "fracoes.soma_denominadores_diferentes",
+   "statement": "Calcula $\\frac{1}{4}+\\frac{1}{6}$ (forma mais simples).",
+   "options": null,
+   "answer": {
+    "value": "5/12",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "m.m.c.(4, 6) = 12. Resultado: $\\frac{5}{12}$.",
+   "steps": [
+    "m.m.c.(4, 6) = 12.",
+    "Converte e soma os numeradores.",
+    "Simplifica."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "fracoes.soma_denominadores_diferentes",
+   "statement": "Calcula $\\frac{2}{3}+\\frac{1}{5}$ (forma mais simples).",
+   "options": null,
+   "answer": {
+    "value": "13/15",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "m.m.c.(3, 5) = 15. Resultado: $\\frac{13}{15}$.",
+   "steps": [
+    "m.m.c.(3, 5) = 15.",
+    "Converte e soma os numeradores.",
+    "Simplifica."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "fracoes.soma_denominadores_diferentes",
+   "statement": "Calcula $\\frac{3}{8}+\\frac{1}{4}$ (forma mais simples).",
+   "options": null,
+   "answer": {
+    "value": "5/8",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "m.m.c.(8, 4) = 8. Resultado: $\\frac{5}{8}$.",
+   "steps": [
+    "m.m.c.(8, 4) = 8.",
+    "Converte e soma os numeradores.",
+    "Simplifica."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "fracoes.soma_denominadores_diferentes",
+   "statement": "Calcula $\\frac{5}{6}+\\frac{1}{9}$ (forma mais simples).",
+   "options": null,
+   "answer": {
+    "value": "17/18",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "m.m.c.(6, 9) = 18. Resultado: $\\frac{17}{18}$.",
+   "steps": [
+    "m.m.c.(6, 9) = 18.",
+    "Converte e soma os numeradores.",
+    "Simplifica."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "fracoes.soma_denominadores_diferentes",
+   "statement": "Calcula $\\frac{1}{2}+\\frac{3}{7}$ (forma mais simples).",
+   "options": null,
+   "answer": {
+    "value": "13/14",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "m.m.c.(2, 7) = 14. Resultado: $\\frac{13}{14}$.",
+   "steps": [
+    "m.m.c.(2, 7) = 14.",
+    "Converte e soma os numeradores.",
+    "Simplifica."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "fracoes.soma_denominadores_diferentes",
+   "statement": "Calcula $\\frac{3}{10}+\\frac{1}{4}$ (forma mais simples).",
+   "options": null,
+   "answer": {
+    "value": "11/20",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "m.m.c.(10, 4) = 20. Resultado: $\\frac{11}{20}$.",
+   "steps": [
+    "m.m.c.(10, 4) = 20.",
+    "Converte e soma os numeradores.",
+    "Simplifica."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "fracoes.subtracao_denominadores_diferentes",
+   "statement": "Calcula $\\frac{3}{4}-\\frac{1}{6}$ (forma mais simples).",
+   "options": null,
+   "answer": {
+    "value": "7/12",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "m.m.c.(4, 6) = 12. Resultado: $\\frac{7}{12}$.",
+   "steps": [
+    "m.m.c.(4, 6) = 12.",
+    "Converte e subtrai os numeradores."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "fracoes.subtracao_denominadores_diferentes",
+   "statement": "Calcula $\\frac{7}{10}-\\frac{2}{5}$ (forma mais simples).",
+   "options": null,
+   "answer": {
+    "value": "3/10",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "m.m.c.(10, 5) = 10. Resultado: $\\frac{3}{10}$.",
+   "steps": [
+    "m.m.c.(10, 5) = 10.",
+    "Converte e subtrai os numeradores."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "fracoes.subtracao_denominadores_diferentes",
+   "statement": "Calcula $\\frac{5}{6}-\\frac{1}{4}$ (forma mais simples).",
+   "options": null,
+   "answer": {
+    "value": "7/12",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "m.m.c.(6, 4) = 12. Resultado: $\\frac{7}{12}$.",
+   "steps": [
+    "m.m.c.(6, 4) = 12.",
+    "Converte e subtrai os numeradores."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "fracoes.soma_denominadores_diferentes",
+   "statement": "Qual é o m.m.c. de 6 e 8?",
+   "options": null,
+   "answer": {
+    "value": "24",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Múltiplos de 6: 6, 12, 18, 24. Múltiplos de 8: 8, 16, 24. O menor comum é 24.",
+   "steps": [
+    "Lista os múltiplos.",
+    "O primeiro comum: 24."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "fracoes.soma_denominadores_diferentes",
+   "statement": "Uma costureira usou $\\frac{3}{4}$ de metro de fita azul e $\\frac{2}{3}$ de metro de fita vermelha. Quantos metros, como fração, usou ao todo?",
+   "options": null,
+   "answer": {
+    "value": "17/12",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "m.m.c.(4, 3) = 12: $\\frac{9}{12}+\\frac{8}{12}=\\frac{17}{12}$ m.",
+   "steps": [
+    "9/12 + 8/12.",
+    "= 17/12."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "fracoes.soma_denominadores_diferentes",
+   "statement": "Uma torneira enche $\\frac{1}{4}$ de um tanque por hora e outra $\\frac{1}{6}$ por hora. Que fração do tanque enchem juntas numa hora?",
+   "options": null,
+   "answer": {
+    "value": "5/12",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "m.m.c.(4, 6) = 12: $\\frac{3}{12}+\\frac{2}{12}=\\frac{5}{12}$.",
+   "steps": [
+    "3/12 + 2/12.",
+    "= 5/12."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "fracoes.soma_denominadores_diferentes",
+   "statement": "Para somar $\\frac{1}{3}+\\frac{1}{4}$ pode usar-se o denominador comum 12.",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "12 é múltiplo de 3 e de 4: $\\frac{4}{12}+\\frac{3}{12}=\\frac{7}{12}$.",
+   "steps": [
+    "12 = 3×4.",
+    "4/12 + 3/12 = 7/12."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "fracoes.soma_denominadores_diferentes",
+   "statement": "Qual é o resultado de $\\frac{1}{2}+\\frac{2}{3}$?",
+   "options": [
+    {
+     "id": "a",
+     "label": "$\\frac{7}{6}$"
+    },
+    {
+     "id": "b",
+     "label": "$\\frac{3}{5}$"
+    },
+    {
+     "id": "c",
+     "label": "$\\frac{3}{6}$"
+    },
+    {
+     "id": "d",
+     "label": "$\\frac{2}{6}$"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "m.m.c. = 6: $\\frac{3}{6}+\\frac{4}{6}=\\frac{7}{6}$, que é maior que 1.",
+   "steps": [
+    "3/6 + 4/6.",
+    "= 7/6."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "fracoes.soma_denominadores_diferentes",
+   "statement": "Calcula $\\frac{1}{4}+\\frac{1}{6}$ (forma mais simples).",
+   "options": null,
+   "answer": {
+    "value": "5/12",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "m.m.c.(4, 6) = 12. Resultado: $\\frac{5}{12}$.",
+   "steps": [
+    "m.m.c.(4, 6) = 12.",
+    "Converte e soma os numeradores.",
+    "Simplifica."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "fracoes.soma_denominadores_diferentes",
+   "statement": "Calcula $\\frac{2}{3}+\\frac{1}{5}$ (forma mais simples).",
+   "options": null,
+   "answer": {
+    "value": "13/15",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "m.m.c.(3, 5) = 15. Resultado: $\\frac{13}{15}$.",
+   "steps": [
+    "m.m.c.(3, 5) = 15.",
+    "Converte e soma os numeradores.",
+    "Simplifica."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "fracoes.soma_denominadores_diferentes",
+   "statement": "Calcula $\\frac{3}{8}+\\frac{1}{4}$ (forma mais simples).",
+   "options": null,
+   "answer": {
+    "value": "5/8",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "m.m.c.(8, 4) = 8. Resultado: $\\frac{5}{8}$.",
+   "steps": [
+    "m.m.c.(8, 4) = 8.",
+    "Converte e soma os numeradores.",
+    "Simplifica."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "fracoes.soma_denominadores_diferentes",
+   "statement": "Calcula $\\frac{5}{6}+\\frac{1}{9}$ (forma mais simples).",
+   "options": null,
+   "answer": {
+    "value": "17/18",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "m.m.c.(6, 9) = 18. Resultado: $\\frac{17}{18}$.",
+   "steps": [
+    "m.m.c.(6, 9) = 18.",
+    "Converte e soma os numeradores.",
+    "Simplifica."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "fracoes.soma_denominadores_diferentes",
+   "statement": "Calcula $\\frac{1}{2}+\\frac{3}{7}$ (forma mais simples).",
+   "options": null,
+   "answer": {
+    "value": "13/14",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "m.m.c.(2, 7) = 14. Resultado: $\\frac{13}{14}$.",
+   "steps": [
+    "m.m.c.(2, 7) = 14.",
+    "Converte e soma os numeradores.",
+    "Simplifica."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "fracoes.soma_denominadores_diferentes",
+   "statement": "Calcula $\\frac{3}{10}+\\frac{1}{4}$ (forma mais simples).",
+   "options": null,
+   "answer": {
+    "value": "11/20",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "m.m.c.(10, 4) = 20. Resultado: $\\frac{11}{20}$.",
+   "steps": [
+    "m.m.c.(10, 4) = 20.",
+    "Converte e soma os numeradores.",
+    "Simplifica."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "fracoes.subtracao_denominadores_diferentes",
+   "statement": "Calcula $\\frac{3}{4}-\\frac{1}{6}$ (forma mais simples).",
+   "options": null,
+   "answer": {
+    "value": "7/12",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "m.m.c.(4, 6) = 12. Resultado: $\\frac{7}{12}$.",
+   "steps": [
+    "m.m.c.(4, 6) = 12.",
+    "Converte e subtrai os numeradores."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "fracoes.subtracao_denominadores_diferentes",
+   "statement": "Calcula $\\frac{7}{10}-\\frac{2}{5}$ (forma mais simples).",
+   "options": null,
+   "answer": {
+    "value": "3/10",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "m.m.c.(10, 5) = 10. Resultado: $\\frac{3}{10}$.",
+   "steps": [
+    "m.m.c.(10, 5) = 10.",
+    "Converte e subtrai os numeradores."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "fracoes.subtracao_denominadores_diferentes",
+   "statement": "Calcula $\\frac{5}{6}-\\frac{1}{4}$ (forma mais simples).",
+   "options": null,
+   "answer": {
+    "value": "7/12",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "m.m.c.(6, 4) = 12. Resultado: $\\frac{7}{12}$.",
+   "steps": [
+    "m.m.c.(6, 4) = 12.",
+    "Converte e subtrai os numeradores."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "fracoes.soma_denominadores_diferentes",
+   "statement": "Qual é o m.m.c. de 6 e 8?",
+   "options": null,
+   "answer": {
+    "value": "24",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Múltiplos de 6: 6, 12, 18, 24. Múltiplos de 8: 8, 16, 24. O menor comum é 24.",
+   "steps": [
+    "Lista os múltiplos.",
+    "O primeiro comum: 24."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "fracoes.soma_denominadores_diferentes",
+   "statement": "Uma costureira usou $\\frac{3}{4}$ de metro de fita azul e $\\frac{2}{3}$ de metro de fita vermelha. Quantos metros, como fração, usou ao todo?",
+   "options": null,
+   "answer": {
+    "value": "17/12",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "m.m.c.(4, 3) = 12: $\\frac{9}{12}+\\frac{8}{12}=\\frac{17}{12}$ m.",
+   "steps": [
+    "9/12 + 8/12.",
+    "= 17/12."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "fracoes.soma_denominadores_diferentes",
+   "statement": "Uma torneira enche $\\frac{1}{4}$ de um tanque por hora e outra $\\frac{1}{6}$ por hora. Que fração do tanque enchem juntas numa hora?",
+   "options": null,
+   "answer": {
+    "value": "5/12",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "m.m.c.(4, 6) = 12: $\\frac{3}{12}+\\frac{2}{12}=\\frac{5}{12}$.",
+   "steps": [
+    "3/12 + 2/12.",
+    "= 5/12."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "fracoes.soma_denominadores_diferentes",
+   "statement": "Para somar $\\frac{1}{3}+\\frac{1}{4}$ pode usar-se o denominador comum 12.",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "12 é múltiplo de 3 e de 4: $\\frac{4}{12}+\\frac{3}{12}=\\frac{7}{12}$.",
+   "steps": [
+    "12 = 3×4.",
+    "4/12 + 3/12 = 7/12."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "fracoes.soma_denominadores_diferentes",
+   "statement": "Qual é o resultado de $\\frac{1}{2}+\\frac{2}{3}$?",
+   "options": [
+    {
+     "id": "a",
+     "label": "$\\frac{7}{6}$"
+    },
+    {
+     "id": "b",
+     "label": "$\\frac{3}{5}$"
+    },
+    {
+     "id": "c",
+     "label": "$\\frac{3}{6}$"
+    },
+    {
+     "id": "d",
+     "label": "$\\frac{2}{6}$"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "m.m.c. = 6: $\\frac{3}{6}+\\frac{4}{6}=\\frac{7}{6}$, que é maior que 1.",
+   "steps": [
+    "3/6 + 4/6.",
+    "= 7/6."
    ]
   }
  ]

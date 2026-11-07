@@ -7,15 +7,15 @@
  "summary": "Soma números positivos e negativos usando a reta numérica.",
  "minutes": 20,
  "blocks": {
-  "introduction": "Temperaturas abaixo de zero, dívidas, saldos negativos: os números inteiros incluem positivos e negativos. Nesta aula aprendes a somá-los.",
-  "intuition": "Na reta numérica, somar um número positivo é andar para a **direita**, e somar um negativo é andar para a **esquerda**. Em $-5+8$, começas em −5 e andas 8 para a direita: chegas a 3.",
-  "definition": "**Sinais iguais:** somam-se os valores e mantém-se o sinal. **Sinais diferentes:** subtrai-se o valor menor do maior, e fica o sinal do número com maior valor (sem contar o sinal).",
-  "formulas": "$$(-a)+(-b)=-(a+b)$$\n$$(-a)+b=b-a\\quad\\text{(se }b>a\\text{)}$$",
-  "worked_example": "**Exemplo 1.** $-7+(-3)=-10$ (sinais iguais: 7+3=10, fica negativo).\n\n**Exemplo 2.** $4+(-9)=-5$ (sinais diferentes: 9−4=5, e o 9 é maior e negativo).",
-  "guided_exercise": "Vamos fazer $-2+6$. Os sinais são diferentes. 6−2=4. O 6 é maior e positivo, logo o resultado é $4$.",
+  "introduction": "**Objetivos:** somar e subtrair números inteiros (positivos e negativos), comparar inteiros e aplicar à temperatura, saldos e altitudes. **Pré-requisitos:** somar e subtrair naturais; ideia de reta numérica.\n\nA temperatura pode descer abaixo de zero, uma conta bancária pode ficar negativa, um mergulhador está a −12 m. Para lidar com ganhos e perdas precisamos de números com sinal.",
+  "intuition": "Pensa na **reta numérica**: os positivos estão à direita do zero, os negativos à esquerda. Somar um positivo é andar para a direita; somar um negativo é andar para a esquerda.\n\nOutra imagem: dinheiro e dívidas. $+5$ é teres 5; $-5$ é deveres 5. Se tens 4 e deves 9, ficas a dever 5: $4+(-9)=-5$.\n\nRegras de bolso: **sinais iguais**, somam-se os valores e mantém-se o sinal; **sinais diferentes**, subtrai-se o menor ao maior e fica o sinal do que tem mais valor.\n\nSubtrair é somar o simétrico: $a-b=a+(-b)$. E menos com menos dá mais: $5-(-3)=5+3=8$.\n\n**Erros comuns:** achar que $-8>-2$ (o mais perto do zero é o maior); somar valores com sinais diferentes como se fossem iguais; esquecer o sinal no resultado.",
+  "definition": "Os **números inteiros** são $\\ldots,-3,-2,-1,0,1,2,3,\\ldots$. O **simétrico** de $a$ é $-a$ e a sua soma é zero. O **valor absoluto** $|a|$ é a distância de $a$ ao zero: $|-7|=7$. Dados dois inteiros, o maior é o que está mais à direita na reta.",
+  "formulas": "Sinais iguais: $(-7)+(-3)=-(7+3)=-10$.\n\nSinais diferentes: $4+(-9)=-(9-4)=-5$ e $(-4)+9=+(9-4)=5$.\n\nSubtração: $a-b=a+(-b)$, por exemplo $5-(-3)=5+3=8$.\n\nSimétrico: $a+(-a)=0$.",
+  "worked_example": "**Exemplo 1.** $-7+(-3)=-10$ (sinais iguais: 7+3=10, fica negativo).\n\n**Exemplo 2.** $4+(-9)=-5$ (sinais diferentes: 9−4=5, e o 9 é maior e negativo).\n\n**Exemplo 3.** $-4+9=5$ (sinais diferentes: 9−4=5, o 9 é positivo).\n\n**Exemplo 4 (subtração).** $5-(-3)=5+3=8$.\n\n**Exemplo 5 (várias parcelas).** $-6+10+(-8)=4+(-8)=-4$.\n\n**Aplicação.** A temperatura de manhã era −3 °C e subiu 9 graus: $-3+9=6$ °C. À noite desceu 10 graus: $6-10=-4$ °C.",
+  "guided_exercise": "Resolve connosco: **calcula $-12+7-(-5)$.**\n\n1) Subtrair $-5$ é somar $5$: $-12+7+5$.\n\n2) $-12+7=-5$ (sinais diferentes: 12−7=5, o 12 é maior e negativo).\n\n3) $-5+5=0$.\n\n4) Verifica pela reta: de −12 anda 7 para a direita, ficas em −5; mais 5 para a direita, chegas a 0 ✓.",
   "independent_exercise": "Resolve os exercícios abaixo sem ajuda e usa **Verificar** para ver se acertaste. Se errares, lê a resolução passo a passo e tenta outra vez.",
-  "challenge": "Numa manhã a temperatura é de −3 °C e sobe 9 graus. Qual é a nova temperatura? Vê o último exercício.",
-  "assessment": "Esta competência só fica **dominada** quando acertas de forma consistente em exercícios de dificuldades diferentes e passas na avaliação. Rapidez não conta: conta perceber."
+  "challenge": "**Desafio.** Um elevador parte do 3.º andar, sobe 5, desce 9 e sobe 2. Em que andar fica? (Se o rés-do-chão é 0, o subsolo é negativo.) Usa uma reta numérica e depois confirma com a soma.",
+  "assessment": "Consideras a competência dominada quando consegues: (1) comparar inteiros pela reta numérica; (2) somar com sinais iguais e diferentes; (3) transformar subtrações em somas do simétrico; (4) resolver problemas de temperatura, saldos e altitudes."
  },
  "exercises": [
   {
@@ -133,6 +133,572 @@
    "steps": [
     "Começa em −3 e anda 9 para a direita.",
     "−3 + 9 = 6."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "inteiros.somar",
+   "statement": "Calcula $-6+(-9)$.",
+   "options": null,
+   "answer": {
+    "value": "-15",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Resultado: $-15$.",
+   "steps": [
+    "Sinais iguais: soma e mantém o sinal; diferentes: subtrai e fica o sinal do maior.",
+    "= -15."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "inteiros.somar",
+   "statement": "Calcula $12+(-20)$.",
+   "options": null,
+   "answer": {
+    "value": "-8",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Resultado: $-8$.",
+   "steps": [
+    "Sinais iguais: soma e mantém o sinal; diferentes: subtrai e fica o sinal do maior.",
+    "= -8."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "inteiros.somar",
+   "statement": "Calcula $-15+(8)$.",
+   "options": null,
+   "answer": {
+    "value": "-7",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Resultado: $-7$.",
+   "steps": [
+    "Sinais iguais: soma e mantém o sinal; diferentes: subtrai e fica o sinal do maior.",
+    "= -7."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "inteiros.somar",
+   "statement": "Calcula $-4+(-4)$.",
+   "options": null,
+   "answer": {
+    "value": "-8",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Resultado: $-8$.",
+   "steps": [
+    "Sinais iguais: soma e mantém o sinal; diferentes: subtrai e fica o sinal do maior.",
+    "= -8."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "inteiros.somar",
+   "statement": "Calcula $25+(-25)$.",
+   "options": null,
+   "answer": {
+    "value": "0",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Resultado: $0$.",
+   "steps": [
+    "Sinais iguais: soma e mantém o sinal; diferentes: subtrai e fica o sinal do maior.",
+    "= 0."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "inteiros.somar",
+   "statement": "Calcula $-30+(45)$.",
+   "options": null,
+   "answer": {
+    "value": "15",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Resultado: $15$.",
+   "steps": [
+    "Sinais iguais: soma e mantém o sinal; diferentes: subtrai e fica o sinal do maior.",
+    "= 15."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "inteiros.subtrair",
+   "statement": "Calcula $5-(-3)$.",
+   "options": null,
+   "answer": {
+    "value": "8",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Subtrair -3 é somar 3: $5+(3)=8$.",
+   "steps": [
+    "a − b = a + (−b).",
+    "= 8."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "inteiros.subtrair",
+   "statement": "Calcula $-2-(-7)$.",
+   "options": null,
+   "answer": {
+    "value": "5",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Subtrair -7 é somar 7: $-2+(7)=5$.",
+   "steps": [
+    "a − b = a + (−b).",
+    "= 5."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "inteiros.subtrair",
+   "statement": "Calcula $10-(12)$.",
+   "options": null,
+   "answer": {
+    "value": "-2",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Subtrair 12 é somar -12: $10+(-12)=-2$.",
+   "steps": [
+    "a − b = a + (−b).",
+    "= -2."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "inteiros.subtrair",
+   "statement": "Calcula $-8-(-8)$.",
+   "options": null,
+   "answer": {
+    "value": "0",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Subtrair -8 é somar 8: $-8+(8)=0$.",
+   "steps": [
+    "a − b = a + (−b).",
+    "= 0."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "inteiros.somar",
+   "statement": "Calcula $-6+10+(-8)$.",
+   "options": null,
+   "answer": {
+    "value": "-4",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "−6 + 10 = 4 e 4 + (−8) = −4.",
+   "steps": [
+    "−6 + 10 = 4.",
+    "4 − 8 = −4."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "inteiros.somar",
+   "statement": "A temperatura de manhã era −3 °C e subiu 9 graus. Qual é a nova temperatura, em °C?",
+   "options": null,
+   "answer": {
+    "value": "6",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "−3 + 9 = 6.",
+   "steps": [
+    "Anda 9 para a direita a partir de −3."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "inteiros.somar",
+   "statement": "Um elevador parte do andar 3, sobe 5, desce 9 e sobe 2. Em que andar fica?",
+   "options": null,
+   "answer": {
+    "value": "1",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "3 + 5 = 8; 8 − 9 = −1; −1 + 2 = 1. Fica no andar 1.",
+   "steps": [
+    "3 + 5 − 9 + 2.",
+    "= 1."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "inteiros.somar",
+   "statement": "$-2>-8$.",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "Na reta numérica, −2 está à direita de −8, logo é maior.",
+   "steps": [
+    "−8 < −2."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "inteiros.somar",
+   "statement": "$5-(-3)=2$.",
+   "options": null,
+   "answer": {
+    "boolean": false
+   },
+   "tolerance": 0,
+   "explanation": "Subtrair −3 é somar 3: $5+3=8$.",
+   "steps": [
+    "5 − (−3) = 5 + 3 = 8."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "inteiros.somar",
+   "statement": "Qual é o resultado de $-7+(-3)$?",
+   "options": [
+    {
+     "id": "a",
+     "label": "−10"
+    },
+    {
+     "id": "b",
+     "label": "−4"
+    },
+    {
+     "id": "c",
+     "label": "10"
+    },
+    {
+     "id": "d",
+     "label": "4"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "Sinais iguais: soma 7 + 3 = 10 e mantém o sinal negativo.",
+   "steps": [
+    "7 + 3 = 10.",
+    "Sinal negativo."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "inteiros.somar",
+   "statement": "Calcula $-6+(-9)$.",
+   "options": null,
+   "answer": {
+    "value": "-15",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Resultado: $-15$.",
+   "steps": [
+    "Sinais iguais: soma e mantém o sinal; diferentes: subtrai e fica o sinal do maior.",
+    "= -15."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "inteiros.somar",
+   "statement": "Calcula $12+(-20)$.",
+   "options": null,
+   "answer": {
+    "value": "-8",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Resultado: $-8$.",
+   "steps": [
+    "Sinais iguais: soma e mantém o sinal; diferentes: subtrai e fica o sinal do maior.",
+    "= -8."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "inteiros.somar",
+   "statement": "Calcula $-15+(8)$.",
+   "options": null,
+   "answer": {
+    "value": "-7",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Resultado: $-7$.",
+   "steps": [
+    "Sinais iguais: soma e mantém o sinal; diferentes: subtrai e fica o sinal do maior.",
+    "= -7."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "inteiros.somar",
+   "statement": "Calcula $-4+(-4)$.",
+   "options": null,
+   "answer": {
+    "value": "-8",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Resultado: $-8$.",
+   "steps": [
+    "Sinais iguais: soma e mantém o sinal; diferentes: subtrai e fica o sinal do maior.",
+    "= -8."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "inteiros.somar",
+   "statement": "Calcula $25+(-25)$.",
+   "options": null,
+   "answer": {
+    "value": "0",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Resultado: $0$.",
+   "steps": [
+    "Sinais iguais: soma e mantém o sinal; diferentes: subtrai e fica o sinal do maior.",
+    "= 0."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "inteiros.somar",
+   "statement": "Calcula $-30+(45)$.",
+   "options": null,
+   "answer": {
+    "value": "15",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Resultado: $15$.",
+   "steps": [
+    "Sinais iguais: soma e mantém o sinal; diferentes: subtrai e fica o sinal do maior.",
+    "= 15."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "inteiros.subtrair",
+   "statement": "Calcula $5-(-3)$.",
+   "options": null,
+   "answer": {
+    "value": "8",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Subtrair -3 é somar 3: $5+(3)=8$.",
+   "steps": [
+    "a − b = a + (−b).",
+    "= 8."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "inteiros.subtrair",
+   "statement": "Calcula $-2-(-7)$.",
+   "options": null,
+   "answer": {
+    "value": "5",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Subtrair -7 é somar 7: $-2+(7)=5$.",
+   "steps": [
+    "a − b = a + (−b).",
+    "= 5."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "inteiros.subtrair",
+   "statement": "Calcula $10-(12)$.",
+   "options": null,
+   "answer": {
+    "value": "-2",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Subtrair 12 é somar -12: $10+(-12)=-2$.",
+   "steps": [
+    "a − b = a + (−b).",
+    "= -2."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "inteiros.subtrair",
+   "statement": "Calcula $-8-(-8)$.",
+   "options": null,
+   "answer": {
+    "value": "0",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Subtrair -8 é somar 8: $-8+(8)=0$.",
+   "steps": [
+    "a − b = a + (−b).",
+    "= 0."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "inteiros.somar",
+   "statement": "Calcula $-6+10+(-8)$.",
+   "options": null,
+   "answer": {
+    "value": "-4",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "−6 + 10 = 4 e 4 + (−8) = −4.",
+   "steps": [
+    "−6 + 10 = 4.",
+    "4 − 8 = −4."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "inteiros.somar",
+   "statement": "A temperatura de manhã era −3 °C e subiu 9 graus. Qual é a nova temperatura, em °C?",
+   "options": null,
+   "answer": {
+    "value": "6",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "−3 + 9 = 6.",
+   "steps": [
+    "Anda 9 para a direita a partir de −3."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "inteiros.somar",
+   "statement": "Um elevador parte do andar 3, sobe 5, desce 9 e sobe 2. Em que andar fica?",
+   "options": null,
+   "answer": {
+    "value": "1",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "3 + 5 = 8; 8 − 9 = −1; −1 + 2 = 1. Fica no andar 1.",
+   "steps": [
+    "3 + 5 − 9 + 2.",
+    "= 1."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "inteiros.somar",
+   "statement": "$-2>-8$.",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "Na reta numérica, −2 está à direita de −8, logo é maior.",
+   "steps": [
+    "−8 < −2."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "inteiros.somar",
+   "statement": "$5-(-3)=2$.",
+   "options": null,
+   "answer": {
+    "boolean": false
+   },
+   "tolerance": 0,
+   "explanation": "Subtrair −3 é somar 3: $5+3=8$.",
+   "steps": [
+    "5 − (−3) = 5 + 3 = 8."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "inteiros.somar",
+   "statement": "Qual é o resultado de $-7+(-3)$?",
+   "options": [
+    {
+     "id": "a",
+     "label": "−10"
+    },
+    {
+     "id": "b",
+     "label": "−4"
+    },
+    {
+     "id": "c",
+     "label": "10"
+    },
+    {
+     "id": "d",
+     "label": "4"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "Sinais iguais: soma 7 + 3 = 10 e mantém o sinal negativo.",
+   "steps": [
+    "7 + 3 = 10.",
+    "Sinal negativo."
    ]
   }
  ]
