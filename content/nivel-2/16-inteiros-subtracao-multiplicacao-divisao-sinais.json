@@ -1,0 +1,322 @@
+{
+ "subject": "numeros-inteiros",
+ "topic_title": "Operações com inteiros",
+ "topic_slug": "operacoes-com-inteiros",
+ "lesson_title": "Subtração, multiplicação e divisão de inteiros: regras de sinais",
+ "lesson_slug": "inteiros-subtracao-multiplicacao-divisao-sinais",
+ "summary": "Subtrai, multiplica e divide inteiros usando as regras de sinais.",
+ "minutes": 25,
+ "blocks": {
+  "introduction": "**Objetivos:** subtrair inteiros como soma do oposto, multiplicar e dividir inteiros usando a regra dos sinais. **Pré-requisitos:** soma de inteiros, módulo e tabuada.\n\nQuando devemos 5 000 Kz a um amigo e ele nos «perdoa» a dívida, ficamos 5 000 Kz melhor: $0-(-5\\,000)=+5\\,000$. Subtrair uma dívida é ganhar. É este tipo de raciocínio que está por trás das regras de sinais.",
+  "intuition": "**Subtração.** Subtrair é somar o oposto: $a-b=a+(-b)$. Assim, $5-(-3)=5+3=8$ e $-4-6=-4+(-6)=-10$.\n\n**Multiplicação.** Multiplica os módulos e decide o sinal: **sinais iguais → positivo; sinais diferentes → negativo.** Porquê? Multiplicar por um positivo é repetir a soma ($3\\times(-4)=-4-4-4=-12$). Multiplicar por um negativo inverte o sentido: $(-3)\\times(-4)=+12$.\n\n**Divisão.** Segue a mesma regra de sinais. Divide os módulos: $(-42)\\div6=-7$ e $(-42)\\div(-6)=7$. Divisão por zero **não** existe.\n\nQuando há vários fatores, conta os negativos: número **par** de negativos → positivo; **ímpar** → negativo.\n\n**Erros comuns:** achar que menos com menos dá menos; esquecer de transformar a subtração em soma do oposto; dividir por zero.",
+  "definition": "A **diferença** $a-b$ é o número $a+(-b)$. O **produto** de inteiros de sinais iguais é o produto dos módulos; de sinais diferentes é o simétrico do produto dos módulos. O **quociente** $a\\div b$ ($b\\ne0$) é o inteiro $q$ tal que $b\\times q=a$.",
+  "formulas": "$$a-b=a+(-b)\\qquad(+)(+)=+\\quad(-)(-)=+\\quad(+)(-)=-\\quad(-)(+)=-$$\n\nA mesma regra vale para a divisão. Zero: $a\\times0=0$ e $0\\div a=0$ ($a\\neq0$).\n\nPotências de $-1$: $(-1)^n=1$ se $n$ é par e $-1$ se é ímpar.",
+  "worked_example": "**Exemplo 1 (subtração).** $7-(-4)=7+4=11$.\n\n**Exemplo 2.** $-9-5=-9+(-5)=-14$.\n\n**Exemplo 3 (multiplicação).** $(-6)\\times7=-42$; $(-8)\\times(-5)=40$.\n\n**Exemplo 4 (divisão).** $(-56)\\div(-8)=7$; $63\\div(-9)=-7$.\n\n**Exemplo 5 (vários fatores).** $(-2)\\times3\\times(-4)\\times(-1)$ tem três fatores negativos, logo o sinal é −: $2\\times3\\times4\\times1=24$, resultado −24.\n\n**Aplicação.** O saldo de uma conta desce 3 500 Kz por dia durante 4 dias: $4\\times(-3\\,500)=-14\\,000$ Kz.",
+  "guided_exercise": "Resolve connosco: **calcula $(-3)\\times(-5)-12\\div(-4)$.**\n\n1) Primeiro as multiplicações e divisões. $(-3)\\times(-5)=15$ (sinais iguais).\n\n2) $12\\div(-4)=-3$ (sinais diferentes).\n\n3) Fica $15-(-3)=15+3=18$.\n\n4) Confere: o sinal de menos antes de −3 transforma-se em +3 ✓.",
+  "independent_exercise": "Chegou a tua vez. Resolve os exercícios sem pressa e usa **Verificar** para confirmar. Se errares, não faz mal: lê a resolução passo a passo, percebe onde o raciocínio escorregou e tenta outra vez. É assim que se aprende de verdade.",
+  "challenge": "**Desafio.** Sem calcular tudo, indica o sinal de $(-1)^{2025}\\times(-2)^{10}\\times(-3)^{7}$ e depois calcula $(-1)^{2025}$ e $(-1)^{2024}$. Que regra deduzes sobre potências de −1?",
+  "assessment": "Consideras a competência dominada quando consegues: (1) transformar subtrações em somas do oposto; (2) aplicar a regra de sinais à multiplicação e à divisão; (3) contar fatores negativos; (4) lembrar que não se divide por zero."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "inteiros.sinais",
+   "statement": "Calcula $7-(-4)$.",
+   "options": null,
+   "answer": {
+    "value": "11",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Subtrair -4 é somar o oposto 4: $7+(4)=11$.",
+   "steps": [
+    "a − b = a + (−b).",
+    "= 11."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "inteiros.sinais",
+   "statement": "Calcula $-9-(5)$.",
+   "options": null,
+   "answer": {
+    "value": "-14",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Subtrair 5 é somar o oposto -5: $-9+(-5)=-14$.",
+   "steps": [
+    "a − b = a + (−b).",
+    "= -14."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "inteiros.sinais",
+   "statement": "Calcula $-3-(-8)$.",
+   "options": null,
+   "answer": {
+    "value": "5",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Subtrair -8 é somar o oposto 8: $-3+(8)=5$.",
+   "steps": [
+    "a − b = a + (−b).",
+    "= 5."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "inteiros.sinais",
+   "statement": "Calcula $0-(-6)$.",
+   "options": null,
+   "answer": {
+    "value": "6",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Subtrair -6 é somar o oposto 6: $0+(6)=6$.",
+   "steps": [
+    "a − b = a + (−b).",
+    "= 6."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "inteiros.sinais",
+   "statement": "Calcula $-12-(-12)$.",
+   "options": null,
+   "answer": {
+    "value": "0",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Subtrair -12 é somar o oposto 12: $-12+(12)=0$.",
+   "steps": [
+    "a − b = a + (−b).",
+    "= 0."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "inteiros.sinais",
+   "statement": "Calcula $(-6)\\times(7)$.",
+   "options": null,
+   "answer": {
+    "value": "-42",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Sinais diferentes: o produto é negativo. 6×7=42, logo $-42$.",
+   "steps": [
+    "Multiplica os módulos.",
+    "Aplica a regra dos sinais."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "inteiros.sinais",
+   "statement": "Calcula $(-8)\\times(-5)$.",
+   "options": null,
+   "answer": {
+    "value": "40",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Sinais iguais: o produto é positivo. 8×5=40, logo $40$.",
+   "steps": [
+    "Multiplica os módulos.",
+    "Aplica a regra dos sinais."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "inteiros.sinais",
+   "statement": "Calcula $(9)\\times(-4)$.",
+   "options": null,
+   "answer": {
+    "value": "-36",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Sinais diferentes: o produto é negativo. 9×4=36, logo $-36$.",
+   "steps": [
+    "Multiplica os módulos.",
+    "Aplica a regra dos sinais."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "inteiros.sinais",
+   "statement": "Calcula $(-3)\\times(12)$.",
+   "options": null,
+   "answer": {
+    "value": "-36",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Sinais diferentes: o produto é negativo. 3×12=36, logo $-36$.",
+   "steps": [
+    "Multiplica os módulos.",
+    "Aplica a regra dos sinais."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "inteiros.sinais",
+   "statement": "Calcula $(-42)\\div(6)$.",
+   "options": null,
+   "answer": {
+    "value": "-7",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Divide os módulos: 42÷6=7. Sinais diferentes: quociente negativo: $-7$.",
+   "steps": [
+    "Divide os módulos.",
+    "Regra dos sinais."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "inteiros.sinais",
+   "statement": "Calcula $(-56)\\div(-8)$.",
+   "options": null,
+   "answer": {
+    "value": "7",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Divide os módulos: 56÷8=7. Sinais iguais: quociente positivo: $7$.",
+   "steps": [
+    "Divide os módulos.",
+    "Regra dos sinais."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "inteiros.sinais",
+   "statement": "Calcula $(63)\\div(-9)$.",
+   "options": null,
+   "answer": {
+    "value": "-7",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Divide os módulos: 63÷9=7. Sinais diferentes: quociente negativo: $-7$.",
+   "steps": [
+    "Divide os módulos.",
+    "Regra dos sinais."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "inteiros.sinais",
+   "statement": "Calcula $(-2)\\times(-3)\\times(-4)$.",
+   "options": null,
+   "answer": {
+    "value": "-24",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Três fatores negativos: sinal negativo. 2×3×4 = 24, logo −24.",
+   "steps": [
+    "(−2)(−3) = 6.",
+    "6 × (−4) = −24."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "inteiros.sinais",
+   "statement": "A temperatura desce 3 °C por hora durante 5 horas. Qual é a variação total, em °C?",
+   "options": null,
+   "answer": {
+    "value": "-15",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "5 × (−3) = −15 °C.",
+   "steps": [
+    "Descer 3 = −3 por hora.",
+    "5 × (−3) = −15."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "inteiros.sinais",
+   "statement": "O produto de dois números negativos é positivo.",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "Menos com menos dá mais: $(-3)\\times(-4)=12$.",
+   "steps": [
+    "Sinais iguais → positivo."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "inteiros.sinais",
+   "statement": "$(-18)\\div(-3)=-6$.",
+   "options": null,
+   "answer": {
+    "boolean": false
+   },
+   "tolerance": 0,
+   "explanation": "Sinais iguais dão quociente positivo: $18\\div3=6$.",
+   "steps": [
+    "Sinais iguais → positivo."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "inteiros.sinais",
+   "statement": "Qual é o resultado de $(-5)\\times4$?",
+   "options": [
+    {
+     "id": "a",
+     "label": "−20"
+    },
+    {
+     "id": "b",
+     "label": "20"
+    },
+    {
+     "id": "c",
+     "label": "−1"
+    },
+    {
+     "id": "d",
+     "label": "9"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "Sinais diferentes dão produto negativo: 5×4 = 20 → −20.",
+   "steps": [
+    "Sinais diferentes → negativo."
+   ]
+  }
+ ]
+}

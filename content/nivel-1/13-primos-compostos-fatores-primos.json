@@ -1,0 +1,270 @@
+{
+ "subject": "numeros-naturais",
+ "topic_title": "Múltiplos, divisores e primos",
+ "topic_slug": "multiplos-divisores-primos",
+ "lesson_title": "Números primos, compostos e decomposição em fatores primos",
+ "lesson_slug": "primos-compostos-fatores-primos",
+ "summary": "Reconhece números primos e compostos e decompõe qualquer natural em fatores primos.",
+ "minutes": 25,
+ "blocks": {
+  "introduction": "**Objetivos:** distinguir primos de compostos, usar o crivo de Eratóstenes e decompor números em fatores primos. **Pré-requisitos:** divisores e critérios de divisibilidade.\n\nOs números primos são os «átomos» da aritmética: todo o número natural maior que 1 se constrói multiplicando primos, e de uma só maneira. A segurança das transferências bancárias e dos pagamentos por telemóvel assenta em números primos gigantes.",
+  "intuition": "Um número natural maior que 1 é **primo** se só tem dois divisores: 1 e ele próprio (2, 3, 5, 7, 11, 13...). Caso contrário é **composto** (4, 6, 8, 9, 10, 12...). O 1 não é primo nem composto, e o 2 é o único primo par.\n\nPara decidir se $n$ é primo, basta testar os primos $p$ com $p\\times p\\le n$: se nenhum dividir $n$, é primo. (Para 97 testa 2, 3, 5, 7, porque $11^2=121>97$.)\n\nO **crivo de Eratóstenes** encontra todos os primos até um limite: escreve os números, risca os múltiplos de 2 (menos o 2), de 3, de 5, de 7... o que sobra são primos.\n\nO **Teorema Fundamental da Aritmética** diz que todo o natural maior que 1 se escreve de uma só maneira (a menos da ordem) como produto de primos. Para decompor, divide pelo menor primo possível, repetidamente, até chegar a 1. Por exemplo 360 = 2·2·2·3·3·5 = $2^3\\times3^2\\times5$.\n\n**Erros comuns:** dizer que 1 é primo; achar que todos os ímpares são primos (9, 15, 21...); parar a decomposição sem chegar só a primos (por exemplo, deixar 4 ou 9 no resultado).",
+  "definition": "Um natural $p>1$ é **primo** se os seus únicos divisores são 1 e $p$. Um natural $n>1$ que não é primo é **composto**. **Decompor em fatores primos** é escrever $n$ como produto de primos, $n=p_1^{a_1}\\times p_2^{a_2}\\times\\cdots\\times p_k^{a_k}$.",
+  "formulas": "$$n=p_1^{a_1}\\times p_2^{a_2}\\times\\cdots\\times p_k^{a_k}$$\n\nNúmero de divisores de $n$: $(a_1+1)(a_2+1)\\cdots(a_k+1)$. Por exemplo $360=2^3\\times3^2\\times5$ tem $(3+1)(2+1)(1+1)=24$ divisores.\n\nPrimos até 50: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47.",
+  "worked_example": "**Exemplo 1.** 29 é primo? Primos com $p^2\\le29$: 2, 3, 5. Nenhum divide 29, logo é primo.\n\n**Exemplo 2.** 91 é primo? Testa 2, 3, 5, 7: $91=7\\times13$. É composto.\n\n**Exemplo 3 (decompor 60).** $60\\div2=30$; $30\\div2=15$; $15\\div3=5$; $5\\div5=1$. Logo $60=2^2\\times3\\times5$.\n\n**Exemplo 4 (decompor 126).** $126=2\\times63$; $63=3\\times21=3\\times3\\times7$. Logo $126=2\\times3^2\\times7$.\n\n**Exemplo 5 (contar divisores).** $84=2^2\\times3\\times7$ tem $(2+1)(1+1)(1+1)=12$ divisores.\n\n**Aplicação.** Para formar equipas iguais com 84 alunos há 12 maneiras possíveis, porque 84 tem 12 divisores.",
+  "guided_exercise": "Resolve connosco: **decompõe 252 em fatores primos.**\n\n1) 252 é par: $252\\div2=126$.\n\n2) 126 é par: $126\\div2=63$.\n\n3) 63 não é par; soma dos algarismos 9, divisível por 3: $63\\div3=21$; $21\\div3=7$.\n\n4) 7 é primo: $7\\div7=1$.\n\n5) $252=2^2\\times3^2\\times7$. Verifica: $4\\times9\\times7=252$ ✓.",
+  "independent_exercise": "Chegou a tua vez. Resolve os exercícios sem pressa e usa **Verificar** para confirmar. Se errares, não faz mal: lê a resolução passo a passo, percebe onde o raciocínio escorregou e tenta outra vez. É assim que se aprende de verdade.",
+  "challenge": "**Desafio.** Os números 11 e 13, 17 e 19, 29 e 31 chamam-se **primos gémeos** (diferem de 2). Encontra mais dois pares de primos gémeos abaixo de 110 e verifica cada primo pelo teste de $p^2\\le n$.",
+  "assessment": "Consideras a competência dominada quando consegues: (1) decidir se um número é primo, testando divisores até à raiz; (2) aplicar o crivo de Eratóstenes; (3) decompor um número em fatores primos; (4) contar divisores a partir da decomposição."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "naturais.primos_fatores",
+   "statement": "Quantos números primos há entre 1 e 30?",
+   "options": null,
+   "answer": {
+    "value": "10",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "São 2, 3, 5, 7, 11, 13, 17, 19, 23, 29: dez números.",
+   "steps": [
+    "Lista os primos até 30."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "naturais.primos_fatores",
+   "statement": "Qual é o único número primo que é par?",
+   "options": null,
+   "answer": {
+    "value": "2",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Qualquer outro par tem o 2 como divisor, logo tem mais de dois divisores.",
+   "steps": [
+    "Pares > 2 divisíveis por 2."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "naturais.primos_fatores",
+   "statement": "Qual é o maior número primo menor que 50?",
+   "options": null,
+   "answer": {
+    "value": "47",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "47 é primo (não é divisível por 2, 3, 5 nem 7); 48 e 49 são compostos.",
+   "steps": [
+    "49 = 7×7.",
+    "47 é primo."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "naturais.primos_fatores",
+   "statement": "Quantos fatores primos DISTINTOS tem 60?",
+   "options": null,
+   "answer": {
+    "value": "3",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "60 = 2^2 × 3 × 5: fatores distintos 2, 3, 5, ou seja 3.",
+   "steps": [
+    "60 = 2^2 × 3 × 5.",
+    "Distintos: 3."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "naturais.primos_fatores",
+   "statement": "Quantos fatores primos DISTINTOS tem 84?",
+   "options": null,
+   "answer": {
+    "value": "3",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "84 = 2^2 × 3 × 7: fatores distintos 2, 3, 7, ou seja 3.",
+   "steps": [
+    "84 = 2^2 × 3 × 7.",
+    "Distintos: 3."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "naturais.primos_fatores",
+   "statement": "Quantos fatores primos DISTINTOS tem 126?",
+   "options": null,
+   "answer": {
+    "value": "3",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "126 = 2 × 3^2 × 7: fatores distintos 2, 3, 7, ou seja 3.",
+   "steps": [
+    "126 = 2 × 3^2 × 7.",
+    "Distintos: 3."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "naturais.primos_fatores",
+   "statement": "Quantos fatores primos DISTINTOS tem 360?",
+   "options": null,
+   "answer": {
+    "value": "3",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "360 = 2^3 × 3^2 × 5: fatores distintos 2, 3, 5, ou seja 3.",
+   "steps": [
+    "360 = 2^3 × 3^2 × 5.",
+    "Distintos: 3."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "naturais.primos_fatores",
+   "statement": "Se 72 = 2^a × 3^b × 5^c × 7^d, qual é a soma a + b + c + d?",
+   "options": null,
+   "answer": {
+    "value": "5",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "72 = 2^3 × 3^2. A soma dos expoentes é 5.",
+   "steps": [
+    "72 = 2^3 × 3^2.",
+    "Soma os expoentes."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "naturais.primos_fatores",
+   "statement": "Se 150 = 2^a × 3^b × 5^c × 7^d, qual é a soma a + b + c + d?",
+   "options": null,
+   "answer": {
+    "value": "4",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "150 = 2 × 3 × 5^2. A soma dos expoentes é 4.",
+   "steps": [
+    "150 = 2 × 3 × 5^2.",
+    "Soma os expoentes."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "naturais.primos_fatores",
+   "statement": "Se 252 = 2^a × 3^b × 5^c × 7^d, qual é a soma a + b + c + d?",
+   "options": null,
+   "answer": {
+    "value": "5",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "252 = 2^2 × 3^2 × 7. A soma dos expoentes é 5.",
+   "steps": [
+    "252 = 2^2 × 3^2 × 7.",
+    "Soma os expoentes."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "naturais.primos_fatores",
+   "statement": "Calcula o produto $2^3\\times3^2\\times5$.",
+   "options": null,
+   "answer": {
+    "value": "360",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "$8\\times9\\times5=360$.",
+   "steps": [
+    "2³ = 8; 3² = 9.",
+    "8 × 9 × 5 = 360."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 1,
+   "competency": "naturais.primos_fatores",
+   "statement": "O número 1 é primo.",
+   "options": null,
+   "answer": {
+    "boolean": false
+   },
+   "tolerance": 0,
+   "explanation": "Um primo tem exatamente dois divisores (1 e ele próprio). O 1 só tem um divisor, por isso não é primo nem composto.",
+   "steps": [
+    "Divisores de 1: só 1."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "naturais.primos_fatores",
+   "statement": "91 é um número primo.",
+   "options": null,
+   "answer": {
+    "boolean": false
+   },
+   "tolerance": 0,
+   "explanation": "91 = 7 × 13, logo é composto.",
+   "steps": [
+    "7 × 13 = 91."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "naturais.primos_fatores",
+   "statement": "Qual é a decomposição em fatores primos de 180?",
+   "options": [
+    {
+     "id": "a",
+     "label": "$2^2\\times3^2\\times5$"
+    },
+    {
+     "id": "b",
+     "label": "$2\\times3\\times5\\times6$"
+    },
+    {
+     "id": "c",
+     "label": "$4\\times9\\times5$"
+    },
+    {
+     "id": "d",
+     "label": "$2^3\\times3\\times5$"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "180 = 2×90 = 2×2×45 = 2×2×3×15 = 2×2×3×3×5.",
+   "steps": [
+    "180 ÷ 2 = 90; 90 ÷ 2 = 45.",
+    "45 = 3 × 3 × 5."
+   ]
+  }
+ ]
+}

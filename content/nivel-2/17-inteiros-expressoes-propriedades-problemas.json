@@ -1,0 +1,296 @@
+{
+ "subject": "numeros-inteiros",
+ "topic_title": "Operações com inteiros",
+ "topic_slug": "operacoes-com-inteiros",
+ "lesson_title": "Expressões numéricas com inteiros, propriedades e problemas",
+ "lesson_slug": "inteiros-expressoes-propriedades-problemas",
+ "summary": "Resolve expressões com inteiros respeitando a ordem das operações, usa as propriedades e resolve problemas.",
+ "minutes": 25,
+ "blocks": {
+  "introduction": "**Objetivos:** calcular expressões numéricas com inteiros, aplicar as propriedades das operações e resolver problemas contextualizados. **Pré-requisitos:** soma, subtração, multiplicação e divisão de inteiros, ordem das operações.\n\nUm comerciante registou lucros e prejuízos ao longo do mês. Para saber o resultado final, soma tudo com sinais. Uma expressão numérica é uma «frase» de números e operações que se lê e calcula por uma ordem precisa.",
+  "intuition": "**Ordem das operações:** (1) parênteses (e depois colchetes e chavetas); (2) potências; (3) multiplicações e divisões, da esquerda para a direita; (4) somas e subtrações, da esquerda para a direita.\n\n**Propriedades** que ajudam: a soma e o produto são **comutativos** ($a+b=b+a$, $ab=ba$) e **associativos**; o **elemento neutro** da soma é 0 e o do produto é 1; $a\\times0=0$ (absorvente); o produto distribui-se sobre a soma, $a(b+c)=ab+ac$, e sobre a diferença; o oposto de um número é $(-1)\\times a$.\n\nA propriedade distributiva facilita contas: $(-4)\\times13=(-4)\\times10+(-4)\\times3=-40-12=-52$.\n\nNos problemas, traduz cada ganho como positivo e cada perda como negativo, soma, e interpreta o sinal do resultado (positivo = lucro/subida; negativo = prejuízo/descida).\n\n**Erros comuns:** somar antes de multiplicar; esquecer o sinal quando se retira um parêntese precedido de menos ($-(3-5)=-3+5$); trocar a ordem da subtração (que não é comutativa).",
+  "definition": "Uma **expressão numérica** é uma sequência de números ligados por operações e possivelmente agrupados por **parênteses** $(\\;)$, **colchetes** $[\\;]$ e **chavetas** $\\{\\;\\}$. A subtração e a divisão **não** são comutativas nem associativas. A multiplicação é **distributiva** em relação à adição.",
+  "formulas": "$$a(b+c)=ab+ac\\qquad -(a+b)=-a-b\\qquad -(a-b)=-a+b$$\n\nOrdem: parênteses → potências → $\\times,\\div$ → $+,-$.\n\nElementos especiais: $a+0=a$, $a\\times1=a$, $a\\times0=0$, $a+(-a)=0$.",
+  "worked_example": "**Exemplo 1.** $-3+5\\times(-2)=-3+(-10)=-13$.\n\n**Exemplo 2 (parênteses).** $(-4+9)\\times(-3)=5\\times(-3)=-15$.\n\n**Exemplo 3 (divisão e soma).** $-12\\div(-3)+(-6)=4-6=-2$.\n\n**Exemplo 4 (retirar parênteses).** $10-(3-8)=10-3+8=15$.\n\n**Exemplo 5 (distributiva).** $(-4)\\times13=(-4)\\times10+(-4)\\times3=-40-12=-52$.\n\n**Aplicação.** Um comerciante registou em 4 semanas +25 000, −8 000, −12 000 e +4 000 Kz. Resultado: $25\\,000-8\\,000-12\\,000+4\\,000=+9\\,000$ Kz de lucro.",
+  "guided_exercise": "Resolve connosco: **calcula $-2\\times[\\,5-(3-8)\\,]+6$.**\n\n1) Parênteses curvos: $3-8=-5$.\n\n2) Dentro do colchete: $5-(-5)=5+5=10$.\n\n3) Multiplica: $-2\\times10=-20$.\n\n4) Soma: $-20+6=-14$.\n\n5) Verifica cada passo: o sinal da subtração duplo virou soma ✓.",
+  "independent_exercise": "Chegou a tua vez. Resolve os exercícios sem pressa e usa **Verificar** para confirmar. Se errares, não faz mal: lê a resolução passo a passo, percebe onde o raciocínio escorregou e tenta outra vez. É assim que se aprende de verdade.",
+  "challenge": "**Desafio.** Coloca parênteses na expressão $-2+3\\times4-5$ de três maneiras diferentes e calcula o valor de cada uma. Quantos resultados distintos obténs? O que concluis sobre a importância dos parênteses?",
+  "assessment": "Consideras a competência dominada quando consegues: (1) seguir a ordem das operações com inteiros; (2) retirar parênteses precedidos de sinal; (3) usar as propriedades comutativa, associativa e distributiva; (4) traduzir e resolver problemas com ganhos e perdas."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "inteiros.expressoes",
+   "statement": "Calcula $-3+5\\times(-2)$.",
+   "options": null,
+   "answer": {
+    "value": "-13",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Respeitando a ordem das operações (parênteses, potências, × e ÷, depois + e −): $-3+5\\times(-2)=-13$.",
+   "steps": [
+    "Primeiro parênteses e potências.",
+    "Depois × e ÷.",
+    "Por fim + e −."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "inteiros.expressoes",
+   "statement": "Calcula $(-4+9)\\times(-3)$.",
+   "options": null,
+   "answer": {
+    "value": "-15",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Respeitando a ordem das operações (parênteses, potências, × e ÷, depois + e −): $(-4+9)\\times(-3)=-15$.",
+   "steps": [
+    "Primeiro parênteses e potências.",
+    "Depois × e ÷.",
+    "Por fim + e −."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "inteiros.expressoes",
+   "statement": "Calcula $-12\\div(-3)+(-6)$.",
+   "options": null,
+   "answer": {
+    "value": "-2",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Respeitando a ordem das operações (parênteses, potências, × e ÷, depois + e −): $-12\\div(-3)+(-6)=-2$.",
+   "steps": [
+    "Primeiro parênteses e potências.",
+    "Depois × e ÷.",
+    "Por fim + e −."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "inteiros.expressoes",
+   "statement": "Calcula $2\\times(-5)-(-8)$.",
+   "options": null,
+   "answer": {
+    "value": "-2",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Respeitando a ordem das operações (parênteses, potências, × e ÷, depois + e −): $2\\times(-5)-(-8)=-2$.",
+   "steps": [
+    "Primeiro parênteses e potências.",
+    "Depois × e ÷.",
+    "Por fim + e −."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "inteiros.expressoes",
+   "statement": "Calcula $-20-4\\times(-3)$.",
+   "options": null,
+   "answer": {
+    "value": "-8",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Respeitando a ordem das operações (parênteses, potências, × e ÷, depois + e −): $-20-4\\times(-3)=-8$.",
+   "steps": [
+    "Primeiro parênteses e potências.",
+    "Depois × e ÷.",
+    "Por fim + e −."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "inteiros.expressoes",
+   "statement": "Calcula $(-2)^3+10$.",
+   "options": null,
+   "answer": {
+    "value": "2",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Respeitando a ordem das operações (parênteses, potências, × e ÷, depois + e −): $(-2)^3+10=2$.",
+   "steps": [
+    "Primeiro parênteses e potências.",
+    "Depois × e ÷.",
+    "Por fim + e −."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "inteiros.expressoes",
+   "statement": "Calcula $(-7+3)\\times(-2+5)$.",
+   "options": null,
+   "answer": {
+    "value": "-12",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Respeitando a ordem das operações (parênteses, potências, × e ÷, depois + e −): $(-7+3)\\times(-2+5)=-12$.",
+   "steps": [
+    "Primeiro parênteses e potências.",
+    "Depois × e ÷.",
+    "Por fim + e −."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "inteiros.expressoes",
+   "statement": "Calcula $18\\div(-6)-(-4)\\times2$.",
+   "options": null,
+   "answer": {
+    "value": "5",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Respeitando a ordem das operações (parênteses, potências, × e ÷, depois + e −): $18\\div(-6)-(-4)\\times2=5$.",
+   "steps": [
+    "Primeiro parênteses e potências.",
+    "Depois × e ÷.",
+    "Por fim + e −."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "inteiros.expressoes",
+   "statement": "Calcula $(-5)\\times(3+(-3))$ usando a propriedade do elemento absorvente.",
+   "options": null,
+   "answer": {
+    "value": "0",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "3 + (−3) = 0 e qualquer número vezes 0 é 0.",
+   "steps": [
+    "3 + (−3) = 0.",
+    "0 × qualquer = 0."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "inteiros.expressoes",
+   "statement": "Usa a propriedade distributiva: $(-4)\\times(10+3)$.",
+   "options": null,
+   "answer": {
+    "value": "-52",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "(−4)×10 + (−4)×3 = −40 − 12 = −52.",
+   "steps": [
+    "Distribui o −4.",
+    "−40 + (−12) = −52."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "inteiros.expressoes",
+   "statement": "Um comerciante teve em quatro semanas: +25 000, −8 000, −12 000 e +4 000 Kz. Qual foi o resultado total, em Kz?",
+   "options": null,
+   "answer": {
+    "value": "9000",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "25 000 − 8 000 − 12 000 + 4 000 = 9 000 Kz de lucro.",
+   "steps": [
+    "Soma tudo com sinais.",
+    "= 9 000."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "inteiros.expressoes",
+   "statement": "Às 6h a temperatura era −4 °C e subiu 2 °C por hora durante 5 horas. Qual é a temperatura final, em °C?",
+   "options": null,
+   "answer": {
+    "value": "6",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "−4 + 5×2 = −4 + 10 = 6 °C.",
+   "steps": [
+    "Variação: 5 × 2 = 10.",
+    "−4 + 10 = 6."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "inteiros.expressoes",
+   "statement": "$-3+(-3)\\times2=-12$.",
+   "options": null,
+   "answer": {
+    "boolean": false
+   },
+   "tolerance": 0,
+   "explanation": "Primeiro o produto: (−3)×2 = −6; depois −3 + (−6) = −9.",
+   "steps": [
+    "× antes de +."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "inteiros.expressoes",
+   "statement": "A soma de inteiros é comutativa: $-4+9=9+(-4)$.",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "Ambas dão 5.",
+   "steps": [
+    "Propriedade comutativa."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "inteiros.expressoes",
+   "statement": "Qual é o valor de $-2\\times(-3)-4$?",
+   "options": [
+    {
+     "id": "a",
+     "label": "2"
+    },
+    {
+     "id": "b",
+     "label": "−10"
+    },
+    {
+     "id": "c",
+     "label": "10"
+    },
+    {
+     "id": "d",
+     "label": "−2"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "(−2)(−3) = 6 e 6 − 4 = 2.",
+   "steps": [
+    "Produto primeiro."
+   ]
+  }
+ ]
+}

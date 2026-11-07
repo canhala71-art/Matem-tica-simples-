@@ -1,0 +1,313 @@
+{
+ "subject": "numeros-naturais",
+ "topic_title": "Múltiplos, divisores e primos",
+ "topic_slug": "multiplos-divisores-primos",
+ "lesson_title": "M.d.c. e m.m.c.: máximo divisor e mínimo múltiplo comum",
+ "lesson_slug": "mdc-mmc",
+ "summary": "Calcula o m.d.c. e o m.m.c. por decomposição em fatores primos e resolve problemas de repartição e coincidência.",
+ "minutes": 25,
+ "blocks": {
+  "introduction": "**Objetivos:** calcular o máximo divisor comum (m.d.c.) e o mínimo múltiplo comum (m.m.c.) de dois ou mais números, e saber quando usar cada um. **Pré-requisitos:** divisores, múltiplos e decomposição em fatores primos.\n\nDuas perguntas parecem iguais mas são opostas. «Quero cortar duas fitas em pedaços iguais, os maiores possíveis»: é um problema de **m.d.c.** «Dois autocarros saem juntos e voltam a cruzar-se de x em x minutos»: é um problema de **m.m.c.**",
+  "intuition": "O **m.d.c.** de dois números é o maior número que divide ambos. Para o achar por decomposição, toma os fatores primos **comuns**, cada um com o **menor** expoente.\n\nO **m.m.c.** é o menor número (não nulo) que é múltiplo de ambos. Toma **todos** os fatores primos (comuns e não comuns), cada um com o **maior** expoente.\n\nExemplo com 12 = $2^2\\times3$ e 18 = $2\\times3^2$: m.d.c. = $2\\times3=6$; m.m.c. = $2^2\\times3^2=36$.\n\nRelação útil: $\\text{m.d.c.}(a,b)\\times\\text{m.m.c.}(a,b)=a\\times b$. Dois números sem fatores comuns (por exemplo 8 e 15) dizem-se **primos entre si**: o m.d.c. é 1 e o m.m.c. é o produto.\n\nComo reconhecer o problema: se a ideia é **dividir/repartir/cortar em partes iguais**, é m.d.c. (resposta menor ou igual aos dados). Se é **coincidir/repetir/voltar a acontecer ao mesmo tempo**, é m.m.c. (resposta maior ou igual aos dados).\n\n**Erros comuns:** trocar m.d.c. com m.m.c.; no m.d.c. incluir fatores que não são comuns; no m.m.c. esquecer um fator não comum.",
+  "definition": "O **máximo divisor comum** de $a$ e $b$, $\\text{m.d.c.}(a,b)$, é o maior natural que divide $a$ e $b$. O **mínimo múltiplo comum**, $\\text{m.m.c.}(a,b)$, é o menor natural não nulo que é múltiplo de $a$ e de $b$. Dois números são **primos entre si** se o seu m.d.c. é 1.",
+  "formulas": "$$\\text{m.d.c.}(a,b)\\times\\text{m.m.c.}(a,b)=a\\times b$$\n\nM.d.c.: fatores primos comuns, menor expoente. M.m.c.: todos os fatores primos, maior expoente.\n\nAlgoritmo de Euclides: $\\text{m.d.c.}(a,b)=\\text{m.d.c.}(b,\\,a\\bmod b)$, repetido até o resto ser 0.",
+  "worked_example": "**Exemplo 1 (m.d.c.).** $24=2^3\\times3$ e $36=2^2\\times3^2$. Comuns: $2^2\\times3=12$. Logo m.d.c.(24, 36) = 12.\n\n**Exemplo 2 (m.m.c.).** Com os mesmos números: $2^3\\times3^2=72$. Logo m.m.c.(24, 36) = 72. Verifica: $12\\times72=864=24\\times36$ ✓.\n\n**Exemplo 3 (Euclides).** m.d.c.(48, 18): $48=2\\times18+12$; $18=1\\times12+6$; $12=2\\times6+0$. O m.d.c. é 6.\n\n**Exemplo 4 (repartir).** Uma fita de 84 cm e outra de 126 cm cortadas em pedaços iguais, os maiores possíveis: m.d.c.(84, 126) = 42 cm.\n\n**Exemplo 5 (coincidir).** Um relógio toca de 12 em 12 min e outro de 18 em 18 min. Voltam a tocar juntos ao fim de m.m.c.(12, 18) = 36 minutos.\n\n**Aplicação.** Uma loja tem 40 camisas e 56 calças e quer fazer conjuntos iguais sem sobras: o maior número de conjuntos é m.d.c.(40, 56) = 8, cada um com 5 camisas e 7 calças.",
+  "guided_exercise": "Resolve connosco: **dois fios de 90 m e 150 m vão ser cortados em pedaços iguais, o mais compridos possível. Quanto mede cada pedaço e quantos pedaços saem ao todo?**\n\n1) «Pedaços iguais, o maior possível» é problema de m.d.c.\n\n2) $90=2\\times3^2\\times5$ e $150=2\\times3\\times5^2$.\n\n3) Fatores comuns com menor expoente: $2\\times3\\times5=30$.\n\n4) Cada pedaço mede 30 m. Pedaços: $90\\div30=3$ e $150\\div30=5$, ao todo 8 pedaços.",
+  "independent_exercise": "Chegou a tua vez. Resolve os exercícios sem pressa e usa **Verificar** para confirmar. Se errares, não faz mal: lê a resolução passo a passo, percebe onde o raciocínio escorregou e tenta outra vez. É assim que se aprende de verdade.",
+  "challenge": "**Desafio.** Três luzes pisca-pisca piscam de 4 em 4 s, de 6 em 6 s e de 10 em 10 s. Se piscam juntas agora, quantas vezes piscam juntas nos próximos 10 minutos (sem contar o instante inicial)? Começa pelo m.m.c.",
+  "assessment": "Consideras a competência dominada quando consegues: (1) calcular m.d.c. e m.m.c. por decomposição; (2) usar o algoritmo de Euclides; (3) reconhecer se um problema pede m.d.c. ou m.m.c.; (4) verificar com $\\text{m.d.c.}\\times\\text{m.m.c.}=a\\times b$."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "naturais.mdc_mmc",
+   "statement": "Calcula o m.d.c.(12, 18).",
+   "options": null,
+   "answer": {
+    "value": "6",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "12 = 2^2 × 3 e 18 = 2 × 3^2. Os fatores comuns de menor expoente dão 6.",
+   "steps": [
+    "12 = 2^2 × 3.",
+    "18 = 2 × 3^2.",
+    "m.d.c. = 6."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "naturais.mdc_mmc",
+   "statement": "Calcula o m.d.c.(24, 36).",
+   "options": null,
+   "answer": {
+    "value": "12",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "24 = 2^3 × 3 e 36 = 2^2 × 3^2. Os fatores comuns de menor expoente dão 12.",
+   "steps": [
+    "24 = 2^3 × 3.",
+    "36 = 2^2 × 3^2.",
+    "m.d.c. = 12."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "naturais.mdc_mmc",
+   "statement": "Calcula o m.d.c.(45, 75).",
+   "options": null,
+   "answer": {
+    "value": "15",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "45 = 3^2 × 5 e 75 = 3 × 5^2. Os fatores comuns de menor expoente dão 15.",
+   "steps": [
+    "45 = 3^2 × 5.",
+    "75 = 3 × 5^2.",
+    "m.d.c. = 15."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "naturais.mdc_mmc",
+   "statement": "Calcula o m.d.c.(28, 42).",
+   "options": null,
+   "answer": {
+    "value": "14",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "28 = 2^2 × 7 e 42 = 2 × 3 × 7. Os fatores comuns de menor expoente dão 14.",
+   "steps": [
+    "28 = 2^2 × 7.",
+    "42 = 2 × 3 × 7.",
+    "m.d.c. = 14."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "naturais.mdc_mmc",
+   "statement": "Calcula o m.m.c.(45, 75).",
+   "options": null,
+   "answer": {
+    "value": "225",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "45 = 3^2 × 5 e 75 = 3 × 5^2. Todos os fatores, com o maior expoente: 225.",
+   "steps": [
+    "45 = 3^2 × 5.",
+    "75 = 3 × 5^2.",
+    "m.m.c. = 225."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "naturais.mdc_mmc",
+   "statement": "Calcula o m.m.c.(28, 42).",
+   "options": null,
+   "answer": {
+    "value": "84",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "28 = 2^2 × 7 e 42 = 2 × 3 × 7. Todos os fatores, com o maior expoente: 84.",
+   "steps": [
+    "28 = 2^2 × 7.",
+    "42 = 2 × 3 × 7.",
+    "m.m.c. = 84."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "naturais.mdc_mmc",
+   "statement": "Calcula o m.m.c.(54, 90).",
+   "options": null,
+   "answer": {
+    "value": "270",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "54 = 2 × 3^3 e 90 = 2 × 3^2 × 5. Todos os fatores, com o maior expoente: 270.",
+   "steps": [
+    "54 = 2 × 3^3.",
+    "90 = 2 × 3^2 × 5.",
+    "m.m.c. = 270."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "naturais.mdc_mmc",
+   "statement": "Calcula o m.m.c.(35, 49).",
+   "options": null,
+   "answer": {
+    "value": "245",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "35 = 5 × 7 e 49 = 7^2. Todos os fatores, com o maior expoente: 245.",
+   "steps": [
+    "35 = 5 × 7.",
+    "49 = 7^2.",
+    "m.m.c. = 245."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "naturais.mdc_mmc",
+   "statement": "Calcula o m.d.c.(48, 72, 120).",
+   "options": null,
+   "answer": {
+    "value": "24",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "48 = 2⁴·3, 72 = 2³·3², 120 = 2³·3·5. Comuns com menor expoente: 2³·3 = 24.",
+   "steps": [
+    "Decompõe os três.",
+    "m.d.c. = 24."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "naturais.mdc_mmc",
+   "statement": "Calcula o m.m.c.(4, 6, 10).",
+   "options": null,
+   "answer": {
+    "value": "60",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "4 = 2², 6 = 2·3, 10 = 2·5. Todos com maior expoente: 2²·3·5 = 60.",
+   "steps": [
+    "Decompõe os três.",
+    "m.m.c. = 60."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "naturais.mdc_mmc",
+   "statement": "Dois relógios tocam: um de 12 em 12 minutos e outro de 18 em 18 minutos. Se tocam juntos às 8h00, ao fim de quantos minutos voltam a tocar juntos?",
+   "options": null,
+   "answer": {
+    "value": "36",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "É o m.m.c.(12, 18) = 36 minutos.",
+   "steps": [
+    "m.m.c. dos intervalos.",
+    "= 36."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "naturais.mdc_mmc",
+   "statement": "Quer-se cortar uma fita de 84 cm e outra de 126 cm em pedaços iguais, os maiores possíveis, sem desperdício. Qual é o comprimento de cada pedaço, em cm?",
+   "options": null,
+   "answer": {
+    "value": "42",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "É o m.d.c.(84, 126) = 42.",
+   "steps": [
+    "84 = 2²·3·7; 126 = 2·3²·7.",
+    "m.d.c. = 2·3·7 = 42."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "naturais.mdc_mmc",
+   "statement": "Uma loja recebe sacos de arroz de 8 em 8 dias e outra de óleo de 20 em 20 dias. Tendo chegado hoje ambos, em quantos dias chegam juntos outra vez?",
+   "options": null,
+   "answer": {
+    "value": "40",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "m.m.c.(8, 20) = 40 dias.",
+   "steps": [
+    "8 = 2³; 20 = 2²·5.",
+    "m.m.c. = 2³·5 = 40."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "naturais.mdc_mmc",
+   "statement": "O m.d.c. de dois números primos diferentes é sempre 1.",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "Dois primos diferentes não têm divisores comuns além de 1.",
+   "steps": [
+    "Só têm o 1 em comum."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "naturais.mdc_mmc",
+   "statement": "O m.m.c. de dois números é sempre menor ou igual ao seu produto.",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "m.m.c.(a, b) × m.d.c.(a, b) = a × b, logo o m.m.c. nunca excede o produto.",
+   "steps": [
+    "mmc·mdc = a·b."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "naturais.mdc_mmc",
+   "statement": "Se m.d.c.(a, b) = 6 e a × b = 216, qual é o m.m.c.(a, b)?",
+   "options": [
+    {
+     "id": "a",
+     "label": "36"
+    },
+    {
+     "id": "b",
+     "label": "6"
+    },
+    {
+     "id": "c",
+     "label": "216"
+    },
+    {
+     "id": "d",
+     "label": "12"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "m.m.c. × m.d.c. = a × b, logo m.m.c. = 216 ÷ 6 = 36.",
+   "steps": [
+    "mmc = (a·b) ÷ mdc."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,277 @@
+{
+ "subject": "numeros-inteiros",
+ "topic_title": "Conceito de número inteiro",
+ "topic_slug": "conceito-numero-inteiro",
+ "lesson_title": "Números inteiros: conjunto Z, reta, opostos, módulo e ordem",
+ "lesson_slug": "inteiros-conjunto-z-reta-modulo",
+ "summary": "Compreende os números positivos, negativos e o zero, representa-os na reta, e compara e ordena inteiros.",
+ "minutes": 25,
+ "blocks": {
+  "introduction": "**Objetivos:** definir o conjunto $\\mathbb{Z}$, representar inteiros na reta, identificar opostos e módulo, comparar e ordenar. **Pré-requisitos:** números naturais e reta numérica.\n\nA temperatura em Huambo pode descer a 3 °C, mas em países frios chega a −10 °C. Uma loja pode ter lucro (+) ou prejuízo (−). Um mergulhador está a −12 m e um alpinista a +500 m. Para descrever tudo isto precisamos de números **com sinal**.",
+  "intuition": "Os **inteiros** juntam aos naturais os seus **opostos** negativos: $\\mathbb{Z}=\\{\\ldots,-3,-2,-1,0,1,2,3,\\ldots\\}$. Na reta numérica, o 0 fica no meio; os positivos estão à direita e os negativos à esquerda, com as mesmas distâncias.\n\nO **oposto** (ou simétrico) de um número fica à mesma distância do zero, do outro lado: o oposto de 5 é −5 e o de −5 é 5. A soma de um número com o seu oposto é 0.\n\nO **módulo** (valor absoluto) é a distância ao zero, por isso nunca é negativo: $|-7|=7$ e $|7|=7$.\n\nPara **comparar**: qualquer positivo é maior que qualquer negativo e que o zero; entre dois positivos, o de maior módulo é maior; entre dois negativos, é maior o de **menor** módulo (mais perto do zero). Assim $-2>-9$.\n\n**Erros comuns:** achar que $-9>-2$ «porque 9 > 2»; achar que o módulo de um negativo é negativo; esquecer que o zero também é inteiro.",
+  "definition": "O conjunto dos **números inteiros** é $\\mathbb{Z}=\\mathbb{N}\\cup\\{-1,-2,-3,\\ldots\\}$. O **oposto** de $a$ é $-a$. O **módulo** de $a$ é $|a|=a$ se $a\\ge0$ e $|a|=-a$ se $a<0$. Dados $a,b\\in\\mathbb{Z}$, $a<b$ quando $a$ está à esquerda de $b$ na reta.",
+  "formulas": "$$|a|=\\begin{cases}a,&a\\ge0\\\\-a,&a<0\\end{cases}\\qquad a+(-a)=0\\qquad -(-a)=a$$\n\nSe $a,b<0$: $a<b\\iff|a|>|b|$. Ordem: $\\ldots<-2<-1<0<1<2<\\ldots$",
+  "worked_example": "**Exemplo 1 (oposto).** O oposto de 12 é −12; o de −30 é 30; o de 0 é 0.\n\n**Exemplo 2 (módulo).** $|-15|=15$, $|9|=9$, $|0|=0$.\n\n**Exemplo 3 (comparar).** $-3<-1$ porque −3 está mais à esquerda; $-7<2$ porque todo o negativo é menor que todo o positivo.\n\n**Exemplo 4 (ordenar).** $-8,\\,3,\\,-1,\\,0,\\,-5$ por ordem crescente: $-8<-5<-1<0<3$.\n\n**Exemplo 5 (contexto).** Uma loja teve +40 000 Kz em janeiro e −15 000 Kz em fevereiro. Janeiro foi melhor, e fevereiro foi prejuízo de 15 000 Kz.\n\n**Aplicação.** O mergulhador está a −12 m e o barco está à superfície (0 m). A distância entre eles é $|-12|=12$ m.",
+  "guided_exercise": "Resolve connosco: **ordena por ordem decrescente −4, 6, −11, 0, −1 e indica o módulo do maior dos negativos.**\n\n1) Decrescente: do mais à direita para a esquerda: 6, 0, −1, −4, −11.\n\n2) O maior dos negativos é o mais perto do zero: −1.\n\n3) Módulo: $|-1|=1$.\n\n4) Confere na reta: −1 está à direita de −4 e de −11 ✓.",
+  "independent_exercise": "Chegou a tua vez. Resolve os exercícios sem pressa e usa **Verificar** para confirmar. Se errares, não faz mal: lê a resolução passo a passo, percebe onde o raciocínio escorregou e tenta outra vez. É assim que se aprende de verdade.",
+  "challenge": "**Desafio.** Quantos números inteiros têm módulo menor que 5? Lista-os. E quantos inteiros $x$ satisfazem $-3\\le x<4$? Desenha a reta para confirmares.",
+  "assessment": "Consideras a competência dominada quando consegues: (1) explicar o que é $\\mathbb{Z}$ e a posição de positivos, negativos e zero; (2) achar o oposto e o módulo; (3) comparar e ordenar inteiros pela reta; (4) interpretar sinais em contextos (temperatura, saldos, altitudes)."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "inteiros.conceito_ordem",
+   "statement": "Qual é o oposto de −17?",
+   "options": null,
+   "answer": {
+    "value": "17",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "O oposto de −17 é 17, porque −17 + 17 = 0.",
+   "steps": [
+    "Oposto muda o sinal."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "inteiros.conceito_ordem",
+   "statement": "Qual é o módulo (valor absoluto) de −25?",
+   "options": null,
+   "answer": {
+    "value": "25",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "O módulo é a distância ao zero: |−25| = 25.",
+   "steps": [
+    "Distância ao zero na reta."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "inteiros.conceito_ordem",
+   "statement": "Qual é o módulo de 14?",
+   "options": null,
+   "answer": {
+    "value": "14",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "|14| = 14, um número positivo é igual ao seu módulo.",
+   "steps": [
+    "Distância de 14 ao zero."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "inteiros.conceito_ordem",
+   "statement": "Qual é o maior de −9, −2, −15 e −6?",
+   "options": null,
+   "answer": {
+    "value": "-2",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Nos negativos, o maior é o que está mais perto do zero: −2.",
+   "steps": [
+    "Na reta, −2 está mais à direita."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "inteiros.conceito_ordem",
+   "statement": "Qual é o menor de 3, −8, 0 e −1?",
+   "options": null,
+   "answer": {
+    "value": "-8",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "O menor está mais à esquerda na reta: −8.",
+   "steps": [
+    "−8 < −1 < 0 < 3."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "inteiros.conceito_ordem",
+   "statement": "Quantos inteiros há entre −4 e 3 (sem contar os extremos)?",
+   "options": null,
+   "answer": {
+    "value": "6",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "São −3, −2, −1, 0, 1, 2: seis números.",
+   "steps": [
+    "Lista de −3 a 2."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "inteiros.conceito_ordem",
+   "statement": "Calcula |−8| + |5|.",
+   "options": null,
+   "answer": {
+    "value": "13",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "8 + 5 = 13.",
+   "steps": [
+    "|−8| = 8.",
+    "|5| = 5."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "inteiros.conceito_ordem",
+   "statement": "Quais inteiros têm módulo 7? Indica o produto deles.",
+   "options": null,
+   "answer": {
+    "value": "-49",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Os números com módulo 7 são 7 e −7; o produto é 7 × (−7) = −49.",
+   "steps": [
+    "7 e −7.",
+    "7 × (−7) = −49."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "inteiros.conceito_ordem",
+   "statement": "Um mergulhador está a −12 m e sobe 5 m. A que altitude fica, em metros?",
+   "options": null,
+   "answer": {
+    "value": "-7",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "−12 + 5 = −7 m.",
+   "steps": [
+    "Sobe = soma positiva."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 1,
+   "competency": "inteiros.conceito_ordem",
+   "statement": "Todo o número natural é também um número inteiro.",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "Os naturais 0, 1, 2, … são inteiros não negativos: $\\mathbb{N}\\subset\\mathbb{Z}$.",
+   "steps": [
+    "N está contido em Z."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "inteiros.conceito_ordem",
+   "statement": "−3 > −1.",
+   "options": null,
+   "answer": {
+    "boolean": false
+   },
+   "tolerance": 0,
+   "explanation": "−3 está à esquerda de −1 na reta, logo −3 < −1.",
+   "steps": [
+    "Mais à esquerda, menor."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "inteiros.conceito_ordem",
+   "statement": "O zero não é positivo nem negativo.",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "O 0 é o neutro: separa os positivos dos negativos.",
+   "steps": [
+    "0 é neutro."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "inteiros.conceito_ordem",
+   "statement": "Qual é a ordem crescente de −5, 2, −1, 0, −8?",
+   "options": [
+    {
+     "id": "a",
+     "label": "−8, −5, −1, 0, 2"
+    },
+    {
+     "id": "b",
+     "label": "−1, −5, −8, 0, 2"
+    },
+    {
+     "id": "c",
+     "label": "2, 0, −1, −5, −8"
+    },
+    {
+     "id": "d",
+     "label": "0, −1, 2, −5, −8"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "Do mais à esquerda para a direita: −8 < −5 < −1 < 0 < 2.",
+   "steps": [
+    "Ordena pela reta."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "inteiros.conceito_ordem",
+   "statement": "O número −6 representa, num saldo bancário, que…",
+   "options": [
+    {
+     "id": "a",
+     "label": "Se deve 6 unidades"
+    },
+    {
+     "id": "b",
+     "label": "Se tem 6 unidades"
+    },
+    {
+     "id": "c",
+     "label": "Não se tem nada"
+    },
+    {
+     "id": "d",
+     "label": "Se tem 6 de crédito"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "Negativo indica dívida ou falta.",
+   "steps": [
+    "Negativo = dívida."
+   ]
+  }
+ ]
+}

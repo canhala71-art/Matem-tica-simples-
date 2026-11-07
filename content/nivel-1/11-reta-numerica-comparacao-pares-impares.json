@@ -1,0 +1,282 @@
+{
+ "subject": "numeros-naturais",
+ "topic_title": "Reta numérica e ordem dos naturais",
+ "topic_slug": "reta-numerica-ordem-naturais",
+ "lesson_title": "Reta numérica, comparação, ordenação, pares e ímpares",
+ "lesson_slug": "reta-numerica-comparacao-pares-impares",
+ "summary": "Representa naturais na reta, compara e ordena números, usa sucessor e antecessor e reconhece pares e ímpares.",
+ "minutes": 25,
+ "blocks": {
+  "introduction": "**Objetivos:** compreender o conceito de número natural, representá-lo na reta numérica, compará-lo e ordená-lo, usar sucessor e antecessor e distinguir pares de ímpares. **Pré-requisitos:** contar e conhecer o sistema decimal.\n\nOs números naturais nasceram da necessidade de **contar**: ovelhas, dias, sacos de cimento. O conjunto dos naturais escreve-se $\\mathbb{N}=\\{0,1,2,3,\\ldots\\}$ (em alguns livros começa no 1). Nunca acaba: depois de qualquer número há sempre outro, o seu sucessor.",
+  "intuition": "A **reta numérica** é uma linha onde cada natural ocupa um ponto, à mesma distância do anterior. Quanto mais à direita, maior é o número. Por isso comparar é só ver qual está mais à direita.\n\nPara comparar dois naturais: (1) vê qual tem mais algarismos, esse é maior; (2) se tiverem o mesmo número de algarismos, compara da esquerda para a direita, até encontrar o primeiro algarismo diferente. Assim, 3 450 > 3 405 porque na ordem das dezenas 5 > 0.\n\nOrdenar é pôr em fila: **crescente** (do menor para o maior) ou **decrescente** (do maior para o menor).\n\nO **sucessor** de $n$ é $n+1$ e o **antecessor** é $n-1$. Dois números seguidos chamam-se **consecutivos**.\n\nUm número é **par** se acaba em 0, 2, 4, 6 ou 8 (divide-se por 2 sem resto) e **ímpar** se acaba em 1, 3, 5, 7 ou 9. Os pares e os ímpares alternam na reta.\n\n**Erros comuns:** dizer que 9 é maior que 10 «porque 9 é maior que 1»; achar que o 0 não é par; esquecer que o menor natural não tem antecessor.",
+  "definition": "Um **número natural** é um dos números $0,1,2,3,\\ldots$ usados para contar. A **relação de ordem** $a<b$ significa que $a$ está à esquerda de $b$ na reta. O **sucessor** de $n$ é $n+1$; o **antecessor** (de $n\\ge1$) é $n-1$. Um natural $n$ é **par** se $n=2k$ e **ímpar** se $n=2k+1$, com $k$ natural.",
+  "formulas": "$$a<b\\iff b-a\\text{ é natural não nulo}$$\n\nSucessor: $n+1$. Antecessor: $n-1$. Ponto médio entre $a$ e $b$: $\\dfrac{a+b}{2}$.\n\nParidade: par + par = par; ímpar + ímpar = par; par + ímpar = ímpar; par × qualquer = par; ímpar × ímpar = ímpar.",
+  "worked_example": "**Exemplo 1 (comparar).** $8\\,090$ e $8\\,900$: ambos têm 4 algarismos; milhares iguais (8); centenas 0 e 9, e 0 < 9. Logo $8\\,090<8\\,900$.\n\n**Exemplo 2 (ordenar).** Ordem crescente de 705, 57, 570, 75: $57<75<570<705$ (primeiro os de 2 algarismos, depois os de 3).\n\n**Exemplo 3 (sucessor e antecessor).** O sucessor de 39 999 é 40 000 e o antecessor de 40 000 é 39 999.\n\n**Exemplo 4 (pares e ímpares).** 3 786 é par (acaba em 6) e 4 215 é ímpar (acaba em 5). A soma 3 786 + 4 215 = 8 001 é ímpar, como par + ímpar.\n\n**Exemplo 5 (ponto médio).** Entre 14 e 30 está $(14+30)\\div2=22$.\n\n**Aplicação.** Num estádio entraram 12 450 pessoas no sábado e 12 540 no domingo. Domingo teve mais gente: os milhares são iguais (12), mas as centenas são 5 e 4, e 5 > 4, logo 12 540 > 12 450.",
+  "guided_exercise": "Resolve connosco: **ordena do menor para o maior os números 6 051, 6 105, 651 e 6 015.**\n\n1) 651 tem 3 algarismos; os outros têm 4. Logo 651 é o menor.\n\n2) Os outros três começam por 6 e têm centenas 0, 1 e 0. 6 105 tem a maior centena (1): é o maior.\n\n3) Restam 6 051 e 6 015, com centenas iguais (0). Dezenas: 5 e 1, logo 6 015 < 6 051.\n\n4) Ordem crescente: 651 < 6 015 < 6 051 < 6 105.",
+  "independent_exercise": "Chegou a tua vez. Resolve os exercícios sem pressa e usa **Verificar** para confirmar. Se errares, não faz mal: lê a resolução passo a passo, percebe onde o raciocínio escorregou e tenta outra vez. É assim que se aprende de verdade.",
+  "challenge": "**Desafio.** Qual é a soma dos números ímpares de 1 a 99? Experimenta a soma dos primeiros 1, 2, 3, 4 números ímpares (1, 4, 9, 16...) e descobre o padrão. Depois explica porquê com um desenho de quadrados.",
+  "assessment": "Consideras a competência dominada quando consegues: (1) representar naturais na reta numérica; (2) comparar e ordenar números com igual ou diferente número de algarismos; (3) indicar sucessor e antecessor; (4) distinguir pares e ímpares e prever a paridade de somas e produtos."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "naturais.reta_ordem",
+   "statement": "Qual é o sucessor do número 4 999?",
+   "options": null,
+   "answer": {
+    "value": "5000",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Sucessor é o número seguinte: 4 999 + 1 = 5 000.",
+   "steps": [
+    "Sucessor = n + 1.",
+    "4999 + 1 = 5000."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "naturais.reta_ordem",
+   "statement": "Qual é o antecessor do número 1 000?",
+   "options": null,
+   "answer": {
+    "value": "999",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Antecessor é o número anterior: 1 000 − 1 = 999.",
+   "steps": [
+    "Antecessor = n − 1."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "naturais.reta_ordem",
+   "statement": "Quantos números naturais há entre 17 e 25 (sem contar os extremos)?",
+   "options": null,
+   "answer": {
+    "value": "7",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "São 18, 19, 20, 21, 22, 23 e 24: 7 números.",
+   "steps": [
+    "Lista de 18 a 24.",
+    "São 7."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "naturais.reta_ordem",
+   "statement": "Qual é o maior número que se pode formar com os algarismos 4, 0, 7 e 2 (usando todos, sem repetir)?",
+   "options": null,
+   "answer": {
+    "value": "7420",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Coloca os algarismos por ordem decrescente: 7, 4, 2, 0 → 7 420.",
+   "steps": [
+    "Ordem decrescente dos algarismos.",
+    "7 420."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "naturais.reta_ordem",
+   "statement": "Qual é o menor número de 4 algarismos que se pode formar com 4, 0, 7 e 2 (todos, sem repetir, sem começar por 0)?",
+   "options": null,
+   "answer": {
+    "value": "2047",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "O primeiro algarismo é o menor que não é zero (2); depois 0, 4, 7 → 2 047.",
+   "steps": [
+    "Primeiro: 2 (não pode ser 0).",
+    "Depois por ordem crescente: 0, 4, 7."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "naturais.reta_ordem",
+   "statement": "Quantos números pares há entre 1 e 100 (inclusive)?",
+   "options": null,
+   "answer": {
+    "value": "50",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Os pares são 2, 4, …, 100: metade de 100, ou seja 50.",
+   "steps": [
+    "100 ÷ 2 = 50."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "naturais.reta_ordem",
+   "statement": "Qual é a soma dos números ímpares de 1 a 9?",
+   "options": null,
+   "answer": {
+    "value": "25",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "1 + 3 + 5 + 7 + 9 = 25. (A soma dos n primeiros ímpares é n².)",
+   "steps": [
+    "1+3+5+7+9.",
+    "= 25 = 5²."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "naturais.reta_ordem",
+   "statement": "Na reta numérica, que número está a meio entre 20 e 36?",
+   "options": null,
+   "answer": {
+    "value": "28",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "O ponto médio é (20 + 36) ÷ 2 = 28.",
+   "steps": [
+    "Soma os extremos: 56.",
+    "56 ÷ 2 = 28."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 1,
+   "competency": "naturais.reta_ordem",
+   "statement": "O número 0 é par.",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "0 divide-se por 2 sem resto (0 = 2 × 0), logo é par.",
+   "steps": [
+    "0 = 2 × 0."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "naturais.reta_ordem",
+   "statement": "A soma de dois números ímpares é sempre um número ímpar.",
+   "options": null,
+   "answer": {
+    "boolean": false
+   },
+   "tolerance": 0,
+   "explanation": "Por exemplo, 3 + 5 = 8, que é par. Ímpar + ímpar = par.",
+   "steps": [
+    "3 + 5 = 8."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "naturais.reta_ordem",
+   "statement": "Todo o número natural tem antecessor natural.",
+   "options": null,
+   "answer": {
+    "boolean": false
+   },
+   "tolerance": 0,
+   "explanation": "O 0 (ou o 1, se não contares o zero) não tem antecessor natural.",
+   "steps": [
+    "O menor natural não tem antecessor."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "naturais.reta_ordem",
+   "statement": "Qual das desigualdades é verdadeira?",
+   "options": [
+    {
+     "id": "a",
+     "label": "$9\\,870<10\\,023$"
+    },
+    {
+     "id": "b",
+     "label": "$5\\,432>5\\,432$"
+    },
+    {
+     "id": "c",
+     "label": "$1\\,099>1\\,100$"
+    },
+    {
+     "id": "d",
+     "label": "$7\\,001<7\\,000$"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "9 870 tem 4 algarismos e 10 023 tem 5: o que tem mais algarismos é maior.",
+   "steps": [
+    "Compara o número de algarismos."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "naturais.reta_ordem",
+   "statement": "Qual é a ordem decrescente de 3 405, 3 450, 3 045 e 3 504?",
+   "options": [
+    {
+     "id": "a",
+     "label": "3 504; 3 450; 3 405; 3 045"
+    },
+    {
+     "id": "b",
+     "label": "3 045; 3 405; 3 450; 3 504"
+    },
+    {
+     "id": "c",
+     "label": "3 450; 3 504; 3 405; 3 045"
+    },
+    {
+     "id": "d",
+     "label": "3 504; 3 405; 3 450; 3 045"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "Todos têm 4 algarismos; compara a partir dos milhares e depois as centenas: 3 504 > 3 450 > 3 405 > 3 045.",
+   "steps": [
+    "Compara da esquerda para a direita."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "naturais.reta_ordem",
+   "statement": "Um autocarro tem lugar para 49 pessoas e viajam 38. Quantos lugares vazios há? (Usa a reta: quanto falta para chegar a 49?)",
+   "options": null,
+   "answer": {
+    "value": "11",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "49 − 38 = 11 lugares vazios.",
+   "steps": [
+    "Distância de 38 a 49 na reta.",
+    "11."
+   ]
+  }
+ ]
+}

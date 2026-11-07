@@ -1,0 +1,332 @@
+{
+ "subject": "numeros-naturais",
+ "topic_title": "Múltiplos, divisores e primos",
+ "topic_slug": "multiplos-divisores-primos",
+ "lesson_title": "Múltiplos, divisores e critérios de divisibilidade",
+ "lesson_slug": "multiplos-divisores-criterios-divisibilidade",
+ "summary": "Distingue múltiplos de divisores e usa os critérios de divisibilidade por 2, 3, 4, 5, 9, 10 e 11.",
+ "minutes": 25,
+ "blocks": {
+  "introduction": "**Objetivos:** definir múltiplo e divisor, encontrar os divisores de um número e aplicar os critérios de divisibilidade. **Pré-requisitos:** tabuada e divisão.\n\nSe tens 24 laranjas, de quantas maneiras as podes repartir em grupos iguais, sem sobrar nenhuma? Em 2 grupos de 12, em 3 de 8, em 4 de 6... Cada uma dessas maneiras corresponde a um **divisor** de 24. Já os números 24, 48, 72, … são **múltiplos** de 24.",
+  "intuition": "Os **múltiplos** de um número obtêm-se multiplicando-o por 0, 1, 2, 3, …: múltiplos de 5: 0, 5, 10, 15, … Há infinitos. Os **divisores** de um número são os que o dividem **sem deixar resto**. Há sempre um número finito: o menor é 1 e o maior é o próprio número.\n\nPara achar todos os divisores de $n$, testa 1, 2, 3, … e **emparelha**: se $a\\times b=n$, ambos são divisores. Para 36: 1×36, 2×18, 3×12, 4×9, 6×6, ou seja 1, 2, 3, 4, 6, 9, 12, 18, 36.\n\n**Critérios de divisibilidade** evitam fazer a divisão: por 2 (acaba em 0, 2, 4, 6, 8); por 3 (a soma dos algarismos é múltiplo de 3); por 4 (os dois últimos algarismos formam múltiplo de 4); por 5 (acaba em 0 ou 5); por 9 (soma dos algarismos múltipla de 9); por 10 (acaba em 0); por 11 (diferença entre as somas dos algarismos de posição ímpar e par é 0 ou múltiplo de 11).\n\n**Erros comuns:** confundir múltiplo com divisor (12 é múltiplo de 3, e 3 é divisor de 12); esquecer que 1 e o próprio número são divisores; dizer que 0 não é múltiplo de nenhum número (0 é múltiplo de todos).",
+  "definition": "$a$ é **divisor** de $b$ (e $b$ é **múltiplo** de $a$) quando existe um natural $k$ tal que $b=a\\times k$, isto é, $b\\div a$ tem resto 0. Escreve-se $a\\mid b$. Um número é **divisível** por $a$ quando $a$ é seu divisor.",
+  "formulas": "Divisores de $n$: pares $(a,b)$ com $a\\times b=n$.\n\nCritérios: 2 → último algarismo par; 3 → soma dos algarismos múltipla de 3; 4 → dois últimos algarismos múltiplos de 4; 5 → acaba em 0 ou 5; 9 → soma múltipla de 9; 10 → acaba em 0; 11 → soma alternada múltipla de 11.\n\nSe $a$ e $b$ dividem $n$ e não têm fatores comuns, então $a\\times b$ divide $n$ (por ex., 2 e 3 → 6).",
+  "worked_example": "**Exemplo 1 (divisores).** Divisores de 24: 1, 2, 3, 4, 6, 8, 12, 24 (pares 1×24, 2×12, 3×8, 4×6).\n\n**Exemplo 2 (múltiplos).** Múltiplos de 8: 0, 8, 16, 24, 32, 40, …\n\n**Exemplo 3 (critério do 3).** 2 541: 2+5+4+1 = 12, múltiplo de 3, logo é divisível por 3 (2 541 ÷ 3 = 847).\n\n**Exemplo 4 (critério do 4).** 7 316: os dois últimos, 16, são múltiplos de 4, logo 7 316 é divisível por 4.\n\n**Exemplo 5 (critério do 11).** 2 728: (2 + 2) − (7 + 8) = 4 − 15 = −11, múltiplo de 11. Logo é divisível por 11.\n\n**Aplicação.** Para repartir 36 alunos em equipas iguais, o número de alunos por equipa tem de ser um divisor de 36: 1, 2, 3, 4, 6, 9, 12, 18 ou 36.",
+  "guided_exercise": "Resolve connosco: **o número 4 920 é divisível por 2, 3, 4, 5, 9, 10 ou 11?**\n\n1) Acaba em 0: divisível por 2, 5 e 10.\n\n2) Dois últimos algarismos: 20, que é múltiplo de 4: divisível por 4.\n\n3) Soma dos algarismos: 4+9+2+0 = 15, múltiplo de 3 mas não de 9: divisível por 3, não por 9.\n\n4) Soma alternada: (4 + 2) − (9 + 0) = −3, não é múltiplo de 11.\n\n5) Resposta: divisível por 2, 3, 4, 5 e 10.",
+  "independent_exercise": "Chegou a tua vez. Resolve os exercícios sem pressa e usa **Verificar** para confirmar. Se errares, não faz mal: lê a resolução passo a passo, percebe onde o raciocínio escorregou e tenta outra vez. É assim que se aprende de verdade.",
+  "challenge": "**Desafio.** Descobre o menor número natural que é múltiplo de 2, 3, 4, 5 e 6 ao mesmo tempo. Usa os critérios para testares candidatos e conta quantos números há até 200 que cumprem a condição.",
+  "assessment": "Consideras a competência dominada quando consegues: (1) dizer a diferença entre múltiplo e divisor; (2) listar todos os divisores de um número por pares; (3) aplicar os critérios por 2, 3, 4, 5, 9, 10 e 11; (4) usar divisores para repartir em grupos iguais."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "naturais.multiplos_divisores",
+   "statement": "Quantos divisores naturais tem o número 12?",
+   "options": null,
+   "answer": {
+    "value": "6",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Os divisores de 12 são 1, 2, 3, 4, 6, 12: ao todo 6.",
+   "steps": [
+    "Testa todos os números até 12.",
+    "Total: 6."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "naturais.multiplos_divisores",
+   "statement": "Quantos divisores naturais tem o número 30?",
+   "options": null,
+   "answer": {
+    "value": "8",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Os divisores de 30 são 1, 2, 3, 5, 6, 10, 15, 30: ao todo 8.",
+   "steps": [
+    "Testa todos os números até 30.",
+    "Total: 8."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "naturais.multiplos_divisores",
+   "statement": "Quantos divisores naturais tem o número 36?",
+   "options": null,
+   "answer": {
+    "value": "9",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Os divisores de 36 são 1, 2, 3, 4, 6, 9, 12, 18, 36: ao todo 9.",
+   "steps": [
+    "Testa todos os números até 36.",
+    "Total: 9."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "naturais.multiplos_divisores",
+   "statement": "Quantos divisores naturais tem o número 45?",
+   "options": null,
+   "answer": {
+    "value": "6",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Os divisores de 45 são 1, 3, 5, 9, 15, 45: ao todo 6.",
+   "steps": [
+    "Testa todos os números até 45.",
+    "Total: 6."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "naturais.multiplos_divisores",
+   "statement": "Qual é o 5.º múltiplo (não nulo) de 7?",
+   "options": null,
+   "answer": {
+    "value": "35",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "O 5.º múltiplo é 7 × 5 = 35.",
+   "steps": [
+    "7 × 5."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "naturais.multiplos_divisores",
+   "statement": "Qual é o 4.º múltiplo (não nulo) de 12?",
+   "options": null,
+   "answer": {
+    "value": "48",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "O 4.º múltiplo é 12 × 4 = 48.",
+   "steps": [
+    "12 × 4."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "naturais.multiplos_divisores",
+   "statement": "Qual é o 6.º múltiplo (não nulo) de 15?",
+   "options": null,
+   "answer": {
+    "value": "90",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "O 6.º múltiplo é 15 × 6 = 90.",
+   "steps": [
+    "15 × 6."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "naturais.multiplos_divisores",
+   "statement": "Quantos múltiplos de 7 há entre 1 e 100?",
+   "options": null,
+   "answer": {
+    "value": "14",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "100 ÷ 7 = 14,28…, logo há 14 múltiplos (7, 14, …, 98).",
+   "steps": [
+    "100 ÷ 7 ≈ 14."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "naturais.multiplos_divisores",
+   "statement": "Qual é o menor múltiplo de 9 maior que 100?",
+   "options": null,
+   "answer": {
+    "value": "108",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "9 × 11 = 99 (não chega) e 9 × 12 = 108.",
+   "steps": [
+    "9 × 11 = 99.",
+    "9 × 12 = 108."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "naturais.multiplos_divisores",
+   "statement": "Qual é o algarismo que se deve pôr no lugar de ☐ em 47☐ para o número ser divisível por 5 e par?",
+   "options": null,
+   "answer": {
+    "value": "0",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Divisível por 5: acaba em 0 ou 5. Par: acaba em número par. Só serve o 0: 470.",
+   "steps": [
+    "Por 5: 0 ou 5.",
+    "Par: 0, 2, 4, 6, 8.",
+    "Comum: 0."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "naturais.multiplos_divisores",
+   "statement": "Qual é o menor algarismo diferente de zero que se deve pôr em 4☐2 para o número ficar divisível por 3?",
+   "options": null,
+   "answer": {
+    "value": "3",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "4 + 2 = 6 já é múltiplo de 3 com ☐ = 0, mas pede-se o menor algarismo diferente de zero: 4 + 3 + 2 = 9, logo 3.",
+   "steps": [
+    "Soma = 6 + ☐ múltipla de 3.",
+    "☐ = 3 (o menor não nulo)."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 1,
+   "competency": "naturais.multiplos_divisores",
+   "statement": "O número 1 é divisor de qualquer número natural.",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "Todo o número se divide por 1: n ÷ 1 = n.",
+   "steps": [
+    "n ÷ 1 = n."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "naturais.multiplos_divisores",
+   "statement": "528 é divisível por 3.",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "5 + 2 + 8 = 15, que é múltiplo de 3, logo 528 é divisível por 3.",
+   "steps": [
+    "5+2+8=15."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "naturais.multiplos_divisores",
+   "statement": "4 717 é divisível por 4.",
+   "options": null,
+   "answer": {
+    "boolean": false
+   },
+   "tolerance": 0,
+   "explanation": "Para 4, os dois últimos algarismos (17) têm de formar um múltiplo de 4. 17 não é.",
+   "steps": [
+    "17 ÷ 4 tem resto 1."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "naturais.multiplos_divisores",
+   "statement": "Qual dos números é divisível por 9?",
+   "options": [
+    {
+     "id": "a",
+     "label": "4 653"
+    },
+    {
+     "id": "b",
+     "label": "4 650"
+    },
+    {
+     "id": "c",
+     "label": "4 651"
+    },
+    {
+     "id": "d",
+     "label": "4 652"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "4 + 6 + 5 + 3 = 18, múltiplo de 9. Nos outros as somas são 15, 16 e 17.",
+   "steps": [
+    "Soma dos algarismos múltipla de 9."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "naturais.multiplos_divisores",
+   "statement": "Qual é o critério de divisibilidade por 11?",
+   "options": [
+    {
+     "id": "a",
+     "label": "A diferença entre a soma dos algarismos de posição ímpar e a de posição par é 0 ou múltiplo de 11"
+    },
+    {
+     "id": "b",
+     "label": "O número acaba em 1"
+    },
+    {
+     "id": "c",
+     "label": "A soma dos algarismos é 11"
+    },
+    {
+     "id": "d",
+     "label": "O número é ímpar"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "Para 11 alterna-se: soma dos algarismos em posições alternadas e vê-se se a diferença é múltiplo de 11 (ex.: 2 728 → (2+2) − (7+8) = −11).",
+   "steps": [
+    "Soma alternada."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "naturais.multiplos_divisores",
+   "statement": "Quantos números entre 1 e 60 são divisíveis por 2 e por 3 ao mesmo tempo?",
+   "options": null,
+   "answer": {
+    "value": "10",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Divisíveis por 2 e por 3 são os múltiplos de 6: 6, 12, …, 60 → 10 números.",
+   "steps": [
+    "Múltiplos de 6 até 60.",
+    "60 ÷ 6 = 10."
+   ]
+  }
+ ]
+}
