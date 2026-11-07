@@ -1,0 +1,233 @@
+{
+ "subject": "operacoes-basicas",
+ "topic_title": "Problemas com as quatro operações",
+ "topic_slug": "problemas-quatro-operacoes",
+ "lesson_title": "Problemas com as quatro operações e estimativa de resultados",
+ "lesson_slug": "problemas-quatro-operacoes-estimativa",
+ "summary": "Resolve problemas do dia a dia escolhendo a operação certa, estimando e verificando o resultado.",
+ "minutes": 30,
+ "blocks": {
+  "introduction": "**Objetivos:** ler um problema, escolher as operações, calcular, verificar e interpretar o resultado, estimando antes. **Pré-requisitos:** as quatro operações e a ordem de resolução.\n\nSaber calcular não basta: é preciso saber **qual** conta fazer. Num mercado, numa obra ou numa loja, os problemas vêm em palavras, e traduzi-los em contas é a competência que mais se usa na vida.",
+  "intuition": "Método em 5 passos: (1) **Lê** com atenção e identifica o que se pede; (2) **Organiza** os dados (faz um desenho ou um esquema); (3) **Escolhe** a operação; (4) **Calcula** e **estima** para ver se faz sentido; (5) **Responde** com uma frase, com a unidade (Kz, metros, kg).\n\nPalavras-pista: *juntar, ao todo, acrescentar* → adição; *sobra, falta, diferença, tirar* → subtração; *cada, vezes, em ... grupos iguais* → multiplicação; *repartir, em partes iguais, quantos cabem* → divisão.\n\nAtenção ao **resto**: se há 130 pessoas e cada autocarro leva 45, $130\\div45=2$ resto 40, mas precisas de **3** autocarros, porque as 40 pessoas também têm de viajar. Interpreta o resto no contexto.\n\nProblemas em dois passos: calcula primeiro o que o enunciado não diz diretamente (o total das compras) e depois o que pede (o troco).\n\n**Erros comuns:** escolher a operação pela palavra sem ler o problema todo; esquecer a unidade; não verificar se a resposta é razoável.",
+  "definition": "Um **problema** é uma situação com dados e uma pergunta. **Resolver** é modelar o problema com operações, calcular e interpretar. A **estimativa** é um valor aproximado obtido com arredondamentos, usado para validar o resultado.",
+  "formulas": "Total = soma das partes. Resto = total − parte. Total = valor unitário × quantidade. Cada parte = total ÷ nº de partes.\n\n$$\\text{Troco}=\\text{Pago}-\\text{Custo total}$$",
+  "worked_example": "**Exemplo 1 (adição).** Vendidos 125 sacos de manhã e 187 à tarde: $125+187=312$ sacos.\n\n**Exemplo 2 (subtração).** Depósito de 5 000 L, gastaram-se 1 875 L: sobram $5\\,000-1\\,875=3\\,125$ L.\n\n**Exemplo 3 (multiplicação).** 15 caixas de 24 latas: $24\\times15=360$ latas.\n\n**Exemplo 4 (divisão).** 504 lápis por 18 alunos: $504\\div18=28$ cada.\n\n**Exemplo 5 (dois passos).** 3 cadernos a 450 Kz e uma caneta a 275 Kz; pagas com 2 000 Kz. Total: $3\\times450+275=1\\,625$. Troco: $2\\,000-1\\,625=375$ Kz.\n\n**Aplicação.** Para 130 pessoas em autocarros de 45 lugares: $130\\div45$ dá 2 e resto 40, logo são precisos 3 autocarros.",
+  "guided_exercise": "Resolve connosco: **uma costureira faz 12 camisas por dia. Em 15 dias fez as camisas todas e ainda lhe encomendaram mais 40. Quantas camisas fez ao todo?**\n\n1) Em 15 dias: $12\\times15=180$ camisas.\n\n2) Mais as 40 encomendadas: $180+40=220$.\n\n3) Estimativa: $12\\times15$ é cerca de $10\\times15=150$ mais $2\\times15=30$, 180 ✓.\n\n4) Resposta: fez 220 camisas ao todo.",
+  "independent_exercise": "Chegou a tua vez. Resolve os exercícios sem pressa e usa **Verificar** para confirmar. Se errares, não faz mal: lê a resolução passo a passo, percebe onde o raciocínio escorregou e tenta outra vez. É assim que se aprende de verdade.",
+  "challenge": "**Desafio.** Um taxista cobra 500 Kz de bandeirada mais 120 Kz por quilómetro. Quanto custa uma viagem de 15 km? E até quantos quilómetros podes ir com 3 000 Kz? Escreve as duas contas e explica o resto.",
+  "assessment": "Consideras a competência dominada quando consegues: (1) traduzir problemas em operações; (2) resolver problemas de dois passos; (3) interpretar o resto no contexto; (4) estimar e responder com unidade."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "operacoes.problemas",
+   "statement": "Uma loja vendeu 125 sacos de arroz de manhã e 187 à tarde. Quantos sacos vendeu no dia?",
+   "options": null,
+   "answer": {
+    "value": "312",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "125 + 187 = 312.",
+   "steps": [
+    "Soma."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "operacoes.problemas",
+   "statement": "Um depósito tinha 5 000 litros e gastaram-se 1 875. Quantos litros restam?",
+   "options": null,
+   "answer": {
+    "value": "3125",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "5 000 − 1 875 = 3 125.",
+   "steps": [
+    "Subtrai."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "operacoes.problemas",
+   "statement": "Cada caixa tem 24 latas. Quantas latas há em 15 caixas?",
+   "options": null,
+   "answer": {
+    "value": "360",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "24 × 15 = 360.",
+   "steps": [
+    "Multiplica."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "operacoes.problemas",
+   "statement": "Repartem-se 504 lápis por 18 alunos. Quantos lápis recebe cada um?",
+   "options": null,
+   "answer": {
+    "value": "28",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "504 ÷ 18 = 28.",
+   "steps": [
+    "Divide."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "operacoes.problemas",
+   "statement": "Compraste 3 cadernos a 450 Kz cada e uma caneta a 275 Kz. Pagaste com 2 000 Kz. Quanto recebes de troco?",
+   "options": null,
+   "answer": {
+    "value": "375",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "3 × 450 = 1 350; 1 350 + 275 = 1 625; 2 000 − 1 625 = 375 Kz.",
+   "steps": [
+    "Calcula o total.",
+    "Subtrai ao que deste."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "operacoes.problemas",
+   "statement": "Um livro de 288 páginas é lido em 12 dias, lendo o mesmo número de páginas por dia. Quantas páginas por dia?",
+   "options": null,
+   "answer": {
+    "value": "24",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "288 ÷ 12 = 24.",
+   "steps": [
+    "Divide."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "operacoes.problemas",
+   "statement": "O Manuel tem o triplo da idade da irmã. Juntos têm 48 anos. Quantos anos tem a irmã?",
+   "options": null,
+   "answer": {
+    "value": "12",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Se a irmã tem x, o Manuel tem 3x e 4x = 48, logo x = 12.",
+   "steps": [
+    "x + 3x = 48.",
+    "x = 12."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "operacoes.problemas",
+   "statement": "Uma fábrica produz 450 peças por dia. Em 12 dias produziu 5 000 peças. Quantas faltam para chegar a 6 000 depois desses 12 dias, sabendo que 12 × 450 = 5 400?",
+   "options": null,
+   "answer": {
+    "value": "600",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "12 × 450 = 5 400; faltam 6 000 − 5 400 = 600.",
+   "steps": [
+    "Total produzido: 5 400.",
+    "6 000 − 5 400 = 600."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "operacoes.problemas",
+   "statement": "Uma turma tem 36 alunos e cada mesa leva 4. Quantas mesas são precisas?",
+   "options": null,
+   "answer": {
+    "value": "9",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "36 ÷ 4 = 9 mesas.",
+   "steps": [
+    "Divide."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "operacoes.problemas",
+   "statement": "Para levar 130 pessoas em autocarros de 45 lugares, quantos autocarros são precisos?",
+   "options": null,
+   "answer": {
+    "value": "3",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "130 ÷ 45 = 2 resto 40, por isso precisa-se de mais um: 3 autocarros.",
+   "steps": [
+    "2 autocarros levam 90.",
+    "Faltam 40: um terceiro."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "operacoes.problemas",
+   "statement": "Num problema de «repartir em partes iguais» usa-se normalmente a divisão.",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "Repartir em partes iguais é dividir.",
+   "steps": [
+    "Dividir = repartir."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "operacoes.problemas",
+   "statement": "Quando se pede «quantas vezes cabe», qual é a operação?",
+   "options": [
+    {
+     "id": "a",
+     "label": "Divisão"
+    },
+    {
+     "id": "b",
+     "label": "Subtração apenas"
+    },
+    {
+     "id": "c",
+     "label": "Multiplicação"
+    },
+    {
+     "id": "d",
+     "label": "Potenciação"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "Quantas vezes um número cabe noutro é uma divisão.",
+   "steps": [
+    "Medir = dividir."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,308 @@
+{
+ "subject": "tabuada",
+ "topic_title": "Tabuadas do 1 ao 12",
+ "topic_slug": "tabuadas-1-a-12",
+ "lesson_title": "Introdução à multiplicação e tabuadas do 1 ao 5",
+ "lesson_slug": "tabuadas-1-ao-5-introducao",
+ "summary": "Compreende a multiplicação como soma repetida e domina as tabuadas do 1, 2, 3, 4 e 5 com padrões.",
+ "minutes": 20,
+ "blocks": {
+  "introduction": "**Objetivos:** compreender o que é multiplicar, dominar as tabuadas do 1 ao 5 e descobrir os seus padrões. **Pré-requisitos:** contar e somar.\n\nSe um gato tem 4 patas, quantas patas têm 7 gatos? Podes somar $4+4+4+4+4+4+4=28$, ou multiplicar $7\\times4=28$. Multiplicar é uma **soma repetida** em forma curta, e a **tabuada** é a lista desses resultados.",
+  "intuition": "**Tabuada do 1:** $1\\times n=n$ (o 1 não muda nada). **Tabuada do 2:** o dobro; os resultados são os números pares. **Tabuada do 3:** 3, 6, 9, 12, 15…; a soma dos algarismos de cada resultado é sempre múltipla de 3. **Tabuada do 4:** o dobro do dobro. **Tabuada do 5:** 5, 10, 15, 20…; termina sempre em 5 ou 0, e cada resultado é metade do da tabuada do 10.\n\nPropriedade fundamental: $a\\times b=b\\times a$. Se sabes $3\\times8=24$, já sabes $8\\times3$. Isto reduz muito o que há para aprender.\n\nUsa a tabuada de várias formas: de memória, a contar em saltos (2, 4, 6, 8…), e pelas relações (4 é o dobro de 2).\n\n**Erros comuns:** confundir $3\\times4$ com $3+4$; esquecer que $1\\times n=n$ e $0\\times n=0$; decorar sem entender o padrão.",
+  "definition": "A **multiplicação** $a\\times b$ é a soma de $b$ parcelas iguais a $a$. O **produto** é o resultado e $a$, $b$ os **fatores**. A **tabuada do n** é a lista $n\\times1,n\\times2,n\\times3,\\ldots$",
+  "formulas": "$$a\\times b=b\\times a\\qquad1\\times n=n\\qquad0\\times n=0$$\n\n$4\\times n=2\\times(2\\times n)$ e $5\\times n=\\dfrac{10\\times n}{2}$.\n\nTabuada do 3: 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36.",
+  "worked_example": "**Exemplo 1.** $3\\times9=27$ (9 + 9 + 9).\n\n**Exemplo 2.** $4\\times6=24$ (dobro de 12, ou dobro do dobro de 6).\n\n**Exemplo 3.** $5\\times8=40$ (metade de $10\\times8=80$).\n\n**Exemplo 4.** $1\\times37=37$ e $0\\times37=0$.\n\n**Exemplo 5 (comutativa).** Se $3\\times8=24$ então $8\\times3=24$.\n\n**Aplicação.** 12 mesas com 5 cadeiras cada têm $12\\times5=60$ cadeiras.",
+  "guided_exercise": "Resolve connosco: **uma caixa tem 4 filas de 5 ovos. Quantos ovos há em 3 caixas?**\n\n1) Ovos por caixa: $4\\times5=20$.\n\n2) Em 3 caixas: $3\\times20=60$.\n\n3) Verifica com a associativa: $3\\times4\\times5=12\\times5=60$ ✓.",
+  "independent_exercise": "Chegou a tua vez. Resolve os exercícios sem pressa e usa **Verificar** para confirmar. Se errares, não faz mal: lê a resolução passo a passo, percebe onde o raciocínio escorregou e tenta outra vez. É assim que se aprende de verdade.",
+  "challenge": "**Desafio.** Escreve a tabuada do 3 e soma os algarismos de cada resultado (3, 6, 9, 3, 6, 9…). Que padrão encontras? E na tabuada do 9? Experimenta.",
+  "assessment": "Consideras a competência dominada quando consegues: (1) explicar a multiplicação como soma repetida; (2) responder às tabuadas do 1 ao 5 sem demora; (3) usar a comutativa; (4) descobrir padrões."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "tabuada.1_a_5",
+   "statement": "Quanto é 2 × 7?",
+   "options": null,
+   "answer": {
+    "value": "14",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "2 × 7 = 14.",
+   "steps": [
+    "2 × 7 = 14."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "tabuada.1_a_5",
+   "statement": "Quanto é 3 × 9?",
+   "options": null,
+   "answer": {
+    "value": "27",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "3 × 9 = 27.",
+   "steps": [
+    "3 × 9 = 27."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "tabuada.1_a_5",
+   "statement": "Quanto é 4 × 6?",
+   "options": null,
+   "answer": {
+    "value": "24",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "4 × 6 = 24.",
+   "steps": [
+    "4 × 6 = 24."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "tabuada.1_a_5",
+   "statement": "Quanto é 5 × 8?",
+   "options": null,
+   "answer": {
+    "value": "40",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "5 × 8 = 40.",
+   "steps": [
+    "5 × 8 = 40."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "tabuada.1_a_5",
+   "statement": "Quanto é 3 × 12?",
+   "options": null,
+   "answer": {
+    "value": "36",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "3 × 12 = 36.",
+   "steps": [
+    "3 × 12 = 36."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "tabuada.1_a_5",
+   "statement": "Quanto é 4 × 9?",
+   "options": null,
+   "answer": {
+    "value": "36",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "4 × 9 = 36.",
+   "steps": [
+    "4 × 9 = 36."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "tabuada.1_a_5",
+   "statement": "Quanto é 5 × 11?",
+   "options": null,
+   "answer": {
+    "value": "55",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "5 × 11 = 55.",
+   "steps": [
+    "5 × 11 = 55."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "tabuada.1_a_5",
+   "statement": "Quanto é 2 × 12?",
+   "options": null,
+   "answer": {
+    "value": "24",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "2 × 12 = 24.",
+   "steps": [
+    "2 × 12 = 24."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "tabuada.1_a_5",
+   "statement": "Quanto é 1 × 37?",
+   "options": null,
+   "answer": {
+    "value": "37",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "O 1 é o elemento neutro: 1 × n = n.",
+   "steps": [
+    "1 × n = n."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "tabuada.1_a_5",
+   "statement": "Completa a sequência da tabuada do 4: 4, 8, 12, 16, ☐. Qual o número em falta?",
+   "options": null,
+   "answer": {
+    "value": "20",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Somam-se 4 de cada vez: 16 + 4 = 20.",
+   "steps": [
+    "Soma 4."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "tabuada.1_a_5",
+   "statement": "Qual o 9.º número da tabuada do 3 (3 × 9)?",
+   "options": null,
+   "answer": {
+    "value": "27",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "3 × 9 = 27.",
+   "steps": [
+    "3 × 9."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "tabuada.1_a_5",
+   "statement": "Quantas patas têm 7 gatos?",
+   "options": null,
+   "answer": {
+    "value": "28",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "7 × 4 = 28 patas.",
+   "steps": [
+    "4 patas por gato."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "tabuada.1_a_5",
+   "statement": "Cada mesa tem 5 cadeiras. Quantas cadeiras há em 12 mesas?",
+   "options": null,
+   "answer": {
+    "value": "60",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "12 × 5 = 60.",
+   "steps": [
+    "12 × 5."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "tabuada.1_a_5",
+   "statement": "Qual é o resultado de 20 ÷ 5 + 3 × 4?",
+   "options": null,
+   "answer": {
+    "value": "16",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "20 ÷ 5 = 4; 3 × 4 = 12; 4 + 12 = 16.",
+   "steps": [
+    "Primeiro × e ÷."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 1,
+   "competency": "tabuada.1_a_5",
+   "statement": "Os resultados da tabuada do 5 acabam sempre em 0 ou 5.",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "5, 10, 15, 20, 25…",
+   "steps": [
+    "Observa os resultados."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "tabuada.1_a_5",
+   "statement": "3 × 8 = 8 × 3.",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "A multiplicação é comutativa.",
+   "steps": [
+    "Comutativa."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "tabuada.1_a_5",
+   "statement": "Qual é o dobro de 4 × 6?",
+   "options": [
+    {
+     "id": "a",
+     "label": "48"
+    },
+    {
+     "id": "b",
+     "label": "24"
+    },
+    {
+     "id": "c",
+     "label": "10"
+    },
+    {
+     "id": "d",
+     "label": "12"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "4 × 6 = 24 e o dobro é 48.",
+   "steps": [
+    "24 × 2 = 48."
+   ]
+  }
+ ]
+}

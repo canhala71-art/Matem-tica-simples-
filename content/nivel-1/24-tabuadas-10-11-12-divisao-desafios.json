@@ -1,0 +1,293 @@
+{
+ "subject": "tabuada",
+ "topic_title": "Tabuadas do 1 ao 12",
+ "topic_slug": "tabuadas-1-a-12",
+ "lesson_title": "Tabuadas do 10, 11 e 12, divisão e desafios cronometrados",
+ "lesson_slug": "tabuadas-10-11-12-divisao-desafios",
+ "summary": "Completa a tabuada até 12, relaciona-a com a divisão e treina com desafios cronometrados e problemas.",
+ "minutes": 25,
+ "blocks": {
+  "introduction": "**Objetivos:** dominar as tabuadas do 10, 11 e 12, relacionar multiplicação e divisão, e treinar velocidade e memorização. **Pré-requisitos:** tabuadas do 1 ao 9.\n\nOs números 10, 11 e 12 aparecem em tudo: o 10 é a base do nosso sistema, o 12 dá-nos meses, dúzias e horas do relógio. Dominá-los completa a tabuada.",
+  "intuition": "**Tabuada do 10:** acrescenta um zero ($10\\times17=170$). **Tabuada do 11:** até $11\\times9$ repete o algarismo (11, 22, …, 99); para outros, $11\\times n=10n+n$ ($11\\times12=132$). **Tabuada do 12:** $12\\times n=10n+2n$ ($12\\times7=70+14=84$).\n\n**Divisão relacionada:** a divisão é a tabuada ao contrário. Se $12\\times11=132$, então $132\\div12=11$ e $132\\div11=12$. Cada produto dá duas divisões.\n\n**Padrões:** os múltiplos de 5 acabam em 0 ou 5; os pares alternam com ímpares; na tabuada do 9 os algarismos somam 9; na do 11 até 9 o resultado é capicua.\n\n**Treino cronometrado:** escolhe uma tabuada, responde a 10 contas e mede o tempo. Tenta bater o teu recorde, e usa o Treino de tabuada nas Ferramentas, que guarda os teus resultados.\n\n**Erros comuns:** pôr 11 × 12 = 122; esquecer o zero em $10\\times n$; não ligar multiplicação e divisão.",
+  "definition": "A **divisão relacionada** de $a\\times b=c$ são as duas divisões $c\\div a=b$ e $c\\div b=a$. Uma **dúzia** é um grupo de 12 unidades. Um **recorde pessoal** é o melhor resultado (mais certas, menor tempo) que obtiveste num treino.",
+  "formulas": "$$10n=n\\text{ com um zero}\\qquad11n=10n+n\\qquad12n=10n+2n$$\n\n$$a\\times b=c\\iff c\\div a=b\\iff c\\div b=a$$\n\nQuadrados: $10^2=100,\\ 11^2=121,\\ 12^2=144$.",
+  "worked_example": "**Exemplo 1.** $10\\times17=170$.\n\n**Exemplo 2.** $11\\times7=77$ e $11\\times12=132$.\n\n**Exemplo 3.** $12\\times7=70+14=84$.\n\n**Exemplo 4 (divisão).** $132\\div12=11$, porque $12\\times11=132$.\n\n**Exemplo 5 (problema).** 15 anos têm $12\\times15=180$ meses.\n\n**Aplicação.** 11 dúzias de ovos têm $11\\times12=132$ ovos.",
+  "guided_exercise": "Resolve connosco: **calcula $12\\times13$ de cabeça.**\n\n1) $12\\times10=120$.\n\n2) $12\\times3=36$.\n\n3) $120+36=156$.\n\n4) Prova: $156\\div12=13$ ✓.",
+  "independent_exercise": "Chegou a tua vez. Resolve os exercícios sem pressa e usa **Verificar** para confirmar. Se errares, não faz mal: lê a resolução passo a passo, percebe onde o raciocínio escorregou e tenta outra vez. É assim que se aprende de verdade.",
+  "challenge": "**Desafio cronometrado.** Em 60 s, quantas destas consegues? 12×12, 11×8, 7×12, 9×9, 6×11, 12×5, 8×12, 10×10, 11×11, 4×12. Anota o resultado e repete amanhã para bater o recorde.",
+  "assessment": "Consideras a competência dominada quando consegues: (1) tabuadas do 10, 11 e 12 sem demora; (2) encontrar as duas divisões de cada produto; (3) usar padrões e truques; (4) melhorar o recorde nos treinos."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "tabuada.10_a_12",
+   "statement": "Quanto é 10 × 17?",
+   "options": null,
+   "answer": {
+    "value": "170",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "10 × 17 = 170.",
+   "steps": [
+    "10 × 17 = 170."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "tabuada.10_a_12",
+   "statement": "Quanto é 11 × 7?",
+   "options": null,
+   "answer": {
+    "value": "77",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "11 × 7 = 77.",
+   "steps": [
+    "11 × 7 = 77."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "tabuada.10_a_12",
+   "statement": "Quanto é 11 × 12?",
+   "options": null,
+   "answer": {
+    "value": "132",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "11 × 12 = 132.",
+   "steps": [
+    "11 × 12 = 132."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "tabuada.10_a_12",
+   "statement": "Quanto é 12 × 5?",
+   "options": null,
+   "answer": {
+    "value": "60",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "12 × 5 = 60.",
+   "steps": [
+    "12 × 5 = 60."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "tabuada.10_a_12",
+   "statement": "Quanto é 12 × 9?",
+   "options": null,
+   "answer": {
+    "value": "108",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "12 × 9 = 108.",
+   "steps": [
+    "12 × 9 = 108."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "tabuada.10_a_12",
+   "statement": "Quanto é 12 × 12?",
+   "options": null,
+   "answer": {
+    "value": "144",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "12 × 12 = 144.",
+   "steps": [
+    "12 × 12 = 144."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "tabuada.10_a_12",
+   "statement": "Quanto é 11 × 11?",
+   "options": null,
+   "answer": {
+    "value": "121",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "11 × 11 = 121.",
+   "steps": [
+    "11 × 11 = 121."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "tabuada.10_a_12",
+   "statement": "Quanto é 12 × 7?",
+   "options": null,
+   "answer": {
+    "value": "84",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "12 × 7 = 84.",
+   "steps": [
+    "12 × 7 = 84."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "tabuada.10_a_12",
+   "statement": "Quanto é 132 ÷ 12?",
+   "options": null,
+   "answer": {
+    "value": "11",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "12 × 11 = 132.",
+   "steps": [
+    "Usa a tabuada ao contrário."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "tabuada.10_a_12",
+   "statement": "Quanto é 121 ÷ 11?",
+   "options": null,
+   "answer": {
+    "value": "11",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "11 × 11 = 121.",
+   "steps": [
+    "Usa a tabuada ao contrário."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "tabuada.10_a_12",
+   "statement": "Quanto é 96 ÷ 12?",
+   "options": null,
+   "answer": {
+    "value": "8",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "12 × 8 = 96.",
+   "steps": [
+    "Usa a tabuada ao contrário."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "tabuada.10_a_12",
+   "statement": "Quanto é 770 ÷ 10?",
+   "options": null,
+   "answer": {
+    "value": "77",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "10 × 77 = 770.",
+   "steps": [
+    "Usa a tabuada ao contrário."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "tabuada.10_a_12",
+   "statement": "Um ano tem 12 meses. Quantos meses há em 15 anos?",
+   "options": null,
+   "answer": {
+    "value": "180",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "12 × 15 = 180 meses.",
+   "steps": [
+    "12 × 15 = 120 + 60."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "tabuada.10_a_12",
+   "statement": "Uma dúzia tem 12 ovos. Quantos ovos há em 11 dúzias?",
+   "options": null,
+   "answer": {
+    "value": "132",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "12 × 11 = 132.",
+   "steps": [
+    "120 + 12."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "tabuada.10_a_12",
+   "statement": "Na tabuada do 11, 11 × 5 = 55 e 11 × 9 = 99.",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "Até 9 o resultado repete o algarismo.",
+   "steps": [
+    "Repete o algarismo."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "tabuada.10_a_12",
+   "statement": "Qual é a divisão relacionada com 12 × 7 = 84?",
+   "options": [
+    {
+     "id": "a",
+     "label": "84 ÷ 12 = 7"
+    },
+    {
+     "id": "b",
+     "label": "84 ÷ 7 = 11"
+    },
+    {
+     "id": "c",
+     "label": "12 ÷ 7 = 84"
+    },
+    {
+     "id": "d",
+     "label": "84 − 12 = 7"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "Se a × b = c então c ÷ a = b.",
+   "steps": [
+    "Divisão inversa."
+   ]
+  }
+ ]
+}

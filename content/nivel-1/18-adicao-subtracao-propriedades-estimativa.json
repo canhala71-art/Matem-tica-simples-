@@ -1,0 +1,319 @@
+{
+ "subject": "operacoes-basicas",
+ "topic_title": "Adição e subtração",
+ "topic_slug": "adicao-subtracao",
+ "lesson_title": "Adição e subtração: propriedades, operações inversas e estimativa",
+ "lesson_slug": "adicao-subtracao-propriedades-estimativa",
+ "summary": "Domina a adição e a subtração, as suas propriedades, a prova dos nove por operação inversa e a estimativa.",
+ "minutes": 25,
+ "blocks": {
+  "introduction": "**Objetivos:** somar e subtrair com segurança, usar as propriedades comutativa, associativa e do elemento neutro, verificar resultados com a operação inversa e estimar. **Pré-requisitos:** sistema decimal e tabuada da adição.\n\nSomar e subtrair é o que fazemos todos os dias: contar o troco, somar despesas, ver quanto falta para poupar uma quantia. Fazê-lo bem e depressa é a base de toda a matemática seguinte.",
+  "intuition": "**Adição:** juntar quantidades. As parcelas são os números que se juntam e a **soma** é o resultado. **Subtração:** tirar, comparar ou achar o que falta. O **aditivo** (ou minuendo) é o número de onde se tira, o **subtrativo** é o que se tira e a **diferença** (ou resto) é o resultado.\n\nPropriedades da adição: **comutativa** ($a+b=b+a$), **associativa** ($(a+b)+c=a+(b+c)$) e **elemento neutro** 0. Servem para calcular de cabeça: $25+48+75=(25+75)+48=148$.\n\nA subtração **não** é comutativa nem associativa. Mas tem uma prova simples: a **operação inversa**. Se $a-b=d$, então $d+b=a$. Se $a+b=s$, então $s-b=a$. Usa sempre para confirmar contas.\n\nPara estimar, arredonda os números (à dezena, centena ou milhar) e calcula de cabeça. Assim detetas resultados absurdos: $4\\,987+3\\,012$ ronda os 8 000.\n\n**Erros comuns:** desalinhar as ordens; esquecer de «levar» na soma ou de «pedir emprestado» na subtração; trocar os termos da subtração.",
+  "definition": "A **adição** de naturais $a+b$ é o número de elementos de dois conjuntos disjuntos com $a$ e $b$ elementos. A **subtração** $a-b$ ($a\\ge b$) é o número $d$ tal que $b+d=a$. A subtração é a **operação inversa** da adição.",
+  "formulas": "$$a+b=b+a\\quad(a+b)+c=a+(b+c)\\quad a+0=a$$\n\n$$a-b=d\\iff d+b=a\\qquad a-(b+c)=a-b-c$$\n\nCompensação: $a-b=(a+k)-(b+k)$, útil para calcular de cabeça ($83-29=84-30=54$).",
+  "worked_example": "**Exemplo 1.** $4\\,538+2\\,765=7\\,303$ (alinha, soma e leva).\n\n**Exemplo 2.** $9\\,000-3\\,478=5\\,522$. Prova: $5\\,522+3\\,478=9\\,000$ ✓.\n\n**Exemplo 3 (esperto).** $25+48+75=(25+75)+48=100+48=148$.\n\n**Exemplo 4 (compensação).** $83-29=84-30=54$ (soma 1 aos dois números).\n\n**Exemplo 5 (inversa).** Qual o número que somado a 3 456 dá 5 000? É $5\\,000-3\\,456=1\\,544$.\n\n**Aplicação.** O Paulo tinha 15 000 Kz e gastou 4 750 e 3 250: $4\\,750+3\\,250=8\\,000$ e $15\\,000-8\\,000=7\\,000$ Kz restantes.",
+  "guided_exercise": "Resolve connosco: **calcula 7 204 − 3 897 e confirma o resultado.**\n\n1) Sem empréstimos: $7\\,204-3\\,900=3\\,304$ (3 900 é um arredondamento).\n\n2) Como tirámos 3 a mais ($3\\,900-3\\,897=3$), soma de volta: $3\\,304+3=3\\,307$.\n\n3) Prova: $3\\,307+3\\,897=7\\,204$ ✓.\n\n4) Estimativa: $7\\,200-3\\,900=3\\,300$, próximo ✓.",
+  "independent_exercise": "Chegou a tua vez. Resolve os exercícios sem pressa e usa **Verificar** para confirmar. Se errares, não faz mal: lê a resolução passo a passo, percebe onde o raciocínio escorregou e tenta outra vez. É assim que se aprende de verdade.",
+  "challenge": "**Desafio.** Soma mentalmente os números de 1 a 100 emparelhando extremos (1+100, 2+99, …). Quantos pares há e qual é cada soma? Qual é o total?",
+  "assessment": "Consideras a competência dominada quando consegues: (1) somar e subtrair com reserva e empréstimo; (2) usar as propriedades para facilitar contas; (3) verificar com a operação inversa; (4) estimar o resultado antes de calcular."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "operacoes.adicao_subtracao",
+   "statement": "Calcula 4538 + 2765.",
+   "options": null,
+   "answer": {
+    "value": "7303",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "4538 + 2765 = 7303.",
+   "steps": [
+    "Alinha as ordens.",
+    "= 7303."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "operacoes.adicao_subtracao",
+   "statement": "Calcula 12907 + 8486.",
+   "options": null,
+   "answer": {
+    "value": "21393",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "12907 + 8486 = 21393.",
+   "steps": [
+    "Alinha as ordens.",
+    "= 21393."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "operacoes.adicao_subtracao",
+   "statement": "Calcula 60000 + 24875.",
+   "options": null,
+   "answer": {
+    "value": "84875",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "60000 + 24875 = 84875.",
+   "steps": [
+    "Alinha as ordens.",
+    "= 84875."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "operacoes.adicao_subtracao",
+   "statement": "Calcula 3049 + 987.",
+   "options": null,
+   "answer": {
+    "value": "4036",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "3049 + 987 = 4036.",
+   "steps": [
+    "Alinha as ordens.",
+    "= 4036."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "operacoes.adicao_subtracao",
+   "statement": "Calcula 9000 − 3478.",
+   "options": null,
+   "answer": {
+    "value": "5522",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "9000 − 3478 = 5522. Verifica: 5522 + 3478 = 9000.",
+   "steps": [
+    "Subtrai coluna a coluna, pedindo emprestado quando preciso.",
+    "Prova: 5522 + 3478 = 9000."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "operacoes.adicao_subtracao",
+   "statement": "Calcula 15204 − 7899.",
+   "options": null,
+   "answer": {
+    "value": "7305",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "15204 − 7899 = 7305. Verifica: 7305 + 7899 = 15204.",
+   "steps": [
+    "Subtrai coluna a coluna, pedindo emprestado quando preciso.",
+    "Prova: 7305 + 7899 = 15204."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "operacoes.adicao_subtracao",
+   "statement": "Calcula 100000 − 46321.",
+   "options": null,
+   "answer": {
+    "value": "53679",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "100000 − 46321 = 53679. Verifica: 53679 + 46321 = 100000.",
+   "steps": [
+    "Subtrai coluna a coluna, pedindo emprestado quando preciso.",
+    "Prova: 53679 + 46321 = 100000."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "operacoes.adicao_subtracao",
+   "statement": "Calcula de forma esperta 25 + 48 + 75 usando as propriedades.",
+   "options": null,
+   "answer": {
+    "value": "148",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Agrupa 25 + 75 = 100 e soma 48: 148.",
+   "steps": [
+    "Comutativa e associativa.",
+    "(25 + 75) + 48 = 148."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "operacoes.adicao_subtracao",
+   "statement": "Qual é o número que somado a 3 456 dá 5 000?",
+   "options": null,
+   "answer": {
+    "value": "1544",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "É a operação inversa: 5 000 − 3 456 = 1 544.",
+   "steps": [
+    "Subtrai.",
+    "= 1 544."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "operacoes.adicao_subtracao",
+   "statement": "Subtraindo 2 487 a um número obtém-se 6 513. Qual é esse número?",
+   "options": null,
+   "answer": {
+    "value": "9000",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Operação inversa: 6 513 + 2 487 = 9 000.",
+   "steps": [
+    "Soma o subtraendo à diferença."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "operacoes.adicao_subtracao",
+   "statement": "Estima 4 987 + 3 012 arredondando às centenas e dá a soma estimada.",
+   "options": null,
+   "answer": {
+    "value": "8000",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "4 987 ≈ 5 000 e 3 012 ≈ 3 000; a soma estimada é 8 000.",
+   "steps": [
+    "Arredonda às centenas.",
+    "5 000 + 3 000."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "operacoes.adicao_subtracao",
+   "statement": "O Paulo tinha 15 000 Kz, gastou 4 750 em comida e 3 250 em transporte. Quanto lhe sobra, em Kz?",
+   "options": null,
+   "answer": {
+    "value": "7000",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "4 750 + 3 250 = 8 000 gastos; 15 000 − 8 000 = 7 000 Kz.",
+   "steps": [
+    "Soma os gastos.",
+    "Subtrai ao que tinha."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "operacoes.adicao_subtracao",
+   "statement": "A subtração é comutativa: 9 − 4 = 4 − 9.",
+   "options": null,
+   "answer": {
+    "boolean": false
+   },
+   "tolerance": 0,
+   "explanation": "9 − 4 = 5 mas 4 − 9 = −5 (nem existe nos naturais). A subtração não é comutativa.",
+   "steps": [
+    "Troca a ordem e vê."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "operacoes.adicao_subtracao",
+   "statement": "(20 + 5) + 7 = 20 + (5 + 7).",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "Propriedade associativa da adição: ambos dão 32.",
+   "steps": [
+    "Associativa."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "operacoes.adicao_subtracao",
+   "statement": "Qual é o elemento neutro da adição?",
+   "options": [
+    {
+     "id": "a",
+     "label": "0"
+    },
+    {
+     "id": "b",
+     "label": "1"
+    },
+    {
+     "id": "c",
+     "label": "10"
+    },
+    {
+     "id": "d",
+     "label": "Não existe"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "a + 0 = a, qualquer que seja a.",
+   "steps": [
+    "a + 0 = a."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "operacoes.adicao_subtracao",
+   "statement": "A operação inversa da adição é…",
+   "options": [
+    {
+     "id": "a",
+     "label": "A subtração"
+    },
+    {
+     "id": "b",
+     "label": "A multiplicação"
+    },
+    {
+     "id": "c",
+     "label": "A divisão"
+    },
+    {
+     "id": "d",
+     "label": "A potenciação"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "Se a + b = c, então c − b = a.",
+   "steps": [
+    "Desfaz a soma."
+   ]
+  }
+ ]
+}

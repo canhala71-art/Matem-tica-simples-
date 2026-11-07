@@ -1,0 +1,277 @@
+{
+ "subject": "tabuada",
+ "topic_title": "Tabuadas do 1 ao 12",
+ "topic_slug": "tabuadas-1-a-12",
+ "lesson_title": "Tabuadas do 6 ao 9",
+ "lesson_slug": "tabuadas-6-ao-9",
+ "summary": "Domina as tabuadas do 6, 7, 8 e 9 com truques para os produtos mais difíceis.",
+ "minutes": 20,
+ "blocks": {
+  "introduction": "**Objetivos:** dominar as tabuadas do 6 ao 9 usando padrões e relações com tabuadas já conhecidas. **Pré-requisitos:** tabuadas do 1 ao 5.\n\nAs tabuadas mais temidas são a do 6, do 7, do 8 e a do 9. A boa notícia: pela propriedade comutativa, já conheces $6\\times1$ até $6\\times5$, $7\\times1$ até $7\\times5$, etc. Sobram poucos produtos novos, e há truques para eles.",
+  "intuition": "**Tabuada do 6:** 5 vezes + mais 1 vez. $6\\times7=5\\times7+7=35+7=42$. **Tabuada do 7:** usa $7\\times7=49$ como âncora; $7\\times8=49+7=56$; $7\\times6=42$. **Tabuada do 8:** o dobro da do 4; $8\\times6=2\\times24=48$. **Tabuada do 9:** $9\\times n=10\\times n-n$; $9\\times7=70-7=63$; os algarismos do resultado somam sempre 9 (63 → 6+3=9); com os dedos: dobras o dedo $n$ e lês dezenas à esquerda, unidades à direita.\n\nProdutos que se confundem: $7\\times8=56$ (sequência 5, 6, 7, 8!) e $6\\times9=54$. Uma boa regra: $56=7\\times8$ lembra 5, 6, 7, 8.\n\nPadrão cruzado: os produtos «próximos» ($7\\times7=49$ e $6\\times8=48$) diferem de 1: $n\\times n$ e $(n-1)(n+1)$ diferem sempre de 1.\n\n**Erros comuns:** confundir 54 com 56; esquecer de usar a comutativa; decorar sem treinar em ordem aleatória.",
+  "definition": "As tabuadas do 6, 7, 8 e 9 são os produtos $n\\times m$ com $n\\in\\{6,7,8,9\\}$ e $m\\in\\{1,\\ldots,12\\}$. Os **quadrados** da tabuada ($n\\times n$) são 36, 49, 64 e 81 para estes valores.",
+  "formulas": "$$9\\times n=10n-n\\qquad6\\times n=5n+n\\qquad8\\times n=2\\times(4\\times n)$$\n\nQuadrados: $6^2=36,\\ 7^2=49,\\ 8^2=64,\\ 9^2=81$.\n\n$(n-1)(n+1)=n^2-1$: por exemplo $6\\times8=7^2-1=48$.",
+  "worked_example": "**Exemplo 1.** $6\\times7=5\\times7+7=42$.\n\n**Exemplo 2.** $7\\times8=56$ (lembra 5, 6, 7, 8).\n\n**Exemplo 3.** $8\\times9=72$, porque $9\\times8=80-8$.\n\n**Exemplo 4.** $9\\times6=60-6=54$; e $5+4=9$.\n\n**Exemplo 5.** $6\\times8=7^2-1=48$.\n\n**Aplicação.** Uma carrinha leva 9 caixas de 6 garrafas: $9\\times6=54$ garrafas.",
+  "guided_exercise": "Resolve connosco: **calcula $8\\times7$ de duas maneiras.**\n\n1) Dobro do dobro: $2\\times7=14$, $4\\times7=28$, $8\\times7=56$.\n\n2) Com a âncora $7\\times7=49$: $49+7=56$.\n\n3) As duas dão 56 ✓.",
+  "independent_exercise": "Chegou a tua vez. Resolve os exercícios sem pressa e usa **Verificar** para confirmar. Se errares, não faz mal: lê a resolução passo a passo, percebe onde o raciocínio escorregou e tenta outra vez. É assim que se aprende de verdade.",
+  "challenge": "**Desafio.** Constrói a tabuada do 9 só com os dedos: dobra o dedo $n$ e conta os dedos à esquerda (dezenas) e à direita (unidades). Explica porque funciona usando $9\\times n=10n-n$.",
+  "assessment": "Consideras a competência dominada quando consegues: (1) responder às tabuadas do 6 ao 9 sem demora; (2) usar âncoras e truques; (3) reconhecer os quadrados da tabuada; (4) não confundir produtos parecidos."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "tabuada.6_a_9",
+   "statement": "Quanto é 6 × 7?",
+   "options": null,
+   "answer": {
+    "value": "42",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "6 × 7 = 42.",
+   "steps": [
+    "6 × 7 = 42."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "tabuada.6_a_9",
+   "statement": "Quanto é 7 × 8?",
+   "options": null,
+   "answer": {
+    "value": "56",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "7 × 8 = 56.",
+   "steps": [
+    "7 × 8 = 56."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "tabuada.6_a_9",
+   "statement": "Quanto é 8 × 9?",
+   "options": null,
+   "answer": {
+    "value": "72",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "8 × 9 = 72.",
+   "steps": [
+    "8 × 9 = 72."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "tabuada.6_a_9",
+   "statement": "Quanto é 9 × 6?",
+   "options": null,
+   "answer": {
+    "value": "54",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "9 × 6 = 54.",
+   "steps": [
+    "9 × 6 = 54."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "tabuada.6_a_9",
+   "statement": "Quanto é 6 × 8?",
+   "options": null,
+   "answer": {
+    "value": "48",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "6 × 8 = 48.",
+   "steps": [
+    "6 × 8 = 48."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "tabuada.6_a_9",
+   "statement": "Quanto é 7 × 9?",
+   "options": null,
+   "answer": {
+    "value": "63",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "7 × 9 = 63.",
+   "steps": [
+    "7 × 9 = 63."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "tabuada.6_a_9",
+   "statement": "Quanto é 8 × 8?",
+   "options": null,
+   "answer": {
+    "value": "64",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "8 × 8 = 64.",
+   "steps": [
+    "8 × 8 = 64."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "tabuada.6_a_9",
+   "statement": "Quanto é 9 × 9?",
+   "options": null,
+   "answer": {
+    "value": "81",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "9 × 9 = 81.",
+   "steps": [
+    "9 × 9 = 81."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "tabuada.6_a_9",
+   "statement": "Quanto é 6 × 12?",
+   "options": null,
+   "answer": {
+    "value": "72",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "6 × 12 = 72.",
+   "steps": [
+    "6 × 12 = 72."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "tabuada.6_a_9",
+   "statement": "Quanto é 7 × 12?",
+   "options": null,
+   "answer": {
+    "value": "84",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "7 × 12 = 84.",
+   "steps": [
+    "7 × 12 = 84."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "tabuada.6_a_9",
+   "statement": "Quanto é 9 × 7 usando 10 × 7 − 7?",
+   "options": null,
+   "answer": {
+    "value": "63",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "70 − 7 = 63.",
+   "steps": [
+    "10 × 7 = 70."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "tabuada.6_a_9",
+   "statement": "Que número multiplicado por 8 dá 72?",
+   "options": null,
+   "answer": {
+    "value": "9",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "8 × 9 = 72.",
+   "steps": [
+    "72 ÷ 8 = 9."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "tabuada.6_a_9",
+   "statement": "Uma caixa tem 6 garrafas e uma carrinha leva 9 caixas. Quantas garrafas leva a carrinha?",
+   "options": null,
+   "answer": {
+    "value": "54",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "6 × 9 = 54.",
+   "steps": [
+    "6 × 9."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "tabuada.6_a_9",
+   "statement": "7 × 8 = 54.",
+   "options": null,
+   "answer": {
+    "boolean": false
+   },
+   "tolerance": 0,
+   "explanation": "7 × 8 = 56.",
+   "steps": [
+    "7 × 8 = 56."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "tabuada.6_a_9",
+   "statement": "Qual das contas tem resultado 56?",
+   "options": [
+    {
+     "id": "a",
+     "label": "7 × 8"
+    },
+    {
+     "id": "b",
+     "label": "6 × 9"
+    },
+    {
+     "id": "c",
+     "label": "8 × 6"
+    },
+    {
+     "id": "d",
+     "label": "9 × 7"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "7 × 8 = 56; 6 × 9 = 54; 8 × 6 = 48; 9 × 7 = 63.",
+   "steps": [
+    "Verifica cada uma."
+   ]
+  }
+ ]
+}

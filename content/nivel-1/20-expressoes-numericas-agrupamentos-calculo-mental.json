@@ -1,0 +1,282 @@
+{
+ "subject": "operacoes-basicas",
+ "topic_title": "Expressões numéricas",
+ "topic_slug": "expressoes-numericas-operacoes",
+ "lesson_title": "Expressões numéricas: parênteses, colchetes, chavetas e cálculo mental",
+ "lesson_slug": "expressoes-numericas-agrupamentos-calculo-mental",
+ "summary": "Resolve expressões com parênteses, colchetes e chavetas pela ordem correta e calcula de cabeça com truques.",
+ "minutes": 25,
+ "blocks": {
+  "introduction": "**Objetivos:** calcular expressões numéricas com as quatro operações e símbolos de agrupamento, e usar estratégias de cálculo mental. **Pré-requisitos:** as quatro operações e a ordem de resolução.\n\nQuanto é $2+3\\times4$? Se somares primeiro obténs 20; se multiplicares primeiro, 14. Para todos obtermos o mesmo resultado há uma regra universal: a **ordem das operações**.",
+  "intuition": "**Ordem:** (1) resolvem-se os agrupamentos, de dentro para fora: primeiro $(\\,)$, depois $[\\,]$, depois $\\{\\,\\}$; (2) potências e raízes; (3) multiplicações e divisões, da esquerda para a direita; (4) adições e subtrações, da esquerda para a direita.\n\nOs parênteses mudam a ordem: $(2+3)\\times4=20$ mas $2+3\\times4=14$.\n\n**Cálculo mental:** usa as propriedades. Compensação: $83-29=84-30$. Distributiva: $50\\times18=50\\times20-50\\times2$. Associatividade: $4\\times35\\times25=35\\times(4\\times25)=3\\,500$. Dobros e metades: $15\\times12=30\\times6$. Estima antes de calcular.\n\n**Erros comuns:** fazer as contas da esquerda para a direita sem prioridade; esquecer que $\\times$ e $\\div$ têm a mesma prioridade; resolver o parêntese mais exterior antes do interior.",
+  "definition": "Uma **expressão numérica** é uma sequência de números e operações. Os **símbolos de agrupamento** são parênteses $(\\,)$, colchetes $[\\,]$ e chavetas $\\{\\,\\}$. O **valor** da expressão é o resultado de a resolver pela ordem das operações.",
+  "formulas": "Ordem: agrupamentos (dentro → fora) → potências/raízes → $\\times,\\div$ → $+,-$.\n\n$$a+b\\times c=a+(b\\times c)\\qquad(a+b)\\times c=ac+bc$$",
+  "worked_example": "**Exemplo 1.** $2+3\\times4=2+12=14$.\n\n**Exemplo 2.** $(2+3)\\times4=5\\times4=20$.\n\n**Exemplo 3.** $5\\times(8-3)+4=5\\times5+4=29$.\n\n**Exemplo 4 (colchetes).** $[12-(3+4)]\\times3=[12-7]\\times3=5\\times3=15$.\n\n**Exemplo 5 (chavetas).** $2\\times\\{3+[10-(4+2)]\\}=2\\times\\{3+[10-6]\\}=2\\times\\{3+4\\}=14$.\n\n**Aplicação.** Compraste 4 cadernos a 250 Kz e 3 canetas a 120 Kz e pagaste com 2 000 Kz. Troco: $2\\,000-(4\\times250+3\\times120)=2\\,000-1\\,360=640$ Kz.",
+  "guided_exercise": "Resolve connosco: **calcula $3+2\\times[15-3\\times(2+1)]$.**\n\n1) Parênteses: $2+1=3$.\n\n2) Dentro do colchete: $3\\times3=9$ e $15-9=6$.\n\n3) Fora: $2\\times6=12$.\n\n4) Soma: $3+12=15$.\n\n5) Confere o fim: nenhuma operação ficou por fazer ✓.",
+  "independent_exercise": "Chegou a tua vez. Resolve os exercícios sem pressa e usa **Verificar** para confirmar. Se errares, não faz mal: lê a resolução passo a passo, percebe onde o raciocínio escorregou e tenta outra vez. É assim que se aprende de verdade.",
+  "challenge": "**Desafio.** Com os algarismos 4, 4, 4, 4 e quaisquer operações e parênteses, consegues obter todos os números de 0 a 5? Por exemplo, $(4+4)\\div(4+4)=1$. Descobre pelo menos quatro.",
+  "assessment": "Consideras a competência dominada quando consegues: (1) resolver expressões respeitando a ordem; (2) resolver de dentro para fora com (), [] e {}; (3) usar truques de cálculo mental; (4) detetar o erro de calcular sempre da esquerda para a direita."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "operacoes.expressoes",
+   "statement": "Calcula $2+3\\times4$.",
+   "options": null,
+   "answer": {
+    "value": "14",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Respeitando a ordem das operações: $2+3\\times4=14$.",
+   "steps": [
+    "Parênteses (de dentro para fora).",
+    "× e ÷.",
+    "+ e −."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "operacoes.expressoes",
+   "statement": "Calcula $(2+3)\\times4$.",
+   "options": null,
+   "answer": {
+    "value": "20",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Respeitando a ordem das operações: $(2+3)\\times4=20$.",
+   "steps": [
+    "Parênteses (de dentro para fora).",
+    "× e ÷.",
+    "+ e −."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "operacoes.expressoes",
+   "statement": "Calcula $20-6\\div3$.",
+   "options": null,
+   "answer": {
+    "value": "18",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Respeitando a ordem das operações: $20-6\\div3=18$.",
+   "steps": [
+    "Parênteses (de dentro para fora).",
+    "× e ÷.",
+    "+ e −."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "operacoes.expressoes",
+   "statement": "Calcula $(20-6)\\div2$.",
+   "options": null,
+   "answer": {
+    "value": "7",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Respeitando a ordem das operações: $(20-6)\\div2=7$.",
+   "steps": [
+    "Parênteses (de dentro para fora).",
+    "× e ÷.",
+    "+ e −."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "operacoes.expressoes",
+   "statement": "Calcula $5\\times(8-3)+4$.",
+   "options": null,
+   "answer": {
+    "value": "29",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Respeitando a ordem das operações: $5\\times(8-3)+4=29$.",
+   "steps": [
+    "Parênteses (de dentro para fora).",
+    "× e ÷.",
+    "+ e −."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "operacoes.expressoes",
+   "statement": "Calcula $[12-(3+4)]\\times3$.",
+   "options": null,
+   "answer": {
+    "value": "15",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Respeitando a ordem das operações: $[12-(3+4)]\\times3=15$.",
+   "steps": [
+    "Parênteses (de dentro para fora).",
+    "× e ÷.",
+    "+ e −."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "operacoes.expressoes",
+   "statement": "Calcula $2\\times\\{3+[10-(4+2)]\\}$.",
+   "options": null,
+   "answer": {
+    "value": "14",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Respeitando a ordem das operações: $2\\times\\{3+[10-(4+2)]\\}=14$.",
+   "steps": [
+    "Parênteses (de dentro para fora).",
+    "× e ÷.",
+    "+ e −."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "operacoes.expressoes",
+   "statement": "Calcula $100-4\\times(6+9)$.",
+   "options": null,
+   "answer": {
+    "value": "40",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Respeitando a ordem das operações: $100-4\\times(6+9)=40$.",
+   "steps": [
+    "Parênteses (de dentro para fora).",
+    "× e ÷.",
+    "+ e −."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "operacoes.expressoes",
+   "statement": "Calcula $(18+6)\\div(4\\times2)$.",
+   "options": null,
+   "answer": {
+    "value": "3",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Respeitando a ordem das operações: $(18+6)\\div(4\\times2)=3$.",
+   "steps": [
+    "Parênteses (de dentro para fora).",
+    "× e ÷.",
+    "+ e −."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "operacoes.expressoes",
+   "statement": "Calcula $3+2\\times[15-3\\times(2+1)]$.",
+   "options": null,
+   "answer": {
+    "value": "15",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Respeitando a ordem das operações: $3+2\\times[15-3\\times(2+1)]=15$.",
+   "steps": [
+    "Parênteses (de dentro para fora).",
+    "× e ÷.",
+    "+ e −."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "operacoes.expressoes",
+   "statement": "Calcula de cabeça 50 × 18 usando 50 × 20 − 50 × 2.",
+   "options": null,
+   "answer": {
+    "value": "900",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "1 000 − 100 = 900.",
+   "steps": [
+    "50 × 20 = 1 000.",
+    "50 × 2 = 100."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "operacoes.expressoes",
+   "statement": "Calcula de cabeça 4 × 35 × 25.",
+   "options": null,
+   "answer": {
+    "value": "3500",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "35 × (4 × 25) = 35 × 100 = 3 500.",
+   "steps": [
+    "Agrupa 4 × 25 = 100."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "operacoes.expressoes",
+   "statement": "$6+4\\times5=50$.",
+   "options": null,
+   "answer": {
+    "boolean": false
+   },
+   "tolerance": 0,
+   "explanation": "Primeiro a multiplicação: 4×5 = 20, depois 6 + 20 = 26.",
+   "steps": [
+    "× antes de +."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "operacoes.expressoes",
+   "statement": "Quais são os símbolos de agrupamento, do mais interior para o mais exterior?",
+   "options": [
+    {
+     "id": "a",
+     "label": "( ), [ ], { }"
+    },
+    {
+     "id": "b",
+     "label": "{ }, [ ], ( )"
+    },
+    {
+     "id": "c",
+     "label": "[ ], ( ), { }"
+    },
+    {
+     "id": "d",
+     "label": "( ), { }, [ ]"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "Resolvem-se de dentro para fora: primeiro (), depois [], depois {}.",
+   "steps": [
+    "Dentro para fora."
+   ]
+  }
+ ]
+}

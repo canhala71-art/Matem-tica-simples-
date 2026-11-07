@@ -1,0 +1,281 @@
+{
+ "subject": "operacoes-basicas",
+ "topic_title": "Multiplicação e divisão",
+ "topic_slug": "multiplicacao-divisao",
+ "lesson_title": "Multiplicação e divisão: propriedades e operações inversas",
+ "lesson_slug": "multiplicacao-divisao-propriedades-inversas",
+ "summary": "Multiplica e divide naturais, usa as propriedades comutativa, associativa e distributiva e relaciona as duas operações.",
+ "minutes": 25,
+ "blocks": {
+  "introduction": "**Objetivos:** multiplicar e dividir naturais, distinguir divisão exata de não exata, usar as propriedades e a operação inversa. **Pré-requisitos:** tabuada e adição.\n\nSe uma caixa tem 24 garrafas, quantas há em 18 caixas? Quantos autocarros de 52 lugares são precisos para 300 alunos? São perguntas de **multiplicação** e **divisão**, as operações do dia a dia do comércio e da construção.",
+  "intuition": "**Multiplicação:** soma de parcelas iguais. $a\\times b$: $a$ e $b$ são os **fatores** e o resultado é o **produto**. **Divisão:** repartir ou medir quantas vezes cabe. $D\\div d=q$ (resto $r$): $D$ é o dividendo, $d$ o divisor, $q$ o quociente e $r$ o resto; vale sempre $D=d\\times q+r$ com $r<d$. Se $r=0$ a divisão é **exata**.\n\nPropriedades da multiplicação: **comutativa** ($ab=ba$), **associativa** ($(ab)c=a(bc)$), **elemento neutro** 1, **absorvente** 0 e **distributiva** em relação à soma: $a(b+c)=ab+ac$. A distributiva permite calcular de cabeça: $7\\times102=7\\times100+7\\times2=714$ e $9\\times98=9\\times100-9\\times2=882$.\n\nA divisão é a **operação inversa** da multiplicação: se $a\\times b=c$ então $c\\div a=b$. Por isso, para dividir, pergunta-te «o que multiplicado pelo divisor dá o dividendo?». E nunca se divide por zero.\n\n**Erros comuns:** esquecer de deslocar a linha na multiplicação por dezenas; achar que $a\\div b=b\\div a$; deixar resto maior ou igual ao divisor; dividir por zero.",
+  "definition": "O **produto** de $a$ por $b$ (naturais) é $a\\times b=\\underbrace{a+a+\\cdots+a}_{b\\text{ vezes}}$. A **divisão euclidiana** de $D$ por $d\\neq0$ dá o **quociente** $q$ e o **resto** $r$ com $D=d\\times q+r$ e $0\\le r<d$. A divisão é **exata** se $r=0$.",
+  "formulas": "$$ab=ba\\quad(ab)c=a(bc)\\quad a\\times1=a\\quad a\\times0=0\\quad a(b+c)=ab+ac$$\n\n$$D=d\\times q+r,\\quad 0\\le r<d,\\ d\\ne0$$\n\nOperação inversa: $a\\times b=c\\iff c\\div b=a$.",
+  "worked_example": "**Exemplo 1.** $47\\times6=282$ ($40\\times6=240$ e $7\\times6=42$).\n\n**Exemplo 2.** $36\\times25=900$ ($36\\times100\\div4$).\n\n**Exemplo 3 (distributiva).** $7\\times102=700+14=714$.\n\n**Exemplo 4 (divisão exata).** $1\\,536\\div12=128$, porque $12\\times128=1\\,536$.\n\n**Exemplo 5 (com resto).** $85\\div8=10$ resto 5, porque $8\\times10+5=85$.\n\n**Aplicação.** Um autocarro leva 52 passageiros: 18 autocarros cheios levam $52\\times18=936$. Para 300 alunos são precisos $300\\div52=5$ resto 40, logo 6 autocarros (o sexto vai incompleto).",
+  "guided_exercise": "Resolve connosco: **divide 1 260 por 15 e confirma.**\n\n1) 126 ÷ 15 = 8 (15 × 8 = 120), resto 6. Baixa o 0: 60.\n\n2) 60 ÷ 15 = 4.\n\n3) Quociente 84, resto 0 (divisão exata).\n\n4) Prova: $15\\times84=1\\,260$ ✓.",
+  "independent_exercise": "Chegou a tua vez. Resolve os exercícios sem pressa e usa **Verificar** para confirmar. Se errares, não faz mal: lê a resolução passo a passo, percebe onde o raciocínio escorregou e tenta outra vez. É assim que se aprende de verdade.",
+  "challenge": "**Desafio.** Calcula $25\\times48$ de três maneiras: (a) $25\\times48$ direto; (b) $100\\times48\\div4$; (c) $48\\div4\\times100$. Qual é mais rápida e porquê?",
+  "assessment": "Consideras a competência dominada quando consegues: (1) multiplicar e dividir com vários algarismos; (2) escrever $D=d\\times q+r$; (3) usar a distributiva para calcular de cabeça; (4) usar a operação inversa para confirmar."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "operacoes.multiplicacao_divisao",
+   "statement": "Calcula 47 × 6.",
+   "options": null,
+   "answer": {
+    "value": "282",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "47 × 6 = 282.",
+   "steps": [
+    "Multiplica por cada algarismo.",
+    "= 282."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "operacoes.multiplicacao_divisao",
+   "statement": "Calcula 253 × 8.",
+   "options": null,
+   "answer": {
+    "value": "2024",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "253 × 8 = 2024.",
+   "steps": [
+    "Multiplica por cada algarismo.",
+    "= 2024."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "operacoes.multiplicacao_divisao",
+   "statement": "Calcula 36 × 25.",
+   "options": null,
+   "answer": {
+    "value": "900",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "36 × 25 = 900.",
+   "steps": [
+    "Multiplica por cada algarismo.",
+    "= 900."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "operacoes.multiplicacao_divisao",
+   "statement": "Calcula 128 × 15.",
+   "options": null,
+   "answer": {
+    "value": "1920",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "128 × 15 = 1920.",
+   "steps": [
+    "Multiplica por cada algarismo.",
+    "= 1920."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "operacoes.multiplicacao_divisao",
+   "statement": "Calcula 1536 ÷ 12.",
+   "options": null,
+   "answer": {
+    "value": "128",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "1536 ÷ 12 = 128 (exata, porque 12 × 128 = 1536).",
+   "steps": [
+    "12 × 128 = 1536."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "operacoes.multiplicacao_divisao",
+   "statement": "Calcula 4875 ÷ 25.",
+   "options": null,
+   "answer": {
+    "value": "195",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "4875 ÷ 25 = 195 (exata, porque 25 × 195 = 4875).",
+   "steps": [
+    "25 × 195 = 4875."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "operacoes.multiplicacao_divisao",
+   "statement": "Calcula 9000 ÷ 36.",
+   "options": null,
+   "answer": {
+    "value": "250",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "9000 ÷ 36 = 250 (exata, porque 36 × 250 = 9000).",
+   "steps": [
+    "36 × 250 = 9000."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "operacoes.multiplicacao_divisao",
+   "statement": "Usa a propriedade distributiva para calcular 7 × 102.",
+   "options": null,
+   "answer": {
+    "value": "714",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "7 × 102 = 7 × 100 + 7 × 2 = 700 + 14 = 714.",
+   "steps": [
+    "Decompõe 102 = 100 + 2."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "operacoes.multiplicacao_divisao",
+   "statement": "Usa a propriedade distributiva para calcular 9 × 98.",
+   "options": null,
+   "answer": {
+    "value": "882",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "9 × 98 = 9 × 100 − 9 × 2 = 900 − 18 = 882.",
+   "steps": [
+    "98 = 100 − 2."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "operacoes.multiplicacao_divisao",
+   "statement": "Um autocarro leva 52 passageiros. Quantos passageiros levam 18 autocarros cheios?",
+   "options": null,
+   "answer": {
+    "value": "936",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "52 × 18 = 936.",
+   "steps": [
+    "52 × 18 = 52 × 10 + 52 × 8.",
+    "520 + 416 = 936."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "operacoes.multiplicacao_divisao",
+   "statement": "Repartem-se 1 260 Kz por 15 pessoas em partes iguais. Quanto recebe cada uma, em Kz?",
+   "options": null,
+   "answer": {
+    "value": "84",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "1 260 ÷ 15 = 84.",
+   "steps": [
+    "15 × 84 = 1 260."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "operacoes.multiplicacao_divisao",
+   "statement": "Qual é o número que multiplicado por 14 dá 238?",
+   "options": null,
+   "answer": {
+    "value": "17",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Operação inversa: 238 ÷ 14 = 17.",
+   "steps": [
+    "14 × 17 = 238."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "operacoes.multiplicacao_divisao",
+   "statement": "Qualquer número multiplicado por zero dá zero.",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "O zero é elemento absorvente da multiplicação.",
+   "steps": [
+    "a × 0 = 0."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "operacoes.multiplicacao_divisao",
+   "statement": "A divisão é comutativa: 12 ÷ 4 = 4 ÷ 12.",
+   "options": null,
+   "answer": {
+    "boolean": false
+   },
+   "tolerance": 0,
+   "explanation": "12 ÷ 4 = 3 e 4 ÷ 12 não é natural. A divisão não é comutativa.",
+   "steps": [
+    "Troca e vê."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "operacoes.multiplicacao_divisao",
+   "statement": "Qual é o elemento neutro da multiplicação?",
+   "options": [
+    {
+     "id": "a",
+     "label": "1"
+    },
+    {
+     "id": "b",
+     "label": "0"
+    },
+    {
+     "id": "c",
+     "label": "10"
+    },
+    {
+     "id": "d",
+     "label": "Não existe"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "a × 1 = a.",
+   "steps": [
+    "a × 1 = a."
+   ]
+  }
+ ]
+}
