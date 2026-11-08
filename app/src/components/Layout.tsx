@@ -1,6 +1,6 @@
 import { useEffect, useState, type ReactNode } from 'react';
 import { Link, NavLink, Navigate, Outlet, useLocation } from 'react-router-dom';
-import { BookOpen, Bot, CreditCard, FlaskConical, LayoutDashboard, LogOut, Moon, Shield, Sparkles, Sun, Trophy, WifiOff } from 'lucide-react';
+import { BookOpen, Bot, CreditCard, FlaskConical, LayoutDashboard, LogOut, Moon, Search, Shield, Sparkles, Sun, Trophy, WifiOff } from 'lucide-react';
 import { useAuth } from '../lib/auth';
 import { flushQueue } from '../lib/offline';
 
@@ -73,6 +73,7 @@ export function Layout({ children }: { children?: ReactNode }) {
             <NavLink to="/assinatura" className={link}><CreditCard size={16} />Assinatura</NavLink>
             {isAdmin && <NavLink to="/admin" className={link}><Shield size={16} />Admin</NavLink>}
           </nav>
+          <Link to="/pesquisa" className="btn-ghost !px-2.5" aria-label="Pesquisar aulas"><Search size={16} /></Link>
           <button className="btn-ghost !px-2.5" aria-label="Alternar tema claro/escuro"
             onClick={() => { const t = dark ? 'light' : 'dark'; applyTheme(t); setDark(!dark); }}>
             {dark ? <Sun size={16} /> : <Moon size={16} />}

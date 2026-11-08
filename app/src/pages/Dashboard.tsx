@@ -84,6 +84,10 @@ export function Dashboard() {
     return (attempts ?? []).filter((a) => { const t = new Date(a.created_at); return t >= d && t < next; }).length;
   });
   const maxDay = Math.max(1, ...perDay);
+  const activeDays = new Set((attempts ?? []).map((a) => new Date(a.created_at).toDateString()));
+  let streak = 0;
+  { const d = new Date(); if (!activeDays.has(d.toDateString())) d.setDate(d.getDate() - 1);
+    while (activeDays.has(d.toDateString())) { streak++; d.setDate(d.getDate() - 1); } }
   const saved = listSavedLessons();
   const pending = queueSize();
 
@@ -106,6 +110,15 @@ export function Dashboard() {
           <span><span className="muted block">{last.completed ? 'Última aula concluída' : 'Continuar de onde paraste'}</span><span className="font-semibold">{last.title}</span></span>
           <span className="btn">{last.completed ? 'Rever' : 'Continuar'}</span>
         </Link>
+      )}
+
+      {attempts && (
+        <div className="grid gap-2 sm:grid-cols-2">
+          <div className="card !p-3 text-sm">
+            <span className="font-semibold">{streak > 0 ? `🔥 ${streak} ${streak === 1 ? 'dia' : 'dias'} seguidos a estudar` : 'Resolve um exercício hoje para começar a tua sequência'}</span>
+          </div>
+          <Link to="/rever" className="card card-hover !p-3 text-sm hover:border-electric-500"><span className="font-semibold">Rever os exercícios que errei</span> →</Link>
+        </div>
       )}
 
       <DailyChallenge />
