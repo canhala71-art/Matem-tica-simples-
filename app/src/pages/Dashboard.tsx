@@ -118,6 +118,8 @@ export function Dashboard() {
             <span className="font-semibold">{streak > 0 ? `🔥 ${streak} ${streak === 1 ? 'dia' : 'dias'} seguidos a estudar` : 'Resolve um exercício hoje para começar a tua sequência'}</span>
           </div>
           <Link to="/rever" className="card card-hover !p-3 text-sm hover:border-electric-500"><span className="font-semibold">Rever os exercícios que errei</span> →</Link>
+          <Link to="/percurso" className="card card-hover !p-3 text-sm hover:border-electric-500"><span className="font-semibold">O meu percurso: próximo passo sugerido</span> →</Link>
+          <Link to="/conquistas" className="card card-hover !p-3 text-sm hover:border-electric-500"><span className="font-semibold">🏆 As minhas conquistas</span> →</Link>
         </div>
       )}
 

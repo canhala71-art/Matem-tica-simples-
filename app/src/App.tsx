@@ -16,6 +16,8 @@ import { TestPage } from './pages/TestPage';
 import { MatchPage } from './pages/MatchPage';
 import { ReviewPage } from './pages/Review';
 import { SearchPage } from './pages/Search';
+import { AchievementsPage } from './pages/Achievements';
+import { PathPage } from './pages/Path';
 import { TeacherPage } from './pages/Teacher';
 import { LabPage } from './pages/Lab';
 import { ToolsPage } from './pages/Tools';
@@ -62,6 +64,8 @@ export default function App() {
               <Route path="/academia/:levelSlug/:subjectSlug" element={<SubjectPage />} />
               <Route path="/aula/:slug" element={<LessonPage />} />
               <Route path="/teste/:scope" element={<TestPage />} />
+              <Route path="/conquistas" element={<AchievementsPage />} />
+              <Route path="/percurso" element={<PathPage />} />
               <Route path="/rever" element={<ReviewPage />} />
               <Route path="/pesquisa" element={<SearchPage />} />
               <Route path="/associacao/:slug" element={<MatchPage />} />
