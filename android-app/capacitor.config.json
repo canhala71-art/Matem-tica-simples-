@@ -1,0 +1,10 @@
+{
+  "appId": "ao.mentemat.app",
+  "appName": "MenteMat",
+  "webDir": "www",
+  "server": {
+    "url": "https://matem-tica-simples-q3v5.vercel.app",
+    "cleartext": false,
+    "androidScheme": "https"
+  }
+}
