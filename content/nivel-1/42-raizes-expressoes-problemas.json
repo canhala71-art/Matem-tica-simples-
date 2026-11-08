@@ -1,0 +1,284 @@
+{
+ "subject": "raizes",
+ "topic_title": "Expressões com raízes",
+ "topic_slug": "expressoes-raizes-problemas",
+ "lesson_title": "Expressões numéricas com raízes e problemas de aplicação",
+ "lesson_slug": "raizes-expressoes-problemas",
+ "summary": "Resolve expressões com raízes e aplica-as a áreas, volumes e ao teorema de Pitágoras.",
+ "minutes": 30,
+ "blocks": {
+  "introduction": "**Objetivos:** calcular expressões numéricas com raízes e usar raízes em problemas de geometria e medidas. **Pré-requisitos:** raízes, potências e ordem das operações.\n\nAs raízes aparecem em quase todos os problemas de geometria: o lado de um quadrado a partir da área, a aresta de um cubo a partir do volume, a distância em linha reta entre dois pontos (teorema de Pitágoras).",
+  "intuition": "**Ordem das operações:** (1) parênteses; (2) potências e raízes; (3) $\\times$ e $\\div$; (4) $+$ e $-$. O radical funciona como um «parêntese»: a expressão sob a raiz calcula-se primeiro. $\\sqrt{9+16}=\\sqrt{25}=5$, mas $\\sqrt9+\\sqrt{16}=7$.\n\n**Geometria:** o **lado de um quadrado** de área $A$ é $\\sqrt{A}$; a **aresta de um cubo** de volume $V$ é $\\sqrt[3]{V}$. O **teorema de Pitágoras** diz que num triângulo retângulo de catetos $a$, $b$ e hipotenusa $h$: $h^2=a^2+b^2$, logo $h=\\sqrt{a^2+b^2}$. Para catetos 6 e 8, $h=\\sqrt{100}=10$.\n\n**Diagonal do quadrado:** $d=l\\sqrt2$ (por Pitágoras com dois lados iguais). Para $l=5$, $d=5\\sqrt2\\approx7{,}07$.\n\n**Sinal:** $\\sqrt{a}$ é sempre **não negativa**. Por isso $\\sqrt{(-5)^2}=\\sqrt{25}=5$. Já a equação $x^2=16$ tem duas soluções, $x=\\pm4$.\n\n**Resolução de problemas:** extrai os dados, escolhe a fórmula, calcula a raiz exata ou aproximada e responde com a unidade.\n\n**Erros comuns:** distribuir a raiz pela soma; esquecer de tirar a raiz no fim em Pitágoras ($h^2$ não é $h$); dizer $\\sqrt{16}=\\pm4$.",
+  "definition": "O **teorema de Pitágoras** estabelece que num triângulo retângulo o quadrado da hipotenusa é igual à soma dos quadrados dos catetos. Uma **expressão com raízes** é uma expressão numérica com radicais, calculada pela ordem das operações.",
+  "formulas": "$$h=\\sqrt{a^2+b^2}\\qquad l=\\sqrt{A}\\qquad a=\\sqrt[3]{V}\\qquad d=l\\sqrt2$$\n\nOrdem: agrupamentos → potências e raízes → $\\times,\\div$ → $+,-$.",
+  "worked_example": "**Exemplo 1.** $\\sqrt9+\\sqrt{16}=3+4=7$.\n\n**Exemplo 2.** $\\sqrt{9+16}=\\sqrt{25}=5$ (muda o resultado).\n\n**Exemplo 3.** $\\sqrt{100}\\div5+2^3=10\\div5+8=10$.\n\n**Exemplo 4 (Pitágoras).** Catetos 6 e 8: $h=\\sqrt{36+64}=10$.\n\n**Exemplo 5 (cubo).** Volume 125 cm³: aresta $\\sqrt[3]{125}=5$ cm e face $5^2=25$ cm².\n\n**Aplicação.** Uma escada de 10 m encosta numa parede, com o pé a 6 m da base. Altura que alcança: $\\sqrt{10^2-6^2}=\\sqrt{64}=8$ m.",
+  "guided_exercise": "Resolve connosco: **um terreno retangular mede 24 m por 7 m. Qual é a diagonal?**\n\n1) Pitágoras: $d=\\sqrt{24^2+7^2}$.\n\n2) $24^2=576$ e $7^2=49$: soma 625.\n\n3) $d=\\sqrt{625}=25$ m.\n\n4) Verifica: $25^2=625$ ✓.",
+  "independent_exercise": "Chegou a tua vez. Resolve os exercícios sem pressa e usa **Verificar** para confirmar. Se errares, não faz mal: lê a resolução passo a passo, percebe onde o raciocínio escorregou e tenta outra vez. É assim que se aprende de verdade.",
+  "challenge": "**Desafio.** Quantos metros de rede são precisos para um percurso que vai de uma ponta de um campo de 40 m × 30 m à ponta oposta, em linha reta? E quanto se poupa em relação a ir pelos dois lados?",
+  "assessment": "Consideras a competência dominada quando consegues: (1) calcular expressões com raízes pela ordem correta; (2) usar o teorema de Pitágoras; (3) achar lado, aresta e diagonal; (4) não distribuir a raiz pela soma."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "raizes.expressoes",
+   "statement": "Calcula $\\sqrt{9}+\\sqrt{16}$.",
+   "options": null,
+   "answer": {
+    "value": "7",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Calcula as raízes e depois as restantes operações: $\\sqrt{9}+\\sqrt{16}=7$.",
+   "steps": [
+    "Raízes.",
+    "Resto da expressão."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "raizes.expressoes",
+   "statement": "Calcula $\\sqrt{25}\\times\\sqrt{4}-3$.",
+   "options": null,
+   "answer": {
+    "value": "7",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Calcula as raízes e depois as restantes operações: $\\sqrt{25}\\times\\sqrt{4}-3=7$.",
+   "steps": [
+    "Raízes.",
+    "Resto da expressão."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "raizes.expressoes",
+   "statement": "Calcula $\\sqrt{100}\\div5+2^3$.",
+   "options": null,
+   "answer": {
+    "value": "10",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Calcula as raízes e depois as restantes operações: $\\sqrt{100}\\div5+2^3=10$.",
+   "steps": [
+    "Raízes.",
+    "Resto da expressão."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "raizes.expressoes",
+   "statement": "Calcula $\\sqrt{9+16}$.",
+   "options": null,
+   "answer": {
+    "value": "5",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Calcula as raízes e depois as restantes operações: $\\sqrt{9+16}=5$.",
+   "steps": [
+    "Raízes.",
+    "Resto da expressão."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "raizes.expressoes",
+   "statement": "Calcula $\\sqrt[3]{27}+\\sqrt{49}$.",
+   "options": null,
+   "answer": {
+    "value": "10",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Calcula as raízes e depois as restantes operações: $\\sqrt[3]{27}+\\sqrt{49}=10$.",
+   "steps": [
+    "Raízes.",
+    "Resto da expressão."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "raizes.expressoes",
+   "statement": "Calcula $(\\sqrt{36}-\\sqrt{25})^2$.",
+   "options": null,
+   "answer": {
+    "value": "1",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Calcula as raízes e depois as restantes operações: $(\\sqrt{36}-\\sqrt{25})^2=1$.",
+   "steps": [
+    "Raízes.",
+    "Resto da expressão."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "raizes.expressoes",
+   "statement": "Calcula $\\sqrt{144}\\div\\sqrt{9}$.",
+   "options": null,
+   "answer": {
+    "value": "4",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Calcula as raízes e depois as restantes operações: $\\sqrt{144}\\div\\sqrt{9}=4$.",
+   "steps": [
+    "Raízes.",
+    "Resto da expressão."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "raizes.expressoes",
+   "statement": "Calcula $2\\sqrt{81}-\\sqrt[3]{8}\\times3$.",
+   "options": null,
+   "answer": {
+    "value": "12",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Calcula as raízes e depois as restantes operações: $2\\sqrt{81}-\\sqrt[3]{8}\\times3=12$.",
+   "steps": [
+    "Raízes.",
+    "Resto da expressão."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "raizes.expressoes",
+   "statement": "Um quadrado tem 81 m² de área. Qual é o perímetro, em m?",
+   "options": null,
+   "answer": {
+    "value": "36",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Lado = √81 = 9; perímetro 4 × 9 = 36 m.",
+   "steps": [
+    "Raiz da área."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "raizes.expressoes",
+   "statement": "Um triângulo retângulo tem catetos 6 e 8. Qual é a hipotenusa? (Pitágoras: $h=\\sqrt{6^2+8^2}$.)",
+   "options": null,
+   "answer": {
+    "value": "10",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "$\\sqrt{36+64}=\\sqrt{100}=10$.",
+   "steps": [
+    "36 + 64 = 100."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "raizes.expressoes",
+   "statement": "Um cubo tem 125 cm³ de volume. Qual é a área de uma face, em cm²?",
+   "options": null,
+   "answer": {
+    "value": "25",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Aresta = ∛125 = 5; face 5² = 25 cm².",
+   "steps": [
+    "Aresta primeiro."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "raizes.expressoes",
+   "statement": "A diagonal $d$ de um quadrado de lado $l$ obtém-se por $d^2=2l^2$. Se $l=5$, qual é $d^2$?",
+   "options": null,
+   "answer": {
+    "value": "50",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "d² = 2 × 25 = 50 (logo d = √50 = 5√2 ≈ 7,07).",
+   "steps": [
+    "l² = 25."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "raizes.expressoes",
+   "statement": "$\\sqrt{(-5)^2}=5$.",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "$(-5)^2=25$ e $\\sqrt{25}=5$ (a raiz é não negativa).",
+   "steps": [
+    "25 → 5."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "raizes.expressoes",
+   "statement": "$\\sqrt{16}=\\pm4$.",
+   "options": null,
+   "answer": {
+    "boolean": false
+   },
+   "tolerance": 0,
+   "explanation": "$\\sqrt{16}$ designa apenas a raiz não negativa, 4. A equação $x^2=16$ tem soluções ±4.",
+   "steps": [
+    "Raiz é sempre ≥ 0."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "raizes.expressoes",
+   "statement": "Qual é o valor de $\\sqrt{3^2+4^2}$?",
+   "options": [
+    {
+     "id": "a",
+     "label": "5"
+    },
+    {
+     "id": "b",
+     "label": "7"
+    },
+    {
+     "id": "c",
+     "label": "25"
+    },
+    {
+     "id": "d",
+     "label": "12"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "$\\sqrt{9+16}=\\sqrt{25}=5$.",
+   "steps": [
+    "Soma antes de tirar a raiz."
+   ]
+  }
+ ]
+}

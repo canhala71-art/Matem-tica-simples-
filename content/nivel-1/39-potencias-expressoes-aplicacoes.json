@@ -1,0 +1,278 @@
+{
+ "subject": "potencias",
+ "topic_title": "Expressões com potências",
+ "topic_slug": "expressoes-potencias-aplicacoes",
+ "lesson_title": "Expressões numéricas com potências e aplicações práticas",
+ "lesson_slug": "potencias-expressoes-aplicacoes",
+ "summary": "Resolve expressões com potências pela ordem correta e aplica-as a áreas, volumes e crescimentos.",
+ "minutes": 30,
+ "blocks": {
+  "introduction": "**Objetivos:** calcular expressões numéricas com potências e usá-las em problemas de área, volume e crescimento exponencial. **Pré-requisitos:** potências, propriedades e ordem das operações.\n\nQuanto custa um terreno quadrado de 12 m de lado, a 3 000 Kz o m²? Primeiro calculas a área $12^2=144$ m². As potências aparecem em áreas, volumes, juros compostos e crescimento de populações.",
+  "intuition": "**Ordem das operações:** (1) parênteses, colchetes e chavetas (de dentro para fora); (2) **potências e raízes**; (3) multiplicações e divisões; (4) somas e subtrações. A potenciação tem prioridade sobre a multiplicação: $2+3\\times4^2=2+3\\times16=50$.\n\nCuidado com o sinal: $-3^2=-9$ e $(-3)^2=9$. Cuidado com a base: $2\\times3^2=2\\times9=18$, não $(2\\times3)^2=36$.\n\n**Aplicações:** **área** de um quadrado de lado $l$ é $l^2$; **volume** de um cubo de aresta $a$ é $a^3$; o **crescimento exponencial** (que duplica, triplica...) dá $V_0\\times f^n$: 1 000 Kz que duplicam todos os anos valem $1\\,000\\times2^6=64\\,000$ ao fim de 6 anos.\n\nPotências de 10 para medidas: $1\\text{ km}=10^3\\text{ m}$; $1\\text{ m}^2=10^4\\text{ cm}^2$; $1\\text{ m}^3=10^6\\text{ cm}^3$.\n\n**Erros comuns:** calcular antes a multiplicação do que a potência; esquecer parênteses; confundir $a^2$ com $2a$ (por exemplo, $5^2=25$, não 10).",
+  "definition": "Uma **expressão com potências** é uma expressão numérica em que aparecem potências. O **crescimento exponencial** é aquele em que uma grandeza é multiplicada por um mesmo fator em intervalos iguais: $V_n=V_0\\times f^n$.",
+  "formulas": "Ordem: agrupamentos → potências/raízes → $\\times,\\div$ → $+,-$.\n\n$$A_{\\square}=l^2\\qquad V_{\\text{cubo}}=a^3\\qquad V_n=V_0\\times f^n$$",
+  "worked_example": "**Exemplo 1.** $2^3+3^2=8+9=17$.\n\n**Exemplo 2.** $(2+3)^2-4\\times2=25-8=17$.\n\n**Exemplo 3.** $3\\times2^3-10=3\\times8-10=14$.\n\n**Exemplo 4.** $(-2)^3+(-3)^2=-8+9=1$.\n\n**Exemplo 5.** $2\\times(3^2-5)^2=2\\times4^2=32$.\n\n**Aplicação.** 1 000 Kz que duplicam por ano: $1\\,000\\times2^6=64\\,000$ Kz em 6 anos. Um cubo de aresta 5 cm tem volume $5^3=125$ cm³.",
+  "guided_exercise": "Resolve connosco: **uma cultura de 5 bactérias duplica a cada hora. Quantas há ao fim de 8 horas?**\n\n1) Fator por hora: 2. Em 8 horas, $2^8=256$.\n\n2) $5\\times256=1\\,280$.\n\n3) Confere o início: ao fim de 1 h são 10 ($5\\times2^1$) ✓.",
+  "independent_exercise": "Chegou a tua vez. Resolve os exercícios sem pressa e usa **Verificar** para confirmar. Se errares, não faz mal: lê a resolução passo a passo, percebe onde o raciocínio escorregou e tenta outra vez. É assim que se aprende de verdade.",
+  "challenge": "**Desafio.** Se $2^{10}=1\\,024$, usa as propriedades para calcular $2^{20}$ e $2^{30}$ aproximadamente. Quantas vezes é maior que 1 milhão? E que ordem de grandeza tem $2^{40}$?",
+  "assessment": "Consideras a competência dominada quando consegues: (1) respeitar a prioridade das potências; (2) tratar sinais e parênteses; (3) usar potências em área, volume e crescimento; (4) interpretar o resultado no contexto."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "potencias.expressoes",
+   "statement": "Calcula $2^3+3^2$.",
+   "options": null,
+   "answer": {
+    "value": "17",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Respeitando a ordem (parênteses → potências → ×,÷ → +,−): $2^3+3^2=17$.",
+   "steps": [
+    "Parênteses.",
+    "Potências.",
+    "Restantes operações."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "potencias.expressoes",
+   "statement": "Calcula $5^2-2^4$.",
+   "options": null,
+   "answer": {
+    "value": "9",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Respeitando a ordem (parênteses → potências → ×,÷ → +,−): $5^2-2^4=9$.",
+   "steps": [
+    "Parênteses.",
+    "Potências.",
+    "Restantes operações."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "potencias.expressoes",
+   "statement": "Calcula $(2+3)^2-4\\times2$.",
+   "options": null,
+   "answer": {
+    "value": "17",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Respeitando a ordem (parênteses → potências → ×,÷ → +,−): $(2+3)^2-4\\times2=17$.",
+   "steps": [
+    "Parênteses.",
+    "Potências.",
+    "Restantes operações."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "potencias.expressoes",
+   "statement": "Calcula $3\\times2^3-10$.",
+   "options": null,
+   "answer": {
+    "value": "14",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Respeitando a ordem (parênteses → potências → ×,÷ → +,−): $3\\times2^3-10=14$.",
+   "steps": [
+    "Parênteses.",
+    "Potências.",
+    "Restantes operações."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "potencias.expressoes",
+   "statement": "Calcula $(-2)^3+(-3)^2$.",
+   "options": null,
+   "answer": {
+    "value": "1",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Respeitando a ordem (parênteses → potências → ×,÷ → +,−): $(-2)^3+(-3)^2=1$.",
+   "steps": [
+    "Parênteses.",
+    "Potências.",
+    "Restantes operações."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "potencias.expressoes",
+   "statement": "Calcula $2^4\\div2^2+3^0$.",
+   "options": null,
+   "answer": {
+    "value": "5",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Respeitando a ordem (parênteses → potências → ×,÷ → +,−): $2^4\\div2^2+3^0=5$.",
+   "steps": [
+    "Parênteses.",
+    "Potências.",
+    "Restantes operações."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "potencias.expressoes",
+   "statement": "Calcula $(10-4)^2\\div3^2$.",
+   "options": null,
+   "answer": {
+    "value": "4",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Respeitando a ordem (parênteses → potências → ×,÷ → +,−): $(10-4)^2\\div3^2=4$.",
+   "steps": [
+    "Parênteses.",
+    "Potências.",
+    "Restantes operações."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "potencias.expressoes",
+   "statement": "Calcula $2\\times(3^2-5)^2$.",
+   "options": null,
+   "answer": {
+    "value": "32",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Respeitando a ordem (parênteses → potências → ×,÷ → +,−): $2\\times(3^2-5)^2=32$.",
+   "steps": [
+    "Parênteses.",
+    "Potências.",
+    "Restantes operações."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "potencias.expressoes",
+   "statement": "Um capital de 1 000 Kz duplica todos os anos. Quanto terá ao fim de 6 anos, em Kz?",
+   "options": null,
+   "answer": {
+    "value": "64000",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "1 000 × 2⁶ = 64 000 Kz.",
+   "steps": [
+    "Fator 2 por ano.",
+    "2⁶ = 64."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "potencias.expressoes",
+   "statement": "Uma bactéria divide-se em 2 a cada hora. Partindo de 5 bactérias, quantas há ao fim de 8 horas?",
+   "options": null,
+   "answer": {
+    "value": "1280",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "5 × 2⁸ = 5 × 256 = 1 280.",
+   "steps": [
+    "2⁸ = 256."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "potencias.expressoes",
+   "statement": "Um quadrado tem lado 12 m. Qual é a sua área, em m²?",
+   "options": null,
+   "answer": {
+    "value": "144",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Área = 12² = 144 m².",
+   "steps": [
+    "Lado ao quadrado."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "potencias.expressoes",
+   "statement": "Um cubo tem aresta 5 cm. Qual é o seu volume, em cm³?",
+   "options": null,
+   "answer": {
+    "value": "125",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Volume = 5³ = 125 cm³.",
+   "steps": [
+    "Aresta ao cubo."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "potencias.expressoes",
+   "statement": "$2+3\\times4^2=98$.",
+   "options": null,
+   "answer": {
+    "boolean": false
+   },
+   "tolerance": 0,
+   "explanation": "Primeiro 4² = 16, depois 3 × 16 = 48 e 2 + 48 = 50.",
+   "steps": [
+    "Potência, produto, soma."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "potencias.expressoes",
+   "statement": "Qual é o valor de $3^2\\times2^3$?",
+   "options": [
+    {
+     "id": "a",
+     "label": "72"
+    },
+    {
+     "id": "b",
+     "label": "36"
+    },
+    {
+     "id": "c",
+     "label": "216"
+    },
+    {
+     "id": "d",
+     "label": "18"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "9 × 8 = 72.",
+   "steps": [
+    "3² = 9; 2³ = 8."
+   ]
+  }
+ ]
+}

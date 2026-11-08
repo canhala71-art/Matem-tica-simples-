@@ -1,0 +1,333 @@
+{
+ "subject": "potencias",
+ "topic_title": "Propriedades da potenciação",
+ "topic_slug": "propriedades-potenciacao",
+ "lesson_title": "Propriedades da potenciação: produto, quociente, potência de potência, produto e quociente",
+ "lesson_slug": "potenciacao-propriedades",
+ "summary": "Aplica as propriedades do produto, do quociente, da potência de potência e da potência de produto e de quociente.",
+ "minutes": 30,
+ "blocks": {
+  "introduction": "**Objetivos:** demonstrar e aplicar as propriedades da potenciação com a mesma base, e as de potência de potência, produto e quociente. **Pré-requisitos:** conceito de potência e regras de sinais.\n\nCalcular $2^{10}\\times2^{15}$ escrevendo todos os fatores seria um absurdo. Mas as potências obedecem a regras simples que permitem simplificar contas enormes numa linha.",
+  "intuition": "**Produto de potências com a mesma base:** $a^m\\times a^n=a^{m+n}$. Porquê? $2^3\\times2^4=(2\\times2\\times2)\\times(2\\times2\\times2\\times2)=2^7$: contam-se os fatores no total.\n\n**Quociente de potências com a mesma base:** $a^m\\div a^n=a^{m-n}$ ($a\\neq0$). Ex.: $\\frac{2^8}{2^3}=2^5$ (cortam-se 3 fatores).\n\n**Potência de potência:** $(a^m)^n=a^{m\\times n}$. Ex.: $(2^3)^2=2^3\\times2^3=2^6$.\n\n**Potência de um produto:** $(a\\times b)^n=a^n\\times b^n$. **Potência de um quociente:** $\\left(\\frac{a}{b}\\right)^n=\\frac{a^n}{b^n}$ ($b\\ne0$).\n\n**Atenção:** estas regras **não** valem para somas: $(a+b)^n\\neq a^n+b^n$. Por exemplo $(2+3)^2=25$ mas $2^2+3^2=13$. Também só se somam expoentes se as **bases forem iguais**: $2^3\\times3^2$ não se simplifica assim.\n\nConsequência: $a^{-n}=\\frac{1}{a^n}$ (pois $a^0\\div a^n=a^{-n}$).\n\n**Erros comuns:** multiplicar os expoentes no produto de potências; somar bases; aplicar o expoente à soma.",
+  "definition": "As **propriedades da potenciação** são identidades válidas para $a,b\\neq0$ e $m,n$ inteiros: produto e quociente de potências de mesma base, potência de potência, potência de produto e de quociente.",
+  "formulas": "$$a^m\\times a^n=a^{m+n}\\qquad\\frac{a^m}{a^n}=a^{m-n}\\qquad(a^m)^n=a^{mn}$$\n\n$$(ab)^n=a^nb^n\\qquad\\left(\\frac{a}{b}\\right)^n=\\frac{a^n}{b^n}\\qquad a^{-n}=\\frac{1}{a^n}$$",
+  "worked_example": "**Exemplo 1 (produto).** $2^3\\times2^4=2^7=128$.\n\n**Exemplo 2 (quociente).** $3^7\\div3^4=3^3=27$.\n\n**Exemplo 3 (potência de potência).** $(2^3)^2=2^6=64$.\n\n**Exemplo 4 (de produto).** $(2\\times5)^3=2^3\\times5^3=8\\times125=1\\,000$.\n\n**Exemplo 5 (de quociente).** $\\left(\\frac{6}{3}\\right)^4=\\frac{6^4}{3^4}=\\frac{1\\,296}{81}=16$.\n\n**Aplicação.** $\\dfrac{2^5\\times2^4}{2^6}=2^{5+4-6}=2^3=8$.",
+  "guided_exercise": "Resolve connosco: **simplifica $\\dfrac{3^5\\times3^2}{3^4}$ e calcula.**\n\n1) Numerador: $3^5\\times3^2=3^{5+2}=3^7$.\n\n2) Quociente: $\\frac{3^7}{3^4}=3^{7-4}=3^3$.\n\n3) $3^3=27$.\n\n4) Prova: $243\\times9=2\\,187$ e $2\\,187\\div81=27$ ✓.",
+  "independent_exercise": "Chegou a tua vez. Resolve os exercícios sem pressa e usa **Verificar** para confirmar. Se errares, não faz mal: lê a resolução passo a passo, percebe onde o raciocínio escorregou e tenta outra vez. É assim que se aprende de verdade.",
+  "challenge": "**Desafio.** Descobre o erro em «$(2+3)^2=2^2+3^2=13$». Desenvolve $(2+3)^2$ e compara com $2^2+2\\times2\\times3+3^2$. Que termo estava em falta?",
+  "assessment": "Consideras a competência dominada quando consegues: (1) somar expoentes no produto e subtraí-los no quociente (mesma base); (2) multiplicar expoentes na potência de potência; (3) distribuir o expoente por produtos e quocientes; (4) evitar aplicá-lo a somas."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "potencias.propriedades",
+   "statement": "Calcula $2^3\\times2^4$.",
+   "options": null,
+   "answer": {
+    "value": "128",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Mesma base: somam-se os expoentes: $2^{7}=128$.",
+   "steps": [
+    "3 + 4 = 7.",
+    "2^7 = 128."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "potencias.propriedades",
+   "statement": "Calcula $3^2\\times3^5$.",
+   "options": null,
+   "answer": {
+    "value": "2187",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Mesma base: somam-se os expoentes: $3^{7}=2187$.",
+   "steps": [
+    "2 + 5 = 7.",
+    "3^7 = 2187."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "potencias.propriedades",
+   "statement": "Calcula $5^4\\times5^2$.",
+   "options": null,
+   "answer": {
+    "value": "15625",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Mesma base: somam-se os expoentes: $5^{6}=15625$.",
+   "steps": [
+    "4 + 2 = 6.",
+    "5^6 = 15625."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "potencias.propriedades",
+   "statement": "Calcula $10^3\\times10^3$.",
+   "options": null,
+   "answer": {
+    "value": "1000000",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Mesma base: somam-se os expoentes: $10^{6}=1000000$.",
+   "steps": [
+    "3 + 3 = 6.",
+    "10^6 = 1000000."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "potencias.propriedades",
+   "statement": "Calcula $2^8\\div2^3$.",
+   "options": null,
+   "answer": {
+    "value": "32",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Mesma base: subtraem-se os expoentes: $2^{5}=32$.",
+   "steps": [
+    "8 − 3 = 5.",
+    "= 32."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "potencias.propriedades",
+   "statement": "Calcula $3^7\\div3^4$.",
+   "options": null,
+   "answer": {
+    "value": "27",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Mesma base: subtraem-se os expoentes: $3^{3}=27$.",
+   "steps": [
+    "7 − 4 = 3.",
+    "= 27."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "potencias.propriedades",
+   "statement": "Calcula $10^9\\div10^6$.",
+   "options": null,
+   "answer": {
+    "value": "1000",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Mesma base: subtraem-se os expoentes: $10^{3}=1000$.",
+   "steps": [
+    "9 − 6 = 3.",
+    "= 1000."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "potencias.propriedades",
+   "statement": "Calcula $(2^3)^2$.",
+   "options": null,
+   "answer": {
+    "value": "64",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Potência de potência: multiplicam-se os expoentes: $2^{6}=64$.",
+   "steps": [
+    "3 × 2 = 6.",
+    "= 64."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "potencias.propriedades",
+   "statement": "Calcula $(3^2)^2$.",
+   "options": null,
+   "answer": {
+    "value": "81",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Potência de potência: multiplicam-se os expoentes: $3^{4}=81$.",
+   "steps": [
+    "2 × 2 = 4.",
+    "= 81."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "potencias.propriedades",
+   "statement": "Calcula $(5^2)^2$.",
+   "options": null,
+   "answer": {
+    "value": "625",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Potência de potência: multiplicam-se os expoentes: $5^{4}=625$.",
+   "steps": [
+    "2 × 2 = 4.",
+    "= 625."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "potencias.propriedades",
+   "statement": "Calcula $(2\\times3)^2$ usando a potência de um produto.",
+   "options": null,
+   "answer": {
+    "value": "36",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "$(2\\times3)^2=2^2\\times3^2=4\\times9=36$.",
+   "steps": [
+    "Distribui o expoente."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "potencias.propriedades",
+   "statement": "Calcula $\\left(\\dfrac{6}{3}\\right)^4$.",
+   "options": null,
+   "answer": {
+    "value": "16",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "$(6/3)^4=2^4=16$ (ou $6^4\\div3^4=1296\\div81=16$).",
+   "steps": [
+    "6 ÷ 3 = 2."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "potencias.propriedades",
+   "statement": "Se $2^x\\times2^5=2^{11}$, quanto vale x?",
+   "options": null,
+   "answer": {
+    "value": "6",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "x + 5 = 11, logo x = 6.",
+   "steps": [
+    "Soma os expoentes."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "potencias.propriedades",
+   "statement": "Calcula $\\dfrac{2^5\\times2^4}{2^6}$.",
+   "options": null,
+   "answer": {
+    "value": "8",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "$2^{5+4-6}=2^3=8$.",
+   "steps": [
+    "9 − 6 = 3."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "potencias.propriedades",
+   "statement": "$a^m\\times a^n=a^{m\\times n}$.",
+   "options": null,
+   "answer": {
+    "boolean": false
+   },
+   "tolerance": 0,
+   "explanation": "Na multiplicação de potências de mesma base somam-se os expoentes: $a^{m+n}$.",
+   "steps": [
+    "Soma, não produto."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "potencias.propriedades",
+   "statement": "$(a\\times b)^n=a^n\\times b^n$.",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "A potência de um produto é o produto das potências.",
+   "steps": [
+    "Distributiva em produtos."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "potencias.propriedades",
+   "statement": "$(a+b)^2=a^2+b^2$.",
+   "options": null,
+   "answer": {
+    "boolean": false
+   },
+   "tolerance": 0,
+   "explanation": "$(a+b)^2=a^2+2ab+b^2$. A potência não se distribui pela soma. Ex.: $(2+3)^2=25\\neq13$.",
+   "steps": [
+    "Testa com números."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "potencias.propriedades",
+   "statement": "Qual é o resultado de $(3^2)^3$?",
+   "options": [
+    {
+     "id": "a",
+     "label": "$3^6$"
+    },
+    {
+     "id": "b",
+     "label": "$3^5$"
+    },
+    {
+     "id": "c",
+     "label": "$3^8$"
+    },
+    {
+     "id": "d",
+     "label": "$9^5$"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "Multiplicam-se os expoentes: $2\\times3=6$.",
+   "steps": [
+    "Potência de potência."
+   ]
+  }
+ ]
+}

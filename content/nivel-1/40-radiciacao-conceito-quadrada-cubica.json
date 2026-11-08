@@ -1,0 +1,323 @@
+{
+ "subject": "raizes",
+ "topic_title": "Conceito de radiciação",
+ "topic_slug": "conceito-radiciacao",
+ "lesson_title": "Radiciação: raiz quadrada e cúbica, índice e radicando, raízes exatas e estimativa",
+ "lesson_slug": "radiciacao-conceito-quadrada-cubica",
+ "summary": "Compreende a radiciação como operação inversa da potenciação, calcula raízes quadradas e cúbicas exatas e estima as não exatas.",
+ "minutes": 30,
+ "blocks": {
+  "introduction": "**Objetivos:** compreender a radiciação, os termos (radicando, índice, radical), calcular raízes quadradas e cúbicas exatas e estimar as não exatas. **Pré-requisitos:** potenciação e quadrados perfeitos.\n\nUm terreno quadrado tem 144 m² de área. Quanto mede o lado? Procuras o número que multiplicado por si próprio dá 144: é 12. Este caminho inverso do quadrado chama-se **raiz quadrada**. E se tens um depósito cúbico de 64 litros? A aresta é o número que ao cubo dá 64: 4. É a **raiz cúbica**.",
+  "intuition": "A radiciação é a operação **inversa** da potenciação. $\\sqrt[n]{a}=b$ quando $b^n=a$. Em $\\sqrt[n]{a}$: $a$ é o **radicando**, $n$ o **índice** e $\\sqrt{\\ \\ }$ o **radical**. Se o índice é 2 não se escreve: $\\sqrt{16}=4$. Raiz cúbica: $\\sqrt[3]{27}=3$.\n\n**Quadrados perfeitos:** 1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225… Têm raiz quadrada inteira. **Cubos perfeitos:** 1, 8, 27, 64, 125, 216, 343, 512, 729, 1 000.\n\nUma raiz é **exata** quando é um número inteiro (ou racional); caso contrário, é **não exata** (irracional) e só se pode aproximar: $\\sqrt{2}\\approx1{,}414$.\n\n**Estimativa:** para $\\sqrt{40}$, vê entre que quadrados perfeitos está: $36<40<49$, logo $6<\\sqrt{40}<7$; como 40 está mais perto de 36, é cerca de 6,3.\n\n**Raiz de números negativos:** a raiz quadrada de um número negativo **não existe** nos reais (nenhum número ao quadrado dá negativo). Mas a raiz cúbica existe: $\\sqrt[3]{-8}=-2$, porque $(-2)^3=-8$.\n\n**Erros comuns:** achar que $\\sqrt{16}=8$ (confunde com metade); dizer $\\sqrt{a+b}=\\sqrt a+\\sqrt b$; ignorar que $\\sqrt{a}$ é sempre não negativa.",
+  "definition": "A **raiz de índice $n$** de $a$, $\\sqrt[n]{a}$, é o número $b$ tal que $b^n=a$ (com $b\\ge0$ se $n$ é par). Chama-se **radicando** a $a$, **índice** a $n$. Uma raiz é **exata** quando $b$ é inteiro. Um **quadrado perfeito** é um natural de raiz quadrada natural.",
+  "formulas": "$$\\sqrt[n]{a}=b\\iff b^n=a\\qquad\\sqrt{a}=\\sqrt[2]{a}$$\n\n$$\\sqrt[n]{a^n}=a\\ (a\\ge0)\\qquad\\left(\\sqrt[n]{a}\\right)^n=a$$\n\nQuadrados: 1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144. Cubos: 1, 8, 27, 64, 125, 216, 343, 512, 729, 1 000.",
+  "worked_example": "**Exemplo 1.** $\\sqrt{49}=7$, porque $7^2=49$.\n\n**Exemplo 2.** $\\sqrt[3]{125}=5$, porque $5^3=125$.\n\n**Exemplo 3 (negativo).** $\\sqrt[3]{-27}=-3$, porque $(-3)^3=-27$; mas $\\sqrt{-27}$ não existe nos reais.\n\n**Exemplo 4 (estimar).** $\\sqrt{40}$: $6^2=36$ e $7^2=49$, logo $6<\\sqrt{40}<7$ (cerca de 6,3).\n\n**Exemplo 5 (não exata).** $\\sqrt{2}\\approx1{,}414$.\n\n**Aplicação.** Um terreno quadrado de 144 m² tem lado $\\sqrt{144}=12$ m; um depósito cúbico de 64 L tem aresta $\\sqrt[3]{64}=4$ dm.",
+  "guided_exercise": "Resolve connosco: **calcula $\\sqrt{169}$ e $\\sqrt[3]{216}$ e estima $\\sqrt{75}$.**\n\n1) $13\\times13=169$, logo $\\sqrt{169}=13$.\n\n2) $6\\times6\\times6=216$, logo $\\sqrt[3]{216}=6$.\n\n3) $8^2=64<75<81=9^2$: $\\sqrt{75}$ está entre 8 e 9 (mais perto de 9: cerca de 8,7).\n\n4) Confirma: $8{,}7^2=75{,}69$ ✓.",
+  "independent_exercise": "Chegou a tua vez. Resolve os exercícios sem pressa e usa **Verificar** para confirmar. Se errares, não faz mal: lê a resolução passo a passo, percebe onde o raciocínio escorregou e tenta outra vez. É assim que se aprende de verdade.",
+  "challenge": "**Desafio.** Descobre um número natural que seja ao mesmo tempo quadrado perfeito e cubo perfeito (além de 1). Dica: pensa em $n^6$. Quantos há abaixo de 5 000?",
+  "assessment": "Consideras a competência dominada quando consegues: (1) explicar a raiz como inversa da potência; (2) calcular raízes quadradas e cúbicas exatas; (3) estimar raízes não exatas; (4) distinguir radicando, índice e radical."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "raizes.conceito",
+   "statement": "Calcula $\\sqrt{49}$.",
+   "options": null,
+   "answer": {
+    "value": "7",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "$7^2=49$, logo $\\sqrt{49}=7$.",
+   "steps": [
+    "7 × 7 = 49."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "raizes.conceito",
+   "statement": "Calcula $\\sqrt{81}$.",
+   "options": null,
+   "answer": {
+    "value": "9",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "$9^2=81$, logo $\\sqrt{81}=9$.",
+   "steps": [
+    "9 × 9 = 81."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "raizes.conceito",
+   "statement": "Calcula $\\sqrt{121}$.",
+   "options": null,
+   "answer": {
+    "value": "11",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "$11^2=121$, logo $\\sqrt{121}=11$.",
+   "steps": [
+    "11 × 11 = 121."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "raizes.conceito",
+   "statement": "Calcula $\\sqrt{225}$.",
+   "options": null,
+   "answer": {
+    "value": "15",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "$15^2=225$, logo $\\sqrt{225}=15$.",
+   "steps": [
+    "15 × 15 = 225."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "raizes.conceito",
+   "statement": "Calcula $\\sqrt{400}$.",
+   "options": null,
+   "answer": {
+    "value": "20",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "$20^2=400$, logo $\\sqrt{400}=20$.",
+   "steps": [
+    "20 × 20 = 400."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "raizes.conceito",
+   "statement": "Calcula $\\sqrt[3]{8}$.",
+   "options": null,
+   "answer": {
+    "value": "2",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "$2^3=8$, logo $\\sqrt[3]{8}=2$.",
+   "steps": [
+    "2³ = 8."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "raizes.conceito",
+   "statement": "Calcula $\\sqrt[3]{27}$.",
+   "options": null,
+   "answer": {
+    "value": "3",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "$3^3=27$, logo $\\sqrt[3]{27}=3$.",
+   "steps": [
+    "3³ = 27."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "raizes.conceito",
+   "statement": "Calcula $\\sqrt[3]{125}$.",
+   "options": null,
+   "answer": {
+    "value": "5",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "$5^3=125$, logo $\\sqrt[3]{125}=5$.",
+   "steps": [
+    "5³ = 125."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "raizes.conceito",
+   "statement": "Calcula $\\sqrt[3]{1000}$.",
+   "options": null,
+   "answer": {
+    "value": "10",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "$10^3=1000$, logo $\\sqrt[3]{1000}=10$.",
+   "steps": [
+    "10³ = 1000."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "raizes.conceito",
+   "statement": "Entre que dois inteiros consecutivos está $\\sqrt{40}$? Indica o menor.",
+   "options": null,
+   "answer": {
+    "value": "6",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "$6^2=36<40<49=7^2$: entre 6 e 7.",
+   "steps": [
+    "36 < 40 < 49."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "raizes.conceito",
+   "statement": "Qual é o inteiro mais próximo de $\\sqrt{50}$?",
+   "options": null,
+   "answer": {
+    "value": "7",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "$\\sqrt{50}\\approx7{,}07$, o mais próximo é 7.",
+   "steps": [
+    "49 está muito perto de 50."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "raizes.conceito",
+   "statement": "Qual é o índice da raiz cúbica?",
+   "options": null,
+   "answer": {
+    "value": "3",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Na raiz cúbica o índice é 3. Na quadrada é 2 (não se escreve).",
+   "steps": [
+    "Pequeno número sobre o radical."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "raizes.conceito",
+   "statement": "Um quadrado tem 144 cm² de área. Quanto mede o lado, em cm?",
+   "options": null,
+   "answer": {
+    "value": "12",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Lado = $\\sqrt{144}=12$.",
+   "steps": [
+    "12 × 12 = 144."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "raizes.conceito",
+   "statement": "Um cubo tem 64 cm³ de volume. Quanto mede a aresta, em cm?",
+   "options": null,
+   "answer": {
+    "value": "4",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Aresta = $\\sqrt[3]{64}=4$.",
+   "steps": [
+    "4³ = 64."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 1,
+   "competency": "raizes.conceito",
+   "statement": "$\\sqrt{16}=4$.",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "$4\\times4=16$.",
+   "steps": [
+    "4² = 16."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "raizes.conceito",
+   "statement": "$\\sqrt{2}$ é uma raiz exata.",
+   "options": null,
+   "answer": {
+    "boolean": false
+   },
+   "tolerance": 0,
+   "explanation": "Não há número inteiro (nem decimal exato) cujo quadrado seja 2: $\\sqrt{2}\\approx1{,}414$.",
+   "steps": [
+    "1² = 1 < 2 < 4 = 2²."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "raizes.conceito",
+   "statement": "A raiz quadrada de um número negativo existe nos números reais.",
+   "options": null,
+   "answer": {
+    "boolean": false
+   },
+   "tolerance": 0,
+   "explanation": "Nenhum número real ao quadrado dá um resultado negativo.",
+   "steps": [
+    "x² ≥ 0."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "raizes.conceito",
+   "statement": "Qual é a relação entre potência e raiz?",
+   "options": [
+    {
+     "id": "a",
+     "label": "$\\sqrt{a}=b\\iff b^2=a$ (com $b\\ge0$)"
+    },
+    {
+     "id": "b",
+     "label": "$\\sqrt{a}=a\\div2$"
+    },
+    {
+     "id": "c",
+     "label": "$\\sqrt{a}=a^2$"
+    },
+    {
+     "id": "d",
+     "label": "$\\sqrt{a}=2a$"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "A raiz é a operação inversa da potência.",
+   "steps": [
+    "Inversa do quadrado."
+   ]
+  }
+ ]
+}

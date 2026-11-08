@@ -1,0 +1,368 @@
+{
+ "subject": "potencias",
+ "topic_title": "Conceito de potenciação",
+ "topic_slug": "conceito-potenciacao",
+ "lesson_title": "Potenciação: base, expoente, inteiros, expoentes 0 e 1 e potências de 10",
+ "lesson_slug": "potenciacao-conceito-base-expoente-inteiros",
+ "summary": "Compreende a potenciação, calcula potências de naturais e inteiros, os casos de expoente 0 e 1 e as potências de base 10.",
+ "minutes": 25,
+ "blocks": {
+  "introduction": "**Objetivos:** compreender base e expoente, calcular potências de naturais e inteiros (incluindo base negativa), conhecer os casos $a^0$ e $a^1$ e usar potências de 10. **Pré-requisitos:** multiplicação, números inteiros e regra de sinais.\n\nUma notícia espalha-se: cada pessoa conta a outras 3, e cada uma destas a outras 3. Depois de 5 rondas, $3\\times3\\times3\\times3\\times3=243$ pessoas ouviram-na. Em vez de escrever o 3 cinco vezes, escreve-se $3^5$. A **potenciação** é a forma curta de multiplicar um número por si próprio várias vezes.",
+  "intuition": "Em $a^n$, $a$ é a **base** (o fator repetido) e $n$ é o **expoente** (quantas vezes se repete). $a^n=a\\times a\\times\\cdots\\times a$ ($n$ fatores). Lê-se «$a$ elevado a $n$»; $a^2$ é «ao quadrado» e $a^3$ «ao cubo». **Cuidado:** $2^3=8$, não $2\\times3=6$.\n\n**Casos especiais:** $a^1=a$ e $a^0=1$ (se $a\\ne0$). A razão do $a^0=1$: $\\frac{a^3}{a^3}=1$ e, pela regra do quociente, $a^{3-3}=a^0$.\n\n**Base negativa:** o sinal depende da paridade do expoente. **Expoente par** → resultado positivo: $(-2)^4=16$. **Expoente ímpar** → negativo: $(-2)^3=-8$. Atenção aos parênteses: $(-2)^4=16$ mas $-2^4=-16$ (o sinal menos fica fora; a base é 2).\n\n**Potências de 10:** $10^n$ é o 1 seguido de $n$ zeros ($10^3=1\\,000$). Servem para escrever números grandes: $4\\,500\\,000=45\\times10^5=4{,}5\\times10^6$ (notação científica). Por $10^{-n}$ entende-se $\\frac{1}{10^n}$ (pequenos números).\n\nO expoente cresce depressa: $2^{10}=1\\,024$ e $2^{20}$ já passa de um milhão.\n\n**Erros comuns:** multiplicar base por expoente; achar que $a^0=0$; esquecer os parênteses com base negativa.",
+  "definition": "Para $n\\ge2$, $a^n$ é o produto de $n$ fatores iguais a $a$. Define-se $a^1=a$ e $a^0=1$ ($a\\neq0$). O **sinal** de $a^n$ com $a<0$ é positivo se $n$ é par e negativo se $n$ é ímpar.",
+  "formulas": "$$a^n=\\underbrace{a\\times\\cdots\\times a}_{n}\\qquad a^1=a\\qquad a^0=1\\ (a\\ne0)$$\n\n$$(-a)^{\\text{par}}>0,\\quad(-a)^{\\text{ímpar}}<0\\qquad10^n=1\\underbrace{0\\ldots0}_{n}$$",
+  "worked_example": "**Exemplo 1.** $3^4=3\\times3\\times3\\times3=81$.\n\n**Exemplo 2 (base negativa).** $(-2)^5=-32$ e $(-2)^4=16$.\n\n**Exemplo 3 (sinal fora).** $-4^2=-(4\\times4)=-16$, enquanto $(-4)^2=16$.\n\n**Exemplo 4 (casos especiais).** $7^0=1$ e $7^1=7$.\n\n**Exemplo 5 (base 10).** $10^6=1\\,000\\,000$ e $4\\,500\\,000=45\\times10^5$.\n\n**Aplicação.** Um boato enviado a 3 pessoas em cada ronda chega a $3^5=243$ pessoas na 5.ª ronda.",
+  "guided_exercise": "Resolve connosco: **calcula $(-3)^3+(-3)^2$.**\n\n1) $(-3)^2=9$ (dois fatores negativos).\n\n2) $(-3)^3=(-3)^2\\times(-3)=9\\times(-3)=-27$.\n\n3) Soma: $-27+9=-18$.\n\n4) Verifica os sinais: expoente ímpar → negativo; expoente par → positivo ✓.",
+  "independent_exercise": "Chegou a tua vez. Resolve os exercícios sem pressa e usa **Verificar** para confirmar. Se errares, não faz mal: lê a resolução passo a passo, percebe onde o raciocínio escorregou e tenta outra vez. É assim que se aprende de verdade.",
+  "challenge": "**Desafio.** Uma folha de papel é dobrada ao meio repetidamente. Com a espessura de 0,1 mm, qual seria a altura depois de 10 dobras? E de 20? Usa $2^n$ e compara com a altura de um prédio.",
+  "assessment": "Consideras a competência dominada quando consegues: (1) distinguir base e expoente; (2) calcular potências de naturais e inteiros; (3) aplicar $a^0=1$ e $a^1=a$; (4) tratar bem o sinal e os parênteses; (5) escrever números grandes com potências de 10."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "potencias.conceito",
+   "statement": "Calcula $3^4$.",
+   "options": null,
+   "answer": {
+    "value": "81",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "$3^4$ = 3 multiplicado 4 vezes = 81.",
+   "steps": [
+    "3 × 3 × 3 × 3.",
+    "= 81."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "potencias.conceito",
+   "statement": "Calcula $5^3$.",
+   "options": null,
+   "answer": {
+    "value": "125",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "$5^3$ = 5 multiplicado 3 vezes = 125.",
+   "steps": [
+    "5 × 5 × 5.",
+    "= 125."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "potencias.conceito",
+   "statement": "Calcula $2^9$.",
+   "options": null,
+   "answer": {
+    "value": "512",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "$2^9$ = 2 multiplicado 9 vezes = 512.",
+   "steps": [
+    "2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2.",
+    "= 512."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "potencias.conceito",
+   "statement": "Calcula $6^3$.",
+   "options": null,
+   "answer": {
+    "value": "216",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "$6^3$ = 6 multiplicado 3 vezes = 216.",
+   "steps": [
+    "6 × 6 × 6.",
+    "= 216."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "potencias.conceito",
+   "statement": "Calcula $9^2$.",
+   "options": null,
+   "answer": {
+    "value": "81",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "$9^2$ = 9 multiplicado 2 vezes = 81.",
+   "steps": [
+    "9 × 9.",
+    "= 81."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "potencias.conceito",
+   "statement": "Calcula $4^5$.",
+   "options": null,
+   "answer": {
+    "value": "1024",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "$4^5$ = 4 multiplicado 5 vezes = 1024.",
+   "steps": [
+    "4 × 4 × 4 × 4 × 4.",
+    "= 1024."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "potencias.conceito",
+   "statement": "Calcula $(-2)^{4}$.",
+   "options": null,
+   "answer": {
+    "value": "16",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Expoente par com base negativa: resultado positivo: 16.",
+   "steps": [
+    "Conta os fatores negativos.",
+    "= 16."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "potencias.conceito",
+   "statement": "Calcula $(-3)^{3}$.",
+   "options": null,
+   "answer": {
+    "value": "-27",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Expoente ímpar com base negativa: resultado negativo: -27.",
+   "steps": [
+    "Conta os fatores negativos.",
+    "= -27."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "potencias.conceito",
+   "statement": "Calcula $(-5)^{2}$.",
+   "options": null,
+   "answer": {
+    "value": "25",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Expoente par com base negativa: resultado positivo: 25.",
+   "steps": [
+    "Conta os fatores negativos.",
+    "= 25."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "potencias.conceito",
+   "statement": "Calcula $(-1)^{99}$.",
+   "options": null,
+   "answer": {
+    "value": "-1",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Expoente ímpar com base negativa: resultado negativo: -1.",
+   "steps": [
+    "Conta os fatores negativos.",
+    "= -1."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "potencias.conceito",
+   "statement": "Calcula $(-10)^{3}$.",
+   "options": null,
+   "answer": {
+    "value": "-1000",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Expoente ímpar com base negativa: resultado negativo: -1000.",
+   "steps": [
+    "Conta os fatores negativos.",
+    "= -1000."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "potencias.conceito",
+   "statement": "Calcula $-4^2$ (o sinal fica fora da potência).",
+   "options": null,
+   "answer": {
+    "value": "-16",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Primeiro $4^2=16$, depois o sinal: −16.",
+   "steps": [
+    "4² = 16.",
+    "Sinal fora."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "potencias.conceito",
+   "statement": "Calcula $7^0+7^1$.",
+   "options": null,
+   "answer": {
+    "value": "8",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "$7^0=1$ e $7^1=7$: soma 8.",
+   "steps": [
+    "a⁰ = 1.",
+    "a¹ = a."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "potencias.conceito",
+   "statement": "Quantos zeros tem $10^{9}$ (mil milhões)?",
+   "options": null,
+   "answer": {
+    "value": "9",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "$10^9$ tem 9 zeros.",
+   "steps": [
+    "O expoente é o nº de zeros."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "potencias.conceito",
+   "statement": "Escreve 4 500 000 como $45\\times10^{n}$. Qual é n?",
+   "options": null,
+   "answer": {
+    "value": "5",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "4 500 000 = 45 × 100 000 = 45 × 10⁵.",
+   "steps": [
+    "100 000 = 10⁵."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "potencias.conceito",
+   "statement": "Um boato é enviado a 3 pessoas, e cada uma envia a outras 3, e assim por diante. Quantas pessoas recebem na 5.ª ronda?",
+   "options": null,
+   "answer": {
+    "value": "243",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "$3^5=243$.",
+   "steps": [
+    "Na ronda n recebem 3ⁿ."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 1,
+   "competency": "potencias.conceito",
+   "statement": "$2^3=6$.",
+   "options": null,
+   "answer": {
+    "boolean": false
+   },
+   "tolerance": 0,
+   "explanation": "$2^3=2\\times2\\times2=8$. Não é $2\\times3$.",
+   "steps": [
+    "Multiplica a base por si mesma."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "potencias.conceito",
+   "statement": "$(-3)^2=-9$.",
+   "options": null,
+   "answer": {
+    "boolean": false
+   },
+   "tolerance": 0,
+   "explanation": "$(-3)^2=(-3)\\times(-3)=9$.",
+   "steps": [
+    "Sinais iguais → positivo."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "potencias.conceito",
+   "statement": "$5^0=1$.",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "Qualquer número diferente de 0 elevado a 0 é 1.",
+   "steps": [
+    "a⁰ = 1."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "potencias.conceito",
+   "statement": "Qual é a diferença entre $(-2)^4$ e $-2^4$?",
+   "options": [
+    {
+     "id": "a",
+     "label": "$(-2)^4=16$ e $-2^4=-16$"
+    },
+    {
+     "id": "b",
+     "label": "Ambos dão 16"
+    },
+    {
+     "id": "c",
+     "label": "Ambos dão −16"
+    },
+    {
+     "id": "d",
+     "label": "$(-2)^4=-16$ e $-2^4=16$"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "Com parênteses a base é −2: (−2)(−2)(−2)(−2)=16. Sem parênteses, o sinal fica fora: −(2⁴)=−16.",
+   "steps": [
+    "Quem é a base?"
+   ]
+  }
+ ]
+}
