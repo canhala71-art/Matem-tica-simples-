@@ -117,6 +117,15 @@ export function SubjectPage() {
     <div className="space-y-4">
       <Link to={`/academia/${levelSlug}`} className="muted">← Voltar</Link>
       <h1 className="text-2xl font-bold">{title}</h1>
+      {(lessons?.length ?? 0) > 0 && (() => {
+        const total = lessons!.length, n = lessons!.filter((l) => done.has(l.id)).length;
+        return (
+          <p className="flex flex-wrap items-center gap-2 text-sm">
+            <span className="badge">{n}/{total} lições concluídas</span>
+            {n === total && <span className="badge border-emerald-500 text-emerald-600">Tema concluído ✓</span>}
+          </p>
+        );
+      })()}
       {lessons?.length === 0 && <Empty>Ainda não há aulas publicadas nesta disciplina.</Empty>}
       {(lessons?.length ?? 0) > 0 && (
         <div className="card space-y-3">
@@ -125,6 +134,7 @@ export function SubjectPage() {
             <Link className="btn-ghost" to={`/teste/${subjectSlug}?tipo=diagnostic`}>Diagnóstico</Link>
             <Link className="btn-ghost" to={`/teste/${subjectSlug}?tipo=consolidation`}>Consolidação</Link>
             <Link className="btn" to={`/teste/${subjectSlug}?tipo=final`}>Avaliação final</Link>
+            <Link className="btn-ghost" to={`/associacao/${subjectSlug}`}>Jogo de associação</Link>
             {TOOL_FOR[subjectSlug ?? ''] && <Link className="btn-ghost" to={`/ferramentas?f=${TOOL_FOR[subjectSlug ?? '']}`}>Ferramenta de apoio</Link>}
           </div>
           {tests.length > 0 && (
