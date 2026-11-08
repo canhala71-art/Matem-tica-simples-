@@ -2,6 +2,7 @@ import { useRef, useState } from 'react';
 import { CheckCircle2, XCircle, CloudOff } from 'lucide-react';
 import { RichText } from './RichText';
 import { submitAnswer, type SubmitResult } from '../lib/offline';
+import { supabase } from '../lib/supabase';
 
 export interface ExerciseView {
   id: string;
@@ -17,6 +18,8 @@ export function ExercisePlayer({ exercise }: { exercise: ExerciseView }) {
   const [result, setResult] = useState<SubmitResult | null>(null);
   const [queued, setQueued] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [hint, setHint] = useState<string | null>(null);
+  const [hintState, setHintState] = useState<'idle' | 'loading' | 'none'>('idle');
   const started = useRef(Date.now());
   const clientId = useRef(crypto.randomUUID());
 
@@ -38,7 +41,17 @@ export function ExercisePlayer({ exercise }: { exercise: ExerciseView }) {
     else setError(out.message);
   }
 
+  async function showHint() {
+    setHintState('loading');
+    const { data, error: e } = await supabase.rpc('get_hint', { _exercise_id: exercise.id });
+    if (e || !data) { setHintState('none'); return; }
+    setHint(String(data));
+    setHintState('idle');
+  }
+
   function retry() {
+    setHint(null);
+    setHintState('idle');
     setResult(null);
     setAnswer('');
     setQueued(false);
@@ -94,6 +107,15 @@ export function ExercisePlayer({ exercise }: { exercise: ExerciseView }) {
         <button className="btn w-full" disabled={empty || busy} onClick={() => void send()}>
           {busy ? 'A verificar…' : 'Verificar'}
         </button>
+      )}
+      {!locked && !hint && hintState !== 'none' && (
+        <button className="btn-ghost w-full" disabled={hintState === 'loading'} onClick={() => void showHint()}>
+          {hintState === 'loading' ? 'A procurar pista…' : 'Preciso de uma pista'}
+        </button>
+      )}
+      {!locked && hintState === 'none' && <p className="muted text-sm">Este exercício não tem pista. Vê a resolução depois de verificares.</p>}
+      {!locked && hint && (
+        <p className="rounded-xl bg-electric-500/10 p-3 text-sm"><strong>Pista: </strong><RichText text={hint} /></p>
       )}
       {error && <p role="alert" className="text-sm text-red-600">{error}</p>}
 
