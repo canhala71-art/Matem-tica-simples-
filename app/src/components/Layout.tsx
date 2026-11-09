@@ -1,8 +1,9 @@
 import { useEffect, useState, type ReactNode } from 'react';
 import { Link, NavLink, Navigate, Outlet, useLocation } from 'react-router-dom';
-import { BookOpen, Bot, CreditCard, FlaskConical, LayoutDashboard, LogOut, Moon, Search, Shield, Sparkles, Sun, Trophy, WifiOff } from 'lucide-react';
+import { BookOpen, Bot, CreditCard, FlaskConical, LayoutDashboard, LogOut, Moon, Search, UserCircle, Shield, Sparkles, Sun, Trophy, WifiOff } from 'lucide-react';
 import { useAuth } from '../lib/auth';
 import { flushQueue } from '../lib/offline';
+import { Footer } from './Footer';
 
 export function applyTheme(t: 'light' | 'dark') {
   document.documentElement.classList.toggle('dark', t === 'dark');
@@ -60,6 +61,7 @@ export function Layout({ children }: { children?: ReactNode }) {
 
   return (
     <div className="min-h-screen">
+      <a href="#conteudo" className="sr-only focus:not-sr-only focus:absolute focus:left-2 focus:top-2 focus:z-50 focus:rounded-lg focus:bg-white focus:px-3 focus:py-2 focus:text-navy-950">Saltar para o conteúdo</a>
       <header className="sticky top-0 z-10 border-b border-slate-200 bg-white/90 backdrop-blur dark:border-navy-800 dark:bg-navy-950/90">
         <div className="mx-auto flex max-w-5xl items-center gap-3 px-4 py-2">
           <Link to="/" className="shrink-0"><Logo /></Link>
@@ -74,6 +76,7 @@ export function Layout({ children }: { children?: ReactNode }) {
             {isAdmin && <NavLink to="/admin" className={link}><Shield size={16} />Admin</NavLink>}
           </nav>
           <Link to="/pesquisa" className="btn-ghost !px-2.5" aria-label="Pesquisar aulas"><Search size={16} /></Link>
+          <Link to="/conta" className="btn-ghost !px-2.5" aria-label="A minha conta"><UserCircle size={16} /></Link>
           <button className="btn-ghost !px-2.5" aria-label="Alternar tema claro/escuro"
             onClick={() => { const t = dark ? 'light' : 'dark'; applyTheme(t); setDark(!dark); }}>
             {dark ? <Sun size={16} /> : <Moon size={16} />}
@@ -88,7 +91,7 @@ export function Layout({ children }: { children?: ReactNode }) {
           </p>
         )}
       </header>
-      <main key={loc.pathname} className="anim-fade-up mx-auto max-w-5xl px-4 py-6">
+      <main id="conteudo" key={loc.pathname} className="anim-fade-up mx-auto max-w-5xl px-4 py-6">
         {profile?.suspended ? (
           <div className="card mx-auto max-w-md space-y-3 text-center">
             <p className="font-semibold">A tua conta está suspensa.</p>
@@ -96,6 +99,7 @@ export function Layout({ children }: { children?: ReactNode }) {
           </div>
         ) : (children ?? <Outlet />)}
       </main>
+      <Footer />
     </div>
   );
 }

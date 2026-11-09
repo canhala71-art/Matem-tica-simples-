@@ -1,3 +1,4 @@
+import { ReportButton } from '../components/ReportButton';
 import { useEffect, useRef, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { CheckCircle2, Download, Trash2 } from 'lucide-react';
@@ -120,6 +121,7 @@ export function LessonPage() {
             : <button className="btn" onClick={() => void finishLesson()}>Marcar como concluída</button>}
         </div>
       )}
+      {!fromCache && <ReportButton kind="aula" refId={slug} />}
       {data.blocks.length === 0 && data.exercises.length === 0 && <p className="card muted">Esta aula ainda não tem conteúdo.</p>}
     </article>
   );

@@ -1,9 +1,10 @@
 import { useCallback, useEffect, useState, type FormEvent } from 'react';
 import { supabase } from '../lib/supabase';
 import { useAuth } from '../lib/auth';
+import { ReportsTab } from './AdminReports';
 import { AuditTab, CodesTab, OverviewTab, PaymentsTab, PlansAdminTab, QuizAdminTab, SettingsTab } from './AdminBilling';
 
-type Tab = 'visao' | 'pagamentos' | 'codigos' | 'planos' | 'config' | 'quizzes' | 'conteudo' | 'aula' | 'exercicio' | 'utilizadores' | 'auditoria';
+type Tab = 'visao' | 'pagamentos' | 'codigos' | 'planos' | 'config' | 'quizzes' | 'conteudo' | 'aula' | 'exercicio' | 'utilizadores' | 'auditoria' | 'mensagens';
 const STATUS = [['draft', 'Rascunho'], ['review', 'Em revisão'], ['published', 'Publicado']] as const;
 const BLOCKS = [
   ['introduction', 'Introdução'], ['intuition', 'Explicação intuitiva'], ['definition', 'Definição matemática'],
@@ -20,7 +21,7 @@ function Notice({ n }: { n: { ok: boolean; text: string } | null }) {
 
 export function AdminPage() {
   const [tab, setTab] = useState<Tab>('visao');
-  const tabs: [Tab, string][] = [['visao', 'Visão geral'], ['pagamentos', 'Pagamentos'], ['codigos', 'Códigos'], ['planos', 'Planos'], ['config', 'Configurações'], ['quizzes', 'Quizzes'], ['conteudo', 'Conteúdo'], ['aula', 'Nova aula'], ['exercicio', 'Novo exercício'], ['utilizadores', 'Utilizadores'], ['auditoria', 'Auditoria']];
+  const tabs: [Tab, string][] = [['visao', 'Visão geral'], ['pagamentos', 'Pagamentos'], ['codigos', 'Códigos'], ['planos', 'Planos'], ['config', 'Configurações'], ['quizzes', 'Quizzes'], ['conteudo', 'Conteúdo'], ['aula', 'Nova aula'], ['exercicio', 'Novo exercício'], ['utilizadores', 'Utilizadores'], ['mensagens', 'Mensagens'], ['auditoria', 'Auditoria']];
   return (
     <div className="space-y-4">
       <h1 className="text-2xl font-bold">Painel administrativo</h1>
@@ -30,6 +31,7 @@ export function AdminPage() {
         ))}
       </div>
       {tab === 'visao' && <OverviewTab />}
+      {tab === 'mensagens' && <ReportsTab />}
       {(tab === 'pagamentos' || tab === 'codigos') && <h2 className="text-lg font-bold">Gestão de Pagamentos e Códigos</h2>}
       {tab === 'pagamentos' && <PaymentsTab />}
       {tab === 'codigos' && <CodesTab />}

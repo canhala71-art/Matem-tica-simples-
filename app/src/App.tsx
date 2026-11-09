@@ -23,6 +23,9 @@ import { LabPage } from './pages/Lab';
 import { ToolsPage } from './pages/Tools';
 import { AdminPage } from './pages/Admin';
 import { NotFound } from './pages/NotFound';
+import { PrivacyPage, TermsPage } from './pages/Legal';
+import { HelpPage } from './pages/Help';
+import { AccountPage } from './pages/Account';
 
 class ErrorBoundary extends Component<{ children: ReactNode }, { failed: boolean }> {
   state = { failed: false };
@@ -53,8 +56,12 @@ export default function App() {
           <Routes>
             <Route path="/entrar" element={<AuthPage />} />
             <Route path="/redefinir" element={<ResetPasswordPage />} />
+            <Route path="/termos" element={<TermsPage />} />
+            <Route path="/privacidade" element={<PrivacyPage />} />
+            <Route path="/ajuda" element={<HelpPage />} />
             <Route index element={<Home />} />
             <Route element={<RequireAuth />}>
+              <Route path="/conta" element={<AccountPage />} />
               <Route path="/quiz" element={<QuizPage />} />
               <Route path="/planos" element={<PlansPage />} />
               <Route path="/ativar" element={<ActivatePage />} />

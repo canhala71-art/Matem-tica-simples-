@@ -1,3 +1,4 @@
+import { Footer } from '../components/Footer';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Logo } from '../components/Layout';
@@ -61,6 +62,7 @@ export function Landing() {
           </section>
         )}
       </main>
+      <Footer />
     </div>
   );
 }

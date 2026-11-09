@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /conta
+Sitemap: https://matem-tica-simples-q3v5.vercel.app/sitemap.xml

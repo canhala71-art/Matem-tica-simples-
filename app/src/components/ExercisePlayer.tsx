@@ -3,6 +3,7 @@ import { CheckCircle2, XCircle, CloudOff } from 'lucide-react';
 import { RichText } from './RichText';
 import { submitAnswer, type SubmitResult } from '../lib/offline';
 import { supabase } from '../lib/supabase';
+import { ReportButton } from './ReportButton';
 
 export interface ExerciseView {
   id: string;
@@ -124,6 +125,8 @@ export function ExercisePlayer({ exercise }: { exercise: ExerciseView }) {
           <CloudOff size={16} /> Sem ligação: a resposta ficou guardada e será corrigida quando voltares a ter internet.
         </p>
       )}
+
+      <ReportButton kind="exercicio" refId={exercise.id} />
 
       {result && (
         <div className="space-y-3">
