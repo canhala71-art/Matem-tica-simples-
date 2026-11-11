@@ -1,0 +1,231 @@
+{
+ "subject": "regra-de-tres",
+ "topic_title": "Regra de três simples",
+ "topic_slug": "regra-tres-simples",
+ "lesson_title": "Regra de três: grandezas, tabelas e montagem da proporção",
+ "lesson_slug": "regra-tres-grandezas-tabelas-montagem",
+ "summary": "Identifica as grandezas, organiza os dados em tabela e monta a proporção da regra de três.",
+ "minutes": 25,
+ "blocks": {
+  "introduction": "**Objetivos:** identificar grandezas envolvidas, organizar os dados em tabela, decidir se a relação é direta ou inversa e montar a proporção. **Pré-requisitos:** razão, proporção e grandezas proporcionais.\n\nSe 4 kg de arroz custam 3 200 Kz, quanto custam 7 kg? Este tipo de pergunta aparece todos os dias no mercado. A **regra de três** é o método que permite resolvê-la com segurança.",
+  "intuition": "A **regra de três** serve para descobrir um valor desconhecido a partir de três valores conhecidos, quando duas grandezas são proporcionais.\n\n**Passo 1 — Identificar as grandezas.** No exemplo: quantidade de arroz (kg) e preço (Kz).\n\n**Passo 2 — Organizar numa tabela**, alinhando valores da mesma grandeza na mesma coluna e com as mesmas unidades:\n\n$$\\begin{array}{c|c}\\text{kg}&\\text{Kz}\\\\\\hline 4&3\\,200\\\\7&x\\end{array}$$\n\n**Passo 3 — Decidir a relação.** Se compro mais kg, pago mais Kz: as grandezas aumentam juntas, logo são **diretamente proporcionais**.\n\n**Passo 4 — Montar a proporção** e resolver pelo produto cruzado: $\\frac{4}{7}=\\frac{3\\,200}{x}$ → $4x=7\\times3\\,200$ → $x=5\\,600$ Kz.\n\n**Passo 5 — Verificar.** 1 kg custa $3\\,200\\div4=800$ Kz; 7 kg custam $7\\times800=5\\,600$ ✓. A resposta é razoável: 7 kg é mais de 4 kg, logo o preço é maior que 3 200 Kz.\n\n**Truque do valor unitário:** reduzir primeiro à unidade (1 kg) e depois multiplicar é outra forma de resolver, muito útil mentalmente.\n\n**Cuidados:** mesmas unidades em cada coluna; verificar sempre se faz sentido; não assumir direta sem pensar (veja a regra de três inversa na próxima aula).\n\n**Erros comuns:** pôr valores de grandezas diferentes na mesma coluna; montar a proporção ao contrário; esquecer a verificação.",
+  "definition": "A **regra de três simples** relaciona duas grandezas proporcionais. Na **direta**, $\\frac{a}{b}=\\frac{c}{x}$ (setas no mesmo sentido): $x=\\frac{b\\,c}{a}$.",
+  "formulas": "$$\\begin{array}{c|c}A&B\\\\\\hline a&b\\\\c&x\\end{array}\\qquad\\text{direta: }\\ x=\\frac{b\\times c}{a}$$\n\n$a$ e $c$: valores da 1.ª grandeza; $b$: valor da 2.ª correspondente a $a$; $x$: valor procurado ($a\\ne0$).",
+  "worked_example": "**Exemplo 1.** 4 kg custam 3 200 Kz; 7 kg: $x=\\frac{3\\,200\\times7}{4}=5\\,600$ Kz.\n\n**Exemplo 2.** Um carro faz 90 km com 6 L; em 240 km: $x=\\frac{6\\times240}{90}=16$ L.\n\n**Exemplo 3.** 15 m de tecido custam 22 500 Kz; com 9 000 Kz: $x=\\frac{15\\times9\\,000}{22\\,500}=6$ m.\n\n**Exemplo 4.** 12 L de tinta pintam 90 m²; para 150 m²: $x=\\frac{12\\times150}{90}=20$ L.\n\n**Exemplo 5.** Valor unitário: 5 cadernos custam 1 250 Kz; 1 caderno: 250 Kz; 8 cadernos: 2 000 Kz.\n\n**Exemplo 6.** Verificação por estimativa: 840 peças em 7 h; 1 560 peças é cerca do dobro, logo cerca do dobro das horas (13 h ✓).",
+  "guided_exercise": "Resolve connosco: **uma máquina produz 840 peças em 7 horas. Quantas horas precisa para 1 560 peças?**\n\n1) Tabela: 840 peças ↔ 7 h; 1 560 peças ↔ $x$.\n\n2) Mais peças, mais horas: direta.\n\n3) $x=\\frac{7\\times1\\,560}{840}=13$ h.\n\n4) Verifica: 840 ÷ 7 = 120 peças/h; $1\\,560\\div120=13$ ✓.",
+  "independent_exercise": "Chegou a tua vez. Resolve os exercícios sem pressa e usa **Verificar** para confirmar. Se errares, não faz mal: lê a resolução passo a passo, percebe onde o raciocínio escorregou e tenta outra vez. É assim que se aprende de verdade.",
+  "challenge": "**Desafio.** Um gerador gasta 18 L de gasóleo em 5 horas. Quanto gasta num dia inteiro de funcionamento (24 h)? E quantas horas funciona com 100 L? Resolve por regra de três e pelo valor unitário.",
+  "assessment": "Consideras a competência dominada quando consegues: (1) identificar as duas grandezas e organizar a tabela; (2) decidir se a relação é direta; (3) montar e resolver a proporção; (4) verificar o resultado; (5) usar o valor unitário como alternativa."
+ },
+ "exercises": [
+  {
+   "type": "true_false",
+   "difficulty": 1,
+   "competency": "regra3.identificar",
+   "statement": "Para decidir se uma regra de três é direta ou inversa, perguntamos o que acontece a uma grandeza quando a outra aumenta.",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "Se aumentam juntas na mesma proporção é direta; se uma aumenta e a outra diminui é inversa.",
+   "steps": [
+    "Direta: aumentam juntas. Inversa: uma sobe, outra desce."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 1,
+   "competency": "regra3.identificar",
+   "statement": "Qual das situações é de regra de três direta?",
+   "options": [
+    {
+     "id": "a",
+     "label": "Mais litros de gasolina, mais Kz a pagar"
+    },
+    {
+     "id": "b",
+     "label": "Mais pedreiros, menos dias de obra"
+    },
+    {
+     "id": "c",
+     "label": "Maior velocidade, menos tempo de viagem"
+    },
+    {
+     "id": "d",
+     "label": "Mais torneiras abertas, menos tempo para encher"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "Preço e quantidade aumentam juntos. As outras três são inversas.",
+   "steps": [
+    "Qual aumenta junto?"
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "regra3.identificar",
+   "statement": "5 cadernos custam 1 250 Kz. Quanto custa 1 caderno (valor unitário), em Kz?",
+   "options": null,
+   "answer": {
+    "value": "250",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "1 250 ÷ 5 = 250 Kz.",
+   "steps": [
+    "Divide o preço pela quantidade."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "regra3.identificar",
+   "statement": "Direta: 4 kg de arroz custam 3 200 Kz. Quanto custam 7 kg, em Kz?",
+   "options": null,
+   "answer": {
+    "value": "5600",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Tabela: 4 kg → 3 200; 7 kg → x. x = 3 200 × 7 ÷ 4 = 5 600 Kz.",
+   "steps": [
+    "Setas no mesmo sentido.",
+    "x = 5 600."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "regra3.identificar",
+   "statement": "Direta: um carro faz 90 km com 6 L. Quantos litros gasta em 240 km?",
+   "options": null,
+   "answer": {
+    "value": "16",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "x = 6 × 240 ÷ 90 = 16 L.",
+   "steps": [
+    "90 km → 6 L; 240 km → x."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "regra3.identificar",
+   "statement": "Direta: 3 pacotes de bolachas têm 36 bolachas. Quantas bolachas há em 8 pacotes?",
+   "options": null,
+   "answer": {
+    "value": "96",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "x = 36 × 8 ÷ 3 = 96.",
+   "steps": [
+    "Cada pacote: 12."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "regra3.identificar",
+   "statement": "Direta: 15 m de tecido custam 22 500 Kz. Que comprimento se compra com 9 000 Kz, em m?",
+   "options": null,
+   "answer": {
+    "value": "6",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "x = 15 × 9 000 ÷ 22 500 = 6 m.",
+   "steps": [
+    "22 500 → 15; 9 000 → x."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "regra3.identificar",
+   "statement": "Direta: uma máquina produz 840 peças em 7 horas. Em quantas horas produz 1 560 peças? (Responde em horas, com decimais se necessário.)",
+   "options": null,
+   "answer": {
+    "value": "13",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "x = 7 × 1 560 ÷ 840 = 13 h.",
+   "steps": [
+    "840 peças → 7 h.",
+    "1 560 peças → x."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "regra3.identificar",
+   "statement": "Direta: com 12 L de tinta pintam-se 90 m². Quantos litros de tinta são precisos para pintar 150 m²?",
+   "options": null,
+   "answer": {
+    "value": "20",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "x = 12 × 150 ÷ 90 = 20 L.",
+   "steps": [
+    "90 m² → 12 L.",
+    "150 m² → x."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "regra3.identificar",
+   "statement": "Na regra de três direta, se a primeira grandeza triplica, a segunda também triplica.",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "É isso que significa serem diretamente proporcionais: a razão é constante.",
+   "steps": [
+    "y/x constante."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 3,
+   "competency": "regra3.identificar",
+   "statement": "Numa regra de três direta com os dados «a → b» e «c → x», o valor de x é:",
+   "options": [
+    {
+     "id": "a",
+     "label": "$\\frac{b\\times c}{a}$"
+    },
+    {
+     "id": "b",
+     "label": "$\\frac{a\\times b}{c}$"
+    },
+    {
+     "id": "c",
+     "label": "$\\frac{a\\times c}{b}$"
+    },
+    {
+     "id": "d",
+     "label": "$a+b-c$"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "De a/b = c/x tira-se x = b·c/a.",
+   "steps": [
+    "Produto cruzado."
+   ]
+  }
+ ]
+}

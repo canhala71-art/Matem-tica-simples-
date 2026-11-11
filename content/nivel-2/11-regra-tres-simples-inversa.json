@@ -1,0 +1,215 @@
+{
+ "subject": "regra-de-tres",
+ "topic_title": "Regra de três simples",
+ "topic_slug": "regra-tres-simples",
+ "lesson_title": "Regra de três simples inversa",
+ "lesson_slug": "regra-tres-simples-inversa",
+ "summary": "Reconhece grandezas inversamente proporcionais e resolve problemas com a regra de três inversa.",
+ "minutes": 25,
+ "blocks": {
+  "introduction": "**Objetivos:** reconhecer grandezas inversamente proporcionais e resolver problemas pela regra de três inversa. **Pré-requisitos:** regra de três direta e proporcionalidade inversa.\n\nSeis operários fazem um muro em 10 dias. E se forem doze? Não vai demorar 20 dias, mas **menos**. Esta é uma situação de regra de três **inversa**.",
+  "intuition": "Na regra de três **inversa**, as grandezas variam em sentidos opostos: quando uma **aumenta**, a outra **diminui**, na mesma proporção. O que fica constante é o **produto**.\n\nExemplos típicos: número de trabalhadores e dias de obra; velocidade e tempo (distância fixa); número de torneiras e tempo para encher; número de pessoas e dias que dura uma reserva de comida.\n\n**Como montar:** com a tabela $\\begin{array}{c|c}A&B\\\\\\hline a&b\\\\c&x\\end{array}$ numa relação inversa, $a\\times b=c\\times x$, portanto $x=\\frac{a\\times b}{c}$.\n\n**Passo a passo:** (1) identifica as grandezas; (2) organiza a tabela; (3) pergunta «se uma aumenta, a outra aumenta ou diminui?»; (4) se diminui, a relação é inversa e os **produtos são iguais**; (5) resolve e (6) verifica se o resultado faz sentido: com **mais** operários, **menos** dias.\n\n**Pensar com o «trabalho total»:** 6 operários × 10 dias = 60 «operários-dia». Qualquer combinação com produto 60 serve: 12 operários × 5 dias, 4 operários × 15 dias, 3 operários × 20 dias.\n\n**Mudanças a meio do trabalho:** calcula o trabalho que falta (em pessoas-dia) e divide pelo novo número de pessoas.\n\n**Erros comuns:** aplicar a direta por reflexo; verificar o resultado pelo sentido esquecendo-se de que deve ser menor/maior conforme o caso.",
+  "definition": "Na **regra de três simples inversa**: $a\\times b=c\\times x$, logo $x=\\dfrac{a\\times b}{c}$ ($c\\ne0$). O produto das duas grandezas é constante.",
+  "formulas": "$$\\begin{array}{c|c}A&B\\\\\\hline a&b\\\\c&x\\end{array}\\qquad\\text{inversa: }\\ a\\,b=c\\,x\\iff x=\\frac{a\\times b}{c}$$",
+  "worked_example": "**Exemplo 1.** 6 operários, 10 dias; 12 operários: $x=\\frac{6\\times10}{12}=5$ dias.\n\n**Exemplo 2.** Carro a 60 km/h demora 4 h; para 3 h: $v=\\frac{60\\times4}{3}=80$ km/h.\n\n**Exemplo 3.** 8 torneiras enchem em 15 min; para 10 min: $n=\\frac{8\\times15}{10}=12$ torneiras.\n\n**Exemplo 4.** 20 pessoas, comida para 18 dias; com 30 pessoas: $x=\\frac{20\\times18}{30}=12$ dias.\n\n**Exemplo 5.** 5 máquinas, 12 h; com 4: $x=\\frac{5\\times12}{4}=15$ h.\n\n**Exemplo 6.** Mudança a meio: 12 pedreiros, 45 dias; após 15 dias faltam 30 dias × 12 = 360 pessoas-dia; com 6: $360\\div6=60$ dias.",
+  "guided_exercise": "Resolve connosco: **um autocarro demora 5 horas a 72 km/h. Quanto tempo demora a 90 km/h?**\n\n1) Mais velocidade, menos tempo: inversa.\n\n2) $72\\times5=90\\times t$.\n\n3) $t=\\frac{360}{90}=4$ h.\n\n4) Verifica: $90\\times4=360=72\\times5$ ✓ (e 4 h < 5 h).",
+  "independent_exercise": "Chegou a tua vez. Resolve os exercícios sem pressa e usa **Verificar** para confirmar. Se errares, não faz mal: lê a resolução passo a passo, percebe onde o raciocínio escorregou e tenta outra vez. É assim que se aprende de verdade.",
+  "challenge": "**Desafio.** Uma reserva de água dura 20 dias para 15 pessoas. Passados 8 dias chegam mais 9 pessoas. Quantos dias dura a água que sobra para as 24 pessoas?",
+  "assessment": "Consideras a competência dominada quando consegues: (1) reconhecer quando a relação é inversa; (2) montar a igualdade dos produtos; (3) resolver e verificar o sentido do resultado; (4) usar o conceito de trabalho total; (5) resolver problemas com mudanças a meio."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "regra3.inversa",
+   "statement": "Inversa: 6 operários fazem um muro em 10 dias. Quantos dias demoram 12 operários?",
+   "options": null,
+   "answer": {
+    "value": "5",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "6 × 10 = 12 × x → x = 5 dias.",
+   "steps": [
+    "Produto constante: 60.",
+    "x = 60 ÷ 12."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "regra3.inversa",
+   "statement": "Inversa: um carro a 60 km/h demora 4 h. A que velocidade demora 3 h?",
+   "options": null,
+   "answer": {
+    "value": "80",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "60 × 4 = 3 × v → v = 80 km/h.",
+   "steps": [
+    "Distância constante: 240 km."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 1,
+   "competency": "regra3.inversa",
+   "statement": "Na regra de três inversa, se uma grandeza duplica a outra reduz-se a metade.",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "O produto fica constante.",
+   "steps": [
+    "x·y = k."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "regra3.inversa",
+   "statement": "Inversa: 8 torneiras enchem um tanque em 15 minutos. Quantas torneiras iguais são precisas para encher em 10 minutos?",
+   "options": null,
+   "answer": {
+    "value": "12",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "8 × 15 = n × 10 → n = 12.",
+   "steps": [
+    "Produto 120."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "regra3.inversa",
+   "statement": "Inversa: um grupo de 20 pessoas consome uma reserva de comida em 18 dias. Em quantos dias consumiriam 30 pessoas?",
+   "options": null,
+   "answer": {
+    "value": "12",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "20 × 18 = 30 × x → x = 12 dias.",
+   "steps": [
+    "360 pessoas-dia."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "regra3.inversa",
+   "statement": "Inversa: com 5 máquinas, uma tarefa demora 12 horas. Com 4 máquinas quantas horas demora?",
+   "options": null,
+   "answer": {
+    "value": "15",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "5 × 12 = 4 × x → x = 15 h.",
+   "steps": [
+    "Produto 60."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "regra3.inversa",
+   "statement": "Inversa: uma viagem a 80 km/h demora 3,5 h. A que velocidade demora 4 h?",
+   "options": null,
+   "answer": {
+    "value": "70",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "80 × 3,5 = 280 km; v = 280 ÷ 4 = 70 km/h.",
+   "steps": [
+    "Distância constante: 280 km."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "regra3.inversa",
+   "statement": "Inversa: 12 pedreiros constroem uma casa em 45 dias. Depois de 15 dias de trabalho saem 6 pedreiros. Em quantos dias, a contar da saída, terminam os restantes? (Pensa na parte que falta.)",
+   "options": null,
+   "answer": {
+    "value": "60",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Restam 30 dias com 12 pedreiros = 360 pessoas-dia; com 6: 360 ÷ 6 = 60 dias.",
+   "steps": [
+    "Parte que falta: 30 dias × 12 pedreiros.",
+    "360 ÷ 6 = 60."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "regra3.inversa",
+   "statement": "Inversa: um poço enche um depósito com 4 bombas em 9 horas. Com 6 bombas quantas horas poupa?",
+   "options": null,
+   "answer": {
+    "value": "3",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Com 6 bombas: 36 ÷ 6 = 6 h; poupa 9 − 6 = 3 h.",
+   "steps": [
+    "4 × 9 = 36.",
+    "9 − 6."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "regra3.inversa",
+   "statement": "Qual é a forma correta de montar uma regra de três inversa «a → b» e «c → x»?",
+   "options": [
+    {
+     "id": "a",
+     "label": "$a\\times b=c\\times x$"
+    },
+    {
+     "id": "b",
+     "label": "$\\frac{a}{b}=\\frac{c}{x}$"
+    },
+    {
+     "id": "c",
+     "label": "$a+b=c+x$"
+    },
+    {
+     "id": "d",
+     "label": "$a\\times c=b\\times x$"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "Inversa: produtos iguais, $ab=cx$, logo $x=\\frac{ab}{c}$.",
+   "steps": [
+    "Produto constante."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 3,
+   "competency": "regra3.inversa",
+   "statement": "Se 6 operários demoram 10 dias, então 12 operários demoram 20 dias.",
+   "options": null,
+   "answer": {
+    "boolean": false
+   },
+   "tolerance": 0,
+   "explanation": "Mais operários, menos dias: 6 × 10 = 12 × x → x = 5 dias, e não 20.",
+   "steps": [
+    "Inversa."
+   ]
+  }
+ ]
+}

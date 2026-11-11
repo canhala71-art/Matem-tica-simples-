@@ -1,0 +1,219 @@
+{
+ "subject": "razao-e-proporcao",
+ "topic_title": "Escalas",
+ "topic_slug": "escalas",
+ "lesson_title": "Escalas em mapas, plantas e maquetes",
+ "lesson_slug": "escalas-mapas-plantas-maquetes",
+ "summary": "Interpreta e usa escalas para passar do desenho para a realidade e vice-versa.",
+ "minutes": 25,
+ "blocks": {
+  "introduction": "**Objetivos:** interpretar escalas, calcular distâncias reais e no desenho, e comparar escalas. **Pré-requisitos:** razão, proporção e conversão de unidades de comprimento.\n\nNum mapa de Angola, uma distância de poucos centímetros representa centenas de quilómetros. A escala diz-nos exatamente quantas vezes a realidade foi reduzida.",
+  "intuition": "A **escala** é a razão entre uma medida no desenho e a **medida correspondente** na realidade, **na mesma unidade**:\n\n$$\\text{escala}=\\frac{\\text{medida no desenho}}{\\text{medida real}}$$\n\nEscreve-se $1:n$. Em $1:50\\,000$, 1 cm no mapa representa 50 000 cm = 500 m na realidade.\n\n**Escala de redução** ($1:n$ com $n>1$) é usada em mapas e plantas; **escala de ampliação** ($n:1$) em objetos minúsculos (por exemplo, $5:1$ para uma formiga). **Escala natural:** $1:1$.\n\n**Escala maior ou menor:** compara os valores. $\\frac{1}{25\\,000}>\\frac{1}{250\\,000}$: a escala $1:25\\,000$ é **maior** e mostra mais pormenor.\n\n**Distâncias:** dividir a medida real pela escala dá a medida no desenho; multiplicar a medida do desenho pela escala dá a real. Converte sempre para a **mesma unidade** antes e depois (1 km = 100 000 cm; 1 m = 100 cm).\n\n**Áreas:** a escala é linear. Se o comprimento aumenta $n$ vezes, a **área aumenta $n^2$ vezes**. Numa planta $1:100$, 24 cm² representam $24\\times100^2=240\\,000$ cm² = 24 m².\n\n**Escala gráfica:** uma barra graduada desenhada no mapa mostra distâncias reais e continua certa se o mapa for ampliado ou reduzido numa fotocopiadora (a escala numérica não).\n\n**Erros comuns:** multiplicar pela escala quando devia dividir; esquecer a conversão de cm para km; aplicar a escala linear às áreas.",
+  "definition": "**Escala** $=\\dfrac{\\text{desenho}}{\\text{real}}=1:n$, com ambas as medidas na mesma unidade. Real $=\\text{desenho}\\times n$. Área real $=\\text{área no desenho}\\times n^2$.",
+  "formulas": "$$d_{\\text{real}}=d_{\\text{desenho}}\\times n\\qquad d_{\\text{desenho}}=\\frac{d_{\\text{real}}}{n}\\qquad A_{\\text{real}}=A_{\\text{desenho}}\\times n^2$$\n\n$1\\text{ km}=1\\,000\\text{ m}=100\\,000\\text{ cm}$. $1\\text{ m}^2=10\\,000\\text{ cm}^2$.",
+  "worked_example": "**Exemplo 1.** Mapa $1:50\\,000$: 4 cm representam $4\\times50\\,000=200\\,000$ cm $=2$ km.\n\n**Exemplo 2.** Duas cidades a 60 km, mapa $1:1\\,000\\,000$: $6\\,000\\,000\\div1\\,000\\,000=6$ cm.\n\n**Exemplo 3.** No mapa, 5 cm representam 25 km: $25\\text{ km}=2\\,500\\,000$ cm; escala $1:500\\,000$.\n\n**Exemplo 4.** Planta $1:50$: sala de 8 cm × 6 cm representa 4 m × 3 m $=12$ m².\n\n**Exemplo 5.** Maquete $1:20$ de um prédio de 18 m: $1\\,800\\div20=90$ cm.\n\n**Exemplo 6.** Planta $1:100$: 24 cm² no desenho dão $24\\times10\\,000=240\\,000$ cm² $=24$ m² reais.",
+  "guided_exercise": "Resolve connosco: **num mapa de escala $1:200\\,000$ duas cidades distam 7,5 cm. Qual é a distância real?**\n\n1) $7{,}5\\times200\\,000=1\\,500\\,000$ cm.\n\n2) Converte: $1\\,500\\,000\\div100\\,000=15$ km.\n\n3) Verifica: 1 cm no mapa = 2 km; $7{,}5\\times2=15$ ✓.",
+  "independent_exercise": "Chegou a tua vez. Resolve os exercícios sem pressa e usa **Verificar** para confirmar. Se errares, não faz mal: lê a resolução passo a passo, percebe onde o raciocínio escorregou e tenta outra vez. É assim que se aprende de verdade.",
+  "challenge": "**Desafio.** Um terreno retangular de 40 m × 25 m vai ser desenhado numa folha A4 (29,7 cm × 21 cm). Qual é a maior escala $1:n$ (com $n$ inteiro) que lhe cabe? Verifica as duas medidas.",
+  "assessment": "Consideras a competência dominada quando consegues: (1) interpretar a escala 1:n; (2) calcular distâncias reais e no desenho; (3) converter unidades de comprimento; (4) comparar escalas; (5) passar de áreas no desenho a áreas reais."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "razao.escalas",
+   "statement": "Num mapa de escala $1:50\\,000$, 4 cm no mapa correspondem a quantos cm na realidade?",
+   "options": null,
+   "answer": {
+    "value": "200000",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "4 × 50 000 = 200 000 cm.",
+   "steps": [
+    "Multiplica pela escala."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "razao.escalas",
+   "statement": "200 000 cm quantos km são? (1 km = 100 000 cm)",
+   "options": null,
+   "answer": {
+    "value": "2",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "200 000 ÷ 100 000 = 2 km.",
+   "steps": [
+    "Divide por 100 000."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "razao.escalas",
+   "statement": "A escala de um mapa é $1:1\\,000$. Uma rua tem 150 m reais. Quantos cm tem no mapa?",
+   "options": null,
+   "answer": {
+    "value": "15",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "150 m = 15 000 cm; 15 000 ÷ 1 000 = 15 cm.",
+   "steps": [
+    "Converte para cm.",
+    "Divide pela escala."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "razao.escalas",
+   "statement": "Duas cidades distam 60 km. Num mapa de escala $1:1\\,000\\,000$, quantos cm separam as duas cidades no mapa?",
+   "options": null,
+   "answer": {
+    "value": "6",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "60 km = 6 000 000 cm; ÷ 1 000 000 = 6 cm.",
+   "steps": [
+    "1 km = 100 000 cm.",
+    "6 000 000 ÷ 1 000 000."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "razao.escalas",
+   "statement": "No mapa, 5 cm representam 25 km. Qual é o denominador da escala $1:n$ (em cm)?",
+   "options": null,
+   "answer": {
+    "value": "500000",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "25 km = 2 500 000 cm; ÷ 5 = 500 000. Escala 1 : 500 000.",
+   "steps": [
+    "Converte 25 km para cm.",
+    "Divide pelos 5 cm."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "razao.escalas",
+   "statement": "Numa planta de escala $1:50$, uma sala mede 8 cm × 6 cm. Qual é a área real da sala, em m²?",
+   "options": null,
+   "answer": {
+    "value": "12",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Real: 4 m × 3 m = 12 m².",
+   "steps": [
+    "8 × 50 = 400 cm = 4 m.",
+    "6 × 50 = 300 cm = 3 m."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "razao.escalas",
+   "statement": "Uma maquete é feita à escala $1:20$. Se o prédio real tem 18 m de altura, que altura tem a maquete, em cm?",
+   "options": null,
+   "answer": {
+    "value": "90",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "18 m = 1 800 cm; ÷ 20 = 90 cm.",
+   "steps": [
+    "Divide pela escala."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "razao.escalas",
+   "statement": "Dois mapas do mesmo percurso têm escalas $1:200\\,000$ e $1:500\\,000$. Se no primeiro o percurso mede 25 cm, quanto mede no segundo, em cm?",
+   "options": null,
+   "answer": {
+    "value": "10",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Real: 25 × 200 000 = 5 000 000 cm; no 2.º: ÷ 500 000 = 10 cm.",
+   "steps": [
+    "Real = 5 000 000 cm.",
+    "10 cm."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "razao.escalas",
+   "statement": "Numa planta de escala $1:100$, a área de um terreno desenhado é 24 cm². Qual é a área real, em m²?",
+   "options": null,
+   "answer": {
+    "value": "24",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "As áreas multiplicam pelo quadrado da escala: 24 × 10 000 = 240 000 cm² = 24 m².",
+   "steps": [
+    "Área real em cm²: 24 × 100².",
+    "1 m² = 10 000 cm²."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "razao.escalas",
+   "statement": "Uma escala $1:25\\,000$ é maior (mostra mais pormenor) do que uma escala $1:250\\,000$.",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "Quanto menor o denominador, maior a escala e maior o pormenor.",
+   "steps": [
+    "1/25 000 > 1/250 000."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 3,
+   "competency": "razao.escalas",
+   "statement": "Uma escala $1:50$ significa que:",
+   "options": [
+    {
+     "id": "a",
+     "label": "1 cm no desenho representa 50 cm na realidade"
+    },
+    {
+     "id": "b",
+     "label": "50 cm no desenho representam 1 cm na realidade"
+    },
+    {
+     "id": "c",
+     "label": "1 cm no desenho representa 50 m na realidade"
+    },
+    {
+     "id": "d",
+     "label": "O desenho é 50% da realidade"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "Escala = medida no desenho : medida real. 1 : 50 → 1 cm representa 50 cm.",
+   "steps": [
+    "Lê primeiro o desenho."
+   ]
+  }
+ ]
+}

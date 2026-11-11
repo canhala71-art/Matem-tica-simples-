@@ -1,0 +1,222 @@
+{
+ "subject": "razao-e-proporcao",
+ "topic_title": "Aplicações da proporcionalidade",
+ "topic_slug": "aplicacoes-proporcionalidade",
+ "lesson_title": "Velocidade média, densidade e percentagens como razões",
+ "lesson_slug": "velocidade-densidade-percentagem-razoes",
+ "summary": "Usa razões para calcular velocidades, densidades, preços unitários e percentagens.",
+ "minutes": 30,
+ "blocks": {
+  "introduction": "**Objetivos:** calcular velocidade média, densidade e percentagens como razões e resolver problemas contextualizados. **Pré-requisitos:** razão, proporção e unidades de medida.\n\nQuando alguém diz «80 quilómetros por hora» ou «20% de desconto», está a usar razões. Esta aula junta essas ideias em fórmulas úteis do dia a dia.",
+  "intuition": "Muitas grandezas do dia a dia são **razões entre duas grandezas**.\n\n**Velocidade média:** distância dividida pelo tempo, $v=\\frac{d}{t}$. Unidades: km/h, m/s. Para converter: $1\\text{ km/h}=\\frac{1\\,000}{3\\,600}\\text{ m/s}$, ou seja, divide por 3,6 para passar de km/h a m/s. 72 km/h $=20$ m/s. Rearranjando: $d=v\\,t$ e $t=\\frac{d}{v}$.\n\n**Atenção:** a velocidade média de uma viagem é a **distância total ÷ tempo total**, não a média das velocidades. Se fazes 120 km a 60 km/h (2 h) e 120 km a 120 km/h (1 h), a viagem de 240 km dura 3 h e a velocidade média é $\\frac{240}{3}=80$ km/h, não 90.\n\n**Densidade:** massa por unidade de volume, $\\rho=\\frac{m}{V}$ (g/cm³, kg/m³). A água tem densidade aproximada de 1 g/cm³ (1 000 kg/m³). Rearranjando: $m=\\rho V$ e $V=\\frac{m}{\\rho}$.\n\n**Preço unitário:** preço ÷ quantidade (Kz/kg, Kz/L), ótimo para comparar o que compensa comprar.\n\n**Percentagem:** razão com consequente 100. $\\frac{36}{120}=\\frac{30}{100}=30\\%$. Aumento percentual $=\\frac{\\text{aumento}}{\\text{valor inicial}}\\times100\\%$.\n\n**Erros comuns:** esquecer de converter unidades de tempo (minutos para horas); fazer a média das velocidades; dividir pelo valor final em vez do inicial nas percentagens de variação.",
+  "definition": "**Velocidade média** $v=\\frac{d}{t}$; **densidade** $\\rho=\\frac{m}{V}$; **percentagem** de $a$ em $b$ $=\\frac{a}{b}\\times100\\%$; **aumento percentual** $=\\frac{\\text{novo}-\\text{inicial}}{\\text{inicial}}\\times100\\%$.",
+  "formulas": "$$v=\\frac{d}{t}\\qquad\\rho=\\frac{m}{V}\\qquad p\\%=\\frac{a}{b}\\times100$$\n\n$d$: distância (km, m); $t$: tempo (h, s); $m$: massa (g, kg); $V$: volume (cm³, m³). Converter: km/h ÷ 3,6 = m/s.",
+  "worked_example": "**Exemplo 1.** Autocarro: 240 km em 3 h: $v=240\\div3=80$ km/h.\n\n**Exemplo 2.** Conversão: 72 km/h $=72\\div3{,}6=20$ m/s.\n\n**Exemplo 3.** Comboio a 90 km/h durante 315 km: $t=315\\div90=3{,}5$ h.\n\n**Exemplo 4.** Bloco de 540 g e 200 cm³: $\\rho=540\\div200=2{,}7$ g/cm³.\n\n**Exemplo 5.** Tijolo de 1,8 g/cm³ e 1 500 cm³: $m=1{,}8\\times1\\,500=2\\,700$ g $=2{,}7$ kg.\n\n**Exemplo 6.** Aumento de 5 000 para 5 750 Kz: $\\frac{750}{5\\,000}=0{,}15=15\\%$.",
+  "guided_exercise": "Resolve connosco: **uma viagem de 380 km demorou 5 h e 30 min. Qual foi a velocidade média?**\n\n1) Tempo em horas: $5{,}5$ h.\n\n2) $v=380\\div5{,}5\\approx69{,}1$ km/h.\n\n3) Verifica: $69{,}1\\times5{,}5\\approx380$ ✓.",
+  "independent_exercise": "Chegou a tua vez. Resolve os exercícios sem pressa e usa **Verificar** para confirmar. Se errares, não faz mal: lê a resolução passo a passo, percebe onde o raciocínio escorregou e tenta outra vez. É assim que se aprende de verdade.",
+  "challenge": "**Desafio.** Dois sacos de arroz: 5 kg por 4 500 Kz e 12 kg por 9 960 Kz. Qual compensa mais? Calcula o preço por kg de cada um e diz qual a diferença percentual.",
+  "assessment": "Consideras a competência dominada quando consegues: (1) calcular v, d e t; (2) converter km/h e m/s; (3) aplicar densidade; (4) calcular percentagens como razões; (5) resolver problemas com preços unitários."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "razao.aplicacoes",
+   "statement": "Um autocarro percorre 240 km em 3 horas. Qual é a velocidade média, em km/h?",
+   "options": null,
+   "answer": {
+    "value": "80",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "v = d/t = 240 ÷ 3 = 80 km/h.",
+   "steps": [
+    "v = d ÷ t."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "razao.aplicacoes",
+   "statement": "Um bloco de metal tem massa 540 g e volume 200 cm³. Qual é a densidade, em g/cm³?",
+   "options": null,
+   "answer": {
+    "value": "27/10",
+    "accepted": [
+     "2,7"
+    ]
+   },
+   "tolerance": 0,
+   "explanation": "ρ = m/V = 540 ÷ 200 = 2,7 g/cm³.",
+   "steps": [
+    "ρ = m ÷ V."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "razao.aplicacoes",
+   "statement": "Numa turma de 40 alunos, 10 faltaram. Qual é a percentagem de faltosos?",
+   "options": null,
+   "answer": {
+    "value": "25",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "10/40 = 25/100 = 25%.",
+   "steps": [
+    "Razão 10:40 = 1/4."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "razao.aplicacoes",
+   "statement": "Um carro viaja a 72 km/h. Quantos metros percorre em 1 segundo?",
+   "options": null,
+   "answer": {
+    "value": "20",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "72 km/h = 72 000 m ÷ 3 600 s = 20 m/s.",
+   "steps": [
+    "1 km = 1 000 m; 1 h = 3 600 s."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "razao.aplicacoes",
+   "statement": "Quantas horas demora um comboio a 90 km/h a percorrer 315 km?",
+   "options": null,
+   "answer": {
+    "value": "7/2",
+    "accepted": [
+     "3,5"
+    ]
+   },
+   "tolerance": 0,
+   "explanation": "t = d/v = 315 ÷ 90 = 3,5 h.",
+   "steps": [
+    "t = d ÷ v."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "razao.aplicacoes",
+   "statement": "Um tijolo tem densidade 1,8 g/cm³ e volume 1 500 cm³. Qual é a massa, em kg?",
+   "options": null,
+   "answer": {
+    "value": "27/10",
+    "accepted": [
+     "2,7"
+    ]
+   },
+   "tolerance": 0,
+   "explanation": "m = ρ·V = 1,8 × 1 500 = 2 700 g = 2,7 kg.",
+   "steps": [
+    "m = ρ × V.",
+    "2 700 g ÷ 1 000."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "razao.aplicacoes",
+   "statement": "Numa escola, 36 dos 120 alunos vão a pé. Que percentagem vai a pé?",
+   "options": null,
+   "answer": {
+    "value": "30",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "36/120 = 3/10 = 30%.",
+   "steps": [
+    "Razão 36:120.",
+    "Multiplica por 100."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "razao.aplicacoes",
+   "statement": "Um motorista faz 120 km a 60 km/h e depois 120 km a 120 km/h. Qual é a velocidade média de toda a viagem, em km/h?",
+   "options": null,
+   "answer": {
+    "value": "80",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Tempos: 2 h + 1 h = 3 h; distância 240 km; v = 240 ÷ 3 = 80 km/h (não é a média aritmética 90).",
+   "steps": [
+    "Soma das distâncias ÷ soma dos tempos.",
+    "t = 2 + 1 = 3 h."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "razao.aplicacoes",
+   "statement": "Um produto custava 5 000 Kz e passou a custar 5 750 Kz. De quantos por cento foi o aumento?",
+   "options": null,
+   "answer": {
+    "value": "15",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Aumento 750; 750/5 000 = 0,15 = 15%.",
+   "steps": [
+    "Diferença sobre o valor inicial."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 3,
+   "competency": "razao.aplicacoes",
+   "statement": "A velocidade média de uma viagem é sempre a média aritmética das duas velocidades.",
+   "options": null,
+   "answer": {
+    "boolean": false
+   },
+   "tolerance": 0,
+   "explanation": "A velocidade média é distância total ÷ tempo total. Só coincide com a média aritmética em casos especiais (tempos iguais).",
+   "steps": [
+    "Confirma com 120 km a 60 km/h e 120 km a 120 km/h: dá 80, não 90."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "razao.aplicacoes",
+   "statement": "Qual é a unidade da densidade?",
+   "options": [
+    {
+     "id": "a",
+     "label": "g/cm³"
+    },
+    {
+     "id": "b",
+     "label": "km/h"
+    },
+    {
+     "id": "c",
+     "label": "Kz/kg"
+    },
+    {
+     "id": "d",
+     "label": "m²"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "Densidade é massa por volume: g/cm³, kg/m³…",
+   "steps": [
+    "Massa ÷ volume."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,215 @@
+{
+ "subject": "regra-de-tres",
+ "topic_title": "Problemas de regra de três",
+ "topic_slug": "regra-tres-problemas",
+ "lesson_title": "Problemas de regra de três da vida real (Angola)",
+ "lesson_slug": "regra-tres-problemas-vida-real-angola",
+ "summary": "Aplica a regra de três em compras, salários, transportes, construção, água e energia, com verificação.",
+ "minutes": 30,
+ "blocks": {
+  "introduction": "**Objetivos:** resolver problemas contextualizados com regra de três (simples e composta), verificar resultados e justificar o raciocínio. **Pré-requisitos:** regra de três direta, inversa e composta.\n\nPreços no mercado, salários, candongueiros, obras, água, eletricidade: a regra de três está em todo o lado. Esta aula é de treino com situações da vida em Angola.",
+  "intuition": "**Método em 5 passos** para qualquer problema:\n\n1) **Ler e sublinhar** os dados e o que se pede; escreve as unidades.\n\n2) **Tabela** com as grandezas e o $x$.\n\n3) **Direta ou inversa?** Testa com um caso simples (se o dobro de pedreiros, o tempo duplica ou reduz-se a metade?).\n\n4) **Montar e resolver** (produto cruzado para direta; produtos iguais para inversa).\n\n5) **Verificar:** (a) o resultado tem sentido (maior ou menor do que devia ser)? (b) as unidades estão certas? (c) outra via dá o mesmo?\n\n**Situações típicas:**\n\n**Compras e vendas:** preço proporcional à quantidade (direta). Preço por unidade ajuda a comparar.\n\n**Salários:** pagamento proporcional aos dias ou horas trabalhadas (direta).\n\n**Transportes:** distância e combustível (direta); velocidade e tempo (inversa).\n\n**Construção civil:** número de pedreiros e dias (inversa); cimento e área (direta); homens × horas × dias (composta).\n\n**Água e energia:** consumo proporcional ao tempo (direta); número de pessoas e dias que a reserva dura (inversa).\n\n**Percentagens e lucro:** com 25% de lucro sobre o custo, preço de venda = custo × 1,25.\n\n**Dica de segurança:** quando os números são grandes, estima primeiro (arredonda) para detetar um erro grosseiro.\n\n**Erros comuns:** ler mal o enunciado e trocar as colunas; direta por inversa; ignorar a verificação final.",
+  "definition": "Em problemas de regra de três: **direta** $\\to x=\\frac{b\\,c}{a}$; **inversa** $\\to x=\\frac{a\\,b}{c}$; **composta** $\\to$ produto das razões.",
+  "formulas": "$$\\text{direta: }\\frac{x}{b}=\\frac{c}{a}\\qquad\\text{inversa: }\\frac{x}{b}=\\frac{a}{c}\\qquad\\text{lucro: }V=C\\left(1+\\frac{p}{100}\\right)$$\n\n$C$: custo; $V$: preço de venda; $p$: percentagem de lucro.",
+  "worked_example": "**Exemplo 1.** Candongueiro: 4 passageiros pagam 2 400 Kz; 7 passageiros: $\\frac{2\\,400\\times7}{4}=4\\,200$ Kz.\n\n**Exemplo 2.** Salário: 12 000 Kz por 3 dias; 22 dias: $\\frac{12\\,000\\times22}{3}=88\\,000$ Kz.\n\n**Exemplo 3.** Obra: 6 pedreiros em 12 dias; para 8 dias: $n=\\frac{6\\times12}{8}=9$ pedreiros.\n\n**Exemplo 4.** Construção: 50 sacos para 400 m²; para 640 m²: $\\frac{50\\times640}{400}=80$ sacos.\n\n**Exemplo 5.** Eletricidade: 240 kWh em 30 dias; 45 dias: $\\frac{240\\times45}{30}=360$ kWh.\n\n**Exemplo 6.** Água: 4 pessoas, 15 dias; 6 pessoas: $\\frac{4\\times15}{6}=10$ dias.",
+  "guided_exercise": "Resolve connosco: **uma obra tem 8 trabalhadores e demora 20 dias. Ao fim de 5 dias contratam-se mais 4 trabalhadores. Em quantos dias acaba a obra, contando desde o início?**\n\n1) Trabalho total: $8\\times20=160$ trabalhador-dia.\n\n2) Feitos: $8\\times5=40$; faltam $160-40=120$.\n\n3) Com 12 trabalhadores: $120\\div12=10$ dias.\n\n4) Total: $5+10=15$ dias. Verifica: $40+12\\times10=160$ ✓.",
+  "independent_exercise": "Chegou a tua vez. Resolve os exercícios sem pressa e usa **Verificar** para confirmar. Se errares, não faz mal: lê a resolução passo a passo, percebe onde o raciocínio escorregou e tenta outra vez. É assim que se aprende de verdade.",
+  "challenge": "**Desafio.** O gasóleo de um gerador custa 450 Kz/L e o gerador gasta 3 L por hora. Uma loja precisa dele 6 horas por dia, 26 dias por mês. Quanto gasta por mês? E se o preço subir 10%?",
+  "assessment": "Consideras a competência dominada quando consegues: (1) seguir o método dos 5 passos; (2) distinguir direta, inversa e composta; (3) resolver problemas de compras, salários e obras; (4) verificar com estimativa e outra via; (5) justificar a resposta com unidades."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "regra3.problemas",
+   "statement": "Num candongueiro, 4 passageiros pagam 2 400 Kz no total pelo mesmo trajeto (preço igual para todos). Quanto pagam 7 passageiros, em Kz?",
+   "options": null,
+   "answer": {
+    "value": "4200",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Preço por pessoa: 600 Kz; 7 × 600 = 4 200 Kz.",
+   "steps": [
+    "2 400 ÷ 4 = 600."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "regra3.problemas",
+   "statement": "Um litro de óleo custa 1 800 Kz. Quanto custam 2,5 L, em Kz?",
+   "options": null,
+   "answer": {
+    "value": "4500",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "1 800 × 2,5 = 4 500 Kz.",
+   "steps": [
+    "Direta."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "regra3.problemas",
+   "statement": "Um tanque gasta 30 L de água por dia. Quantos litros gasta em 14 dias?",
+   "options": null,
+   "answer": {
+    "value": "420",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "30 × 14 = 420 L.",
+   "steps": [
+    "Direta."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "regra3.problemas",
+   "statement": "Um salário de 180 000 Kz por mês. Quanto se ganha em 5 meses, em Kz?",
+   "options": null,
+   "answer": {
+    "value": "900000",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Direta: 180 000 × 5 = 900 000 Kz.",
+   "steps": [
+    "Mês → Kz."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "regra3.problemas",
+   "statement": "Um trabalhador ganha 12 000 Kz por 3 dias de trabalho. Quanto ganha em 22 dias, em Kz?",
+   "options": null,
+   "answer": {
+    "value": "88000",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "x = 12 000 × 22 ÷ 3 = 88 000 Kz.",
+   "steps": [
+    "12 000 ÷ 3 = 4 000 por dia."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "regra3.problemas",
+   "statement": "6 pedreiros constroem um muro em 12 dias. Para acabar em 8 dias, quantos pedreiros são precisos?",
+   "options": null,
+   "answer": {
+    "value": "9",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Inversa: 6 × 12 = 8 × n → n = 9.",
+   "steps": [
+    "Produto 72."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "regra3.problemas",
+   "statement": "Numa obra, 50 sacos de cimento chegam para 400 m² de reboco. Quantos sacos para 640 m²?",
+   "options": null,
+   "answer": {
+    "value": "80",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Direta: 50 × 640 ÷ 400 = 80 sacos.",
+   "steps": [
+    "50 sacos → 400 m²."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "regra3.problemas",
+   "statement": "O consumo de eletricidade de uma casa foi 240 kWh em 30 dias. Quantos kWh se esperam em 45 dias, com o mesmo ritmo?",
+   "options": null,
+   "answer": {
+    "value": "360",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Direta: 240 × 45 ÷ 30 = 360 kWh.",
+   "steps": [
+    "8 kWh por dia."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "regra3.problemas",
+   "statement": "Uma mercearia compra 40 kg de farinha por 28 000 Kz e vende-os com 25% de lucro sobre o custo. Qual é o preço de venda total, em Kz?",
+   "options": null,
+   "answer": {
+    "value": "35000",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "28 000 × 1,25 = 35 000 Kz.",
+   "steps": [
+    "Lucro 25% de 28 000 = 7 000.",
+    "28 000 + 7 000."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "regra3.problemas",
+   "statement": "4 pessoas com 1 800 L de água têm reserva para 15 dias. Quantos dias dura a água para 6 pessoas?",
+   "options": null,
+   "answer": {
+    "value": "10",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Inversa: 4 × 15 = 6 × x → x = 10 dias.",
+   "steps": [
+    "Produto 60."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "regra3.problemas",
+   "statement": "Para saber se um problema é de regra de três inversa, devemos perguntar:",
+   "options": [
+    {
+     "id": "a",
+     "label": "Se uma grandeza aumenta, a outra diminui?"
+    },
+    {
+     "id": "b",
+     "label": "Se os números são inteiros?"
+    },
+    {
+     "id": "c",
+     "label": "Se há três valores?"
+    },
+    {
+     "id": "d",
+     "label": "Se há Kz no problema?"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "Inversa: uma sobe e a outra desce.",
+   "steps": [
+    "Direção da variação."
+   ]
+  }
+ ]
+}

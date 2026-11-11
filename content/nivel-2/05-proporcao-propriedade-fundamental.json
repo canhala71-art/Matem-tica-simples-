@@ -1,0 +1,236 @@
+{
+ "subject": "razao-e-proporcao",
+ "topic_title": "Proporção",
+ "topic_slug": "proporcao",
+ "lesson_title": "Proporção: extremos, meios e propriedade fundamental",
+ "lesson_slug": "proporcao-propriedade-fundamental",
+ "summary": "Reconhece uma proporção e usa a propriedade fundamental para calcular o termo desconhecido.",
+ "minutes": 25,
+ "blocks": {
+  "introduction": "**Objetivos:** definir proporção, identificar extremos e meios, aplicar a propriedade fundamental e calcular termos desconhecidos. **Pré-requisitos:** razão, frações equivalentes e equações simples.\n\nNo mercado, se 3 kg de arroz custam 2 400 Kz, quanto custam 5 kg? A resposta nasce de uma igualdade entre duas razões: uma **proporção**.",
+  "intuition": "Uma **proporção** é a igualdade de duas razões: $\\frac{a}{b}=\\frac{c}{d}$, que se lê «$a$ está para $b$ assim como $c$ está para $d$» e se escreve também $a:b=c:d$ (com $b,d\\ne0$).\n\nOs quatro termos têm nomes: $a$ e $d$ são os **extremos**; $b$ e $c$ são os **meios**. Em cada razão, o primeiro termo é o **antecedente** ($a$ e $c$) e o segundo o **consequente** ($b$ e $d$).\n\n**Propriedade fundamental:** numa proporção, o produto dos extremos é igual ao produto dos meios: $a\\times d=b\\times c$. É a famosa «multiplicação em cruz».\n\n**Para que serve:** se três termos são conhecidos, calculamos o quarto. De $\\frac{3}{4}=\\frac{x}{12}$ tiramos $3\\times12=4x$, logo $x=9$. Para verificar se quatro números formam uma proporção, testamos se os produtos cruzados são iguais.\n\n**Cuidado:** só funciona quando temos **uma igualdade entre duas razões**. Se $x$ está no meio ou no extremo, a regra é a mesma, mas atenção a quem multiplica quem.\n\n**Média proporcional:** em $\\frac{a}{m}=\\frac{m}{b}$ o número $m$ aparece duas vezes e $m^2=a\\times b$.\n\n**Erros comuns:** multiplicar $a\\times b$ em vez de $a\\times d$; esquecer de dividir pelo número que acompanha o $x$.",
+  "definition": "Proporção: $\\frac{a}{b}=\\frac{c}{d}$ ($b,d\\ne0$). Extremos: $a$, $d$. Meios: $b$, $c$.",
+  "formulas": "$$\\frac{a}{b}=\\frac{c}{d}\\iff a\\times d=b\\times c\\qquad\\text{se }\\frac{a}{b}=\\frac{c}{x}\\text{ então }x=\\frac{b\\times c}{a}$$\n\nMédia proporcional $m$ entre $a$ e $b$ (positivos): $m=\\sqrt{a\\times b}$.",
+  "worked_example": "**Exemplo 1.** $\\frac{2}{3}=\\frac{8}{12}$ é proporção: $2\\times12=24=3\\times8$.\n\n**Exemplo 2.** $\\frac{3}{4}=\\frac{x}{12}$: $3\\times12=4x$, $x=36\\div4=9$.\n\n**Exemplo 3.** $\\frac{4}{x}=\\frac{6}{15}$: $6x=60$, $x=10$.\n\n**Exemplo 4.** $\\frac{x+2}{5}=\\frac{9}{15}$: $15(x+2)=45$, $x+2=3$, $x=1$.\n\n**Exemplo 5.** Média proporcional entre 4 e 25: $m^2=100$, $m=10$.\n\n**Exemplo 6.** Mapa: 3 cm ↔ 12 km; 5 cm ↔ $x$: $\\frac{3}{12}=\\frac{5}{x}$, $x=20$ km.",
+  "guided_exercise": "Resolve connosco: **3 kg de arroz custam 2 400 Kz. Quanto custam 5 kg?**\n\n1) Proporção: $\\frac{3}{2\\,400}=\\frac{5}{x}$.\n\n2) Produto cruzado: $3x=5\\times2\\,400=12\\,000$.\n\n3) $x=4\\,000$ Kz.\n\n4) Verifica: 1 kg custa 800 Kz; $5\\times800=4\\,000$ ✓.",
+  "independent_exercise": "Chegou a tua vez. Resolve os exercícios sem pressa e usa **Verificar** para confirmar. Se errares, não faz mal: lê a resolução passo a passo, percebe onde o raciocínio escorregou e tenta outra vez. É assim que se aprende de verdade.",
+  "challenge": "**Desafio.** Mostra que se $\\frac{a}{b}=\\frac{c}{d}$ então também $\\frac{a}{c}=\\frac{b}{d}$ (troca dos meios). Testa com $\\frac{3}{4}=\\frac{9}{12}$ e explica porquê.",
+  "assessment": "Consideras a competência dominada quando consegues: (1) reconhecer uma proporção pelos produtos cruzados; (2) nomear extremos e meios; (3) aplicar a propriedade fundamental; (4) calcular o termo desconhecido; (5) usar proporções em problemas de preços e mapas."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "razao.proporcao",
+   "statement": "Calcula x na proporção $\\frac{x}{4}=\\frac{3}{12}$.",
+   "options": null,
+   "answer": {
+    "value": "1",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Produto cruzado: 12·x = 3·4, logo x = 1.",
+   "steps": [
+    "Multiplica em cruz.",
+    "x = 12 ÷ 12."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "razao.proporcao",
+   "statement": "Calcula x na proporção $\\frac{x}{2}=\\frac{5}{10}$.",
+   "options": null,
+   "answer": {
+    "value": "1",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Produto cruzado: 10·x = 5·2, logo x = 1.",
+   "steps": [
+    "Multiplica em cruz.",
+    "x = 10 ÷ 10."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "razao.proporcao",
+   "statement": "Calcula x na proporção $\\frac{x}{3}=\\frac{7}{21}$.",
+   "options": null,
+   "answer": {
+    "value": "1",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Produto cruzado: 21·x = 7·3, logo x = 1.",
+   "steps": [
+    "Multiplica em cruz.",
+    "x = 21 ÷ 21."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "razao.proporcao",
+   "statement": "Calcula x em $\\frac{4}{x}=\\frac{6}{15}$.",
+   "options": null,
+   "answer": {
+    "value": "10",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "6x = 4 × 15 = 60, logo x = 10.",
+   "steps": [
+    "Produto cruzado: 6x = 60.",
+    "x = 10."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "razao.proporcao",
+   "statement": "Calcula x em $\\frac{x+2}{5}=\\frac{9}{15}$.",
+   "options": null,
+   "answer": {
+    "value": "1",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "15(x+2) = 45, logo x+2 = 3 e x = 1.",
+   "steps": [
+    "Produto cruzado.",
+    "x + 2 = 3."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "razao.proporcao",
+   "statement": "Os números 6, 9, 10 e $x$ formam, por esta ordem, uma proporção $\\frac{6}{9}=\\frac{10}{x}$. Qual é x?",
+   "options": null,
+   "answer": {
+    "value": "15",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "6x = 90, logo x = 15.",
+   "steps": [
+    "Produto dos extremos e dos meios.",
+    "x = 15."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "razao.proporcao",
+   "statement": "Num mapa, 3 cm representam 12 km. Quantos km representam 5 cm?",
+   "options": null,
+   "answer": {
+    "value": "20",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "A razão cm : km é constante: 3/12 = 5/x, logo 3x = 60 e x = 20 km.",
+   "steps": [
+    "Proporção cm/km.",
+    "x = 20."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "razao.proporcao",
+   "statement": "A média proporcional $m$ entre 4 e 25 satisfaz $\\frac{4}{m}=\\frac{m}{25}$ ($m>0$). Quanto vale m?",
+   "options": null,
+   "answer": {
+    "value": "10",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "m² = 4 × 25 = 100 e m = 10.",
+   "steps": [
+    "Produto cruzado: m² = 100."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "razao.proporcao",
+   "statement": "Os preços de dois produtos estão na proporção 3 : 5. Se o mais barato custa 1 800 Kz, quanto custa o outro, em Kz?",
+   "options": null,
+   "answer": {
+    "value": "3000",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "3/5 = 1800/x → x = 1800 × 5 ÷ 3 = 3 000 Kz.",
+   "steps": [
+    "Proporção 3/5 = 1800/x.",
+    "x = 3 000."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 1,
+   "competency": "razao.proporcao",
+   "statement": "A igualdade $\\frac{2}{3}=\\frac{8}{12}$ é uma proporção.",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "2 × 12 = 24 e 3 × 8 = 24: produtos cruzados iguais.",
+   "steps": [
+    "Multiplica em cruz."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "razao.proporcao",
+   "statement": "Se $\\frac{a}{b}=\\frac{c}{d}$, então $a\\times b=c\\times d$.",
+   "options": null,
+   "answer": {
+    "boolean": false
+   },
+   "tolerance": 0,
+   "explanation": "A propriedade fundamental diz $a\\times d=b\\times c$ (extremos × meios), não $a\\times b$.",
+   "steps": [
+    "Extremos: a e d. Meios: b e c."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 3,
+   "competency": "razao.proporcao",
+   "statement": "Qual dos pares forma uma proporção com $\\frac{6}{8}$?",
+   "options": [
+    {
+     "id": "a",
+     "label": "$\\frac{9}{12}$"
+    },
+    {
+     "id": "b",
+     "label": "$\\frac{8}{10}$"
+    },
+    {
+     "id": "c",
+     "label": "$\\frac{7}{9}$"
+    },
+    {
+     "id": "d",
+     "label": "$\\frac{12}{18}$"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "6×12 = 72 = 8×9; as outras falham o produto cruzado.",
+   "steps": [
+    "Testa o produto cruzado em cada uma."
+   ]
+  }
+ ]
+}

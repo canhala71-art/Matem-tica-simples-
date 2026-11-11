@@ -1,0 +1,225 @@
+{
+ "subject": "razao-e-proporcao",
+ "topic_title": "Razão",
+ "topic_slug": "razao",
+ "lesson_title": "Razão: termos, leitura, simplificação e razões equivalentes",
+ "lesson_slug": "razao-termos-simplificacao-equivalentes",
+ "summary": "Compreende a razão entre duas grandezas, lê-a, simplifica-a e reconhece razões equivalentes.",
+ "minutes": 25,
+ "blocks": {
+  "introduction": "**Objetivos:** definir razão, identificar antecedente e consequente, simplificar razões e reconhecer razões equivalentes. **Pré-requisitos:** frações, simplificação, mdc e conversão de unidades.\n\nPara comparar quantos rapazes há por cada rapariga numa turma, ou quanto custa cada quilo de feijão, não basta olhar para os números isolados: comparamos duas quantidades por **divisão**. É isso que se chama razão.",
+  "intuition": "A **razão** entre duas grandezas é o quociente entre as suas medidas, **na mesma unidade**. A razão de $a$ para $b$ escreve-se $a:b$ ou $\\frac{a}{b}$ e lê-se «$a$ para $b$». Em $a:b$, $a$ é o **antecedente** e $b$ é o **consequente** ($b\\ne0$).\n\n**Atenção à ordem:** $3:4$ não é o mesmo que $4:3$. A razão de rapazes para raparigas (12:18) é diferente da razão de raparigas para rapazes (18:12).\n\n**Mesma unidade:** para dividir 30 cm por 2 m, converte primeiro: 2 m = 200 cm, e a razão é $30:200=3:20$. Quando as unidades são diferentes por natureza (Kz e kg), a razão traz unidade: 1 200 Kz : 3 kg = 400 Kz/kg.\n\n**Simplificar uma razão** é dividir antecedente e consequente pelo mesmo número (o mdc): $15:25=3:5$. A razão fica **irredutível** quando mdc = 1. Duas razões são **equivalentes** se têm o mesmo valor: $3:5=12:20$ (multiplicámos os dois termos por 4). Se os termos são frações ou decimais, converte para números inteiros multiplicando pelo mesmo fator.\n\n**Divisão em partes:** repartir 40 L na razão $3:2$ significa 5 partes iguais, de 8 L cada: 24 L e 16 L.\n\n**Erros comuns:** trocar a ordem; comparar sem converter unidades; simplificar só o antecedente.",
+  "definition": "Razão de $a$ para $b$ ($b\\ne0$): $\\dfrac{a}{b}$, com $a$ o antecedente e $b$ o consequente, medidos na mesma unidade. Razões **equivalentes**: $\\dfrac{a}{b}=\\dfrac{ka}{kb}$ ($k\\ne0$).",
+  "formulas": "$$\\text{razão}=\\frac{a}{b}\\qquad\\frac{a}{b}=\\frac{a\\div d}{b\\div d}\\qquad\\frac{a}{b}=\\frac{ka}{kb}$$\n\n$a$: antecedente; $b$: consequente ($b\\ne0$); $d$: divisor comum; $k$: fator de multiplicação ($k\\ne0$). Divisão em partes: se o total $T$ é repartido na razão $p:q$, cada parte vale $\\frac{T}{p+q}$.",
+  "worked_example": "**Exemplo 1.** Razão de 15 para 25: $15:25=\\frac{15}{25}=\\frac{3}{5}$ (dividimos por 5).\n\n**Exemplo 2.** Rapazes e raparigas: 12 e 18. Razão $12:18=2:3$. Por cada 2 rapazes há 3 raparigas.\n\n**Exemplo 3.** 30 cm para 2 m: $2\\text{ m}=200\\text{ cm}$, então $30:200=3:20$.\n\n**Exemplo 4.** Preço por quilo: $1\\,200\\text{ Kz}:3\\text{ kg}=400$ Kz/kg.\n\n**Exemplo 5.** Equivalência: $3:5=x:20$. Como $20=5\\times4$, $x=3\\times4=12$.\n\n**Exemplo 6.** Repartição: 40 L na razão $3:2$: $40\\div5=8$ L por parte; $3\\times8=24$ L e $2\\times8=16$ L.",
+  "guided_exercise": "Resolve connosco: **num talho, 4,5 kg de carne custam 9 000 Kz. Qual é a razão preço : quantidade? E quanto custam 7 kg?**\n\n1) Razão: $9\\,000:4{,}5=2\\,000$ Kz por kg.\n\n2) Para 7 kg: $7\\times2\\,000=14\\,000$ Kz.\n\n3) Verifica: $14\\,000:7=2\\,000$ ✓.",
+  "independent_exercise": "Chegou a tua vez. Resolve os exercícios sem pressa e usa **Verificar** para confirmar. Se errares, não faz mal: lê a resolução passo a passo, percebe onde o raciocínio escorregou e tenta outra vez. É assim que se aprende de verdade.",
+  "challenge": "**Desafio.** Uma tinta é feita misturando pigmento e base na razão $2:7$. Para 18 litros de tinta, quantos litros de pigmento são precisos? E se só tens 3 litros de pigmento, quantos litros de tinta consegues fazer?",
+  "assessment": "Consideras a competência dominada quando consegues: (1) escrever uma razão pela ordem certa; (2) converter unidades antes de dividir; (3) simplificar até à forma irredutível; (4) reconhecer razões equivalentes; (5) repartir um total numa razão dada."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "razao.conceito",
+   "statement": "Qual é o valor da razão de 15 para 25? Escreve a fração irredutível.",
+   "options": null,
+   "answer": {
+    "value": "3/5",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "15/25 = 3/5 (divide por 5).",
+   "steps": [
+    "mdc(15, 25) = 5.",
+    "15 ÷ 5 = 3 e 25 ÷ 5 = 5."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "razao.conceito",
+   "statement": "Numa turma há 12 rapazes e 18 raparigas. Qual é a razão rapazes : raparigas, na forma irredutível?",
+   "options": null,
+   "answer": {
+    "value": "2/3",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "12/18 = 2/3.",
+   "steps": [
+    "mdc(12, 18) = 6.",
+    "12 ÷ 6 = 2; 18 ÷ 6 = 3."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "razao.conceito",
+   "statement": "A razão $3:4$ escrita como número decimal é?",
+   "options": null,
+   "answer": {
+    "value": "3/4",
+    "accepted": [
+     "0,75"
+    ]
+   },
+   "tolerance": 0,
+   "explanation": "3 ÷ 4 = 0,75.",
+   "steps": [
+    "Razão é uma divisão: 3 ÷ 4."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "razao.conceito",
+   "statement": "Qual é a razão entre 2,5 m e 50 cm? (Converte para a mesma unidade primeiro.)",
+   "options": null,
+   "answer": {
+    "value": "5",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "2,5 m = 250 cm; 250 ÷ 50 = 5.",
+   "steps": [
+    "Mesma unidade: 2,5 m = 250 cm.",
+    "250 : 50 = 5."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "razao.conceito",
+   "statement": "Qual é a razão de $\\frac{3}{4}$ para $\\frac{1}{2}$?",
+   "options": null,
+   "answer": {
+    "value": "3/2",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "(3/4) ÷ (1/2) = 3/4 × 2 = 3/2.",
+   "steps": [
+    "Razão é um quociente.",
+    "Dividir por 1/2 é multiplicar por 2."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "razao.conceito",
+   "statement": "Num mercado, 3 kg de feijão custam 1 200 Kz. Qual é a razão Kz por kg (preço de 1 kg)?",
+   "options": null,
+   "answer": {
+    "value": "400",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "1 200 ÷ 3 = 400 Kz/kg.",
+   "steps": [
+    "Razão preço : quantidade.",
+    "1 200 ÷ 3 = 400."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "razao.conceito",
+   "statement": "Se $3:5 = x:20$ (razões equivalentes), quanto vale x?",
+   "options": null,
+   "answer": {
+    "value": "12",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "20 = 5 × 4, logo x = 3 × 4 = 12.",
+   "steps": [
+    "Fator entre 5 e 20: 4.",
+    "3 × 4 = 12."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "razao.conceito",
+   "statement": "Mistura de água e sumo na razão $3:2$. Numa jarra de 40 litros, quantos litros são de água?",
+   "options": null,
+   "answer": {
+    "value": "24",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Partes: 3 + 2 = 5; cada parte = 40 ÷ 5 = 8 L; água = 3 × 8 = 24 L.",
+   "steps": [
+    "Total de partes: 5.",
+    "1 parte = 8 L.",
+    "Água: 3 partes = 24 L."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "razao.conceito",
+   "statement": "A razão entre as idades de pai e filho é $7:2$ e o pai tem 42 anos. Quantos anos tem o filho?",
+   "options": null,
+   "answer": {
+    "value": "12",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "42 ÷ 7 = 6 por parte; filho = 2 × 6 = 12 anos.",
+   "steps": [
+    "7 partes = 42 anos.",
+    "1 parte = 6.",
+    "Filho: 2 partes = 12."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "razao.conceito",
+   "statement": "A razão entre 30 cm e 2 m é $15$.",
+   "options": null,
+   "answer": {
+    "boolean": false
+   },
+   "tolerance": 0,
+   "explanation": "Têm unidades diferentes: 2 m = 200 cm, logo 30 : 200 = 3/20. Só se compara depois de converter.",
+   "steps": [
+    "Converte 2 m para cm."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 3,
+   "competency": "razao.conceito",
+   "statement": "Qual das razões é equivalente a $4:6$?",
+   "options": [
+    {
+     "id": "a",
+     "label": "$10:15$"
+    },
+    {
+     "id": "b",
+     "label": "$6:8$"
+    },
+    {
+     "id": "c",
+     "label": "$5:7$"
+    },
+    {
+     "id": "d",
+     "label": "$8:10$"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "4:6 = 2:3 e 10:15 = 2:3. As outras simplificam para 3:4, 5:7 e 4:5.",
+   "steps": [
+    "Simplifica todas."
+   ]
+  }
+ ]
+}

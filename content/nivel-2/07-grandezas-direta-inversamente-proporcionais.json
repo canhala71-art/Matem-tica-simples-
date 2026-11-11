@@ -1,0 +1,216 @@
+{
+ "subject": "razao-e-proporcao",
+ "topic_title": "Grandezas proporcionais",
+ "topic_slug": "grandezas-proporcionais",
+ "lesson_title": "Grandezas diretamente e inversamente proporcionais",
+ "lesson_slug": "grandezas-direta-inversamente-proporcionais",
+ "summary": "Distingue proporcionalidade direta de inversa, calcula a constante e resolve problemas.",
+ "minutes": 30,
+ "blocks": {
+  "introduction": "**Objetivos:** reconhecer grandezas diretamente e inversamente proporcionais, determinar a constante de proporcionalidade e resolver problemas. **Pré-requisitos:** razão, proporção e propriedade fundamental.\n\nSe compras mais pão, pagas mais. Se há mais pedreiros na obra, acabam mais cedo. Nos dois casos há uma relação entre grandezas, mas de tipo diferente.",
+  "intuition": "Duas grandezas são **diretamente proporcionais** quando a razão entre os valores correspondentes é constante: $\\frac{y}{x}=k$ ($k$ é a **constante de proporcionalidade**). Se $x$ duplica, $y$ duplica; se $x$ triplica, $y$ triplica. Exemplo: o preço $y$ de $x$ cadernos a 250 Kz cada: $y=250x$.\n\nDuas grandezas são **inversamente proporcionais** quando o **produto** dos valores correspondentes é constante: $x\\times y=k$. Se $x$ duplica, $y$ fica metade. Exemplo: com uma obra de 60 «pessoas-dia», o número de pessoas $x$ e os dias $y$ satisfazem $xy=60$.\n\n**Como decidir:** pergunta «se uma grandeza aumenta, a outra aumenta ou diminui?». Aumentar com aumentar (e na mesma proporção) é direta; aumentar com diminuir é inversa. Mas atenção: nem todas as grandezas que crescem juntas são proporcionais. A altura de uma pessoa cresce com a idade, mas a razão não é constante.\n\n**Uso:** encontra a constante $k$ com um par de valores e usa-a para os outros. Direta: $y=kx$. Inversa: $y=\\frac{k}{x}$.\n\n**Gráficos:** a proporcionalidade direta dá uma reta que passa pela origem. A inversa dá uma curva (hipérbole).\n\n**Erros comuns:** tratar tudo como direto; usar razão quando devia usar produto; esquecer unidades.",
+  "definition": "**Diretamente proporcionais:** $\\frac{y}{x}=k$ constante, $y=kx$. **Inversamente proporcionais:** $xy=k$ constante, $y=\\frac{k}{x}$ ($x\\ne0$).",
+  "formulas": "$$\\text{direta: }\\ \\frac{y_1}{x_1}=\\frac{y_2}{x_2}=k\\qquad\\text{inversa: }\\ x_1y_1=x_2y_2=k$$\n\n$k$ é a constante de proporcionalidade (com unidade, quando existe: Kz/kg, L/min, pessoas·dias…).",
+  "worked_example": "**Exemplo 1.** Direta: 4 cadernos custam 1 000 Kz; $k=1\\,000\\div4=250$ Kz/caderno; 9 cadernos custam $9\\times250=2\\,250$ Kz.\n\n**Exemplo 2.** Direta: um carro gasta 6 L por 100 km; em 250 km: $\\frac{6}{100}=\\frac{x}{250}$, $x=15$ L.\n\n**Exemplo 3.** Inversa: 6 operários fazem um muro em 10 dias; $6\\times10=60$; com 12 operários: $12\\,d=60$, $d=5$ dias.\n\n**Exemplo 4.** Inversa: 60 km/h durante 3 h dá 180 km; a 90 km/h: $t=180\\div90=2$ h.\n\n**Exemplo 5.** Direta com $k$: $y=21$ para $x=7$; $k=3$; para $x=12$, $y=36$.\n\n**Exemplo 6.** Contraexemplo: altura e idade crescem juntas, mas altura/idade muda: não são proporcionais.",
+  "guided_exercise": "Resolve connosco: **8 pedreiros acabam uma parede em 9 dias. Quantos pedreiros são precisos para a acabar em 6 dias?**\n\n1) Mais pessoas, menos dias: inversa.\n\n2) Constante: $8\\times9=72$ pessoas-dia.\n\n3) $x\\times6=72$, logo $x=12$ pedreiros.\n\n4) Verifica: $12\\times6=72$ ✓.",
+  "independent_exercise": "Chegou a tua vez. Resolve os exercícios sem pressa e usa **Verificar** para confirmar. Se errares, não faz mal: lê a resolução passo a passo, percebe onde o raciocínio escorregou e tenta outra vez. É assim que se aprende de verdade.",
+  "challenge": "**Desafio.** Uma torneira enche um depósito em 12 minutos. Se abrires duas torneiras iguais, quanto tempo demora? E três? Escreve o que se passa com o produto «torneiras × minutos».",
+  "assessment": "Consideras a competência dominada quando consegues: (1) distinguir direta de inversa; (2) calcular a constante k; (3) usar y = kx e y = k/x; (4) resolver problemas de preços, consumos e tempos; (5) reconhecer quando NÃO há proporcionalidade."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "razao.grandezas",
+   "statement": "Um carro gasta 6 litros por 100 km. Quantos litros gasta em 250 km (grandezas diretamente proporcionais)?",
+   "options": null,
+   "answer": {
+    "value": "15",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "6/100 = x/250 → x = 15 L.",
+   "steps": [
+    "A distância e o consumo aumentam juntos.",
+    "x = 15."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "razao.grandezas",
+   "statement": "Se 4 cadernos custam 1 000 Kz, qual é a constante de proporcionalidade (preço de 1 caderno), em Kz?",
+   "options": null,
+   "answer": {
+    "value": "250",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "k = 1 000 ÷ 4 = 250 Kz.",
+   "steps": [
+    "k = y ÷ x."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 1,
+   "competency": "razao.grandezas",
+   "statement": "Quando o número de pedreiros aumenta, o tempo para acabar a obra diminui: as grandezas são inversamente proporcionais.",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "Mais pessoas, menos tempo: o produto (pessoas × dias) fica constante.",
+   "steps": [
+    "Se um aumenta, o outro diminui."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "razao.grandezas",
+   "statement": "Duas grandezas inversamente proporcionais: quando $x=4$, $y=15$. Qual é o produto constante $k$?",
+   "options": null,
+   "answer": {
+    "value": "60",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "k = x·y = 4 × 15 = 60.",
+   "steps": [
+    "Inversa: x·y constante."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "razao.grandezas",
+   "statement": "Com a constante $xy=60$, se $x=12$, quanto vale $y$?",
+   "options": null,
+   "answer": {
+    "value": "5",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "y = 60 ÷ 12 = 5.",
+   "steps": [
+    "y = k/x."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "razao.grandezas",
+   "statement": "6 operários fazem um muro em 10 dias. Em quantos dias 12 operários fazem o mesmo muro (mesmo ritmo)?",
+   "options": null,
+   "answer": {
+    "value": "5",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Inversa: 6 × 10 = 12 × d → d = 5 dias.",
+   "steps": [
+    "Produto constante: 60.",
+    "d = 60 ÷ 12."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "razao.grandezas",
+   "statement": "Uma torneira enche um tanque a 15 L/min. Quantos litros enche em 8 minutos (direta)?",
+   "options": null,
+   "answer": {
+    "value": "120",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "15 × 8 = 120 L.",
+   "steps": [
+    "Constante k = 15 L/min."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "razao.grandezas",
+   "statement": "Um autocarro viaja a 60 km/h e demora 3 horas. Se viajar a 90 km/h, quantas horas demora a mesma distância?",
+   "options": null,
+   "answer": {
+    "value": "2",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Velocidade e tempo são inversamente proporcionais: 60 × 3 = 180 = 90 × t → t = 2 h.",
+   "steps": [
+    "Distância constante: 180 km.",
+    "t = 180 ÷ 90."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "razao.grandezas",
+   "statement": "Se $y$ é diretamente proporcional a $x$ e $y=21$ quando $x=7$, quanto vale $y$ quando $x=12$?",
+   "options": null,
+   "answer": {
+    "value": "36",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "k = 21/7 = 3; y = 3 × 12 = 36.",
+   "steps": [
+    "k = 3.",
+    "y = 36."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 3,
+   "competency": "razao.grandezas",
+   "statement": "A idade de uma pessoa e a sua altura são grandezas diretamente proporcionais.",
+   "options": null,
+   "answer": {
+    "boolean": false
+   },
+   "tolerance": 0,
+   "explanation": "Embora aumentem juntas até certa idade, a razão altura/idade não é constante. Proporcionalidade exige razão constante.",
+   "steps": [
+    "Uma criança de 2 anos não tem metade da altura de uma de 4."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "razao.grandezas",
+   "statement": "Qual das situações envolve grandezas inversamente proporcionais?",
+   "options": [
+    {
+     "id": "a",
+     "label": "Velocidade e tempo para percorrer uma distância fixa"
+    },
+    {
+     "id": "b",
+     "label": "Quantidade de arroz e preço a pagar"
+    },
+    {
+     "id": "c",
+     "label": "Litros de combustível e distância percorrida"
+    },
+    {
+     "id": "d",
+     "label": "Número de bilhetes e total pago"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "Se a velocidade aumenta, o tempo diminui na mesma proporção, com a distância fixa. As outras são diretas.",
+   "steps": [
+    "Qual aumenta enquanto o outro diminui?"
+   ]
+  }
+ ]
+}
