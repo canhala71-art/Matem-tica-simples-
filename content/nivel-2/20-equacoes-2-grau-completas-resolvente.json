@@ -1,0 +1,214 @@
+{
+ "subject": "equacoes",
+ "topic_title": "Equações do 2.º grau",
+ "topic_slug": "equacoes-2-grau",
+ "lesson_title": "Equações do 2.º grau completas: discriminante e fórmula resolvente",
+ "lesson_slug": "equacoes-2-grau-completas-resolvente",
+ "summary": "Resolve equações completas do 2.º grau com o discriminante e a fórmula resolvente.",
+ "minutes": 35,
+ "blocks": {
+  "introduction": "**Objetivos:** calcular o discriminante, discutir o número de soluções e aplicar a fórmula resolvente. **Pré-requisitos:** equações incompletas do 2.º grau, raízes quadradas e regra dos sinais.\n\nQuando a equação tem $x^2$, $x$ e termo independente, a evidência já não chega. A fórmula resolvente resolve todas as equações do 2.º grau.",
+  "intuition": "Para $ax^2+bx+c=0$ ($a\\ne0$):\n\n**1) Escreve na forma geral** e identifica $a$, $b$ e $c$ **com sinais**.\n\n**2) Calcula o discriminante** $\\Delta=b^2-4ac$.\n\n**3) Discute:**\n- $\\Delta>0$: **duas** soluções reais distintas;\n- $\\Delta=0$: **uma** solução (dupla);\n- $\\Delta<0$: **nenhuma** solução real.\n\n**4) Fórmula resolvente:** $x=\\dfrac{-b\\pm\\sqrt{\\Delta}}{2a}$.\n\nExemplo: $x^2-5x+6=0$. $a=1$, $b=-5$, $c=6$. $\\Delta=25-24=1$. $x=\\frac{5\\pm1}{2}$, logo $x=3$ ou $x=2$.\n\nExemplo com $a\\neq1$: $2x^2-7x+3=0$. $\\Delta=49-24=25$. $x=\\frac{7\\pm5}{4}$: $x=3$ ou $x=\\frac{1}{2}$.\n\nExemplo com $\\Delta=0$: $x^2-6x+9=0$. $\\Delta=0$, $x=\\frac{6}{2}=3$.\n\nExemplo com $\\Delta<0$: $x^2+x+1=0$. $\\Delta=-3$: sem soluções reais.\n\n**Verificação:** substitui as soluções, ou usa soma e produto das raízes (próxima aula).\n\n**Cuidados:** $-b$ com $b$ negativo fica positivo; $b^2$ é sempre positivo (por exemplo $(-5)^2=25$); o denominador é $2a$ (dois vezes $a$, não só $a$); a raiz tem **todo** o $\\Delta$.\n\n**Erros comuns:** esquecer o sinal de $b$; calcular $-b^2$ em vez de $(-b)^2$; dividir só por $a$; esquecer-se de escrever na forma geral antes.",
+  "definition": "O **discriminante** é $\\Delta=b^2-4ac$. A **fórmula resolvente** dá $x=\\dfrac{-b\\pm\\sqrt{\\Delta}}{2a}$, válida quando $\\Delta\\ge0$.",
+  "formulas": "$$\\Delta=b^2-4ac\\qquad x=\\frac{-b\\pm\\sqrt{\\Delta}}{2a}\\qquad\\Delta>0:\\ 2\\text{ sol.};\\ \\Delta=0:\\ 1\\text{ sol.};\\ \\Delta<0:\\ \\text{nenhuma}$$",
+  "worked_example": "**Exemplo 1.** $x^2-5x+6=0$: $\\Delta=1$; $x=\\frac{5\\pm1}{2}$: $3$ e $2$.\n\n**Exemplo 2.** $x^2+2x-8=0$: $\\Delta=36$; $x=\\frac{-2\\pm6}{2}$: $2$ e $-4$.\n\n**Exemplo 3.** $2x^2-7x+3=0$: $\\Delta=25$; $x=\\frac{7\\pm5}{4}$: $3$ e $\\frac{1}{2}$.\n\n**Exemplo 4.** $x^2-6x+9=0$: $\\Delta=0$; $x=3$.\n\n**Exemplo 5.** $x^2+x+1=0$: $\\Delta=-3<0$: sem soluções reais.\n\n**Exemplo 6.** $3x^2-2x-1=0$: $\\Delta=16$; $x=\\frac{2\\pm4}{6}$: $1$ e $-\\frac{1}{3}$.",
+  "guided_exercise": "Resolve connosco: **$x^2-10x+21=0$.**\n\n1) $a=1$, $b=-10$, $c=21$.\n\n2) $\\Delta=(-10)^2-4\\cdot1\\cdot21=100-84=16$.\n\n3) $x=\\frac{10\\pm4}{2}$: $x=7$ ou $x=3$.\n\n4) Verifica: $49-70+21=0$ ✓ e $9-30+21=0$ ✓.",
+  "independent_exercise": "Chegou a tua vez. Resolve os exercícios sem pressa e usa **Verificar** para confirmar. Se errares, não faz mal: lê a resolução passo a passo, percebe onde o raciocínio escorregou e tenta outra vez. É assim que se aprende de verdade.",
+  "challenge": "**Desafio.** Para que valores de $k$ a equação $x^2-4x+k=0$ tem duas soluções? Uma? Nenhuma? (Impõe condições a $\\Delta=16-4k$.)",
+  "assessment": "Consideras a competência dominada quando consegues: (1) escrever na forma geral e identificar a, b, c; (2) calcular o discriminante; (3) discutir o número de soluções; (4) aplicar a fórmula resolvente; (5) verificar as soluções."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "equacoes.resolvente",
+   "statement": "Calcula o discriminante de $x^2-5x+6=0$.",
+   "options": null,
+   "answer": {
+    "value": "1",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Δ = (−5)² − 4·1·6 = 25 − 24 = 1.",
+   "steps": [
+    "Δ = b² − 4ac."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "equacoes.resolvente",
+   "statement": "Calcula o discriminante de $x^2+2x-8=0$.",
+   "options": null,
+   "answer": {
+    "value": "36",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Δ = 4 + 32 = 36.",
+   "steps": [
+    "a=1, b=2, c=−8."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "equacoes.resolvente",
+   "statement": "Quantas soluções reais tem $x^2+x+1=0$? (Calcula Δ.)",
+   "options": null,
+   "answer": {
+    "value": "0",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Δ = 1 − 4 = −3 < 0: nenhuma solução real.",
+   "steps": [
+    "Δ < 0."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "equacoes.resolvente",
+   "statement": "Qual é a maior solução de $x^2-5x+6=0$?",
+   "options": null,
+   "answer": {
+    "value": "3",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "x = (5 ± 1)/2 → 3 ou 2.",
+   "steps": [
+    "Δ = 1."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "equacoes.resolvente",
+   "statement": "Qual é a menor solução de $x^2+2x-8=0$?",
+   "options": null,
+   "answer": {
+    "value": "-4",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "x = (−2 ± 6)/2 → 2 ou −4.",
+   "steps": [
+    "Δ = 36."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "equacoes.resolvente",
+   "statement": "Qual é a solução única de $x^2-6x+9=0$?",
+   "options": null,
+   "answer": {
+    "value": "3",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Δ = 36 − 36 = 0; x = 6/2 = 3 (solução dupla).",
+   "steps": [
+    "Δ = 0."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "equacoes.resolvente",
+   "statement": "Qual é a maior solução de $x^2-10x+21=0$?",
+   "options": null,
+   "answer": {
+    "value": "7",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Δ = 100 − 84 = 16; x = (10 ± 4)/2 → 7 ou 3.",
+   "steps": [
+    "Δ = 16."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "equacoes.resolvente",
+   "statement": "Qual é a maior solução de $2x^2-7x+3=0$?",
+   "options": null,
+   "answer": {
+    "value": "3",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Δ = 49 − 24 = 25; x = (7 ± 5)/4 → 3 ou 1/2.",
+   "steps": [
+    "a=2, b=−7, c=3.",
+    "Δ = 25."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "equacoes.resolvente",
+   "statement": "Qual é a maior solução de $3x^2-2x-1=0$?",
+   "options": null,
+   "answer": {
+    "value": "1",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Δ = 4 + 12 = 16; x = (2 ± 4)/6 → 1 ou −1/3.",
+   "steps": [
+    "Δ = 16."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "equacoes.resolvente",
+   "statement": "Se $\\Delta>0$ a equação tem duas soluções reais distintas.",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "Δ > 0: duas soluções; Δ = 0: uma (dupla); Δ < 0: nenhuma real.",
+   "steps": [
+    "Sinal de Δ."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 3,
+   "competency": "equacoes.resolvente",
+   "statement": "Qual é a fórmula resolvente da equação $ax^2+bx+c=0$?",
+   "options": [
+    {
+     "id": "a",
+     "label": "$x=\\dfrac{-b\\pm\\sqrt{b^2-4ac}}{2a}$"
+    },
+    {
+     "id": "b",
+     "label": "$x=\\dfrac{b\\pm\\sqrt{b^2-4ac}}{2a}$"
+    },
+    {
+     "id": "c",
+     "label": "$x=\\dfrac{-b\\pm\\sqrt{b^2+4ac}}{2a}$"
+    },
+    {
+     "id": "d",
+     "label": "$x=\\dfrac{-b\\pm\\sqrt{b^2-4ac}}{a}$"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "É a fórmula resolvente, com −b e 2a no denominador.",
+   "steps": [
+    "Cuidado com os sinais."
+   ]
+  }
+ ]
+}

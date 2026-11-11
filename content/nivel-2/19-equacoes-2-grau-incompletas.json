@@ -1,0 +1,214 @@
+{
+ "subject": "equacoes",
+ "topic_title": "Equações do 2.º grau",
+ "topic_slug": "equacoes-2-grau",
+ "lesson_title": "Equações do 2.º grau incompletas",
+ "lesson_slug": "equacoes-2-grau-incompletas",
+ "summary": "Resolve equações do 2.º grau incompletas por raiz quadrada e por evidência.",
+ "minutes": 30,
+ "blocks": {
+  "introduction": "**Objetivos:** reconhecer equações do 2.º grau, resolver as incompletas ($ax^2+c=0$ e $ax^2+bx=0$) e usar a lei do anulamento do produto. **Pré-requisitos:** equações do 1.º grau, fatores e raízes quadradas.\n\nUma equação do 2.º grau aparece quando a incógnita surge ao quadrado: por exemplo, ao procurar o lado de um quadrado a partir da área.",
+  "intuition": "Uma **equação do 2.º grau** tem a forma $ax^2+bx+c=0$ com $a\\ne0$. É **completa** se $b\\ne0$ e $c\\ne0$ e **incompleta** se $b=0$ ou $c=0$.\n\n**Caso $b=0$: $ax^2+c=0$.** Isola $x^2$: $x^2=-\\frac{c}{a}$. Se $-\\frac{c}{a}>0$ há duas soluções simétricas $x=\\pm\\sqrt{-\\frac{c}{a}}$; se for $0$ há uma ($x=0$); se for negativo **não há soluções reais**. Exemplo: $x^2-49=0\\Rightarrow x=\\pm7$. $x^2+9=0$ é impossível.\n\n**Caso $c=0$: $ax^2+bx=0$.** Põe $x$ em evidência: $x(ax+b)=0$. Pela **lei do anulamento do produto** (um produto é zero se algum fator é zero): $x=0$ ou $ax+b=0$, ou seja, $x=-\\frac{b}{a}$. Exemplo: $x^2+4x=0\\Rightarrow x(x+4)=0\\Rightarrow x=0$ ou $x=-4$.\n\n**Caso $b=c=0$:** $ax^2=0\\Rightarrow x=0$ (solução dupla).\n\n**Aviso:** nunca dividas os dois membros por $x$: perdes a solução $x=0$. Em $5x^2=20x$, passa tudo para um lado e usa evidência: $5x(x-4)=0$.\n\n**Contexto geométrico:** se a área de um quadrado é 169 cm², $l^2=169$, $l=13$ cm. Só a solução **positiva** serve como medida.\n\n**Verificação:** substitui cada solução na equação original.\n\n**Erros comuns:** dizer $x^2=49\\Rightarrow x=7$ (esquecer $-7$); dividir por $x$; aceitar a solução negativa num comprimento.",
+  "definition": "Equação do 2.º grau: $ax^2+bx+c=0$, $a\\neq0$. **Incompleta** se $b=0$ ou $c=0$. **Lei do anulamento do produto:** $A\\cdot B=0\\iff A=0$ ou $B=0$.",
+  "formulas": "$$ax^2+c=0\\Rightarrow x=\\pm\\sqrt{-\\tfrac{c}{a}}\\ \\ (-\\tfrac{c}{a}\\ge0)\\qquad ax^2+bx=0\\Rightarrow x=0\\ \\text{ou}\\ x=-\\tfrac{b}{a}$$",
+  "worked_example": "**Exemplo 1.** $x^2-49=0$: $x^2=49$, $x=\\pm7$.\n\n**Exemplo 2.** $3x^2=27$: $x^2=9$, $x=\\pm3$.\n\n**Exemplo 3.** $x^2+4x=0$: $x(x+4)=0$, $x=0$ ou $x=-4$.\n\n**Exemplo 4.** $5x^2=20x$: $5x(x-4)=0$, $x=0$ ou $x=4$.\n\n**Exemplo 5.** $x^2+9=0$: sem soluções reais.\n\n**Exemplo 6.** Quadrado de 169 cm²: $l=\\sqrt{169}=13$ cm.",
+  "guided_exercise": "Resolve connosco: **$2x^2-18=0$.**\n\n1) Isola $x^2$: $2x^2=18$, logo $x^2=9$.\n\n2) Raiz: $x=3$ ou $x=-3$.\n\n3) Verifica: $2\\cdot9-18=0$ ✓ para ambas.\n\n4) Se fosse o lado de um quadrado, só serviria $x=3$.",
+  "independent_exercise": "Chegou a tua vez. Resolve os exercícios sem pressa e usa **Verificar** para confirmar. Se errares, não faz mal: lê a resolução passo a passo, percebe onde o raciocínio escorregou e tenta outra vez. É assim que se aprende de verdade.",
+  "challenge": "**Desafio.** Um retângulo tem um lado o triplo do outro e 108 cm² de área. Escreve a equação $3x^2=108$, resolve e diz as dimensões. Porque só uma solução serve?",
+  "assessment": "Consideras a competência dominada quando consegues: (1) reconhecer completa e incompleta; (2) resolver ax²+c=0 e discutir o número de soluções; (3) resolver ax²+bx=0 por evidência; (4) não perder a solução x=0; (5) escolher soluções com sentido geométrico."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "equacoes.segundo_incompletas",
+   "statement": "Qual é a solução positiva de $x^2-49=0$?",
+   "options": null,
+   "answer": {
+    "value": "7",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "x² = 49 → x = ±7; a positiva é 7.",
+   "steps": [
+    "x² = 49."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "equacoes.segundo_incompletas",
+   "statement": "Qual é a solução positiva de $3x^2=27$?",
+   "options": null,
+   "answer": {
+    "value": "3",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "x² = 9 → x = ±3.",
+   "steps": [
+    "Divide por 3."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "equacoes.segundo_incompletas",
+   "statement": "Qual é a solução diferente de 0 de $x^2+4x=0$?",
+   "options": null,
+   "answer": {
+    "value": "-4",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "x(x + 4) = 0 → x = 0 ou x = −4.",
+   "steps": [
+    "Põe x em evidência."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "equacoes.segundo_incompletas",
+   "statement": "Qual é a solução positiva de $2x^2-50=0$?",
+   "options": null,
+   "answer": {
+    "value": "5",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "x² = 25 → x = ±5.",
+   "steps": [
+    "Divide por 2."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "equacoes.segundo_incompletas",
+   "statement": "Qual é a solução diferente de 0 de $x^2-9x=0$?",
+   "options": null,
+   "answer": {
+    "value": "9",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "x(x − 9) = 0 → x = 9.",
+   "steps": [
+    "Evidência: x."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "equacoes.segundo_incompletas",
+   "statement": "Qual é a solução diferente de 0 de $5x^2=20x$?",
+   "options": null,
+   "answer": {
+    "value": "4",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "5x² − 20x = 0 → 5x(x − 4) = 0 → x = 4.",
+   "steps": [
+    "Passa tudo para um lado.",
+    "Evidência: 5x."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "equacoes.segundo_incompletas",
+   "statement": "Resolve $\\dfrac{x^2}{4}=9$ e indica a solução positiva.",
+   "options": null,
+   "answer": {
+    "value": "6",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "x² = 36 → x = ±6.",
+   "steps": [
+    "Multiplica por 4."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "equacoes.segundo_incompletas",
+   "statement": "Qual é a soma das soluções de $x^2-16=0$?",
+   "options": null,
+   "answer": {
+    "value": "0",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "As soluções são 4 e −4; soma 0.",
+   "steps": [
+    "x = ±4."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "equacoes.segundo_incompletas",
+   "statement": "Um quadrado tem 169 cm² de área. Qual é o lado, em cm?",
+   "options": null,
+   "answer": {
+    "value": "13",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "l² = 169 → l = 13 (só vale a solução positiva).",
+   "steps": [
+    "Lado positivo."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "equacoes.segundo_incompletas",
+   "statement": "A equação $x^2+9=0$ não tem soluções reais.",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "x² = −9 e nenhum número real ao quadrado é negativo.",
+   "steps": [
+    "x² ≥ 0."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 3,
+   "competency": "equacoes.segundo_incompletas",
+   "statement": "Para resolver $x^2-7x=0$ o método mais rápido é:",
+   "options": [
+    {
+     "id": "a",
+     "label": "Pôr $x$ em evidência: $x(x-7)=0$"
+    },
+    {
+     "id": "b",
+     "label": "Aplicar só a raiz quadrada: $x=\\sqrt7$"
+    },
+    {
+     "id": "c",
+     "label": "Dividir por $x$ (perdendo a solução 0)"
+    },
+    {
+     "id": "d",
+     "label": "Somar 7 aos dois membros"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "Produto nulo: x = 0 ou x = 7. Dividir por x perderia a solução x = 0.",
+   "steps": [
+    "Lei do anulamento do produto."
+   ]
+  }
+ ]
+}

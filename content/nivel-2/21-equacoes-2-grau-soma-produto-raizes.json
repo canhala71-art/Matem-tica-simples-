@@ -1,0 +1,214 @@
+{
+ "subject": "equacoes",
+ "topic_title": "Equações do 2.º grau",
+ "topic_slug": "equacoes-2-grau",
+ "lesson_title": "Relação entre os coeficientes e as raízes: soma e produto",
+ "lesson_slug": "equacoes-2-grau-soma-produto-raizes",
+ "summary": "Usa a soma e o produto das raízes para resolver, verificar e construir equações do 2.º grau.",
+ "minutes": 30,
+ "blocks": {
+  "introduction": "**Objetivos:** relacionar coeficientes e raízes, usar soma e produto para verificar soluções e construir equações do 2.º grau. **Pré-requisitos:** fórmula resolvente e equações do 2.º grau.\n\nSe souberes que dois números têm soma 12 e produto 35, descobres-os sem fórmula nenhuma: pensas em 5 e 7. Esta ideia tem uma forma geral muito poderosa.",
+  "intuition": "Se $x_1$ e $x_2$ são as raízes de $ax^2+bx+c=0$ ($a\\ne0$, $\\Delta\\ge0$), então:\n\n$$S=x_1+x_2=-\\frac{b}{a}\\qquad P=x_1\\times x_2=\\frac{c}{a}$$\n\nSão as **relações de Vieta** (ou entre coeficientes e raízes). Porquê? Se as raízes são $x_1$ e $x_2$, a equação (com $a=1$) escreve-se $(x-x_1)(x-x_2)=0$, ou seja, $x^2-(x_1+x_2)x+x_1x_2=0$.\n\n**Verificar soluções:** em $x^2-5x+6=0$, as raízes 2 e 3 têm soma 5 e produto 6 ✓.\n\n**Encontrar a outra raiz:** se sabes uma raiz, usa a soma ou o produto. Em $x^2-9x+20=0$ com raiz 4, a outra é $9-4=5$.\n\n**Construir uma equação** a partir das raízes: $x^2-Sx+P=0$. Raízes $4$ e $-1$: $S=3$, $P=-4$, equação $x^2-3x-4=0$.\n\n**Resolver por «pensar em dois números»:** se $a=1$, procura dois números de soma $-b$ e produto $c$. Em $x^2-12x+35=0$: soma 12, produto 35, logo 5 e 7.\n\n**Problemas:** perímetro 30 m e área 56 m². Semiperímetro $=15$ é a soma dos lados e 56 é o produto: lados 7 e 8.\n\n**Sinais úteis:** se $P>0$ as raízes têm o mesmo sinal; se $P<0$ têm sinais contrários.\n\n**Erros comuns:** trocar o sinal da soma ($S=\\frac{b}{a}$ ✗); aplicar a relações quando $\\Delta<0$; esquecer de dividir por $a$.",
+  "definition": "As **relações de Vieta**: $x_1+x_2=-\\frac{b}{a}$ e $x_1x_2=\\frac{c}{a}$. A equação com raízes $x_1$ e $x_2$ é $x^2-Sx+P=0$.",
+  "formulas": "$$S=-\\frac{b}{a}\\qquad P=\\frac{c}{a}\\qquad x^2-Sx+P=0$$\n\n$a,b,c$: coeficientes ($a\\ne0$); $S$: soma das raízes; $P$: produto das raízes.",
+  "worked_example": "**Exemplo 1.** $x^2-7x+10=0$: $S=7$, $P=10$; raízes 2 e 5.\n\n**Exemplo 2.** $2x^2-6x+4=0$: $S=3$, $P=2$; raízes 1 e 2.\n\n**Exemplo 3.** Raiz 2 em $x^2-5x+k=0$: $4-10+k=0$, $k=6$ (outra raiz: 3).\n\n**Exemplo 4.** Soma 12 e produto 35: raízes de $x^2-12x+35=0$, 5 e 7.\n\n**Exemplo 5.** Raízes 4 e $-1$: $S=3$, $P=-4$; $x^2-3x-4=0$.\n\n**Exemplo 6.** Retângulo de perímetro 30 e área 56: lados 7 e 8.",
+  "guided_exercise": "Resolve connosco: **uma raiz de $x^2-9x+20=0$ é 4. Qual é a outra e confirma com o produto?**\n\n1) $S=9$, logo a outra raiz é $9-4=5$.\n\n2) Confirma com o produto: $P=\\frac{20}{1}=20$ e $4\\times5=20$ ✓.\n\n3) Equação reconstruída: $x^2-9x+20=0$ ✓.",
+  "independent_exercise": "Chegou a tua vez. Resolve os exercícios sem pressa e usa **Verificar** para confirmar. Se errares, não faz mal: lê a resolução passo a passo, percebe onde o raciocínio escorregou e tenta outra vez. É assim que se aprende de verdade.",
+  "challenge": "**Desafio.** Sem resolver, calcula $x_1^2+x_2^2$ para as raízes de $x^2-5x+6=0$ usando $x_1^2+x_2^2=S^2-2P$. Confirma com as raízes 2 e 3.",
+  "assessment": "Consideras a competência dominada quando consegues: (1) calcular soma e produto a partir dos coeficientes; (2) encontrar a outra raiz; (3) construir a equação a partir das raízes; (4) resolver «dois números» por soma e produto; (5) aplicar a problemas com retângulos."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "equacoes.soma_produto",
+   "statement": "Qual é a soma das raízes de $x^2-7x+10=0$?",
+   "options": null,
+   "answer": {
+    "value": "7",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "S = −b/a = 7.",
+   "steps": [
+    "S = −b/a."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "equacoes.soma_produto",
+   "statement": "Qual é o produto das raízes de $x^2-7x+10=0$?",
+   "options": null,
+   "answer": {
+    "value": "10",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "P = c/a = 10.",
+   "steps": [
+    "P = c/a."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "equacoes.soma_produto",
+   "statement": "As raízes são 3 e 5. Qual é a soma?",
+   "options": null,
+   "answer": {
+    "value": "8",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "3 + 5 = 8.",
+   "steps": [
+    "Soma."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "equacoes.soma_produto",
+   "statement": "Qual é o produto das raízes de $2x^2-6x+4=0$?",
+   "options": null,
+   "answer": {
+    "value": "2",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "P = c/a = 4/2 = 2.",
+   "steps": [
+    "a = 2, c = 4."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "equacoes.soma_produto",
+   "statement": "Uma raiz de $x^2-5x+k=0$ é 2. Quanto vale $k$?",
+   "options": null,
+   "answer": {
+    "value": "6",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "4 − 10 + k = 0 → k = 6 (a outra raiz é 3).",
+   "steps": [
+    "Substitui x = 2."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "equacoes.soma_produto",
+   "statement": "Dois números têm soma 12 e produto 35. Qual é o maior?",
+   "options": null,
+   "answer": {
+    "value": "7",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "São raízes de x² − 12x + 35 = 0: 5 e 7.",
+   "steps": [
+    "S = 12, P = 35.",
+    "Procura dois números."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "equacoes.soma_produto",
+   "statement": "Uma raiz de $x^2-9x+20=0$ é 4. Qual é a outra?",
+   "options": null,
+   "answer": {
+    "value": "5",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Soma 9 → a outra é 9 − 4 = 5.",
+   "steps": [
+    "Usa a soma."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "equacoes.soma_produto",
+   "statement": "Um retângulo tem perímetro 30 m e área 56 m². Qual é o maior lado, em m?",
+   "options": null,
+   "answer": {
+    "value": "8",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Semiperímetro 15 e área 56: lados raízes de x² − 15x + 56 = 0 → 7 e 8.",
+   "steps": [
+    "Soma 15, produto 56."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "equacoes.soma_produto",
+   "statement": "Constrói a equação $x^2+bx+c=0$ com raízes $-2$ e $6$. Quanto vale $c$?",
+   "options": null,
+   "answer": {
+    "value": "-12",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "P = (−2)(6) = −12; S = 4 → x² − 4x − 12 = 0. c = −12.",
+   "steps": [
+    "P = c."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "equacoes.soma_produto",
+   "statement": "Na equação $ax^2+bx+c=0$ ($a\\ne0$, $\\Delta\\ge0$) a soma das raízes é $-\\frac{b}{a}$.",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "É a relação de Vieta: S = −b/a e P = c/a.",
+   "steps": [
+    "Relações de Vieta."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 3,
+   "competency": "equacoes.soma_produto",
+   "statement": "A equação com raízes 4 e −1 é:",
+   "options": [
+    {
+     "id": "a",
+     "label": "$x^2-3x-4=0$"
+    },
+    {
+     "id": "b",
+     "label": "$x^2+3x-4=0$"
+    },
+    {
+     "id": "c",
+     "label": "$x^2-3x+4=0$"
+    },
+    {
+     "id": "d",
+     "label": "$x^2+3x+4=0$"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "S = 3, P = −4: x² − Sx + P = x² − 3x − 4.",
+   "steps": [
+    "x² − Sx + P = 0."
+   ]
+  }
+ ]
+}

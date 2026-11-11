@@ -1,0 +1,233 @@
+{
+ "subject": "equacoes",
+ "topic_title": "Equações literais",
+ "topic_slug": "equacoes-literais",
+ "lesson_title": "Equações literais e fórmulas",
+ "lesson_slug": "equacoes-literais-formulas",
+ "summary": "Isola uma variável numa fórmula e calcula valores por substituição.",
+ "minutes": 25,
+ "blocks": {
+  "introduction": "**Objetivos:** resolver equações literais (em ordem a uma letra), isolar variáveis em fórmulas e substituir valores. **Pré-requisitos:** equações do 1.º grau e fórmulas elementares.\n\nEm ciência e na vida usamos fórmulas: velocidade, área, temperatura. Muitas vezes queremos a fórmula «virada» de outra maneira. Isso é resolver uma equação literal.",
+  "intuition": "Uma **equação literal** tem **letras** com valor genérico (parâmetros) além da incógnita. **Resolver em ordem a $x$** é isolar $x$ num membro, tratando as outras letras como se fossem números.\n\nExemplo: de $v=\\frac{d}{t}$ queremos $d$. Multiplicamos os dois membros por $t$ ($t\\ne0$): $d=v\\,t$. Queremos $t$? $t=\\frac{d}{v}$ ($v\\ne0$).\n\n**Método:** usa as **operações inversas**, pela ordem inversa das operações da fórmula. Em $F=\\frac{9}{5}C+32$: primeiro subtrai 32, depois multiplica por $\\frac{5}{9}$: $C=\\frac{5}{9}(F-32)$.\n\n**Fórmulas úteis:**\n\n- Perímetro do retângulo: $P=2(a+b)$ ⇒ $b=\\frac{P}{2}-a$.\n- Área do triângulo: $A=\\frac{bh}{2}$ ⇒ $h=\\frac{2A}{b}$.\n- Posição: $s=s_0+vt$ ⇒ $t=\\frac{s-s_0}{v}$.\n- Circunferência: $P=2\\pi r$ ⇒ $r=\\frac{P}{2\\pi}$.\n\n**Cuidado:** só divides por uma letra se ela for diferente de zero. Escreve essa **condição**.\n\n**Substituição:** depois de isolar, substitui as letras conhecidas e calcula. Ou substitui primeiro e resolve a equação numérica: o resultado é o mesmo.\n\n**Erros comuns:** isolar sem respeitar a ordem das operações; esquecer de dividir **todos** os termos; ignorar as condições (divisão por zero).",
+  "definition": "Uma **equação literal** é uma equação com letras além da incógnita; **resolver em ordem a $x$** é isolar $x$ usando os princípios de equivalência.",
+  "formulas": "$$d=vt\\quad t=\\frac{d}{v}\\quad b=\\frac{2A}{h}\\quad C=\\frac{5}{9}(F-32)\\quad x=\\frac{c-b}{a}\\ (ax+b=c,\\ a\\neq0)$$",
+  "worked_example": "**Exemplo 1.** De $v=\\frac{d}{t}$: $d=vt$; com $v=80$ e $t=3$: $d=240$.\n\n**Exemplo 2.** De $P=2(a+b)$: $b=\\frac{P}{2}-a$; com $P=30$, $a=9$: $b=6$.\n\n**Exemplo 3.** De $A=\\frac{bh}{2}$: $h=\\frac{2A}{b}$; com $A=30$ e $b=10$: $h=6$.\n\n**Exemplo 4.** De $F=\\frac{9}{5}C+32$: $C=\\frac{5}{9}(F-32)$; com $F=95$: $C=35$.\n\n**Exemplo 5.** De $ax+b=c$: $x=\\frac{c-b}{a}$; com $a=3,b=5,c=26$: $x=7$.\n\n**Exemplo 6.** De $s=s_0+vt$: $t=\\frac{s-s_0}{v}$; com $s=150$, $s_0=30$, $v=20$: $t=6$.",
+  "guided_exercise": "Resolve connosco: **resolve $S=\\frac{n(a+l)}{2}$ em ordem a $l$ e calcula $l$ para $S=120$, $n=10$, $a=3$.**\n\n1) Multiplica por 2: $2S=n(a+l)$.\n\n2) Divide por $n$ ($n\\ne0$): $\\frac{2S}{n}=a+l$.\n\n3) Subtrai $a$: $l=\\frac{2S}{n}-a$.\n\n4) Substitui: $l=\\frac{240}{10}-3=21$ ✓.",
+  "independent_exercise": "Chegou a tua vez. Resolve os exercícios sem pressa e usa **Verificar** para confirmar. Se errares, não faz mal: lê a resolução passo a passo, percebe onde o raciocínio escorregou e tenta outra vez. É assim que se aprende de verdade.",
+  "challenge": "**Desafio.** Da fórmula da energia $E=\\frac{1}{2}mv^2$, isola $m$ e isola $v^2$. Calcula $m$ para $E=400$ e $v=4$. Escreve as condições para as divisões.",
+  "assessment": "Consideras a competência dominada quando consegues: (1) isolar uma variável numa fórmula; (2) respeitar a ordem inversa das operações; (3) escrever condições de existência; (4) substituir valores e calcular; (5) verificar o resultado."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "equacoes.literais",
+   "statement": "Da fórmula $v=\\dfrac{d}{t}$, isola $d$: $d=v\\,t$. Calcula $d$ quando $v=80$ e $t=3$.",
+   "options": null,
+   "answer": {
+    "value": "240",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "d = 80 × 3 = 240.",
+   "steps": [
+    "Multiplica os dois membros por t."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "equacoes.literais",
+   "statement": "Da fórmula $P=2(a+b)$ (perímetro do retângulo), calcula $b$ se $P=30$ e $a=9$.",
+   "options": null,
+   "answer": {
+    "value": "6",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "P/2 = a + b → 15 = 9 + b → b = 6.",
+   "steps": [
+    "Divide por 2.",
+    "Subtrai a."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "equacoes.literais",
+   "statement": "Na fórmula $A=b\\times h$, calcula $h$ quando $A=48$ e $b=6$.",
+   "options": null,
+   "answer": {
+    "value": "8",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "h = A/b = 8.",
+   "steps": [
+    "Divide por b."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "equacoes.literais",
+   "statement": "Da fórmula $A=\\dfrac{b\\,h}{2}$, calcula $h$ para $A=30$ e $b=10$.",
+   "options": null,
+   "answer": {
+    "value": "6",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "2A = bh → h = 60 ÷ 10 = 6.",
+   "steps": [
+    "Multiplica por 2.",
+    "Divide por b."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "equacoes.literais",
+   "statement": "Da fórmula $F=\\dfrac{9}{5}C+32$, calcula $C$ para $F=95$.",
+   "options": null,
+   "answer": {
+    "value": "35",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "F − 32 = 63 = 9C/5 → C = 63 × 5 ÷ 9 = 35.",
+   "steps": [
+    "Subtrai 32.",
+    "Multiplica por 5/9."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "equacoes.literais",
+   "statement": "Resolve em ordem a $x$ a equação $ax+b=c$ e calcula $x$ com $a=3$, $b=5$, $c=26$.",
+   "options": null,
+   "answer": {
+    "value": "7",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "x = (c − b)/a = 21/3 = 7.",
+   "steps": [
+    "Isola x."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "equacoes.literais",
+   "statement": "Da fórmula do perímetro da circunferência $P=2\\pi r$, determina $r$ para $P=62{,}8$ (usa $\\pi=3{,}14$).",
+   "options": null,
+   "answer": {
+    "value": "10",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "r = P/(2π) = 62,8 ÷ 6,28 = 10.",
+   "steps": [
+    "2π = 6,28.",
+    "Divide."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "equacoes.literais",
+   "statement": "Da fórmula $S=\\dfrac{n(a_1+a_n)}{2}$ (soma de n termos de uma sequência), calcula $a_n$ para $S=120$, $n=10$ e $a_1=3$.",
+   "options": null,
+   "answer": {
+    "value": "21",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "2S/n = a₁ + aₙ → 24 = 3 + aₙ → aₙ = 21.",
+   "steps": [
+    "Multiplica por 2 e divide por n."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "equacoes.literais",
+   "statement": "De $\\dfrac{1}{R}=\\dfrac{1}{R_1}+\\dfrac{1}{R_2}$, calcula $R$ para $R_1=6$ e $R_2=3$.",
+   "options": null,
+   "answer": {
+    "value": "2",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "1/R = 1/6 + 1/3 = 1/2 → R = 2.",
+   "steps": [
+    "mmc 6."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "equacoes.literais",
+   "statement": "Da fórmula $s=s_0+vt$, calcula $t$ para $s=150$, $s_0=30$ e $v=20$.",
+   "options": null,
+   "answer": {
+    "value": "6",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "t = (s − s₀)/v = 120 ÷ 20 = 6.",
+   "steps": [
+    "Isola t."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "equacoes.literais",
+   "statement": "Resolver a fórmula $A=\\frac{bh}{2}$ em ordem a $b$ dá $b=\\frac{2A}{h}$ (com $h\\ne0$).",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "Multiplica por 2 e divide por h.",
+   "steps": [
+    "Isola b."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 3,
+   "competency": "equacoes.literais",
+   "statement": "Resolvendo $y=mx+k$ em ordem a $x$ ($m\\ne0$) obtém-se:",
+   "options": [
+    {
+     "id": "a",
+     "label": "$x=\\dfrac{y-k}{m}$"
+    },
+    {
+     "id": "b",
+     "label": "$x=\\dfrac{y+k}{m}$"
+    },
+    {
+     "id": "c",
+     "label": "$x=m(y-k)$"
+    },
+    {
+     "id": "d",
+     "label": "$x=\\dfrac{m}{y-k}$"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "Subtrai k aos dois membros e divide por m.",
+   "steps": [
+    "Operações inversas."
+   ]
+  }
+ ]
+}

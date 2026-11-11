@@ -1,0 +1,231 @@
+{
+ "subject": "equacoes",
+ "topic_title": "Problemas com equações",
+ "topic_slug": "equacoes-problemas",
+ "lesson_title": "Problemas que conduzem a equações do 1.º grau",
+ "lesson_slug": "equacoes-problemas-1-grau",
+ "summary": "Traduz problemas em equações, resolve-as e interpreta a solução no contexto.",
+ "minutes": 35,
+ "blocks": {
+  "introduction": "**Objetivos:** traduzir problemas para a linguagem algébrica, resolver a equação e interpretar e verificar a solução no contexto. **Pré-requisitos:** equações do 1.º grau (parênteses e frações).\n\nA maior utilidade das equações é resolver problemas. O difícil não é resolver a equação, é montá-la bem. Esta aula ensina a traduzir palavras em símbolos.",
+  "intuition": "**Método em 6 passos:**\n\n1) **Ler** o problema até ao fim e perceber o que se pede.\n\n2) **Escolher a incógnita** e escrever o seu significado com a unidade: «$x$ = idade do filho, em anos».\n\n3) **Exprimir** as outras grandezas em função de $x$.\n\n4) **Escrever a equação** traduzindo a frase que dá a igualdade.\n\n5) **Resolver** a equação.\n\n6) **Interpretar e verificar:** a solução tem sentido (por exemplo, idade positiva)? Satisfaz o enunciado original?\n\n**Dicionário de tradução:**\n\n- «o dobro de $x$»: $2x$; «o triplo»: $3x$; «a metade»: $\\frac{x}{2}$.\n- «$x$ mais 5»: $x+5$; «5 a mais que $x$»: $x+5$; «5 a menos que $x$»: $x-5$.\n- «números consecutivos»: $x$, $x+1$, $x+2$; «pares consecutivos»: $x$, $x+2$.\n- «a soma é 41»: $x+(41-x)$ ou duas letras com $=41$.\n- «excede em 6»: $x+6$.\n\n**Exemplo:** táxi com bandeirada de 500 Kz e 150 Kz por km. Corrida de 2 750 Kz: $500+150x=2\\,750$, $x=15$ km.\n\n**Exemplo com movimento:** dois comboios que se aproximam: as distâncias somam. $70t+50t=360$, $t=3$ h.\n\n**Exemplo de «pensei num número»:** resolve por operações inversas ou com equação: $3(x+8)-10=47$.\n\n**Verificação final:** substitui a solução no **enunciado** (não só na equação): se a equação estiver mal montada, o enunciado denuncia o erro.\n\n**Erros comuns:** escolher mal a incógnita; traduzir «5 a menos que $x$» como $5-x$; esquecer de responder com a unidade.",
+  "definition": "**Resolver um problema por equação**: escolher incógnita, traduzir em equação, resolver, interpretar e verificar no enunciado.",
+  "formulas": "$$\\text{dobro: }2x\\quad\\text{consecutivos: }x,\\,x+1\\quad\\text{distância}=\\text{velocidade}\\times\\text{tempo}\\quad\\text{custo}=\\text{fixo}+\\text{unitário}\\times n$$",
+  "worked_example": "**Exemplo 1.** O triplo de um número mais 5 é 26: $3x+5=26$, $x=7$.\n\n**Exemplo 2.** Dois números consecutivos com soma 41: $2x+1=41$, $x=20$.\n\n**Exemplo 3.** Caderno = 2 × caneta; juntos 900 Kz: $3x=900$, caneta 300 Kz.\n\n**Exemplo 4.** Perímetro 52 cm, comprimento = largura + 6: $4x+12=52$, $x=10$ cm.\n\n**Exemplo 5.** Táxi: $500+150x=2\\,750$, $x=15$ km.\n\n**Exemplo 6.** Comboios que se cruzam: $70t+50t=360$, $t=3$ h.",
+  "guided_exercise": "Resolve connosco: **dois irmãos têm 66 000 Kz juntos. Se o mais velho der 6 000 Kz ao mais novo, ficam com o mesmo. Quanto tem cada um?**\n\n1) $x$ = Kz do mais velho; o mais novo tem $66\\,000-x$.\n\n2) Depois da transferência: $x-6\\,000=(66\\,000-x)+6\\,000$.\n\n3) $2x=78\\,000$, $x=39\\,000$.\n\n4) O mais novo tem $27\\,000$. Verifica: $39\\,000-6\\,000=33\\,000=27\\,000+6\\,000$ ✓.",
+  "independent_exercise": "Chegou a tua vez. Resolve os exercícios sem pressa e usa **Verificar** para confirmar. Se errares, não faz mal: lê a resolução passo a passo, percebe onde o raciocínio escorregou e tenta outra vez. É assim que se aprende de verdade.",
+  "challenge": "**Desafio.** Um trabalhador ganha 4 500 Kz por dia e perde 1 000 Kz por cada dia que falta. Em 20 dias recebeu 70 000 Kz. Em quantos dias faltou? Monta a equação e verifica.",
+  "assessment": "Consideras a competência dominada quando consegues: (1) escolher e definir a incógnita; (2) traduzir frases em expressões; (3) montar e resolver a equação; (4) interpretar a solução com unidades; (5) verificar no enunciado."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "equacoes.problemas",
+   "statement": "O triplo de um número, mais 5, é igual a 26. Qual é o número?",
+   "options": null,
+   "answer": {
+    "value": "7",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "3x + 5 = 26 → x = 7.",
+   "steps": [
+    "Traduz: 3x + 5 = 26."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "equacoes.problemas",
+   "statement": "A soma de dois números consecutivos é 41. Qual é o menor?",
+   "options": null,
+   "answer": {
+    "value": "20",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "x + (x+1) = 41 → 2x = 40 → x = 20.",
+   "steps": [
+    "Consecutivos: x e x + 1."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "equacoes.problemas",
+   "statement": "Um caderno custa o dobro de uma caneta. Juntos custam 900 Kz. Quanto custa a caneta, em Kz?",
+   "options": null,
+   "answer": {
+    "value": "300",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "x + 2x = 900 → x = 300.",
+   "steps": [
+    "Caneta x, caderno 2x."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "equacoes.problemas",
+   "statement": "Ana tem o triplo da idade do filho e a diferença das idades é 24 anos. Quantos anos tem o filho?",
+   "options": null,
+   "answer": {
+    "value": "12",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "3x − x = 24 → x = 12.",
+   "steps": [
+    "Filho x; Ana 3x."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "equacoes.problemas",
+   "statement": "O perímetro de um retângulo é 52 cm e o comprimento excede a largura em 6 cm. Qual é a largura, em cm?",
+   "options": null,
+   "answer": {
+    "value": "10",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "2(x + x + 6) = 52 → 4x + 12 = 52 → x = 10.",
+   "steps": [
+    "Largura x; comprimento x + 6."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "equacoes.problemas",
+   "statement": "Um táxi cobra 500 Kz de bandeirada mais 150 Kz por km. Quantos km se percorreram se a corrida custou 2 750 Kz?",
+   "options": null,
+   "answer": {
+    "value": "15",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "500 + 150x = 2 750 → x = 15.",
+   "steps": [
+    "500 + 150x."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "equacoes.problemas",
+   "statement": "Num mercado, comprei 3 kg de feijão e 2 kg de arroz por 5 100 Kz. O arroz custa 900 Kz/kg. Quanto custa 1 kg de feijão, em Kz?",
+   "options": null,
+   "answer": {
+    "value": "1100",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "3x + 1 800 = 5 100 → 3x = 3 300 → x = 1 100.",
+   "steps": [
+    "2 × 900 = 1 800."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "equacoes.problemas",
+   "statement": "Dois irmãos têm juntos 66 000 Kz. Se o mais velho der 6 000 Kz ao mais novo, ficam com o mesmo valor. Quanto tem o mais velho, em Kz?",
+   "options": null,
+   "answer": {
+    "value": "39000",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "x − 6 000 = (66 000 − x) + 6 000 → 2x = 78 000 → x = 39 000.",
+   "steps": [
+    "Mais velho x; mais novo 66 000 − x.",
+    "Equilíbrio depois da transferência."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "equacoes.problemas",
+   "statement": "Dois comboios partem ao mesmo tempo de cidades distantes 360 km, um contra o outro, a 70 km/h e 50 km/h. Ao fim de quantas horas se cruzam?",
+   "options": null,
+   "answer": {
+    "value": "3",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "70t + 50t = 360 → 120t = 360 → t = 3 h.",
+   "steps": [
+    "Distâncias somam 360."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "equacoes.problemas",
+   "statement": "Pensei num número; adicionei-lhe 8, multipliquei o resultado por 3 e subtraí 10, obtendo 47. Qual era o número?",
+   "options": null,
+   "answer": {
+    "value": "11",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "3(x + 8) − 10 = 47 → 3x + 24 = 57 → x = 11.",
+   "steps": [
+    "Inverte as operações.",
+    "47 + 10 = 57."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "equacoes.problemas",
+   "statement": "Em «a soma de três números consecutivos é 72», o menor é 23.",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "x + (x+1) + (x+2) = 72 → 3x = 69 → x = 23.",
+   "steps": [
+    "3x + 3 = 72."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "equacoes.problemas",
+   "statement": "Qual é a equação do problema «o dobro de um número menos 7 é igual ao número mais 5»?",
+   "options": [
+    {
+     "id": "a",
+     "label": "$2x-7=x+5$"
+    },
+    {
+     "id": "b",
+     "label": "$2(x-7)=x+5$"
+    },
+    {
+     "id": "c",
+     "label": "$2x-7=5x$"
+    },
+    {
+     "id": "d",
+     "label": "$x-7=2x+5$"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "Dobro de x: 2x; menos 7: 2x − 7; igual a x + 5.",
+   "steps": [
+    "Traduz frase a frase."
+   ]
+  }
+ ]
+}

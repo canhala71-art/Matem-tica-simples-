@@ -1,0 +1,213 @@
+{
+ "subject": "equacoes",
+ "topic_title": "Conceitos",
+ "topic_slug": "conceitos-equacoes",
+ "lesson_title": "Igualdades, equações e princípios de equivalência",
+ "lesson_slug": "equacoes-conceito-principios-equivalencia",
+ "summary": "Compreende o que é uma equação, os seus membros e solução, e usa os princípios de equivalência.",
+ "minutes": 25,
+ "blocks": {
+  "introduction": "**Objetivos:** distinguir igualdade e equação, identificar incógnita, membros e solução e aplicar os princípios de equivalência. **Pré-requisitos:** operações com inteiros e racionais.\n\nUma balança em equilíbrio é a melhor imagem de uma equação: o que fazes de um lado tens de fazer do outro para manter o equilíbrio.",
+  "intuition": "Uma **igualdade** liga duas expressões com o sinal $=$: $2+3=5$ (verdadeira) ou $2+3=6$ (falsa). Uma **equação** é uma igualdade com pelo menos uma **incógnita** (valor desconhecido, normalmente $x$). Em $3x+2=11$, $3x+2$ é o **1.º membro** e $11$ é o **2.º membro**. A **solução** (ou raiz) é o valor que torna a igualdade verdadeira: $x=3$, porque $3\\times3+2=11$.\n\n**Resolver** uma equação é encontrar todas as suas soluções. Para verificar, substituímos a solução na equação original.\n\n**Equações equivalentes** têm as mesmas soluções: $x+3=7$ e $2x=8$ têm ambas $x=4$.\n\n**Princípio da adição:** somar (ou subtrair) o mesmo número aos dois membros dá uma equação equivalente. É por isso que «passamos» termos para o outro lado trocando o sinal: $x+9=21\\Rightarrow x=21-9$.\n\n**Princípio da multiplicação:** multiplicar (ou dividir) os dois membros pelo mesmo número **diferente de zero** dá uma equação equivalente. $5x=45\\Rightarrow x=9$.\n\n**Estratégia:** (1) juntar os termos com $x$ de um lado e os números do outro; (2) simplificar; (3) dividir pelo coeficiente de $x$; (4) verificar.\n\nExemplo: $4x+6=2x+18\\Rightarrow4x-2x=18-6\\Rightarrow2x=12\\Rightarrow x=6$. Verificação: $4\\times6+6=30$ e $2\\times6+18=30$ ✓.\n\n**Tipos de resultado:** pode haver **uma solução** (normal), **nenhuma** (equação impossível, como $x+1=x+2$) ou **infinitas** (equação possível indeterminada, como $x+1=x+1$).\n\n**Erros comuns:** mudar o sinal só de um termo; fazer uma operação num só membro; dividir por $x$; não verificar.",
+  "definition": "Uma **equação** é uma igualdade com incógnita. **Solução** é o valor da incógnita que a verifica. Duas equações são **equivalentes** se têm as mesmas soluções.",
+  "formulas": "$$a=b\\iff a+c=b+c\\qquad a=b\\iff ac=bc\\ (c\\neq0)$$\n\nEquação do 1.º grau: $ax+b=0\\Rightarrow x=-\\dfrac{b}{a}$ ($a\\ne0$).",
+  "worked_example": "**Exemplo 1.** $x+9=21$: $x=21-9=12$.\n\n**Exemplo 2.** $5x=45$: $x=45\\div5=9$.\n\n**Exemplo 3.** $3x-7=14$: $3x=21$, $x=7$ (verificação: $21-7=14$ ✓).\n\n**Exemplo 4.** $4x+6=2x+18$: $2x=12$, $x=6$.\n\n**Exemplo 5.** $9x-4=5x+20$: $4x=24$, $x=6$.\n\n**Exemplo 6.** $10-3x=x-6$: $16=4x$, $x=4$.",
+  "guided_exercise": "Resolve connosco: **$7x-5=3x+11$.**\n\n1) Passa os termos com $x$ para a esquerda e os números para a direita: $7x-3x=11+5$.\n\n2) Simplifica: $4x=16$.\n\n3) Divide por 4: $x=4$.\n\n4) Verifica: $7\\times4-5=23$ e $3\\times4+11=23$ ✓.",
+  "independent_exercise": "Chegou a tua vez. Resolve os exercícios sem pressa e usa **Verificar** para confirmar. Se errares, não faz mal: lê a resolução passo a passo, percebe onde o raciocínio escorregou e tenta outra vez. É assim que se aprende de verdade.",
+  "challenge": "**Desafio.** Cria uma equação com solução $x=5$ que tenha $x$ nos dois membros. Depois cria uma sem solução e outra com infinitas soluções e explica porquê.",
+  "assessment": "Consideras a competência dominada quando consegues: (1) distinguir igualdade e equação; (2) nomear membros, incógnita e solução; (3) aplicar os dois princípios de equivalência; (4) verificar soluções; (5) reconhecer equações impossíveis e indeterminadas."
+ },
+ "exercises": [
+  {
+   "type": "true_false",
+   "difficulty": 1,
+   "competency": "equacoes.conceito",
+   "statement": "A igualdade $3x+2=11$ é uma equação com incógnita $x$.",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "Uma equação é uma igualdade com pelo menos uma incógnita.",
+   "steps": [
+    "Há um x desconhecido."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "equacoes.conceito",
+   "statement": "Qual é a solução de $x+9=21$?",
+   "options": null,
+   "answer": {
+    "value": "12",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Subtrai 9 aos dois membros: x = 21 − 9 = 12.",
+   "steps": [
+    "Operação inversa da soma."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "equacoes.conceito",
+   "statement": "Qual é a solução de $5x=45$?",
+   "options": null,
+   "answer": {
+    "value": "9",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Divide os dois membros por 5: x = 9.",
+   "steps": [
+    "Operação inversa do produto."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "equacoes.conceito",
+   "statement": "O número 4 é solução da equação $2x-3=5$.",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "2·4 − 3 = 5 ✓.",
+   "steps": [
+    "Substitui x por 4."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "equacoes.conceito",
+   "statement": "As equações $x+3=7$ e $2x=8$ são equivalentes.",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "Ambas têm como única solução x = 4.",
+   "steps": [
+    "Resolve as duas."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "equacoes.conceito",
+   "statement": "Resolve $3x-7=14$.",
+   "options": null,
+   "answer": {
+    "value": "7",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "3x = 21, logo x = 7. Verificação: 3·7 − 7 = 14 ✓.",
+   "steps": [
+    "Soma 7: 3x = 21.",
+    "Divide por 3."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "equacoes.conceito",
+   "statement": "Resolve $4x+6=2x+18$.",
+   "options": null,
+   "answer": {
+    "value": "6",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "4x − 2x = 18 − 6 → 2x = 12 → x = 6. Verificação: 30 = 30 ✓.",
+   "steps": [
+    "Passa os x para a esquerda.",
+    "Resolve."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "equacoes.conceito",
+   "statement": "Resolve $9x-4=5x+20$.",
+   "options": null,
+   "answer": {
+    "value": "6",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "9x − 5x = 20 + 4 → 4x = 24 → x = 6. Verificação: 50 = 50 ✓.",
+   "steps": [
+    "Agrupa os termos com x.",
+    "x = 6."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "equacoes.conceito",
+   "statement": "Resolve $10-3x=x-6$.",
+   "options": null,
+   "answer": {
+    "value": "4",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "10 + 6 = x + 3x → 16 = 4x → x = 4. Verificação: −2 = −2 ✓.",
+   "steps": [
+    "Passa 3x para a direita e 6 para a esquerda."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 2,
+   "competency": "equacoes.conceito",
+   "statement": "O princípio da adição diz que, numa equação, podemos:",
+   "options": [
+    {
+     "id": "a",
+     "label": "somar ou subtrair o mesmo número aos dois membros"
+    },
+    {
+     "id": "b",
+     "label": "somar números só ao primeiro membro"
+    },
+    {
+     "id": "c",
+     "label": "dividir por zero"
+    },
+    {
+     "id": "d",
+     "label": "trocar o sinal de um só membro"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "Somar ou subtrair o mesmo valor aos dois membros mantém a igualdade.",
+   "steps": [
+    "Mesmo número, nos dois lados."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 3,
+   "competency": "equacoes.conceito",
+   "statement": "Dividir os dois membros de uma equação por $x$ é sempre permitido.",
+   "options": null,
+   "answer": {
+    "boolean": false
+   },
+   "tolerance": 0,
+   "explanation": "Se x = 0 seria dividir por zero, e podes perder soluções. Só dividimos por números diferentes de zero.",
+   "steps": [
+    "x pode ser 0."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,221 @@
+{
+ "subject": "equacoes",
+ "topic_title": "Equações do 1.º grau",
+ "topic_slug": "equacoes-1-grau",
+ "lesson_title": "Equações com frações e denominadores",
+ "lesson_slug": "equacoes-fracoes-denominadores",
+ "summary": "Resolve equações com denominadores eliminando-os com o mmc.",
+ "minutes": 30,
+ "blocks": {
+  "introduction": "**Objetivos:** eliminar denominadores com o mmc, resolver equações com frações e verificar as soluções. **Pré-requisitos:** frações, mmc, equações com parênteses.\n\nEquações com frações assustam muita gente, mas há um truque simples: multiplicar tudo pelo mmc dos denominadores faz os denominadores desaparecerem.",
+  "intuition": "**Ideia central:** multiplicar os **dois membros** (todos os termos) pelo **mmc dos denominadores**. O resultado é uma equação equivalente sem denominadores.\n\nExemplo: $\\frac{x}{2}+\\frac{x}{3}=10$. mmc$(2,3)=6$. Multiplicamos tudo por 6: $3x+2x=60$, logo $5x=60$ e $x=12$.\n\n**Passos:** (1) calcula o mmc; (2) multiplica **cada termo** pelo mmc (incluindo os inteiros); (3) simplifica; (4) elimina parênteses; (5) agrupa e resolve; (6) verifica.\n\n**Atenção com numeradores com vários termos:** $\\frac{x+1}{2}$ torna-se $3(x+1)$ depois de multiplicar por 6 (mmc de 2 e 3), pois $\\frac{6}{2}=3$. Mantém o parêntese!\n\n**Sinal menos antes de uma fração:** $-\\frac{x+2}{4}$ torna-se $-3(x+2)$ (multiplicando por 12) e depois $-3x-6$. Troca todos os sinais.\n\n**Produto cruzado:** se a equação é só uma fração igual a outra, $\\frac{x}{4}=\\frac{x+3}{6}$, usamos $6x=4(x+3)$.\n\n**Verificação:** substitui a solução e calcula os dois membros com frações.\n\n**Erros comuns:** multiplicar só alguns termos pelo mmc; esquecer o termo sem fração; não manter o parêntese no numerador.",
+  "definition": "**Eliminação de denominadores:** multiplicar todos os termos pelo mmc dos denominadores dá uma equação equivalente, desde que o mmc ≠ 0.",
+  "formulas": "$$\\frac{A}{d_1}+\\frac{B}{d_2}=C\\ \\Longrightarrow\\ \\frac{m}{d_1}A+\\frac{m}{d_2}B=mC,\\qquad m=\\text{mmc}(d_1,d_2)$$",
+  "worked_example": "**Exemplo 1.** $\\frac{x}{3}=5$: $x=15$.\n\n**Exemplo 2.** $\\frac{x}{2}+\\frac{x}{3}=10$: $\\times6$: $3x+2x=60$, $x=12$.\n\n**Exemplo 3.** $\\frac{x+1}{2}=\\frac{x-1}{3}+1$: $\\times6$: $3x+3=2x-2+6$, $x=1$.\n\n**Exemplo 4.** $\\frac{3x}{4}-2=\\frac{x}{2}+1$: $\\times4$: $3x-8=2x+4$, $x=12$.\n\n**Exemplo 5.** $\\frac{x}{4}=\\frac{x+3}{6}$: $6x=4x+12$, $x=6$.\n\n**Exemplo 6.** $\\frac{2x-1}{3}-\\frac{x+2}{4}=1$: $\\times12$: $8x-4-3x-6=12$, $x=\\frac{22}{5}$.",
+  "guided_exercise": "Resolve connosco: **$\\frac{x-1}{2}-\\frac{x}{3}=\\frac{1}{6}$.**\n\n1) mmc$(2,3,6)=6$.\n\n2) $3(x-1)-2x=1$.\n\n3) $3x-3-2x=1$, logo $x-3=1$.\n\n4) $x=4$. Verifica: $\\frac{3}{2}-\\frac{4}{3}=\\frac{9-8}{6}=\\frac{1}{6}$ ✓.",
+  "independent_exercise": "Chegou a tua vez. Resolve os exercícios sem pressa e usa **Verificar** para confirmar. Se errares, não faz mal: lê a resolução passo a passo, percebe onde o raciocínio escorregou e tenta outra vez. É assim que se aprende de verdade.",
+  "challenge": "**Desafio.** Resolve $\\frac{x}{2}-\\frac{x}{3}=\\frac{x}{6}$. O que notas no resultado? Explica porquê.",
+  "assessment": "Consideras a competência dominada quando consegues: (1) calcular o mmc dos denominadores; (2) multiplicar todos os termos pelo mmc; (3) manter parênteses nos numeradores; (4) tratar sinais antes de frações; (5) verificar com frações."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "equacoes.fracoes",
+   "statement": "Resolve $\\dfrac{x}{3}=5$.",
+   "options": null,
+   "answer": {
+    "value": "15",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Multiplica os dois membros por 3: x = 15.",
+   "steps": [
+    "Operação inversa de dividir por 3."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "equacoes.fracoes",
+   "statement": "Resolve $\\dfrac{x}{2}+1=6$.",
+   "options": null,
+   "answer": {
+    "value": "10",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "x/2 = 5 → x = 10.",
+   "steps": [
+    "Subtrai 1.",
+    "Multiplica por 2."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "equacoes.fracoes",
+   "statement": "Resolve $\\dfrac{2x}{5}=4$.",
+   "options": null,
+   "answer": {
+    "value": "10",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "2x = 20 → x = 10.",
+   "steps": [
+    "Multiplica por 5."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "equacoes.fracoes",
+   "statement": "Resolve $\\dfrac{x}{2}+\\dfrac{x}{3}=10$.",
+   "options": null,
+   "answer": {
+    "value": "12",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "mmc(2, 3) = 6: 3x + 2x = 60 → 5x = 60 → x = 12.",
+   "steps": [
+    "Multiplica tudo por 6.",
+    "5x = 60."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "equacoes.fracoes",
+   "statement": "Resolve $\\dfrac{x+1}{2}=\\dfrac{x-1}{3}+1$.",
+   "options": null,
+   "answer": {
+    "value": "1",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Multiplica por 6: 3(x+1) = 2(x−1) + 6 → 3x + 3 = 2x + 4 → x = 1.",
+   "steps": [
+    "mmc = 6.",
+    "Distribui."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "equacoes.fracoes",
+   "statement": "Resolve $\\dfrac{3x}{4}-2=\\dfrac{x}{2}+1$.",
+   "options": null,
+   "answer": {
+    "value": "12",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Multiplica por 4: 3x − 8 = 2x + 4 → x = 12.",
+   "steps": [
+    "mmc = 4.",
+    "x = 12."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "equacoes.fracoes",
+   "statement": "Resolve $\\dfrac{x}{4}=\\dfrac{x+3}{6}$.",
+   "options": null,
+   "answer": {
+    "value": "6",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Produto cruzado: 6x = 4(x + 3) → 2x = 12 → x = 6.",
+   "steps": [
+    "Ou multiplica por 12."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "equacoes.fracoes",
+   "statement": "Resolve $\\dfrac{2x-1}{3}-\\dfrac{x+2}{4}=1$.",
+   "options": null,
+   "answer": {
+    "value": "22/5",
+    "accepted": [
+     "4,4"
+    ]
+   },
+   "tolerance": 0,
+   "explanation": "Multiplica por 12: 4(2x−1) − 3(x+2) = 12 → 8x − 4 − 3x − 6 = 12 → 5x = 22 → x = 22/5.",
+   "steps": [
+    "mmc = 12.",
+    "Cuidado com o − antes do parêntese."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "equacoes.fracoes",
+   "statement": "Resolve $x-\\dfrac{x-2}{3}=\\dfrac{x}{2}+1$.",
+   "options": null,
+   "answer": {
+    "value": "2",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Multiplica por 6: 6x − 2(x−2) = 3x + 6 → 4x + 4 = 3x + 6 → x = 2. Verificação: 2 − 0 = 2 e 1 + 1 = 2 ✓.",
+   "steps": [
+    "mmc = 6.",
+    "Distribui o −2."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "equacoes.fracoes",
+   "statement": "Para eliminar denominadores, multiplicamos todos os termos da equação (dos dois membros) pelo mmc dos denominadores.",
+   "options": null,
+   "answer": {
+    "boolean": true
+   },
+   "tolerance": 0,
+   "explanation": "Multiplicar os dois membros pelo mesmo número ≠ 0 mantém a equação equivalente, e fazemo-lo a todos os termos.",
+   "steps": [
+    "Todos os termos."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 3,
+   "competency": "equacoes.fracoes",
+   "statement": "Numa equação com denominadores 2, 3 e 4, por que número é mais prático multiplicar tudo?",
+   "options": [
+    {
+     "id": "a",
+     "label": "12"
+    },
+    {
+     "id": "b",
+     "label": "24"
+    },
+    {
+     "id": "c",
+     "label": "9"
+    },
+    {
+     "id": "d",
+     "label": "6"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "mmc(2, 3, 4) = 12.",
+   "steps": [
+    "Menor múltiplo comum."
+   ]
+  }
+ ]
+}

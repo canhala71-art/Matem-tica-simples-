@@ -1,0 +1,223 @@
+{
+ "subject": "equacoes",
+ "topic_title": "Equações do 1.º grau",
+ "topic_slug": "equacoes-1-grau",
+ "lesson_title": "Equações do 1.º grau com parênteses",
+ "lesson_slug": "equacoes-1-grau-parenteses",
+ "summary": "Resolve equações do 1.º grau com parênteses, aplicando a propriedade distributiva e a regra dos sinais.",
+ "minutes": 30,
+ "blocks": {
+  "introduction": "**Objetivos:** eliminar parênteses (distributiva e regra dos sinais) e resolver equações do 1.º grau com parênteses. **Pré-requisitos:** equações simples, regra dos sinais e distributiva.\n\nQuando há parênteses, a primeira ideia é sempre a mesma: eliminá-los com cuidado, principalmente quando há um sinal menos à frente.",
+  "intuition": "**Propriedade distributiva:** $a(b+c)=ab+ac$ e $a(b-c)=ab-ac$. Cada termo dentro do parêntese é multiplicado por $a$.\n\n**Sinal menos à frente:** $-(b+c)=-b-c$ e $-(b-c)=-b+c$. Equivale a multiplicar por $-1$: **todos** os sinais trocam. Este é o erro mais frequente.\n\n**Parênteses encaixados:** resolve de dentro para fora. $2[x-(3-x)]$: primeiro $x-(3-x)=x-3+x=2x-3$; depois $2(2x-3)=4x-6$.\n\n**Método:** (1) elimina os parênteses; (2) reduz os termos semelhantes em cada membro; (3) agrupa os termos com $x$ de um lado e os números do outro; (4) divide pelo coeficiente de $x$; (5) verifica na equação original.\n\nExemplo: $3(2x-1)=2(x+5)$. Eliminar: $6x-3=2x+10$. Agrupar: $6x-2x=10+3$. Simplificar: $4x=13$. Logo $x=\\frac{13}{4}$.\n\n**Resultado fracionário:** pode acontecer e é normal. Verifica substituindo.\n\n**Erros comuns:** esquecer de multiplicar o segundo termo do parêntese ($2(x+4)=2x+4$ ✗); trocar o sinal de um só termo depois de um menos; passar termos sem trocar o sinal.",
+  "definition": "**Propriedade distributiva** da multiplicação em relação à adição e à subtração, e **regra de eliminação de parênteses** precedidos de $-$.",
+  "formulas": "$$a(b\\pm c)=ab\\pm ac\\qquad-(b+c)=-b-c\\qquad-(b-c)=-b+c$$\n\n$a,b,c$ são números (ou expressões). O sinal $-$ antes do parêntese multiplica cada termo por $-1$. Depois de eliminar parênteses, resolve como equação do 1.º grau: agrupa, reduz e divide pelo coeficiente de $x$.",
+  "worked_example": "**Exemplo 1.** $2(x+3)=14$: $2x+6=14$, $2x=8$, $x=4$.\n\n**Exemplo 2.** $2(x+4)=x+15$: $2x+8=x+15$, $x=7$.\n\n**Exemplo 3.** $3(2x-1)=2(x+5)$: $6x-3=2x+10$, $4x=13$, $x=\\frac{13}{4}$.\n\n**Exemplo 4.** $4-(x-3)=2x-5$: $7-x=2x-5$, $12=3x$, $x=4$.\n\n**Exemplo 5.** $5x-2(x-3)=18$: $3x+6=18$, $x=4$.\n\n**Exemplo 6.** $2[x-(3-x)]=10$: $2(2x-3)=10$, $4x-6=10$, $x=4$.",
+  "guided_exercise": "Resolve connosco: **$3(x+2)-2(x-1)=4(x-2)-3$.**\n\n1) Distribui: $3x+6-2x+2=4x-8-3$.\n\n2) Reduz: $x+8=4x-11$.\n\n3) Agrupa: $8+11=4x-x$, logo $19=3x$.\n\n4) $x=\\frac{19}{3}$. Verifica: lado esquerdo $3\\cdot\\frac{25}{3}-2\\cdot\\frac{16}{3}=25-\\frac{32}{3}=\\frac{43}{3}$ e lado direito $4\\cdot\\frac{13}{3}-3=\\frac{43}{3}$ ✓.",
+  "independent_exercise": "Chegou a tua vez. Resolve os exercícios sem pressa e usa **Verificar** para confirmar. Se errares, não faz mal: lê a resolução passo a passo, percebe onde o raciocínio escorregou e tenta outra vez. É assim que se aprende de verdade.",
+  "challenge": "**Desafio.** Resolve $2(x-3)-3(2x+1)=-4(x+2)+5$. O que acontece? Explica o resultado (impossível ou indeterminada?).",
+  "assessment": "Consideras a competência dominada quando consegues: (1) aplicar a distributiva corretamente; (2) trocar todos os sinais depois de um menos; (3) resolver parênteses encaixados; (4) agrupar e reduzir termos semelhantes; (5) verificar a solução."
+ },
+ "exercises": [
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "equacoes.parenteses",
+   "statement": "Resolve $2(x+3)=14$.",
+   "options": null,
+   "answer": {
+    "value": "4",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "2x + 6 = 14 → 2x = 8 → x = 4.",
+   "steps": [
+    "Propriedade distributiva.",
+    "x = 4."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "equacoes.parenteses",
+   "statement": "Resolve $3(x-2)=15$.",
+   "options": null,
+   "answer": {
+    "value": "7",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "3x − 6 = 15 → 3x = 21 → x = 7.",
+   "steps": [
+    "Distribui o 3."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 1,
+   "competency": "equacoes.parenteses",
+   "statement": "Resolve $5(x+1)=30$.",
+   "options": null,
+   "answer": {
+    "value": "5",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "5x + 5 = 30 → x = 5.",
+   "steps": [
+    "Distribui."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "equacoes.parenteses",
+   "statement": "Resolve $2(x+4)=x+15$.",
+   "options": null,
+   "answer": {
+    "value": "7",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "2x + 8 = x + 15 → x = 7. Verificação: 22 = 22 ✓.",
+   "steps": [
+    "Distribui o 2.",
+    "Agrupa x."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "equacoes.parenteses",
+   "statement": "Resolve $3(2x-1)=2(x+5)$.",
+   "options": null,
+   "answer": {
+    "value": "13/4",
+    "accepted": [
+     "3,25"
+    ]
+   },
+   "tolerance": 0,
+   "explanation": "6x − 3 = 2x + 10 → 4x = 13 → x = 13/4. Verificação: 3(13/2 − 1) = 33/2 e 2(13/4 + 5) = 33/2 ✓.",
+   "steps": [
+    "Distribui os dois lados.",
+    "4x = 13."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "equacoes.parenteses",
+   "statement": "Resolve $4-(x-3)=2x-5$.",
+   "options": null,
+   "answer": {
+    "value": "4",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "4 − x + 3 = 2x − 5 → 12 = 3x → x = 4 (o sinal − troca os sinais dentro do parêntese).",
+   "steps": [
+    "−(x − 3) = −x + 3.",
+    "7 − x = 2x − 5."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 2,
+   "competency": "equacoes.parenteses",
+   "statement": "Resolve $5x-2(x-3)=18$.",
+   "options": null,
+   "answer": {
+    "value": "4",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "5x − 2x + 6 = 18 → 3x = 12 → x = 4.",
+   "steps": [
+    "−2(x − 3) = −2x + 6."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "equacoes.parenteses",
+   "statement": "Resolve $2[x-(3-x)]=10$.",
+   "options": null,
+   "answer": {
+    "value": "4",
+    "accepted": []
+   },
+   "tolerance": 0,
+   "explanation": "Dentro: x − 3 + x = 2x − 3; 2(2x − 3) = 4x − 6 = 10 → x = 4.",
+   "steps": [
+    "Resolve primeiro o parêntese interior.",
+    "4x − 6 = 10."
+   ]
+  },
+  {
+   "type": "numeric",
+   "difficulty": 3,
+   "competency": "equacoes.parenteses",
+   "statement": "Resolve $3(x+2)-2(x-1)=4(x-2)-3$.",
+   "options": null,
+   "answer": {
+    "value": "19/3",
+    "accepted": [
+     "6,33"
+    ]
+   },
+   "tolerance": 0,
+   "explanation": "3x + 6 − 2x + 2 = 4x − 8 − 3 → x + 8 = 4x − 11 → 19 = 3x → x = 19/3.",
+   "steps": [
+    "Distribui tudo.",
+    "Agrupa."
+   ]
+  },
+  {
+   "type": "true_false",
+   "difficulty": 2,
+   "competency": "equacoes.parenteses",
+   "statement": "$-(x-5)$ é igual a $-x-5$.",
+   "options": null,
+   "answer": {
+    "boolean": false
+   },
+   "tolerance": 0,
+   "explanation": "O sinal − troca os dois sinais: −(x − 5) = −x + 5.",
+   "steps": [
+    "Distribui o −1."
+   ]
+  },
+  {
+   "type": "multiple_choice",
+   "difficulty": 3,
+   "competency": "equacoes.parenteses",
+   "statement": "Qual é o primeiro passo para resolver $3(x+2)=x-4$?",
+   "options": [
+    {
+     "id": "a",
+     "label": "Aplicar a propriedade distributiva: $3x+6=x-4$"
+    },
+    {
+     "id": "b",
+     "label": "Dividir os dois membros por 3 sem distribuir os termos"
+    },
+    {
+     "id": "c",
+     "label": "Somar 2 a x"
+    },
+    {
+     "id": "d",
+     "label": "Cortar os parênteses"
+    }
+   ],
+   "answer": {
+    "choice": "a"
+   },
+   "tolerance": 0,
+   "explanation": "Distribuímos o 3 por todos os termos do parêntese: 3x + 6.",
+   "steps": [
+    "Elimina primeiro os parênteses."
+   ]
+  }
+ ]
+}
